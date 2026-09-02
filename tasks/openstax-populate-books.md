@@ -1,7 +1,22 @@
 # Populate the OpenStax family — the 16 osbooks-* books, on the shared-toolchain pattern
 
-**Status:** in progress (2026-09-02, autonomous — maintainer away, "use your discretion, log decisions,
-talk later"). Anatomy pilot done; remaining 15 books being set up.
+**Status:** scaffolding done; representative subset build-verified; large caches deferred (2026-09-02,
+autonomous — maintainer away, "use your discretion, log decisions, talk later"). All 16 folders now
+exist. Done vs deferred:
+- **Phase A (done):** all 15 remaining book folders scaffolded on the pilot pattern (`fetch.sh` with
+  full 40-char pins, generic `apply.sh` that also injects a committed `exercises/` cache, thin
+  `Makefile`, `README.md`, `.gitignore`, per-book `CLAUDE.md`). `bash -n` clean; Makefiles differ from
+  anatomy's only in `CONTAINER_NAME` + header. Generator saved at
+  `tasks/adhoc/openstax-populate-books/scaffold.sh`. Committed.
+- **Phase B (done):** build-verified the subset **astronomy** (toolchain-only), **algebra-1** (SVG book),
+  **introduction-python-programming** (downloads). For each: `fetch.sh` (pin fetchable from GitHub by
+  SHA — assumption confirmed), `apply.sh`, `make convert` → LaTeX master generated
+  (`astronomy-2e.tex`/199 modules, `algebra-1.tex`/976, `introduction-python-programming.tex`/115).
+  **No fixups were needed** — the generic pattern worked across all three book types, so no fixup commit.
+- **Phase C (partial by design):** **python-programming** exercises fetched (`make fetch-exercises`,
+  613 questions, 0 images, 5.5M), committed with a `COPYRIGHT` NOTICE; injection verified end-to-end
+  (the 607 `exercise-uncached` fallbacks resolve after apply+reconvert). **All other download books
+  deferred** (see Open items) — no unattended bulk-commit of thousands of binaries.
 **Priority:** 3
 **Difficulty:** 6
 **Created:** 2026-09-02 (William Emerison Six <billsix@gmail.com>).
@@ -91,9 +106,21 @@ because of downloaded exercise content; the toolchain itself is identical across
 
 ## Open items / to discuss later
 
+- **Deferred download caches — await a deliberate `make fetch-exercises` + commit, flagged for
+  maintainer review because of the binary bulk added to imps.** Not run unattended. The books with
+  `os-embed` exercises that were left structure-only: `college-algebra-bundle`, `prealgebra-bundle`,
+  `calculus-bundle` (small), `writing-guide`, `physics`, `algebra-1` (+ SVG figures), and **especially
+  the three large ones** — `biology-bundle`, `contemporary-mathematics`, and `organic-chemistry`
+  (~2076 jpg + 1959 json). For each: `./fetch.sh && ./apply.sh && make fetch-exercises`, then copy
+  `checkout/exercises/` (JSON + any `media/`) up to the book folder's `exercises/` with a `COPYRIGHT`
+  copied from `openstax/tooling/templates/exercises-COPYRIGHT`, and commit — exactly as done for
+  python-programming. (Per-book, verify the delta's images are *downloaded* exercise images, not
+  upstream `media/` figures — only the downloaded ones belong in the committed cache.)
 - Whether to build-verify all 16 PDFs (heavy) or accept the representative-subset + structure
   verification above.
-- The large-download commit-bulk decision (see above).
+- The large-download commit-bulk decision (see above): if unwanted on review, the alternative is
+  caching them out-of-band and keeping only the fetch script — the fetch script is the source of truth
+  either way.
 - The N64 stale-doc pass (separate, authorized "as I see fit"): update the pre-torch ocarina
   asset-pipeline/build-system docs and the mario64 hooks→events docs against the current pins; fix the
   5 pre-existing broken `../../CLAUDE.md`/`wiki/`/`docs/` links in the mario64 reference docs.

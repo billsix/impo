@@ -109,4 +109,24 @@ the whole reason it's shared — one place to maintain the converter and the hou
 - `osbooks-anatomy-physiology/` — OpenStax **Anatomy & Physiology 2e**. Single-collection, two
   subcollection levels, **no** `os-embed` exercises, raster figures (no SVG step). The **pilot** for
   this family's shared-toolchain contract. Details: `osbooks-anatomy-physiology/CLAUDE.md`.
-- (the other 15 `osbooks-*` books are added after the pilot is verified.)
+
+The other 15 books were scaffolded on the pilot pattern (2026-09-02); each carries the thin
+per-book folder and a `CLAUDE.md` with its pin. Build-verified so far: **astronomy**,
+**algebra-1**, **introduction-python-programming** (image + `make convert` generate the LaTeX
+master; python-programming's 613-exercise download cache is fetched, committed, and injection-
+verified). The rest are structure-verified only (`bash -n`, and the generic pattern is proven).
+Per-book structural facts (collection layout, nesting, real exercise/figure presence) are
+confirmed on each book's first build.
+
+- `osbooks-astronomy/` — Astronomy 2e (single-collection; convert → `astronomy-2e.tex`, 199 modules).
+- `osbooks-chemistry-bundle/`, `osbooks-microbiology/`, `osbooks-psychology/`,
+  `osbooks-university-physics-bundle/` — the other toolchain-only (no-download) books.
+- `osbooks-college-algebra-bundle/`, `osbooks-prealgebra-bundle/`, `osbooks-calculus-bundle/` —
+  small download caches (survey).
+- `osbooks-writing-guide/`, `osbooks-physics/` — some/has download content (survey).
+- `osbooks-introduction-python-programming/` — **has committed exercises cache** (613 questions,
+  no images; convert → `introduction-python-programming.tex`, 115 modules).
+- `osbooks-algebra-1/` — has exercises + SVG figures (convert → `algebra-1.tex`, 976 modules).
+- `osbooks-biology-bundle/`, `osbooks-contemporary-mathematics/`, `osbooks-organic-chemistry/` —
+  large download books; **caches deferred** (a deliberate `make fetch-exercises` + commit awaits
+  maintainer review because of the binary bulk — see `tasks/openstax-populate-books.md`).
