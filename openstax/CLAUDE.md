@@ -123,10 +123,16 @@ confirmed on each book's first build.
   `osbooks-university-physics-bundle/` — the other toolchain-only (no-download) books.
 - `osbooks-college-algebra-bundle/`, `osbooks-prealgebra-bundle/`, `osbooks-calculus-bundle/` —
   small download caches (survey).
-- `osbooks-writing-guide/`, `osbooks-physics/` — some/has download content (survey).
+- `osbooks-writing-guide/` — **committed exercise cache** (182 JSON, 0 images) with `COPYRIGHT`.
+- `osbooks-physics/` — **no `os-embed` exercises** (0 nicknames → no exercise cache); large delta is
+  upstream `media/` figures. Likewise `osbooks-college-algebra-bundle/`, `osbooks-prealgebra-bundle/`,
+  `osbooks-calculus-bundle/` (all 0 os-embed → no caches).
 - `osbooks-introduction-python-programming/` — **has committed exercises cache** (613 questions,
   no images; convert → `introduction-python-programming.tex`, 115 modules).
-- `osbooks-algebra-1/` — has exercises + SVG figures (convert → `algebra-1.tex`, 976 modules).
-- `osbooks-biology-bundle/`, `osbooks-contemporary-mathematics/`, `osbooks-organic-chemistry/` —
-  large download books; **caches deferred** (a deliberate `make fetch-exercises` + commit awaits
-  maintainer review because of the binary bulk — see `tasks/openstax-populate-books.md`).
+- `osbooks-algebra-1/` — **committed exercise cache** (932 JSON + 288 images) with `COPYRIGHT`, plus
+  SVG figures (convert → `algebra-1.tex`, 976 modules).
+- `osbooks-organic-chemistry/`, `osbooks-contemporary-mathematics/` — **committed exercise caches**
+  (organic-chemistry 1959 JSON + 2076 images; contemporary-mathematics 3073 JSON + 578 images), each
+  with its `COPYRIGHT` NOTICE (green-lit + fetched 2026-09-02 — see `tasks/openstax-populate-books.md`).
+- `osbooks-biology-bundle/` — large *figure* book but **no `os-embed` exercises** (0 nicknames → no
+  exercise cache); its large delta is upstream `media/` figures, not downloadable practice exercises.

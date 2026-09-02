@@ -1,6 +1,7 @@
 # Populate the OpenStax family — the 16 osbooks-* books, on the shared-toolchain pattern
 
-**Status:** scaffolding done; representative subset build-verified; large caches deferred (2026-09-02,
+**Status:** scaffolding done; representative subset build-verified; all `os-embed` exercise caches
+fetched + committed (Phase C complete, 2026-09-02); (originally: caches deferred, 2026-09-02,
 autonomous — maintainer away, "use your discretion, log decisions, talk later"). All 16 folders now
 exist. Done vs deferred:
 - **Phase A (done):** all 15 remaining book folders scaffolded on the pilot pattern (`fetch.sh` with
@@ -13,10 +14,14 @@ exist. Done vs deferred:
   SHA — assumption confirmed), `apply.sh`, `make convert` → LaTeX master generated
   (`astronomy-2e.tex`/199 modules, `algebra-1.tex`/976, `introduction-python-programming.tex`/115).
   **No fixups were needed** — the generic pattern worked across all three book types, so no fixup commit.
-- **Phase C (partial by design):** **python-programming** exercises fetched (`make fetch-exercises`,
-  613 questions, 0 images, 5.5M), committed with a `COPYRIGHT` NOTICE; injection verified end-to-end
-  (the 607 `exercise-uncached` fallbacks resolve after apply+reconvert). **All other download books
-  deferred** (see Open items) — no unattended bulk-commit of thousands of binaries.
+- **Phase C (DONE 2026-09-02):** all `os-embed` exercise caches fetched + committed with COPYRIGHT
+  NOTICEs (green-lit — see "Download caches" below). **python-programming** (earlier): 613 questions,
+  0 images, injection verified. **This pass** (5 books with exercises, 4 no-ops): organic-chemistry
+  (1959 JSON + 2076 img, `cbdb4eb`), contemporary-mathematics (3073 JSON + 578 img, `23b9e75`),
+  algebra-1 (932 JSON + 288 img, `227a7cb`), writing-guide (182 JSON + 0 img, `1c69d20`). **No-ops
+  (0 os-embed nicknames → nothing committed):** biology-bundle, college-algebra-bundle,
+  prealgebra-bundle, calculus-bundle, physics — their large delta was upstream `media/` figures,
+  not practice exercises. Every committed cache carries a top-level `COPYRIGHT`.
 **Priority:** 3
 **Difficulty:** 6
 **Created:** 2026-09-02 (William Emerison Six <billsix@gmail.com>).
@@ -104,18 +109,37 @@ because of downloaded exercise content; the toolchain itself is identical across
   cache so this costs ~one image on disk. (A single shared `openstax-tooling` tag would be marginally
   cleaner; not worth diverging the pilot for.)
 
-## Download caches — GREEN-LIT 2026-09-02 (William Emerison Six <billsix@gmail.com>) — being committed
+## Download caches — GREEN-LIT 2026-09-02 (William Emerison Six <billsix@gmail.com>) — DONE
 
 The maintainer green-lit committing the download caches (accepting the binary bulk): "a book should
-have all its content." Fetching + committing them now, per book with `os-embed` exercises, exactly as
-python-programming: `./fetch.sh && ./apply.sh && make fetch-exercises`, copy `checkout/exercises/`
-(JSON + any `media/`) up to the book folder's `exercises/` with a `COPYRIGHT` from
-`openstax/tooling/templates/exercises-COPYRIGHT`, commit per book. Books: the three large ones
-FIRST (`organic-chemistry` ~2076 jpg + 1959 json, `biology-bundle`, `contemporary-mathematics`), then
-`college-algebra-bundle`, `prealgebra-bundle`, `calculus-bundle`, `writing-guide`, `physics`,
-`algebra-1`. A book whose CNXML has no `os-embed` links is a no-op (nothing committed). Per book,
-only *downloaded* exercise content goes in the cache — upstream `media/` figures stay in the
-(gitignored) pinned checkout.
+have all its content." Done per book with `os-embed` exercises, exactly as python-programming:
+seed `checkout/` (from the local mirror at the pin — the task's documented fallback, faster/offline
+for content-heavy books than a fresh GitHub clone), `./apply.sh`, `make fetch-exercises` (network),
+copy `checkout/exercises/` (JSON + any `media/`) up to the book folder's `exercises/` with a
+`COPYRIGHT` from `openstax/tooling/templates/exercises-COPYRIGHT`, one commit per book.
+
+**Results (2026-09-02, this pass — one commit per book):**
+
+| Book | JSON | images | size | committed? | sha |
+|---|---|---|---|---|---|
+| osbooks-organic-chemistry | 1959 | 2076 | 84M | yes | `cbdb4eb` |
+| osbooks-contemporary-mathematics | 3073 | 578 | 51M | yes | `23b9e75` |
+| osbooks-algebra-1 | 932 | 288 | — | yes | `227a7cb` |
+| osbooks-writing-guide | 182 | 0 | — | yes | `1c69d20` |
+| osbooks-biology-bundle | — | — | — | **no-op** (0 os-embed) | — |
+| osbooks-college-algebra-bundle | — | — | — | **no-op** (0 os-embed) | — |
+| osbooks-prealgebra-bundle | — | — | — | **no-op** (0 os-embed) | — |
+| osbooks-calculus-bundle | — | — | — | **no-op** (0 os-embed) | — |
+| osbooks-physics | — | — | — | **no-op** (0 os-embed) | — |
+
+Every committed cache carries a top-level `COPYRIGHT`; all fetches completed cleanly (0 missing, no
+timeouts, no rate-limiting even with up to 3 fetches running concurrently). **Finding:** the survey's
+"has downloads?" column (derived from delta file *count*) over-predicted — biology-bundle,
+college-algebra-bundle, prealgebra-bundle, calculus-bundle, and physics have **0** `os-embed`
+practice-exercise nicknames; their large deltas are upstream `media/` *figures* baked into the latex
+branch, not downloadable exercises. Only *downloaded* exercise content goes in the committed cache;
+upstream `media/` figures stay in the (gitignored) pinned checkout. All 6 `osbooks-*` exercise books
+now have committed caches (these 4 + python-programming's 613, done earlier).
 
 ## KEEP IN MIND — OpenStax may be extracted to its own imps-style repo later
 
