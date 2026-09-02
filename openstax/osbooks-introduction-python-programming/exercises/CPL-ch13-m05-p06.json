@@ -1,0 +1,333 @@
+{
+ "images": [],
+ "tags": [
+  "book:stax-pyth",
+  "assignment-type:reading",
+  "context-cnxmod:41d86ead-3948-4dae-8766-cf480c9376c6",
+  "book-slug:introduction-python-programming",
+  "module-slug:introduction-python-programming:13-5-multiple-inheritance-and-mixin-classes"
+ ],
+ "uuid": "1473844a-90e4-4a6d-a6ac-a2f0ac457d72",
+ "group_uuid": "162b8c3a-5b4c-41ac-8107-cb08361798f7",
+ "number": 40255,
+ "version": 7,
+ "uid": "40255@7",
+ "published_at": "2026-03-09T20:08:41.359Z",
+ "nickname": "CPL-ch13-m05-p06",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 667051,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The programmer edits the code to create a mixin class containing <code class=\"python\" data-lang=\"python\">eat()</code>. Which class name, replacing <code class=\"python\" data-lang=\"python\">X</code>, is most appropriate for the mixin?\n<pre class=\"python\" data-lang=\"python\">class Plant:\n&nbsp;&nbsp;def photosynth(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Photosynthesizing\")\n\nclass X:\n&nbsp;&nbsp;def eat(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Eating\")\n\nclass Rose(Plant):\n&nbsp;&nbsp;pass\n\nclass Pitcher(Plant, X):\n&nbsp;&nbsp;pass\n\nclass VenusFlyTrap(Plant, X)\n&nbsp;&nbsp;pass\n</pre>",
+   "answers": [
+    {
+     "id": 1330121,
+     "content_html": "<code class=\"python\" data-lang=\"python\">CarnivClass</code>",
+     "correctness": "0.0",
+     "feedback_html": "Adding \"Mixin\" to the end of a class name helps the class stand out."
+    },
+    {
+     "id": 1330122,
+     "content_html": "<code class=\"python\" data-lang=\"python\">CarnivMixin</code>",
+     "correctness": "1.0",
+     "feedback_html": "Good practice is to have a mixin class name end in <code class=\"python\" data-lang=\"python\">\"Mixin\"</code> to identify the class's purpose. The final implementation is:\n<pre class=\"python\" data-lang=\"python\">\nclass Plant:\n  def photosynth(self):\n    print(\"Photosynthesizing\")\n\nclass CarnivMixin:\n  def eat(self):\n    print(\"Eating\")\n\nclass Rose(Plant):\n  pass\n\nclass Pitcher(Plant, CarnivMixin):\n  pass\n\nclass VenusFlyTrap(Plant, CarnivMixin)\n  pass\n</pre>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Good practice is to have a mixin class name end in <code class=\"python\" data-lang=\"python\">\"Mixin\"</code> to identify the class's purpose. The final implementation is:\n<pre class=\"python\" data-lang=\"python\">class Plant:\n&nbsp;&nbsp;def photosynth(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Photosynthesizing\")\n\nclass CarnivMixin:\n&nbsp;&nbsp;def eat(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Eating\")\n\nclass Rose(Plant):\n&nbsp;&nbsp;pass\n\nclass Pitcher(Plant, CarnivMixin):\n&nbsp;&nbsp;pass\n\nclass VenusFlyTrap(Plant, CarnivMixin)\n&nbsp;&nbsp;pass\n</pre>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

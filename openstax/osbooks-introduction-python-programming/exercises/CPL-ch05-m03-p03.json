@@ -1,0 +1,340 @@
+{
+ "images": [],
+ "tags": [
+  "book:stax-pyth",
+  "assignment-type:reading",
+  "context-cnxmod:4d842854-98bd-4d88-9dd9-efd1c90406d7",
+  "book-slug:introduction-python-programming",
+  "module-slug:introduction-python-programming:5-3-nested-loops"
+ ],
+ "uuid": "46230c36-5dfb-4eea-917f-91c2ca25159a",
+ "group_uuid": "f69a043c-2ea9-4a45-80cb-7ee6aad3f085",
+ "number": 39847,
+ "version": 8,
+ "uid": "39847@8",
+ "published_at": "2026-03-09T19:59:22.057Z",
+ "nickname": "CPL-ch05-m03-p03",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 666489,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Which program prints the following output?\n<pre class=\"python\" data-lang=\"python\">1 2 3 4\n2 4 6 8\n3 6 9 12\n4 8 12 16\n</pre>\n",
+   "answers": [
+    {
+     "id": 1328520,
+     "content_html": "<pre class=\"python\" data-lang=\"python\">i = 1\nwhile i &lt;= 4:\n&nbsp;&nbsp;while j &lt;= 4:\n&nbsp;&nbsp;&nbsp;&nbsp;print(i * j, end = ' ')\n&nbsp;&nbsp;&nbsp;&nbsp;j += 1\n&nbsp;&nbsp;print()\n&nbsp;&nbsp;i += 1\n</pre>\n",
+     "correctness": "0.0",
+     "feedback_html": "In the first outer loop's execution <code class=\"python\" data-lang=\"python\">(i = 1)</code>, <code class=\"python\" data-lang=\"python\">j</code>'s value becomes 1, 2, 3, and 4. In the second outer loop's execution <code class=\"python\" data-lang=\"python\">(i = 2)</code>, <code class=\"python\" data-lang=\"python\">j</code>'s value equals 4 and hence the inner loop does not execute. What should change so the inner loop can be executed again?"
+    },
+    {
+     "id": 1328521,
+     "content_html": "<pre class=\"python\" data-lang=\"python\">i = 1\nwhile i &lt;= 4:\n&nbsp;&nbsp;j = 1\n&nbsp;&nbsp;while j &lt;= 4:\n&nbsp;&nbsp;&nbsp;&nbsp;print(i * j, end = ' ')\n&nbsp;&nbsp;&nbsp;&nbsp;j += 1\n&nbsp;&nbsp;print()\n&nbsp;&nbsp;i += 1\n</pre>\n",
+     "correctness": "1.0",
+     "feedback_html": "Each line <code class=\"python\" data-lang=\"python\">i</code> of the output (<code class=\"python\" data-lang=\"python\">i = </code><code class=\"python\" data-lang=\"python\">1</code>, <code class=\"python\" data-lang=\"python\">2</code>, <code class=\"python\" data-lang=\"python\">3</code>, and <code class=\"python\" data-lang=\"python\">4</code>) contains <code class=\"python\" data-lang=\"python\">i</code> times values <code class=\"python\" data-lang=\"python\">1</code> through <code class=\"python\" data-lang=\"python\">4</code>.<br> Hence, the outer loop executes while <code class=\"python\" data-lang=\"python\">i &lt;= 4</code>, and the inner loop iterates over<code class=\"python\" data-lang=\"python\">j</code> while <code class=\"python\" data-lang=\"python\">j</code>'s value is less than or equal to <code class=\"python\" data-lang=\"python\">4</code>."
+    },
+    {
+     "id": 1328522,
+     "content_html": "<pre class=\"python\" data-lang=\"python\">i = 1\nwhile i &lt;= 4:\n&nbsp;&nbsp;j = 1\n&nbsp;&nbsp;while j &lt;= 4:\n&nbsp;&nbsp;&nbsp;&nbsp;print(i * j, end = ' ')\n&nbsp;&nbsp;&nbsp;&nbsp;j += 1\n&nbsp;&nbsp;i += 1\n</pre>\n",
+     "correctness": "0.0",
+     "feedback_html": "The given code prints all values in one line. To add a new line every time that the value of <code class=\"python\" data-lang=\"python\">i</code> changes, a <code class=\"python\" data-lang=\"python\">print()</code> statement must be added at the end of the loop."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Each line <code class=\"python\" data-lang=\"python\">i</code> of the output (<code class=\"python\" data-lang=\"python\">i = </code><code class=\"python\" data-lang=\"python\">1</code>, <code class=\"python\" data-lang=\"python\">2</code>, <code class=\"python\" data-lang=\"python\">3</code>, and <code class=\"python\" data-lang=\"python\">4</code>) contains <code class=\"python\" data-lang=\"python\">i</code> times values <code class=\"python\" data-lang=\"python\">1</code> through <code class=\"python\" data-lang=\"python\">4</code>.<br> Hence, the outer loop executes while <code class=\"python\" data-lang=\"python\">i &lt;= 4</code>, and the inner loop iterates over<code class=\"python\" data-lang=\"python\">j</code> while <code class=\"python\" data-lang=\"python\">j</code>'s value is less than or equal to <code class=\"python\" data-lang=\"python\">4</code>."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}
