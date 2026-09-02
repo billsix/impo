@@ -1,0 +1,427 @@
+{
+ "images": [
+  {
+   "created_at": "2024-09-30T12:06:15.882Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbHNIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--43c3fdf0a331754bdcb4d60f8a8363d7ceea1d73",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbHNIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--43c3fdf0a331754bdcb4d60f8a8363d7ceea1d73/CS_Figure_01_04_024.jpg"
+  },
+  {
+   "created_at": "2024-09-30T12:06:15.892Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3NNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d54d6599fd9b53308111fd75718ca27c45942b8",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3NNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d54d6599fd9b53308111fd75718ca27c45942b8/CS_Figure_01_04_024.png"
+  },
+  {
+   "created_at": "2024-09-30T12:06:15.897Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0FQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a4236ceb405b1a107654facec9092b6a9404b3ce",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0FQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a4236ceb405b1a107654facec9092b6a9404b3ce/CS_Figure_01_04_024.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:01-04-05",
+  "context-cnxmod:e8a3ff01-572e-4099-8766-7150c43c673d",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:1-4-set-operations-with-two-sets"
+ ],
+ "uuid": "c7309cdb-d513-43aa-a377-2e5316c0192b",
+ "group_uuid": "65ee5db7-cdbe-4c57-a8dd-feb53dd51093",
+ "number": 29355,
+ "version": 15,
+ "uid": "29355@15",
+ "published_at": "2024-09-30T12:06:18.742Z",
+ "nickname": "CM-C01-M4-Q011",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<figure>\n<figcaption>Venn diagram with two intersecting sets and members.</figcaption>\n<img src=\"exercises/media/897fc225f927a895.png\" alt=\"A two-set Venn diagram intersecting one another is given. The first set is labeled A while the second set is labeled B. Set A shows 1, 9. Set B shows 2. The intersection of the sets shows 3, 5, 7. Outside the sets, 0, 4, 6 are given. Outside the Venn diagram, it is marked 'U equals (0, 1, 2, 3, 4, 5, 6, 7, 8, 9).'\">\n</figure>",
+ "questions": [
+  {
+   "id": 495136,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find <span data-math=\"A \\cap B\">A \\cap B</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p><span data-math=\"A \\cap B = \\{ 3,5,7\\}\">A \\cap B = \\{ 3,5,7\\}</span>.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The members that two sets have in common are included in the intersection of the sets. Look for the elements where the circles overlap.</p>\n<p><span data-math=\"A \\cap B = \\{3, 5, 7\\}\"></span></p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 495137,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find <span data-math=\"A \\cup B\">A \\cup B</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p><span data-math=\"A \\cup B = \\{ 1,2,3,5,7,9\\} \">A \\cup B = \\{ 1,2,3,5,7,9\\}</span>.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The union of two sets includes all the members of the first set and all the members of the second set. Do not list duplicates twice. List the elements that are inside the two circles.</p>\n<p><span data-math=\"A \\cup B = \\{1, 2, 3, 5, 7, 9\\}\"></span></p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 495138,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find <span data-math=\"A \\cap B'\">A \\cap B'</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p><span data-math=\"A \\cap B' = \\{ 1,9\\} \">A \\cap B' = \\{ 1,9\\}</span>.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>First, find <span data-math=\"B'\"></span>, the complement of <i>B</i>. The complement of set <i>B</i> is the set of all elements in the universal set <i>U</i> that are <i>not</i> in set <i>B</i>. List the elements of <i>U</i> that are not in <i>B</i>.</p>\n<p><span data-math=\"B' = \\left\\{ {0,{\\text{ }}1,{\\text{ }}4,{\\text{ }}6,{\\text{ }}8,{\\text{ }}9} \\right\\}\"></span></p>\n<p>Now find</p>\n<p><span data-math=\"A \\cap B' = \\left\\{ {1,3,5,7,9} \\right\\} \\cap \\left\\{ {0,{\\text{ }}1,{\\text{ }}4,{\\text{ }}6,{\\text{ }}8,{\\text{ }}9} \\right\\}\"></span></p>\n<p>The intersection of two sets are the elements that are in both sets.</p>\n<p><span data-math=\"A \\cap B' = \\left\\{ {1,9} \\right\\}\"></span></p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 495139,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find <span data-math=\"n(A \\cap B')\">n(A \\cap B')</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p><span data-math=\"n(A \\cap B') = 2\">n(A \\cap B') = 2</span>.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>First, find <span data-math=\"B'\"></span>, the complement of <i>B</i>. The complement of set <i>B</i> is the set of all elements in the universal set <i>U</i> that are <i>not</i> in set <i>B</i>. List the elements of <i>U</i> that are not in <i>B</i>.</p>\n<p><span data-math=\"B' = \\left\\{ {0,{\\text{ }}1,{\\text{ }}4,{\\text{ }}6,{\\text{ }}8,{\\text{ }}9} \\right\\}\"></span></p>\n<p>Now find</p>\n<p><span data-math=\"A \\cap B' = \\left\\{ {1,3,5,7,9} \\right\\} \\cap \\left\\{ {0,{\\text{ }}1,{\\text{ }}4,{\\text{ }}6,{\\text{ }}8,{\\text{ }}9} \\right\\}\"></span></p>\n<p>The intersection of two sets are the elements that are in both sets.</p>\n<p><span data-math=\"A \\cap B' = \\left\\{ {1,9} \\right\\}\"></span></p>\n<p><span data-math=\"n\\left( {A \\cap B'} \\right)\"></span> is the number of elements in the set, which is two.</p>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

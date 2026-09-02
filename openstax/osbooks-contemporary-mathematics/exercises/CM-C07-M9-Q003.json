@@ -1,0 +1,326 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:07-09-02",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:7239783d-6c65-42b5-87f1-da126da632e7",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:7-9-conditional-probability-and-the-multiplication-rule"
+ ],
+ "uuid": "dcb45c22-84b8-4ffa-87fb-13067ef74252",
+ "group_uuid": "7c7759fb-4234-47e2-adec-e5e0b7e408c0",
+ "number": 31538,
+ "version": 5,
+ "uid": "31538@5",
+ "published_at": "2024-11-11T13:39:14.570Z",
+ "nickname": "CM-C07-M9-Q003",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 516691,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "You are about to perform the following two-stage experiment. First, you will flip a coin. If the result is heads, roll a standard 6-sided die. If the result of the coin flip is tails, roll a modified 6-sided die with faces labeled 1, 1, 1, 2, 2, 3. Use a tree diagram to find the probability of rolling each of the numbers from 1 to 6. ",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>A table will be used to represent the tree.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td><b>Flip</b></td>\n<td>H</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>T</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><b>Roll</b></td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n<td>2</td>\n<td>3</td>\n</tr>\n<tr>\n<td><b>Result</b></td>\n<td>H1</td>\n<td>H2</td>\n<td>H3</td>\n<td>H4</td>\n<td>H5</td>\n<td>H6</td>\n<td>T1</td>\n<td>T1</td>\n<td>T1</td>\n<td>T2</td>\n<td>T2</td>\n<td>T3</td>\n</tr>\n</tbody>\n</table>\n<p>There are 12 total outcomes. The probabilities are in the last column of the table.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Number</td>\n<td>Number of Outcomes</td>\n<td>Probability</td>\n</tr>\n<tr>\n<td>1</td>\n<td>4</td>\n<td><span data-math=\"\\frac{4}{{12}} = \\frac{1}{3}\"></span></td>\n</tr>\n<tr>\n<td>2</td>\n<td>2</td>\n<td><span data-math=\"\\frac{3}{{12}} = \\frac{1}{4}\"></span></td>\n</tr>\n<tr>\n<td>3</td>\n<td>2</td>\n<td><span data-math=\"\\frac{2}{{12}} = \\frac{1}{6}\"></span></td>\n</tr>\n<tr>\n<td>4</td>\n<td>1</td>\n<td><span data-math=\"\\frac{1}{{12}}\"></span></td>\n</tr>\n<tr>\n<td>5</td>\n<td>1</td>\n<td><span data-math=\"\\frac{1}{{12}}\"></span></td>\n</tr>\n<tr>\n<td>6</td>\n<td>1</td>\n<td><span data-math=\"\\frac{1}{{12}}\"></span></td>\n</tr>\n</tbody>\n</table>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<table class=\"unnumbered\" summary=\".\">\n<thead>\n<tr>\n<th>Roll</th>\n<th>Probability</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><span data-math=\"\\frac{1}{3}\">\\frac{1}{3}</span></td>\n</tr>\n<tr>\n<td>2</td>\n<td><span data-math=\"\\frac{1}{4}\">\\frac{1}{4}</span></td>\n</tr>\n<tr>\n<td>3</td>\n<td><span data-math=\"\\frac{1}{6}\">\\frac{1}{6}</span></td>\n</tr>\n<tr>\n<td>4</td>\n<td><span data-math=\"\\frac{1}{{12}}\">\\frac{1}{{12}}</span></td>\n</tr>\n<tr>\n<td>5</td>\n<td><span data-math=\"\\frac{1}{{12}}\">\\frac{1}{{12}}</span></td>\n</tr>\n<tr>\n<td>6</td>\n<td><span data-math=\"\\frac{1}{{12}}\">\\frac{1}{{12}}</span></td>\n</tr>\n</tbody>\n</table>\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,374 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-01-04",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium"
+ ],
+ "uuid": "6605bda6-2b7c-4eec-909a-0c7a01226b25",
+ "group_uuid": "c7937901-3475-4054-adc3-fe8a9d8866b2",
+ "number": 29480,
+ "version": 6,
+ "uid": "29480@6",
+ "published_at": "2024-12-20T10:52:33.873Z",
+ "nickname": "CM-C11-M1-Q008",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>Answer the following questions using the table below, which summarizes Imaginarian voter preferences.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th><b>Number of Ballots</b></th>\n<th><b>12</b></th>\n<th>19</th>\n<th><b>27</b></th>\n<th><b>29</b></th>\n<th><b>31</b></th>\n<th><b>21</b></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Candidate A</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n<td>2</td>\n<td>3</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Candidate B </td>\n<td>2</td>\n<td>3</td>\n<td>1</td>\n<td>3</td>\n<td>1</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Candidate C</td>\n<td>3</td>\n<td>2</td>\n<td>3</td>\n<td>1</td>\n<td>2</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 544607,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the ranked-choice voting method to determine the winner of the election.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Ranked Choice Method:</p>\n<p>Step 1: Determine the number of votes needed to achieve a majority.</p>\n<p>Add the number of ballots.</p>\n<p>12 + 19 + 27 + 29 + 31 +21 = 139</p>\n<p>0.50(139) = 69.5</p>\n<p>To win a majority requires 70 or more votes.</p>\n<p>Step 2: Count the number of first-place votes for each candidate. If a candidate has a majority, then you are done. Otherwise, eliminate the candidate with the fewest votes and repeat this step.</p>\n<p>A: 12 + 19 = 31</p>\n<p>B: 27 + 31 = 58</p>\n<p>C: 29 + 21 = 50</p>\n<p>No one has the majority. Eliminate Candidate A.</p>\n<p>Second Round:</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Number of Ballots</th>\n<th>12</th>\n<th>19</th>\n<th>27</th>\n<th>29</th>\n<th>31</th>\n<th>21</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Candidate B</td>\n<td>1</td>\n<td>2</td>\n<td>1</td>\n<td>2</td>\n<td>1</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Candidate C</td>\n<td>2</td>\n<td>1</td>\n<td>2</td>\n<td>1</td>\n<td>2</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<p>B: 12 + 27 + 31 = 70</p>\n<p>C: 19 + 29 + 21 = 69</p>\n<p>Candidate B wins the majority vote using the ranked-choice method.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Candidate B would be considered the winner using the ranked-choice voting method."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544608,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the Borda count method to determine the winner of the election.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>To save subtracting all the time, a first-place vote earns 2 points. A second-place vote wins 1 point. A last place vote wins no points.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Number of Ballots</th>\n<th>12</th>\n<th>19</th>\n<th>27</th>\n<th>29</th>\n<th>31</th>\n<th>21</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Candidate A</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n<td>2</td>\n<td>3</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Candidate B</td>\n<td>2</td>\n<td>3</td>\n<td>1</td>\n<td>3</td>\n<td>1</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Candidate C</td>\n<td>3</td>\n<td>2</td>\n<td>3</td>\n<td>1</td>\n<td>2</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<p>Candidate A: 12(2) + 19(2) + 27(1) + 29(1) + 31(0) + 21(0) = 118</p>\n<p>Candidate B: 12(1) + 19(0) + 27(2) + 29(0) + 31(2) + 21(1) = 149</p>\n<p>Candidate C: 12(0) + 19(1) + 27(0) + 29(2) + 31(1) + 21(2) = 150</p>\n<p>Candidate C has the most points, so Candidate C wins.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Candidate C would be considered the winner using the Borda count method."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544609,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Compare the results of the two methods. Did the same candidate win? What observations can you make about the results?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Different candidates won using the two methods. Candidate B won by a difference of just 1 vote in the ranked-choice method. Candidate C won by just 1 point in the Borda count method. When the difference between the candidates is so small, the choice of voting method changes who wins."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Different candidates won. It appears that the vote counts were so close that a small shift in either direction could change the results of either method."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

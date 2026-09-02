@@ -1,0 +1,337 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-06T10:53:34.177Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWdPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cbf70064634d95f601da091348315ac9647f91b9",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWdPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cbf70064634d95f601da091348315ac9647f91b9/CS_Figure_10_07_UN015.png"
+  }
+ ],
+ "tags": [
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "lo:stax-cmath:10-07-03",
+  "context-cnxmod:4c3ecdc0-d173-4bc5-a237-ffabc2d7e588",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:10-7-volume-and-surface-area"
+ ],
+ "uuid": "c0e5abf4-45e5-4f65-8a7d-5cf4bda500d8",
+ "group_uuid": "1f1763ac-1822-4bee-8f11-777d732b6194",
+ "number": 31634,
+ "version": 10,
+ "uid": "31634@10",
+ "published_at": "2024-12-06T10:53:38.130Z",
+ "nickname": "CM-C10-M7-Q014",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 532784,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "As an artist, you want to design a cylindrical container for your colored art pencils and another rectangular container for some other tools. The cylindrical container will be 8 inches high with a diameter of 6 inches. The rectangular container measures 10 inches wide by 8 inches deep by 4 inches high and has a lid. You found some beautiful patterned paper to use to wrap both pieces. How much paper will you need?\n<br>\n<img src=\"exercises/media/7771bc25ab556f7f.png\" alt=\"A cylinder and a prism. The diameter and height of the cylinder are marked 6 inches and 8 inches. The length, width, and height of the rectangular prism are marked 10 inches, 8 inches, and 4 inches.\">\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Step 1: Find the surface area of the cylinder.</p>\n<p>The surface area of a right cylinder with radius <i>r</i> and height <i>h</i> is <span data-math=\"SA = 2\\pi {r^2} + 2\\pi rh\"></span>.</p>\n<p><span data-math=\"SA = 2\\pi {r^2} + 2\\pi rh = 2\\pi {\\left( {{\\text{3 in}}} \\right)^2} + 2\\pi \\left( {{\\text{3 in}}} \\right)\\left( {{\\text{8 in}}} \\right) \\approx 207.345{\\text{ i}}{{\\text{n}}^2}\"></span></p>\n<p>Step 2: Find the surface area of the right prism.</p>\n<p>The surface area of a right prism where <i>B</i> is the area of the base, <i>p</i> is the perimeter of the base, and <i>h</i> is the height is <span data-math=\"SA = 2B + ph\"></span>.</p>\n<p>The rectangular base has an area <span data-math=\"{\\text{ =  LW  =  (10 in) (8 in)  =  80 i}}{{\\text{n}}^{\\text{2}}}\"></span>.</p>\n<p>The perimeter of the base <span data-math=\"{\\text{ =  }}p{\\text{  =  2(10 in)  +  2(8 in)  =  36 cm}}\"></span>.</p>\n<p>The surface area <span data-math=\"= {\\text{ }}2B + ph = {\\text{ }}2\\left( {80{\\text{ i}}{{\\text{n}}^2}} \\right){\\text{ }} + {\\text{ }}\\left( {36{\\text{ in}}} \\right)\\left( {4{\\text{ in}}} \\right){\\text{ }} = {\\text{ }}160{\\text{ i}}{{\\text{n}}^2} + {\\text{ }}144{\\text{ i}}{{\\text{n}}^2} = {\\text{ }}304{\\text{ i}}{{\\text{n}}^2}\"></span>.</p>\n<p>Step 3: Add the results of the previous two steps.</p>\n<p><span data-math=\"207.35{\\text{ i}}{{\\text{n}}^2} + {\\text{ }}304{\\text{ i}}{{\\text{n}}^2} = {\\text{ }}511.35{\\text{ i}}{{\\text{n}}^2}\"></span></p>\n<p>The total area is 511.35 square inches.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"511.35\\,\\text{in}{^2}\">511.35\\,\\text{in}{^2}</span>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

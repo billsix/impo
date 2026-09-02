@@ -1,0 +1,378 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:04-02-03",
+  "all",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:5d7efbc8-a0f5-41a2-84a6-efd0e08beefd",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:4-2-early-numeration-systems"
+ ],
+ "uuid": "c3cc819e-1d16-47df-9359-923498a91df6",
+ "group_uuid": "58bf4b9d-df5a-44a2-b7b0-3733db15ab35",
+ "number": 30603,
+ "version": 5,
+ "uid": "30603@5",
+ "published_at": "2024-10-29T10:04:15.750Z",
+ "nickname": "CM-C04-M2-Q007",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Convert the following Roman numerals into Hindu-Arabic numerals.",
+ "questions": [
+  {
+   "id": 509765,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "LXXVII",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Unless a smaller digit precedes a larger digit, add the digit’s values.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>L</td>\n<td>X</td>\n<td>X</td>\n<td>V</td>\n<td>I</td>\n<td>I</td>\n</tr>\n<tr>\n<td>50</td>\n<td>10</td>\n<td>10</td>\n<td>5</td>\n<td>1</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<p>Add the digit values: 50 + 10 + 10 + 5 + 1 + 1 = 77</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "77"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 509766,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "CCXL",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Unless a smaller digit precedes a larger digit, add the digit’s values.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>C</td>\n<td>C</td>\n<td>X</td>\n<td>L</td>\n</tr>\n<tr>\n<td>100</td>\n<td>100</td>\n<td>10</td>\n<td>50</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td colspan=\"2\">Subtract 10 from 50<br>\n50 – 10 = 40</td>\n</tr>\n</tbody>\n</table>\n<p>100 + 100 + 40</p>\n<p>240</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "240"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 509767,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "MMMCDXLVII",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Unless a smaller digit precedes a larger digit, add the digit’s values.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>M</td>\n<td>M</td>\n<td>M</td>\n<td>C</td>\n<td>D</td>\n<td>X</td>\n<td>L</td>\n<td>V</td>\n<td>I</td>\n<td>I</td>\n</tr>\n<tr>\n<td>1,000</td>\n<td>1,000</td>\n<td>1,000</td>\n<td>100</td>\n<td>500</td>\n<td>10</td>\n<td>50</td>\n<td>5</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td colspan=\"2\">Subtract 100 from 500.<br>\n500 – 100 = 400</td>\n<td colspan=\"2\">Subtract 10 from 50.<br>\n50 – 10 = 40</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table>\n<p>1,000 + 1,000 + 1,000 + 400 + 40 + 5 + 1 + 1</p>\n<p>3,447</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "3,447"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

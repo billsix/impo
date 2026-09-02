@@ -1,0 +1,350 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:06-08-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:fc999142-28bf-4d96-b5a0-ea293fe23c90",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:6-8-the-basics-of-loans"
+ ],
+ "uuid": "bb717009-4c4b-4edd-9b0d-6e3028329998",
+ "group_uuid": "d05d6f2f-763a-4563-80e9-32b2a0e42f96",
+ "number": 35182,
+ "version": 3,
+ "uid": "35182@3",
+ "published_at": "2024-11-13T08:13:15.654Z",
+ "nickname": "CM-C06-M8-Q022",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "In the following, calculate the payment necessary to pay off the loan with the given details. The payments are monthly.",
+ "questions": [
+  {
+   "id": 518848,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A home improvement loan taken out for $17,950 at an annual interest rate of 7.5% for 10 years.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>To compute the payment to pay down a loan with beginning principal, <i>P</i>, the payment (<i>pmt</i>) is <span data-math=\"pmt = \\frac{{P \\times \\frac{r}{n} \\times {{\\left( {1 + \\frac{r}{n}} \\right)}^{n \\times t}}}}{{{{\\left( {1 + \\frac{r}{n}} \\right)}^{n \\times t}} - 1}}\"></span>, where <i>r</i> is the annual interest rate (in decimal form), <i>n</i> is the number of compounding periods per year, and <i>t</i> is the number of years. Note, payment to lenders is always rounded up to the next penny.</p>\n<p>Once again, it will help you get the right answer from your calculator to find <span data-math=\"n \\times t\"></span> first.</p>\n<p><span data-math=\"n \\times t = \\left( {12} \\right)\\left( {10} \\right) = 120\"></span></p>\n<p><span data-math=\"pmt = \\frac{{17,950 \\times \\frac{{0.075}}{{12}} \\times {{\\left( {1 + \\frac{{0.075}}{{12}}} \\right)}^{120}}}}{{{{\\left( {1 + \\frac{{0.075}}{{12}}} \\right)}^{120}} - 1}} = \\$213.07\"></span></p>\n<p>Additional parentheses were added to help you enter the expression properly in your calculator.</p>\n<p>The payment is $213.07.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$213.07"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 518849,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A solar panel installation loan taken out for $33,760 and an annual interest rate of 4.3% for 20 years.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>To compute the payment to pay down a loan with beginning principal, <i>P</i>, the payment (<i>pmt</i>) is <span data-math=\"pmt = \\frac{{P \\times \\frac{r}{n} \\times {{\\left( {1 + \\frac{r}{n}} \\right)}^{n \\times t}}}}{{{{\\left( {1 + \\frac{r}{n}} \\right)}^{n \\times t}} - 1}}\"></span>, where <i>r</i> is the annual interest rate (in decimal form), <i>n</i> is the number of compounding periods per year, and <i>t</i> is the number of years. Note, payment to lenders is always rounded up to the next penny.</p>\n<p>Once again, it will help you get the right answer from your calculator to find <span data-math=\"n \\times t\"></span> first.</p>\n<p><span data-math=\"n \\times t = \\left( {12} \\right)\\left( {20} \\right) = 240\"></span></p>\n<p><span data-math=\"pmt = \\frac{{33,760 \\times \\frac{{0.043}}{{12}} \\times {{\\left( {1 + \\frac{{0.043}}{{12}}} \\right)}^{120}}}}{{{{\\left( {1 + \\frac{{0.043}}{{12}}} \\right)}^{240}} - 1}} = \\$209.96\"></span></p>\n<p>Additional parentheses were added to help you enter the expression properly in your calculator.</p>\n<p>The payment is $209.96.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$209.96"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  3,
+  2,
+  1
+ ]
+}

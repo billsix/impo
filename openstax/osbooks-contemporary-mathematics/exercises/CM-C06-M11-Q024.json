@@ -1,0 +1,349 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:06-11-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:15f6dedc-7cfc-4202-8fe2-3f019689c5f4",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:6-11-buying-or-leasing-a-car"
+ ],
+ "uuid": "0e23c3de-bcda-4730-a9f1-059c9e05242c",
+ "group_uuid": "a44d28d0-524a-48ab-b1ee-93e69d65eab3",
+ "number": 35284,
+ "version": 2,
+ "uid": "35284@2",
+ "published_at": "2024-11-14T04:43:44.985Z",
+ "nickname": "CM-C06-M11-Q024",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "In the following, calculate the monthly payment using the given total to be financed, the interest rate, and the term of the car loan.",
+ "questions": [
+  {
+   "id": 519450,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Total to be financed is $18,325, interest rate is 6.75%, for 4 years.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>To compute the payment to pay down a loan with beginning principal, <i>P</i>, the payment (<i>pmt</i>) is <span data-math=\"pmt = \\frac{{P \\times \\frac{r}{n} \\times {{\\left( {1 + \\frac{r}{n}} \\right)}^{n \\times t}}}}{{{{\\left( {1 + \\frac{r}{n}} \\right)}^{n \\times t}} - 1}}\"></span>, where <i>r</i> is the annual interest rate (in decimal form), <i>n</i> is the number of compounding periods per year, and <i>t</i> is the number of years. Note, payment to lenders is always rounded up to the next penny.</p>\n<p>Once again, it will help you get the right answer from your calculator to find <span data-math=\"n \\times t\"></span> first.</p>\n<p><span data-math=\"n \\times t = \\left( {12} \\right)\\left( 4 \\right) = 48\"></span></p>\n<p><span data-math=\"pmt = \\frac{{\\left( {18,325 \\times \\frac{{0.0675}}{{12}} \\times {{\\left( {1 + \\frac{{0.069}}{{12}}} \\right)}^{48}}} \\right)}}{{\\left( {{{\\left( {1 + \\frac{{0.069}}{{12}}} \\right)}^{48}} - 1} \\right)}} = \\$436.80\"></span></p>\n<p>Additional parentheses were added to help you enter the expression properly in your calculator.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$436.70"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 519451,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Total to be financed is $41,633, interest rate is 3.9%, for 6 years.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>To compute the payment to pay down a loan with beginning principal, <i>P</i>, the payment (<i>pmt</i>) is <span data-math=\"pmt = \\frac{{P \\times \\frac{r}{n} \\times {{\\left( {1 + \\frac{r}{n}} \\right)}^{n \\times t}}}}{{{{\\left( {1 + \\frac{r}{n}} \\right)}^{n \\times t}} - 1}}\"></span>, where <i>r</i> is the annual interest rate (in decimal form), <i>n</i> is the number of compounding periods per year, and <i>t</i> is the number of years. Note, payment to lenders is always rounded up to the next penny.</p>\n<p>Once again, it will help you get the right answer from your calculator to find <span data-math=\"n \\times t\"></span> first.</p>\n<p><span data-math=\"n \\times t = \\left( {12} \\right)\\left( 6 \\right) = 72\"></span></p>\n<p><span data-math=\"pmt = \\frac{{\\left( {41,633 \\times \\frac{{0.039}}{{12}} \\times {{\\left( {1 + \\frac{{0.039}}{{12}}} \\right)}^{72}}} \\right)}}{{\\left( {{{\\left( {1 + \\frac{{0.039}}{{12}}} \\right)}^{72}} - 1} \\right)}}= \\$649.47\"></span></p>\n<p>Additional parentheses were added to help you enter the expression properly in your calculator.</p>\n\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$649.47"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  2,
+  1
+ ]
+}

@@ -1,0 +1,477 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-04-02",
+  "lo:stax-cmath:11-04-03",
+  "lo:stax-cmath:11-04-04",
+  "lo:stax-cmath:11-04-05",
+  "lo:stax-cmath:11-04-06",
+  "context-cnxmod:c6ba4735-5472-4e8a-bcce-f8bcb5349637",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-4-apportionment-methods"
+ ],
+ "uuid": "3f92a604-c666-4a9d-bdf3-b936f94895ce",
+ "group_uuid": "8b3279ac-e353-4bc0-b8ec-c804ea42cdeb",
+ "number": 29471,
+ "version": 9,
+ "uid": "29471@9",
+ "published_at": "2022-12-15T10:03:59.251Z",
+ "nickname": "CM-C11-M4-Q023",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>Children from five families—the Chorro family, the Eswaran family, the Javernick family, the Lahde family, and the Stolly family—joined a town Easter egg hunt. When they returned with their baskets, they had 827 eggs! They decided to share their eggs amongst the families based on the number of children in each family. Use the population and standard quota information in the table below for the following exercises.</p>\n<p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>\n</th><th>(C) Chorro</th>\n<th>(E) Eswaran</th>\n<th>(J) Javernick</th>\n<th>(L) Lahde</th>\n<th>(S) Stolly</th>\n<th>Total</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><b>Children</b></td>\n<td>3</td>\n<td>2</td>\n<td>4</td>\n<td>1</td>\n<td>5</td>\n<td>15</td>\n</tr>\n<tr>\n<td><b>Standard Quota</b></td>\n<td>155.04</td>\n<td>103.36</td>\n<td>206.72</td>\n<td>103.36</td>\n<td>258.40</td>\n<td>827</td>\n</tr>\n</tbody>\n</table>\n</p>",
+ "questions": [
+  {
+   "id": 322708,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Modify the standard quota for each state using traditional rounding. Find the sum of the modified quotas. What is the difference between the sum and the house size?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322709,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the standard lower quota for each state. If each state is allocated its lower quota, how many seats remain to be allocated?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322710,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the standard upper quota for each state, and determine how much the sum of the upper quotas exceeds the house size.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322711,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the Hamilton method to apportion the Easter eggs.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322712,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the modified lower quota for each state using a modified divisor of 0.01800. Is the sum of the modified quotas too high, too low, or equal to the house size?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322713,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the modified lower quota for each state using a modified divisor of 0.01810. Is the sum of the modified quotas too high, too low, or equal to the house size?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322714,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the Jefferson method to apportion the Easter eggs. Determine whether it is necessary to modify the divisor. If so, indicate the value of the modified divisor.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322715,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Does the Jefferson method result in an apportionment that satisfies or violates the quota rule in this scenario?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322716,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the modified upper quota for each state using a modified divisor of 0.0182. Is the sum of the modified quotas too high, too low, or equal to the house size?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322717,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the modified upper quota for each state using a modified divisor of 0.01816. Is the sum of the modified quotas too high, too low, or equal to the house size?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322718,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the Adams method to apportion the Easter eggs. Determine whether it is necessary to modify the divisor. If so, indicate the value of the modified divisor.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322719,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Does the Adams method result in an apportionment that satisfies or violates the quota rule in this scenario?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322720,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the Webster method to apportion the Easter eggs. Determine whether it is necessary to modify the divisor. If so, indicate the value of the modified divisor.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 322721,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Does the Webster method result in an apportionment that satisfies or violates the quota rule in this scenario?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,326 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:08-03-02",
+  "context-cnxmod:a3ebfbc2-fdfc-45f5-be99-dac7dc2d6d7a",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-3-mean-median-and-mode"
+ ],
+ "uuid": "3a83cdc9-2984-419a-8ec7-dcc369d23409",
+ "group_uuid": "c242d0a4-33f2-41da-b802-c04f67329730",
+ "number": 29027,
+ "version": 9,
+ "uid": "29027@9",
+ "published_at": "2024-11-27T06:27:07.872Z",
+ "nickname": "CM-C08-M3-004",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 528788,
+   "is_answer_order_important": false,
+   "stimulus_html": "This table gives the records of the Major League Baseball teams at the end of the 2019 season:\n<table>\n<caption> (source: www.mlb.com)</caption>\n<thead>\n<tr><th>Team</th>\n<th>Wins</th>\n<th>Losses</th>\n<th>Team</th>\n<th>Wins</th>\n<th>Losses</th></tr>\n</thead>\n<tbody>\n<tr><td>HOU</td>\n<td>107</td>\n<td>55</td>\n<td>PHI</td>\n<td>81</td>\n<td>81</td></tr>\n<tr><td>LAD</td>\n<td>106</td>\n<td>56</td>\n<td>TEX</td>\n<td>78</td>\n<td>84</td></tr>\n<tr><td>NYY</td>\n<td>103</td>\n<td>59</td>\n<td>SFG</td>\n<td>77</td>\n<td>85</td></tr>\n<tr><td>MIN</td>\n<td>101</td>\n<td>61</td>\n<td>CIN</td>\n<td>75</td>\n<td>87</td></tr>\n<tr><td>ATL</td>\n<td>97</td>\n<td>65</td>\n<td>CHW</td>\n<td>72</td>\n<td>89</td></tr>\n<tr><td>OAK</td>\n<td>97</td>\n<td>65</td>\n<td>LAA</td>\n<td>72</td>\n<td>90</td></tr>\n<tr><td>TBR</td>\n<td>96</td>\n<td>66</td>\n<td>COL</td>\n<td>71</td>\n<td>91</td></tr>\n<tr><td>CLE</td>\n<td>93</td>\n<td>69</td>\n<td>SDP</td>\n<td>70</td>\n<td>92</td></tr>\n<tr><td>WSN</td>\n<td>93</td>\n<td>69</td>\n<td>PIT</td>\n<td>69</td>\n<td>93</td></tr>\n<tr><td>STL</td>\n<td>91</td>\n<td>71</td>\n<td>SEA</td>\n<td>68</td>\n<td>94</td></tr>\n<tr><td>MIL</td>\n<td>89</td>\n<td>73</td>\n<td>TOR</td>\n<td>67</td>\n<td>95</td></tr>\n<tr><td>NYM</td>\n<td>86</td>\n<td>76</td>\n<td>KCR</td>\n<td>59</td>\n<td>103</td></tr>\n<tr><td>ARI</td>\n<td>85</td>\n<td>77</td>\n<td>MIA</td>\n<td>57</td>\n<td>105</td></tr>\n<tr><td>BOS</td>\n<td>84</td>\n<td>78</td>\n<td>BAL</td>\n<td>54</td>\n<td>108</td></tr>\n<tr><td>CHC</td>\n<td>84</td>\n<td>78</td>\n<td>DET </td>\n<td>47</td>\n<td>114</td></tr>\n</tbody>\n</table>",
+   "stem_html": "What is the median number of wins?\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The table lists the wins in order from largest to smallest. There are 30 data values.</p>\n<p>Suppose you have a set of data with <i>n</i> values, ordered from the smallest to the largest. If <i>n</i> is odd, the median is the data value at position <span data-math=\"\\frac{{n + 1}}{2}\"></span>. If <i>n</i> is even, then add the values at the <span data-math=\"\\frac{n}{2}\"></span> and <span data-math=\"\\frac{n}{2} + 1\"></span> positions, then divide by 2 to find the median.</p>\n<p>Since there are 30 data values, use the even method.</p>\n<p><span data-math=\"\\frac{n}{2} = \\frac{{30}}{2} = 15\"></span> and <span data-math=\"\\frac{n}{2} + 1\"></span>= 16</p>\n<p>The 15<sup>th</sup> value is 81 and the 16<sup>th</sup> value is 84.</p>\n<p>Add them up and divide by 2: <span data-math=\"\\frac{{81 + 84}}{2}\"></span>= 82.5</p>\n<p>The median is 82.5.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "82.5"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

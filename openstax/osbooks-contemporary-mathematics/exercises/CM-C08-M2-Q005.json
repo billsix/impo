@@ -1,0 +1,383 @@
+{
+ "images": [],
+ "tags": [
+  "context-cnxmod:7baffe9f-fb35-422f-bac7-89e4353e21ed",
+  "book:stax-cmath",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-2-visualizing-data"
+ ],
+ "uuid": "ebeff25e-c74e-4a42-a4bb-43479773501e",
+ "group_uuid": "c531ef98-82a0-48e4-96a1-18be40883162",
+ "number": 28945,
+ "version": 16,
+ "uid": "28945@16",
+ "published_at": "2024-11-27T05:29:48.180Z",
+ "nickname": "CM-C08-M2-Q005",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "The stem-and-leaf plot below shows data collected from a sample of employed people who were asked how far (in miles) they commute each day:<br>\n<table class=\"unnumbered\">\n<tbody>\n<tr><td data-align=\"left\">0</td>\n<td data-align=\"left\">4 6 7</td>\n</tr>\n<tr><td data-align=\"left\">1</td>\n<td data-align=\"left\">0 0 0 2 2 2 4 5 8 8</td></tr>\n<tr><td data-align=\"left\">2</td>\n<td data-align=\"left\">0 5 5 5</td>\n</tr>\n<tr><td data-align=\"left\">3</td>\n<td data-align=\"left\">0 0 5 5 6</td>\n</tr>\n<tr><td data-align=\"left\">4</td>\n<td data-align=\"left\"></td></tr>\n<tr><td data-align=\"left\">5</td>\n<td data-align=\"left\">0</td>\n</tr>\n<tr><td data-align=\"left\">6</td>\n<td data-align=\"left\">0</td>\n</tr></tbody>\n</table>",
+ "questions": [
+  {
+   "id": 528601,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many data points are represented?\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Stem-and-leaf plots are visualization tools that consist of a list of stems on the left and corresponding leaves on the right, separated by a line. The stems are the numbers that make up the data only up to the next-to-the last digit, and the leaves are the final digits. There is one leaf for every data value (which means that leaves may be repeated).</p>\n<p>The leaves are the numbers to the right side of the line. There are 24 leaves.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Twenty-four"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 528602,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What are the three longest and shortest commutes?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The three largest data values are 36, 50, and 60 miles.</p>\n<p>The three smallest data values are 4, 6, and 7 miles.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The longest commutes are 60, 50, and 36 miles; the shortest are 4, 6, and 7 miles."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 528603,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What is the full list of data?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Put together the stems (the numbers on the left side of the line) and leaves (the numbers on the right side of the line).</p>\n<p>4, 6, 7, 10, 10, 10, 12, 12, 12, 14, 15, 18, 18, 20, 25, 25, 25, 30, 30, 35, 35, 36, 50, 60</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "4, 6, 7, 10, 10, 10, 12, 12, 12, 14, 15, 18, 18, 20, 25, 25, 25, 30, 30, 35, 35, 36, 50, 60"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

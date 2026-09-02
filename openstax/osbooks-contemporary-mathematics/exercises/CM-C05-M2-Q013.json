@@ -1,0 +1,430 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:05-02-02",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:4633ad56-9d11-436f-ade4-1e18af65fcb1",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-2-linear-equations-in-one-variable-with-applications"
+ ],
+ "uuid": "1af38e13-1709-4b39-b7cf-66085fcee36f",
+ "group_uuid": "e2472c80-3419-4c54-a933-232ce3d6cef7",
+ "number": 30419,
+ "version": 8,
+ "uid": "30419@8",
+ "published_at": "2024-10-25T06:39:31.778Z",
+ "nickname": "CM-C05-M2-Q013",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, use this scenario: The Nice Cab Company charges a flat rate of $3.00 for each fare, plus $1.70 per mile. A competing taxi service, the Enjoyable Cab Company, charges a flat rate of $5.00 for each fare, plus $1.60 per mile.",
+ "questions": [
+  {
+   "id": 507868,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Using the variable <span data-math=\"x\">x</span> for number of miles, write the equation that would allow you to find the total fare <span data-math=\"(T)\">(T)</span> using the Nice Cab Company.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Break your words into components.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>The total fare</td>\n<td>is</td>\n<td>a flat fee of $3.00</td>\n<td>plus</td>\n<td>$1.70 per mile</td>\n</tr>\n<tr>\n<td><i>T</i></td>\n<td>=</td>\n<td>3</td>\n<td>+</td>\n<td>1.7<i>x</i></td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"T = 3 + 1.7x\"></span></p>\n<p>Alternate answer option: <span data-math=\"T = 1.7x + 3\"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"{{T}} = 1.7x + 3\">T = 1.7x + 3</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 507869,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "It is 22 miles from the airport to your hotel. What would be your total fare using the Nice Cab Company?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Substitute 22 for <i>x</i> in the equation <span data-math=\"T = 3+1.7x\"></span>.</p>\n<p><span data-math=\"T = 3 + 1.7(22) = 3 + 37.4 = 40.4\"></span></p>\n<p>The ride from the airport to the hotel costs $40.40.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$40.40"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 507870,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Using the variable <span data-math=\"y\">y</span> for number of miles, write the equation that would allow you to find the total fare <span data-math=\"(T)\">(T)</span> using the Enjoyable Cab Company.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Break your words into components.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>The total fare</td>\n<td>is</td>\n<td>a flat fee of $5.00</td>\n<td>plus</td>\n<td>$1.60 per mile</td>\n</tr>\n<tr>\n<td><i>T</i></td>\n<td>=</td>\n<td>5</td>\n<td>+</td>\n<td>1.6<i>y</i></td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"T = 5 + 1.6y\"></span></p>\n<p>Alternate answer option: <span data-math=\"T = 1.6y + 5\"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"{{T}} = 1.6y + 5\">T = 1.6y + 5</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 507871,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Using the same 22-mile trip from the airport to the hotel, how much would the total fare be for using the Enjoyable Cab Company?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Substitute 22 for <i>y</i> in the equation <span data-math=\"T = 5 + 1.6y\"></span>.</p>\n<p><span data-math=\"T = 5 + 1.6(22) = 5 + 35.2 = 40.2\"></span></p>\n<p>The ride from the airport to the hotel costs $40.20.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$40.20"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 507872,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Based on the cost of each cab ride, which cab company should you use for the trip from the airport to the hotel? Why?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The Enjoyable Cab Company costs $40.20, while the Nice Cab Company costs 20 cents more at $40.40. You should use the Enjoyable Cab Company.</p>\n<p><span data-math=\"40.40 – 40.20 = 0.20\"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The Enjoyable Cab Company, because the cab fare will be $ 0.20 less than what it would cost to take a taxi from the Nice Cab Company."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

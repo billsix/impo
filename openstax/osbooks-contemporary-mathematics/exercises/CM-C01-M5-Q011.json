@@ -1,0 +1,440 @@
+{
+ "images": [
+  {
+   "created_at": "2024-09-30T06:46:43.187Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBalVIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4f4b4adba2a8e18b1bdb41badb1df58fbd9c3fb4",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBalVIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4f4b4adba2a8e18b1bdb41badb1df58fbd9c3fb4/CS_Figure_01_05_TA_022.jpg"
+  },
+  {
+   "created_at": "2024-09-30T06:46:43.190Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbm9PIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8af1b2ac5c71e060be77daa42547ed6459a05887",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbm9PIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8af1b2ac5c71e060be77daa42547ed6459a05887/CS_Figure_01_05_TA_022.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:01-05-01",
+  "context-cnxmod:94161dc9-2706-4efe-925a-9b3d114dfa93",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:1-5-set-operations-with-three-sets"
+ ],
+ "uuid": "8a313881-414f-4b62-85db-8ba47deeeb1a",
+ "group_uuid": "cf729fee-f4b8-4590-a650-acd55670d29c",
+ "number": 29304,
+ "version": 13,
+ "uid": "29304@13",
+ "published_at": "2024-09-30T06:46:46.772Z",
+ "nickname": "CM-C01-M5-Q011",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>A blood drive at City Honors High School recently collected blood from 140 students, staff, and faculty.  Use the results depicted in the Venn diagram below to answer the following exercises.</p>\n<br>\n<img src=\"exercises/media/af3a47fdc23ef3e5.png\" alt=\"A three-set Venn diagram of A, B, and Rh plus overlapping one another is given. The total number of donors equals 140. Set A shows 8; Set B shows 3; Set Rh plus shows 52. Overlapping of sets A and B shows 2, overlapping of sets B and Rh plus shows 11, and overlapping of A and Rh plus shows 50. Overlapping of A, B, and Rh plus shows 4.\">\n",
+ "questions": [
+  {
+   "id": 494678,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Blood type <span data-math=\"\\text{AB}^{ + }\">\\text{AB}^{ + }</span> is the universal acceptor. Of the 140 people who donated at City Honors, how many had blood type <span data-math=\"\\text{AB}^{ + }\">\\text{AB}^{ + }</span>?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494679,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Blood type <span data-math=\"\\text{O}^{ - }\">\\text{O}^{ - }</span> is the universal donor. Anyone needing a blood transfusion can receive this blood type. How many people who donated blood during this drive had <span data-math=\"\\text{O}^{ - }\">\\text{O}^{ - }</span> blood?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494680,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many people donated with a type A blood factor?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494681,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many people donated with a type A and type B blood factor (that is, they had type AB blood).",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494682,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many donors were <span data-math=\"\\text{O}^{ + }\">\\text{O}^{ + }</span>?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494683,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many donors were not <span data-math=\"{\\text{R}}{{\\text{h}}^ + }\">{\\text{R}}{{\\text{h}}^ + }</span>?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494684,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Opal has blood type <span data-math=\"\\text{A}^{ + }\">\\text{A}^{ + }</span>. If she needs to have surgery that requires a blood transfusion, she can accept blood from anyone who does not have a type B blood factor. How many people donated blood during this drive at City Honors that Opal can accept?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494685,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find <span data-math=\"n(A \\cap {\\text{R}}{{\\text{h}}^ + })\">n(A \\cap {\\text{R}}{{\\text{h}}^ + })</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494686,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find <span data-math=\"n(A \\cup {\\text{R}}{{\\text{h}}^ + })\">n(A \\cup {\\text{R}}{{\\text{h}}^ + })</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494687,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find <span data-math=\"n(A \\cap B \\cap {\\text{R}}{{\\text{h}}^ - })\">n(A \\cap B \\cap {\\text{R}}{{\\text{h}}^ - })</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

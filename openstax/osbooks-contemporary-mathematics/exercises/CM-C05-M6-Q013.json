@@ -1,0 +1,325 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:05-06-07",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:5ce4d68c-f5a2-4e6f-92ed-87da9ba26264",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-6-quadratic-equations-in-one-variable-with-applications"
+ ],
+ "uuid": "c10c3165-88d6-4d02-9022-a93c1a4cbfdf",
+ "group_uuid": "0024bbd3-bbca-4a0b-bfb9-c44be40822db",
+ "number": 30424,
+ "version": 4,
+ "uid": "30424@4",
+ "published_at": "2024-10-28T10:13:59.883Z",
+ "nickname": "CM-C05-M6-Q013",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 508743,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The product of two consecutive odd integers is 240. Find the integers.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Let <span data-math=\"y = {\\rm{one}}\\;{\\rm{integer}}.\"></span></p>\n<p>Let <span data-math=\"y + 1 = {\\rm{the}}\\;{\\rm{next}}\\;{\\rm{integer}}.\"></span></p>\n<p>Break the sentence into components.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td colspan=\"3\">The product of two consecutive integers</td>\n<td>is</td>\n<td>240</td>\n</tr>\n<tr>\n<td><span data-math=\"y\"></span></td>\n<td>multiplied by</td>\n<td><span data-math=\"y + 1\"></span></td>\n<td>=</td>\n<td>240</td>\n</tr>\n</tbody>\n</table>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"y\\left({y + 1} \\right) = 240\"></span></td>\n<td>The equation is not in standard form.</td>\n</tr>\n<tr>\n<td><span data-math=\"{y^2} + y = 240\"></span></td>\n<td>Distribute on the left.</td>\n</tr>\n<tr>\n<td><span data-math=\"{y^2} + y - 240 = 240 - 240\"></span></td>\n<td>Subtract to bring it into standard form.</td>\n</tr>\n<tr>\n<td><span data-math=\"{y^2} + y - 240 = 0\"></span></td>\n<td>The equation is in standard form. Use one of the solution methods.</td>\n</tr>\n</tbody>\n</table>\n<p>Hint: Use <a href=\"https://www.wolframalpha.com/\" rel=\"nofollow\" target=\"_blank\">https://www.wolframalpha.com/</a> to “factor 240” and look for a pair whose sum is 1 and whose product is 240. There is one pair that works: 16 and –15. You want the signs different to have a negative product. You want the 16 positive to have the middle term positive.</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"\\left({y + 16} \\right)\\left({y - 15} \\right) = 0\"></span></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"y + 16 = 0\"></span></td>\n<td><span data-math=\"y - 15 = 0\"></span></td>\n<td>Set factors equal to zero.</td>\n</tr>\n<tr>\n<td><span data-math=\"y = - 16\"></span></td>\n<td><span data-math=\"y = 15\"></span></td>\n<td>Solve each new equation.</td>\n</tr>\n<tr>\n<td><span data-math=\"y + 1 = - 15\"></span></td>\n<td><span data-math=\"y + 1 = 16\"></span></td>\n<td>Find the second integer for each solution.</td>\n</tr>\n</tbody>\n</table>\n<p>There are two pairs of numbers that work: –16 and –15 are one pair; 15 and 16 are the other pair</p>\n<p>Checking is left to you.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "16, 15 and –16, –15 "
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  4,
+  3,
+  2,
+  1
+ ]
+}

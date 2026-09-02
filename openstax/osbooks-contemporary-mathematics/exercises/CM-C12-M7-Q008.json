@@ -1,0 +1,416 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-20T05:57:10.618Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVFMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2ae44871e21d18860c5d528fa537be25175e921a",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVFMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2ae44871e21d18860c5d528fa537be25175e921a/CS_Figure_12_07_201.png"
+  },
+  {
+   "created_at": "2024-12-20T05:57:10.620Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdThPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2f67b5c8a58e32ae4eecd7ba6b1e1d309295c829",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdThPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2f67b5c8a58e32ae4eecd7ba6b1e1d309295c829/CS_Figure_12_07_201.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:12-07-02",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:326f21f4-0eaf-4ac7-8de9-22a71b149308",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:12-7-hamilton-cycles"
+ ],
+ "uuid": "74091b69-a779-400d-b348-daef10e37f7e",
+ "group_uuid": "913f3714-93d3-4711-9009-aa81a997a61d",
+ "number": 33394,
+ "version": 13,
+ "uid": "33394@13",
+ "published_at": "2024-12-20T05:57:14.373Z",
+ "nickname": "CM-C12-M7-Q008",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, use the figure to determine whether the sequence of vertices in the given graph is a Hamilton cycle, an Euler circuit, both, or neither.\n<br>\n<img src=\"exercises/media/49744a5560cd7bbe.png\" alt=\"Three graphs. Graph A has six vertices: c, d, e, b, f, and g. Edges connect c d, d e, e g, d g, d f, b f, b g, c f, and f g. Graph L has six vertices: h, i, n, k, j, and m. Edges connect h i, i n, n k, i k, i j, k j, k m, m j, and j h. Graph U has seven vertices: t, s, r, o, q, v, and w. Edges connect to, t s, s r, r w, q o, q v, and w v.\">\n",
+ "questions": [
+  {
+   "id": 544454,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>A</i>: <i>f</i> → <i>b</i> → <i>g</i> → <i>e</i> → <i>d</i> → <i>c</i> → <i>f</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544455,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>A</i>: <i>g</i> → <i>b</i> → <i>f</i> → <i>c</i> → <i>d</i> → <i>e</i> → <i>g</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544456,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>A</i>: <i>d</i> → <i>e</i> → <i>g</i> → <i>d</i> → <i>f</i> → <i>b</i> → <i>g</i> → <i>f</i> → <i>c</i> → <i>d</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544457,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>L</i>: <i>h</i> → <i>i</i> → <i>k</i> → <i>n</i> → <i>j</i> → <i>h</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544458,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>L</i>: <i>n</i> → <i>i</i> → <i>h</i> → <i>j</i> → <i>m</i> → <i>k</i> → <i>n</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544459,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>L</i>: <i>j</i> → <i>i</i> → <i>n</i> → <i>k</i> → <i>i</i> → <i>j</i> → <i>k</i> → <i>m</i> → <i>j</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544460,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>U</i>: <i>v</i> → <i>w</i> → <i>r</i> → <i>s</i> → <i>t</i> → <i>o</i> → <i>q</i> → <i>v</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544461,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>U</i>: <i>w</i> → <i>q</i> → <i>r</i> → <i>s</i> → <i>t</i> → <i>o</i> → <i>v</i> → <i>w</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

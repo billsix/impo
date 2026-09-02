@@ -1,0 +1,378 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:08-06-02",
+  "context-cnxmod:5f393556-fbd8-4f70-adb2-fd7458a9d06b",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-6-the-normal-distribution"
+ ],
+ "uuid": "9ba127cb-392d-48c5-8965-49bd3c20a4f2",
+ "group_uuid": "d485cbc9-d527-4533-9d5a-d4c7fe300ba4",
+ "number": 29071,
+ "version": 7,
+ "uid": "29071@7",
+ "published_at": "2024-11-28T15:26:12.080Z",
+ "nickname": "CM-C08-M6-004",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 529845,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If data are distributed normally with mean 0 and standard deviation 3, what percent of the data fall between –9 and 9?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The 68–95–99.7 Rule tells you that 68 percent of the data would fall within 3 standard deviations above or below the mean. Ninety-five percent of the data would fall within 2 standard deviations above or below the mean. Finally, 99.7 percent of the data would fall within 1 standard deviation above or below the mean.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>mean − 3 SD</td>\n<td>mean − 2 SD</td>\n<td>mean − 1 SD</td>\n<td>mean</td>\n<td>mean + 1 SD</td>\n<td>mean + 2 SD</td>\n<td>mean + 3 SD</td>\n</tr>\n<tr>\n<td>0 − 9</td>\n<td>0 − 6</td>\n<td>0 − 3</td>\n<td>0</td>\n<td>0 + 3</td>\n<td>0 + 6</td>\n<td>0 + 9</td>\n</tr>\n<tr>\n<td>−9</td>\n<td>−6</td>\n<td>−3</td>\n<td>0</td>\n<td>3</td>\n<td>6</td>\n<td>9</td>\n</tr>\n</tbody>\n</table>\n<p>The rule tells you that 99.7 percent of the data fall between −9 and 9.</p>\n<p>99.7%</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "99.7%"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529846,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If data are distributed normally with mean 50 and standard deviation 10, what percent of the data fall between 30 and 70?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The 68–95–99.7 Rule tells you that 68 percent of the data would fall within 3 standard deviations above or below the mean. Ninety-five percent of the data would fall within 2 standard deviations above or below the mean. Finally, 99.7 percent of the data would fall within 1 standard deviation above or below the mean.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>mean − 3 SD</td>\n<td>mean − 2 SD</td>\n<td>mean − 1 SD</td>\n<td>mean</td>\n<td>mean + 1 SD</td>\n<td>mean + 2 SD</td>\n<td>mean + 3 SD</td>\n</tr>\n<tr>\n<td>50 − 30</td>\n<td>50 − 20</td>\n<td>50 − 10</td>\n<td>50</td>\n<td>50 + 10</td>\n<td>50 + 20</td>\n<td>50 + 30</td>\n</tr>\n<tr>\n<td>20</td>\n<td>30</td>\n<td>40</td>\n<td>50</td>\n<td>60</td>\n<td>70</td>\n<td>80</td>\n</tr>\n</tbody>\n</table>\n<p>The 68–95–99.7 Rule tells you that 95 percent of the data falls between 30 and 70.</p>\n<p>95%</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "95%"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529847,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If data are distributed normally with mean 60 and standard deviation 5, what percent of the data fall between 55 and 65?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The 68–95–99.7 Rule tells you that 68 percent of the data would fall within 3 standard deviations above or below the mean. Ninety-five percent of the data would fall within 2 standard deviations above or below the mean. Finally, 99.7 percent of the data would fall within 1 standard deviation above or below the mean.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>mean − 3 SD</td>\n<td>mean − 2 SD</td>\n<td>mean − 1 SD</td>\n<td>mean</td>\n<td>mean + 1 SD</td>\n<td>mean + 2 SD</td>\n<td>mean + 3 SD</td>\n</tr>\n<tr>\n<td>60 − 15</td>\n<td>60 − 10</td>\n<td>60 − 5</td>\n<td>60</td>\n<td>60 + 5</td>\n<td>60 + 10</td>\n<td>60 + 15</td>\n</tr>\n<tr>\n<td>45</td>\n<td>50</td>\n<td>55</td>\n<td>60</td>\n<td>65</td>\n<td>70</td>\n<td>75</td>\n</tr>\n</tbody>\n</table>\n<p>The 68–95–99.7 Rule tells you that 68 percent of the data falls between 55 and 65.</p>\n<p>68%</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "68%"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,385 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-20T06:22:02.009Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcTRMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b9ad60a471d74b28ef3c4e8ba5e6401562cc967e",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcTRMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b9ad60a471d74b28ef3c4e8ba5e6401562cc967e/CS_Figure_12_08_181.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:12-08-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:8be2bfc6-8069-470f-9ef6-819504fcd54a",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:12-8-hamilton-paths"
+ ],
+ "uuid": "7a2841c4-aad3-464f-a718-bbe423a18ca8",
+ "group_uuid": "2ec69211-3914-4e17-879a-12095cc00274",
+ "number": 34124,
+ "version": 8,
+ "uid": "34124@8",
+ "published_at": "2024-12-20T06:22:05.460Z",
+ "nickname": "CM-C12-M8-Q003",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Use  Graph <i>L</i> to find a Hamilton path between each pair of vertices or indicate that there isn’t one.\n<figure>\n<figcaption>Graph <i>L</i></figcaption>\n<img src=\"exercises/media/55d5bfcc78afd582.png\" alt=\"Graph L has two quadrilaterals. The vertices of the first quadrilateral are m, o, n, and p. The vertices of the second quadrilateral are q, r, s, and t. Other edges connect m to n, n to q, and q to s.\">\n</figure>",
+ "questions": [
+  {
+   "id": 544519,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<i>p</i> to <i>r</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>A path that visits each vertex exactly once is a Hamilton path. Recall that a path is a walk that has no repeated vertices or edges. It does not need to start and end on the same vertex.</p>\n<p>To find a bridge, avoid the bridges until you must cross them. This graph has a bridge (<i>nq</i>), so stay as far away from it as you can.</p>\n<p>Since you start at <i>p</i>, avoid being near the bridge and choose <i>m</i>. So far you have:</p>\n<p> <i>p → m</i></p>\n<p>Since you are staying away from the bridge, go to <i>o</i>.</p>\n<p><i>p → m → o</i></p><i>\n</i><p><i></i>Time to go over the bridge.</p>\n<p><i>p → m → o → n → q</i></p>\n<p>You need to end at <i>r</i>, so go around the vertices to end at <i>r.</i></p>\n<p><i>p → m → o → n → q → t → s → r</i></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<i>p</i> → <i>m</i> → <i>o</i> → <i>n</i> → <i>q</i> → <i>t</i> → <i>s</i> → <i>r</i>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544520,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<i>m</i> to <i>p</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "You cannot find a Hamilton path that starts at <i>m</i> and ends at <i>p</i> since they are on the same side of bridge <i>nq</i>."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "none"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544521,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<i>o</i> to <i>q</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "You cannot find a Hamilton path that starts at <i>o</i> and ends at <i>q</i> since this sequence ends at one end of the bridge <i>nq</i>. The Hamilton path would have to go around the four-cycle subgraph on the left, cross the bridge (<i>nq</i>), and then go round the four-cycle subgraph on the right. Hamilton paths cannot start or end on the vertices that form the bridge. They start on a vertex adjacent to the bridge on one side and end on a vertex adjacent to the bridge on the other side."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "none"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

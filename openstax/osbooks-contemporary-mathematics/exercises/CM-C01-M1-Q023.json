@@ -1,0 +1,402 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:01-01-05",
+  "context-cnxmod:2a41a71b-c2db-4787-bb5b-eee8b2f99e02",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:1-1-basic-set-concepts"
+ ],
+ "uuid": "b84e25af-212f-49e5-8d8e-7af4c7794a57",
+ "group_uuid": "2cea040f-ade0-4074-b58c-0298a961ea67",
+ "number": 29191,
+ "version": 10,
+ "uid": "29191@10",
+ "published_at": "2024-09-28T05:41:08.645Z",
+ "nickname": "CM-C01-M1-Q023",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, determine whether set <span data-math=\"A\">A</span> and set <span data-math=\"B\">B</span> are equal, equivalent or neither.",
+ "questions": [
+  {
+   "id": 494094,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"A = \\left\\{ {{\\text{right, acute, obtuse}}} \\right\\}\">A = \\left\\{ {{\\text{right, acute, obtuse}}} \\right\\}</span>; <span data-math=\"B = \\left\\{ {{\\text{equilateral, scalene, isoceles}}} \\right\\}\">B = \\left\\{ {{\\text{equilateral, scalene, isoceles}}} \\right\\}</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494095,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"A = \\left\\{ {1,\\frac{1}{2},\\frac{1}{3},\\frac{1}{4}} \\right\\}\">A = \\left\\{ {1,\\frac{1}{2},\\frac{1}{3},\\frac{1}{4}} \\right\\}</span>; <span data-math=\"B = \\left\\{ {\\frac{1}{4},\\frac{1}{3},\\frac{1}{2},1} \\right\\}\">B = \\left\\{ {\\frac{1}{4},\\frac{1}{3},\\frac{1}{2},1} \\right\\}</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494096,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"A = \\left\\{ {{\\text{red, orange, yellow}}} \\right\\}\">A = \\left\\{ {{\\text{red, orange, yellow}}} \\right\\}</span>; <span data-math=\"B = \\left\\{ {{\\text{green, blue, indigo, violet}}} \\right\\}\">B = \\left\\{ {{\\text{green, blue, indigo, violet}}} \\right\\}</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494097,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"A = \\left\\{ {5n|n \\in \\mathbb{N}} \\right\\}\">A = \\left\\{ {5n|n \\in \\mathbb{N}} \\right\\}</span>; <span data-math=\"B = \\mathbb{N}\">B = \\mathbb{N}</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494098,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"A = \\{  - 2, - 1,0, \\ldots \\} \">A = \\{  - 2, - 1,0, \\ldots \\}</span>; <span data-math=\"B = \\{ 2,3,5, \\ldots \\}\">B = \\{ 2,3,5, \\ldots \\}</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494099,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"A = \\{{\\text{John, Paul, George, Ringo}}\\} \">A = \\{{\\text{John, Paul, George, Ringo}}\\}</span>; <span data-math=\"B = \\{ \\text{Bono, Larry, The Edge, Adam}\\}\">B = \\{ \\text{Bono, Larry, The Edge, Adam}\\}</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494100,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"A = \\emptyset ;\">A = \\emptyset ;</span> <span data-math=\"B = \\{ {\\text{ }}\\} .\">B = \\{ {\\text{ }}\\} .</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 494101,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"A = \\left\\{ {{\\text{lemon, lime, orange}}} \\right\\}\">A = \\left\\{ {{\\text{lemon, lime, orange}}} \\right\\}</span>; <span data-math=\"B = \\left\\{ {{\\text{orange, lemon, lime, grape}}} \\right\\}.\">B = \\left\\{ {{\\text{orange, lemon, lime, grape}}} \\right\\}.</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

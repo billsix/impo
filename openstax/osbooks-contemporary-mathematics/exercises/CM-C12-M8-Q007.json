@@ -1,0 +1,415 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-20T06:32:18.923Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcThMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b84e77cc52c733d34fcbe9d8fbdc7590817e8bff",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcThMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b84e77cc52c733d34fcbe9d8fbdc7590817e8bff/CS_Figure_12_08_221.png"
+  },
+  {
+   "created_at": "2024-12-20T06:32:18.927Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdkFPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--99177d8a12041a3628ed037567fd6c86d9e209ba",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdkFPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--99177d8a12041a3628ed037567fd6c86d9e209ba/CS_Figure_12_08_221.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:12-08-03",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:8be2bfc6-8069-470f-9ef6-819504fcd54a",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:12-8-hamilton-paths"
+ ],
+ "uuid": "5dd5c6cf-863f-49f3-94a6-75cae5c281f8",
+ "group_uuid": "aed65b97-84f2-4287-8968-ee8891886ed4",
+ "number": 34128,
+ "version": 12,
+ "uid": "34128@12",
+ "published_at": "2024-12-20T06:32:22.552Z",
+ "nickname": "CM-C12-M8-Q007",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, use the figure to determine whether the sequence of vertices in the given graph is a Hamilton path, an Euler trail, both, or neither. \n<br>\n\n<img src=\"exercises/media/fc5857f11a4e3d19.png\" alt=\"Three graphs. Graph G has six vertices: c, d, e, b, f, and g. Edges connect c d, d e, e g, d g, d f, b f, b g, c f, and f g. Graph N has six vertices: h, i, n, k, j, and m. Edges connect h i, i n, n k, i k, i j, k j, k m, m j, and j h. Graph W has seven vertices: t, s, r, o, q, v, and w. Edges connect t o, t s, s r, r w, q o, q v, and w v.\">\n\n",
+ "questions": [
+  {
+   "id": 544552,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>G</i>: <i>f</i> → <i>b</i> → <i>g</i> → <i>e</i> → <i>d</i> → <i>c</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544553,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>G</i>: <i>g</i> → <i>b</i> → <i>f</i> → <i>c</i> → <i>d</i> → <i>e</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544554,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>G</i>: <i>f</i> → <i>b</i> → <i>g</i> → <i>d</i> → <i>f</i> → <i>c</i> → <i>d</i> → <i>e</i> → <i>g</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544555,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>W</i>: <i>v</i> → <i>w</i> → <i>r</i> → <i>s</i> → <i>t</i> → <i>o</i> → <i>q</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544556,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>W</i>: <i>s</i> → <i>r</i> → <i>w</i> → <i>v</i> → <i>q</i> → <i>o</i> → <i>t</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544557,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>N</i>: <i>h</i> → <i>i</i> → <i>k</i> → <i>n</i> → <i>j</i> → <i>h</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544558,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>N</i>: <i>n</i> → <i>i</i> → <i>h</i> → <i>j</i> → <i>m</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 544559,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>N</i>: <i>m</i> → <i>j</i> → <i>h</i> → <i>i</i> → <i>k</i> → <i>n</i> → <i>i</i> → <i>j</i> → <i>k</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

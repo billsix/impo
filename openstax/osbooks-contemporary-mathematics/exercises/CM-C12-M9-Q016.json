@@ -1,0 +1,362 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:12-09-04",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium"
+ ],
+ "uuid": "9bf563dc-d453-4de1-9016-b61004094fde",
+ "group_uuid": "397b1647-c559-46b7-991a-914ee58a8e07",
+ "number": 34149,
+ "version": 9,
+ "uid": "34149@9",
+ "published_at": "2024-12-19T06:26:28.885Z",
+ "nickname": "CM-C12-M9-Q016",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "The products at a particular factory are manufactured in phases. The same equipment is utilized for each phase, but it must be formatted differently to accomplish different tasks. The transition time to convert between a format for one task and another task varies. The times are given in Table 12.13. In the following exercises, use the table and the nearest neighbor method to find an order in which to complete the tasks, which keeps the transition times down and ends with the same set up as it began so that the factory is ready to start the next batch. Assume that there are no restrictions on which tasks can be completed in which order. Hint: The nearest neighbor algorithm may give a different result depending on which vertex is the starting vertex, so, you must check all possibilities.\n<br>\n<table class=\"unnumbered\" summary=\".\">\n<thead>\n<tr>\n<th>Task</th>\n<th><i>A</i></th>\n<th><i>B</i></th>\n<th><i>C</i></th>\n<th><i>D</i></th>\n<th><i>E</i></th>\n<th><i>F</i></th>\n<th><i>G</i></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><i>A</i></td>\n<td>0</td>\n<td>75</td>\n<td>130</td>\n<td>45</td>\n<td>120</td>\n<td>70</td>\n<td>100</td>\n</tr>\n<tr>\n<td><i>B</i></td>\n<td>75</td>\n<td>0</td>\n<td>140</td>\n<td>65</td>\n<td>115</td>\n<td>25</td>\n<td>60</td>\n</tr>\n<tr>\n<td><i>C</i></td>\n<td>130</td>\n<td>140</td>\n<td>0</td>\n<td>35</td>\n<td>55</td>\n<td>20</td>\n<td>125</td>\n</tr>\n<tr>\n<td><i>D</i></td>\n<td>45</td>\n<td>65</td>\n<td>35</td>\n<td>0</td>\n<td>50</td>\n<td>30</td>\n<td>40</td>\n</tr>\n<tr>\n<td><i>E</i></td>\n<td>120</td>\n<td>115</td>\n<td>55</td>\n<td>50</td>\n<td>0</td>\n<td>95</td>\n<td>145</td>\n</tr>\n<tr>\n<td><i>F</i></td>\n<td>70</td>\n<td>25</td>\n<td>20</td>\n<td>30</td>\n<td>95</td>\n<td>0</td>\n<td>15</td>\n</tr>\n<tr>\n<td><i>G</i></td>\n<td>100</td>\n<td>60</td>\n<td>125</td>\n<td>40</td>\n<td>145</td>\n<td>15</td>\n<td>0</td>\n</tr>\n</tbody>\n<caption>Manufacturing Equipment Transition Times in Minutes</caption>\n</table>\n",
+ "questions": [
+  {
+   "id": 543207,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<i>A, C, D, F, G</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 543208,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<i>B, D, E, F, G</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 543209,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<i>A, B, C, D, E, F</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 543210,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<i>B, C, D, E, F, G</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 543211,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<i>A, B, C, D, E, F, G</i>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

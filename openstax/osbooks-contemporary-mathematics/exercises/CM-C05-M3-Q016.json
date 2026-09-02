@@ -1,0 +1,409 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:05-03-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:cec27184-c942-4a70-afef-303e2603cca4",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-3-linear-inequalities-in-one-variable-with-applications"
+ ],
+ "uuid": "4fbdbbba-a243-48f2-8722-af296b6e4dda",
+ "group_uuid": "a616a353-5bac-4a2d-ac91-bbcfb66f939f",
+ "number": 30504,
+ "version": 7,
+ "uid": "30504@7",
+ "published_at": "2024-10-26T12:46:36.204Z",
+ "nickname": "CM-C05-M3-Q016",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, choose the equation that best models the situation.",
+ "questions": [
+  {
+   "id": 508542,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Renaldo is hauling boxes of lawn chairs. Each box is the same size, 8 cubic feet. Renaldo’s truck has a capacity of 764 cubic feet. How many boxes of lawn chairs can Renaldo put in his truck?",
+   "answers": [
+    {
+     "id": 996474,
+     "content_html": "<span data-math=\"8 < 764x\">8 &lt; 764x</span>",
+     "correctness": "0.0"
+    },
+    {
+     "id": 996475,
+     "content_html": "<span data-math=\"8x < 764\">8x &lt; 764</span>",
+     "correctness": "1.0"
+    },
+    {
+     "id": 996476,
+     "content_html": "<span data-math=\"8 > 764x\">8 &gt; 764x</span>",
+     "correctness": "0.0"
+    },
+    {
+     "id": 996477,
+     "content_html": "<span data-math=\"8x > 764\">8x &gt; 764</span>",
+     "correctness": "0.0"
+    },
+    {
+     "id": 996478,
+     "content_html": "None of these",
+     "correctness": "0.0",
+     "feedback_html": ""
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Break your words into components.</p>\n<p>Let <i>x</i> = the number of lawn chairs.</p>\n<p>8 cubic feet = size of one box.</p>\n<p>764 cubic feet = capacity of truck.</p>\n<p>Break the words into components.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>764</td>\n<td>is the maximum for</td>\n<td>8</td>\n<td>times</td>\n<td>number of boxes</td>\n</tr>\n<tr>\n<td>764</td>\n<td>&lt;</td>\n<td>8</td>\n<td>∙</td>\n<td><i>x</i></td>\n</tr>\n</tbody>\n</table>\n<p>Solve the inequality <span data-math=\"764 > 8x\"></span></p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"764 > 8x\"></span></td>\n<td>Reverse to match one of the options.</td>\n</tr>\n<tr>\n<td><span data-math=\"8x < 764\"></span></td>\n<td>This is correct. You do not need to solve further for this exercise.</td>\n</tr>\n</tbody>\n</table>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"8x < 764\">8x &lt; 764</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 508543,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Bernadette babysits the neighbor’s kids, making on average $50 a night. How many nights will she have to babysit in order to earn enough money to buy a used car, whose cost is $8,120?",
+   "answers": [
+    {
+     "id": 996479,
+     "content_html": "<span data-math=\"50 < \\text{8,120x}\">50 &lt; \\text{8,120x}</span>",
+     "correctness": "0.0"
+    },
+    {
+     "id": 996480,
+     "content_html": "<span data-math=\"50x < \\text{8,120}\">50x &lt; \\text{8,120}</span>",
+     "correctness": "0.0"
+    },
+    {
+     "id": 996481,
+     "content_html": "<span data-math=\"50 < \\text{8,120x}\">50 &lt; \\text{8,120x}</span>",
+     "correctness": "0.0"
+    },
+    {
+     "id": 996482,
+     "content_html": "<span data-math=\"50x > \\text{8,120}\">50x &gt; \\text{8,120}</span>",
+     "correctness": "1.0"
+    },
+    {
+     "id": 996483,
+     "content_html": "None of these",
+     "correctness": "0.0"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Break your words into components.</p>\n<p>Let <i>x</i> = the number of nights to babysit.</p>\n<p>$50 = the average amount earned per night babysitting.</p>\n<p>$8,120 = the amount needed to buy a car.</p>\n<p>Break the words into components.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>$8,120</td>\n<td>is the minimum needed</td>\n<td>50</td>\n<td>times</td>\n<td>number of nights babysitting</td>\n</tr>\n<tr>\n<td>8,120</td>\n<td>&lt;</td>\n<td>50</td>\n<td>∙</td>\n<td><i>x</i></td>\n</tr>\n</tbody>\n</table>\n<p>Solve the inequality <span data-math=\"8,120 \\ge 50x\"></span></p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"8,120 < 50x\"></span></td>\n<td>Reverse to match one of the options.</td>\n</tr>\n<tr>\n<td><span data-math=\"50x > 8,120\"></span></td>\n<td>This is correct. You do not need to solve further for this exercise.</td>\n</tr>\n</tbody>\n</table>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"50x > \\text{8,120}\">50x &gt; 8,120</span>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

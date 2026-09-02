@@ -1,0 +1,544 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:12-04-03",
+  "lo:stax-cmath:12-04-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium"
+ ],
+ "uuid": "5cfc8b8b-3e0d-4484-be05-a6298e3ff79b",
+ "group_uuid": "85cff124-6a20-407a-bcad-895f9de9a703",
+ "number": 32973,
+ "version": 5,
+ "uid": "32973@5",
+ "published_at": "2024-12-19T04:56:45.856Z",
+ "nickname": "CM-C12-M4-Q006",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, determine whether each statement is always true or sometimes true.",
+ "questions": [
+  {
+   "id": 542947,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A trail is a path.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "All paths are trails, but not all trails are paths. Some trails use the same vertex more than once. A path has no repeated vertices."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "sometimes true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 542948,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A trail is a walk.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "All trails are walks. Trails use connected vertices, which is what it takes to be a walk."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "always true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 542949,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A walk is a path.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "All paths are walks, but not all walks are paths. Some walks use the same vertex more than once. A path has no repeated vertices."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "sometimes true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 542950,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A circuit is a trail.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "By definition, a circuit is a trail that begins and ends at the same vertex."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "always true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 542951,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A directed cycle is a path.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "By definition, a directed cycle is a path that begins and ends at the same vertex."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "always true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 542952,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A circuit is a directed cycle.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>By definition, a directed cycle is a path that begins and ends at the same vertex. A circuit begins and ends at the same vertex.</p>\n<p>A directed cycle does not necessarily start and end at the same vertex, so not all directed cycles are circuits.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "sometimes true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 542953,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A directed cycle is a circuit.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>By definition, a directed cycle is a path that begins and ends at the same vertex.</p>\n<p>A circuit is a trail that begins and ends at the same vertex. Thus, a directed cycle is a circuit.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "always true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 542954,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If a graph has an <span data-math=\"n\">n</span>-coloring, then its chromatic number is <span data-math=\"n\">n</span>.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "You could color a graph with more colors than the minimum number required. For instance, you could use a different color for every vertex on a quadrilateral cycle. This graph would have a chromatic number of 2 but use 4 colors."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "sometimes true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 542955,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If the chromatic number of a graph is <span data-math=\"n\">n</span>, then it has an <span data-math=\"n\">n</span>-coloring.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "This is the definition of the chromatic number."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "always true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 542956,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If a graph is planar, then it has a chromatic number of at most four.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "always true"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

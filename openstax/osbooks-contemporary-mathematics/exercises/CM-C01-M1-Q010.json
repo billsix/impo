@@ -1,0 +1,383 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:01-01-05",
+  "context-cnxmod:2a41a71b-c2db-4787-bb5b-eee8b2f99e02",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:1-1-basic-set-concepts"
+ ],
+ "uuid": "3c132080-cf8b-4400-a2ce-569c70406c38",
+ "group_uuid": "7f5b184d-3651-4a62-ad1b-2c63e5153895",
+ "number": 29175,
+ "version": 12,
+ "uid": "29175@12",
+ "published_at": "2024-09-28T02:23:58.727Z",
+ "nickname": "CM-C01-M1-Q010",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>Determine if the following pairs of sets are equal, equivalent, or neither.</p>",
+ "questions": [
+  {
+   "id": 493924,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Set <span data-math=\"B = \\left\\{ {b,{\\rm{ }}a,{\\rm{ }}k,{\\rm{ }}e} \\right\\}\">B = \\left\\{ {b,{\\rm{ }}a,{\\rm{ }}k,{\\rm{ }}e} \\right\\}</span> and set <span data-math=\"A = \\left\\{ {a,{\\rm{ }}b,{\\rm{ }}e,{\\rm{ }}k} \\right\\}\">A = \\left\\{ {a,{\\rm{ }}b,{\\rm{ }}e,{\\rm{ }}k} \\right\\}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Equal sets have the same elements, without regard to order. These sets have the same elements, although in a different order."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Set <span data-math=\"B\">B</span> is equal to set <span data-math=\"A\">A</span>, <span data-math=\"B = A\">B = A</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 493925,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Set <span data-math=\"B = \\left\\{ {b,{\\rm{ }}a,{\\rm{ }}k,{\\rm{ }}e} \\right\\}\">B = \\left\\{ {b,{\\rm{ }}a,{\\rm{ }}k,{\\rm{ }}e} \\right\\}</span> and set <span data-math=\"F = \\left\\{ {f,{\\rm{ }}l,{\\rm{ }}a,{\\rm{ }}k,{\\rm{ }}e} \\right\\}\">F = \\left\\{ {f,{\\rm{ }}l,{\\rm{ }}a,{\\rm{ }}k,{\\rm{ }}e} \\right\\}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Equal sets have the same elements, without regard to order. These sets are not equal because only one has the element <i>f</i>. Equivalent sets have the same number of elements. One set has four elements, while the other set has five elements, so they are not equivalent. These sets are neither equal nor equivalent."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "neither"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 493926,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Set <span data-math=\"B = \\left\\{ {b,{\\rm{ }}a,{\\rm{ }}k,{\\rm{ }}e} \\right\\}\">B = \\left\\{ {b,{\\rm{ }}a,{\\rm{ }}k,{\\rm{ }}e} \\right\\}</span> and set <span data-math=\"C = \\left\\{ {c,{\\rm{ }}a,{\\rm{ }}k,{\\rm{ }}e} \\right\\}\">C = \\left\\{ {c,{\\rm{ }}a,{\\rm{ }}k,{\\rm{ }}e} \\right\\}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Equal sets have the same elements, without regard to order. Equivalent sets have the same number of elements. These sets are equivalent but not equal because they have the same number of elements (four), but not the same elements. One has a <i>b</i>, while the other has a <i>c</i>."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Set <span data-math=\"B\">B</span> is equivalent to set <span data-math=\"C\">C</span>, <span data-math=\"B \\sim C\">B \\sim C</span>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

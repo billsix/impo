@@ -1,0 +1,377 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-02-02",
+  "context-cnxmod:d49636a4-186a-43a6-b8d4-f6e5453a9660",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-2-fairness-in-voting-methods"
+ ],
+ "uuid": "db68c2fb-b02b-4dd0-8faf-8f89778bea6c",
+ "group_uuid": "2093b0f0-074f-41e0-9cf4-614dc7ac7179",
+ "number": 29529,
+ "version": 6,
+ "uid": "29529@6",
+ "published_at": "2024-12-24T01:33:21.645Z",
+ "nickname": "CM-C11-M2-Q004",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Use the summary of ranked ballots below  to find the winner and determine whether the Condorcet criterion is satisfied when each of the following voting methods are used. Recall that Option A is a Condorcet candidate.\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Votes</th>\n<th>3</th>\n<th>2</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Option A</td>\n<td>1</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Option B</td>\n<td>2</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Option C</td>\n<td>3</td>\n<td>2</td>\n</tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 545740,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Plurality",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Option A: 3 votes</p>\n<p>Option B: 2 votes</p>\n<p>Option C: 0 votes</p>\n<p>Option A wins by having the most votes. The Condorcet criterion is satisfied.</p>\n<p>The pairwise comparison had already shown that Option A was a Condorcet candidate.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th style=\"width:10%; background: linear-gradient(to top right, transparent calc(50% - 1px), black 50%, transparent calc(50% + 1px) )\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opponent<br>Runner</th>\n<th>A</th>\n<th>B</th>\n<th>C</th>\n<th>Points</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td>&nbsp;</td>\n<td>AB 3 wins</td>\n<td>AC 2<p></p>\n<p>wins</p></td>\n<td>2</td>\n</tr>\n<tr>\n<td>B</td>\n<td>BA 2<p></p>\n<p>Cross out BA 2</p></td>\n<td>&nbsp;</td>\n<td>BC 5<p></p>\n<p>wins</p></td>\n<td>1</td>\n</tr>\n<tr>\n<td>C</td>\n<td>CA 2<p></p>\n<p>Cross out CA 2</p></td>\n<td>CB 0<p></p>\n<p>CB 0</p></td>\n<td>&nbsp;</td>\n<td>0</td>\n</tr>\n</tbody>\n</table>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Option A. Yes, the Condorcet criterion is satisfied."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545741,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Ranked-choice voting",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>First Round:</p>\n<p>Total votes: 5</p>\n<p>50 percent of 5 is 2.5.</p>\n<p>To win the majority, an option needs 3 votes or more.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Votes</th>\n<th>3</th>\n<th>2</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Option A</td>\n<td>1</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Option B</td>\n<td>2</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Option C</td>\n<td>3</td>\n<td>2</td>\n</tr>\n</tbody>\n</table>\n<p>Option A: 3 votes</p>\n<p>Option B: 2 votes</p>\n<p>Option C: 0 votes</p>\n<p>Option A has enough votes to satisfy winning by a majority. The Condorcet criterion is satisfied.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Option A. Yes, the Condorcet criterion is satisfied."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545742,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Borda count",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>In Borda count, the first place out of three earns (3 – 1) or 2 points.</p>\n<p>Second place earns (3 – 2) or 1 point.</p>\n<p>Third place earns (3 – 3) or 0 points.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Votes</th>\n<th>3</th>\n<th>2</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Option A</td>\n<td>1</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Option B</td>\n<td>2</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Option C</td>\n<td>3</td>\n<td>2</td>\n</tr>\n</tbody>\n</table>\n<p>Option A: 3(2) + 2(0) = 6</p>\n<p>Option B: 3(1) + 2(2) = 7</p>\n<p>Option C: 3(0) + 2(1) = 2</p>\n<p>Option B wins. No, the Condorcet criterion is not satisfied. The Condorcet candidate did not win.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Option B.  No, the Condorcet criterion is not satisfied."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

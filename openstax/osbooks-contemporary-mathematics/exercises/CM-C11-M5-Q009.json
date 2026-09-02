@@ -1,0 +1,423 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-05-01",
+  "lo:stax-cmath:11-05-02",
+  "lo:stax-cmath:11-05-03",
+  "lo:stax-cmath:11-05-04",
+  "context-cnxmod:de68113b-2554-450f-88dd-7768f6d9f73f",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-5-fairness-in-apportionment-methods"
+ ],
+ "uuid": "0978ad97-c115-4bf9-8417-2839fd99ce78",
+ "group_uuid": "d094183b-61d0-4687-89a5-97f40a59fef0",
+ "number": 29607,
+ "version": 4,
+ "uid": "29607@4",
+ "published_at": "2024-12-23T09:59:56.516Z",
+ "nickname": "CM-C11-M5-Q009",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "In the following questions, a scenario is given. Determine whether the scenario is an example of a quota rule violation, the Alabama paradox, the population paradox, the new-states paradox, or none of these.",
+ "questions": [
+  {
+   "id": 545404,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A city purchased five new firetrucks and apportioned them among the existing fire stations. Although your neighborhood fire station has the same proportion of the city’s firetrucks as before the new ones were purchased, it now has one fewer.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "The Alabama paradox occurs when an increase in the house size reduces a state’s quota. This is a violation of the Alabama paradox because your neighborhood fire station suffered a reduction in fire trucks when the house size (number of fire trucks) increased."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The Alabama paradox"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545405,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The school resources officers in a county were reapportioned based on the most recent census. The number of students at Chapel Run Elementary went up while the number of students at Panther Trail Elementary went down. However, Chapel Run now has one fewer resources officer while Panther Trail has one more than it did previously.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The population paradox occurs when a state with an increasing population loses a seat while a state with a decreasing population either retains or gains seats. More generally, the population paradox occurs when a state with a higher population growth rate loses seats while a state with a lower population growth rate retains or gains seats.</p>\n<p>This is a violation of the population paradox because the Chapel Run school numbers went up, but they lost resources.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Population paradox"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545406,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The standard quota for States A, B, and C are 1.19, 2.73, and 5.71 respectively. State A received 1 seat, State B received 3 seats, and State C received 4 seats.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "State C’s standard quota is 5.71. The lower quota is 5 and the upper quota is 6. If a scenario exists in which a particular apportionment allocates a value greater than the upper quota or less than the lower quota, then that apportionment violates the quota rule and the apportionment method that was used violates the quota rule. State C received 4 seats, which is lower than the lower quota."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Quota rule violation"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545407,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A corporation that owns several hospitals purchased an additional hospital, causing the doctor to patient ratio to decrease.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "None of these"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545408,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "When the city of Cocoa annexed an adjacent unincorporated community, the number of seats on the city council was increased to maintain the standard ratio of citizens to seats, but one existing community of Cocoa still lost a seat on the city council to another existing community of Cocoa when the new community was added.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>This is an example of the new-state paradox, which occurs when the addition of a new state is accompanied by an increase in seats to maintain the standard ratio of population to seats, but one of the existing states loses a seat in the resulting reapportionment.</p>\n<p>An existing community of Cocoa lost a seat to another existing community when a new community was added.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "New-states paradox"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  4,
+  3,
+  2,
+  1
+ ]
+}

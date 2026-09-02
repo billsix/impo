@@ -1,0 +1,420 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:02-05-02",
+  "context-cnxmod:af6872ce-04a4-4025-a61f-6191f10d60fd",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:2-5-equivalent-statements"
+ ],
+ "uuid": "0c3be43a-34e4-484f-811a-63dba247b28a",
+ "group_uuid": "de933ab4-a4e1-46a8-b5d4-82daf248fda8",
+ "number": 29519,
+ "version": 9,
+ "uid": "29519@9",
+ "published_at": "2024-10-07T05:59:30.768Z",
+ "nickname": "CM-C02-M5-Q003",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Use the conditional statement, “If Dora is an explorer, then Boots is a monkey,” to identify the following:",
+ "questions": [
+  {
+   "id": 497475,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Write the hypothesis of the conditional statement and label it with a <span data-math=\"p\">p</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"p\">p</span>: Dora is an explorer.<p></p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 497476,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Write the conclusion of the conditional statement and label it with a <span data-math=\"q\">q</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"q\">q</span>: Boots is a monkey."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 497477,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Identify the following statement as the converse, inverse, or contrapositive: “If Dora is not an explorer, then Boots is not a monkey.”",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The original statement:</p>\n<p>If Dora is an explorer, then Boots is a monkey.</p>\n<p><span data-math=\"p\"></span>: Dora is an explorer.</p>\n<p><span data-math=\"q\"></span>: Boots is a monkey.</p>\n<p>In symbols, the original statement is <span data-math=\"p \\rightarrow q\"></span>.</p>\n<p>The new statement:</p>\n<p>If Dora is not an explorer, then Boots is not a monkey.</p>\n<p>In symbols, the new statement is <span data-math=\"{\\sim}p \\rightarrow {\\sim}q\"></span>.</p>\n<p>This is the inverse of the original statement. The inverse negates each statement but does not change the order.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Inverse"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 497478,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Identify the following statement as the converse, inverse, or contrapositive: “If Boots is a monkey, then Dora is an explorer.”",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The original statement:</p>\n<p>If Dora is an explorer, then Boots is a monkey.</p>\n<p><span data-math=\"p\"></span>: Dora is an explorer.</p>\n<p><span data-math=\"q\"></span>: Boots is a monkey.</p>\n<p>In symbols, the original statement is <span data-math=\"p \\rightarrow q\"></span>.</p>\n<p>The new statement:</p>\n<p>If Boots is a monkey, then Dora is an explorer.</p>\n<p>In symbols, the new statement is <span data-math=\"q \\rightarrow p\"></span>.</p>\n<p>This is the converse of the original statement. A converse changes the order of the original statement.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Converse"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 497479,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Which statement is logically equivalent to the inverse?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The inverse and the converse are equivalent. To show that two statements are logically equivalent, construct a truth table for a biconditional using the first statement as the hypothesis (the inverse, <span data-math=\"{\\sim}p \\rightarrow {\\sim}q)\"></span> and the second statement (the converse, <span data-math=\"q \\rightarrow p\"></span>) as the conclusion. If the last column holds true only, the statements are equivalent.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td><span data-math=\"p\"></span></td>\n<td><span data-math=\"q\"></span></td>\n<td><span data-math=\"{\\sim}p\"></span></td>\n<td><span data-math=\"{\\sim}q\"></span></td>\n<td><span data-math=\"{\\sim}p \\rightarrow {\\sim}q\"></span></td>\n<td><span data-math=\"q \\rightarrow p\"></span></td>\n<td><span data-math=\"({\\sim}p \\rightarrow {\\sim}q) \\leftrightarrow (q \\rightarrow p)\"></span></td>\n</tr>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n</tr>\n</tbody>\n</table>\n<p>The inverse and converse are equivalent since the last column is always true.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Converse"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

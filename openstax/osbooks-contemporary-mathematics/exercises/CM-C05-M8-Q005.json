@@ -1,0 +1,352 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:05-08-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:240fa88f-7202-49a8-b741-8c80ee7fa5ff",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-8-graphing-functions"
+ ],
+ "uuid": "34b2e750-e599-454d-bd44-0ac3e76d1575",
+ "group_uuid": "d8d3fcd6-85ab-4153-b7bb-6dca7389a2eb",
+ "number": 30615,
+ "version": 6,
+ "uid": "30615@6",
+ "published_at": "2024-11-01T11:30:20.298Z",
+ "nickname": "CM-C05-M8-Q005",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Identify the slope and <span data-math=\"y\">y</span>-intercept from the equation of the line.",
+ "questions": [
+  {
+   "id": 511130,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"y = 2x - 1\">y = 2x - 1</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>When the equation is in the slope-intercept form of the equation of the line,</p>\n<p><span data-math=\"y = mx + b\"></span>.</p>\n<p><i>m</i> = the slope.</p>\n<p>(0, <i>b</i>) = the y-intercept.</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"y = 2x - 1\"></span></td>\n<td>Since this equation is in slope intercept form, the slope is 2.</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>The <i>y</i>-intercept is (0, –1).</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "slope <span data-math=\"m = 2\">m = 2</span> and <span data-math=\"y{\\text{-intercept}} = (0,-1)\">y{\\text{-intercept}} = (0,-1)</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511131,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"x + 4y = 16\">x + 4y = 16</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>When the equation is in the slope-intercept form of the equation of the line,</p>\n<p><span data-math=\"y = mx + b\"></span>.</p>\n<p><i>m</i> = the slope.</p>\n<p>(0, <i>b</i>) = the y-intercept.</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"x + 4y = 16\"></span></td>\n<td>Solve for y.</td>\n</tr>\n<tr>\n<td><span data-math=\"x + 4y - x = 16 - x\"></span></td>\n<td>Subtract.</td>\n</tr>\n<tr>\n<td><span data-math=\"4y = - x + 16\"></span></td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"\\frac{{4y}}{4} = \\frac{{ - x + 16}}{4}\"></span></td>\n<td>Divide.</td>\n</tr>\n<tr>\n<td><span data-math=\"y = - \\frac{1}{4}x + 4\"></span></td>\n<td>This is now in slope intercept form.</td>\n</tr>\n</tbody>\n</table>\n<p>The slope is <span data-math=\" - \\frac{1}{4}\"></span>.</p>\n<p>The <i>y</i>-intercept is (0, 4).</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "slope <span data-math=\"m =  - \\frac{1}{4}\">m =  - \\frac{1}{4}</span> and <span data-math=\"y{\\text{-intercept}} = (0,4)\">y{\\text{-intercept}} = (0,4)</span>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

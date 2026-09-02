@@ -1,0 +1,336 @@
+{
+ "images": [
+  {
+   "created_at": "2023-04-04T21:42:01.776Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbkFQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--42228b1b000fdb225a86d2ef58787d86a1f010f3",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbkFQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--42228b1b000fdb225a86d2ef58787d86a1f010f3/Patch-12.14.png"
+  },
+  {
+   "created_at": "2023-04-04T21:42:01.780Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFFQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--60cd7c01e242fdcac7819ba1bcc076bbd0eb23fb",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFFQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--60cd7c01e242fdcac7819ba1bcc076bbd0eb23fb/Patch-12.14.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:12-03-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:e7e75c17-9443-4926-b747-491578836871",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:12-3-comparing-graphs"
+ ],
+ "uuid": "c0688043-a42c-44dd-a5bd-df957c222f16",
+ "group_uuid": "fda54a9e-0ebb-431a-9380-dfe614041d9c",
+ "number": 32951,
+ "version": 9,
+ "uid": "32951@9",
+ "published_at": "2023-04-04T21:42:04.727Z",
+ "nickname": "CM-C12-M3-Q002",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 340494,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Let's compare the games in Figures <i>A</i> and <i>B</i>. In the game Diamonds, shown in Figure <i>A</i>, each player begins in the space marked START and proceeds in a counterclockwise direction. On each turn, the player rolls a six-sided die and moves forward the number of spaces shown on the die. If the player lands on a space marked with a diamond, the player jumps to the next space marked with a diamond and stops there. The first player to land in or pass the space marked END wins. In the Dots game, shown in Figure <i>B</i>, each player begins in the space marked 1 and proceeds in numerical order through the numbered spaces. On each turn, the player rolls a six-sided die and moves forward the number of spaces shown on the die. When a player lands on a space marked with a green dot, they immediately move to the space indicated by the arrow. Construct a graph to represent each gameboard such that each vertex represented a space on the game board and each edge represented the ability of a player to move directly from one space to the next. For example, in the Dots game, the vertex representing space 3 would be adjacent to 2, 4, and 6. Identify at least three differences between a graph based on Diamonds and a graph based on Dots to show the graphs are not isomorphic.<br>\n<figure>\n<figcaption>Two Game Boards</figcaption>\n<img src=\"exercises/media/6bcbbac8b0f23ee9.png\" alt=\"Two gameboards. The first game board is titled, Figure A Diamond Game. It has 16 squares arranged around the edge of a rectangular board. The top left square reads, Start End. The second, fifth, eighth, eleventh, and fourteenth squares from the Start have a diamond shape drawn in the square. The second game board is titled, Figure B Dots Game. It has 16 squares arranged in 4 columns of 4 squares. The squares are numbered as follows: Column 1: 1, 2, 3, 4; Column 2: 8, 7, 6, 5; Column 3: 9, 10, 11, 12; Column 4: 16, 15, 14, 13. Green arrows connect square 3 to square 6, square 5 to square 12, square 7 to square 10, square 9 to square 16, and square 11 to square 14.\">\n</figure>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Answers may vary.\n<ul>\n<li>The total number of vertices in each graph is different. The Diamonds graph has 17 vertices while Dots graph has only 16.</li>\n<li>The degrees of vertices differ. The Diamonds graph has vertices of degrees 4 while the Dots graph does not.</li>\n<li>The graphs have different sizes of cyclic subgraphs. The Diamonds graph has 4 squares (4-cycles), while the Dots graph has 3 squares.  Also, the Dots graph has 8-cycles while the Diamonds graph does not.</li>\n</ul>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

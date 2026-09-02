@@ -1,0 +1,350 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:06-09-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:b1a3c613-a62b-46d2-9dae-47c1d0bc9274",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:6-9-understanding-student-loans"
+ ],
+ "uuid": "c72b8460-5598-4134-a057-32e1465d1aa8",
+ "group_uuid": "eb4697e6-ab3e-4d6f-943b-a2180e4c33ab",
+ "number": 35214,
+ "version": 3,
+ "uid": "35214@3",
+ "published_at": "2024-11-13T09:52:20.560Z",
+ "nickname": "CM-C06-M9-Q021",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Find the payment for the following student loans using the standard repayment plan:",
+ "questions": [
+  {
+   "id": 519076,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Loan is $7,800, interest is 4.99%",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$82.70"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The standard plan is 12 payments a year for 10 years.</p>\n<p>To compute the payment to pay down a loan with beginning principal, <i>P</i>, the payment (<i>pmt</i>) is <span data-math=\"pmt = \\frac{{P \\times \\frac{r}{n} \\times {{\\left( {1 + \\frac{r}{n}} \\right)}^{n \\times t}}}}{{{{\\left( {1 + \\frac{r}{n}} \\right)}^{n \\times t}} - 1}}\"></span>, where <i>r</i> is the annual interest rate (in decimal form), <i>n</i> is the number of compounding periods per year, and <i>t</i> is the number of years. Note, payment to lenders is always rounded up to the next penny.</p>\n<p>If the number of periods per year is 1, then the formula is simplified to <span data-math=\"pmt = \\frac{{P \\times r \\times {{\\left( {1 + r} \\right)}^t}}}{{{{\\left( {1 + r} \\right)}^t} - 1}}\"></span>.</p>\n<p>Once again, it will help you get the right answer from your calculator to find <span data-math=\"n \\times t\"></span> first.</p>\n<p><span data-math=\"n \\times t = \\left( {12} \\right)\\left( {10} \\right) = 120\"></span></p>\n<p><span data-math=\"pmt = \\frac{{\\left( {7,800 \\times \\frac{{0.0499}}{{12}} \\times {{\\left( {1 + \\frac{{0.0499}}{{12}}} \\right)}^{120}}} \\right)}}{{\\left( {{{\\left( {1 + \\frac{{0.0499}}{{12}}} \\right)}^{120}} - 1} \\right)}} = \\$82.70\"></span></p>\n<p>Additional parentheses were added to help you enter the expression properly in your calculator.</p>\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 519077,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Loan is for $11,450, interest is 7.75%",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$137.42"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The standard plan is 12 payments a year for 10 years.</p>\n<p>To compute the payment to pay down a loan with beginning principal, <i>P</i>, the payment (<i>pmt</i>) is <span data-math=\"pmt = \\frac{{P \\times \\frac{r}{n} \\times {{\\left( {1 + \\frac{r}{n}} \\right)}^{n \\times t}}}}{{{{\\left( {1 + \\frac{r}{n}} \\right)}^{n \\times t}} - 1}}\"></span>, where <i>r</i> is the annual interest rate (in decimal form), <i>n</i> is the number of compounding periods per year, and <i>t</i> is the number of years. Note, payment to lenders is always rounded up to the next penny.</p>\n<p>If the number of periods per year is 1, then the formula is simplified to <span data-math=\"pmt = \\frac{{P \\times r \\times {{\\left( {1 + r} \\right)}^t}}}{{{{\\left( {1 + r} \\right)}^t} - 1}}\"></span>.</p>\n<p>Once again, it will help you get the right answer from your calculator to find <span data-math=\"n \\times t\"></span> first.</p>\n<p><span data-math=\"n \\times t = \\left( {12} \\right)\\left( {10} \\right) = 120\"></span></p>\n<p><span data-math=\"pmt = \\frac{{\\left( {11,450 \\times \\frac{{0.0775}}{{12}} \\times {{\\left( {1 + \\frac{{0.0775}}{{12}}} \\right)}^{120}}} \\right)}}{{\\left( {{{\\left( {1 + \\frac{{0.0775}}{{12}}} \\right)}^{120}} - 1} \\right)}} = \\$137.42\"></span></p>\n<p>Additional parentheses were added to help you enter the expression properly in your calculator.</p>\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  3,
+  2,
+  1
+ ]
+}

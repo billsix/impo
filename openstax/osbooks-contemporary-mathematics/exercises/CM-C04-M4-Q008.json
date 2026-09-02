@@ -1,0 +1,329 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:04-04-01",
+  "all",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:f98f5ac2-e51d-43ba-853a-5a3d14ea5a6b",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:4-4-addition-and-subtraction-in-base-systems"
+ ],
+ "uuid": "6b3e4fd3-c400-479e-8f62-c41a981218e1",
+ "group_uuid": "4e6a334c-2e19-454a-a277-0478d5afea2a",
+ "number": 31021,
+ "version": 6,
+ "uid": "31021@6",
+ "published_at": "2024-11-01T03:50:42.878Z",
+ "nickname": "CM-C04-M4-Q008",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 510907,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Calculate 716<sub>12</sub> − 4AB<sub>12</sub>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "227<sub>12</sub>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>A represents the digit 10.</p>\n<p>B represents the digit 11.</p>\n<p>Step 1: Do the one’s place first.</p>\n<p>You need to borrow from the next place to the left.</p>\n<p>In base 10: (12 + 6) – 11 = 18 – 11 = 7</p>\n<p>In base 12: 7</p>\n<p>One’s place: 7</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>7</td>\n<td><span data-math=\"\\cancel{{1}}\"></span><br>0</td>\n<td>6</td>\n</tr>\n<tr>\n<td>–</td>\n<td>4</td>\n<td>A</td>\n<td>B</td>\n</tr>\n<tr>\n<td>=</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>7</td>\n</tr>\n</tbody>\n</table>\n<p>Next step: Do the next place to the left.</p>\n<p>You need to borrow from the next place to the left.</p>\n<p>In base 10: (12 + 0) – 10 = 12 – 10 = 2</p>\n<p>In base 12: 2</p>\n<p>This column: 2</p> \n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td><span data-math=\"\\cancel{{7}}\"></span><br>6</td>\n<td><span data-math=\"\\cancel{{1}}\"></span><br>0</td>\n<td>6</td>\n</tr>\n<tr>\n<td>–</td>\n<td>4</td>\n<td>A</td>\n<td>B</td>\n</tr>\n<tr>\n<td>=</td>\n<td>&nbsp;</td>\n<td>2</td>\n<td>7</td>\n</tr>\n</tbody>\n</table>\n<p>Next step: Do the next place to the left.</p>\n<p>In base 10: 6 – 4 = 2</p>\n<p>In base 12: 2</p>\n<p>This column: 2</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td><span data-math=\"\\cancel{{7}}\"></span><br>6</td>\n<td><span data-math=\"\\cancel{{1}}\"></span><br>0</td>\n<td>6</td>\n</tr>\n<tr>\n<td>–</td>\n<td>4</td>\n<td>A</td>\n<td>B</td>\n</tr>\n<tr>\n<td>=</td>\n<td>2</td>\n<td>2</td>\n<td>7</td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"{227_{12}}\"></span></p>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

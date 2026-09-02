@@ -1,0 +1,375 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:07-11-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:3d4e8c5e-da3e-464c-a5a0-308d03d1c239",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:7-11-expected-value"
+ ],
+ "uuid": "831adacc-c05f-43aa-9175-0507d562369e",
+ "group_uuid": "f3a38338-eece-4d50-9d10-3ecfc6668596",
+ "number": 31736,
+ "version": 4,
+ "uid": "31736@4",
+ "published_at": "2024-11-11T06:54:36.615Z",
+ "nickname": "CM-C07-M11-Q001",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 516192,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the expected value of the number showing when you roll a special 6-sided die with faces {1, 1, 2, 3, 5, 8}.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\frac{{10}}{3}\">\\frac{{10}}{3}</span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>If <i>O</i> represents an outcome of an experiment and <i>n</i>(<i>O</i>) the value of that outcome, then the expected value of the experiment is <span data-math=\"\\sum {n\\left( O \\right) \\times P\\left( O \\right)} \"></span>.</p>\n<p>The sides of the die each has a probability of <span data-math=\"\\frac{1}{6}\"></span>. Multiply the value showing on each face times the probability of each side. Do not simplify the fractions because it makes it easier to add the fractions to keep this way.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Value</td>\n<td>Probability</td>\n<td><span data-math=\"n\\left( O \\right) \\times P\\left( O \\right)\"></span></td>\n</tr>\n<tr>\n<td>1</td>\n<td><span data-math=\"\\frac{1}{6}\"></span></td>\n<td><span data-math=\"\\frac{1}{6}\"></span></td>\n</tr>\n<tr>\n<td>1</td>\n<td><span data-math=\"\\frac{1}{6}\"></span></td>\n<td><span data-math=\"\\frac{1}{6}\"></span></td>\n</tr>\n<tr>\n<td>2</td>\n<td><span data-math=\"\\frac{1}{6}\"></span></td>\n<td><span data-math=\"\\frac{2}{6}\"></span></td>\n</tr>\n<tr>\n<td>3</td>\n<td><span data-math=\"\\frac{1}{6}\"></span></td>\n<td><span data-math=\"\\frac{3}{6}\"></span></td>\n</tr>\n<tr>\n<td>5</td>\n<td><span data-math=\"\\frac{1}{6}\"></span></td>\n<td><span data-math=\"\\frac{5}{6}\"></span></td>\n</tr>\n<tr>\n<td>8</td>\n<td><span data-math=\"\\frac{1}{6}\"></span></td>\n<td><span data-math=\"\\frac{8}{6}\"></span></td>\n</tr>\n</tbody>\n</table>\n<p>The sum of the numbers in the last column is the expected value = <span data-math=\"\\frac{{20}}{6} = \\frac{{10}}{3}\"></span>.</p>\n<p>The expected value is <span data-math=\"\\frac{{10}}{3}\"></span>.</p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 516193,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the expected value of the number of heads showing if you flip a coin 3 times.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\frac{3}{2}\">\\frac{3}{2}</span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td># Heads</td>\n<td>Probability</td>\n<td><span data-math=\"n\\left( O \\right) \\times P\\left( O \\right)\"></span></td>\n</tr>\n<tr>\n<td>HHH</td>\n<td>3</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td><span data-math=\"\\frac{3}{8}\"></span></td>\n</tr>\n<tr>\n<td>HHT</td>\n<td>2</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td><span data-math=\"\\frac{2}{8}\"></span></td>\n</tr>\n<tr>\n<td>HTH</td>\n<td>2</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td><span data-math=\"\\frac{2}{8}\"></span></td>\n</tr>\n<tr>\n<td>HTT</td>\n<td>1</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n</tr>\n<tr>\n<td>THH</td>\n<td>2</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td><span data-math=\"\\frac{2}{8}\"></span></td>\n</tr>\n<tr>\n<td>THT</td>\n<td>1</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n</tr>\n<tr>\n<td>TTH</td>\n<td>1</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n</tr>\n<tr>\n<td>TTT</td>\n<td>0</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td>0</td>\n</tr>\n</tbody>\n</table>\n<p>The sum of the numbers in the last column is the expected value = <span data-math=\"\\frac{{12}}{8} = \\frac{3}{2}\"></span>.</p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 516194,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "You are about to play a game, where you flip a coin 3 times. If all 3 flips result in heads, you win $20. If you get 2 heads, you win $10. If you flip 1 or 0 heads, you win nothing. What is the expected value of your winnings?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\frac{{25}}{4}\">\\frac{{25}}{4}</span> = $6.25"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td># Heads</td>\n<td>Probability</td>\n<td>Value</td>\n<td>Probability × Value</td>\n</tr>\n<tr>\n<td>HHH</td>\n<td>3</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td>$20</td>\n<td><span data-math=\"\\frac{20}{8}\"></span></td>\n</tr>\n<tr>\n<td>HHT</td>\n<td>2</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td>$10</td>\n<td><span data-math=\"\\frac{10}{8}\"></span></td>\n</tr>\n<tr>\n<td>HTH</td>\n<td>2</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td>$10</td>\n<td><span data-math=\"\\frac{10}{8}\"></span></td>\n</tr>\n<tr>\n<td>HTT</td>\n<td>1</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>THH</td>\n<td>2</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td>$10</td>\n<td><span data-math=\"\\frac{10}{8}\"></span></td>\n</tr>\n<tr>\n<td>THT</td>\n<td>1</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>TTH</td>\n<td>1</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>TTT</td>\n<td>0</td>\n<td><span data-math=\"\\frac{1}{8}\"></span></td>\n<td>0</td>\n<td>0</td>\n</tr>\n</tbody>\n</table>\n<p>The sum of the numbers in the last column is the expected value = <span data-math=\"\\frac{{50}}{8} = \\frac{{25}}{4}\"></span>= $6.25.</p>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  4,
+  3,
+  2,
+  1
+ ]
+}

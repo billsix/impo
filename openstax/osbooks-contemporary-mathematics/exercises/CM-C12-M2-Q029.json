@@ -1,0 +1,319 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:12-02-02",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:2a690ff2-a139-4416-bb92-4819ed9a2416",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:12-2-graph-structures"
+ ],
+ "uuid": "889b2f64-9f31-4305-8904-d058583a06d3",
+ "group_uuid": "43fad590-d7a6-42e7-9579-06ae5cc8c11b",
+ "number": 32856,
+ "version": 11,
+ "uid": "32856@11",
+ "published_at": "2024-12-20T04:47:51.463Z",
+ "nickname": "CM-C12-M2-Q029",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 544409,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "We have seen that the number of triangles in a complete graph with 7 vertices can be calculated using the pattern <span data-math=\"(5 + 4 + 3 + 2 + 1) + \\left( {4 + 3 + 2 + 1} \\right) + (3 + 2 + 1) + \\left( {2 + 1} \\right) + 1 = 35\">(5 + 4 + 3 + 2 + 1) + \\left( {4 + 3 + 2 + 1} \\right) + (3 + 2 + 1) + \\left( {2 + 1} \\right) + 1 = 35</span>. This pattern gets very long for complete graphs with more vertices, but we have seen sums from 1 to a number before, and we had a shortcut!  Recall from Example 12.8 that <span data-math=\"1 + 2 + 3 +  \\cdots  + (n - 1) = \\frac{{n(n - 1)}}{2}\">1 + 2 + 3 +  \\cdots  + (n - 1) = \\frac{{n(n - 1)}}{2}</span>. This makes finding the sum from 1 up to <span data-math=\"n - 1\">n - 1</span> shorter. We can write each of the sums we need in the form <span data-math=\"\\frac{{n(n - 1)}}{2}\">\\frac{{n(n - 1)}}{2}</span>.\n<br>\nTo find the sum from 1 to 5, since <span data-math=\"n - 1 = 5\">n - 1 = 5</span>, use <span data-math=\"n = 6{:}\">n = 6{:}</span> <span data-math=\"1 + 2 + 3 + 4 + 5 = \\frac{{6(5)}}{2}\">1 + 2 + 3 + 4 + 5 = \\frac{{6(5)}}{2}</span>\n<br>\nTo find the sum from 1 to 4, since <span data-math=\"n - 1 = 4\">n - 1 = 4</span>, use <span data-math=\"n = 5{:}\">n = 5{:}</span> <span data-math=\"1 + 2 + 3 + 4 = \\frac{{5(4)}}{2}\">1 + 2 + 3 + 4 = \\frac{{5(4)}}{2}</span>\n<br>\nTo find the sum from 1 to 3, since <span data-math=\"n - 1 = 3\">n - 1 = 3</span>, use <span data-math=\"n = 4{:}\">n = 4{:}</span> <span data-math=\"1 + 2 + 3 = \\frac{{4(3)}}{2}\">1 + 2 + 3 = \\frac{{4(3)}}{2}</span>\n<br>\nTo find the sum from 1 to 2, since <span data-math=\"n - 1 = 2\">n - 1 = 2</span>, use <span data-math=\"n = 3{:}\">n = 3{:}</span> <span data-math=\"1 + 2 = \\frac{{3(2)}}{2}\">1 + 2 = \\frac{{3(2)}}{2}</span>\n<br>\nTo find the sum from 1 to 1, (<i>Sounds silly, but it helps to see the pattern!</i>) since <span data-math=\"n - 1 = 1\">n - 1 = 1</span>, use <span data-math=\"n = 2{:}\">n = 2{:}</span> <span data-math=\"1 = \\frac{{2(1)}}{2}\">1 = \\frac{{2(1)}}{2}</span>\n<br>\nUse these to rewrite the calculation for the number of triangles in a graph with 7 vertices.\n<br>\n<span data-math=\"\\begin{gathered}\n  (5 + 4 + 3 + 2 + 1) + \\left( {4 + 3 + 2 + 1} \\right) + (3 + 2 + 1) + \\left( {2 + 1} \\right) + 1 \\hfill \\\\\n   = \\underbrace 1_{\\frac{{2(1)}}{2}} + \\underbrace {(1 + 2)}_{\\frac{{3(2)}}{2}} + \\underbrace {(1 + 2 + 3)}_{\\frac{{4(3)}}{2}} + \\underbrace {(1 + 2 + 3 + 4)}_{\\frac{{5(4)}}{2}} + \\underbrace {(1 + 2 + 3 + 4 + 5)}_{\\frac{{6(5)}}{2}} \\hfill \\\\\n   = \\frac{{2(1)}}{2} + \\frac{{3(2)}}{2} + \\frac{{4(3)}}{2} + \\frac{{5(4)}}{2} + \\frac{{6(5)}}{2}\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad  \\hfill \\\\\n  {\\text{ = }}\\underbrace {\\frac{{1\\left( 2 \\right) + 2\\left( 3 \\right) + 3\\left( 4 \\right) + 4\\left( 5 \\right) + 5\\left( 6 \\right)}}{2}}_{{\\text{The number of triangles in complete graph with 7 vertices}}{\\text{.}}} = 35\\quad\\quad\\quad\\quad\\quad\\quad\\,\\, \\hfill \\\\ \n\\end{gathered}\">\\begin{gathered}\n  (5 + 4 + 3 + 2 + 1) + \\left( {4 + 3 + 2 + 1} \\right) + (3 + 2 + 1) + \\left( {2 + 1} \\right) + 1 \\hfill \\\\\n   = \\underbrace 1_{\\frac{{2(1)}}{2}} + \\underbrace {(1 + 2)}_{\\frac{{3(2)}}{2}} + \\underbrace {(1 + 2 + 3)}_{\\frac{{4(3)}}{2}} + \\underbrace {(1 + 2 + 3 + 4)}_{\\frac{{5(4)}}{2}} + \\underbrace {(1 + 2 + 3 + 4 + 5)}_{\\frac{{6(5)}}{2}} \\hfill \\\\\n   = \\frac{{2(1)}}{2} + \\frac{{3(2)}}{2} + \\frac{{4(3)}}{2} + \\frac{{5(4)}}{2} + \\frac{{6(5)}}{2}\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad  \\hfill \\\\\n  {\\text{ = }}\\underbrace {\\frac{{1\\left( 2 \\right) + 2\\left( 3 \\right) + 3\\left( 4 \\right) + 4\\left( 5 \\right) + 5\\left( 6 \\right)}}{2}}_{{\\text{The number of triangles in complete graph with 7 vertices}}{\\text{.}}} = 35\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad \\hfill \\\\ \n\\end{gathered}</span>\n<br>\nSimilarly, for the number of triangles in a complete graph with 8 vertices, instead of\n<span data-math=\"(6 + 5 + 4 + 3 + 2 + 1) + (5 + 4 + 3 + 2 + 1) + \\left( {4 + 3 + 2 + 1} \\right) + (3 + 2 + 1) + \\left( {2 + 1} \\right) + 1 = 56\">(6 + 5 + 4 + 3 + 2 + 1) + (5 + 4 + 3 + 2 + 1) + \\left( {4 + 3 + 2 + 1} \\right) + (3 + 2 + 1) + \\left( {2 + 1} \\right) + 1 = 56\"&gt;\\frac{{1\\left( 2 \\right) + 2\\left( 3 \\right) + 3\\left( 4 \\right) + 4\\left( 5 \\right) + 5\\left( 6 \\right) + 6(7)}}{2} = 56\\</span>\n<br>\nuse the shorter formula <span data-math=\"\\frac{{1\\left( 2 \\right) \\,+\\, 2\\left( 3 \\right) \\,+\\, 3\\left( 4 \\right) \\,+\\, 4\\left( 5 \\right) \\,+\\, 5\\left( 6 \\right) \\,+\\, 6(7)}}{2} = 56\">\\frac{{1\\left( 2 \\right) + 2\\left( 3 \\right) + 3\\left( 4 \\right) + 4\\left( 5 \\right) + 5\\left( 6 \\right) + 6(7)}}{2} = 56</span>.\n<br>\nUse this pattern to find the number of triangles in a complete graph with 10 vertices.  In which row and entry of Pascal’s triangle can you also find this result?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

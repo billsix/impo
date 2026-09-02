@@ -1,0 +1,326 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-19T08:37:07.598Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdlVLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b7aa089384ab1243ba2c63411bb75e976eb7e285",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdlVLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b7aa089384ab1243ba2c63411bb75e976eb7e285/CS_Figure_12_CR_UNF013.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:12-09-04",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:2606813f-260c-4610-a668-7d4de5b8b236",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:12-10-trees"
+ ],
+ "uuid": "23e33145-0687-4328-9bf5-22360fd548c2",
+ "group_uuid": "282a9f4a-6437-408d-9db7-0180487c4029",
+ "number": 34210,
+ "version": 12,
+ "uid": "34210@12",
+ "published_at": "2024-12-19T08:37:09.903Z",
+ "nickname": "CM-C12-M10-Q045",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 543747,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The products at a particular factory are manufactured in phases. The same equipment is utilized for each phase, but it must be formatted differently to accomplish different tasks. The transition time to convert between a format for one task and another task varies. The times are given in the table below.<br><br>\n<table class=\"unnumbered\" summary=\".\">\n<thead>\n<tr>\n<th>Task</th>\n<th><i>A</i></th>\n<th><i>B</i></th>\n<th><i>C</i></th>\n<th><i>D</i></th>\n<th><i>E</i></th>\n<th><i>F</i></th>\n<th><i>G</i></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><i>A</i></td>\n<td><span data-math=\"0\">0</span></td>\n<td><span data-math=\"75\">75</span></td>\n<td><span data-math=\"130\">130</span></td>\n<td><span data-math=\"45\">45</span></td>\n<td><span data-math=\"120\">120</span></td>\n<td><span data-math=\"70\">70</span></td>\n<td><span data-math=\"100\">100</span></td>\n</tr>\n<tr>\n<td><i>B</i></td>\n<td><span data-math=\"75\">75</span></td>\n<td><span data-math=\"0\">0</span></td>\n<td><span data-math=\"140\">140</span></td>\n<td><span data-math=\"65\">65</span></td>\n<td><span data-math=\"115\">115</span></td>\n<td><span data-math=\"25\">25</span></td>\n<td><span data-math=\"60\">60</span></td>\n</tr>\n<tr>\n<td><i>C</i></td>\n<td><span data-math=\"130\">130</span></td>\n<td><span data-math=\"140\">140</span></td>\n<td><span data-math=\"0\">0</span></td>\n<td><span data-math=\"35\">35</span></td>\n<td><span data-math=\"55\">55</span></td>\n<td><span data-math=\"20\">20</span></td>\n<td><span data-math=\"125\">125</span></td>\n</tr>\n<tr>\n<td><i>D</i></td>\n<td><span data-math=\"45\">45</span></td>\n<td><span data-math=\"65\">65</span></td>\n<td><span data-math=\"35\">35</span></td>\n<td><span data-math=\"0\">0</span></td>\n<td><span data-math=\"50\">50</span></td>\n<td><span data-math=\"30\">30</span></td>\n<td><span data-math=\"40\">40</span></td>\n</tr>\n<tr>\n<td><i>E</i></td>\n<td><span data-math=\"120\">120</span></td>\n<td><span data-math=\"115\">115</span></td>\n<td><span data-math=\"55\">55</span></td>\n<td><span data-math=\"50\">50</span></td>\n<td><span data-math=\"0\">0</span></td>\n<td><span data-math=\"95\">95</span></td>\n<td><span data-math=\"145\">145</span></td>\n</tr>\n<tr>\n<td><i>F</i></td>\n<td><span data-math=\"70\">70</span></td>\n<td><span data-math=\"25\">25</span></td>\n<td><span data-math=\"20\">20</span></td>\n<td><span data-math=\"30\">30</span></td>\n<td><span data-math=\"95\">95</span></td>\n<td><span data-math=\"0\">0</span></td>\n<td><span data-math=\"15\">15</span></td>\n</tr>\n<tr>\n<td><i>G</i></td>\n<td><span data-math=\"100\">100</span></td>\n<td><span data-math=\"60\">60</span></td>\n<td><span data-math=\"125\">125</span></td>\n<td><span data-math=\"40\">40</span></td>\n<td><span data-math=\"145\">145</span></td>\n<td><span data-math=\"15\">15</span></td>\n<td><span data-math=\"0\">0</span></td>\n</tr>\n</tbody>\n</table>\nUse the table to draw a graph in which the vertices represent tasks <i>A</i>, <i>C</i>, <i>D</i>, <i>F</i>, and <i>G</i>, and the weights of the edges indicate the times in minutes to transition between pairs of tasks. Use the nearest neighbor method to find an order in which to complete tasks <i>A</i>, <i>C</i>, <i>D</i>, <i>F</i>, and <i>G</i>, which keeps the transition times down and ends with the same set up as it began so that the factory is ready start the next batch. Assume that there are no restrictions on which tasks can be completed in which order. Hint: The nearest neighbor algorithm may give a different result depending on which vertex is the starting vertex; so, you must check all possibilities.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

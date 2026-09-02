@@ -1,0 +1,382 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:08-03-05",
+  "context-cnxmod:a3ebfbc2-fdfc-45f5-be99-dac7dc2d6d7a",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-3-mean-median-and-mode"
+ ],
+ "uuid": "e0a64ff6-17c8-41ef-9715-d241dc533aa9",
+ "group_uuid": "a5df23f7-2b9f-4cef-84f0-fa5fe302a070",
+ "number": 29038,
+ "version": 11,
+ "uid": "29038@11",
+ "published_at": "2024-12-03T07:58:41.873Z",
+ "nickname": "CM-C08-M3-011",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>A survey of college students asked how many courses those students were currently taking. The results are summarized in this frequency distribution:</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Number of Classes</th>\n<th>Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>2</td>\n<td>3</td>\n</tr>\n<tr>\n<td>3</td>\n<td>16</td>\n</tr>\n<tr>\n<td>4</td>\n<td>8</td>\n</tr>\n<tr>\n<td>5</td>\n<td>4</td>\n</tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 531534,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the mode of the number of classes.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "3"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "The mode is the most frequently occurring data value. The most frequently occurring number is 3. The mode is 3."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 531535,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the median of the number of classes.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Add the frequencies: 1 + 3 + 16 + 8 + 4 = 32</p>\n<p>If <i>n</i> is even, then add the values at the <span data-math=\"\\frac{n}{2}\"></span> and <span data-math=\"\\frac{n}{2} + 1\"></span> positions, then divide by 2 to find the median.</p>\n<p>Since there are 30 data values, use the even method.</p>\n<p><span data-math=\"\\frac{n}{2} = \\frac{{32}}{2} = 16\"></span> and <span data-math=\"\\frac{n}{2} + 1= 17\"></span></p>\n<p>You can use the table to find the 16<sup>th</sup> and 17<sup>th</sup> values.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Number of Classes</th>\n<th>Frequency</th>\n<th>Cumulative Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>2</td>\n<td>3</td>\n<td>1 + 3 = 4</td>\n</tr>\n<tr>\n<td>3</td>\n<td>16</td>\n<td>4 + 16 = 20<br>\nYou know the 16<sup>th</sup> and 17<sup>th</sup> data value are both in this category!</td>\n</tr>\n</tbody>\n</table>\n<p>The 16<sup>th</sup> and 17<sup>th</sup> values are both 3.</p>\n<p>Add them up and divide by 2: <span data-math=\"\\frac{{3 + 3}}{2} = 3= 82.5\"></span></p>\n<p>The median is 3.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "3"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 531536,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the mean of the number of classes.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Let the table do your math.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Number of Classes</th>\n<th>Frequency</th>\n<th>Number of Classes Times Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>2</td>\n<td>3</td>\n<td>6</td>\n</tr>\n<tr>\n<td>3</td>\n<td>16</td>\n<td>48</td>\n</tr>\n<tr>\n<td>4</td>\n<td>8</td>\n<td>32</td>\n</tr>\n<tr>\n<td>5</td>\n<td>4</td>\n<td>20</td>\n</tr>\n<tr>\n<td>SUMS</td>\n<td>32</td>\n<td>107</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>Mean</td>\n<td>107 ÷ 32 ≈ 3.344</td>\n</tr>\n</tbody>\n</table>\n<p>The mean is approximately 3.344.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\frac{107}{32} \\approx 3.344\">\\frac{107}{32} \\approx 3.344</span>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,373 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-03T07:33:38.454Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaU1HIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--171a2da10d27a61eb0befbd2cfd68ac1834c2de4",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaU1HIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--171a2da10d27a61eb0befbd2cfd68ac1834c2de4/CS_Figure_08_02_033.jpg"
+  },
+  {
+   "created_at": "2024-12-03T07:33:38.459Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVFHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--999834c0243b408ac25a3e37d2f5f737fc3c0b61",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVFHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--999834c0243b408ac25a3e37d2f5f737fc3c0b61/CS_Figure_08_02_034.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:08-02-01",
+  "context-cnxmod:7baffe9f-fb35-422f-bac7-89e4353e21ed",
+  "all",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-2-visualizing-data"
+ ],
+ "uuid": "1a8a1c4a-3ec4-46b7-be3a-7899836b3b33",
+ "group_uuid": "8259a576-06d3-45e9-9e83-31cdf611bd19",
+ "number": 28960,
+ "version": 14,
+ "uid": "28960@14",
+ "published_at": "2024-12-03T07:33:42.081Z",
+ "nickname": "CM-C08-M2-Q011",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "The medical office at a zoo tracks the animals it treats each week. The table shows the classifications for a particular week:\n<table class=\"unnumbered\">\n<tbody>\n<tr><td>Mammal</td>\n<td>Mammal</td>\n<td>Reptile</td>\n<td>Bird</td>\n<td>Mammal</td>\n<td>Amphibian</td></tr>\n<tr><td>Mammal</td>\n<td>Mammal</td>\n<td>Mammal</td>\n<td>Reptile</td>\n<td>Mammal</td>\n<td>Bird</td></tr>\n<tr><td>Mammal</td>\n<td>Bird</td>\n<td>Reptile</td>\n<td>Reptile</td>\n<td>Amphibian</td>\n<td>Mammal</td></tr>\n<tr><td>Bird</td>\n<td>Mammal</td>\n<td>Amphibian</td>\n<td>Mammal</td>\n<td>Mammal</td>\n<td>Bird</td></tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 531503,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Create a bar graph of the data without technology.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Step 1: First make a frequency table.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Major</th>\n<th>Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Amphibian</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Bird</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Mammal</td>\n<td>12</td>\n</tr>\n<tr>\n<td>Reptile</td>\n<td>4</td>\n</tr>\n</tbody>\n</table>\n<p>A bar chart consists of a series of rectangles arranged side-by-side (but not touching). Each rectangle corresponds to one of the categories. All the rectangles have the same width. The height of each rectangle corresponds to either the number of units in the corresponding category or the proportion of the total units that fall into the category. Make a bar chart using the frequency.</p>\n<p>Step 1: Draw the axes with the origin at the bottom left.</p>\n<p>Step 2: Next, place your categories evenly spaced along the bottom of the horizontal axis. Label the horizontal axis with the names of your categories.</p>\n<p>Step 3: Decide how to define the height of the rectangles, the frequency itself or the proportion. Mark the vertical axis with units appropriate to your choice. We are using the frequency, so mark the vertical axis up to 14. Add labels and tick marks at 0, 2, 4, 6, 8, 10, 12, and 14.</p>\n<p>Step 4: Draw in the rectangles. Place a horizontal mark above the labels at the height appropriate for each category.</p>\n<p>Step 5: Draw vertical lines straight down from the edges of your mark to make a rectangle.</p>\n<p>Step 6: Build the rest of the rectangles, making sure they all have the same width. Do not let the rectangles touch.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaU1HIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--171a2da10d27a61eb0befbd2cfd68ac1834c2de4/CS_Figure_08_02_033.jpg\" alt=\"A bar graph titled, animals treated. The horizontal axis represents classification. The vertical axis representing frequency ranges from 0 to 14, in increments of 2. The bar graph infers the following data. Amphibian: 3. Bird: 5. Mammal: 12. Reptile: 4.\">"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 531504,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Create a pie chart of the data using technology.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>A pie chart consists of a circle divided into wedges, with each edge corresponding to a category. The proportion of the area of the entire circle that each wedge represents corresponds to the proportion of the data in that category. First, enter your table into a new Google Sheet. Next, click and drag to select the full table, including the header row. Click on the “Insert” menu, then select “Chart.” The result may be a pie chart by default. If it is not, you can change it to a pie chart using the “Chart type” drop-down menu in the Chart editor.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Major</th>\n<th>Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Amphibian</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Bird</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Mammal</td>\n<td>12</td>\n</tr>\n<tr>\n<td>Reptile</td>\n<td>4</td>\n</tr>\n</tbody>\n</table>\n<p>Your pie chart may look a bit different than the one in the solution and that’s fine. Just be sure that the relative size of the wedges is the same and that you have labels on your pie “slices.”</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVFHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--999834c0243b408ac25a3e37d2f5f737fc3c0b61/CS_Figure_08_02_034.jpg\" alt=\"A pie chart titled, animals treated. The pie chart is divided into four unequal parts. The pie chart infers the following data. Amphibian: 3. Bird: 5. Mammal: 12. Reptile: 4.\">"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

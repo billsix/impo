@@ -1,0 +1,329 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:08-01-02",
+  "context-cnxmod:bba797da-6a1a-4809-b77e-bf7d6e8758c5",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-1-gathering-and-organizing-data"
+ ],
+ "uuid": "92073b77-0a32-46b6-9667-b37ec67f1be3",
+ "group_uuid": "909f0a6a-4173-4bf1-9d3e-f11392d7b523",
+ "number": 29013,
+ "version": 17,
+ "uid": "29013@17",
+ "published_at": "2023-01-25T15:12:37.959Z",
+ "nickname": "CM-C08-M1-Q008",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 326789,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The World Bank provides data on every country in the world. The following is a sample of twenty-five countries, along with the number of cell phone subscriptions registered in that country per hundred residents. Create a binned frequency distribution for the cell phone data.\n<table class=\"unnumbered\">\n<caption>(<a href=\"https://data.worldbank.org/\" rel=\"nofollow\" target=\"_blank\">source</a>)</caption>\n<thead>\n<tr>\n<th>Country</th>\n<th>Cell</th>\n<th>Country</th>\n<th>Cell</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Cameroon</td>\n<td>83.7</td>\n<td>Benin</td>\n<td>78.5</td>\n</tr>\n<tr>\n<td>Vanuatu</td>\n<td>82.5</td>\n<td>Eritrea</td>\n<td>13.7</td>\n</tr>\n<tr>\n<td>Georgia</td>\n<td>140.7</td>\n<td>Mauritania</td>\n<td>92.2</td>\n</tr>\n<tr>\n<td>Kazakhstan</td>\n<td>146.6</td>\n<td>Czech Republic</td>\n<td>119</td>\n</tr>\n<tr>\n<td>Bermuda</td>\n<td>105.9</td>\n<td>Qatar</td>\n<td>151.1</td>\n</tr>\n<tr>\n<td>Russia</td>\n<td>157.9</td>\n<td>Pakistan</td>\n<td>73.4</td>\n</tr>\n<tr>\n<td>Hungary</td>\n<td>113.5</td>\n<td>Egypt</td>\n<td>105.5</td>\n</tr>\n<tr>\n<td>Costa Rica</td>\n<td>180.2</td>\n<td>Nepal</td>\n<td>123.2</td>\n</tr>\n<tr>\n<td>Algeria</td>\n<td>111</td>\n<td>Turkey</td>\n<td>96.4</td>\n</tr>\n<tr>\n<td>Somalia</td>\n<td>48.3</td>\n<td>Congo</td>\n<td>43.5</td>\n</tr>\n<tr>\n<td>Fiji</td>\n<td>114.2</td>\n<td>Venezuela</td>\n<td>78.5</td>\n</tr>\n<tr>\n<td>El Salvador</td>\n<td>156.5</td>\n<td>Germany</td>\n<td>133.6</td>\n</tr>\n<tr>\n<td>Angola</td>\n<td>44.7</td>\n</tr>\n</tbody>\n</table>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Range of Cell Phone Subscriptions Per Hundred People</th>\n<th>Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.0 – 24.9</td>\n<td>1</td>\n</tr>\n<tr>\n<td>25.0 – 49.9</td>\n<td>3</td>\n</tr>\n<tr>\n<td>50.0 – 74.9</td>\n<td>1</td>\n</tr>\n<tr>\n<td>75.0 – 99.9</td>\n<td>6</td>\n</tr>\n<tr>\n<td>100.0 – 124.9</td>\n<td>7</td>\n</tr>\n<tr>\n<td>125.0 – 149.9</td>\n<td>3</td>\n</tr>\n<tr>\n<td>150.0 – 174.9</td>\n<td>3</td>\n</tr>\n<tr>\n<td>175.0 – 199.9</td>\n<td>1</td>\n</tr></tbody>\n</table>\n<p>(Note: Answers may vary based on choices made about bins.)</p>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

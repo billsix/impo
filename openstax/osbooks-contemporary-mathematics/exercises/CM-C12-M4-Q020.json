@@ -1,0 +1,337 @@
+{
+ "images": [
+  {
+   "created_at": "2023-01-24T19:38:28.361Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDROIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b32899d591bf4c33648b54c4479535554c7e688f",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDROIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b32899d591bf4c33648b54c4479535554c7e688f/CS_Figure_12_04_134a.png"
+  },
+  {
+   "created_at": "2023-01-24T19:38:28.366Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDhOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e48b0edff4d53010dc739c93199b26712de84976",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDhOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e48b0edff4d53010dc739c93199b26712de84976/CS_Figure_12_04_134b.png"
+  },
+  {
+   "created_at": "2023-01-24T19:38:28.368Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG9QIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3963d3115b037a9b73f2050a5a10aae832600e87",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG9QIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3963d3115b037a9b73f2050a5a10aae832600e87/CS_Figure_12_04_134.png"
+  },
+  {
+   "created_at": "2023-01-24T19:38:28.370Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbThQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--46460dfd92d903dc253fd462916e95c2b22108c7",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbThQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--46460dfd92d903dc253fd462916e95c2b22108c7/CS_Figure_12_04_134.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:12-04-05",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium"
+ ],
+ "uuid": "c795d4d0-f283-4d97-ba31-4cdfdd1aa4af",
+ "group_uuid": "33d440fa-5784-40ed-9439-e110a63e4493",
+ "number": 33055,
+ "version": 11,
+ "uid": "33055@11",
+ "published_at": "2023-01-24T19:38:29.623Z",
+ "nickname": "CM-C12-M4-Q020",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 326148,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A Sudoku puzzle consists of a nine-by-nine grid which is subdivided into nine three-by-three smaller grids. Given an incomplete grid, the goal is to complete it in such a way that each row contains the numbers 1 through 9, each column contains the numbers 1 through 9, and each three by three grid contains the numbers 1 through 9 as shown in the figure. If a graph were drawn with a vertex to represent each entry in the grid, what should the edges represent so that a nine-coloring of the graph would be a solution to the puzzle?\n<br>\n<img src=\"exercises/media/9e89d5326bfea286.png\" alt=\"Two Sudoku puzzle. First Sudoku puzzle has 9 rows and 9 columns. Row 1: 8, empty, empty, 9, 3, empty, empty, empty, and 2. Row 2: empty, empty, 9, empty, empty, empty, empty, 4, and empty. Row 3: 7, empty, 2, 1, empty, empty, 9, 6, and empty. Row 4: 2, empty, empty, empty, empty, empty, empty, 9, and empty.  Row 5: empty, 6, empty, empty, empty, empty, empty, 7, and empty. Row 6: empty, 7, empty, empty, empty, 6, empty, empty, and 5. Row 7: empty, 2, 7, empty, empty, 8, 4, empty, and 6. Row 8: empty, 3, empty, empty, empty, empty, 5, empty, and empty. Row 9: 5, empty, empty, empty, 6, 2, empty, empty, and 8. Second Sudoku puzzle has 9 rows and 9 columns. Row 1: 8, 4, 6, 9, 3, 7, 1, 5, and 2. Row 2: 3, 1, 9, 6, 2, 5, 8, 4, and 7. Row 3: 7, 5, 2, 1, 8, 4, 9, 6, and 3. Row 4: 2, 8, 5, 7, 1, 3, 6, 9, and 4. Row 5: 4, 6, 3, 8, 5, 9, 2, 7, and 1. Row 6: 9, 7, 1, 2, 4, 6, 3, 8, and 5. Row 7: 1, 2, 7, 5, 9, 8, 4, 3, and 6. Row 8: 6, 3, 8, 4, 7, 1, 5, 2, and 9. Row 9: 5, 9, 4, 3, 6, 2, 7, 1, and 8.\">\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

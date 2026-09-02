@@ -1,0 +1,337 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-06T09:54:15.932Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaE1PIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--338fff6e4d2d38d6a1977bc27ede31342e103a48",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaE1PIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--338fff6e4d2d38d6a1977bc27ede31342e103a48/CS_Figure_10_07_UN003.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:10-07-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:4c3ecdc0-d173-4bc5-a237-ffabc2d7e588",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:10-7-volume-and-surface-area"
+ ],
+ "uuid": "f6b57cda-8fad-449d-944d-426165825581",
+ "group_uuid": "4d198f58-cec7-4ecb-9e10-da77f4d6747d",
+ "number": 31608,
+ "version": 10,
+ "uid": "31608@10",
+ "published_at": "2024-12-06T09:54:19.645Z",
+ "nickname": "CM-C10-M7-Q001",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 532665,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A rectangular solid has a width of 6 cm, length of 15 cm, and height or depth of 6 cm. Find the surface area and the volume.<br>\n<figure>\n<img src=\"exercises/media/98cb27f35870214d.png\" alt=\"A rectangular prism with its length, width, and height marked 15 centimeters, 6 centimeters, and 6 centimeters.\">\n</figure>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\begin{array}{rcl}{SA}&amp;{ = }&amp;{432\\text{ cm}{^2}}\\\\{V}&amp;{ = }&amp;{540\\text{ cm}{^3}}\\\\ \\end{array}\">\\begin{array}{rcl}{SA}&amp;{ = }&amp;{432\\text{ cm}{^2}}\\\\{V}&amp;{ = }&amp;{540\\text{ cm}{^3}}\\\\ \\end{array}</span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The surface area of a right prism where <i>B</i> is the area of the base, <i>p</i> is the perimeter of the base, and <i>h</i> is the height is <span data-math=\"SA = 2B + ph\"></span>.</p>\n<p>The rectangular base has an area <span data-math=\"{\\text{ =  LW  =  (6 cm) (15 cm)  =  90 c}}{{\\text{m}}^{\\text{2}}}\"></span>.</p>\n<p>The perimeter of the base <span data-math=\"{\\text{ =  }}p{\\text{  =  2(6 cm)  +  2(15 cm)  =  42 cm}}\"></span>.</p>\n<p>The surface area <span data-math=\" = {\\text{ }}2B + ph = {\\text{ }}2\\left( {90{\\text{ c}}{{\\text{m}}^2}} \\right){\\text{ }} + {\\text{ }}\\left( {42{\\text{ cm}}} \\right)\\left( {6{\\text{ cm}}} \\right){\\text{ }} = {\\text{ }}180{\\text{ c}}{{\\text{m}}^2} + {\\text{ }}252{\\text{ c}}{{\\text{m}}^2} = {\\text{ }}432{\\text{ c}}{{\\text{m}}^2}\"></span>.</p>\n<p>The surface area is 432 square centimeters.</p>\n<p>The volume of a right prism is <span data-math=\"V = Bh\\ = {\\text{ }}\\left( {90{\\text{ c}}{{\\text{m}}^2}} \\right)\\left( {6{\\text{ cm}}} \\right){\\text{ }} = {\\text{ }}540{\\text{ c}}{{\\text{m}}^3}\"></span>.</p>\n<p>The volume is 540 cubic centimeters.</p>\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

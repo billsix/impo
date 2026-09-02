@@ -1,0 +1,382 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-04-01",
+  "context-cnxmod:c6ba4735-5472-4e8a-bcce-f8bcb5349637",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-4-apportionment-methods"
+ ],
+ "uuid": "8b122b60-6859-4539-8005-0226f09e56f1",
+ "group_uuid": "357b6267-89d5-456c-9c73-8e39f10fe6c4",
+ "number": 29449,
+ "version": 11,
+ "uid": "29449@11",
+ "published_at": "2024-12-23T05:41:40.004Z",
+ "nickname": "CM-C11-M4-Q001",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "The science department of a high school has received a grant for 34 laptops. They plan to apportion them among their six classrooms based on each classroom’s student capacity. Use the standard quotas in the table below to answer each question.\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Room</th>\n<th>Room Capacity</th>\n<th>Room’s Standard Quota</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td>30</td>\n<td><span data-math=\"30 \\div 4.88 \\approx 6.15\">30 \\div 4.88 \\approx 6.15</span> laptops</td>\n</tr>\n<tr>\n<td>B</td>\n<td>25</td>\n<td><span data-math=\"25 \\div 4.88 \\approx 5.12\">25 \\div 4.88 \\approx 5.12</span> laptops</td>\n</tr>\n<tr>\n<td>C</td>\n<td>28</td>\n<td><span data-math=\"28 \\div 4.88 \\approx 5.74\">28 \\div 4.88 \\approx 5.74</span> laptops</td>\n</tr>\n<tr>\n<td>D</td>\n<td>32</td>\n<td><span data-math=\"32 \\div 4.88 \\approx 6.56\">32 \\div 4.88 \\approx 6.56</span> laptops</td>\n</tr>\n<tr>\n<td>E</td>\n<td>24</td>\n<td><span data-math=\"24 \\div 4.88 \\approx 4.92\">24 \\div 4.88 \\approx 4.92</span> laptops</td>\n</tr>\n<tr>\n<td>F</td>\n<td>27</td>\n<td><span data-math=\"27 \\div 4.88 \\approx 5.53\">27 \\div 4.88 \\approx 5.53</span> laptops</td>\n</tr>\n</tbody></table>\n",
+ "questions": [
+  {
+   "id": 545157,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use traditional rounding to determine the number of laptops assigned to each classroom.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The total population of students: <span data-math=\"{\\text{30  +  25  +  28  +  32  +  24  +  27  =  166}}\"></span> students. <span data-math=\"{\\text{Standard Divisor = }}\\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}} = \\frac{{{\\text{166 students}}}}{{{\\text{34 laptops}}}} \\approx 4.88{\\text{ students per laptop}}\"></span></p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Room</th>\n<th><span data-math=\"{\\text{Standard Quota = }}\\frac{{{\\text{State Population}}}}{{{\\text{Standard Divisor}}}}{\\text{ }}\"></span></th>\n<th>Rounded Laptops</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td><span data-math=\"\\frac{{{\\text{30 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 6}}{\\text{.15 laptops}}\"></span></td>\n<td>6</td>\n</tr>\n<tr>\n<td>B</td>\n<td><span data-math=\"\\frac{{{\\text{25 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 5}}{\\text{.13 laptops}}\"></span></td>\n<td>5</td>\n</tr>\n<tr>\n<td>C</td>\n<td><span data-math=\"\\frac{{{\\text{28 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 5}}{\\text{.74 laptops}}\"></span></td>\n<td>6</td>\n</tr>\n<tr>\n<td>D</td>\n<td><span data-math=\"\\frac{{{\\text{32 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 6}}{\\text{.56 laptops}}\"></span></td>\n<td>7</td>\n</tr>\n<tr>\n<td>E</td>\n<td><span data-math=\"\\frac{{{\\text{24 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 4}}{\\text{.92 laptops}}\"></span></td>\n<td>5</td>\n</tr>\n<tr>\n<td>F</td>\n<td><span data-math=\"\\frac{{{\\text{27 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 5}}{\\text{.53 laptops}}\"></span></td>\n<td>6</td>\n</tr>\n</tbody>\n</table>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "6, 5, 6, 7, 5, 6"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545158,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the sum of the values from part 1.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The total population of students: <span data-math=\"{\\text{30  +  25  +  28  +  32  +  24  +  27  =  166}}\"></span> students.<span data-math=\"{\\text{Standard Divisor = }}\\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}} = \\frac{{{\\text{166 students}}}}{{{\\text{34 laptops}}}} \\approx 4.88{\\text{ students per laptop}}\"></span></p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Room</th>\n<th><span data-math=\"{\\text{Standard Quota = }}\\frac{{{\\text{State Population}}}}{{{\\text{Standard Divisor}}}}{\\text{ }}\"></span></th>\n<th>Rounded Laptops</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td><span data-math=\"\\frac{{{\\text{30 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 6}}{\\text{.15 laptops}}\"></span></td>\n<td>6</td>\n</tr>\n<tr>\n<td>B</td>\n<td><span data-math=\"\\frac{{{\\text{25 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 5}}{\\text{.13 laptops}}\"></span></td>\n<td>5</td>\n</tr>\n<tr>\n<td>C</td>\n<td><span data-math=\"\\frac{{{\\text{28 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 5}}{\\text{.74 laptops}}\"></span></td>\n<td>6</td>\n</tr>\n<tr>\n<td>D</td>\n<td><span data-math=\"\\frac{{{\\text{32 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 6}}{\\text{.56 laptops}}\"></span></td>\n<td>7</td>\n</tr>\n<tr>\n<td>E</td>\n<td><span data-math=\"\\frac{{{\\text{24 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 4}}{\\text{.92 laptops}}\"></span></td>\n<td>5</td>\n</tr>\n<tr>\n<td>F</td>\n<td><span data-math=\"\\frac{{{\\text{27 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 5}}{\\text{.53 laptops}}\"></span></td>\n<td>6</td>\n</tr>\n</tbody>\n</table>\n<p>Sum of last column: <span data-math=\"{\\text{6  +  5  +  6  +  7  +  5  +  6  =  35}}\"></span></p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "35"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545159,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Does the sum found in part 2 equal the number of laptops available?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The total population of students: <span data-math=\"{\\text{30  +  25  +  28  +  32  +  24  +  27  =  166}}\"></span> students.<span data-math=\"{\\text{Standard Divisor = }}\\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}} = \\frac{{{\\text{166 students}}}}{{{\\text{34 laptops}}}} \\approx 4.88{\\text{ students per laptop}}\"></span></p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Room</th>\n<th><span data-math=\"{\\text{Standard Quota = }}\\frac{{{\\text{State Population}}}}{{{\\text{Standard Divisor}}}}{\\text{ }}\"></span></th>\n<th>Rounded Laptops</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td><span data-math=\"\\frac{{{\\text{30 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 6}}{\\text{.15 laptops}}\"></span></td>\n<td>6</td>\n</tr>\n<tr>\n<td>B</td>\n<td><span data-math=\"\\frac{{{\\text{25 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 5}}{\\text{.13 laptops}}\"></span></td>\n<td>5</td>\n</tr>\n<tr>\n<td>C</td>\n<td><span data-math=\"\\frac{{{\\text{28 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 5}}{\\text{.74 laptops}}\"></span></td>\n<td>6</td>\n</tr>\n<tr>\n<td>D</td>\n<td><span data-math=\"\\frac{{{\\text{32 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 6}}{\\text{.56 laptops}}\"></span></td>\n<td>7</td>\n</tr>\n<tr>\n<td>E</td>\n<td><span data-math=\"\\frac{{{\\text{24 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 4}}{\\text{.92 laptops}}\"></span></td>\n<td>5</td>\n</tr>\n<tr>\n<td>F</td>\n<td><span data-math=\"\\frac{{{\\text{27 students}}}}{{4.88{\\text{ students per laptop}}}}{\\text{ = 5}}{\\text{.53 laptops}}\"></span></td>\n<td>6</td>\n</tr>\n</tbody>\n</table>\n<p>Sum of last column: <span data-math=\"{\\text{6  +  5  +  6  +  7  +  5  +  6  =  35}}\"></span></p>\n<p>No. The rounded values added up to 35. There are only 34 available laptops. This is a problem.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "No."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,381 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-01T15:01:01.248Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbk1KIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--07935dc950a6c2e65a40a593005316b667b8c8bb",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbk1KIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--07935dc950a6c2e65a40a593005316b667b8c8bb/CS_Figure_05_08_026.jpg"
+  },
+  {
+   "created_at": "2024-11-01T15:01:01.257Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2tOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dcc4fe9bf02c4e85cf6994212dbf1da5036a5e8a",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2tOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dcc4fe9bf02c4e85cf6994212dbf1da5036a5e8a/CS_Figure_05_08_026.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:05-08-05",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:240fa88f-7202-49a8-b741-8c80ee7fa5ff",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-8-graphing-functions"
+ ],
+ "uuid": "b63bc387-a95e-4383-8b8a-df52293deed0",
+ "group_uuid": "32e62e3d-03e3-4cd7-a3fd-937099b7ef16",
+ "number": 30623,
+ "version": 9,
+ "uid": "30623@9",
+ "published_at": "2024-11-01T15:01:05.400Z",
+ "nickname": "CM-C05-M8-Q009",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "In the given figure the <span data-math=\"x\">x</span>-axis on the graph represents the years. The <i>y</i>-axis represents the number of teachers at Jones High School.\n<figure>\n<figcaption>Teachers at Jones High</figcaption>\n<img src=\"exercises/media/6f777fa1633cb21e.png\" alt=\"A graph titled, Teachers at Jones High. The horizontal axis representing years ranges from 1990 to 2025, in increments of 5. The vertical axis representing the number of teachers ranges from 0 to 90, in increments of 10. The graph shows a line that passes through the points, (1990, 20), (1995, 30), (2000, 50), (2005, 50), (2010, 40), (2015, 60), and (2020, 80).\"></figure>",
+ "questions": [
+  {
+   "id": 511321,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Interpret the <span data-math=\"x\">x</span>- and <span data-math=\"y\">y</span>-intercept.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "(0, 20) is the <span data-math=\"y\\text{-intercept}\">y\\text{-intercept}</span> and represents that there were 20 teachers at Jones High School in 1990. There is no <span data-math=\"x\\text{-intercept}\">x\\text{-intercept}</span>."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511322,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "For each segment, find the slope.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Between 1990 and 1995:</p>\n<p>The rise is 10. The run is 5.</p>\n<p>Use the slope formula. <span data-math=\"m = \\frac{{rise}}{{run}} = \\frac{{10}}{5} = 2\"></span></p>\n<p>On average, the school gained two teachers every year between 1990 and 1995.</p>\n<p>Between 1995 and 2000:</p>\n<p>The rise is 50 – 30 = 20.</p>\n<p>The run is 2000 – 1995 = 5.</p>\n<p>Use the slope formula. <span data-math=\"m = \\frac{{rise}}{{run}} = \\frac{{20}}{5} = 4\"></span></p>\n<p>On average, the school gained four teachers every year between 1995 and 2000.</p>\n<p>Between 2000 and 2005:</p>\n<p>The rise is 0.</p>\n<p>The run is 5.</p>\n<p>The slope is 0.</p>\n<p>On average, the school gained zero teachers every year between 2000 and 2005. That means the number of teachers remained constant.</p>\n<p>Between 2005 and 2010:</p>\n<p>The rise is –10.</p>\n<p>The run is 5.</p>\n<p>Use the slope formula. <span data-math=\"m = \\frac{{rise}}{{run}} = \\frac{{ - 10}}{5} = - 2\"></span></p>\n<p>On average, the school lost two teachers every year between 2005 and 2010.</p>\n<p>Between 2010 and 2015:</p>\n<p>The rise is 20.</p>\n<p>The run is 5.</p>\n<p>Use the slope formula. <span data-math=\"m = \\frac{{rise}}{{run}} = \\frac{{20}}{5} = 4\"></span></p>\n<p>On average, the school gained four teachers every year between 2010 and 2015.</p>\n<p>Between 2015 and 2020:</p>\n<p>The rise is 20.</p>\n<p>The run is 5.</p>\n<p>Use the slope formula. <span data-math=\"m = \\frac{{rise}}{{run}} = \\frac{{20}}{5} = 4\"></span></p>\n<p>On average, the school gained four teachers every year between 2015 and 2020, the same slope as between 2010 and 2015.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "In the first 5 years the slope is 2; this means that on average, the school gained 2 teachers every year between 1990 and 1995. Between 1995 and 2000, the slope is 4; on average the school gained 4 teachers every year. Then the slope is 0 between 2000 and 2005 meaning the number of teachers remained the same. There was a decrease in teachers between 2005 and 2010, represented by a slope of –2. Finally, the slope is 4 between 2010 and 2020, which indicates that on average the school gained 4 teachers every year."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511323,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Create an interpretation of this graph (i.e., make up a story that goes with it).",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Answers will vary. Jones High School was founded in 1990 and hired 2 teachers per year until 1995, when they had an increase in students and they hired 4 teachers per year for the next 5 years. Then there was a hiring freeze, and no teachers were hired between 2000 and 2005. After the hiring freeze, the student population decreased, and they lost 2 teachers per year until 2010. Another surge in student population meant Jones High School hired 4 new teachers per year until 2020 when they had 80 teachers at the school. "
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

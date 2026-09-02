@@ -1,0 +1,350 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:05-09-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:2c1d72ab-4f5d-4a61-8075-f4aa39ecb8cd",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-9-systems-of-linear-equations-in-two-variables"
+ ],
+ "uuid": "9790e0a8-1d47-488a-951e-0c4cb617af35",
+ "group_uuid": "81ab1b77-8b2d-464d-9345-edf844007a14",
+ "number": 30784,
+ "version": 4,
+ "uid": "30784@4",
+ "published_at": "2024-11-02T06:09:02.713Z",
+ "nickname": "CM-C05-M9-Q001",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Determine whether the ordered pair is a solution to the system.\n<br>\n<span data-math=\"\\left\\{ \\begin{array}{l}\n  x - 3y =  - 8 \\\\\n   - 3x - y = 4 \\\\ \n\\end{array}  \\right.\"></span>\n",
+ "questions": [
+  {
+   "id": 511421,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"(2, -2)\">(2, -2)</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"\\left\\{ {\\begin{array}{*{20}{c}}\n{x - 3y =  - 8}\\\\\n{ - 3x - y = 4}\n\\end{array}} \\right.\"></span></td>\n<td></td>\n</tr>\n<tr>\n<td>Test (2, –2).</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><span data-math=\"2 - 3\\left( { - 2} \\right) =  - 8\"></span></td>\n<td>Substitute into the first equation.</td>\n</tr>\n<tr>\n<td><span data-math=\"2 + 6 =  - 8\"></span></td>\n<td>This is not true. The ordered pair is not a solution to the system because the ordered pair is not a solution to the equation.</td>\n</tr>\n</tbody>\n</table>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "No"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511422,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"(-2, 2)\">(-2, 2)</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"\\left\\{ {\\begin{array}{*{20}{c}}\n{x - 3y =  - 8}\\\\\n{ - 3x - y = 4}\n\\end{array}} \\right.\"></span></td>\n<td></td>\n</tr>\n<tr>\n<td>Test (–2, 2).</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><span data-math=\" - 2 - 3\\left( 2 \\right) =  - 8\"></span></td>\n<td>Substitute into the first equation.</td>\n</tr>\n<tr>\n<td><span data-math=\" - 2 - 6 =  - 8\"></span></td>\n<td>This is true.</td>\n</tr>\n<tr>\n<td><span data-math=\" - 3\\left( { - 2} \\right) - \\left( 2 \\right) = 4\"></span></td>\n<td>Substitute into the second equation.</td>\n</tr>\n<tr>\n<td><span data-math=\"6 - 2 = 4\"></span></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><span data-math=\"4{\\text{ }} = {\\text{ }}4\"></span></td>\n<td>This is true. This ordered pair is a solution to the system.</td>\n</tr>\n</tbody>\n</table>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Yes"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  4,
+  3,
+  2,
+  1
+ ]
+}

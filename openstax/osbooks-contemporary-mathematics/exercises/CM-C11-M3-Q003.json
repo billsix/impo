@@ -1,0 +1,406 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-03-01",
+  "context-cnxmod:08e5606c-6301-4b4e-8f81-8f44b64d21cc",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-3-standard-divisors-standard-quotas-and-the-apportionment-problem"
+ ],
+ "uuid": "3042a3a0-2035-41be-855d-3d2d0d8621ee",
+ "group_uuid": "8be63115-fd10-4b4d-a1ff-38332193f46a",
+ "number": 29427,
+ "version": 15,
+ "uid": "29427@15",
+ "published_at": "2024-12-23T05:29:05.036Z",
+ "nickname": "CM-C11-M3-Q003",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Table 11.9 contains a list of the five U.S. states ranked sixth through tenth in the number of representatives in the U.S. House of Representatives, along with the population of that state in 2021. Use the information in the table to answer the questions.\n<table>\n<thead>\n<tr>\n<th>State</th>\n<th>Representative Seats</th>\n<th>State Population</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>(IL) Illinois</td>\n<td>18\n</td><td>12,804,100</td>\n</tr>\n<tr>\n<td>(OH) Ohio</td>\n<td>16</td>\n<td>11,714,600</td>\n</tr>\n<tr>\n<td>(MI) Michigan</td>\n<td>14</td>\n<td>9,992,430</td>\n</tr>\n<tr>\n<td>(GA) Georgia</td>\n<td>14</td>\n<td>10,830,000</td>\n</tr>\n<tr>\n<td>(NC) North Carolina</td>\n<td>13</td>\n<td>10,701,000</td>\n</tr>\n</tbody>\n<tfoot>\n</tfoot><caption>The Sixth through Tenth Ranked U.S. States by Number of Representatives (sources: https://www.census.gov/popclock/ [state population], https://www.britannica.com/topic/United-States-House-of-Representatives-Seats-by-State-1787120 [representative seats])</caption>\n</table>\n",
+ "questions": [
+  {
+   "id": 545080,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What is the ratio of State Population to Representative Seats for each state to the nearest hundred thousand?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Make a ratio of <span data-math=\"\\frac{{{\\text{State Population}}}}{{{\\text{Representative Seats}}}}\"></span> for each state to the nearest hundred thousand.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th><span data-math=\"\\frac{{{\\text{State Population}}}}{{{\\text{Representative Seats}}}}\"></span></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>IL</td>\n<td><span data-math=\"\\frac{{12,804,100}}{{18}} \\approx 700,000\"></span></td>\n</tr>\n<tr>\n<td>OH</td>\n<td><span data-math=\"\\frac{{11,714,600}}{{16}} \\approx 700,000\"></span></td>\n</tr>\n<tr>\n<td>MI</td>\n<td><span data-math=\"\\frac{{9,992,430}}{{14}} \\approx 700,000\"></span></td>\n</tr>\n<tr>\n<td>GA</td>\n<td><span data-math=\"\\frac{{10,830,000}}{{14}} \\approx 800,000\"></span></td>\n</tr>\n<tr>\n<td>NC</td>\n<td><span data-math=\"\\frac{{10,701,000}}{{13}} \\approx 800,000\"></span></td>\n</tr>\n</tbody>\n</table>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "IL 700,000; OH 700,000; MI 700,000; GA 800,000; NC 700,000"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545081,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What is the ratio of Representative Seats to State Population for each state rounded to seven decimal places?\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th><span data-math=\"\\frac{{{\\text{Representative Seats}}}}{{{\\text{State Population}}}}\"></span></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>IL</td>\n<td><span data-math=\"\\frac{{18}}{{12,804,100}} \\approx 0.0000014\"></span></td>\n</tr>\n<tr>\n<td>OH</td>\n<td><span data-math=\"\\frac{{16}}{{11,714,600}} \\approx 0.0000014\"></span></td>\n</tr>\n<tr>\n<td>MI</td>\n<td><span data-math=\"\\frac{{14}}{{9,992,430}} \\approx 0.0000014\"></span></td>\n</tr>\n<tr>\n<td>GA</td>\n<td><span data-math=\"\\frac{{14}}{{10,830,000}} \\approx 0.0000013\"></span></td>\n</tr>\n<tr>\n<td>NC</td>\n<td><span data-math=\"\\frac{{13}}{{10,701,000}} \\approx 0.0000012\"></span></td>\n</tr>\n</tbody>\n</table>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "IL 0.0000014; OH 0.0000014; MI 0.0000014; GA 0.0000013; NC 0.0000014"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545082,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What is the ratio of Representative Seats to State Population for each state rounded to six decimal places?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th><span data-math=\"\\frac{{{\\text{Representative Seats}}}}{{{\\text{State Population}}}}\"></span></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>IL</td>\n<td><span data-math=\"\\frac{{18}}{{12,804,100}} \\approx 0.000001\"></span></td>\n</tr>\n<tr>\n<td>OH</td>\n<td><span data-math=\"\\frac{{16}}{{11,714,600}} \\approx 0.000001\"></span></td>\n</tr>\n<tr>\n<td>MI</td>\n<td><span data-math=\"\\frac{{14}}{{9,992,430}} \\approx 0.000001\"></span></td>\n</tr>\n<tr>\n<td>GA</td>\n<td><span data-math=\"\\frac{{14}}{{10,830,000}} \\approx 0.000001\"></span></td>\n</tr>\n<tr>\n<td>NC</td>\n<td><span data-math=\"\\frac{{13}}{{10,701,000}} \\approx 0.000001\"></span></td>\n</tr>\n</tbody>\n</table>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "IL 0.000001; OH 0.000001; MI 0.000001; GA 0.000001; NC 0.000001"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545083,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Does there appear to be a constant ratio? Are the results similar to the top five states?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The ratio of State Population to Representative Seats seems to be either 700,000 or 800,000 to 1. There does appear to be a constant ratio of about 0.000001 to 1 of Representative Seats to State Population when rounding to six decimal places. This is the same as the top five states."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,351 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-21T12:11:11.994Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWtIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75bd234e89e9fa2436b5798fc1854004d1188c69",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWtIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75bd234e89e9fa2436b5798fc1854004d1188c69/Chapter%2011%20Voting%20and%20Apportionment_CE_AC_Combined.docx"
+  },
+  {
+   "created_at": "2024-12-21T12:11:11.998Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbW9IIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9a07a5fcba89f25cdb339f9c9d0a099b205aed23",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbW9IIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9a07a5fcba89f25cdb339f9c9d0a099b205aed23/CS_Figure_11_01_033.jpg"
+  },
+  {
+   "created_at": "2024-12-21T12:11:12.000Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcklRIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--993dce2e7ab53acb6f0fe1603387a763867e9e5e",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcklRIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--993dce2e7ab53acb6f0fe1603387a763867e9e5e/CS_Figure_11_01_033.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:11-01-01",
+  "context-cnxmod:91031584-74b3-4327-ad1f-f12f21835af9",
+  "all",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-1-voting-methods"
+ ],
+ "uuid": "858dd219-5052-4d96-ba7d-3fab00f17810",
+ "group_uuid": "3f79d006-df36-414c-b442-8a652369ae84",
+ "number": 29483,
+ "version": 12,
+ "uid": "29483@12",
+ "published_at": "2024-12-21T12:11:15.250Z",
+ "nickname": "CM-C11-M1-Q010",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 544815,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A pairwise comparison matrix is given. Determine the winner by the pairwise comparison method. If there is not a winner, explain why. If there is a winner, tell whether the winner is a Condorcet candidate.<br>\n<figure>\n<figcaption> A Pairwise Comparison Matrix</figcaption>\n<img src=\"exercises/media/6b8fc875dabebb93.png\" alt=\"A table shows the pairwise comparison between P, Q, R, S, T, and Z. The data given in the table are as follows. The table shows six rows and seven columns. The column headers are Runner and Opponent, P, Q, R, S, T, and Z. Column one shows P wins, Q wins, R wins, S wins, T wins, and Z wins. Column two shows Nil, Q P 5, R P 2, S P 0, T P 2, and Z P 1. Column three shows P Q 1, Nil, R Q 0, S Q 2, T Q 5, and Z Q 4. Column four shows P R 4, Q R 6, Nil, S R 1, T R 2, and Z R 5. Column five shows P S 6, Q S 4, R S 5, Nil, T S 0, and Z S 1. Column six shows P T 4, Q T 1, R T 4, S T 6, Nil, and Z T 2. Column seven shows P Z 5, Q Z 2, R Z 1, S Z 5, T Z 4, and Nil.\"></figure>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Compare PQ 1 to QP 5. Because 1 is less than 5, PQ 1 is the loser. Cross out PQ 1.</p>\n<p>Compare PR 4 to RP 2. Because 2 is less than 4, RP 2 is the loser. Cross out RP 2.</p>\n<p>Compare PS 6 to SP 0. Because 0 is less than 6, SP 0 is the loser. Cross it out.</p>\n<p>Continue comparing in this manner until you have completed the table. Because there are no 3s in the table, there will be no ties.</p>\n<p>A win earns 1 point, a tie earns a half point, and a loss earns nothing.</p>\n<p>P has 4 wins (1 point each) for 4 points.</p>\n<p>Q has 3 wins (1 point each) for 3 points.</p>\n<p>R has 2 wins (1 point each) for 2 points.</p>\n<p>S has 2 wins (1 point each) for 2 points.</p>\n<p>T has 2 wins (1 point each) for 2 points.</p>\n<p>Z has 2 wins (1 point each) for 2 points.</p>\n<p>Candidate P wins with 4 points. P is not a Condorcet winner because P lost to Q.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Candidate P wins. Candidate P is not a Condorcet candidate because P lost to Candidate Q."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

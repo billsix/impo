@@ -1,0 +1,554 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:12-05-01",
+  "lo:stax-cmath:12-05-03",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:9c8c0bf6-458e-4fa5-87dc-94bee753c6d2",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:12-5-euler-circuits"
+ ],
+ "uuid": "974922e4-c5f9-4f08-8a48-b2a020efceb6",
+ "group_uuid": "38bc248b-fa0d-423e-ad74-08f917ce5c05",
+ "number": 33214,
+ "version": 7,
+ "uid": "33214@7",
+ "published_at": "2024-12-19T07:39:12.135Z",
+ "nickname": "CM-C12-M5-Q006",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, determine whether each statement is always true, sometimes true, or never true.",
+ "questions": [
+  {
+   "id": 543432,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A disconnected graph has only one component.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A component of a graph is a subgraph in which there is a path between each pair of vertices in the subgraph, but no edges between any of the vertices in the subgraph and a vertex that is not in the subgraph. A disconnected graph will have at least two components."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "never true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543433,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A graph that has all vertices of even degree is connected.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A graph might have two components whose vertices all have even degrees. It might be composed of a single component of even-degreed vertices."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "sometimes true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543434,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "There is a route through the city of Konigsberg that a person may pass over each bridge exactly once and return to the starting point.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "The graph of the town had four vertices with odd degrees. To have an Euler circuit, you need the vertices to be of even degree."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "never true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543435,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A graph with vertices of all even degree is Eulerian.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A graph might have two components whose vertices all have even degrees. If the graph is not connected, it cannot have an Euler circuit. It might be composed of a single component of even-degreed vertices and have an Euler circuit."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "sometimes true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543436,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "An Eulerian graph has all vertices of even degree.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Euler proved that for a graph to have an Euler circuit, all the vertices must be even."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "always true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543437,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "An Euler circuit is a closed trail.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "By definition, an Euler circuit is a circuit (closed trail) that visits every edge in a graph exactly once."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "always true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543438,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "An Euler circuit is a closed path",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Sometimes an Euler circuit visits the same vertex more than once, and sometimes it does not. If the vertex has degree 4, it will be visited twice, for instance."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "sometimes true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543439,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "To eulerize a graph, add new edges between previously nonadjacent vertices until no vertices have odd degree.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "You cannot add edges between vertices that were nonadjacent."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "never true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543440,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "To eulerize a graph, add duplicate edges between adjacent vertices until no vertices have odd degree.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "This is the correct procedure to eulerize a graph."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "always true"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543441,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The number of duplicate edges required to eulerize a graph is half the number of vertices of odd degree.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "You might have an odd number of vertices with odd degrees. For instance, if there are three vertices with an odd degree, you cannot add 1.5 edges."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "sometimes true"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

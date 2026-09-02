@@ -1,0 +1,374 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:07-10-02",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:685f0750-5d11-4693-8bbf-97284946ff6d",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:7-10-the-binomial-distribution"
+ ],
+ "uuid": "d1fccbac-08f8-4119-84e6-aac947a9579c",
+ "group_uuid": "722f4a7d-9248-4825-a899-cc84749b6b96",
+ "number": 31580,
+ "version": 3,
+ "uid": "31580@3",
+ "published_at": "2024-11-11T14:25:10.429Z",
+ "nickname": "CM-C07-M10-Q002",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Compute the probabilities (rounded to 3 decimal places) of the following events related to rolling a standard 4-sided die (with faces labeled 1, 2, 3, and 4):",
+ "questions": [
+  {
+   "id": 516835,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "You roll the die 10 times and get exactly four 2s.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Binomial formula: For a binomial experiment with <i>n</i> trials and <i>p</i> probability of success in each trial, then P(number of <i>a</i> successes) = <span data-math=\"nCa \\times {p^a} \\times {\\left( {1 - p} \\right)^{n - a}}\"></span>.</p>\n<p>There is one 2 out of 4 sides, so <i>p</i> is <span data-math=\"\\frac{1}{4}\"></span>.</p>\n<p>P(exactly four 2s in 10 rolls) =<span data-math=\"\\left( {10C4} \\right){\\left( {\\frac{1}{4}} \\right)^4}{\\left( {1 - \\frac{1}{4}} \\right)^{10 - 4}}\"></span>.</p>\n<p><span data-math=\"\\left( {210} \\right){\\left( {\\frac{1}{4}} \\right)^4}{\\left( {\\frac{3}{4}} \\right)^6} = \\frac{{153,090}}{{1,048,576}} \\approx 0.146\"></span></p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "0.146"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 516836,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "You roll the die 20 times and get exactly four 2s.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Binomial formula: For a binomial experiment with <i>n</i> trials and <i>p</i> probability of success in each trial, then P(number of <i>a</i> successes) = <span data-math=\"nCa \\times {p^a} \\times {\\left( {1 - p} \\right)^{n - a}}\"></span>.</p>\n<p>There is one 2 out of 4 sides, so <i>p</i> is <span data-math=\"\\frac{1}{4}\"></span>.</p>\n<p>P(exactly four 2s in 20 rolls) =<span data-math=\"\\left( {20C4} \\right){\\left( {\\frac{1}{4}} \\right)^4}{\\left( {1 - \\frac{1}{4}} \\right)^{20 - 4}}\"></span>.</p>\n<p><span data-math=\"\\left( {4,845} \\right){\\left( {\\frac{1}{4}} \\right)^4}{\\left( {\\frac{3}{4}} \\right)^{16}} \\approx 0.190\"></span></p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "0.190"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 516837,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "You roll the die 30 times and get exactly four 2s.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Binomial formula: For a binomial experiment with <i>n</i> trials and <i>p</i> probability of success in each trial, then P(number of <i>a</i> successes) = <span data-math=\"nCa \\times {p^a} \\times {\\left( {1 - p} \\right)^{n - a}}\"></span>.</p>\n<p>There is one 2 out of 4 sides, so <i>p</i> is <span data-math=\"\\frac{1}{4}\"></span>.</p>\n<p>P(exactly four 2s in 20 rolls) =<span data-math=\"\\left( {30C4} \\right){\\left( {\\frac{1}{4}} \\right)^4}{\\left( {1 - \\frac{1}{4}} \\right)^{30 - 4}}\"></span>.</p>\n<p><span data-math=\"\\left( {27,405} \\right){\\left( {\\frac{1}{4}} \\right)^4}{\\left( {\\frac{3}{4}} \\right)^{26}} \\approx 0.060\"></span></p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "0.060"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,480 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-03-01",
+  "lo:stax-cmath:11-03-02",
+  "lo:stax-cmath:11-03-03",
+  "context-cnxmod:08e5606c-6301-4b4e-8f81-8f44b64d21cc",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-3-standard-divisors-standard-quotas-and-the-apportionment-problem"
+ ],
+ "uuid": "e124c173-40b9-403c-8d87-99985eeb88ca",
+ "group_uuid": "3d48d9c2-0dec-4c70-9f62-8f8f8d9a9f40",
+ "number": 29432,
+ "version": 7,
+ "uid": "29432@7",
+ "published_at": "2024-12-21T04:30:45.119Z",
+ "nickname": "CM-C11-M3-Q008",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "In the following questions, assume there is a constant ratio between units of A and units of B. Two students are having a discussion. Determine who is correct: Student 1, Student 2, both, or neither.",
+ "questions": [
+  {
+   "id": 544704,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Student 1 says that the number of units of A is the product of the number of units of B times the ratio of A to B.<br>\nStudent 2 says that the number of units of A is the quotient of the number of units of B divided by the ratio of A to B.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Student 1:</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"A = B \\cdot \\frac{A}{B}\"></span></td>\n<td>This is true because the right side simplifies to A.</td>\n</tr>\n</tbody>\n</table>\n<p>Student 2:</p>\n<p><span data-math=\"A = B \\div \\frac{A}{B}\"></span></p>\n<p>This is the same as</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"A = B \\cdot \\frac{B}{A}\"></span></td>\n<td>This is not true because the left side does not equal the right side.</td>\n</tr>\n</tbody>\n</table>\n<p>Student 1 is correct.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Student 1 is correct."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544705,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Student 1 says that the number of units of A is the quotient of the number of units of B divided by the ratio of B to A.<br>\nStudent 2 says that the number of units of B is the quotient of the number of units of A divided by the ratio of A to B.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Student 1:</p>\n<p><span data-math=\"A = B \\div \\frac{B}{A}\"></span></p>\n<p>This is the same as</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"A = B \\cdot \\frac{A}{B}\"></span></td>\n<td>This is true because the right side simplifies to A.</td>\n</tr>\n</tbody>\n</table>\n<p>Student 2:</p>\n<p><span data-math=\"B = A \\div \\frac{A}{B}\"></span></p>\n<p>This is the same as</p>\n<table class=\"unnumbered unstyled\">\n\n<tbody>\n<tr>\n<td><span data-math=\"B = A \\cdot \\frac{B}{A}\"></span></td>\n<td>This is true because the right side simplifies to B.</td>\n</tr>\n</tbody>\n</table>\n<p>Both students are correct.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Both are correct."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544706,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Suppose there are 110 of item A and 55 of item B.<br>\nStudent 1 says the ratio of A to B is <span data-math=\"\\frac{1}{2}\">\\frac{1}{2} .</span> Student 2 says the ratio of B to A is <span data-math=\"\\frac{1}{0.5}\">\\frac{1}{0.5}\"&gt;.</span> .\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Student 1:</p>\n<p><span data-math=\"\\frac{A}{B} = \\frac{{110}}{{55}} = 2\"></span></p>\n<p>Student 1 is wrong.</p>\n<p>Student 2:</p>\n<p><span data-math=\"\\frac{B}{A} = \\frac{{55}}{{110}} = \\frac{1}{2}\"></span></p>\n<p><span data-math=\"\\frac{1}{{0.5}} = 2\"></span></p>\n<p>Student 2 is wrong.</p>\n<p>Both students are incorrect.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Neither are correct."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544707,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Suppose the constant ratio of A to B is 0.75. Student 1 says the ratio of A to B is <span data-math=\"\\frac{4}{3}\">\\frac{4}{3}</span> \nStudent 2 says the ratio of B to A is <span data-math=\"\\frac{3}{4}\">\\frac{3}{4}</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Given: <span data-math=\"\\frac{A}{B} = 0.75\"></span></p>\n<p>Student 1:</p>\n<p><span data-math=\"\\frac{A}{B} = \\frac{4}{3} \\approx 1.3333\"></span></p>\n<p>Student 1 is wrong.</p>\n<p>Student 2:</p>\n<p>B to A should be <span data-math=\"\\frac{1}{{0.75}} \\approx 1.33333\"></span>.</p>\n<p>Student 2 says B to A is <span data-math=\"\\frac{3}{4} = 0.75\"></span>.</p>\n<p>Student 2 is wrong.</p>\n<p>Both students are wrong.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Neither are correct."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544708,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Student 1 says that <span data-math=\"{\\text{Standard Divisor}} = \\frac{{{\\text{House Size}}}}{{{\\text{Total Population}}}}\">{\\text{Standard Divisor}} = \\frac{{{\\text{House Size}}}}{{{\\text{Total Population}}}}</span>. Student 2 says that <span data-math=\"{\\text{Standard Divisor}} = \\frac{{{\\text{Sum of the State Populations}}}}{{{\\text{Total Number of Seats Available}}}}\"></span> .",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Student 1 is incorrect. <span data-math=\"{\\text{Standard Divisor = }}\\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}}\"></span></p>\n<p>Student 2 is correct. <span data-math=\"{\\text{Standard Divisor = }}\\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}}\"></span>. The total population is the sum of the state populations. The house size is the total number of seats available.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Student 2 is correct."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544709,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Student 1 says that <span data-math=\"{\\text{State's Standard Divisor}} = \\frac{{{\\text{Total Population}}}}{{{\\text{State's Standard Quota}}}}\">{\\text{State's Standard Divisor}} = \\frac{{{\\text{Total Population}}}}{{{\\text{State's Standard Quota}}}}</span>.\n<br>Student 2 says that <span data-math=\"{\\text{State's Standard Quota}} = \\frac{{{\\text{State Population}}}}{{{\\text{Standard Divisor}}}}\"></span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Student 1 is incorrect. The House Size should be in the denominator. <span data-math=\"{\\text{Standard Divisor = }}\\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}}\"></span></p>\n<p>Student 2 is correct. <span data-math=\"{\\text{Standard Quota = }}\\frac{{{\\text{State Population}}}}{{{\\text{Standard Divisor}}}}\"></span></p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Student 2 is correct."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544710,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Student 1 says that <span data-math=\"{\\text{State's Standard Quota}} = {\\text{State Population }} \\div \\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}}\">{\\text{State's Standard Quota}} = {\\text{State Population }} \\div \\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}}</span>.\n<br>Student 2 says that <span data-math=\"{\\text{State's Standard Quota  = }}\\frac{{{\\text{State Population}}}}{{{\\text{Standard}}\\,{\\text{Divisor}}}}\">{\\text{State's Standard Quota  = }}\\frac{{{\\text{State Population}}}}{{{\\text{Standard}}\\,{\\text{Divisor}}}}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Because the Standard Quota = <span data-math=\"\\frac{{{\\text{State Population}}}}{{{\\text{Standard Divisor}}}}{\\text{ seats }}\"></span> and the <span data-math=\"{\\text{Standard Divisor = }}\\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}}\"></span>,</p>\n<p>both students are correct. Student 1 substituted the Standard Divisor expression into the Standard Quota formula.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Both are correct."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

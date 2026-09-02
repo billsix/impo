@@ -1,0 +1,374 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:07-05-02",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:a947bbec-54cb-41b9-a68d-f047f00cad1c",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:7-5-basic-concepts-of-probability"
+ ],
+ "uuid": "812dcc7e-8919-4d9d-84c6-ba39436b7d73",
+ "group_uuid": "1f339a28-2786-4061-8aef-799905f58355",
+ "number": 31400,
+ "version": 3,
+ "uid": "31400@3",
+ "published_at": "2024-11-09T08:10:34.255Z",
+ "nickname": "CM-C07-M5-Q004",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "You have a modified deck of cards containing only 3<span data-math=\"\\heartsuit\"></span>, 4<span data-math=\"\\heartsuit\"></span>, and 5<span data-math=\"\\heartsuit\"></span>. You draw 2 two cards without replacing them (where order matters). What is the probability of each event?",
+ "questions": [
+  {
+   "id": 515843,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The first card drawn is 3<span data-math=\"\\heartsuit\"></span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The “tree” as a table: These are all hearts, so only the number of the card is in the table.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Root</td>\n<td>1<sup>st</sup> Draw</td>\n<td>2<sup>nd</sup> Draw</td>\n<td>Results</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>3</td>\n<td>4</td>\n<td>34</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>5</td>\n<td>35</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>4</td>\n<td>3</td>\n<td>43</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>5</td>\n<td>45</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>5</td>\n<td>3</td>\n<td>53</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>4</td>\n<td>54</td>\n</tr>\n</tbody>\n</table>\n<p>There are six possible results.</p>\n<p><i>P</i>(the first card is a 3 heart) = <span data-math=\"\\frac{2}{6} = \\frac{1}{3}\"></span>.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\frac{1}{3}\">\\frac{1}{3}</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 515844,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The first card drawn has a lower number than the second card.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The “tree” as a table: These are all hearts, so only the number of the card is in the table.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Root</td>\n<td>1<sup>st</sup> Draw</td>\n<td>2<sup>nd</sup> Draw</td>\n<td>Results</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>3</td>\n<td>4</td>\n<td>34</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>5</td>\n<td>35</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>4</td>\n<td>3</td>\n<td>43</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>5</td>\n<td>45</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>5</td>\n<td>3</td>\n<td>53</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>4</td>\n<td>54</td>\n</tr>\n</tbody>\n</table>\n<p>There are six possible results. The ones that satisfy the requirement are 34, 35, and 45.</p>\n<p><i>P</i>(the first card drawn has a lower number than the second card) <span data-math=\" = \\frac{3}{6} = \\frac{1}{2}\"></span>.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\frac{1}{2}\">\\frac{1}{2}</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 515845,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "One of the cards drawn is 4<span data-math=\"\\heartsuit\"></span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The “tree” as a table: These are all hearts, so only the number of the card is in the table.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Root</td>\n<td>1<sup>st</sup> Draw</td>\n<td>2<sup>nd</sup> Draw</td>\n<td>Results</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>3</td>\n<td>4</td>\n<td>34</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>5</td>\n<td>35</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>4</td>\n<td>3</td>\n<td>43</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>5</td>\n<td>45</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>5</td>\n<td>3</td>\n<td>53</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>4</td>\n<td>54</td>\n</tr>\n</tbody>\n</table>\n<p>There are six possible results. The ones that satisfy the requirement are 34, 43, 45, and 54.</p>\n<p><i>P</i>(one of the cards drawn is the 4 hearts) = <span data-math=\"\\frac{4}{6} = \\frac{2}{3}\"></span>.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\frac{2}{3}\">\\frac{2}{3}\"&gt;</span>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  3,
+  2,
+  1
+ ]
+}

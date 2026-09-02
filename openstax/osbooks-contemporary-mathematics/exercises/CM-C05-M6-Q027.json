@@ -1,0 +1,355 @@
+{
+ "images": [
+  {
+   "created_at": "2024-10-28T10:26:56.243Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2dOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1138d8388b38d242026a68a43073cc8483d516b9",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2dOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1138d8388b38d242026a68a43073cc8483d516b9/CS_Figure_05_06_018.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:05-06-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:5ce4d68c-f5a2-4e6f-92ed-87da9ba26264",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-6-quadratic-equations-in-one-variable-with-applications"
+ ],
+ "uuid": "129276ea-09b8-45d8-bd2b-c564f95d65bd",
+ "group_uuid": "95abfbbb-90ab-4fab-baa6-992ffd98047b",
+ "number": 34558,
+ "version": 10,
+ "uid": "34558@10",
+ "published_at": "2024-10-28T10:26:58.846Z",
+ "nickname": "CM-C05-M6-Q027",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 508763,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The graph shown is the graph of which quadratic equation?\n<img src=\"exercises/media/58e4dfc87e9f8178.jpg\" alt=\"A parabola is plotted on an x y coordinate plane. The x and y axes range from negative 10 to 10, in increments of 1. The parabola opens up and it passes through the following points, (negative 5, 0), (negative 3, negative 4), and (negative 1, 0).\">\n",
+   "answers": [
+    {
+     "id": 996552,
+     "content_html": "<span data-math=\"{x^2}-x + 5 = 0\">{x^2}-x + 5 = 0</span>",
+     "correctness": "0.0"
+    },
+    {
+     "id": 996553,
+     "content_html": "<span data-math=\"{x^2}-5x + 1 = 0\">{x^2}-5x + 1 = 0</span>",
+     "correctness": "0.0"
+    },
+    {
+     "id": 996554,
+     "content_html": "<span data-math=\"{x^2} + 6x + 5 = 0\">{x^2} + 6x + 5 = 0</span>",
+     "correctness": "1.0"
+    },
+    {
+     "id": 996555,
+     "content_html": "<span data-math=\"{x^2}-4x + 5 = 0\">{x^2}-4x + 5 = 0</span>",
+     "correctness": "0.0"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Since it intersects the <span data-math=\"x\"></span>-axis at –5 and –1, you can “reverse” solve.</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"x = - 5\"></span></td>\n<td><span data-math=\"x = - 1\"></span></td>\n<td>Write the factors they came from.</td>\n</tr>\n<tr>\n<td><span data-math=\"x + 5 = 0\"></span></td>\n<td><span data-math=\"x + 1 = 0\"></span></td>\n<td>Multiply together to get the quadratic equation.</td>\n</tr>\n<tr>\n<td><span data-math=\"\\left({x + 5} \\right)\\left({x + 1} \\right) = 0\"></span></td>\n<td></td>\n<td>Distribute twice to expand the polynomial.</td>\n</tr>\n<tr>\n<td><span data-math=\"{x^2} + 5x + x + 5 = 0\"></span></td>\n<td></td>\n<td>Simplify.</td>\n</tr>\n<tr>\n<td><span data-math=\"{x^2} + 6x + 5 = 0\"></span></td>\n<td></td>\n<td>This is the correct option.</td>\n</tr>\n</tbody>\n</table>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

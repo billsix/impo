@@ -1,0 +1,482 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:08-06-03",
+  "lo:stax-cmath:08-06-02",
+  "lo:stax-cmath:08-06-04",
+  "context-cnxmod:5f393556-fbd8-4f70-adb2-fd7458a9d06b",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-6-the-normal-distribution"
+ ],
+ "uuid": "f1099205-1d37-471a-af4f-a438a6fc4d7f",
+ "group_uuid": "ba4219a8-752a-4368-bbbe-2a008d68cd69",
+ "number": 29087,
+ "version": 9,
+ "uid": "29087@9",
+ "published_at": "2024-12-03T08:22:00.103Z",
+ "nickname": "CM-C08-M6-011",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For each of these problems, assume we’re working with normally distributed data with mean 100 and standard deviation 12.",
+ "questions": [
+  {
+   "id": 531566,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What percentage of the data falls between 76 and 124? Use the 68-95-99.7 Rule.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The 68–95–99.7 Rule tells you that 68 percent of the data would fall within 3 standard deviations above or below the mean. Ninety-five percent of the data would fall within 2 standard deviations above or below the mean. Finally, 99.7 percent of the data would fall within 1 standard deviation above or below the mean.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>mean − 3 SD</th>\n<th>mean − 2 SD</th>\n<th>mean − 1 SD</th>\n<th>mean</th>\n<th>mean + 1 SD</th>\n<th>mean + 2 SD</th>\n<th>mean + 3 SD</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>100 − 36</td>\n<td>100 − 24</td>\n<td>100 − 12</td>\n<td>100</td>\n<td>100 + 12</td>\n<td>100 + 24</td>\n<td>100 + 36</td>\n</tr>\n<tr>\n<td>64</td>\n<td>76</td>\n<td>88</td>\n<td>100</td>\n<td>112</td>\n<td>124</td>\n<td>136</td>\n</tr>\n</tbody>\n</table>\n<p>76 and 124 are two standard deviations above and below the mean. The 68–95–99.7 Rule tells you that 95 percent of the data values are between 76 and 124.</p>\n<p>95%</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "95%"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 531567,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What percentage of the data falls between 100 and 112? Use the 68-95-99.7 Rule.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The 68–95–99.7 Rule tells you that 68 percent of the data would fall within 3 standard deviations above or below the mean. Ninety-five percent of the data would fall within 2 standard deviations above or below the mean. Finally, 99.7 percent of the data would fall within 1 standard deviation above or below the mean.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>mean − 3 SD</th>\n<th>mean − 2 SD</th>\n<th>mean − 1 SD</th>\n<th>mean</th>\n<th>mean + 1 SD</th>\n<th>mean + 2 SD</th>\n<th>mean + 3 SD</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>100 − 36</td>\n<td>100 − 24</td>\n<td>100 − 12</td>\n<td>100</td>\n<td>100 + 12</td>\n<td>100 + 24</td>\n<td>100 + 36</td>\n</tr>\n<tr>\n<td>64</td>\n<td>76</td>\n<td>88</td>\n<td>100</td>\n<td>112</td>\n<td>124</td>\n<td>136</td>\n</tr>\n</tbody>\n</table>\n<p>Sketch the curve and shade in the area between 100 and 112.</p>\n<p>88 and 112 are one standard deviation above and below the mean. The 68–95–99.7 Rule tells you that 68 percent of the data values are between 88 and 112. Your shaded area is half of that, so your shaded area covers 34 percent of the data.</p>\n<p>34%</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "34%"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 531568,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile does 112 fall? Use the 68-95-99.7 Rule.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The 68–95–99.7 Rule tells you that 68 percent of the data would fall within 3 standard deviations above or below the mean. Ninety-five percent of the data would fall within 2 standard deviations above or below the mean. Finally, 99.7 percent of the data would fall within 1 standard deviation above or below the mean.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>mean − 3 SD</th>\n<th>mean − 2 SD</th>\n<th>mean − 1 SD</th>\n<th>mean</th>\n<th>mean + 1 SD</th>\n<th>mean + 2 SD</th>\n<th>mean + 3 SD</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>100 − 36</td>\n<td>100 − 24</td>\n<td>100 − 12</td>\n<td>100</td>\n<td>100 + 12</td>\n<td>100 + 24</td>\n<td>100 + 36</td>\n</tr>\n<tr>\n<td>64</td>\n<td>76</td>\n<td>88</td>\n<td>100</td>\n<td>112</td>\n<td>124</td>\n<td>136</td>\n</tr>\n</tbody>\n</table>\n<p>Sketch the curve and shade in the area between 100 and 112.</p>\n<p>88 and 112 are one standard deviation above and below the mean. The 68–95–99.7 Rule tells you that 68 percent of the data values are between 88 and 112. Your shaded area is half of that, so your shaded area covers 34 percent of the data.</p>\n<p>To find the total area below 112, add 50% of the curve below 100.</p>\n<p><span data-math=\"50\\% + 34\\% = 84\\%\"></span></p>\n<p>Since 84% of the data values are below 112, you know that 112 falls at the 84<sup>th</sup> percentile.</p>\n<p>84<sup>th</sup></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "84th"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 531569,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What’s the <span data-math=\"z\">z</span>-score of the data value 107? Round to three decimal places.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "0.583"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "If <i>x</i> is a member of a normally distributed dataset with mean µ and standard deviation σ, then the standardized score for <i>x</i> is <span data-math=\"z = \\frac{{x - \\mu }}{\\sigma } = \\frac{{107 - 100}}{{12}} \\approx 0.583\"></span>."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 531570,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What data value’s <span data-math=\"z\">z</span>-score is –2.4?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "71.2"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "If you know a <i>z</i>-score, <span data-math=\"x = \\mu + z \\times \\sigma = 100 + \\left( { - 2.4} \\right)\\left( {12} \\right) = 100 - 28.8 = 71.2\"></span>."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 531571,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile does 107 fall? Use Google Sheets (or another technology).",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "72nd"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>In an empty cell of Google Sheets, use the function NORM.DIST.</p>\n<p>NORM.DIST(your data value, your mean, your standard deviation, TRUE)</p>\n<p>Using your data: =NORM.DIST(107, 100, 12,TRUE)</p>\n<p>You will see the decimal version of the percentile: 0.7201655364</p>\n<p>Convert the decimal to an approximate percentage: the 72<sup>nd</sup> percentile</p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 531572,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What data value is at the 90th percentile? Use Google Sheets (or another technology), and round to the nearest hundredth.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "115.38"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>When your data is normally distributed and you know the percentile, mean, and standard deviation, you can find the data value with the NORM.INV function.</p>\n<p>NORM.INV(percentile as a decimal, mean, standard deviation)</p>\n<p>In an empty cell in Google Sheets: =NORM.INV(0.90, 100, 12)</p>\n<p>You see: 115.3786188</p>\n<p>The approximate value: 115.38</p>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

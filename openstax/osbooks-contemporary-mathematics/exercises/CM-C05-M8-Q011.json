@@ -1,0 +1,413 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-01T15:03:24.149Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaEFOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--93af4b1c18bf2fe876a390677d957ddaa13b9c38",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaEFOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--93af4b1c18bf2fe876a390677d957ddaa13b9c38/CS_Figure_05_08_030.png"
+  },
+  {
+   "created_at": "2024-11-01T15:03:24.152Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcU1QIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a3acd3dd0c7e2ac50853093852723da54a9bdcfc",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcU1QIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a3acd3dd0c7e2ac50853093852723da54a9bdcfc/CS_Figure_05_08_030.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:05-08-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:240fa88f-7202-49a8-b741-8c80ee7fa5ff",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-8-graphing-functions"
+ ],
+ "uuid": "77a3d584-3d2d-41b6-a4bf-627894b55e96",
+ "group_uuid": "7d8f77fb-d462-402c-ae39-fbcfe0608a70",
+ "number": 30639,
+ "version": 6,
+ "uid": "30639@6",
+ "published_at": "2024-11-01T15:03:27.872Z",
+ "nickname": "CM-C05-M8-Q011",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Stella has a home business selling gourmet pizzas. The equation <span data-math=\"C = 4p + 25\">C = 4p + 25</span> models the relation between her weekly cost, <span data-math=\"C\">C</span>, in dollars and the number of pizzas, <span data-math=\"p\">p</span>, that she sells.",
+ "questions": [
+  {
+   "id": 511336,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find Stella’s cost for a week when she sells no pizzas.\n\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p><span data-math=\"C = 4p + 25\"></span></p>\n<p><span data-math=\"C = 4\\left( 0 \\right) + 25 = 25\"></span></p>\n<p>Stella’s costs are $25 when no pizzas are sold.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$25"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511337,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the cost for a week when she sells 15 pizzas.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p><span data-math=\"C = 4\\left( {15} \\right) + 25 = 60 + 25 = 85\"></span></p>\n<p>Stella’s costs are $85.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$85"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511338,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Interpret the slope and <span data-math=\"C\">C</span>-intercept of the equation.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>When the equation is in the slope-intercept form of the equation of the line,</p>\n<p><span data-math=\"y = mx + b\"></span>.</p>\n<p><i>m</i> = the slope.</p>\n<p>(0, <i>b</i>) = the y-intercept.</p>\n<p><span data-math=\"C = 4p + 25\"></span></p>\n<p>The <i>y</i>-intercept gives the cost when no pizzas are sold: $25.</p>\n<p>The slope gives the rate at which costs increase per pizza made. For every pizza sold, Stella’s costs increase by $4.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The slope, 4, means that the weekly cost, <span data-math=\"C\">C</span>, increases by $4 when the number of pizzas sold, <span data-math=\"p\">p</span>, increases by 1. The <span data-math=\"C\">C</span>-intercept means that when the number of pizzas sold is 0, the weekly cost is $25."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511339,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph the equation.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Plot the point (0, 25).</p>\n<p>From that point, use the slope <span data-math=\"\\left( {m = \\frac{{rise}}{{run}} = \\frac{4}{1}} \\right)\"></span> to go up 4, then right 1 to plot the next point.</p>\n<p>Connect the two points with a line.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Graph:\n<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcU1QIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a3acd3dd0c7e2ac50853093852723da54a9bdcfc/CS_Figure_05_08_030.png\" alt=\"A line is plotted on an x y coordinate plane. The x-axis ranges from negative 60 to 210, in increments of 15. The y-axis ranges from negative 75 to 200, in increments of 15. The line passes through the points, (negative 15, negative 35), (0, 25), (13, 85), and (30, 145). Note: all values are approximate.\">"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

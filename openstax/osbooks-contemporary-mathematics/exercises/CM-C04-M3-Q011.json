@@ -1,0 +1,328 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:04-03-03",
+  "all",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:de9bb9b0-9922-4cd0-a1e3-2e4b349ce971",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:4-3-converting-with-base-systems"
+ ],
+ "uuid": "ff62b4b1-de02-4046-a595-8dd3a048d9cb",
+ "group_uuid": "f0896aa0-7fed-45e4-838b-174bcee2f234",
+ "number": 30761,
+ "version": 5,
+ "uid": "30761@5",
+ "published_at": "2024-10-30T09:17:46.157Z",
+ "nickname": "CM-C04-M3-Q011",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 510734,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Convert 137 to base 2.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Step 1: Divide the number by 2.</p>\n<p><span data-math=\"137 \\div 2 = 68\"></span> with a remainder. What is it?</p>\n<p><span data-math=\"2 \\times 68 = 136\"></span></p>\n<p><span data-math=\"137-136 = 1\"></span></p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td>The remainder is 1.</td>\n<td><span data-math=\"68{\\rm{R}}1\"></span></td>\n</tr>\n<tr>\n<td>In base two, any remainder will be 1.</td>\n<td></td>\n</tr>\n<tr>\n<td>Step 2: Divide the quotient by 2.</td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"68 \\div 2 = 34\"></span> with no remainder.</td>\n<td><span data-math=\"34{\\rm{R}}0\"></span></td>\n</tr>\n<tr>\n<td>Step 3: Divide the quotient by 2.</td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"34 \\div 2 = 17\"></span> with remainder 0.</td>\n<td><span data-math=\"17{\\rm{R}}0\"></span></td>\n</tr>\n<tr>\n<td>Step 4: Divide the quotient by 2.</td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"17 \\div 2 = 8\"></span> with remainder 1.</td>\n<td><span data-math=\"8{\\rm{R}}1\"></span></td>\n</tr>\n<tr>\n<td>Step 5: Divide the quotient by 2.</td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"8 \\div 2 = 4\"></span> with no remainder.</td>\n<td><span data-math=\"4{\\rm{R}}0\"></span></td>\n</tr>\n<tr>\n<td>Step 6: Divide the quotient by 2.</td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"4 \\div 2 = 2\"></span> with no remainder.</td>\n<td><span data-math=\"2{\\rm{R}}0\"></span></td>\n</tr>\n<tr>\n<td>Step 7: Divide the quotient by 2.</td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"2 \\div 2 = 1\"></span> with no remainder.</td>\n<td><span data-math=\"1{\\rm{R}}0\"></span></td>\n</tr>\n<tr>\n<td>Step 8: Divide the quotient by 2.</td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"1 \\div 2 = 0\"></span> with remainder 1.</td>\n<td><span data-math=\"0{\\rm{R}}1\"></span></td>\n</tr>\n</tbody>\n</table>\n<p>The base 2 number has digits equal to the remainders in reverse order: <span data-math=\"{10001001_2}\"></span>.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "10001001<sub>2</sub>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

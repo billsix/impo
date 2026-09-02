@@ -1,0 +1,512 @@
+{
+ "images": [
+  {
+   "created_at": "2022-12-16T11:51:41.473Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVlHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--61e785c73c49a95c4a61dd2e28f0b18ddfa5a357",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVlHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--61e785c73c49a95c4a61dd2e28f0b18ddfa5a357/CS_Figure_08_08_150.jpg"
+  },
+  {
+   "created_at": "2022-12-16T11:51:41.475Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4527ba1b61942b7d27ca755756f6fcea02e0789c",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4527ba1b61942b7d27ca755756f6fcea02e0789c/CS_Figure_08_08_151.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:08-08-04",
+  "lo:stax-cmath:08-08-05",
+  "context-cnxmod:c5ec5645-4396-47a4-acce-0b93b1fe41a6",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-8-scatter-plots-correlation-and-regression-lines"
+ ],
+ "uuid": "d1430fab-78b4-4ec5-9349-eb28cfc04608",
+ "group_uuid": "18339104-4fec-4f60-83a6-d16fe3ebf399",
+ "number": 29131,
+ "version": 12,
+ "uid": "29131@12",
+ "published_at": "2022-12-16T11:51:45.393Z",
+ "nickname": "CM-C08-M8-019",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, use the datasets <a href=\"https://openstax.org/r/Chapter8_Data-Sets\" rel=\"nofollow\" target=\"_blank\">“Public”</a> and <a href=\"https://openstax.org/r/Chapter8_Data-Sets\" rel=\"nofollow\" target=\"_blank\">“Private”</a>, which give many institutions of higher learning in the United States (public institutions in “Public” and private, non-profit institutions in “Private”), the schools’ 75th percentiles on the math section of the SAT (SATM75), the verbal section of the SAT (SATV75), the math section of the ACT (ACTM75), and the English section of the ACT (ACTE75). It also gives the schools’ admission rates (AdmRate) and total annual cost of attendance (Cost).",
+ "questions": [
+  {
+   "id": 323306,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "It might seem reasonable to expect the cost to attend a school to go down as the proportion of applicants admitted goes up. Create two scatter plots (one for private schools, one for public) to investigate that hunch. Can we use linear regression to describe that relationship for these? Why or why not?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323307,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the correlation between the 75th percentiles of the two sections of the SAT at public schools and at private schools. Which has a stronger relationship?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323308,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What score would we predict falls at the 75th percentile on the verbal section of the SAT at a public school where the 75th percentile on the math section of the SAT is 500?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323309,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What score would we predict falls at the 75th percentile on the verbal section of the SAT at a private school where the 75th percentile on the math section of the SAT is 500?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323310,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the slope of the regression line that we would use to predict the 75th percentile SAT math score from the 75th percentile ACT English score at public schools, and write a sentence to interpret that slope.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323311,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Predict the cost of attendance at a public school whose 75th percentile on the SAT verbal section is 700.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323312,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The cost of attendance at DePauw University, a private school, is $62,567. The 75th percentile on the SAT math section is 680. Is DePauw more or less expensive that we would predict based on the SAT math score? By how much?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323313,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The cost of attendance at Coastal Carolina University, a public school, is $24,599. The 75th percentile of ACT English scores at Coastal Carolina is 24. Is the cost higher or lower than we would expect based on the ACT English score? By how much?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323314,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the equation of the regression line that we would use to predict the 75th percentile ACT English score from the 75th percentile ACT math score at public institutions.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323315,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the equation of the regression line that we would use to predict cost of attendance at public schools using the 75th percentile ACT math score.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323316,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Does the University of Hawai’i at Hilo have a higher or lower 75th percentile verbal SAT score (590) than we’d expect based on its 75th percentile math SAT score (580)? By how much?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323317,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the slope of the regression line we would use to estimate cost from the 75th percentile SAT math scores at public institutions. Write a sentence to interpret that slope.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323318,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the slope of the regression line we would use to estimate cost from the 75th percentile SAT math scores at private institutions. Write a sentence to interpret that slope.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323319,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Look at the scatter plots that show the relationship between cost and the 75th percentiles of the various test scores at private institutions. Which (if any) of the four exhibit a pattern that rules out analysis using linear regression?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323320,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Look at the scatter plots that show the relationship between cost and the 75th percentiles of the various test scores at public institutions. Which (if any) of the four exhibit a pattern that rules out analysis using linear regression?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 323321,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Looking at public institutions, rank the four test scores from highest to lowest in terms of the strength of their relationships to cost.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

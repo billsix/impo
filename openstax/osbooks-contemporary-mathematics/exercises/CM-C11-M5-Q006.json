@@ -1,0 +1,325 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-05-03",
+  "context-cnxmod:de68113b-2554-450f-88dd-7768f6d9f73f",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-5-fairness-in-apportionment-methods"
+ ],
+ "uuid": "7ce586da-3913-44ef-bcfe-2b73c8330df4",
+ "group_uuid": "2fbd0d3f-dcde-47b8-a42b-289114f9d43a",
+ "number": 29599,
+ "version": 4,
+ "uid": "29599@4",
+ "published_at": "2024-12-23T09:58:02.404Z",
+ "nickname": "CM-C11-M5-Q006",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 545396,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The country of Neverland has two states: Neverwood with a population of 760,000 and Mermaids Lagoon with a population of 943,000. The constitution of Neverland requires that the 84 congressional seats be apportioned by Hamilton’s method. Neverwood has received 37 seats while Mermaids Lagoon has received 47 seats. Recently, the island of Marooners Rock with a population of 190,000 has joined the union, becoming a state of Neverland. When Marooners Rock is included, nine additional seats must be apportioned to maintain the same ratio of seats to citizens. Use Hamilton’s method to reapportion the 93 seats to the three states. How is the resulting apportionment an example of the new-states paradox?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Use Hamilton’s method for the inclusion of the new state.</p>\n<p>Step 1: Find the standard divisor.</p>\n<p>Total population: <span data-math=\"{\\text{760,000  +  943,000  +  190,000  =  1,893,000}}\"></span></p>\n<p><span data-math=\"{\\text{Standard Divisor = }}\\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}} = \\frac{{1,893,000}}{{{\\text{93 seats}}}} \\approx 20,354.839{\\text{ people per seat}}\"></span></p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th><span data-math=\"{\\text{Standard Quota = }}\\frac{{{\\text{State Population}}}}{{{\\text{Standard Divisor}}}}{\\text{ }}\"></span></th>\n<th>Lower Quota</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Neverwood</td>\n<td><span data-math=\"\\frac{{{\\text{760,000 people}}}}{{20,354.839{\\text{ people per seat}}}}{\\text{ }} \\approx {\\text{ 37}}{\\text{.338 seats}}\"></span></td>\n<td>37</td>\n</tr>\n<tr>\n<td>Mermaids Lagoon</td>\n<td><span data-math=\"\\frac{{{\\text{943,000 people}}}}{{20,354.839{\\text{ people per seat}}}}{\\text{ }} \\approx {\\text{ 46}}{\\text{.328 seats}}\"></span></td>\n<td>46</td>\n</tr>\n<tr>\n<td>Marooners Rock</td>\n<td><span data-math=\"\\frac{{{\\text{190,000 people}}}}{{20,354.839{\\text{ people per seat}}}}{\\text{ }} \\approx 9.334{\\text{ seats}}\"></span></td>\n<td>9</td>\n</tr>\n</tbody>\n</table>\n<p>Step 2: Give each remaining seat one at a time to the states with the largest fractional parts of their standard quotas until no seats remain.</p>\n<p>Add up the lower quotas: <span data-math=\"{\\text{37  +  46  +  9  =  92}}\"></span>.</p>\n<p>There is one more seat to allot. The largest fractional part is 0.338 for Neverwood. Give Neverwood the extra seat.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th>Lower Quota</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Neverwood</td>\n<td><span data-math=\"{\\text{37  +  1  =  38}}\"></span></td>\n</tr>\n<tr>\n<td>Mermaids Lagoon</td>\n<td>46</td>\n</tr>\n<tr>\n<td>Marooners Rock</td>\n<td>9</td>\n</tr>\n</tbody>\n</table>\n<p>Step 3: Check the solution by confirming that the sum of the modified quotas equals the house size.</p>\n<p><span data-math=\"{\\text{38  +  46  +  9  =  93}}\"></span>, the same as the new house size.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th>Original Seats</th>\n<th>New Seats</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Neverwood</td>\n<td>37</td>\n<td>38</td>\n</tr>\n<tr>\n<td>Mermaids Lagoon</td>\n<td>47</td>\n<td>46</td>\n</tr>\n<tr>\n<td>Marooners Rock</td>\n<td>N/A</td>\n<td>9</td>\n</tr>\n</tbody>\n</table>\n<p>This violates the new state paradox. The existing state of Neverwood lost a seat to the existing state of Mermaids Lagoon when the state of Marooners Rock was added.</p>\n<p>This is an example of the new-state paradox, which occurs when the addition of a new state is accompanied by an increase in seats to maintain the standard ratio of population to seats, but one of the existing states loses a seat in the resulting reapportionment.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The reapportionment gives 38 seats to Neverwood, 46 seats to Mermaids Lagoon, and 9 seats to Marooners Rock. This is an example of the new-states paradox because the original state Mermaids Lagoon lost a seat to the original state Neverwood when the new state was added to the union."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  4,
+  3,
+  2,
+  1
+ ]
+}

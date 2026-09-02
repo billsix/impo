@@ -1,0 +1,367 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-05-01",
+  "context-cnxmod:de68113b-2554-450f-88dd-7768f6d9f73f",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-5-fairness-in-apportionment-methods"
+ ],
+ "uuid": "46169b26-cb1c-46d7-a7a0-ffc3d27877a6",
+ "group_uuid": "bc7f1c4e-bdcc-4452-a7c7-127727f34152",
+ "number": 29624,
+ "version": 23,
+ "uid": "29624@23",
+ "published_at": "2024-12-23T13:00:59.430Z",
+ "nickname": "CM-C11-M5-Q015",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "In the following exercises, use the information in the table below.\n<table class=\"unnumbered\" summary=\".\">\n<thead>\n<tr>\n<th>State</th>\n<th>A</th>\n<th>B</th>\n<th>C</th>\n<th>D</th>\n<th>E</th>\n<th>F</th>\n<th>G</th>\n<th>H</th>\n<th>I</th>\n<th>J</th>\n<th>K</th>\n<th>L</th>\n<th>P</th>\n<th>Q</th>\n<th>R</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><b>Population</b></td>\n<td>624</td>\n<td>1,219</td>\n<td>979</td>\n<td><b>3,462</b></td>\n<td><b>7,470</b></td>\n<td><b>4,264</b></td>\n<td><b>5,300</b></td>\n<td>263</td>\n<td>809</td>\n<td>931</td>\n<td>781</td>\n<td>676</td>\n<td><b>150</b></td>\n<td><b>250</b></td>\n<td><b>350</b></td>\n</tr>\n<tr>\n<td><b>Original House Size</b></td>\n<td colspan=\"3\">38</td>\n<td colspan=\"4\"><b>204</b></td>\n<td colspan=\"5\">126</td>\n<td colspan=\"3\"><b>50</b></td>\n</tr>\n<tr>\n<td><b>Updated House Size</b></td>\n<td colspan=\"3\">39</td>\n<td colspan=\"4\"><b>205</b></td>\n<td colspan=\"5\">127</td>\n<td colspan=\"3\"><b>51</b></td>\n</tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 545671,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Consider States A, B, and C.\n<ol type=\"a\">\n<li>Determine the apportionment for States A, B, and C with the original house size using the Hamilton method.</li>\n<li>Determine the apportionment for States A, B, and C with the updated house size using the Hamilton method.</li>\n<li>Does the change in the house size and use of the Hamilton method cause the Alabama paradox? Explain your reasoning.</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 545672,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Consider States D, E, F, and G.\n<ol type=\"a\">\n<li>Determine the apportionment for States D, E, F, and G with the original house size using the Hamilton method.</li>\n<li>Determine the apportionment for States D, E, F, and G with the updated house size using the Hamilton method.</li>\n<li>Does the change in the house size and use of the Hamilton method cause the Alabama paradox? Explain your reasoning.</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 545673,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Consider States H, I, J, K, and L.\n<ol type=\"a\">\n<li>Determine the apportionment for States H, I, J, K, and L with the original house size using the Hamilton method.</li>\n<li>Determine the apportionment for States H, I, J, K, and L with the updated house size using the Hamilton method.</li>\n<li>Does the change in the house size and use of the Hamilton method cause the Alabama paradox? Explain your reasoning.</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 545674,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Consider States P, Q, and R.\n<ol type=\"a\">\n<li>Determine the apportionment for States P, Q, and R with the original house size using the Hamilton method.</li>\n<li>Determine the apportionment for States P, Q, and R with the updated house size using the Hamilton method.</li>\n<li>Does the change in the house size and use of the Hamilton method cause the Alabama paradox? Explain your reasoning.</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  23,
+  22,
+  21,
+  20,
+  19,
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

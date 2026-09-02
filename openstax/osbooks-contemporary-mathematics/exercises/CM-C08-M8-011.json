@@ -1,0 +1,372 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-03T08:33:03.661Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbElHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--544154420f65d036572243d227563545465e347d",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbElHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--544154420f65d036572243d227563545465e347d/CS_Figure_08_08_134.jpg"
+  },
+  {
+   "created_at": "2024-12-03T08:33:03.666Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbE1HIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ba16da6e7f9e0b56a09b03e03ec31a62fab49621",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbE1HIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ba16da6e7f9e0b56a09b03e03ec31a62fab49621/CS_Figure_08_08_135.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:08-08-01",
+  "context-cnxmod:c5ec5645-4396-47a4-acce-0b93b1fe41a6",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-8-scatter-plots-correlation-and-regression-lines"
+ ],
+ "uuid": "c85d48d0-9d15-4e5f-94bb-d88dc892b900",
+ "group_uuid": "dfebd1e4-c1ad-402b-bd6a-348055bfaea2",
+ "number": 29103,
+ "version": 15,
+ "uid": "29103@15",
+ "published_at": "2024-12-03T08:33:07.293Z",
+ "nickname": "CM-C08-M8-011",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>For the following problems, answer these questions:\n</p><ol type=\"a\">\n<li>Is there a curved pattern in the data? If yes, stop here.</li>\n<li>Classify the strength and direction of the relationship. Make a guess at the value of <span data-math=\"r\">r</span>.</li>\n</ol><p></p>\n",
+ "questions": [
+  {
+   "id": 531603,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<img src=\"exercises/media/37b29ab44cf38c4e.jpg\" alt=\" A scatter plot. The x-axis ranges from 20 to 70, in increments of 10. The y-axis ranges from 92 to 104, in increments of 2. The scatter plot shows the points arranged in the form of an open downward parabola and some of the points are as follows: (30, 94), (35, 97), (40, 99), (45, 100), (50, 101), (55, 100), and (95, 95). The region between 40 and 60 on the horizontal axis has more points. Note: all values are approximate.\">\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p>&nbsp;</p><ol type=\"a\">\n<li>Yes</li>\n</ol>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "a. Yes, this is curved."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 531604,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<img src=\"exercises/media/292a725372f8df2f.jpg\" alt=\" A scatter plot. The x-axis ranges from 20 to 70, in increments of 10. The y-axis ranges from negative 20 to 120, in increments of 20. The points are scattered throughout. The points lie from 30 to 70 on the horizontal axis and 0 to 80 on the vertical axis. \">\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p>&nbsp;</p><ol type=\"a\">\n<li>No</li>\n<li>Weak positive relationship; <span data-math=\"r \\approx 0.5\">r \\approx 0.5</span></li>\n</ol>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>a. No, this is not curved.</p>\n<p>b. This has a weak positive relationship, with a possible <i>r</i> value of around 0.5.</p>\n<p>The correlation coefficient (<i>r</i>) denotes the strength and direction of a linear relationship. Positive values near 1 indicate that as one variable increases, the other does. The closer <i>r</i> is to −1, the more likely that as one variable increases, the other decreases. If <i>r</i> is zero, there is no relationship. A value of plus or minus 0.7 is considered the dividing line between strong and weak relationships. For this relationship, your guess could have been anywhere between 0.4 and 0.6. To know <i>r</i> for certain, you would need to do calculations using the coordinates of the points.</p>\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

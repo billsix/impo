@@ -1,0 +1,407 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:02-02-01",
+  "context-cnxmod:2ad57439-01e5-4a1e-b493-2a901f4c8972",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:2-2-compound-statements"
+ ],
+ "uuid": "7f081f1f-ce4d-44ab-b1f3-b8e5c1674d68",
+ "group_uuid": "e22715f5-4884-4094-aca7-2fb55b25fb0b",
+ "number": 29378,
+ "version": 11,
+ "uid": "29378@11",
+ "published_at": "2024-10-05T04:46:04.492Z",
+ "nickname": "CM-C02-M2-Q002",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Let <span data-math=\"p\">p</span> represent the statement, “Last night it snowed,” and let <span data-math=\"q\">q</span> represent the statement, “Today we will go skiing.” Write the symbolic form of each of the following compound statements:\n",
+ "questions": [
+  {
+   "id": 496948,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Today we will go skiing, but last night it did not snow.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Today we will go skiing, but last night it did not snow.</p>\n<p>Both “and” and “but” use the conjunction connective.</p>\n<p>The given statements:</p>\n<p><span data-math=\"p\"></span>: Last night it snowed.</p>\n<p><span data-math=\"q\"></span>: Today we will go skiing.</p>\n<p>Break down the compound statement into its components.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Today we will go skiing,</td>\n<td>but</td>\n<td>not</td>\n<td>last night it snowed</td>\n</tr>\n<tr>\n<td><span data-math=\"q\"></span></td>\n<td><span data-math=\" \\wedge \"></span></td>\n<td><span data-math=\" \\sim \"></span></td>\n<td><span data-math=\"p\"></span></td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"q \\wedge {\\text{~}}p\"></span></p>\n\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"q \\wedge \\text{~}p\">q \\wedge \\text{~}p</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 496949,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Today we will go skiing if and only if it snowed last night.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"q \\leftrightarrow p\">q \\leftrightarrow p</span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Today we will go skiing if and only if it snowed last night.</p>\n<p>The given statements:</p>\n<p><span data-math=\"p\"></span>: Last night it snowed.</p>\n<p><span data-math=\"q\"></span>: Today we will go skiing.</p>\n<p>Break down the compound statement into its components.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Today we will go skiing</td>\n<td>if and only if</td>\n<td>it snowed last night</td>\n</tr>\n<tr>\n<td><span data-math=\"q\"></span></td>\n<td><span data-math=\" \\leftrightarrow \"></span></td>\n<td><span data-math=\"p\"></span></td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"q\"></span> <span data-math=\" \\leftrightarrow \"></span> <span data-math=\"p\"></span></p>\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 496950,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Last night is snowed or today we will not go skiing.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"p \\vee \\text{~}q\">p \\vee \\text{~}q</span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Last night it snowed or today we will not go skiing.</p>\n<p>The given statements:</p>\n<p><span data-math=\"p\"></span>: Last night it snowed.</p>\n<p><span data-math=\"q\"></span>: Today we will go skiing.</p>\n<p>Break down the compound statement into its components.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Last night it snowed</td>\n<td>or</td>\n<td>not</td>\n<td>today we will go skiing</td>\n</tr>\n<tr>\n<td><span data-math=\"p\"></span></td>\n<td><span data-math=\" \\vee \"></span></td>\n<td><span data-math=\" \\sim \"></span></td>\n<td><span data-math=\"q\"></span></td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"p \\vee {\\text{~}}q\"></span></p>\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 496951,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If it snowed last night, then today we will go skiing.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"p \\to q\">p \\to q</span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>If it snowed last night, then today we will go skiing.</p>\n<p>The given statements:</p>\n<p><span data-math=\"p\"></span>: Last night it snowed.</p>\n<p><span data-math=\"q\"></span>: Today we will go skiing.</p>\n<p>Break down the compound statement into its components.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Last night it snowed</td>\n<td>conditional</td>\n<td>today we will go skiing</td>\n</tr>\n<tr>\n<td><span data-math=\"p\"></span></td>\n<td><span data-math=\" \\to \"></span></td>\n<td><span data-math=\"q\"></span></td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"p\"></span> <span data-math=\" \\to \"></span> <span data-math=\"p\"></span></p>\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

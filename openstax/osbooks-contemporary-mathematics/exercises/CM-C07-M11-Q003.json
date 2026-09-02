@@ -1,0 +1,379 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:07-11-03",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:3d4e8c5e-da3e-464c-a5a0-308d03d1c239",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:7-11-expected-value"
+ ],
+ "uuid": "0b1684a4-06ad-4ee3-95ec-66855d377be3",
+ "group_uuid": "091b76d2-91c0-4fcf-8a6c-afc8d74bc969",
+ "number": 31738,
+ "version": 7,
+ "uid": "31738@7",
+ "published_at": "2024-11-11T07:58:21.420Z",
+ "nickname": "CM-C07-M11-Q003",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "The casino game craps involves rolling 2 standard 6-sided dice. While the main game involves repeated rolls of the dice, players can also bet on the outcomes of single rolls. Find the expected values of the following three $1 bets. Then decide which bet is the best for the player and which bet is the best for the casino.",
+ "questions": [
+  {
+   "id": 516334,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Players  can bet on the next roll of the dice being a sum of 7. Winners get $4 and losers lose $1.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Possible sums when rolling two dice:</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td><b>2<sup>nd</sup> roll</b></td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>SUM</td>\n<td><b>Choices</b></td>\n<td><b>1</b></td>\n<td><b>2</b></td>\n<td><b>3</b></td>\n<td><b>4</b></td>\n<td><b>5</b></td>\n<td><b>6</b></td>\n</tr>\n<tr>\n<td><b>1<sup>st</sup> roll</b></td>\n<td><b>1</b></td>\n<td>2</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>2</b></td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>3</b></td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>4</b></td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>5</b></td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>11</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>6</b></td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>11</td>\n<td>12</td>\n</tr>\n</tbody>\n</table>\n<p>There are 36 possible outcomes. Six of those outcomes have a sum of 7.</p>\n<p>30 outcomes do not have a sum of 7.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Roll result</td>\n<td>Value</td>\n<td>Probability</td>\n<td>Value × Probability</td>\n</tr>\n<tr>\n<td>Sum of 7</td>\n<td>Win $4</td>\n<td><span data-math=\"\\frac{6}{{36}}\"></span></td>\n<td><span data-math=\"\\frac{24}{{36}}\"></span></td>\n</tr>\n<tr>\n<td>Sum not 7</td>\n<td>Lose $1</td>\n<td><span data-math=\"\\frac{30}{{36}}\"></span></td>\n<td><span data-math=\"- \\frac{30}{{36}}\"></span></td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>Sum:</td>\n<td><span data-math=\"- \\frac{6}{{36}} =  - \\frac{1}{6} \\approx  - \\$ 0.17.\"></span></td>\n</tr>\n</tbody>\n</table>\n<p>The expected value of a bet on 7 is <span data-math=\" - \\frac{1}{6}\"></span>or a loss of $0.17.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "If the player bets on 7, the expected value is <span data-math=\"- \\$ 0.17\">- \\$ 0.17</span>."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 516335,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Players  can bet on the next roll of the dice being a sum of 12. Winners get $30 and losers lose $1",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Possible sums when rolling two dice:</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td><b>2<sup>nd</sup> roll</b></td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>SUM</td>\n<td><b>Choices</b></td>\n<td><b>1</b></td>\n<td><b>2</b></td>\n<td><b>3</b></td>\n<td><b>4</b></td>\n<td><b>5</b></td>\n<td><b>6</b></td>\n</tr>\n<tr>\n<td><b>1<sup>st</sup> roll</b></td>\n<td><b>1</b></td>\n<td>2</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>2</b></td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>3</b></td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>4</b></td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>5</b></td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>11</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>6</b></td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>11</td>\n<td>12</td>\n</tr>\n</tbody>\n</table>\n<p>There are 36 possible outcomes. Only one of those outcomes has a sum of 12.</p>\n<p>35 outcomes do not have a sum of 12.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Roll result</td>\n<td>Value</td>\n<td>Probability</td>\n<td>Value × Probability</td>\n</tr>\n<tr>\n<td>Sum of 12</td>\n<td>Win $30</td>\n<td><span data-math=\"\\frac{1}{{36}}\"></span></td>\n<td><span data-math=\"\\frac{30}{{36}}\"></span></td>\n</tr>\n<tr>\n<td>Sum not 12</td>\n<td>Lose $1</td>\n<td><span data-math=\"\\frac{35}{{36}}\"></span></td>\n<td><span data-math=\"- \\frac{35}{{36}}\"></span></td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>Sum:</td>\n<td><span data-math=\"- \\frac{5}{{36}} \\approx \\$ 0.14\"></span></td>\n</tr>\n</tbody>\n</table>\n<p>The expected value of a bet on 12 is <span data-math=\"- \\frac{5}{{36}}\"></span>or a loss of $0.14.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "If the player bets on 12, the expected value is <span data-math=\"- \\$ 0.14\">- \\$ 0.14</span>."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 516336,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Players  can bet that the next roll of the dice will be “any craps” (a sum of 2, 3, or 12). Winners get $7 and losers lose $1.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Possible sums when rolling two dice:</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td><b>2<sup>nd</sup> roll</b></td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>SUM</td>\n<td><b>Choices</b></td>\n<td><b>1</b></td>\n<td><b>2</b></td>\n<td><b>3</b></td>\n<td><b>4</b></td>\n<td><b>5</b></td>\n<td><b>6</b></td>\n</tr>\n<tr>\n<td><b>1<sup>st</sup> roll</b></td>\n<td><b>1</b></td>\n<td>2</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>2</b></td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>3</b></td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>4</b></td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>5</b></td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>11</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td><b>6</b></td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>11</td>\n<td>12</td>\n</tr>\n</tbody>\n</table>\n<p>There are 36 possible outcomes. Four of those outcomes have a sum of 2, 3, or 12.</p>\n<p>32 outcomes do not have a sum of 12.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Roll result</td>\n<td>Value</td>\n<td>Probability</td>\n<td>Value × Probability</td>\n</tr>\n<tr>\n<td>Sum of 2, 3, or 12</td>\n<td>Win $7</td>\n<td><span data-math=\"\\frac{4}{{36}} = \\frac{1}{9}\"></span></td>\n<td><span data-math=\"\\frac{7}{9}\"></span></td>\n</tr>\n<tr>\n<td>Sum not 2, 3, or 12</td>\n<td>Lose $1</td>\n<td><span data-math=\"\\frac{{32}}{{36}} = \\frac{8}{9}\"></span></td>\n<td><span data-math=\"- \\frac{8}{9}\"></span></td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>Sum:</td>\n<td><span data-math=\"- \\frac{1}{9} \\approx  - \\$ 0.11\"></span></td>\n</tr>\n</tbody>\n</table>\n<p>The expected value of a bet on 2, 3, or 12 is <span data-math=\" - \\frac{1}{9}\"></span>or a loss of $0.11.</p>\n<p>With all the bets, you lose money over the long run. You are better off not betting at all. If you must bet, you lose money at the slowest rate with the last bet. The “any craps” bet loses $0.11 on average per bet. Regarding the casino’s interests, the casino is better off with the bet on 7, since players lose the most with that bet.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "If the player bets on any craps, the expected value is <span data-math=\"- \\$ 0.11\">- \\$ 0.11</span>.\n<br>\nThe best bet for the player is any craps; the best bet for the casino is the bet on 7."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

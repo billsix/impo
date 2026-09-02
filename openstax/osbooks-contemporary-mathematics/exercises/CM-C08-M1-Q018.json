@@ -1,0 +1,352 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:08-01-02",
+  "context-cnxmod:bba797da-6a1a-4809-b77e-bf7d6e8758c5",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-1-gathering-and-organizing-data"
+ ],
+ "uuid": "35c68666-581e-4d85-bc29-c9deec0d5ec3",
+ "group_uuid": "4d818ba9-9cc3-4255-9cbc-cd0e8b7758c7",
+ "number": 29023,
+ "version": 12,
+ "uid": "29023@12",
+ "published_at": "2023-01-25T15:14:33.281Z",
+ "nickname": "CM-C08-M1-Q018",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, use the following table of data on the top 15 receivers (by number of receptions) in the NFL during the 2020 season:\n<table class=\"unnumbered\">\n<caption>(<a href=\"http://www.pro-football-reference.com\" rel=\"nofollow\" target=\"_blank\">source</a>)</caption>\n<thead>\n<tr>\n<th>Player</th>\n<th>Team</th>\n<th>Age</th>\n<th>Receptions</th>\n<th>Yards</th>\n<th>Yds/Rec</th>\n<th>TD</th>\n<th>Long</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Stefon Diggs</td>\n<td>BUF</td>\n<td>27</td>\n<td>127</td>\n<td>1535</td>\n<td>12.1</td>\n<td>8</td>\n<td>55</td>\n</tr>\n<tr>\n<td>Davante Adams</td>\n<td>GNB</td>\n<td>28</td>\n<td>115</td>\n<td>1374</td>\n<td>11.9</td>\n<td>18</td>\n<td>56</td>\n</tr>\n<tr>\n<td>DeAndre Hopkins</td>\n<td>ARI</td>\n<td>28</td>\n<td>115</td>\n<td>1407</td>\n<td>12.2</td>\n<td>6</td>\n<td>60</td>\n</tr>\n<tr>\n<td>Darren Waller</td>\n<td>LVR</td>\n<td>28</td>\n<td>107</td>\n<td>1196</td>\n<td>11.2</td>\n<td>9</td>\n<td>38</td>\n</tr>\n<tr>\n<td>Travis Kelce</td>\n<td>KAN</td>\n<td>31</td>\n<td>105</td>\n<td>1416</td>\n<td>13.5</td>\n<td>11</td>\n<td>45</td>\n</tr>\n<tr>\n<td>Allen Robinson</td>\n<td>CHI</td>\n<td>27</td>\n<td>102</td>\n<td>1250</td>\n<td>12.3</td>\n<td>6</td>\n<td>42</td>\n</tr>\n<tr>\n<td>Keenan Allen </td>\n<td>LAC</td>\n<td>28</td>\n<td>100</td>\n<td>992</td>\n<td>9.9</td>\n<td>8</td>\n<td>28</td>\n</tr>\n<tr>\n<td>Tyler Lockett</td>\n<td>SEA</td>\n<td>28</td>\n<td>100</td>\n<td>1054</td>\n<td>10.5</td>\n<td>10</td>\n<td>47</td>\n</tr>\n<tr>\n<td>JuJu Smith-Schuster</td>\n<td>PIT</td>\n<td>24</td>\n<td>97</td>\n<td>831</td>\n<td>8.6</td>\n<td>9</td>\n<td>31</td>\n</tr>\n<tr>\n<td>Robby Anderson</td>\n<td>CAR</td>\n<td>27</td>\n<td>95</td>\n<td>1096</td>\n<td>11.5</td>\n<td>3</td>\n<td>75</td>\n</tr>\n<tr>\n<td>Amari Cooper</td>\n<td>DAL</td>\n<td>26</td>\n<td>92</td>\n<td>1114</td>\n<td>12.1</td>\n<td>5</td>\n<td>69</td>\n</tr>\n<tr>\n<td>Cooper Kupp</td>\n<td>LAR</td>\n<td>27</td>\n<td>92</td>\n<td>974</td>\n<td>10.6</td>\n<td>3</td>\n<td>55</td>\n</tr>\n<tr>\n<td>Calvin Ridley</td>\n<td>ATL</td>\n<td>26</td>\n<td>90</td>\n<td>1374</td>\n<td>15.3</td>\n<td>9</td>\n<td>63</td>\n</tr>\n<tr>\n<td>Robert Woods</td>\n<td>LAR</td>\n<td>28</td>\n<td>90</td>\n<td>936</td>\n<td>10.4</td>\n<td>6</td>\n<td>56</td>\n</tr>\n<tr>\n<td>Justin Jefferson</td>\n<td>MIN</td>\n<td>21</td>\n<td>88</td>\n<td>1400</td>\n<td>15.9</td>\n<td>7</td>\n<td>71</td>\n</tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 326796,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Make a binned frequency distribution for receiving yards (“Yards”) using bins of width 200.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 326797,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Make another binned frequency distribution for receiving yards (“Yards”), but this time use bins of width 250.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 326798,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Make a binned frequency distribution for number of yards per reception (“Yds/Rec”), using bins of width 1.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 326799,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Make a binned frequency distribution for longest reception (“Long”), using bins of width 10.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

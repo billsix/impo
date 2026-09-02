@@ -1,0 +1,426 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-19T07:02:38.739Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBblVMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--81cec12859075fb3e468a6a32d5d848c23fe0d62",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBblVMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--81cec12859075fb3e468a6a32d5d848c23fe0d62/CS_Figure_12_05_150.png"
+  },
+  {
+   "created_at": "2024-12-19T07:02:38.742Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbllMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--04d88a8d8b6947c110975dbbd2a8bce32224e250",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbllMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--04d88a8d8b6947c110975dbbd2a8bce32224e250/CS_Figure_12_05_151.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:12-05-01",
+  "lo:stax-cmath:15-05-02",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:9c8c0bf6-458e-4fa5-87dc-94bee753c6d2",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:12-5-euler-circuits"
+ ],
+ "uuid": "85867ab8-d1c7-4ad6-93e1-d2338cad4dba",
+ "group_uuid": "a372a6a4-0dea-4be0-b7c4-29677a7c7bb4",
+ "number": 33194,
+ "version": 8,
+ "uid": "33194@8",
+ "published_at": "2024-12-19T07:02:42.425Z",
+ "nickname": "CM-C12-M5-Q003",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "A  pest control service has at least one customer on every block of every street or cul-de-sac in a neighborhood. Use the map of the neighborhood to answer each question.\n<figure>\n<figcaption>Map of Neighborhood</figcaption>\n<img src=\"exercises/media/7d19c1b7a9782c91.png\" alt=\"A map of a neighborhood. The map has nine sections. Each section has four blocks. A semicircular section is on each side. It has one block, each. The entrance is at the bottom-right.\">\n</figure>",
+ "questions": [
+  {
+   "id": 543301,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Draw a graph or multigraph of the neighborhood in which the vertices represent intersections, and the edges represent the streets between them.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The multigraph of the neighborhood is shown:\n<br>\n<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbllMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--04d88a8d8b6947c110975dbbd2a8bce32224e250/CS_Figure_12_05_151.png\" alt=\"A graph of a neighborhood has 16 vertices arranged in 4 rows and 4 columns. The vertices are connected to form 9 squares. On each side, a curved edge connects the center two vertices.\">"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543302,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Is your graph connected? Explain how you know.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A component of a graph is a subgraph in which there is a path between each pair of vertices in the subgraph, but no edges between any of the vertices in the subgraph and a vertex that is not in the subgraph. A graph is connected if it has only one component. You also know it is connected because there is a path joining every pair of vertices on the graph."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Yes, the graph is connected. It has only one component. "
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543303,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Determine the degrees of the vertices in the graph.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "There are four corner vertices of degree 2 and the remaining twelve vertices are all degree 4."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543304,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Is your graph an Eulerian graph?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Eulerian graphs have vertices with all even degrees. All the vertices in this graph are either degree 2 or degree 4, so this is Eulerian."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Yes"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543305,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Is it possible for the postal delivery person to visit each block on each street exactly once and start and end at the same position? Justify your answer.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Yes, an Eulerian graph has an Euler circuit; so, it is possible."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

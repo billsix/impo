@@ -1,0 +1,495 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-11T09:55:44.691Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGNPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d3b84155620902a2234482f45a0c856eafdedb19",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGNPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d3b84155620902a2234482f45a0c856eafdedb19/American_roulette_table_layout.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:07-08-02",
+  "lo:stax-cmath:07-08-03",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:74be62f5-44bf-4078-bf03-1492a52486f6",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:7-8-the-addition-rule-for-probability"
+ ],
+ "uuid": "420a961d-9c62-4a3c-b322-44200f09d6f0",
+ "group_uuid": "b0ff4b7c-8b48-4e20-bfaf-d0d4e2ac779d",
+ "number": 31418,
+ "version": 12,
+ "uid": "31418@12",
+ "published_at": "2024-11-11T09:55:50.074Z",
+ "nickname": "CM-C07-M8-Q008",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "The following exercises are about the casino game roulette. In this game, the dealer spins a marble around a wheel that contains 38 pockets that the marble can fall into. Each pocket has a number (each whole number from 0 to 36, along with a double zero) and a color (0 and 00 are both green; the other 36 numbers are evenly divided between black and red). Players make bets on which number (or groups of numbers) they think the marble will land on. The figure shows the layout of the numbers and colors, as well as some of the bets that can be made.<br>\n<figure class=\"unnumbered\">\n<figcaption>Roulette Table (credit: \"American Roulette Table Layout\" by Film8ker/Wikimedia Commons, Public Domain)</figcaption>\n<img src=\"exercises/media/8c1e5b4ea5524bc6.jpg\" alt=\"A Roulette table. The table has 12 rows and 3 columns. The first four rows represent the first dozen. The fifth to eighth rows represent the second dozen. The last four rows represent the third dozen. The columns represent 2 to 1, 2 to 1, and 2 to 1. Two green pockets, 0 and 00 are at the top-right. Six green pockets on the left represent 1 to 18, even, red, black, odd, and 19 to 36. The data from the table row-wise are as follows: 1 (red), 2 (black), 3 (red); 4 (black), 5 (red), 6 (black); 7 (red), 8 (black), 9 (red); 10 (black), 11 (black), 12 (red); 13 (black), 14 (red), 15 (black); 16 (red), 17 (black), 18 (red); 19 (red), 20 (black), 21 (red); 22 (black), 23 (red), 24 (black); 25 (red), 26 (black), 27 (red); 28 (black), 29 (black), 30 (red); 31 (black), 32 (red), 33 (black); 34 (red), 35 (black), and (36 (red).\">\n</figure>\n<br>\nWhat is the probability of winning at least one of the following pairs of bets on a single spin of the wheel?",
+ "questions": [
+  {
+   "id": 516496,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "First dozen (wins if any of the numbers 1–12 come up) or second dozen (wins on 13–24)",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516497,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Red (wins on any of the 18 red numbers) or black (wins on any of the 18 black numbers)",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516498,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Even (wins on any even number 2–36; 0 and 00 both lose this bet) or red",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516499,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Middle column (the numbers 2, 5, 8, 11, …, 35) or black",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516500,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Middle column or red",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516501,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Right column (the numbers 3, 6, 9, …, 36) or black",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516502,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Right column or red",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516503,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Odd or black",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516504,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Even or black",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516505,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The street bet (a bet on 3 numbers that make up a row on the table) on 1, 2, 3 or odd",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516506,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The street bet on 1, 2, 3 or even",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516507,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The corner bet (a bet on 4 numbers that form a square on the table) on 1, 2, 4, 5 or first dozen",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516508,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The corner bet on 1, 2, 4, 5 or second dozen",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516509,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The basket bet (which wins on 0, 00, 1, 2, 3) or red",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 516510,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The basket bet or black",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

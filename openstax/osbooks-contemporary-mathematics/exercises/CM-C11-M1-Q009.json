@@ -1,0 +1,392 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-24T01:34:31.546Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbU1IIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d2855a3c9fa2ffce6dbb47c1c8c3d812051c7acb",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbU1IIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d2855a3c9fa2ffce6dbb47c1c8c3d812051c7acb/CS_Figure_11_01_029.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:11-01-05",
+  "context-cnxmod:91031584-74b3-4327-ad1f-f12f21835af9",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-1-voting-methods"
+ ],
+ "uuid": "59dbf375-3863-4c2d-ac10-0de030c922c7",
+ "group_uuid": "b08b368f-3d2d-4d8f-b7ad-9c3a1425ae45",
+ "number": 29482,
+ "version": 20,
+ "uid": "29482@20",
+ "published_at": "2024-12-24T01:34:34.507Z",
+ "nickname": "CM-C11-M1-Q009",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>According to <i>Variety</i> magazine, there were 8,469 eligible Oscar voters in 2020. To make our matrix easier to work with, we've rounded this number up to 8,700. We'd never do this in a real voting situation. Suppose that the voter preferences for the ballot for Best Director had been as shown in the table below.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Number of Ballots</th>\n<th>2,400</th>\n<th>2,100</th>\n<th>1,900</th>\n<th>1,200</th>\n<th>1,100</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Martin Scorsese, <i>The Irishman</i></td>\n<td>3</td>\n<td>1</td>\n<td>4</td>\n<td>5</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Todd Phillips, <i>Joker</i></td>\n<td>1</td>\n<td>4</td>\n<td>5</td>\n<td>2</td>\n<td>4</td>\n</tr>\n<tr>\n<td>Sam Mendes, <i>1917</i></td>\n<td>5</td>\n<td>5</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Quentin Tarantino, <i>Once Upon a Time in Hollywood</i></td>\n<td>4</td>\n<td>2</td>\n<td>1</td>\n<td>3</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Bong Joon-ho, <i>Parasite</i></td>\n<td>2</td>\n<td>3</td>\n<td>2</td>\n<td>1</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<p>Refer to the table to answer each question.</p>",
+ "questions": [
+  {
+   "id": 545746,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Construct a pairwise comparison matrix for the Best Director ballots.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<br><img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbU1IIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d2855a3c9fa2ffce6dbb47c1c8c3d812051c7acb/CS_Figure_11_01_029.jpg\" alt=\"A table shows the best director pairwise comparison matrix. The table has 6 rows and 7 columns. The row headers are opponent/runner, Scorsese (s), Phillips (P), Mendes (M), Tarantino (T), Bong (B), and points. Under opponent/runner it is labeled as Scorsese wins, Phillips wins, Mendes wins, Tarantino wins, and Bong wins. Under Scorsese (s) a symbol hyphen is labeled in a box, a box colored in blue and labeled as P S 3600, and the entire box is stricken out, a box labeled as M S 3100 is colored in yellow, a box colored in orange and labeled as B S 6600 and the entire box is stricken out. Under Phillips (P), a box colored in blue and labeled as S P 5100, a symbol hyphen is labeled in a box, a box labeled as M P 1900 is colored in blue, a box colored in yellow and labeled as T P 5100, a box colored in grey and labeled as B P 6300. Under Mendes (M), a box colored in yellow and labeled as S M 5600, a box labeled as P M 6800 is colored in blue, a symbol hyphen is labeled in a box, a box colored in blue and labeled as T M 8700, a box colored in yellow and labeled as B M 8700. Under Tarantino (T), a box colored in grey and labeled as S T 5600, a box labeled as P T 3600 is colored in yellow, a box colored in blue and labeled as M T 0, a hyphen is labeled in a box, a box colored in blue and labeled as B T 4700. Under Bong (B), a box colored in orange and labeled as S B 2100 and the entire box is stricken out, a box labeled as P B 2400 is colored in grey and the entire box is stricken out, a box colored in yellow and labeled as M B 0 and the entire box is stricken out, a box colored in blue and labeled as T B 4000 and the entire box is stricken out. Under points, it is labeled as 3, 1, 0, 2, 4.\">\n"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Step 1: Create a grid with each actor on the horizontal and vertical headers. Indicate a win with a cross and a tie with a slash.</p>\n<p>For instance, let’s find SP: Add the number of ballots in which Scorsese ranks higher than Phillips:</p>\n<p>2,100 + 1,900 + 1,100 = 5,100</p>\n<p>To find SM, add the number of ballots in which Scorsese ranks higher than Mendes:</p>\n<p>2,400 + 2,100 + 1,100 = 5,600</p>\n<p>To find ST, add the number of ballots in which Scorsese ranks higher than Tarantino.</p>\n<p>2,400 + 2,100 + 1,100 = 5,600</p>\n<p>To find SB, add the number of ballots in which Scorsese ranks higher than Bong.</p>\n<p>2,100</p>\n<p>To find PS, add the number of ballots in which Phillips ranks higher than Scorsese.</p>\n<p>2,400 + 1,200 = 3,600</p>\n<p>To find PM, add the number of ballots in which Phillips ranks higher than Mendes.</p>\n<p>2,400 + 2,100 + 1,200 + 1,100 = 6,800</p>\n<p>To find PT, add the number of ballots in which Phillips ranks higher than Tarantino.</p>\n<p>2,400 + 1,200 = 3,600</p>\n<p>To find PB, add the number of ballots in which Phillips ranks higher than Bong.</p>\n<p>2,400</p>\n<p>To find MS, add the number of ballots in which Mendes ranks higher than Scorsese.</p>\n<p>1,900 + 1,200 = 3,100</p>\n<p>To find MP, add the number of ballots in which Mendes ranks higher than Phillips.</p>\n<p>1,900</p>\n<p>To find MT, add the number of ballots in which Mendes ranks higher than Tarantino.</p>\n<p>It does not happen, so record a zero.</p>\n<p>To find MB, add the number of ballots in which MB ranks higher than Bong.</p>\n<p>Again, it does not happen, so record a zero.</p>\n<p>Continue to fill in the rest of the table.</p>\n<p>It should look like this.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th style=\"width:10%; background: linear-gradient(to top right, transparent calc(50% - 1px), black 50%, transparent calc(50% + 1px) )\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opponent<br>Runner</th>\n<th>Scorsese&nbsp;(S)</th>\n<th>Phillips&nbsp;(P)</th>\n<th>Mendes&nbsp;(M)</th>\n<th>Tarantino&nbsp;(T)</th>\n<th>Bong&nbsp;(B)</th>\n<th>Points</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Scorsese wins</td>\n<td>&nbsp;</td>\n<td>SP 5100</td>\n<td>SM<p></p>\n<p>5600</p></td>\n<td>ST<p></p>\n<p>5600</p></td>\n<td>SB<p></p>\n<p>2100</p></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Phillips wins</td>\n<td>PS<p></p>\n<p>3600</p></td>\n<td>&nbsp;</td>\n<td>PM<p></p>\n<p>6800</p></td>\n<td>PT<p></p>\n<p>3600</p></td>\n<td>PB<p></p>\n<p>2400</p></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Mendes wins</td>\n<td>MS<p></p>\n<p>3100</p></td>\n<td>MP<p></p>\n<p>1900</p></td>\n<td>&nbsp;</td>\n<td>MT<p></p>\n<p>0</p></td>\n<td>MB<p></p>\n<p>0</p></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Tarantino wins</td>\n<td>TS<p></p>\n<p>3100</p></td>\n<td>TP<p></p>\n<p>5100</p></td>\n<td>TM<p></p>\n<p>8700</p></td>\n<td>&nbsp;</td>\n<td>TB<p></p>\n<p>4000</p></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Bong wins</td>\n<td>BS<p></p>\n<p>6600</p></td>\n<td>BP<p></p>\n<p>6300</p></td>\n<td>BM<p></p>\n<p>8700</p></td>\n<td>BT<p></p>\n<p>4700</p></td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n\n</tbody></table>\n<p>Step 2: Add the total number of ballots: 2,400 + 2,100 + 1,900 + 1,200 + 1,100 = 8,700</p>\n<p>Half of that is 4,350.</p>\n<p>Anyone who did win over 4,350 votes is a loser. Put an X on the losers. Put a slash on the ties, who have exactly 4,350 (there are not any).</p>\n<p>Each win (X) is one point. Each tie (slash) is a half point. Each loss is zero points.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th style=\"width:10%; background: linear-gradient(to top right, transparent calc(50% - 1px), black 50%, transparent calc(50% + 1px) )\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opponent<br>Runner</th>\n<th>Scorsese&nbsp;(S)</th>\n<th>Phillips&nbsp;(P)</th>\n<th>Mendes&nbsp;(M)</th>\n<th>Tarantino&nbsp;(T)</th>\n<th>Bong&nbsp;(B)</th>\n<th>Points</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Scorsese wins</td>\n<td>&nbsp;</td>\n<td>SP 5100</td>\n<td>SM<p></p>\n<p>5600</p></td>\n<td>ST<p></p>\n<p>5600</p></td>\n<td>SB<p></p>\n<p>2100</p>\n<p>Cross out SB 2100</p></td>\n<td>3</td>\n</tr>\n<tr>\n<td>Phillips wins</td>\n<td>PS<p></p>\n<p>3600</p>\n<p>Cross out PS 3600</p></td>\n<td>&nbsp;</td>\n<td>PM<p></p>\n<p>6800</p></td>\n<td>PT<p></p>\n<p>3600</p>\n<p>Cross out PT 3600</p></td>\n<td>PB<p></p>\n<p>2400</p>\n<p>Cross out PB 2400</p></td>\n<td>1</td>\n</tr>\n<tr>\n<td>Mendes wins</td>\n<td>MS<p></p>\n<p>3100</p>\n<p>Cross out MS 3100</p></td>\n<td>MP<p></p>\n<p>1900</p>\n<p>Cross out MP 1900</p></td>\n<td>&nbsp;</td>\n<td>MT<p></p>\n<p>0</p>\n<p>Cross out MT 0</p></td>\n<td>MB<p></p>\n<p>0</p>\n<p>Cross out MB 0</p></td>\n<td>0</td>\n</tr>\n<tr>\n<td>Tarantino wins</td>\n<td>TS<p></p>\n<p>3100</p>\n<p>Cross out TS 3100</p></td>\n<td>TP<p></p>\n<p>5100</p></td>\n<td>TM<p></p>\n<p>8700</p></td>\n<td>&nbsp;</td>\n<td>TB<p></p>\n<p>4000</p>\n<p>Cross out TB 4000</p></td>\n<td>2</td>\n</tr>\n<tr>\n<td>Bong wins</td>\n<td>BS<p></p>\n<p>6600</p></td>\n<td>BP<p></p>\n<p>6300</p></td>\n<td>BM<p></p>\n<p>8700</p></td>\n<td>BT<p></p>\n<p>4700</p></td>\n<td>&nbsp;</td>\n<td>4</td>\n</tr>\n</tbody>\n</table>\n<p>Step 3: The winner is the one with the most points. Bong Joon-ho has 4 points.</p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545747,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Who is the “Best Director” according to the pairwise comparison method?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Bong Joon-ho won according to the pairwise comparison method.\n"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "The winner is Bong Joon-ho with 4 points using the pairwise comparison method."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545748,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Is the winner a Condorcet candidate?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Yes, the winner is a Condorcet candidate."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  20,
+  19,
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

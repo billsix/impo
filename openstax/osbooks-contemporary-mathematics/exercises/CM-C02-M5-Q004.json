@@ -1,0 +1,379 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:02-05-02",
+  "context-cnxmod:af6872ce-04a4-4025-a61f-6191f10d60fd",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:2-5-equivalent-statements"
+ ],
+ "uuid": "e9fcdc12-2592-4a06-82ad-262fbdb60c38",
+ "group_uuid": "ca1c85ee-fb73-47db-8f04-57fd1b29b266",
+ "number": 29520,
+ "version": 8,
+ "uid": "29520@8",
+ "published_at": "2024-10-07T06:06:24.519Z",
+ "nickname": "CM-C02-M5-Q004",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Assume the conditional statement <span data-math=\"p \\to q:\">p \\to q:</span> “If my friend lives in San Francisco, then my friend does not live in California” is false, and use it to answer the following questions.",
+ "questions": [
+  {
+   "id": 497487,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Write the converse of the statement in words and determine its truth value.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The converse of <span data-math=\"p \\rightarrow q\"></span> is <span data-math=\"q \\rightarrow p\"></span>.</p>\n<p>The original statement is “If my friend lives in San Francisco, then my friend does not live in California.</p>\n<p>The converse switches the position.</p>\n<p>Converse in words: If my friend does not live in California, then my friend lives in San Francisco.</p>\n<p>A conditional is only false if the premise is true, and the conclusion is false.</p>\n<p>For the original conditional statement <span data-math=\"p \\rightarrow q\"></span> to be false, you know that <span data-math=\"p\"></span> is true, and <span data-math=\"q\"></span> is false.</p>\n<p>Now consider the converse, <span data-math=\"q \\rightarrow p\"></span>. The premise, <span data-math=\"q\"></span>, is false, so the converse is true.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "If my friend does not live in California, then my friend lives in San Francisco. True."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 497488,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Write the inverse of the statement in words and determine its truth value.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The inverse of <span data-math=\"p \\rightarrow q\"></span> is <span data-math=\"{\\sim}p \\rightarrow {\\sim}q\"></span>.</p>\n<p>The original statement is “If my friend lives in San Francisco, then my friend does not live in California.</p>\n<p>The inverse negates each part without changing the order.</p>\n<p>Inverse in words: If my friend does not live in San Francisco, then my friend lives in California.</p>\n<p>A conditional is only false if the premise is true, and the conclusion is false.</p>\n<p>For the original conditional statement <span data-math=\"p \\rightarrow q\"></span> to be false, you know that <span data-math=\"p\"></span> is true, and <span data-math=\"q\"></span> is false.</p>\n<p>Now consider the inverse, <span data-math=\"{\\sim}p \\rightarrow {\\sim}q\"></span>. The premise, <span data-math=\"{\\sim}p\"></span>, is false, so the inverse is true.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "If my friend does not live in San Francisco, then my friend lives in California. True."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 497489,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Write the contrapositive of the statement in words and determine its truth value.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The contrapositive of <span data-math=\"p \\rightarrow q\"></span> is <span data-math=\"{\\sim}q \\rightarrow {\\sim}p\"></span>.</p>\n<p>The original statement is “If my friend lives in San Francisco, then my friend does not live in California.</p>\n<p>The contrapositive switches the position and negates each part.</p>\n<p>Contrapositive in words: If my friend lives in California, then my friend does not live in San Francisco.</p>\n<p>A conditional is only false if the premise is true, and the conclusion is false.</p>\n<p>For the original conditional statement <span data-math=\"p \\rightarrow q\"></span> to be false, you know that <span data-math=\"p\"></span> is true, and <span data-math=\"q\"></span> is false.</p>\n<p>Now consider the contrapositive, <span data-math=\"{\\sim}q \\rightarrow {\\sim}p\"></span>. The premise, <span data-math=\"{\\sim}q\"></span>, is true and the conclusion, <span data-math=\"{\\sim}p\"></span> is false. This makes the contrapositive false.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "If my friend lives in California, then my friend does not live in San Francisco. False."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

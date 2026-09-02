@@ -1,0 +1,325 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:05-09-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:2c1d72ab-4f5d-4a61-8075-f4aa39ecb8cd",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-9-systems-of-linear-equations-in-two-variables"
+ ],
+ "uuid": "ba157b34-659e-40b7-9800-2267bab7774e",
+ "group_uuid": "dceeab14-2895-458d-bdbe-eb763f630ea8",
+ "number": 34580,
+ "version": 3,
+ "uid": "34580@3",
+ "published_at": "2024-11-02T06:21:00.546Z",
+ "nickname": "CM-C05-M9-Q015",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 511454,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Translate to a system of equations and then solve.\n<br>\nWhen Jenna spent 10 minutes on the elliptical trainer and then did circuit training for 20 minutes, her fitness app says she burned 278 calories. When she spent 20 minutes on the elliptical trainer and 30 minutes circuit training, she burned 473 calories. How many calories does she burn for each minute on the elliptical trainer? How many calories for each minute of circuit training?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Let <i>e</i> = the number of calories for each minute of elliptical training.</p>\n<p>Let <i>c</i> = the number of calories for each minute of circuit training.</p>\n<p>Make a table of what you know.</p> \n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>Elliptical Minutes</td>\n<td>Circuit Minutes</td>\n<td>Calories</td>\n</tr>\n<tr>\n<td>First pass</td>\n<td>10</td>\n<td>20</td>\n<td>278</td>\n</tr>\n<tr>\n<td>Second pass</td>\n<td>20</td>\n<td>30</td>\n<td>473</td>\n</tr>\n</tbody>\n</table>\n<p>You can make a system of equations using this information.</p>\n<p><b><span data-math=\"\\left\\{ {\\begin{array}{*{20}{c}}\n{10e + 20c = 278}\\\\\n{20e + 30c = 473}\n\\end{array}} \\right.\"></span></b></p>\n<p>Step 1: Write both equations in standard form, <span data-math=\"Ax + By = C\"></span>.</p>\n<p>This system already is in standard form.</p>\n<p>Step 2: Make the coefficients of one variable opposites.</p>\n<p><span data-math=\" - 2\\left( {10e + 20c} \\right) =  - 2\\left( {278} \\right)\"></span></p>\n<p><span data-math=\" - 20e - 40c =  - 556\"></span></p>\n<p>Step 3: Add the equations resulting from Step 2 to eliminate one variable.</p> \n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>–20<i>e</i></td>\n<td>–40<i>c</i></td>\n<td>=</td>\n<td>–556</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>20<i>e</i></td>\n<td>30<i>c</i></td>\n<td>=</td>\n<td>473</td>\n</tr>\n<tr>\n<td>SUM:</td>\n<td>&nbsp;</td>\n<td>–10<i>c</i></td>\n<td>=</td>\n<td>–83</td>\n</tr>\n</tbody>\n</table>\n<p>Step 4: Solve for the remaining variable.</p>\n<p><span data-math=\" - 10c =  - 83\"></span></p>\n<p><span data-math=\"c = 8.3\"></span></p>\n<p>Step 5: Substitute the solution from Step 4 into one of the original equations. Solve for the remaining variable.</p>\n<p><span data-math=\"10e + 20c = 278\"></span></p>\n<p><span data-math=\"10e + 20\\left( {8.3} \\right) = 278\"></span></p>\n<p><span data-math=\"10e + 20\\left( {8.3} \\right) = 278\"></span></p>\n<p><span data-math=\"10e + 166 = 278\"></span></p>\n<p><span data-math=\"10e = 112\"></span></p>\n<p><span data-math=\"e = 11.2\"></span></p>\n<p>Step 6: Interpret the answer.</p>\n<p>Jenna burns 8.3 calories per minute circuit training and 11.2 calories per minute on the elliptical trainer.</p>\n<p>Step 6: Checking is left to you.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Jenna burns 8.3 calories per minute circuit training and 11.2 calories per minute while on the elliptical trainer."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  3,
+  2,
+  1
+ ]
+}

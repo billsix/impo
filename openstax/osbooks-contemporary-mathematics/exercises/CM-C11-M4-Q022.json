@@ -1,0 +1,506 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-04-02",
+  "lo:stax-cmath:11-04-03",
+  "lo:stax-cmath:11-04-04",
+  "lo:stax-cmath:11-04-05",
+  "lo:stax-cmath:11-04-06",
+  "lo:stax-cmath:11-04-07",
+  "context-cnxmod:c6ba4735-5472-4e8a-bcce-f8bcb5349637",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-4-apportionment-methods"
+ ],
+ "uuid": "2f67aecd-7132-4a43-bdf8-fe4d9ddbbbf6",
+ "group_uuid": "88dcbcc3-c5f0-460e-aa52-7fcfccd1e311",
+ "number": 29470,
+ "version": 13,
+ "uid": "29470@13",
+ "published_at": "2025-01-09T16:52:24.209Z",
+ "nickname": "CM-C11-M4-Q022",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "In the movie <i>Black Panther,</i> the hero lives in the fictional country of Wakanda. Imagine that 111 Vibranium artifacts must be distributed among the fortress cities, or birnin, of Wakanda based on the population of each birnin. Use the population and standard quota information in the table below for the following exercises.\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>\n</th><th>Birnin Djata (D)</th>\n<th>Birnin T'Chaka (T)</th>\n<th>Birnin Zana (Z)</th>\n<th>Birnin S'Yan (S)</th>\n<th>Birnin Bashenga (B)</th>\n<th>Birnin Azzaria (A)</th>\n<th>Total</th>\n</tr>\n</thead><tbody>\n<tr>\n<td>Residents</td>\n<td>26,000</td>\n<td>57,000</td>\n<td>27,000</td>\n<td>18,000</td>\n<td>64,000</td>\n<td>45,000</td>\n<td>237,000</td>\n</tr>\n<tr>\n<td>Standard Quota</td>\n<td>12.18</td>\n<td>26.70</td>\n<td>12.65</td>\n<td>8.43</td>\n<td>29.98</td>\n<td>21.08</td>\n<td>111</td>\n</tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 549251,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Modify the standard quota for each state using traditional rounding. Find the sum of the modified quotas. What is the difference between the sum and the house size?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549252,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the standard lower quota for each state. If each state is allocated its lower quota, how many seats remain to be allocated?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549253,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the standard upper quota for each state and determine how much the sum of the upper quotas exceeds the house size.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549254,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the Hamilton method to apportion the artifacts.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549255,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the modified lower quota for each state using a modified divisor of 2,000. Is the sum of the modified quotas too high, too low, or equal to the house size?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549256,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the modified lower quota for each state using a modified divisor of 2,100. Is the sum of the modified quotas too high, too low, or equal to the house size?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549257,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the Jefferson method to apportion the artifacts. Determine whether it is necessary to modify the divisor. If so, indicate the value of the modified divisor.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549258,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Does the Jefferson method result in an apportionment that satisfies or violates the quota rule in this scenario?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549259,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the modified upper quota for each state using a modified divisor of 2,250. Is the sum of the modified quotas too high, too low, or equal to the house size?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549260,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the modified upper quota for each state using a modified divisor of 2,150. Is the sum of the modified quotas too high, too low, or equal to the house size?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549261,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the Adams method to apportion the artifacts. Determine whether it is necessary to modify the divisor. If so, indicate the value of the modified divisor.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549262,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Does the Adams method result in an apportionment that satisfies or violates the quota rule in this scenario?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549263,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Which method of apportionment, Jefferson or Adams, is a resident of Birnin T'Chaka likely to prefer? Justify your answer.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549264,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the Webster method to apportion the artifacts. Determine whether it is necessary to modify the divisor. If so,indicate the value of the modified divisor.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549265,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Does the Webster method result in an apportionment that satisfies or violates the quota rule in this scenario?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 549266,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Which of the four methods of apportionment from this section (Hamilton, Jefferson, Adams, or Webster) are the residents of Birnin S'Yan likely to prefer? Justify your answer.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

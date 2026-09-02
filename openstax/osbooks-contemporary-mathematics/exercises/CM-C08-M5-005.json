@@ -1,0 +1,456 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:08-05-02",
+  "context-cnxmod:c2d4586a-5677-4f52-9fc6-43745e91e68b",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-5-percentiles"
+ ],
+ "uuid": "613f67c1-5db5-447a-b23b-73e7cfa93c21",
+ "group_uuid": "0f8217cb-14dd-49e2-8953-8780a866a98c",
+ "number": 29065,
+ "version": 10,
+ "uid": "29065@10",
+ "published_at": "2024-11-28T05:39:11.591Z",
+ "nickname": "CM-C08-M5-005",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>For the remainder of these problems, use the dataset <a href=\"https://openstax.org/r/Chapter8_Data-Sets\" rel=\"nofollow\" target=\"_blank\">\"MLB2019,\"</a> which gives the number of wins for each Major League Baseball team in the 2019 season. Use Google Sheets to compute your answers.</p>\n",
+ "questions": [
+  {
+   "id": 529218,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many wins is at the 30th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Open a copy of the file in Google Sheets. You cannot edit the original file.</p>\n<p>Look for the MLB2019 tab.</p>\n<p>Look for the Wins column.</p>\n<p>In a blank cell, enter the function: =PERCENTILE(</p>\n<p>Click on the letter at the top of the Wins column.</p>\n<p>Then enter a comma, the percentile as a decimal and close the parentheses: ,0.30)</p>\n<p>The complete function probably looks like this: =PERCENTILE(B:B,0.3)</p>\n<p>The number you see is 71.7.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "71.7"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529219,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many wins is at the 90th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Open a copy of the file in Google Sheets. You cannot edit the original file.</p>\n<p>Look for the MLB2019 tab.</p>\n<p>Look for the Wins column.</p>\n<p>In a blank cell, enter the function: =PERCENTILE(</p>\n<p>Click on the letter at the top of the Wins column.</p>\n<p>Then enter a comma, the percentile as a decimal and close the parentheses: ,0.90)</p>\n<p>The complete function probably looks like this: =PERCENTILE(B:B,0.9)</p>\n<p>The number you see is 101.2.</p>\n<p>(Hint: You could also modify the formula if you used this tab and formula in another exercise.)</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "101.2"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529220,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many wins is at the first quartile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Quartiles break the data into four parts. The first quartile is the 25<sup>th</sup> percentile.</p>\n<p>Open a copy of the file in Google Sheets. You cannot edit the original file.</p>\n<p>Look for the MLB2019 tab.</p>\n<p>Look for the Wins column.</p>\n<p>In a blank cell, enter the function: =PERCENTILE(</p>\n<p>Click on the letter at the top of the Wins column.</p>\n<p>Then enter a comma, the percentile as a decimal and close the parentheses: ,0.25)</p>\n<p>The complete function probably looks like this: =PERCENTILE(B:B,0.25)</p>\n<p>The number you see is 70.25.</p>\n<p>(Hint: You could also modify the formula if you used this tab and formula in another exercise.)</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "70.25"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529221,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile are the Chicago Cubs (CHC, 84 wins)?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Open a copy of the file in Google Sheets. You cannot edit the original file.</p>\n<p>Look for the MLB2019 tab.</p>\n<p>Look for the Wins column.</p>\n<p>In a blank cell, enter the function: = PERCENTRANK(</p>\n<p>Click on the letter at the top of the Wins column.</p>\n<p>Then enter a comma, 84, and close the parentheses: ,84)</p>\n<p>The complete function probably looks like this: =PERCENTRANK(B:B,84)</p>\n<p>You see the decimal value 0.517.</p>\n<p>Convert this to a percentage to say that this is the 51.7<sup>th</sup> percentile.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "51.7th"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529222,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile are the Tampa Bay Rays (TBR, 96 wins)?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Open a copy of the file in Google Sheets. You cannot edit the original file.</p>\n<p>Look for the MLB2019 tab.</p>\n<p>Look for the Wins column.</p>\n<p>In a blank cell, enter the function: = PERCENTRANK(</p>\n<p>Click on the letter at the top of the Wins column.</p>\n<p>Then enter a comma, 96, and close the parentheses: ,96)</p>\n<p>The complete function probably looks like this: =PERCENTRANK(B:B,96)</p>\n<p>You see the decimal value 0.793.</p>\n<p>Convert this to a percentage to say that this is the 79.3<sup>rd</sup> percentile.</p>\n<p>(Hint: You could also modify the formula if you used this tab and formula in another exercise.)</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "79.3rd"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529223,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile are the Toronto Blue Jays (TOR, 67 wins)?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Open a copy of the file in Google Sheets. You cannot edit the original file.</p>\n<p>Look for the MLB2019 tab.</p>\n<p>Look for the Wins column.</p>\n<p>In a blank cell, enter the function: = PERCENTRANK(</p>\n<p>Click on the letter at the top of the Wins column.</p>\n<p>Then enter a comma, 67, and close the parentheses: ,67)</p>\n<p>The complete function probably looks like this: =PERCENTRANK(B:B,67)</p>\n<p>You see the decimal value 0.138.</p>\n<p>Convert this to a percentage to say that this is the 13.8<sup>th</sup> percentile.</p>\n<p>(Hint: You could also modify the formula if you used this tab and formula in another exercise.)</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "13.8th"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

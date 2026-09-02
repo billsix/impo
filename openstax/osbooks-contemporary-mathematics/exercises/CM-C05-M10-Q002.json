@@ -1,0 +1,337 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-05T07:37:54.656Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBclVLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--00ba7115eaa0c6a187925e4edaf3c001b10822c8",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBclVLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--00ba7115eaa0c6a187925e4edaf3c001b10822c8/CS_Figure_05_10_002.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:05-10-02",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:a875595f-bfc6-417e-96f2-7e52e4a3591d",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-10-systems-of-linear-inequalities-in-two-variables"
+ ],
+ "uuid": "edb677cc-d6a5-430e-839f-6d4ce4f76e2d",
+ "group_uuid": "89def57e-7a81-422d-8d88-e3629311fdb6",
+ "number": 30929,
+ "version": 10,
+ "uid": "30929@10",
+ "published_at": "2024-11-05T07:37:58.338Z",
+ "nickname": "CM-C05-M10-Q002",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 513212,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the graph shown to solve the system of linear inequalities:\n<br>\n<span data-math=\"\\left\\{ {\\begin{array}{*{20}{c}}\n y < 3x + 2 \\\\\ny >  - x - 1 \\\\\n\\end{array}} \\right.\">\\left\\{ {\\begin{array}{*{20}{c}}\n y &lt; 3x + 2 \\\\\ny &gt;  - x - 1 \\\\\n\\end{array}} \\right.</span>\n<br>\n<figure><img src=\"exercises/media/fc2f470938ad644e.jpg\" alt=\"Two dashed lines are plotted on an x y coordinate plane. The x and y axes range from negative 10 to 10, in increments of 1. The first line passes through the points, (negative 9, 8), (negative 1, 0), (0, 1), and (8, negative 9). The region above the line is shaded in gray. The second line passes through the points, (negative 3, negative 7), (0, 2), and (2, 8). The region to the right of the line is shaded in dark blue. The two lines intersect approximately at (negative 0.8, negative 0.2). The region to the right of the intersection point and within the lines is shaded in light blue.\"></figure>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Look at the graph. Find the region that satisfies both inequalities. To do this, pick a test point in the area shaded by both graphs and check.</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td>Try (1, 7).</td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"\\left\\{ {\\begin{array}{*{20}{c}}\n{y < 3x + 2}\\\\\n{y >  - x - 1}\n\\end{array}} \\right.\"></span></td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"y < 3x + 2\"></span></td>\n<td>Substitute in the first inequality.</td>\n</tr>\n<tr>\n<td><span data-math=\"7 < 3\\left( 7 \\right) + 2\"></span></td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"7 < 21 + 2\"></span></td>\n<td>Simplify.</td>\n</tr>\n<tr>\n<td><span data-math=\"7 < 23\"></span></td>\n<td>This is true.</td>\n</tr>\n<tr>\n<td><span data-math=\"y >  - x - 1\"></span></td>\n<td>Substitute in the second inequality.</td>\n</tr>\n<tr>\n<td><span data-math=\"7 >  - 1 - 1\"></span></td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"7 >  - 2\"></span></td>\n<td>Simplify. This is also true.</td>\n</tr>\n</tbody>\n</table>\n<p>The ordered pair made both inequalities true. This is a solution to the system.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The region containing (0, 0) is the solution to the system of linear inequalities."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

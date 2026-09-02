@@ -1,0 +1,351 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:05-10-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:a875595f-bfc6-417e-96f2-7e52e4a3591d",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-10-systems-of-linear-inequalities-in-two-variables"
+ ],
+ "uuid": "ac3631df-0c88-42db-a85a-e62d266838be",
+ "group_uuid": "5f162798-e1ad-420f-b62a-4ed379abc593",
+ "number": 30928,
+ "version": 5,
+ "uid": "30928@5",
+ "published_at": "2024-11-05T07:34:54.409Z",
+ "nickname": "CM-C05-M10-Q001",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Determine whether the ordered pair is a solution to the system:\n<br>\n<span data-math=\"\\left\\{ \\begin{gathered}\n  x - 5y > 10 \\hfill \\\\\n  2x + 3y > - 2 \\hfill \\\\ \n\\end{gathered} \\right.\">\\left\\{ \\begin{gathered}\n  x - 5y &gt; 10 \\hfill \\\\\n  2x + 3y &gt;  - 2 \\hfill \\\\ \n\\end{gathered}  \\right.</span>",
+ "questions": [
+  {
+   "id": 513204,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"(3, −1)\">(3, −1)</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"\\left\\{ {\\begin{array}{*{20}{c}}\n{x - 5y > 10}\\\\\n{2x + 3y >  - 2}\n\\end{array}} \\right.\"></span></td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"x - 5y > 10\"></span></td>\n<td>Substitute in the first inequality.</td>\n</tr>\n<tr>\n<td><span data-math=\"3 - 5\\left( { - 1} \\right) > 10\"></span></td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"3 + 6 > 10\"></span></td>\n<td>Simplify.</td>\n</tr>\n<tr>\n<td><span data-math=\"9 > 10\"></span></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>This is not true. This is not a solution to the system.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "not a solution"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 513205,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"(6, −3)\">(6, −3)</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"\\left\\{ {\\begin{array}{*{20}{c}}\n{x - 5y > 10}\\\\\n{2x + 3y >  - 2}\n\\end{array}} \\right.\"></span></td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"x - 5y > 10\"></span></td>\n<td>Substitute in the first inequality.</td>\n</tr>\n<tr>\n<td><span data-math=\"6 - 5\\left( { - 3} \\right) > 10\"></span></td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"6 + 15 > 10\"></span></td>\n<td>Simplify.</td>\n</tr>\n<tr>\n<td><span data-math=\"23 > 10\"></span></td>\n<td>This is true.</td>\n</tr>\n<tr>\n<td><span data-math=\"2x + 3y >  - 2\"></span></td>\n<td>Substitute in the second inequality.</td>\n</tr>\n<tr>\n<td><span data-math=\"2\\left( 6 \\right) + 3\\left( { - 3} \\right) >  - 2\"></span></td>\n<td></td>\n</tr>\n<tr>\n<td><span data-math=\"12 - 9 >  - 2\"></span></td>\n<td>Simplify.</td>\n</tr>\n<tr>\n<td><span data-math=\"3 >  - 2\"></span></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>This is true. The ordered pair made both inequalities true. This is a solution to the system.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "a solution"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

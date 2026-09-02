@@ -1,0 +1,329 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:02-06-03",
+  "context-cnxmod:a9a212bb-83fa-4aca-b45d-ce584bb1f7bd",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:2-6-de-morgans-laws"
+ ],
+ "uuid": "97197ac7-65b9-4b66-8d3c-93ec9e30aadb",
+ "group_uuid": "bd46a5c3-2a19-40ed-8d53-0e2d3557c59d",
+ "number": 29590,
+ "version": 8,
+ "uid": "29590@8",
+ "published_at": "2024-10-05T02:20:52.062Z",
+ "nickname": "CM-C02-M6-Q005",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 496718,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Construct a truth table to verify De Morgan’s Law for the negation of a disjunction, <span data-math=\"\\text{~}\\left( {p \\vee q} \\right) \\equiv \\text{~}p \\wedge \\text{~}q\">\\text{~}\\left( {p \\vee q} \\right) \\equiv \\text{~}p \\wedge \\text{~}q</span>, is valid.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The equivalence is valid if the last column is all true.</p>\n<p>There are two statements, so you need four rows of possible truth values.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td><span data-math=\"p\"></span></td>\n<td><span data-math=\"q\"></span></td>\n<td><span data-math=\"p \\vee q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q)\"></span></td>\n<td><span data-math=\"\\text{~}p\"></span></td>\n<td><span data-math=\"\\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}p \\wedge \\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q) \\leftrightarrow (\\text{~}p \\wedge \\text{~}q)\"></span></td>\n</tr>\n<tr>\n<td>T</td>\n<td>T</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>Columns are bold to help you make comparisons.</p>\n<p><span data-math=\"p \\vee q\"></span></p>\n<p>A disjunction is only false if both statements are false. Write an F if both <span data-math=\"p\"></span> and <span data-math=\"q\"></span> are false. Otherwise, write a T.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td><span data-math=\"p\"></span></td>\n<td><span data-math=\"q\"></span></td>\n<td><span data-math=\"p \\vee q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q)\"></span></td>\n<td><span data-math=\"\\text{~}p\"></span></td>\n<td><span data-math=\"\\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}p \\wedge \\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q) \\leftrightarrow (\\text{~}p \\wedge \\text{~}q)\"></span></td>\n</tr>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"\\text{~}(p \\vee q)\"></span></p>\n<p>Write the opposite of the previous column.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td><span data-math=\"p\"></span></td>\n<td><span data-math=\"q\"></span></td>\n<td><span data-math=\"p \\vee q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q)\"></span></td>\n<td><span data-math=\"\\text{~}p\"></span></td>\n<td><span data-math=\"\\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}p \\wedge \\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q) \\leftrightarrow (\\text{~}p \\wedge \\text{~}q)\"></span></td>\n</tr>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"\\text{~}p\"></span></p>\n<p>Write the opposite of <span data-math=\"p\"></span>.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td><span data-math=\"p\"></span></td>\n<td><span data-math=\"q\"></span></td>\n<td><span data-math=\"p \\vee q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q)\"></span></td>\n<td><span data-math=\"\\text{~}p\"></span></td>\n<td><span data-math=\"\\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}p \\wedge \\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q) \\leftrightarrow (\\text{~}p \\wedge \\text{~}q)\"></span></td>\n</tr>\n<tr>\n<td><b>T</b></td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td><b>T</b></td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td><b>F</b></td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td><b>F</b></td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"\\text{~}q\"></span></p>\n<p>Write the opposite of <span data-math=\"q\"></span>.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td><span data-math=\"p\"></span></td>\n<td><span data-math=\"q\"></span></td>\n<td><span data-math=\"p \\vee q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q)\"></span></td>\n<td><span data-math=\"\\text{~}p\"></span></td>\n<td><span data-math=\"\\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}p \\wedge \\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q) \\leftrightarrow (\\text{~}p \\wedge \\text{~}q)\"></span></td>\n</tr>\n<tr>\n<td>T</td>\n<td><b>T</b></td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>T</td>\n<td><b>F</b></td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>F</td>\n<td><b>T</b></td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>F</td>\n<td><b>F</b></td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"\\text{~}p \\wedge \\text{~}q\"></span></p>\n<p>A conjunction is true only if both statements are true. Write an F if both <span data-math=\"\\text{~}p\"></span> and <span data-math=\"\\text{~}q\"></span> are true. Otherwise, write a T.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td><span data-math=\"p\"></span></td>\n<td><span data-math=\"q\"></span></td>\n<td><span data-math=\"p \\vee q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q)\"></span></td>\n<td><span data-math=\"\\text{~}p\"></span></td>\n<td><span data-math=\"\\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}p \\wedge \\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q) \\leftrightarrow (\\text{~}p \\wedge \\text{~}q)\"></span></td>\n</tr>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td><b>F</b></td>\n<td><b>F</b></td>\n<td>F</td>\n<td></td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td><b>F</b></td>\n<td><b>T</b></td>\n<td>F</td>\n<td></td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td><b>T</b></td>\n<td><b>F</b></td>\n<td>F</td>\n<td></td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td><b>T</b></td>\n<td><b>T</b></td>\n<td>T</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"\\text{~}(p \\vee q) \\leftrightarrow (\\text{~}p \\wedge \\text{~}q)\"></span></p>\n<p>A biconditional is true with both statements have the same truth value. Write a T if both <span data-math=\"\\text{~}(p \\vee q)\"></span> and <span data-math=\"(\\text{~}p \\wedge \\text{~}q)\"></span> are true. Write an F if they have different truth values.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td><span data-math=\"p\"></span></td>\n<td><span data-math=\"q\"></span></td>\n<td><span data-math=\"p \\vee q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q)\"></span></td>\n<td><span data-math=\"\\text{~}p\"></span></td>\n<td><span data-math=\"\\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}p \\wedge \\text{~}q\"></span></td>\n<td><span data-math=\"\\text{~}(p \\vee q) \\leftrightarrow (\\text{~}p \\wedge \\text{~}q)\"></span></td>\n</tr>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td><b>F</b></td>\n<td>F</td>\n<td>F</td>\n<td><b>F</b></td>\n<td>T</td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td><b>F</b></td>\n<td>F</td>\n<td>T</td>\n<td><b>F</b></td>\n<td>T</td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td><b>F</b></td>\n<td>T</td>\n<td>F</td>\n<td><b>F</b></td>\n<td>T</td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td><b>T</b></td>\n<td>T</td>\n<td>T</td>\n<td><b>T</b></td>\n<td>T</td>\n</tr>\n</tbody>\n</table>\n<p>The statements are equivalent since the last column is always true.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<table summary=\".\">\n<thead>\n<tr>\n<th><span data-math=\"p\">p</span></th>\n<th><span data-math=\"q\">q</span></th>\n<th><span data-math=\"{p} \\vee {q}\">{p} \\vee {q}</span></th>\n<th><span data-math=\"\\text{~}\\left( {{p} \\vee {q}} \\right)\">\\text{~}\\left( {{p} \\vee {q}} \\right)</span></th>\n<th><span data-math=\"\\text{~}p\">\\text{~}p</span></th>\n<th><span data-math=\"\\text{~}q\">\\text{~}q</span></th>\n<th><span data-math=\"\\text{~}p \\wedge \\text{~}q\">\\text{~}p \\wedge \\text{~}q</span></th>\n<th><span data-math=\"\\text{~}({p} \\vee {q}) \\leftrightarrow \\left( {\\text{~}p \\wedge \\text{~}q} \\right)\">\\text{~}({p} \\vee {q}) \\leftrightarrow \\left( {\\text{~}p \\wedge \\text{~}q} \\right)</span></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n</tbody>\n</table>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,334 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-09T05:19:56.036Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdmNOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--25782ee746b78b82d12cb19798a8c8fbfca1cfa6",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdmNOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--25782ee746b78b82d12cb19798a8c8fbfca1cfa6/CS_Figure_10_04_UN027.png"
+  }
+ ],
+ "tags": [
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "lo:stax-cmath:10-04-04",
+  "context-cnxmod:413a0326-6326-4372-a032-162d6a833216",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:10-4-polygons-perimeter-and-circumference"
+ ],
+ "uuid": "069c3774-ad55-49d6-9747-1ecf439babad",
+ "group_uuid": "4ffcd3f9-3f51-4fb0-b269-76e9bd6a5a0f",
+ "number": 31769,
+ "version": 7,
+ "uid": "31769@7",
+ "published_at": "2024-12-09T05:19:59.412Z",
+ "nickname": "CM-C10-M4-Q015",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 534363,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the measurements of each angle in the given figure.\n<br>\n<img src=\"exercises/media/800006f590891ac6.png\" alt=\"A four-sided polygon. The interior angles measure 152 degrees, (5 x plus 1) degrees, (x plus 12) degrees, and (9 x) degrees.\">\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Step 1: Find the sum of the interior angles. This is a quadrilateral, so <span data-math=\"n = 4\"></span>.</p>\n<p>The sum of the interior angles of a polygon with <i>n</i> sides is <span data-math=\"S = \\left( {n - 2} \\right)180^\\circ \"></span>.</p>\n<p><span data-math=\"S = \\left( {n - 2} \\right)180^\\circ = \\left( {4 - 2} \\right)180^\\circ = \\left( 2 \\right)180^\\circ = 360^\\circ \"></span></p>\n<p>Step 2: Add up the angles and set it equal to the sum of the angles. Then solve for the unknowns.</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"152 + \\left( {5x + 1} \\right) + \\left( {x + 12} \\right) + \\left( {9x} \\right) = 360\"></span></td>\n<td>Combine like terms.</td>\n</tr>\n<tr>\n<td><span data-math=\"15x + 165 = 360\"></span></td>\n<td>Subtract.</td>\n</tr>\n<tr>\n<td><span data-math=\"15x = 195\"></span></td>\n<td>Divide.</td>\n</tr>\n<tr>\n<td><span data-math=\"x = 13\"></span></td>\n<td>Evaluate the expressions for each angle.</td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"5x + 1 = 5\\left( {13} \\right) + 1 = 65 + 1 = 66^\\circ \"></span></p>\n<p><span data-math=\"9x = 9\\left( {13} \\right) = 117^\\circ \"></span></p>\n<p><span data-math=\"x + 12 = 13 + 12 = 25^\\circ \"></span></p>\n<p>The interior angles measure 66°, 117°, and 25°.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\begin{array}{*{20}{rcl}}{360}&amp;{=}&amp;{152 + 9x + (5x + 1) + (x + 12)}\\\\{}&amp;{=}&amp;{15x + 165}\\\\{195}&amp;{=}&amp;{15x}\\\\{13}&amp;{=}&amp;{x}\\\\{x + 12}&amp;{=}&amp;{25^ \\circ },\\,9x = {117^ \\circ },\\,5x + 1 = {66^ \\circ }\\end{array}\">\\begin{array}{*{20}{c}}{360}&amp;{=}&amp;{152 + 9x + (5x + 1) + (x + 12)}\\\\{}&amp;{=}&amp;{15x + 165}\\\\{195}&amp;{=}&amp;{15x}\\\\{13}&amp;{=}&amp;{x}\\\\{x + 12}&amp;{=}&amp;{25^ \\circ },\\,9x = {117^ \\circ },\\,5x + 1 = {66^ \\circ }\\end{array}</span>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

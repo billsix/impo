@@ -1,0 +1,378 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-02-04",
+  "lo:stax-cmath:11-01-03",
+  "context-cnxmod:d49636a4-186a-43a6-b8d4-f6e5453a9660",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-2-fairness-in-voting-methods"
+ ],
+ "uuid": "4d4bcd75-c685-4bd6-a3b1-e10c5b02417c",
+ "group_uuid": "99a4826a-2d4e-455f-b0f7-d909e7d62a5d",
+ "number": 29532,
+ "version": 6,
+ "uid": "29532@6",
+ "published_at": "2024-12-23T05:01:45.967Z",
+ "nickname": "CM-C11-M2-Q007",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>The local animal shelter is having another vote-by-donation charity event! This time, for a $10 donation, an individual can complete a ranked ballot indicating their favorite small dog breed, miniature, from the ones provided: miniature poodle, Yorkshire terrier, or Chihuahua. Use the summary of ballots below to answer each question.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Votes</th>\n<th>53</th>\n<th>42</th>\n<th>24</th>\n<th>11</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>(P) Miniature Poodle</td>\n<td>1</td>\n<td>3</td>\n<td>3</td>\n<td>2</td></tr>\n<tr><td>(Y) Yorkshire Terrier</td>\n<td>2</td>\n<td>2</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>(C) Chihuahua</td>\n<td>3</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n</tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 545011,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Determine the winner of the election by the ranked-choice method.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The total number of votes: 130.</p>\n<p>50 percent of 130 is 65.</p>\n<p>To win the majority, you need at least one more than 65, which is 66.</p>\n<p>First Round:</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Votes</th>\n<th>53</th>\n<th>42</th>\n<th>24</th>\n<th>11</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>(M) Miniature Poodle</td>\n<td>1</td>\n<td>3</td>\n<td>3</td>\n<td>2</td>\n</tr>\n<tr>\n<td>(Y) Yorkshire Terrier</td>\n<td>2</td>\n<td>2</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>(C) Chihuahua</td>\n<td>3</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n</tr>\n</tbody>\n</table>\n<p>Miniature Poodle: 53</p>\n<p>Yorkshire Terrier: 24 + 11 = 35</p>\n<p>Chihuahua: 42</p>\n<p>No one has 66, so eliminate the Yorkshire Terrier.</p>\n<p>Second Round:</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Votes</th>\n<th>53</th>\n<th>42</th>\n<th>24</th>\n<th>11</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>(M) Miniature Poodle</td>\n<td>1</td>\n<td>2</td>\n<td>2</td>\n<td>1</td>\n</tr>\n<tr>\n<td>(C) Chihuahua</td>\n<td>2</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n</tr>\n</tbody>\n</table>\n<p>Miniature Poodle: 53 + 11 = 64</p>\n<p>Chihuahua: 42 + 24 = 66</p>\n<p>The Chihuahua wins.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Chihuahua."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545012,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Determine the winner of the election if poodles are removed from the ballot.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The total number of votes: 130.</p>\n<p>50 percent of 130 is 65.</p>\n<p>To win the majority, you need at least one more than 65, which is 66.</p>\n<p>First Round:</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Votes</th>\n<th>53</th>\n<th>42</th>\n<th>24</th>\n<th>11</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>(Y) Yorkshire Terrier</td>\n<td>1</td>\n<td>2</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>(C) Chihuahua</td>\n<td>2</td>\n<td>1</td>\n<td>2</td>\n<td>2</td>\n</tr>\n</tbody>\n</table>\n<p>Yorkshire Terrier: 53 + 24 + 11 = 88</p>\n<p>Chihuahua: 42</p>\n<p>The Yorkshire Terrier wins.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Yorkshire Terrier."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545013,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Does this election violate IIA?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Yes, this violates IIA, or Independence of Irrelevant Alternatives Criterion. This means that the introduction or removal of a third candidate should not change or reverse the rankings of the original two candidates relative to one another. In particular, if a losing candidate is removed from a race or a new candidate is added, the winner should not change."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Yes, this election violates IIA."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

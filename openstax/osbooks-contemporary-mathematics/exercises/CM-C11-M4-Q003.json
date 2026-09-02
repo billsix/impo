@@ -1,0 +1,378 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-04-02",
+  "context-cnxmod:c6ba4735-5472-4e8a-bcce-f8bcb5349637",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-4-apportionment-methods"
+ ],
+ "uuid": "3d1f401e-7a8a-4612-8856-da4f195d0f5a",
+ "group_uuid": "712815af-81e2-4608-9bc5-661cd4a73b75",
+ "number": 29451,
+ "version": 7,
+ "uid": "29451@7",
+ "published_at": "2024-12-23T05:43:05.804Z",
+ "nickname": "CM-C11-M4-Q003",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "The apportionment of 70 new emergency blue lights in three parking lots is based on acreage. The standard quota for each lot is listed in the table below. Use this information to answer each question.\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Lot</th>\n<th>Acres</th>\n<th>Lot’s Standard Quota</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td>15</td>\n<td> <span data-math=\"15 \\div 0.4857 \\approx 30.88\">15 \\div 0.4857 \\approx 30.88</span> emergency blue lights</td>\n</tr>\n<tr>\n<td>B</td>\n<td>9</td>\n<td> <span data-math=\"9 \\div 0.4857 \\approx 18.53\">9 \\div 0.4857 \\approx 18.53</span> emergency blue lights</td>\n</tr>\n<tr>\n<td>C</td>\n<td>10</td>\n<td> <span data-math=\"10 \\div 0.4857 = 20.59\">10 \\div 0.4857 = 20.59</span> emergency blue lights</td>\n</tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 545175,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Give the lower quota for each parking lot.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The total population <span data-math=\"{\\text{ =  15  +  9  +  10  =  34}}\"></span> acres</p>\n<p><span data-math=\"{\\text{Standard Divisor = }}\\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}} = \\frac{{{\\text{34 acres}}}}{{{\\text{70 lights}}}} \\approx 0.4857{\\text{ acres per light}}\"></span></p>\n<p>Hamilton’s method is to always round down, which results in the lower quota.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Lot</th>\n<th><span data-math=\"{\\text{Standard Quota = }}\\frac{{{\\text{State Population}}}}{{{\\text{Standard Divisor}}}}{\\text{ }}\"></span></th>\n<th>Lower Quota</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td><span data-math=\"\\frac{{{\\text{15 acres}}}}{{0.4857{\\text{ acres per light}}}}{\\text{ = 30}}{\\text{.88 lights}}\"></span></td>\n<td>30</td>\n</tr>\n<tr>\n<td>B</td>\n<td><span data-math=\"\\frac{{{\\text{9 acres}}}}{{0.4857{\\text{ acres per light}}}}{\\text{ = 18}}{\\text{.53 lights}}\"></span></td>\n<td>18</td>\n</tr>\n<tr>\n<td>C</td>\n<td><span data-math=\"\\frac{{{\\text{10 acres}}}}{{0.4857{\\text{ acres per light}}}}{\\text{ = 20}}{\\text{.59 lights}}\"></span></td>\n<td>20</td>\n</tr>\n</tbody>\n</table>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "30, 18, 20"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545176,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the sum of the lower quotas.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "68"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Add the lower quotas: <span data-math=\"{\\text{30  +  18  +  20  =  68}}\"></span>."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545177,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "By how much does this sum fall short of the actual number of emergency lights?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "2"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Add the lower quotas: <span data-math=\"{\\text{30  +  18  +  20  =  68}}\"></span>.</p>\n<p>There are 70 lights available.</p>\n<p>This is a difference of 2.</p>\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

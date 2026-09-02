@@ -1,0 +1,405 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:08-05-02",
+  "context-cnxmod:c2d4586a-5677-4f52-9fc6-43745e91e68b",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-5-percentiles"
+ ],
+ "uuid": "181f27bd-fc3f-4b0b-8cfb-e399da92b87a",
+ "group_uuid": "45bcef12-226f-45b6-9cd7-3fc5b1477939",
+ "number": 29062,
+ "version": 9,
+ "uid": "29062@9",
+ "published_at": "2024-11-28T05:31:08.958Z",
+ "nickname": "CM-C08-M5-002",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Looking again at the <a href=\"https://openstax.org/r/Chapter8_Data-Sets\" rel=\"nofollow\" target=\"_blank\">“AvgSAT”</a> dataset:",
+ "questions": [
+  {
+   "id": 529184,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What score is at the 15th percentile?\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>You want the score at the 15<sup>th</sup> percentile.</p>\n<p>Open a copy of the file in Google Sheets. You cannot edit the original file.</p>\n<p>Look for the AvgSAT tab.</p>\n<p>Look for the Average SAT Score column.</p>\n<p>In a blank cell, enter the function: =PERCENTILE(</p>\n<p>Click on the letter at the top of the Average SAT Score column.</p>\n<p>Then enter a comma, the percentile as a decimal and close the parentheses: ,0.15)</p>\n<p>The complete function probably looks like this: =PERCENTILE(C:C,0.15)</p>\n<p>The score you see is 1026.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "1026\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529185,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What score is at the 90th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>You want the score at the 90<sup>th</sup> percentile.</p>\n<p>Open a copy of the file in Google Sheets. You cannot edit the original file.</p>\n<p>Look for the AvgSAT tab.</p>\n<p>Look for the Average SAT Score column.</p>\n<p>In a blank cell, enter the function: =PERCENTILE(</p>\n<p>Click on the letter at the top of the Average SAT Score column.</p>\n<p>Then enter a comma, the percentile as a decimal and close the parentheses: ,0.90)</p>\n<p>The complete function probably looks like this: =PERCENTILE(C:C,0.90)</p>\n<p>The score you see is 1318.</p>\n<p>(Hint: You could also modify the formula if you used this tab and formula in another exercise.)</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "1318"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529186,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is the University of Missouri (Columbia campus), whose average SAT score is 1244?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>You want the percentile rank of 1244.</p>\n<p>Open a copy of the file in Google Sheets. You cannot edit the original file.</p>\n<p>Look for the AvgSAT tab.</p>\n<p>Look for the Average SAT Score column.</p>\n<p>In a blank cell, enter the function: =PERCENTRANK(</p>\n<p>Click on the letter at the top of the Average SAT Score column.</p>\n<p>Then enter a comma, 1244, and close the parentheses: ,1244)</p>\n<p>The complete function probably looks like this: =PERCENTRANK(C:C,1244).</p>\n<p>You see the decimal value 0.827.</p>\n<p>Convert this to a percentage to say that this is the 82.7<sup>th</sup> percentile.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "82.7th"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529187,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Rice University in Texas, whose average SAT score is 1513?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>You want the percentile rank of 1513.</p>\n<p>Open a copy of the file in Google Sheets. You cannot edit the original file.</p>\n<p>Look for the AvgSAT tab.</p>\n<p>Look for the Average SAT Score column.</p>\n<p>In a blank cell, enter the function: =PERCENTRANK(</p>\n<p>Click on the letter at the top of the Average SAT Score column.</p>\n<p>Then enter a comma, 1513, and close the parentheses: ,1513)</p>\n<p>The complete function probably looks like this: =PERCENTRANK(C:C,1513).</p>\n<p>You see the decimal value 0.992.</p>\n<p>Convert this to a percentage to say that this is the 99.2<sup>nd</sup> percentile.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "99.2nd"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

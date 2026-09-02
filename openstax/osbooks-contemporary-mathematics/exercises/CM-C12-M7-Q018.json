@@ -1,0 +1,336 @@
+{
+ "images": [
+  {
+   "created_at": "2023-01-24T20:57:26.423Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcW9MIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--624f88bccbdd4d902b588e9cb14d4d786eeb08ef",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcW9MIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--624f88bccbdd4d902b588e9cb14d4d786eeb08ef/CS_Figure_12_07_045.png"
+  },
+  {
+   "created_at": "2023-01-24T20:57:26.426Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcXNMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--019f251575ed39231a4f77c16259cf27c9e9c144",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcXNMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--019f251575ed39231a4f77c16259cf27c9e9c144/CS_Figure_12_07_186.png"
+  },
+  {
+   "created_at": "2023-01-24T20:57:26.429Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcXdMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--027b5225df2b85163e8e009560ec3a9f026dcf46",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcXdMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--027b5225df2b85163e8e009560ec3a9f026dcf46/CS_Figure_12_07_129.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:12-07-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:326f21f4-0eaf-4ac7-8de9-22a71b149308",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:12-7-hamilton-cycles"
+ ],
+ "uuid": "751fa696-9348-4c34-929c-f86a4daf2e99",
+ "group_uuid": "eab84830-303f-439b-ac10-2de193d55832",
+ "number": 33423,
+ "version": 12,
+ "uid": "33423@12",
+ "published_at": "2023-01-24T20:57:27.919Z",
+ "nickname": "CM-C12-M7-Q018",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 326638,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "In chess, a knight can move in any direction, but it must move two spaces then turn and move one more space. The 8 possible moves a knight can make from a given space are shown in the figure.\n<br>\n<img src=\"exercises/media/b46ebaf5fd40dcd9.png\" alt=\"An illustration shows a 5 by 5 square chess board. The knight is at the center of the board. The knight moves in an L-shape and it is indicated by 8 arrows. It moves either two steps  left or right followed by one step up or down, or two steps up or down followed by one step left or right.\">\n<br>\nA graph in which each vertex represents a space on a five-by-six game board and each edge represents a move a knight could make is shown in the figure.\n<br>\n<img src=\"exercises/media/7fff422f65bb4d1d.png\" alt=\"An illustration shows a 5 by 6 chessboard. Each square has a vertex. It displays several edges representing all possible knight moves. An illustration shows vertices arranged in 5 rows and 6 columns. The edges represent the knight's moves.\">\n<br>\nA knight’s tour is a sequence of moves by a knight on a chessboard (of any size) such that the knight visits every square exactly once. If the knight’s tour brings the knight back to its starting position on the board, it is called a closed knight’s tour. Otherwise, it is called an open knight’s tour.\n<br>\n<img src=\"exercises/media/cb800216c93aed19.png\" alt=\"A graph represents a knight's moves on a 5 by 6 chessboard. The knight is at the bottom-left square. The knight moves in an L-shape. The movement of the knight inside the 5 by 6 board is mapped and connected with edges.\">\n<br>\nDetermine if the closed knight’s tour in Figure 12.239 is most accurately described as an Euler circuit or a Hamilton cycle, or both, of the graph of all possible knight moves. Explain your reasoning.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

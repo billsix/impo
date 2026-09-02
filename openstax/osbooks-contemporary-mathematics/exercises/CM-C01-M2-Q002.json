@@ -1,0 +1,377 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:01-02-01",
+  "context-cnxmod:0df3f0ae-9085-473a-adc2-5c5b3833e3f3",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:1-2-subsets"
+ ],
+ "uuid": "52c8feef-2ae4-4dfe-9e66-b79243e04d4f",
+ "group_uuid": "2c6953e9-a50e-4f08-b3e8-45c61ff533ef",
+ "number": 29208,
+ "version": 10,
+ "uid": "29208@10",
+ "published_at": "2024-09-28T16:23:13.258Z",
+ "nickname": "CM-C01-M2-Q002",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>Consider the set of generation I legendary Pokémon, <span data-math=\"L = \\{ {\\text{Articuno, Zapdos, Moltres, Mewtwo}}\\} \">L = \\{ {\\text{Articuno, Zapdos, Moltres, Mewtwo}}\\} </span>. Give an example of a proper subset containing:</p>\n",
+ "questions": [
+  {
+   "id": 494315,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "one member.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>A set is a proper subset of <i>L</i> if every member of the subset is a member of <i>L</i> and the subset does <i>not</i> contain an element that is in <i>L</i>. The proper subsets of <i>L</i> with one member include the following.</p>\n<p><span data-math=\"\\{\\rm Articuno\\}\"></span></p>\n<p><span data-math=\"\\{\\rm Zapdos\\}\"></span></p>\n<p><span data-math=\"\\{\\rm Moltres\\}\"></span></p>\n<p><span data-math=\"\\{\\rm Mewtwo\\}\"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p>A set with one member could contain any one of the following:</p>\n<p><span data-math=\"\\{ {\\text{Articuno}}\\} {\\text{, }}\\{ {\\text{Zapdos}}\\} {\\text{, }}\\{ {\\text{Moltres}}\\} {\\text{, or }}\\{ {\\text{Mewtwo}}\\} \">\\{ {\\text{Articuno}}\\} {\\text{, }}\\{ {\\text{Zapdos}}\\} {\\text{, }}\\{ {\\text{Moltres}}\\} {\\text{, or }}\\{ {\\text{Mewtwo}}\\}</span>.</p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 494316,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "three members.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>A set is a proper subset of <i>L</i> if every member of the subset is a member of <i>L</i> and the subset does <i>not</i> contain an element that is in <i>L</i>. The proper subsets of <i>L</i> with three members will include three elements and leave out one.</p>\n<p><span data-math=\"\\{\\rm Articuno,\\ Zapdos,\\ Moltres\\}\"></span>\n</p><p><span data-math=\"\\{\\rm Articuno,\\ Zapdos,\\ Mewtwo\\}\"></span>\n</p><p><span data-math=\"\\{\\rm Articuno,\\ Moltres,\\ Mewtwo\\}\"></span>\n</p><p><span data-math=\"\\{\\rm Zapdos,\\ Moltres,\\ Mewtwo\\}\"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p>Any of the following combinations of three members would work:</p> \n<p><span data-math=\"\\{ {\\text{Articuno, Zapdos, Mewtwo}}\\} \">\\{ {\\text{Articuno, Zapdos, Mewtwo}}\\}</span>,<span data-math=\"\\{ {\\text{Articuno, Moltres, Mewtwo}}\\} \">\\{ {\\text{Articuno, Moltres, Mewtwo}}\\}</span>, or <span data-math=\"\\{ {\\text{Zapdos, Moltres, Mewtwo}}\\} \">\\{ {\\text{Zapdos, Moltres, Mewtwo}}\\}</span>.</p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 494317,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "no members.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A set is a proper subset of <i>L</i> if every member of the subset is a member of <i>L</i> and the subset does <i>not</i> contain an element that is in <i>L</i>. The only proper subset of <i>L</i> with no members is the empty set, represented by <span data-math=\"\\{\\}\"></span> or <span data-math=\"\\emptyset \"></span>."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The empty set is represented as <span data-math=\"\\{ {\\text{ }}\\} \">\\{ {\\text{ }}\\}</span> or <span data-math=\"\\emptyset \">\\emptyset </span>.\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

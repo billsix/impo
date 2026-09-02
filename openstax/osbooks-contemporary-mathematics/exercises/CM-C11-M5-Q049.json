@@ -1,0 +1,356 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-04-03",
+  "lo:stax-cmath:11-04-04",
+  "lo:stax-cmath:11-04-05",
+  "context-cnxmod:c6ba4735-5472-4e8a-bcce-f8bcb5349637",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-4-apportionment-methods"
+ ],
+ "uuid": "b54e6302-687a-486c-8a84-1a3388c27189",
+ "group_uuid": "927adc41-fbe5-4c48-89b8-2e04b75a18bd",
+ "number": 29676,
+ "version": 10,
+ "uid": "29676@10",
+ "published_at": "2024-12-27T05:22:17.063Z",
+ "nickname": "CM-C11-M5-Q049",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, use this information: Air Force administration wanted to distribute 27 aircraft across 6 bases based on the number of qualified pilots stationed at those bases. The standard quota is 2.2963. The standard quotas for each base are listed in the table below.<br>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Air Force Base</th>\n<th>(A) Alpha</th>\n<th>(B) Bravo</th>\n<th>(C) Charlie</th>\n<th>(D) Delta</th>\n<th>(E) Echo</th>\n<th>(F) Foxtrot</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><b>Pilots</b></td>\n<td>13</td>\n<td>12</td>\n<td>5</td>\n<td>16</td>\n<td>7</td>\n<td>9</td>\n</tr>\n<tr>\n<td><b>Standard Quota</b></td>\n<td>5.66</td>\n<td>5.23</td>\n<td>2.18</td>\n<td>6.97</td>\n<td>3.05</td>\n<td>3.92</td>\n</tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 546202,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Determine the states' lower quotas and the states' upper quotas.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 546203,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use Adams's method to apportion the aircraft.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 546204,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use Jefferson's method to apportion the aircraft.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 546205,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The apportionment of 616 schools to 5 Hawaiian counties by various methods is displayed in the table below.<br>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>County</th>\n<th>Hawaii</th>\n<th>Honolulu</th>\n<th>Kalawao</th>\n<th>Kauai</th>\n<th>Maui</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><b>Lower Quota</b></td>\n<td>87</td>\n<td>424</td>\n<td>0</td>\n<td>31</td>\n<td>72</td>\n</tr>\n<tr>\n<td><b>Upper Quota</b></td>\n<td>88</td>\n<td>425</td>\n<td>1</td>\n<td>32</td>\n<td>73</td>\n</tr>\n<tr>\n<td><b>Jefferson</b></td>\n<td>87</td>\n<td>425</td>\n<td>1</td>\n<td>31</td>\n<td>72</td>\n</tr>\n<tr>\n<td><b>Adams</b></td>\n<td>88</td>\n<td>422</td>\n<td>1</td>\n<td>32</td>\n<td>73</td>\n</tr>\n<tr>\n<td><b>Webster</b></td>\n<td>87</td>\n<td>424</td>\n<td>1</td>\n<td>31</td>\n<td>73</td>\n</tr>\n</tbody>\n</table><br>\nApportionment by which methods, if any, fail to satisfy the quota rule? Explain your reasoning.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

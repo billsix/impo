@@ -1,0 +1,327 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:08-01-02",
+  "context-cnxmod:bba797da-6a1a-4809-b77e-bf7d6e8758c5",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-1-gathering-and-organizing-data"
+ ],
+ "uuid": "67bdf1c6-f0ac-4d1c-8460-e044c570a94e",
+ "group_uuid": "e1ac6f9c-8f22-40c1-85f0-ae38a9084a66",
+ "number": 28974,
+ "version": 10,
+ "uid": "28974@10",
+ "published_at": "2024-12-03T07:13:06.925Z",
+ "nickname": "CM-C08-M1-Q004",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 531488,
+   "is_answer_order_important": false,
+   "stimulus_html": "The following table displays the ages of a sample of customers who have shopped at a new boutique.\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>56</td>\n<td>39</td>\n<td>35</td>\n<td>32</td>\n<td>26</td>\n<td>53</td>\n<td>55</td>\n<td>47</td>\n<td>70</td>\n<td>43</td>\n</tr>\n<tr>\n<td>33</td>\n<td>33</td>\n<td>43</td>\n<td>41</td>\n<td>26</td>\n<td>40</td>\n<td>31</td>\n<td>34</td>\n<td>33</td>\n<td>53</td>\n</tr>\n</tbody>\n</table>\n",
+   "stem_html": "Create a binned frequency distribution to summarize these data.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Step 1: Identify the maximum and minimum values in your bins.</p>\n<p>The max: 70</p>\n<p>The min: 26</p>\n<p>Step 2: Determine the bin widths. Aim for seven or eight bins. You can use a formula to determine the bin width:</p>\n<p><span data-math=\"\\frac{{{\\rm{maximum - minimum}}}}{{\\# {\\rm{\\ of\\ bins}}}} = \\frac{{70 - 26}}{8} = 5.25\"></span></p>\n<p>Step 3: Consider the context of the values. Since these are ages, round this to 5 to get a bin width of 5 years.</p>\n<p>Step 4: Create the distribution table by filling in the bins. Notice that the last bin does not follow the pattern since it is made a bit larger to include the last value.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Age Range</th>\n<th>Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>25 to 29</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>30 to 34</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>35 to 39</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>40 to 44</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>45 to 49</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>50 to 54</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>55 to 59</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>60 to 64</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>65 to 70</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table>\n<p>Step 5: Fill in the frequencies.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Age Range</th>\n<th>Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>25 to 29</td>\n<td>2</td>\n</tr>\n<tr>\n<td>30 to 34</td>\n<td>6</td>\n</tr>\n<tr>\n<td>35 to 39</td>\n<td>2</td>\n</tr>\n<tr>\n<td>40 to 44</td>\n<td>4</td>\n</tr>\n<tr>\n<td>45 to 49</td>\n<td>1</td>\n</tr>\n<tr>\n<td>50 to 54</td>\n<td>2</td>\n</tr>\n<tr>\n<td>55 to 59</td>\n<td>2</td>\n</tr>\n<tr>\n<td>60 to 64</td>\n<td>0</td>\n</tr>\n<tr>\n<td>65 to 70</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<p>Step 6: Check your work. 2 + 6 + 2 + 4 + 1 + 2 + 2 + 0 + 1 = 20</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "&nbsp;\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Age range</th>\n<th>Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>25-29</td>\n<td>2</td>\n</tr>\n<tr>\n<td>30-34</td>\n<td>6</td>\n</tr>\n<tr>\n<td>35-39</td>\n<td>2</td>\n</tr>\n<tr>\n<td>40-44</td>\n<td>4</td>\n</tr>\n<tr>\n<td>45-49</td>\n<td>1</td>\n</tr>\n<tr>\n<td>50-54</td>\n<td>2</td>\n</tr>\n<tr>\n<td>55-59</td>\n<td>2</td>\n</tr>\n<tr>\n<td>60-64</td>\n<td>0</td>\n</tr>\n<tr>\n<td>65-70</td>\n<td>1</td>\n</tr></tbody>\n</table><p></p>\n(Answers may vary depending on bin boundary decisions)\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,336 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-06T09:59:36.764Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGNPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--79de1e5c11d757714e1be34e22f844fb4449d14b",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGNPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--79de1e5c11d757714e1be34e22f844fb4449d14b/CS_Figure_10_07_UN007.png"
+  }
+ ],
+ "tags": [
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "lo:stax-cmath:10-07-02",
+  "context-cnxmod:4c3ecdc0-d173-4bc5-a237-ffabc2d7e588",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:10-7-volume-and-surface-area"
+ ],
+ "uuid": "6e5038c3-51c7-46e2-a63c-4f2e46b9fcb9",
+ "group_uuid": "08929f8b-d4f3-4e3d-8a5b-df1c58665e47",
+ "number": 31617,
+ "version": 9,
+ "uid": "31617@9",
+ "published_at": "2024-12-06T09:59:40.085Z",
+ "nickname": "CM-C10-M7-Q003",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 532677,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the surface area and the volume of the octagonal figure shown.<br>\n<figure>\n<img src=\"exercises/media/b9552a23ef983189.png\" alt=\"An octagonal prism. One of the sides of the octagon is labeled w equals 3 centimeters. The apothem is labeled a equals 4 centimeters. The height of the prism is labeled h equals 10 centimeters.\">\n</figure>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The surface area of a right prism where <i>B</i> is the area of the base, <i>p</i> is the perimeter of the base, and <i>h</i> is the height is <span data-math=\"SA = 2B + ph\"></span>.</p>\n<p>The apothem of a regular polygon is a line segment that starts at the center and is perpendicular to a side. The area of a regular polygon with apothem <i>a</i> and perimeter <i>p</i> is <span data-math=\"A = \\frac{1}{2}ap\"></span>.</p>\n<p>A regular octagon has eight sides of equal length. Therefore, the perimeter is:</p>\n<p><span data-math=\"p = 8(3{\\text{ cm)  =  24 cm}}\"></span>.</p>\n<p><span data-math=\"A = \\frac{1}{2}ap = \\frac{1}{2}\\left( {4{\\text{ cm}}} \\right)\\left( {{\\text{24 cm}}} \\right) = 48{\\text{ c}}{{\\text{m}}^2}\"></span>, which in the surface area formula is <i>B.</i></p>\n<p>The surface area <span data-math=\"= {\\text{ }}2B + ph = {\\text{ }}2\\left( {48{\\text{ c}}{{\\text{m}}^2}} \\right){\\text{ }} + {\\text{ }}\\left( {24{\\text{ cm}}} \\right)\\left( {10{\\text{ cm}}} \\right){\\text{ }} = {\\text{ }}96{\\text{ c}}{{\\text{m}}^2} + {\\text{ }}240{\\text{ c}}{{\\text{m}}^2} = {\\text{ }}336{\\text{ c}}{{\\text{m}}^2}\"></span>.</p>\n<p>The surface area is 336 square centimeters.</p>\n<p>The volume of a right prism is <span data-math=\"V = Bh\"></span> <span data-math=\"= {\\text{ }}\\left( {48{\\text{ c}}{{\\text{m}}^2}} \\right)\\left( {{\\text{ }}10{\\text{ cm}}} \\right){\\text{ }} = {\\text{ }}480{\\text{ c}}{{\\text{m}}^3}\"></span>.</p>\n<p>The volume is 480 cubic centimeters.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\begin{array}{rcl}\n{SA}&amp;{ = }&amp;{336\\text{ cm}{^2}}\\\\ \n{V}&amp;{ = }&amp;{480\\text{ cm}{^3}}\\\\ \\end{array}\">\\begin{array}{rcl}\n{SA}&amp;{ = }&amp;{336\\text{ cm}{^2}}\\\\ \n{V}&amp;{ = }&amp;{480\\text{ cm}{^3}}\\\\ \\end{array}\"</span>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

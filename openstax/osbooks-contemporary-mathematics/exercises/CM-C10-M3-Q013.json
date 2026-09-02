@@ -1,0 +1,339 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-07T09:29:19.480Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbmdPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c89bfb0fa20b405b97e52ee61bfe7182a0a84648",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbmdPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c89bfb0fa20b405b97e52ee61bfe7182a0a84648/CS_Figure_10_03_UN034.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:10-03-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:750d3784-ab18-44d9-852f-fbd8834c7484",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:10-3-triangles"
+ ],
+ "uuid": "1fddb26a-3da4-4122-b368-f420884414ac",
+ "group_uuid": "cf7f8503-ba9d-47e8-b665-28dea8eb6374",
+ "number": 31604,
+ "version": 12,
+ "uid": "31604@12",
+ "published_at": "2024-12-07T09:29:22.267Z",
+ "nickname": "CM-C10-M3-Q013",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 533629,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "In the figure shown given <span data-math=\"\\overline {BE}\">\\overline {BE}</span> is parallel to <span data-math=\"\\overline {CD}\">\\overline {CD}</span>, find <span data-math=\"x\">x</span> and <span data-math=\"y\">y</span>.\n<br>\n<img src=\"exercises/media/fe16e6a35ba77576.png\" alt=\"A triangle, A C D with a horizontal line, B E at its center. A B measures 3. A E measures 4. B C measures 4. E D measures y. C D measures x. B E measures 2.\">\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Decide which triangle’s side to put in the numerator. It does not matter which you pick to go where, if you are consistent.</p>\n<p>In this exercise, let’s always put the smaller triangle in the numerator.</p>\n<p>Triangle ABE is similar to triangle ACD.</p>\n<p>To help you set up your proportions, you can use the order of the letters in the triangles. For instance, make a proportion of the first two letters in each triangle.</p>\n<p><span data-math=\"\\frac{{AB}}{{AC}} = \\frac{3}{{3 + 4}}\"></span></p>\n<p>Make a proportion of the second and third letters.</p>\n<p><span data-math=\"\\frac{{BE}}{{CD}} = \\frac{2}{x}\"></span></p>\n<p>Because these are similar triangles, the proportions are equal.</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"\\frac{3}{{3 + 4}} = \\frac{2}{x}\"></span> </td>\n<td>Add.</td>\n</tr>\n<tr>\n<td><span data-math=\"\\frac{3}{7} = \\frac{2}{x}\"></span></td>\n<td>Multiply.</td>\n</tr>\n<tr>\n<td><span data-math=\"3x = 14\"></span></td>\n<td>Divide.</td>\n</tr>\n<tr>\n<td><span data-math=\"x = \\frac{{14}}{3}\"></span></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>Make a proportion of the first and third letters.</p>\n<p><span data-math=\"\\frac{{AE}}{{AD}} = \\frac{4}{{4 + y}}\"></span></p>\n<p>Because these are similar triangles, the proportions are equal. Use one of the early proportions.</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"\\frac{4}{{4 + y}} = \\frac{3}{{3 + 4}}\"></span></td>\n<td>Add.</td>\n</tr>\n<tr>\n<td><span data-math=\"\\frac{4}{{4 + y}} = \\frac{3}{7}\"></span> </td>\n<td>Multiply.</td>\n</tr>\n<tr>\n<td><span data-math=\"12 + 3y = 28\"></span></td>\n<td>Subtract.</td>\n</tr>\n<tr>\n<td><span data-math=\"3y = 16\"></span></td>\n<td>Divide.</td>\n</tr>\n<tr>\n<td><span data-math=\"y = \\frac{{16}}{3}\"></span></td>\n<td></td>\n</tr>\n</tbody>\n</table>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "These are similar triangles, so we can solve using proportions.\n<table class=\"unnumbered\" summary=\".\">\n<tbody>\n<tr>\n<td><span data-math=\"\\begin{array}{*{20}{rcl}}{\\frac{3}{2}}&amp;{ = }&amp;{\\frac{{(3 + 4)}}{x}} \\\\ {3x}&amp;{ = }&amp;{14} \\\\ {x}&amp;{ = }&amp;{\\frac{{14}}{3}} \\\\ \\end{array}\">\\begin{array}{*{20}{rcl}}{\\frac{3}{2}}&amp;{ = }&amp;{\\frac{{(3 + 4)}}{x}} \\\\ {3x}&amp;{ = }&amp;{14} \\\\ {x}&amp;{ = }&amp;{\\frac{{14}}{3}} \\\\ \\end{array}</span></td>\n<td><span data-math=\"\\begin{array}{*{20}{rcl}}{\\frac{4}{2}}&amp;{ = }&amp;{\\frac{{4 + y}}{{\\frac{{14}}{3}}}} \\\\{\\frac{{14}}{3}(4)}&amp;{ = }&amp;{2(4 + y)} \\\\{\\frac{{56}}{3}}&amp;{ = }&amp;{8 + 2y} \\\\{56}&amp;{ = }&amp;{3(8 + 2y)} \\\\{56}&amp;{ = }&amp;{24 + 6y} \\\\{32}&amp;{ = }&amp;{6y} \\\\{\\frac{{16}}{3}}&amp;{ = }&amp;{y}\\end{array}\">\\begin{array}{*{20}{rcl}}{\\frac{4}{2}}&amp;{ = }&amp;{\\frac{{4 + y}}{{\\frac{{14}}{3}}}} \\\\{\\frac{{14}}{3}(4)}&amp;{ = }&amp;{2(4 + y)} \\\\{\\frac{{56}}{3}}&amp;{ = }&amp;{8 + 2y} \\\\{56}&amp;{ = }&amp;{3(8 + 2y)} \\\\{56}&amp;{ = }&amp;{24 + 6y} \\\\{32}&amp;{ = }&amp;{6y} \\\\{\\frac{{16}}{3}}&amp;{ = }&amp;{y}\\end{array}</span></td>\n</tr>\n</tbody>\n</table>\nThen, <span data-math=\"x = \\frac{{14}}{3}\">x = \\frac{{14}}{3}</span> and <span data-math=\"y = \\frac{{16}}{3}\">y = \\frac{{16}}{3}</span>."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

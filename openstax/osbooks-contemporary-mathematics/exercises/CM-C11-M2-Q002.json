@@ -1,0 +1,379 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-02-01",
+  "context-cnxmod:d49636a4-186a-43a6-b8d4-f6e5453a9660",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-2-fairness-in-voting-methods"
+ ],
+ "uuid": "5d4fdfeb-7b1a-442c-9cdc-d61105b838c3",
+ "group_uuid": "bdd3df15-8a31-4118-8396-7c17cabdbbe9",
+ "number": 29527,
+ "version": 8,
+ "uid": "29527@8",
+ "published_at": "2024-12-24T01:31:19.383Z",
+ "nickname": "CM-C11-M2-Q002",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>Use the information in the following table to find the winner using each of the voting methods in parts 1 and 2, then answer the question in part 3.</p><br>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Voters</th>\n<th>L</th>\n<th>M</th>\n<th>N</th>\n<th>O</th>\n<th>P</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Option A</td>\n<td>2</td>\n<td>2</td>\n<td>3</td>\n<td>2</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Option B</td>\n<td>1</td>\n<td>4</td>\n<td>1</td>\n<td>4</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Option C</td>\n<td>3</td>\n<td>1</td>\n<td>4</td>\n<td>1</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Option D</td>\n<td>4</td>\n<td>3</td>\n<td>2</td>\n<td>3</td>\n<td>4</td>\n</tr>\n</tbody>\n</table>\n",
+ "questions": [
+  {
+   "id": 545732,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Pairwise comparison",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>AB 2 vs BA 3. BA wins, so cross out AB.</p>\n<p>AC 3 vs CA 2. AC wins, so cross out CA.</p>\n<p>AD 4 vs DA 1. AD wins, so cross out DA</p>\n<p>BC 3 vs CB 2. BC wins, so cross out CB.</p>\n<p>BD 3 vs DB 2. BD wins, so cross out DB.</p>\n<p>CD 3 vs DC 2. CD wins, so cross out DC.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th style=\"width:10%; background: linear-gradient(to top right, transparent calc(50% - 1px), black 50%, transparent calc(50% + 1px) )\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opponent<br>Runner</th>\n<th>A</th>\n<th>B</th>\n<th>C</th>\n<th>D</th>\n<th>POINTS</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td>&nbsp;</td>\n<td>AB 2 Cross out AB 2</td>\n<td>AC 3<p></p>\n<p>wins</p></td>\n<td>AD 4<p></p>\n<p>wins</p></td>\n<td>2</td>\n</tr>\n<tr>\n<td>B</td>\n<td>BA 3<p></p>\n<p>wins</p></td>\n<td>&nbsp;</td>\n<td>BC 3<p></p>\n<p>wins</p></td>\n<td>BD 3<p></p>\n<p>wins</p></td>\n<td>3</td>\n</tr>\n<tr>\n<td>C</td>\n<td>CA 2<p></p>\n<p>Cross out CA 2</p></td>\n<td>CB 2<p></p>\n<p>Cross out CB 2</p></td>\n<td>&nbsp;</td>\n<td>CD 3<p></p>\n<p>wins</p></td>\n<td>1</td>\n</tr>\n<tr>\n<td>D</td>\n<td>DA 1<p></p>\n<p>Cross out DA 1</p></td>\n<td>DB 2<p></p>\n<p>Cross out DB 2</p></td>\n<td>DC 2<p></p>\n<p>Cross out DC 2</p></td>\n<td>&nbsp;</td>\n<td>0</td>\n</tr>\n</tbody>\n</table>\n<p>B wins.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Using the pairwise comparison voting method, Option B wins."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545733,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Borda count",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>First place earns (4 – 1) or 3 points.</p>\n<p>Second place earns (4 – 2) or 2 points.</p>\n<p>Third place earns (4 – 3) or 1 point.</p>\n<p>Fourth place earns (4 – 4) or 0 points.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Voters</th>\n<th>L</th>\n<th>M</th>\n<th>N</th>\n<th>O</th>\n<th>P</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Option A</td>\n<td>2</td>\n<td>2</td>\n<td>3</td>\n<td>2</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Option B</td>\n<td>1</td>\n<td>4</td>\n<td>1</td>\n<td>4</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Option C</td>\n<td>3</td>\n<td>1</td>\n<td>4</td>\n<td>1</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Option D</td>\n<td>4</td>\n<td>3</td>\n<td>2</td>\n<td>3</td>\n<td>4</td>\n</tr>\n</tbody>\n</table>\n<p>Option A: 2 + 2 + 1 + 2 + 2 = 9</p>\n<p>Option B: 3 + 0 + 3 + 0 + 3 = 9</p>\n<p>Option C: 1 + 3 + 0 + 3 + 1 = 8</p>\n<p>Option D: 0 + 1 + 2 + 1 + 0 = 4</p>\n<p>Option A and B tie.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Using the Borda count method, Option A and Option B tie."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545734,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Does the majority criterion apply? If so, for which voting method(s) did the majority criterion fail?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>There are five votes.</p>\n<p>50 percent of five is 2.5.</p>\n<p>A majority would need 3 first-place votes.</p>\n<p>In a simple ballot, Option B would win the majority criterion because Option B had 3 first-place votes. The majority criterion would fail in the Borda count method because Options A and B tied.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Yes. The majority criterion fails for Borda count."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

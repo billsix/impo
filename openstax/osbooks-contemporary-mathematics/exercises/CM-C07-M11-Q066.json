@@ -1,0 +1,609 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:07-01-01",
+  "lo:stax-cmath:07-04-02",
+  "lo:stax-cmath:07-08-02",
+  "lo:stax-cmath:07-08-03",
+  "lo:stax-cmath:07-05-05",
+  "lo:stax-cmath:07-02-04",
+  "lo:stax-cmath:07-03-02",
+  "lo:stax-cmath:07-09-01",
+  "lo:stax-cmath:07-10-02",
+  "lo:stax-cmath:07-11-01",
+  "lo:stax-cmath:07-11-02",
+  "lo:stax-cmath:07-11-03",
+  "lo:stax-cmath:07-06-01",
+  "lo:stax-cmath:07-07-01",
+  "type:practice",
+  "lo:stax-cmath:07-09-02",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:3d4e8c5e-da3e-464c-a5a0-308d03d1c239",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:7-11-expected-value"
+ ],
+ "uuid": "1154f5dc-19a4-4c3d-afac-ee7892cc5ba5",
+ "group_uuid": "683041d7-e4be-4802-af1f-8fd785673b44",
+ "number": 31873,
+ "version": 10,
+ "uid": "31873@10",
+ "published_at": "2024-11-12T03:43:04.987Z",
+ "nickname": "CM-C07-M11-Q066",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Each of the following exercises involve drawing a <i>Scrabble</i> tile from a bag. These tiles are labeled with a letter and a point value, as follows: A(1), C(3), D(2), E(1), E(1), J(8), K(5), O(1), R(1), R(1).",
+ "questions": [
+  {
+   "id": 517070,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many ways are there to draw a vowel and then a consonant from the bag?\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517071,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many ways are there to draw a tile worth an even number of points and then a tile worth an odd number of points from the bag?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517072,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many ways are there to draw 4 tiles from the bag without replacement, if order matters?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517073,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many ways are there to draw 4 consonants from the bag without replacement, if order matter?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517074,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many ways are there to draw 4 tiles from the bag with replacement, if order does not matter?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517075,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many ways are there to draw 4 consonants from the bag with replacement, if order does not matter?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517076,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Give the sample space of the experiment that asks you to draw 2 tiles from the bag with replacement and note their point values, where order doesn’t matter. Give the outcomes as ordered pairs.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517077,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Give the sample space of the experiment that asks you to draw 2 tiles from the bag without replacement and note their point values, where order doesn’t matter. Give the outcomes as ordered pairs.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517078,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If you draw a single tile from the bag, what is the probability that it’s an E?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517079,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If you draw a single tile from the bag, what is the probability that it’s <i>not</i> an A?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517080,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If you draw 3 tiles from the bag without replacement, what is the probability that they spell RED, in order?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517081,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If you draw 3 tiles from the bag without replacement, what is the probability that they spell RED, in <i>any</i> order?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517082,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What are the odds against drawing a vowel?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517083,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use your answer to question 12 to find the odds against drawing three tiles without replacement and being able to spell RED. ",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517084,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If you draw one tile, what is the probability of drawing a J or a K?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517085,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If you draw one tile, what is the probability that it’s a vowel or that it’s worth more than 4 points?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517086,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Suppose you’re about to draw one tile from the bag. Find <span data-math=\"P({\\text{the letter is R}})\">P({\\text{the letter is R}})</span> and <span data-math=\"P({\\text{the letter is R}}|{\\text{the point value is 1}})\">P({\\text{the letter is R}}|{\\text{the point value is 1}})</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517087,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If you draw 2 tiles with replacement, what is the probability of drawing a consonant first and then a vowel?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517088,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If you draw 2 tiles <i>without</i> replacement, what is the probability of drawing a consonant first and then a vowel?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517089,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If you draw 10 tiles with replacement, what is the probability that you draw exactly 3 vowels? Round to 3 decimal places.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517090,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If you draw 100 tiles with replacement, what is the probability that you draw fewer than 35 vowels? Round to 4 decimal places.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517091,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find and interpret the expected number of points on the tile, assuming you draw 1 tile from the bag.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517092,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the expected sum of points on 2 tiles, selected without replacement.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517093,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If your friend offers you a bet where they pay you $10 if you draw a vowel from the bag, but you owe them $5 if you draw a consonant, should you take it? How do you know?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

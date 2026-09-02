@@ -1,0 +1,373 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-03T07:35:19.636Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVVHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f87d9e1cb15caf8f5f73e5ca4ade1ed4a896ae7e",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVVHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f87d9e1cb15caf8f5f73e5ca4ade1ed4a896ae7e/CS_Figure_08_02_035.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:08-02-01",
+  "context-cnxmod:7baffe9f-fb35-422f-bac7-89e4353e21ed",
+  "all",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-2-visualizing-data"
+ ],
+ "uuid": "2ed050ae-6caf-4af8-a577-bb00b1f0e807",
+ "group_uuid": "52666466-4a14-48b1-a441-9be26fc233ef",
+ "number": 28961,
+ "version": 19,
+ "uid": "28961@19",
+ "published_at": "2024-12-03T07:35:23.487Z",
+ "nickname": "CM-C08-M2-Q012",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Employees at a college help desk track the number of people who request assistance each week. The table gives a sample of the results :\n<table class=\"unnumbered\">\n<tbody>\n<tr><td>142</td>\n<td>153</td>\n<td>158</td>\n<td>156</td>\n<td>141</td>\n<td>143</td></tr>\n<tr><td>139</td>\n<td>158</td>\n<td>156</td>\n<td>146</td>\n<td>137</td>\n<td>153</td></tr>\n<tr><td>136</td>\n<td>127</td>\n<td>157</td>\n<td>148</td>\n<td>132</td>\n<td>139</td></tr>\n<tr><td>155</td>\n<td>167</td>\n<td>143</td>\n<td>168</td>\n<td>133</td>\n<td>157</td></tr>\n<tr><td>138</td>\n<td>156</td>\n<td>164</td>\n<td>130</td>\n<td>148</td>\n<td>136</td>\n</tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 531507,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Make a stem-and-leaf plot of the data.\n\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<table class=\"unnumbered\">\n<tbody>\n<tr><td data-align=\"left\">12</td>\n<td data-align=\"left\">7</td>\n</tr>\n<tr><td data-align=\"left\">13</td>\n<td data-align=\"left\">0 2 3 6 6 7 8 9 9</td>\n</tr>\n<tr><td data-align=\"left\">14</td>\n<td data-align=\"left\">1 2 3 3 6 8 8</td>\n</tr>\n<tr><td data-align=\"left\">15</td>\n<td data-align=\"left\">3 3 5 6 6 6 7 7 8 8</td></tr>\n<tr><td data-align=\"left\">16</td>\n<td data-align=\"left\">4 7 8</td>\n</tr>\n</tbody>\n</table>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Stem-and-leaf plots are visualization tools that consist of a list of stems on the left and corresponding leaves on the right, separated by a line. The stems are the numbers that make up the data only up to the next-to-the last digit, and the leaves are the final digits. There is one leaf for every data value (which means that leaves may be repeated).</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>12</td>\n<td>7</td>\n</tr>\n<tr>\n<td>13</td>\n<td>9 6 8 0 7 2 3 9 6</td>\n</tr>\n<tr>\n<td>14</td>\n<td>2 3 6 8 1 8 3</td>\n</tr>\n<tr>\n<td>15</td>\n<td>5 3 8 6 8 6 7 6 3 7</td>\n</tr>\n<tr>\n<td>16</td>\n<td>7 4 8</td>\n</tr>\n</tbody>\n</table>\n<p>Add the frequencies to check your work: 1 + 9 + 7 + 10 + 3 = 30</p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 531508,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Create a histogram of the data. Use bins of width 5.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Step 1: Add data to bins.</p>\n<p>Histograms are easy to make when the stem-and-leaf plot is already done. Since they want a bin-width of 5, let’s order the stem-and-leaf plot.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>12</td>\n<td>7</td>\n</tr>\n<tr>\n<td>13</td>\n<td>0 2 3 6 6 7 8 9 9</td>\n</tr>\n<tr>\n<td>14</td>\n<td>1 2 3 3 6 8 8</td>\n</tr>\n<tr>\n<td>15</td>\n<td>3 3 5 6 6 6 7 7 8 8</td>\n</tr>\n<tr>\n<td>16</td>\n<td>4 7 8</td>\n</tr>\n</tbody>\n</table>\n<p>If using a bin-width of 5, you can compute the frequency by counting the number of leaves associated with the corresponding stem:</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Bin</th>\n<th>Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>125-129</td>\n<td>1</td>\n</tr>\n<tr>\n<td>130-134</td>\n<td>3</td>\n</tr>\n<tr>\n<td>135-139</td>\n<td>6</td>\n</tr>\n<tr>\n<td>140-144</td>\n<td>4</td>\n</tr>\n<tr>\n<td>145-149</td>\n<td>3</td>\n</tr>\n<tr>\n<td>150-154</td>\n<td>2</td>\n</tr>\n<tr>\n<td>155-159</td>\n<td>8</td>\n</tr>\n<tr>\n<td>160-164</td>\n<td>1</td>\n</tr>\n<tr>\n<td>165-169</td>\n<td>2</td>\n</tr>\n</tbody>\n</table>\n<p>Add the frequencies to check your work: 1 + 3 + 6 + 4 + 3 + 2 + 8 + 1 + 2 = 30</p>\n<p>Step 2. Create the axes.</p>\n<p>On the horizontal axis, start labeling with the lower end of the first bin (in this case, 125), and go up to the higher end of the last bin (170). Mark off the other bin boundaries, making sure they are evenly spaced.</p>\n<p>On the vertical axis, start with zero and go up to at least the highest frequency you see in your bins (8 in this example). You could go up to 8 and make labels and tick marks at 2, 4, 6, and 8.</p>\n<p>Step 3. Draw in the bars.</p>\n<p>Remember that the bars of a histogram touch. The heights are determined by the frequency. The first bar will cover from 125 to 129 at a height of 1. The second bar will cover from 130 to 134 at a height of 3. Continue to draw bars using your bin and frequency table until you draw a bar from 165 to 170 at a height of 2.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVVHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f87d9e1cb15caf8f5f73e5ca4ade1ed4a896ae7e/CS_Figure_08_02_035.jpg\" alt=\"A histogram titled, weekly help desk customers. The horizontal axis representing customers ranges from 125 to 170, in increments of 5. The vertical axis representing frequency ranges from 0 to 8, in increments of 2. The histogram infers the following data. 125 to 130: 1. 130 to 135: 3. 135 to 140: 6. 140 to 145: 4. 145 to 150: 3. 150 to 155: 2. 155 to 160: 8. 160 to 165: 1. 165 to 170: 2.\">"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  19,
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

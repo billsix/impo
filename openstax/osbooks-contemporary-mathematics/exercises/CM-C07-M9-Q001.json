@@ -1,0 +1,376 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:07-09-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:7239783d-6c65-42b5-87f1-da126da632e7",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:7-9-conditional-probability-and-the-multiplication-rule"
+ ],
+ "uuid": "5c2d4370-2304-4abb-b194-1604eabc3816",
+ "group_uuid": "21e0f26c-4bc4-48b4-b881-5205c7190f02",
+ "number": 31536,
+ "version": 5,
+ "uid": "31536@5",
+ "published_at": "2024-11-11T13:31:11.550Z",
+ "nickname": "CM-C07-M9-Q001",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "You are about to roll a special 6-sided die that has both a colored letter and a colored number on each face. The faces are labeled with: a red 1 and a blue A, a red 1 and a green A, an orange 1 and a green B, an orange 2 and a red C, a purple 3 and a brown D, an orange 4 and a blue E. Find the given conditional probabilities:",
+ "questions": [
+  {
+   "id": 516681,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"P({\\text{the letter is a vowel}}{|}{\\text{the number is orange}})\">P({\\text{the letter is a vowel}}{|}{\\text{the number is orange}})</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\frac{1}{3}\">\\frac{1}{3}</span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Sample space:</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Letter side</td>\n<td>Red 1</td>\n<td>Red 1</td>\n<td>Orange 1</td>\n<td>Orange 2</td>\n<td>Purple 3</td>\n<td>Orange 4</td>\n</tr>\n<tr>\n<td>Number side</td>\n<td>Blue A</td>\n<td>Green A</td>\n<td>Green B</td>\n<td>Red C</td>\n<td>Brown D</td>\n<td>Blue E</td>\n</tr>\n</tbody>\n</table>\n<p>What is the probability of a vowel given that an orange has been rolled?</p>\n<p>An orange has been rolled, which means that one of these sides is the result.</p> \n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Orange 1</td>\n<td>Orange 2</td>\n<td>Orange 4</td>\n</tr>\n<tr>\n<td>Green B</td>\n<td>Red C</td>\n<td>Blue E</td>\n</tr>\n</tbody>\n</table>\n<p>Vowels: E.</p>\n<p>From these choices, <span data-math=\"{\\text{P}}\\left( {{\\text{letter us a vowel | the number is orange}}} \\right){\\text{ }} = \\frac{1}{3}\"></span>.</p>\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 516682,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"P\\,({\\text{the number is 1}}{|}{\\text{the number is red}})\">P\\,({\\text{the number is 1}}{|}{\\text{the number is red}})</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"1\">1</span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Sample space:</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Letter side</td>\n<td>Red 1</td>\n<td>Red 1</td>\n<td>Orange 1</td>\n<td>Orange 2</td>\n<td>Purple 3</td>\n<td>Orange 4</td>\n</tr>\n<tr>\n<td>Number side</td>\n<td>Blue A</td>\n<td>Green A</td>\n<td>Green B</td>\n<td>Red C</td>\n<td>Brown D</td>\n<td>Blue E</td>\n</tr>\n</tbody>\n</table>\n<p>What is the probability of a 1 given that a red has been rolled?</p>\n<p>A red has been rolled, meaning that one of these sides is the result.</p> \n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Red 1</td>\n<td>Red 1</td>\n</tr>\n<tr>\n<td>Blue A</td>\n<td>Green A</td>\n</tr>\n</tbody>\n</table>\n<p>Both sides have a 1.</p>\n<p>From these choices, <span data-math=\"{\\text{P}}\\left( {{\\text{the number is a 1 | the number is red}}} \\right){\\text{ }} = \\frac{1}{1} = 1\"></span>.</p>\n\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 516683,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"P\\,({\\text{the number is red}}{|}{\\text{the number is 1}})\">P\\,({\\text{the number is red}}{|}{\\text{the number is 1}})</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\frac{2}{3}\">\\frac{2}{3}</span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Sample space:</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Letter side</td>\n<td>Red 1</td>\n<td>Red 1</td>\n<td>Orange 1</td>\n<td>Orange 2</td>\n<td>Purple 3</td>\n<td>Orange 4</td>\n</tr>\n<tr>\n<td>Number side</td>\n<td>Blue A</td>\n<td>Green A</td>\n<td>Green B</td>\n<td>Red C</td>\n<td>Brown D</td>\n<td>Blue E</td>\n</tr>\n</tbody>\n</table>\n<p>What is the probability of a red given that a 1 has been rolled?</p>\n<p>A red has been rolled, which means that one of these sides is the result.</p> \n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Red 1</td>\n<td>Red 1</td>\n<td>Orange 1</td>\n</tr>\n<tr>\n<td>Blue A</td>\n<td>Green A</td>\n<td>Green B</td>\n</tr>\n</tbody>\n</table>\n<p>Two of these sides are red.</p>\n<p>From these choices, <span data-math=\"{\\text{P}}\\left( {{\\text{the number is red | the number is a 1}}} \\right){\\text{ }} = \\frac{2}{3}\"></span>.</p>\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

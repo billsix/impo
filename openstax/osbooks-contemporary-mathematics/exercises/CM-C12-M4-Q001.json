@@ -1,0 +1,370 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-19T04:45:40.288Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGdMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4e13d25bc753f3c2a6be9856f4f3b999992621bf",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGdMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4e13d25bc753f3c2a6be9856f4f3b999992621bf/CS_Figure_12_04_098.png"
+  },
+  {
+   "created_at": "2024-12-19T04:45:40.299Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFlQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--984a22ca3ead1f8e8d880b4cbdff120df1812110",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFlQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--984a22ca3ead1f8e8d880b4cbdff120df1812110/CS_Figure_12_04_098.png"
+  },
+  {
+   "created_at": "2024-12-19T04:45:40.303Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUlTIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fc3a01c56217cb54a917ed47842449eea1af2d7b",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUlTIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fc3a01c56217cb54a917ed47842449eea1af2d7b/CS_Figure_12_04_098.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:12-04-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium"
+ ],
+ "uuid": "738137ef-aa79-4c42-b7b6-c87e6b3c38c5",
+ "group_uuid": "36ce1a60-d1a9-46ff-8cb2-a418e8055e12",
+ "number": 32965,
+ "version": 14,
+ "uid": "32965@14",
+ "published_at": "2024-12-19T04:45:44.435Z",
+ "nickname": "CM-C12-M4-Q001",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 542906,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Recall from the Graph Basics section that a graph in which there are multiple edges between the same pair of vertices is called a multigraph. The figure shows a map of the four bridges that link Staten Island to Brooklyn and New Jersey and a multigraph representing the map. In the multigraph, the edges are labeled instead of the vertices. The edges represent the bridges, <i>G</i> (Goethals Bridge), <i>B</i> (Bayonne Bridge), <i>C</i> (Outerbridge Crossing), and <i>V</i> (Verrazzano-Narrows Bridge). The vertices represent New Jersey, Staten Island, and Brooklyn.\n<figure>\n<figcaption>Map and Multigraph of Staten Island Bridges</figcaption>\n<img src=\"exercises/media/14fb5a8378c32408.png\" alt=\"A map and a graph of Staten Island Bridges. The map of Staten Island shows the following bridges: Bayonne Bridge, Verrazano Bridge, Goethals Bridge, and Outer bridge Crossing. The graph shows three vertices. Three edges from the first vertex lead to B, G, and C. Edges from B, G, and C lead to the second vertex. An edge from the second vertex leads to V. An edge from V leads to the third vertex.\">\n</figure>\nA walk can be named by a sequence of edges instead of a sequence of vertices. Determine which of the following sequences of edges is a walk. ",
+   "answers": [
+    {
+     "id": 1068171,
+     "content_html": "<i>B</i> → <i>V</i> → <i>C</i> → <i>G</i> → <i>C</i>",
+     "correctness": "0.0"
+    },
+    {
+     "id": 1068172,
+     "content_html": "<i>V</i> → <i>C</i> → <i>B</i> → <i>G</i> → <i>C</i>",
+     "correctness": "1.0"
+    },
+    {
+     "id": 1068173,
+     "content_html": "<i>C</i> → <i>V</i> → <i>G</i> → <i>B</i> → <i>B</i>",
+     "correctness": "0.0"
+    },
+    {
+     "id": 1068174,
+     "content_html": "<i>G</i> → <i>V</i> → <i>B</i> → <i>V</i> → <i>C</i>",
+     "correctness": "0.0"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>a) If you follow B to V, you are in Brooklyn and end up at a dead end.</p>\n<p>b) This walk takes you through all the bridges exactly once.</p>\n<p>c) When you follow C to V, you are in Brooklyn and end up at a dead end.</p>\n<p>d) When you follow G to V, you are in Brooklyn and end up at a dead end.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": " Only <i>V</i> → <i>C</i> → <i>B</i> → <i>G</i> → <i>C</i> is a walk."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,350 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-03T07:31:39.089Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG9HIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7be22f03179ab72d8ab7eddda59dfbadcb3a3031",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG9HIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7be22f03179ab72d8ab7eddda59dfbadcb3a3031/CS_Figure_08_02_019.jpg"
+  },
+  {
+   "created_at": "2024-12-03T07:31:39.093Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcHdNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0c257f45d843816e0168d45580b12d599e48c8fd",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcHdNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0c257f45d843816e0168d45580b12d599e48c8fd/CS_Figure_08_02_019.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:08-02-01",
+  "context-cnxmod:7baffe9f-fb35-422f-bac7-89e4353e21ed",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-2-visualizing-data"
+ ],
+ "uuid": "543d26e3-11f6-4677-a5c2-bd403a754599",
+ "group_uuid": "9ad69404-357c-4c36-b14b-6dcea1089ab6",
+ "number": 28947,
+ "version": 18,
+ "uid": "28947@18",
+ "published_at": "2024-12-03T07:31:41.826Z",
+ "nickname": "CM-C08-M2-Q007",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 531500,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "In Your Turn 10, you made a stem-and-leaf plot of the number of wins for each MLB team in 2019, using this set of data:\n<table>\n<thead>\n<tr>\n<th>Team</th>\n<th>Wins</th>\n<th>Losses</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>HOU</td>\n<td>107</td>\n<td>55</td>\n</tr>\n<tr>\n<td>LAD</td>\n<td>106</td>\n<td>56</td>\n</tr>\n<tr>\n<td>NYY</td>\n<td>103</td>\n<td>59</td>\n</tr>\n<tr>\n<td>MIN</td>\n<td>101</td>\n<td>61</td>\n</tr>\n<tr>\n<td>ATL</td>\n<td>97</td>\n<td>65</td>\n</tr>\n<tr>\n<td>OAK</td>\n<td>97</td>\n<td>65</td>\n</tr>\n<tr>\n<td>TBR</td>\n<td>96</td>\n<td>66</td>\n</tr>\n<tr>\n<td>CLE</td>\n<td>93</td>\n<td>69</td>\n</tr>\n<tr>\n<td>WSN</td>\n<td>93</td>\n<td>69</td>\n</tr>\n<tr>\n<td>STL</td>\n<td>91</td>\n<td>71</td>\n</tr>\n<tr>\n<td>MIL</td>\n<td>89</td>\n<td>73</td>\n</tr>\n<tr>\n<td>NYM</td>\n<td>86</td>\n<td>76</td>\n</tr>\n<tr>\n<td>ARI</td>\n<td>85</td>\n<td>77</td>\n</tr>\n<tr>\n<td>BOS</td>\n<td>84</td>\n<td>78</td>\n</tr>\n<tr>\n<td>CHC</td>\n<td>84</td>\n<td>78</td>\n</tr>\n<tr>\n<td>PHI</td>\n<td>81</td>\n<td>81</td>\n</tr>\n<tr>\n<td>TEX</td>\n<td>78</td>\n<td>84</td>\n</tr>\n<tr>\n<td>SFG</td>\n<td>77</td>\n<td>85</td>\n</tr>\n<tr>\n<td>CIN</td>\n<td>75</td>\n<td>87</td>\n</tr>\n<tr>\n<td>CHW</td>\n<td>72</td>\n<td>89</td>\n</tr>\n<tr>\n<td>LAA</td>\n<td>72</td>\n<td>90</td>\n</tr>\n<tr>\n<td>COL</td>\n<td>71</td>\n<td>91</td>\n</tr>\n<tr>\n<td>SDP</td>\n<td>70</td>\n<td>92</td>\n</tr>\n<tr>\n<td>PIT</td>\n<td>69</td>\n<td>93</td>\n</tr>\n<tr>\n<td>SEA</td>\n<td>68</td>\n<td>94</td>\n</tr>\n<tr>\n<td>TOR</td>\n<td>67</td>\n<td>95</td>\n</tr>\n<tr>\n<td>KCR</td>\n<td>59</td>\n<td>103</td>\n</tr>\n<tr>\n<td>MIA</td>\n<td>57</td>\n<td>105</td>\n</tr>\n<tr>\n<td>BAL</td>\n<td>54</td>\n<td>108</td>\n</tr>\n<tr>\n<td>DET</td>\n<td>47</td>\n<td>114</td>\n</tr>\n</tbody>\n\n</table>\nCreate a histogram for the number of wins. Use bins of width 10, starting with a bin for 40-49 (so that your histogram reflects the stem-and-leaf plot you made earlier).",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Step 1: Add data to bins.</p>\n<p>Histograms are easy to make when the stem-and-leaf plot is already done.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>4</td>\n<td>7</td>\n</tr>\n<tr>\n<td>5</td>\n<td>9 7 4</td>\n</tr>\n<tr>\n<td>6</td>\n<td>9 8 7</td>\n</tr>\n<tr>\n<td>7</td>\n<td>8 7 5 2 2 1 0</td>\n</tr>\n<tr>\n<td>8</td>\n<td>9 6 5 4 4 1</td>\n</tr>\n<tr>\n<td>9</td>\n<td>7 7 6 3 3 1</td>\n</tr>\n<tr>\n<td>10</td>\n<td>7 6 3 1</td>\n</tr>\n</tbody>\n</table>\n<p>If using a bin-width of 10, you can compute the frequency by counting the number of leaves associated with the corresponding stem:</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Bin</th>\n<th>Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>40-49</td>\n<td>1</td>\n</tr>\n<tr>\n<td>50-59</td>\n<td>3</td>\n</tr>\n<tr>\n<td>60-69</td>\n<td>3</td>\n</tr>\n<tr>\n<td>70-79</td>\n<td>7</td>\n</tr>\n<tr>\n<td>80-89</td>\n<td>6</td>\n</tr>\n<tr>\n<td>90-99</td>\n<td>6</td>\n</tr>\n<tr>\n<td>100-109</td>\n<td>4</td>\n</tr>\n</tbody>\n</table>\n<p>Step 2. Create the axes.</p>\n<p>On the horizontal axis, start labeling with the lower end of the first bin (in this case, 40), and go up to the higher end of the last bin (110). Mark off the other bin boundaries, making sure they are evenly spaced.</p>\n<p>On the vertical axis, start with zero and go up to at least the highest frequency you see in your bins (7 in this example). You could go up to 8 and make labels and tick marks at 0, 2, 4, 6, and 8.</p>\n<p>Step 3. Draw in the bars.</p>\n<p>Remember that the bars of a histogram touch. The heights are determined by the frequency. The first bar will cover from 40 to 50 at a height of 1. The second bar will cover from 50 to 60 at a height of 3. Continue to draw bars using your bin and frequency table until you draw a bar from 100 to 110 at a height of 4.</p>\n<p>To check your work, notice that if you turned your stem-and-leaf plot on its side, it would have the same general shape as your histogram.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcHdNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0c257f45d843816e0168d45580b12d599e48c8fd/CS_Figure_08_02_019.jpg\" alt=\"A histogram represents wins by MLB teams, 2019 season (good). The horizontal axis representing wins ranges from 40 to 110, in increments of 10. The vertical axis representing frequency ranges from 0 to 8, in increments of 2. The histogram infers the following data. 40 to 50: 1. 50 to 60: 3. 60 to 70: 3. 70 to 80: 7. 80 to 90: 6. 90 to 100: 6. 100 to 110: 4.\">"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

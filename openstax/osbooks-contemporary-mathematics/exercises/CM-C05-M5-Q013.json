@@ -1,0 +1,371 @@
+{
+ "images": [
+  {
+   "created_at": "2024-10-26T03:34:03.820Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3dKIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fd52ba38ca80b674f49975fca88942075fc29195",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3dKIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fd52ba38ca80b674f49975fca88942075fc29195/CS_Figure_05_05_031.jpg"
+  },
+  {
+   "created_at": "2024-10-26T03:34:03.827Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbTRNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1bbe7ab823d749a0b302f833297cb0d6860461d",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbTRNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1bbe7ab823d749a0b302f833297cb0d6860461d/CS_Figure_05_05_036.jpg"
+  },
+  {
+   "created_at": "2024-10-26T03:34:03.834Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEFNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8c0bb5d33ea17cb0ce882f435584685811a99e87",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEFNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8c0bb5d33ea17cb0ce882f435584685811a99e87/CS_Figure_05_05_031.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:05-05-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:abbe819c-e1f8-400b-a6a2-60d4dc093265",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-5-graphing-linear-equations-and-inequalities"
+ ],
+ "uuid": "6bd8f299-cbdd-47c8-81df-48f0201e23b8",
+ "group_uuid": "b34a8a84-2c22-4e26-b2d7-48906ebc22c3",
+ "number": 30381,
+ "version": 11,
+ "uid": "30381@11",
+ "published_at": "2024-10-26T03:34:08.217Z",
+ "nickname": "CM-C05-M5-Q013",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 508255,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Choose the correct equation for the graph shown:\n<br>\n<img src=\"exercises/media/2adda313dcbcdbed.png\" alt=\"A line is plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 10, in increments of 5. The line passes through the points, (negative 8, 0) and (0, 4).\">\n",
+   "answers": [
+    {
+     "id": 995748,
+     "content_html": "<span data-math=\"y = 2x + 4\">y = 2x + 4</span>",
+     "correctness": "0.0"
+    },
+    {
+     "id": 995749,
+     "content_html": "<span data-math=\"y = \\frac{1}{2}x + 4\">y = \\frac{1}{2}x + 4</span>",
+     "correctness": "1.0"
+    },
+    {
+     "id": 995750,
+     "content_html": "<span data-math=\"y =  - 2x + 4\">y =  - 2x + 4</span>",
+     "correctness": "0.0"
+    },
+    {
+     "id": 995751,
+     "content_html": "<span data-math=\"y = \\frac{1}{2}x + 4\">y = \\frac{1}{2}x + 4</span>",
+     "correctness": "0.0"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Test the points for all the options. Only the correct option works.</p>\n<p>Correct option: <span data-math=\"y = \\frac{1}{2}x + 4\"></span>.</p>\n<p><span data-math=\"(0, 4)\"></span></p>\n<p><span data-math=\"4 = \\frac{1}{2}\\left( 0 \\right) + 4\"></span></p>\n<p>4 = 4 is true, so this ordered pair is on the line.</p>\n<p><span data-math=\"(-8, 0)\"></span></p>\n<p> <span data-math=\"0 = \\frac{1}{2}\\left( { - 8} \\right) + 4\"></span></p>\n<p><span data-math=\"0 = -4 + 4\"></span></p>\n<p>0 = 0 is true, so this ordered pair is on the line.</p>\n<p>Two points are all it takes to determine a line, so this is the correct equation for the line.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"y = \\frac{1}{2}x + 4\">y = \\frac{1}{2}x + 4</span>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

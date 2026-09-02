@@ -1,0 +1,414 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-05-02",
+  "lo:stax-cmath:11-05-04",
+  "context-cnxmod:de68113b-2554-450f-88dd-7768f6d9f73f",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-5-fairness-in-apportionment-methods"
+ ],
+ "uuid": "d7a64907-9024-4abc-8fe7-deda8c6c02da",
+ "group_uuid": "4c66a1f3-0a03-41d7-9cb6-3ea583e080ff",
+ "number": 29628,
+ "version": 21,
+ "uid": "29628@21",
+ "published_at": "2024-12-24T09:02:53.682Z",
+ "nickname": "CM-C11-M5-Q016",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "In the following exercises, use the information in the table below.\n<table class=\"unnumbered\" summary=\".\">\n<thead>\n<tr>\n<th>State</th>\n<th>Original Population</th>\n<th>Updated Population</th>\n<th>Population Growth Rate</th>\n<th>House Size</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><b>A</b></td>\n<td>889</td>\n<td>958</td>\n<td>7.76%</td>\n<td></td>\n</tr><tr>\n<td><b>B</b></td>\n<td>674</td>\n<td>692</td>\n<td>2.67%</td>\n<td>42</td>\n</tr><tr>\n<td><b>C</b></td>\n<td>237</td>\n<td>243</td>\n<td>2.53%</td>\n<td></td>\n</tr><tr>\n<td><b>D</b></td>\n<td><b>12,032</b></td>\n<td><b>14,124</b></td>\n<td><span data-math=\"\\bf{\\it{d\\%}}\"></span></td>\n<td></td>\n</tr><tr>\n<td><b>E</b></td>\n<td><b>10,789</b></td>\n<td><b>9,726</b></td>\n<td><span data-math=\"\\bf{\\it{e\\%}}\"></span></td>\n<td><b>135</b></td>\n</tr><tr>\n<td><b>F</b></td>\n<td><b>995</b></td>\n<td><b>2,304</b></td>\n<td><span data-math=\"\\bf{\\it{f\\,\\%}}\"></span></td>\n<td></td>\n</tr><tr>\n<td><b>G</b></td>\n<td>901</td>\n<td>1,156</td>\n<td>28.3%</td>\n<td></td>\n</tr><tr>\n<td><b>H</b></td>\n<td>1,683</td>\n<td>2,125</td>\n<td>26.3%</td>\n<td>24</td>\n</tr><tr>\n<td><b>I</b></td>\n<td>3,808</td>\n<td>4,369</td>\n<td>14.7%</td>\n<td></td>\n</tr><tr>\n<td><b>X</b></td>\n<td><b>56</b></td>\n<td><b>63</b></td>\n<td><span data-math=\"\\bf{\\it{x\\%}}\"></span></td>\n<td></td>\n</tr><tr>\n<td><b>Y</b></td>\n<td><b>125</b></td>\n<td><b>141</b></td>\n<td><span data-math=\"\\bf{\\it{y\\%}}\"></span></td>\n<td><b>16</b></td>\n</tr><tr>\n<td><b>Z</b></td>\n<td><b>182</b></td>\n<td><b>213</b></td>\n<td><span data-math=\"\\bf{\\it{z\\%}}\"></span></td>\n<td></td>\n</tr><tr>\n<td><b>P</b></td>\n<td>6,534</td>\n<td>6,534</td>\n<td><span data-math=\"p\\%\"></span></td>\n<td></td>\n</tr><tr>\n<td><b>Q</b></td>\n<td>7,832</td>\n<td>7,810</td>\n<td><span data-math=\"q\\%\"></span></td>\n<td>40</td>\n</tr><tr>\n<td><b>R</b></td>\n<td>13,959</td>\n<td>13,992</td>\n<td><span data-math=\"r\\%\"></span></td>\n<td></td>\n</tr><tr>\n<td><b>S</b></td>\n<td>20,515</td>\n<td>21,164</td>\n<td><span data-math=\"s\\%\"></span></td>\n<td></td>\n</tr><tr>\n</tr>\n</tbody>\n</table>\n",
+ "questions": [
+  {
+   "id": 545848,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Calculate the population growth rates <span data-math=\"d\">d</span>, <span data-math=\"e\">e</span>, and <span data-math=\"f\">f</span> for States D, E, and F. Give answer as a percentage rounded to one decimal place.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 545849,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Calculate the population growth rates <span data-math=\"p\">p</span>, <span data-math=\"q\">q</span>, <span data-math=\"r\">r</span>, and <span data-math=\"s\">s</span> for States P, Q, R, and S. Give answer as a percentage rounded to one decimal place.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 545850,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Calculate the population growth rates <span data-math=\"x\">x</span>, <span data-math=\"y\">y</span>, and <span data-math=\"z\">z</span> for States X, Y, and Z. Give answer as a percentage rounded to one decimal place.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 545851,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Consider States A, B, and C.\n<ol type=\"a\">\n<li>Determine the Hamilton apportionment for States A, B, and C with the original population.</li>\n<li>Determine the Hamilton apportionment for States A, B, and C with the updated population.</li>\n<li>Does the increase in population of States A, B, and C from the original population to the updated population and the use of the Hamilton method cause the population paradox? Explain your reasoning.</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 545852,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Consider States D, E, and F.\n<ol type=\"a\">\n<li>Determine the Hamilton apportionment for States D, E, and F with the original population.</li>\n<li>Determine the Hamilton apportionment for States D, E, and F with the updated population.</li>\n<li>Does the increase in population and the use of the Hamilton method cause the population paradox? Explain your reasoning.</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 545853,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Consider States G, H, and I.\n<ol type=\"a\">\n<li>Determine the Hamilton apportionment for States G, H, and I with the original population.</li>\n<li>Determine the Hamilton apportionment for States G, H, and I with the updated population.</li>\n<li>Does the increase in population and the use of the Hamilton method cause the population paradox? Explain your reasoning.</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 545854,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Consider States X, Y, and Z.\n<ol type=\"a\">\n<li>Determine the Hamilton apportionment for States X, Y, and Z with the original population.</li>\n<li>Determine the Hamilton apportionment for States X, Y, and Z with the updated population.</li>\n<li>Does the increase in population and the use of the Hamilton method cause the population paradox? Explain your reasoning.</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 545855,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Consider States P, Q, R, and S.\n<ol type=\"a\">\n<li>Determine the Hamilton apportionment for States P, Q, R, and S with the original population.</li>\n<li>Determine the Hamilton apportionment for States P, Q, R, and S with the updated population.</li>\n<li>Does the increase in population and the use of the Hamilton method cause the population paradox? Explain your reasoning.</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  21,
+  20,
+  19,
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,332 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-01-03",
+  "context-cnxmod:91031584-74b3-4327-ad1f-f12f21835af9",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-1-voting-methods"
+ ],
+ "uuid": "98e95638-c4f9-4e9a-9ff1-f40a84348c64",
+ "group_uuid": "9e488ec9-8234-47b0-a664-c3de04fa02d9",
+ "number": 29478,
+ "version": 11,
+ "uid": "29478@11",
+ "published_at": "2025-01-09T16:43:36.458Z",
+ "nickname": "CM-C11-M1-Q006",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 549216,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Suppose that 58 <i>Star Wars</i> fans were asked to vote for their favorite <i>Star Wars</i> character. They were given a ranked ballot, and the results are shown in the following table. Use ranked-choice voting to determine the winner.\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Number of Ballots</th>\n<th>7</th>\n<th>6</th>\n<th>10</th>\n<th>8</th>\n<th>4</th>\n<th>5</th>\n<th>6</th>\n<th>7</th>\n<th>2</th>\n<th>3</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Han Solo</td>\n<td>3</td>\n<td>5</td>\n<td>1</td>\n<td>3</td>\n<td>2</td>\n<td>4</td>\n<td>2</td>\n<td>2</td>\n<td>1</td>\n<td>4</td>\n</tr>\n<tr>\n<td>Princess Leia</td>\n<td>2</td>\n<td>1</td>\n<td>3</td>\n<td>6</td>\n<td>4</td>\n<td>3</td>\n<td>3</td>\n<td>1</td>\n<td>3</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Luke Skywalker</td>\n<td>6</td>\n<td>6</td>\n<td>6</td>\n<td>1</td>\n<td>5</td>\n<td>5</td>\n<td>5</td>\n<td>4</td>\n<td>6</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Chewbacca</td>\n<td>4</td>\n<td>4</td>\n<td>5</td>\n<td>4</td>\n<td>6</td>\n<td>1</td>\n<td>6</td>\n<td>5</td>\n<td>4</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Yoda</td>\n<td>1</td>\n<td>2</td>\n<td>4</td>\n<td>2</td>\n<td>3</td>\n<td>2</td>\n<td>1</td>\n<td>3</td>\n<td>2</td>\n<td>3</td>\n</tr>\n<tr>\n<td>R2-D2</td>\n<td>5</td>\n<td>3</td>\n<td>2</td>\n<td>5</td>\n<td>1</td>\n<td>6</td>\n<td>4</td>\n<td>6</td>\n<td>5</td>\n<td>6</td>\n</tr>\n</tbody>\n</table>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Using ranked-choice voting, Yoda is determined to be the winner."
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Step 1: Determine the number of votes needed to achieve a majority.</p>\n<p>Add the number of ballots.</p>\n<p>7 + 6 + 10 + 8 + 4 + 5 + 6 + 7 + 2 + 3 = 58</p>\n<p>0.50(58) = 29</p>\n<p>To win a majority requires 30 or more votes.</p>\n<p>Step 2: Count the number of first-place votes for each candidate. If a candidate has a majority, then you are done. Otherwise, eliminate the candidate with the fewest votes and repeat this step.</p>\n<p>Han Solo: 10 + 2 = 12</p>\n<p>Princess Leia: 6 + 7 = 13</p>\n<p>Luke Skywalker: 8 + 3 = 11</p>\n<p>Chewbacca: 5</p>\n<p>Yoda: 7 + 6 = 13</p>\n<p>R2-D2 = 4</p>\n<p>No one won. Eliminate R2-D2.</p>\n<p>Second Round:</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Number of Ballots</th>\n<th>7</th>\n<th>6</th>\n<th>10</th>\n<th>8</th>\n<th>4</th>\n<th>5</th>\n<th>6</th>\n<th>7</th>\n<th>2</th>\n<th>3</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Han Solo</td>\n<td>3</td>\n<td>4</td>\n<td>1</td>\n<td>3</td>\n<td>1</td>\n<td>4</td>\n<td>2</td>\n<td>2</td>\n<td>1</td>\n<td>4</td>\n</tr>\n<tr>\n<td>Princess Leia</td>\n<td>2</td>\n<td>1</td>\n<td>2</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>1</td>\n<td>3</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Luke Skywalker</td>\n<td>5</td>\n<td>5</td>\n<td>5</td>\n<td>1</td>\n<td>4</td>\n<td>5</td>\n<td>4</td>\n<td>4</td>\n<td>5</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Chewbacca</td>\n<td>4</td>\n<td>3</td>\n<td>4</td>\n<td>4</td>\n<td>5</td>\n<td>1</td>\n<td>5</td>\n<td>5</td>\n<td>4</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Yoda</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>2</td>\n<td>2</td>\n<td>2</td>\n<td>1</td>\n<td>3</td>\n<td>2</td>\n<td>3</td>\n</tr>\n</tbody>\n</table>\n<p>Han Solo: 10 + 4 + 2 = 16</p>\n<p>Princess Leia: 6 + 7 = 13</p>\n<p>Luke Skywalker: 8 + 3 = 11</p>\n<p>Chewbacca: 5</p>\n<p>Yoda: 7 + 6 = 13</p>\n<p>Still, no one has the majority. Eliminate Chewbacca.</p>\n<p>Third Round:</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Number of Ballots</th>\n<th>7</th>\n<th>6</th>\n<th>10</th>\n<th>8</th>\n<th>4</th>\n<th>5</th>\n<th>6</th>\n<th>7</th>\n<th>2</th>\n<th>3</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Han Solo</td>\n<td>3</td>\n<td>3</td>\n<td>1</td>\n<td>3</td>\n<td>1</td>\n<td>3</td>\n<td>2</td>\n<td>2</td>\n<td>1</td>\n<td>4</td>\n</tr>\n<tr>\n<td>Princess Leia</td>\n<td>2</td>\n<td>1</td>\n<td>2</td>\n<td>4</td>\n<td>3</td>\n<td>2</td>\n<td>3</td>\n<td>1</td>\n<td>3</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Luke Skywalker</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n<td>1</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n<td>4</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Yoda</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>2</td>\n<td>2</td>\n<td>1</td>\n<td>1</td>\n<td>3</td>\n<td>2</td>\n<td>3</td>\n</tr>\n</tbody>\n</table>\n<p>Han Solo: 10 + 4 + 2 = 16</p>\n<p>Princess Leia: 6 + 7 = 13</p>\n<p>Luke Skywalker: 8 + 3 = 11</p>\n<p>Yoda: 7 + 5 + 6 = 18</p>\n<p>Still, no one has the majority. Eliminate Luke Skywalker.</p>\n<p>Fourth Round:</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Number of Ballots</th>\n<th>7</th>\n<th>6</th>\n<th>10</th>\n<th>8</th>\n<th>4</th>\n<th>5</th>\n<th>6</th>\n<th>7</th>\n<th>2</th>\n<th>3</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Han Solo</td>\n<td>3</td>\n<td>3</td>\n<td>1</td>\n<td>2</td>\n<td>1</td>\n<td>3</td>\n<td>2</td>\n<td>2</td>\n<td>1</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Princess Leia</td>\n<td>2</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>3</td>\n<td>2</td>\n<td>3</td>\n<td>1</td>\n<td>3</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Yoda</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>1</td>\n<td>2</td>\n<td>1</td>\n<td>1</td>\n<td>3</td>\n<td>2</td>\n<td>2</td>\n</tr>\n</tbody>\n</table>\n<p>Han Solo: 10 + 4 + 2 = 16</p>\n<p>Princess Leia: 6 + 7 + 3 = 16</p>\n<p>Yoda: 7 + 8 + 5 + 6 = 26</p>\n<p>Still, no one has the majority. Eliminate both Han Solo and Princess Leia. Only Yoda remains and would have the majority.</p>\n<p>Yoda wins.</p>\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

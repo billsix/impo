@@ -1,0 +1,373 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:08-06-02",
+  "book:stax-cmath"
+ ],
+ "uuid": "8d04511f-8b72-439d-a1b7-74af71f7f416",
+ "group_uuid": "edcac400-e6f5-477d-bc86-0c57df3c858e",
+ "number": 29073,
+ "version": 8,
+ "uid": "29073@8",
+ "published_at": "2024-12-18T15:34:03.381Z",
+ "nickname": "CM-C08-M6-006",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>Suppose we have data that are normally distributed with mean 500 and standard deviation 100. What proportions of the data fall in these ranges?</p>",
+ "questions": [
+  {
+   "id": 542770,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<p>300 to 500</p>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p>47.5%</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Consider these boundaries on the normal curve.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>mean − 3 SD</th>\n<th>mean − 2 SD</th>\n<th>mean − 1 SD</th>\n<th>mean</th>\n<th>mean + 1 SD</th>\n<th>mean + 2 SD</th>\n<th>mean + 3 SD</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>500 − 300</td>\n<td>500 − 200</td>\n<td>500 − 100</td>\n<td>500</td>\n<td>500 + 100</td>\n<td>500 + 200</td>\n<td>500 + 300</td>\n</tr>\n<tr>\n<td>200</td>\n<td>300</td>\n<td>400</td>\n<td>500</td>\n<td>600</td>\n<td>700</td>\n<td>800</td>\n</tr>\n</tbody>\n</table>\n<p>Sketch the curve and shade in the area between 300 and 500.</p>\n<p>If it were 300 to 700, it would be 95%.</p>\n<p>However, it is just half of that.</p>\n<p><span data-math=\"95 \\div 2 = 47.5\\%\"></span></p>\n<p>The 68–95–99.7 Rule tells you that 47.5% of the data values are between 300 and 500.</p>\n<p>47.5%</p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 542771,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<p>600 to 800</p>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p>15.85%</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Consider these boundaries on the normal curve.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>mean − 3 SD</th>\n<th>mean − 2 SD</th>\n<th>mean − 1 SD</th>\n<th>mean</th>\n<th>mean + 1 SD</th>\n<th>mean + 2 SD</th>\n<th>mean + 3 SD</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>500 − 300</td>\n<td>500 − 200</td>\n<td>500 − 100</td>\n<td>500</td>\n<td>500 + 100</td>\n<td>500 + 200</td>\n<td>500 + 300</td>\n</tr>\n<tr>\n<td>200</td>\n<td>300</td>\n<td>400</td>\n<td>500</td>\n<td>600</td>\n<td>700</td>\n<td>800</td>\n</tr>\n</tbody>\n</table>\n<p>Sketch the curve and shade in the area between 600 and 800.</p>\n<p>What if it were 500 to 800?</p>\n<p>If it were 200 to 800, it would be 99.7%.</p>\n<p>However, 500 to 800 is just half of that.</p>\n<p><span data-math=\"99.7 \\div 2 = 49.85\\%\"></span></p>\n<p>49.85% of the data falls between 500 and 800.</p>\n<p>Now you need to subtract off the data between 500 and 600.</p>\n<p>Since 600 is one SD from the mean, you know there is 34% of the area between 500 and 600.</p>\n<p>Subtract 34% from 49.85% to get 15.85%.</p>\n<p>The 68–95–99.7 Rule tells you that 15.85% of the data values are between 600 and 800.</p>\n<p>15.85%</p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 542772,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<p>400 to 700</p>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p>81.5%</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Consider these boundaries on the normal curve.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>mean − 3 SD</th>\n<th>mean − 2 SD</th>\n<th>mean − 1 SD</th>\n<th>mean</th>\n<th>mean + 1 SD</th>\n<th>mean + 2 SD</th>\n<th>mean + 3 SD</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>500 − 300</td>\n<td>500 − 200</td>\n<td>500 − 100</td>\n<td>500</td>\n<td>500 + 100</td>\n<td>500 + 200</td>\n<td>500 + 300</td>\n</tr>\n<tr>\n<td>200</td>\n<td>300</td>\n<td>400</td>\n<td>500</td>\n<td>600</td>\n<td>700</td>\n<td>800</td>\n</tr>\n</tbody>\n</table>\n<p>Sketch the curve and shade in the area between 400 and 700.</p>\n<p>Handle the portion left of the peak and right of the peak separately.</p>\n<p>Left of the peak is half of the one-standard deviation from the curve portion. This is half of 68%, or 34% of the area.</p>\n<p>Right of the peak is half of the two-standard deviation from the curve portion. This is half of 95%, or 47.5% of the area.</p>\n<p>Add 34% and 47.5% to get 81.5%.</p>\n<p>The 68–95–99.7 Rule tells you that 81.5% of the data values are between 400 and 700.</p>\n<p>81.5%</p>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

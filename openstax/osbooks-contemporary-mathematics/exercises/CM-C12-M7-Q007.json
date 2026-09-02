@@ -1,0 +1,496 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:12-07-01",
+  "lo:stax-cmath:12-07-02",
+  "lo:stax-cmath:12-07-03",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:326f21f4-0eaf-4ac7-8de9-22a71b149308",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:12-7-hamilton-cycles"
+ ],
+ "uuid": "06f8bc3b-5059-4c1b-a188-d24d6d967b98",
+ "group_uuid": "d94ff6ae-2268-4de3-b4ac-887aaf1f7acf",
+ "number": 33393,
+ "version": 3,
+ "uid": "33393@3",
+ "published_at": "2024-12-20T05:53:35.692Z",
+ "nickname": "CM-C12-M7-Q007",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, fill in the blank with <b>is</b> or <b>is not</b> to make the statement true.",
+ "questions": [
+  {
+   "id": 544438,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A Hamilton cycle ________ a circuit.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A circuit is a trail that begins and ends at the same vertex. A trail does not repeat an edge. A Hamilton cycle is a circuit because it begins and ends on the same vertex and does not repeat an edge."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "is"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544439,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A Hamilton cycle that visits every edge ________ an Euler circuit.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "An Euler circuit visits every edge exactly once. A Hamilton cycle visits every vertex exactly once. A Hamilton cycle that visits every edge is also an Euler circuit. Some Hamilton cycles are Euler circuits, but not all. Some Euler circuits are Hamilton cycles, but not all."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "is"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544440,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A Hamilton cycle ________ different from a Hamilton circuit.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A cycle begins and ends at the same vertex. A circuit begins and ends at the same vertex but has no repeated edges. Since adding the name “Hamilton” means no repeated vertices, Hamilton cycles and Hamilton circuits are equivalent."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "is not"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544441,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "An Euler circuit that visits every vertex ________ a Hamilton cycle.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "is"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544442,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The total weight of a trail _______ the sum of the weights of the edges visited by the trail.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "To find the weight of a trail, add the weights of each edge visited along the way."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "is"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544443,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A weighted graph _______ always a complete graph.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A weighted graph can be any kind of graph, complete or not complete. A weighted graph just means that numbers are assigned to each edge, usually associated with a real-world application."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "is not"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544444,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The number of ways to arrange n objects _______ <span data-math=\"\\left( {n - 1} \\right)!\">\\left( {n - 1} \\right)!</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "The number of ways to arrange <i>n</i> distinct objects is <i>n</i>!."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "is not"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 544445,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Every cycle ____ a circuit.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A cycle begins and ends at the same vertex. A circuit begins and ends at the same vertex but has no repeated edges. A cycle might or might not have repeated edges."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "is not"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  3,
+  2,
+  1
+ ]
+}

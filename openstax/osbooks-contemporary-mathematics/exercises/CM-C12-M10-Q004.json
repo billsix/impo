@@ -1,0 +1,461 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-19T07:14:42.198Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0FMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0e2a7ddb26baaf68864bbce58ba47cb36f80c536",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0FMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0e2a7ddb26baaf68864bbce58ba47cb36f80c536/CS_Figure_12_10_256.png"
+  },
+  {
+   "created_at": "2024-12-19T07:14:42.200Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBblVOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--33ccd747200befb357765b292ea7e42593a0025b",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBblVOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--33ccd747200befb357765b292ea7e42593a0025b/CS_Figure_12_10_256.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:12-10-03",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:2606813f-260c-4610-a668-7d4de5b8b236",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:12-10-trees"
+ ],
+ "uuid": "158d3065-5514-40b4-8a0b-a4f6a78471d7",
+ "group_uuid": "2737d966-1c27-471f-8abb-83c4a1713414",
+ "number": 34162,
+ "version": 10,
+ "uid": "34162@10",
+ "published_at": "2024-12-19T07:14:45.645Z",
+ "nickname": "CM-C12-M10-Q004",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Use the given figure for the following exercises.\n<figure>\n<img src=\"exercises/media/090eff1694a78dab.png\" alt=\"Five graphs. Graph H has five vertices: n, q, r, s, and t. The edges are p q, p r, q r, q t, r t, r s, and s t. Graph N 1 has four vertices: p, q, s, and t. The edges are p t, q s, and s t. Graph N 2 has five vertices: p, q, r, s, and t. The edges are p r, q r, r s, r t, and s t. Graph N 3 has five vertices: p, q, r, s, and t. The edges are p q, q r, r s, and qt. Graph N 4 has five vertices: p, q, r, s, and t. The edges are p q, r s, and s t.\">\n</figure>",
+ "questions": [
+  {
+   "id": 543344,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Since <i>sq</i> is not an edge in Graph <i>H</i>, Graph <i>N</i><sub>1</sub> cannot be a spanning tree of <i>H</i>.",
+   "answers": [
+    {
+     "id": 1068667,
+     "content_html": "True",
+     "correctness": "1.0"
+    },
+    {
+     "id": 1068668,
+     "content_html": "False",
+     "correctness": "0.0"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "true-false"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "To be a spanning tree of another graph, N<sub>1</sub> must be a subgraph of the Graph H. It cannot be a subgraph if the edge <i>sq</i> is not in Graph H."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "True"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543345,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>N</i><sub>2</sub> is a spanning tree of Graph <i>H</i>.",
+   "answers": [
+    {
+     "id": 1068669,
+     "content_html": "True",
+     "correctness": "0.0"
+    },
+    {
+     "id": 1068670,
+     "content_html": "False",
+     "correctness": "1.0"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "true-false"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A spanning tree cannot contain a cycle. This graph contains a triangular cycle (<i>r, s, t</i>)."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "False"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543346,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph <i>N</i><sub>3</sub> is a spanning tree of Graph <i>H</i>.",
+   "answers": [
+    {
+     "id": 1068671,
+     "content_html": "True",
+     "correctness": "1.0"
+    },
+    {
+     "id": 1068672,
+     "content_html": "False",
+     "correctness": "0.0"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "true-false"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "All the vertices are included, the graph is connected, and there are no cycles. Also, no vertices are adjacent that were not adjacent in Graph H."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "True"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 543347,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Since there is no path between <i>p</i> and <i>t</i> in Graph <i>N</i><sub>4</sub>, it cannot be a spanning tree of any graph.",
+   "answers": [
+    {
+     "id": 1068673,
+     "content_html": "True",
+     "correctness": "1.0"
+    },
+    {
+     "id": 1068674,
+     "content_html": "False",
+     "correctness": "0.0"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "true-false"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "This graph is not connected. A spanning tree is a connected graph."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "True"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

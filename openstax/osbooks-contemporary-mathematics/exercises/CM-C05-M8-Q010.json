@@ -1,0 +1,410 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-01T15:02:21.523Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3NOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--761a82f0efc0890709eb82d82b76646e9b05e850",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3NOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--761a82f0efc0890709eb82d82b76646e9b05e850/CS_Figure_05_08_028.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:05-08-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:240fa88f-7202-49a8-b741-8c80ee7fa5ff",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-8-graphing-functions"
+ ],
+ "uuid": "7da6bbdf-048b-4d90-ad82-fb56a3558684",
+ "group_uuid": "944643f7-cead-4277-aff5-03559cc922cd",
+ "number": 34565,
+ "version": 7,
+ "uid": "34565@7",
+ "published_at": "2024-11-01T15:02:25.255Z",
+ "nickname": "CM-C05-M8-Q010",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "The equation <span data-math=\"h = 2s + 50\">h = 2s + 50</span> is used to estimate a person’s height in inches, <span data-math=\"h\">h</span>, based on women’s shoe size, <span data-math=\"s\">s</span>.",
+ "questions": [
+  {
+   "id": 511328,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Estimate the height of a child who wears women’s shoe size 0.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p><span data-math=\"h = 2s + 50\"></span></p>\n<p><span data-math=\"h = 2\\left( 0 \\right) + 50 = 0 + 50 = 50\"></span></p>\n<p>The estimated height is 50 inches.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "50 inches"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511329,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Estimate the height of a woman with shoe size 8.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p><span data-math=\"h = 2s + 50\"></span></p>\n<p><span data-math=\"h = 2\\left( 8 \\right) + 50 = 16 + 50 = 66\"></span></p>\n<p>The estimated height is 66 inches.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "66 inches"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511330,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Interpret the slope and <span data-math=\"h\">h</span>-intercept of the equation.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "For every increase in shoe size, the estimated height increases by two inches. The intercept says that for a shoe size of 0, the estimated height is 50 inches."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The slope, 2, means that the height <span data-math=\"h\">h</span> increases 2 inches when the shoe size(s) increases 1 size."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511331,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph the equation.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Plot the point (0, 50). Use the slope <span data-math=\"\\left( {m = 2 = \\frac{{rise}}{{run}} = \\frac{2}{1}} \\right)\"></span> to find another point. From (0, 50), count up 2 and right 1 to determine another point. Plot this point. Connect the two points with a line."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The <span data-math=\"h\">h</span>-intercept means that when the shoe size is 0, the woman’s height is 50 inches.\n<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3NOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--761a82f0efc0890709eb82d82b76646e9b05e850/CS_Figure_05_08_028.png\" alt=\"A line is plotted on an x y coordinate plane. The x and y axes range from negative 20 to 140, in increments of 20. The line passes through the points, (negative 30, 0), (0, 50), and (40, 130). Note: all values are approximate.\">"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

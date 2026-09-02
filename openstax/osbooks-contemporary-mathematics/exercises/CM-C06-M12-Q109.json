@@ -1,0 +1,463 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-14T06:29:42.380Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb29QIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a08ae8ac7195cae1fd03f3250808367d20660ed9",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb29QIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a08ae8ac7195cae1fd03f3250808367d20660ed9/CS_Photo_06_12_003.png"
+  },
+  {
+   "created_at": "2024-11-14T06:29:42.383Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzhQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f9b3a5558050cf419d33a5766a7d817e1916f469",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzhQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f9b3a5558050cf419d33a5766a7d817e1916f469/CS_Photo_06_12_003.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:06-12-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:7f83214f-7877-47cf-8c7d-b65748161871",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:6-12-renting-and-homeownership"
+ ],
+ "uuid": "f2326c2b-374e-4c27-8a9f-068e5a904b04",
+ "group_uuid": "a42ba4c2-5259-48b0-9a46-b03503132479",
+ "number": 35341,
+ "version": 5,
+ "uid": "35341@5",
+ "published_at": "2024-11-14T06:29:45.794Z",
+ "nickname": "CM-C06-M12-Q109",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Below is a portion of an amortization table for a 30-year, $228,320 mortgage. Use that table to answer the following questions.\n<figure>\n<figcaption>Amortization table</figcaption>\n<img src=\"exercises/media/ba7d92ac2068a5d0.png\" alt=\"A spreadsheet labeled as amortization schedule calculator. The sheet calculates the repayment for the loan amount of $228,320.00 for an interest rate of 6.10 percent annually and the monthly payment is $1383.61 over 30 years. The factors include calculations such as month, payment, principal, interest, total, and interest and balance.\">\n</figure>",
+ "questions": [
+  {
+   "id": 519580,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What is the interest rate?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Look at the second row of the table to find the label “Interest Rate (annual).” Beside it, you will see the interest rate is 6.10%."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "6.1%"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 519581,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How much are the payments?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Look at the fifth row of the table to find the label “Monthly Payment.” To the right, you will see the monthly payment is $1,383.61."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$1,383.61"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 519582,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How much of payment 235 goes to principal?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Look at the seventh row. The first column has the label “Month” and the third column has the label “Principal.” Go down to the row that shows Month 235. You will see that the third column in that row shows you the principal for that month is $730.38."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$730.38"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 519583,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How much of payment 215 goes to interest?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Look at the seventh row. The first column has the label “Month” and the fourth column has the label “Interest.” Go down to the row that shows Month 215. You will see that the fourth column in that row shows you the interest for that month is $723.66."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$723.66"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 519584,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What’s the remaining balance on the mortgage after payment 227?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Look at the seventh row. The first column has the label “Month” and the last column has the label “Balance.” Go down to the row that shows Month 227. You will see that the last column in that row shows you the remaining balance for that month is $133,513.05."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$133,513.05"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 519585,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what payment does the amount that is applied to mortgage finally exceed the amount applied to interest?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Look at the seventh row. The first column has the label “Month,” the third column has the label “Principal,” and the fourth column has the label “Interest.” Go down the table and look for the first row where the principal is greater than the interest. That happens in the row for Month 225."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Payment 225"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

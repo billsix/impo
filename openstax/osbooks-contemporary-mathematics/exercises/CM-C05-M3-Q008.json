@@ -1,0 +1,413 @@
+{
+ "images": [
+  {
+   "created_at": "2024-10-25T12:18:20.428Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBam9KIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--02fb329c567df1f146ac832e1927d285210ce32e",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBam9KIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--02fb329c567df1f146ac832e1927d285210ce32e/CS_Figure_05_03_015.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:05-03-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:cec27184-c942-4a70-afef-303e2603cca4",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-3-linear-inequalities-in-one-variable-with-applications"
+ ],
+ "uuid": "246b1d71-c85e-42f0-bf7f-f9d5d59c72aa",
+ "group_uuid": "a622dc2c-07bc-4517-9ce7-5d98a1f61268",
+ "number": 30496,
+ "version": 10,
+ "uid": "30496@10",
+ "published_at": "2024-10-25T12:21:26.116Z",
+ "nickname": "CM-C05-M3-Q008",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, choose the correct interval notation for the graph.",
+ "questions": [
+  {
+   "id": 508116,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<img src=\"exercises/media/f48b1e017fabf359.jpg\" alt=\"A number line ranges from negative 1 to 2, in increments of 1. A close parenthesis is marked at 1. The region to the left of the parenthesis is shaded on the number line.\">\n<br>\n<ol type=\"a\">\n<li><span data-math=\"[ - 1,\\infty )\">[ - 1,\\infty )</span></li>\n<li><span data-math=\"{ ( - 1,1)}\">{ ( - 1,1)}</span></li>\n<li><span data-math=\"{ (\\infty ,1)}\">{ (\\infty ,1)}</span></li>\n<li><span data-math=\"{ ( - \\infty ,1)}\">{ ( - \\infty ,1)}</span></li>\n<li><span data-math=\"{ ( - \\infty , - 1)}\">{ ( - \\infty , - 1)}</span></li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The parenthesis indicates that 1 is not included in the solution. The region shaded is to the left of 1, so that means the solution includes numbers less than 1. In interval notation, this looks like <span data-math=\"\\left( { - \\infty , - 1} \\right)\">\\left( { - \\infty , 1} \\right)</span>.</p>\n<p>Notice that the interval notation version is in the same order as the graph. Negative infinity is on the left and 1 is on the right.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "d <span data-math=\"\\left( { - \\infty , - 1} \\right)\">\\left( { - \\infty , - 1} \\right)</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 508117,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<img src=\"exercises/media/edae236948b0c6ce.jpg\" alt=\"A number line ranges from negative 6 to negative 3, in increments of 1. An open square bracket is marked at negative 5. The region to the right of the square bracket is shaded on the number line.\">\n<br>\n<ol type=\"a\">\n<li><span data-math=\"( - 5,\\infty )\">( - 5,\\infty )</span></li>\n<li><span data-math=\"{ [ - 5,\\infty )}\">{ [ - 5,\\infty )}</span></li>\n<li><span data-math=\"{ [ - 5,\\infty )}\">{ [ - 5,\\infty )}</span></li>\n<li><span data-math=\"{ [ - 5, - 3)}\">{ [ - 5, - 3)}</span></li>\n<li><span data-math=\"{ [ - 5, - 3]}\">{ [ - 5, - 3]}</span></li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The bracket indicates that 5 is included in the solution. The region shaded is to right of 5, so that means the solution includes numbers greater than 5. In interval notation, this looks like <span data-math=\"[5,\\infty )\"></span>.</p>\n<p>Notice that the interval notation version is in the same order as the graph. The number 5 is on the left and positive infinity is on the right.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "b <span data-math=\"[ - 5,\\infty )\">[ - 5,\\infty )</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 508118,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<img src=\"exercises/media/b0d03c9143e5405f.jpg\" alt=\"A number line ranges from 0 to 3, in increments of 1. An open square bracket is marked at 1.5. The region to the right of the square bracket is shaded on the number line.\">\n<br>\n<ol type=\"a\">\n<li><span data-math=\"(1,\\infty )\">(1,\\infty )</span></li>\n<li><span data-math=\"{ [1,\\infty )}\">{ [1,\\infty )}</span></li>\n<li><span data-math=\"{ \\left[ {\\frac{3}{2},\\infty } \\right)}\">{ \\left[ {\\frac{3}{2},\\infty } \\right)}</span></li>\n<li><span data-math=\"{ \\left( {\\frac{3}{2},\\infty } \\right)}\">{ \\left( {\\frac{3}{2},\\infty } \\right)}</span></li>\n<li><span data-math=\"{ \\left( {\\infty ,\\frac{3}{2}} \\right)}\">{ \\left( {\\infty ,\\frac{3}{2}} \\right)}</span></li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The bracket indicates that <span data-math=\"\\frac{3}{2}\"></span> is included in the solution. The region shaded is to right of <span data-math=\"\\frac{3}{2}\"></span>, so that means the solution includes numbers greater than <span data-math=\"\\frac{3}{2}\"></span>. In interval notation, this looks like <span data-math=\"\\left[ {\\frac{3}{2},\\infty } \\right)\"></span>.</p>\n<p>Notice that the interval notation version is in the same order as the graph. The number <span data-math=\"\\frac{3}{2}\"></span> is on the left and positive infinity is on the right.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "c <span data-math=\"\\left[ {\\frac{3}{2},\\infty } \\right)\">\\left[ {\\frac{3}{2},\\infty } \\right)</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 508119,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<img src=\"exercises/media/1e713545b647dfa3.jpg\" alt=\"A number line ranges from negative 5 to 4, in increments of 1. An open parenthesis is marked at negative 4 and a close parenthesis is marked at 3. The region within the parentheses is shaded on the number line.\">\n<br>\n<ol type=\"a\">\n<li><span data-math=\"{( - 4,3)}\">{( - 4,3)}</span></li>\n<li><span data-math=\"{ (3, - 4)}\">{ (3, - 4)}</span></li>\n<li><span data-math=\"{[ - \\infty ,\\infty )}\">{[ - \\infty ,\\infty )}</span></li>\n<li><span data-math=\"{ [ - 4,3]}\">{ [ - 4,3]}</span></li>\n<li><span data-math=\"{ [3, - 4]}\">{ [3, - 4]}</span></li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The solution is shaded between parentheses at –4 and 3. This corresponds in interval notation to those numbers between parentheses with a comma in between.</p>\n<p><span data-math=\"\\left( { - 4,3} \\right)\"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "a <span data-math=\"( - 4,3)\">( - 4,3)</span>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

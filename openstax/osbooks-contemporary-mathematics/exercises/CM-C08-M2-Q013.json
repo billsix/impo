@@ -1,0 +1,377 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-27T05:45:03.102Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVlHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2b84568ce7d75df001c9caa634736099454337c6",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVlHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2b84568ce7d75df001c9caa634736099454337c6/CS_Figure_08_02_036.jpg"
+  },
+  {
+   "created_at": "2024-11-27T05:45:03.106Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWNHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2b3f36a1f6b30fdd5eb0d8cfda06fb9b2e684db3",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWNHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2b3f36a1f6b30fdd5eb0d8cfda06fb9b2e684db3/CS_Figure_08_02_037a.jpg"
+  },
+  {
+   "created_at": "2024-11-27T05:45:03.112Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWdHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cd7c4f52fd6ec57d2772cd163e4055ea71c9a72a",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWdHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cd7c4f52fd6ec57d2772cd163e4055ea71c9a72a/CS_Figure_08_02_037b.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:08-02-02",
+  "context-cnxmod:7baffe9f-fb35-422f-bac7-89e4353e21ed",
+  "all",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-2-visualizing-data"
+ ],
+ "uuid": "bb369171-a4d9-4802-8842-30dd3bdae289",
+ "group_uuid": "6c0853a7-d4b7-47a1-8a41-fb71f9949b5e",
+ "number": 28962,
+ "version": 23,
+ "uid": "28962@23",
+ "published_at": "2024-11-27T05:45:06.667Z",
+ "nickname": "CM-C08-M2-Q013",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "The following are data on the admission rates of the different branch campuses in the University of California system, along with the out-of-state tuition and fee cost:\n<table class=\"unnumbered\">\n<caption>(source: https://data.ed.gov)</caption>\n<thead>\n<tr><th>Campus</th>\n<th>Admission Rate</th>\n<th>Cost ($)</th></tr>\n</thead>\n<tbody>\n<tr><td>Berkeley</td>\n<td>0.1484</td>\n<td>43,176</td></tr>\n<tr><td>Davis</td>\n<td>0.4107</td>\n<td>43,394</td></tr>\n<tr><td>Irvine</td>\n<td>0.2876</td>\n<td>42,692</td></tr>\n<tr><td>Los Angeles</td>\n<td>0.1404</td>\n<td>42,218</td></tr>\n<tr><td>Merced</td>\n<td>0.6617</td>\n<td>42,530</td></tr>\n<tr><td>Riverside</td>\n<td>0.5057</td>\n<td>42,819</td></tr>\n<tr><td>San Diego</td>\n<td>0.3006</td>\n<td>43,159</td></tr>\n<tr><td>Santa Barbara</td>\n<td>0.322</td>\n<td>43,383</td></tr>\n<tr><td>Santa Cruz</td>\n<td>0.4737</td>\n<td>42,952</td>\n</tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 528646,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Create a bar graph that illustrates the differences in admission rates among the different campuses.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>For this visualization, the campuses are the labels, and the admission rates determine the heights of the bars. Enter the information into a Google Sheet spreadsheet, including the headers “Campus” and “Admission Rate.” Then in the “Insert” menu, choose “Chart.” If the result is not already “Column chart,” then change to “Column chart.”</p>\n<p>Change over to the “Customize” menu. Use the “Chart and axis titles” option to make the following changes if they are not already the defaults:</p>\n<p>Chart title: “Admission Rate at Different Campuses in the University of California System”</p>\n<p>Horizontal axis: “Campus”</p>\n<p>Vertical axis: “Admission Rate”</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<figure class=\"unnumbered\">\n<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVlHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2b84568ce7d75df001c9caa634736099454337c6/CS_Figure_08_02_036.jpg\" alt=\"A bar graph titled, admission rate at different campuses in the University of California System. The horizontal axis represents campus. The vertical axis representing the admission rate ranges from 0 to 0.7, in increments of 0.1. The bar graph infers the following data. Berkeley: 0.14. Davis: 0.41. Irvine: 0.28. Los Angeles: 0.14. Merced: 0.66. Riverside: 0.5. San: Diego: 0.3. Santa Barbara: 0.32. Santa Cruz: 0.48. Note: all values are approximate.\">\n<figcaption>(data source:https://data.ed.gov/)</figcaption>\n</figure>\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 528647,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Create two bar graphs for the out-of-state tuition. One should give an unbiased perception of the differences among them, and the other should overemphasize those differences.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<figure class=\"unnumbered\">\n<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWNHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2b3f36a1f6b30fdd5eb0d8cfda06fb9b2e684db3/CS_Figure_08_02_037a.jpg\" alt=\"A bar graph titled, out-of-state costs at University of California campuses, unbiased. The horizontal axis represents campus. The vertical axis represents cost ranges from 0 to 45000, in increments of 5000. The bar graph infers the following data. Berkeley: 43,176. Davis: 43,394. Irvine: 42,692. Los Angeles: 42,218. Merced: 42,530. Riverside: 42,819. San Diego: 43,159. Santa Barbara: 43,383. Santa Cruz: 42,952. Note: all values are approximate.\">\n<figcaption>(data source: https://data.ed.gov/)</figcaption>\n</figure>\n\n<figure class=\"unnumbered\">\n<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWdHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cd7c4f52fd6ec57d2772cd163e4055ea71c9a72a/CS_Figure_08_02_037b.jpg\" alt=\"A bar graph titled, out-of-state costs at University of California campuses, biased. The horizontal axis represents campus. The vertical axis represents cost ranges from 41600 to 43600, in increments of 200. The bar graph infers the following data. Berkeley: 43,176. Davis: 43,394. Irvine: 42,692. Los Angeles: 42,218. Merced: 42,530. Riverside: 42,819. San Diego: 43,159. Santa Barbara: 43,383. Santa Cruz: 42,952. Note: all values are approximate.\"><p></p><figcaption>(data source: https://data.ed.gov/)</figcaption>\n</figure>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  23,
+  22,
+  21,
+  20,
+  19,
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

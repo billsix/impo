@@ -1,0 +1,502 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:05-09-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:2c1d72ab-4f5d-4a61-8075-f4aa39ecb8cd",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-9-systems-of-linear-equations-in-two-variables"
+ ],
+ "uuid": "471ef457-2ef7-40d3-9b83-7fc0430e70b3",
+ "group_uuid": "134b6c46-0d25-4530-9be4-14b5b0fd6989",
+ "number": 30814,
+ "version": 5,
+ "uid": "30814@5",
+ "published_at": "2024-11-02T06:23:22.514Z",
+ "nickname": "CM-C05-M9-Q004",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Decide whether it would be more convenient to solve the system of equations by substitution or elimination.",
+ "questions": [
+  {
+   "id": 511471,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{*{20}{rcl}}\n  {8x - 15y}&amp;{ = }&amp;{ - 32} \\\\ \n  {6x + 3y}&amp;{ = }&amp;{ - 5} \n\\end{array}\\right.\">\\{ \\begin{array}{*{20}{rcl}}\n  {8x - 15y}&amp;{ = }&amp;{ - 32} \\\\ \n  {6x + 3y}&amp;{ = }&amp;{ - 5} \n\\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Elimination is best because you can multiply the second equation by 5 to eliminate the <i>y</i> variable."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Elimination"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511472,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{*{20}{rcl}}\n  {x}&amp;{ = }&amp;{4y - 3} \\\\ \n  {4x - 2y}&amp;{ = }&amp;{ - 6} \n\\end{array}\\right.\">\\{ \\begin{array}{*{20}{rcl}}\n  {x}&amp;{ = }&amp;{4y - 3} \\\\ \n  {4x - 2y}&amp;{ = }&amp;{ - 6} \n\\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Substitution is a good choice because the first equation is already solved for <i>x.</i>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Substitution"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511473,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{*{20}{rcl}}\n  {y}&amp;{ = }&amp;{7x - 5} \\\\ \n  {3x - 2y}&amp;{ = }&amp;{16} \n\\end{array}\\right.\">\\{ \\begin{array}{*{20}{rcl}}\n  {y}&amp;{ = }&amp;{7x - 5} \\\\ \n  {3x - 2y}&amp;{ = }&amp;{16} \n\\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Substitution is a good choice because the first equation is already solved for <i>y.</i>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Substitution"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511474,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{*{20}{rcl}}\n  {12x - 5y}&amp;{ = }&amp;{ - 42} \\\\ \n  {3x + 7y}&amp;{ = }&amp;{ - 15} \n\\end{array}\\right.\">\\{ \\begin{array}{*{20}{rcl}}\n  {12x - 5y}&amp;{ = }&amp;{ - 42} \\\\ \n  {3x + 7y}&amp;{ = }&amp;{ - 15} \n\\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Elimination is best because you can multiply the second equation by –4 to eliminate the <i>x</i> variable."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Elimination"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511475,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{*{20}{rcl}}\n  {y}&amp;{ = }&amp;{4x + 9} \\\\ \n  {5x - 2y}&amp;{ = }&amp;{ - 21} \n\\end{array}\\right.\">\\{ \\begin{array}{*{20}{rcl}}\n  {y}&amp;{ = }&amp;{4x + 9} \\\\ \n  {5x - 2y}&amp;{ = }&amp;{ - 21} \n\\end{array}.</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Substitution is a good choice because the first equation is already solved for <i>y.</i>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Substitution"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511476,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{*{20}{rcl}}\n  {9x - 4y}&amp;{ = }&amp;{24} \\\\ \n  {3x + 5y}&amp;{ = }&amp;{14} \n\\end{array}\\right.\">\\{ \\begin{array}{*{20}{rcl}}\n  {9x - 4y}&amp;{ = }&amp;{24} \\\\ \n  {3x + 5y}&amp;{ = }&amp;{14} \n\\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Elimination is best because you can multiply the second equation by –3 to eliminate the <i>x</i> variable."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Elimination"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511477,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{*{20}{rcl}}\n  {14x - 15y}&amp;{ = }&amp;{ - 30} \\\\ \n  {7x + 2y}&amp;{ = }&amp;{10} \n\\end{array}\\right.\">\\{ \\begin{array}{*{20}{rcl}}\n  {14x - 15y}&amp;{ = }&amp;{ - 30} \\\\ \n  {7x + 2y}&amp;{ = }&amp;{10} \n\\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Elimination is best because you can multiply the second equation by –2 to eliminate the <i>x</i> variable."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Elimination"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 511478,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{*{20}{rcl}}\n  {x}&amp;{ = }&amp;{9y - 11} \\\\ \n  {2x - 7y}&amp;{ = }&amp;{ - 27} \n\\end{array}\\right.\">{ \\begin{array}{*{20}{rcl}}\n  {x}&amp;{ = }&amp;{9y - 11} \\\\ \n  {2x - 7y}&amp;{ = }&amp;{ - 27} \n\\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Substitution is a good choice because the first equation is already solved for <i>x.</i>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Substitution"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

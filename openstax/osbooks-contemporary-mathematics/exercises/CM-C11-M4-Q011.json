@@ -1,0 +1,384 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-04-07",
+  "context-cnxmod:c6ba4735-5472-4e8a-bcce-f8bcb5349637",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-4-apportionment-methods"
+ ],
+ "uuid": "70857a49-ced4-4b28-b522-ec1c75502a17",
+ "group_uuid": "8038b109-d89a-4604-8526-baafef38cd6f",
+ "number": 29459,
+ "version": 13,
+ "uid": "29459@13",
+ "published_at": "2024-12-23T06:28:41.953Z",
+ "nickname": "CM-C11-M4-Q011",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>The following table displays the effect of increasing the size of the divisor. Observe the effect this has on the modified quotas of smaller states versus larger states and use the table  to answer each question.</p>\n<table class=\"unnumbered\" summary=\".\">\n<thead>\n<tr>\n<th></th>\n<th></th>\n<th colspan=\"3\">Modified Quotas</th>\n</tr>\n<tr>\n<th>State</th>\n<th>Population</th>\n<th>Divisor: 11,500</th>\n<th>Divisor: 12,000</th>\n<th>Divisor: 12,500</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td>10,000</td>\n<td>0.87</td>\n<td>0.83</td>\n<td>0.8</td>\n</tr>\n<tr>\n<td>B</td>\n<td>100,000</td>\n<td>8.7</td>\n<td>8.33</td>\n<td>8</td>\n</tr>\n<tr>\n<td>C</td>\n<td>1,000,000</td>\n<td>86.96</td>\n<td>83.33</td>\n<td>80</td>\n</tr>\n</tbody>\n</table>",
+ "questions": [
+  {
+   "id": 545233,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "When the divisor increases from 11,500 to 12,000, how many representatives are lost by each state based on the upper quota?\n\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>&nbsp;</th>\n<th>Modified Quota<br>(Divisor: 11,500)</th>\n<th>Upper Quota</th>\n<th>Modified Quota<br>(Divisor: 12,000)</th>\n<th>Upper Quota</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td>0.87</td>\n<td>1</td>\n<td>0.83</td>\n<td>1</td>\n</tr>\n<tr>\n<td>B</td>\n<td>8.7</td>\n<td>9</td>\n<td>8.33</td>\n<td>9</td>\n</tr>\n<tr>\n<td>C</td>\n<td>86.96</td>\n<td>87</td>\n<td>83.33</td>\n<td>84</td>\n</tr>\n</tbody>\n</table>\n<p>States A and B had no change.</p>\n<p>State C lost 3.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "State A loses 0, seats State B loses 0, and State C loses 3."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545234,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "When the divisor increases from 12,000 to 12,500, how many representatives are lost by each state based on the upper quota?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "State A loses 0 seats, State B loses 1, and State C loses 4."
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>&nbsp;</th>\n<th>Modified Quota<br>(Divisor: 12,000)</th>\n<th>Upper Quota</th>\n<th>Modified Quota<br>(Divisor: 12,500)</th>\n<th>Upper Quota</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td>0.83</td>\n<td>1</td>\n<td>0.8</td>\n<td>1</td>\n</tr>\n<tr>\n<td>B</td>\n<td>8.33</td>\n<td>9</td>\n<td>8</td>\n<td>8</td>\n</tr>\n<tr>\n<td>C</td>\n<td>83.33</td>\n<td>84</td>\n<td>80</td>\n<td>80</td>\n</tr>\n</tbody>\n</table>\n<p>State A lost nothing.</p>\n<p>State B lost 1.</p>\n<p>State C lost 4.</p>\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 545235,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Which state loses the most representatives each time the divisor is increased?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "State C, the largest state, loses the most representatives each time the divisor is increased.\n"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>&nbsp;</th>\n<th>Modified Quota<br>(Divisor: 11,500)</th>\n<th>Upper Quota</th>\n<th>Modified Quota<br>(Divisor: 12,000)</th>\n<th>Upper Quota</th>\n<th>Modified Quota<br>(Divisor: 12,500)</th>\n<th>Upper Quota</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td>0.87</td>\n<td>1</td>\n<td>0.83</td>\n<td>1</td>\n<td>0.8</td>\n<td>1</td>\n</tr>\n<tr>\n<td>B</td>\n<td>8.7</td>\n<td>9</td>\n<td>8.33</td>\n<td>9</td>\n<td>8</td>\n<td>8</td>\n</tr>\n<tr>\n<td>C</td>\n<td>86.96</td>\n<td>87</td>\n<td>83.33</td>\n<td>84</td>\n<td>80</td>\n<td>80</td>\n</tr>\n</tbody>\n</table>\n<p>The switch from 11,500 to 12,000:</p>\n<p>States A and B had no change.</p>\n<p>State C lost 3.</p>\n<p>The switch from 12,000 to 12,500:</p>\n<p>State A lost nothing.</p>\n<p>State B lost 1.</p>\n<p>State C lost 4.</p>\n<p>Overall, state C had the greatest losses each time the divisor was increased.</p>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

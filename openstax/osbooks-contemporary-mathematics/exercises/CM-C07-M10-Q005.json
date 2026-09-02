@@ -1,0 +1,376 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:07-10-02",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:685f0750-5d11-4693-8bbf-97284946ff6d",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:7-10-the-binomial-distribution"
+ ],
+ "uuid": "a7b0d9ea-e2ce-410f-b50b-d0b1bc18e15d",
+ "group_uuid": "0d153f93-a829-4d8e-9279-59a4b2115fea",
+ "number": 31584,
+ "version": 5,
+ "uid": "31584@5",
+ "published_at": "2024-11-12T02:11:26.782Z",
+ "nickname": "CM-C07-M10-Q005",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Suppose you’re rolling the same colored 6-sided die 10 times. Let <span data-math=\"O\">O</span>, <span data-math=\"G\">G</span>, and <span data-math=\"B\">B</span> represent the number of times the die lands with an orange, green, and blue side up, respectively. Find these probabilities (round to 4 decimal places):",
+ "questions": [
+  {
+   "id": 516913,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"P(O \\leq 7)\">P(O \\leq 7)</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The 6-sided die has 3 orange faces, 2 green faces, and 1 blue face.</p>\n<p>There are 3 orange faces out of 6 sides, so p is <span data-math=\"\\frac{3}{6} = \\frac{1}{2}\"></span>.</p>\n<p><span data-math=\"{\\text{P}}\\left( {{\\text{O }} \\leq {\\text{ }}7} \\right)\"></span> in 10 tries.</p>\n<p>Google Sheets can be used to compute cumulative binomial distributions. The event is sides less than or equal to 5.</p>\n<p>In Google Sheets, enter “=BINOMDIST(7, 10, 0.5, TRUE)” to get your answer: 0.9453.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "0.9453"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 516914,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"P(G = 5)\">P(G = 5)</span>\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The 6-sided die has 3 orange faces, 2 green faces, and 1 blue face.</p>\n<p>Binomial formula: For a binomial experiment with n trials and p probability of success in each trial, then P(number of a successes) = <span data-math=\"nCa \\times {p^a} \\times {\\left( {1 - p} \\right)^{n - a}}\"></span>.</p>\n<p>There are 2 green faces out of 6 sides, so p is <span data-math=\"\\frac{2}{6} = \\frac{1}{3}\"></span>.</p>\n<p>P(exactly 5 greens in10 rolls) =<span data-math=\"\\left( {10C5} \\right){\\left( {\\frac{1}{3}} \\right)^5}{\\left( {1 - \\frac{1}{3}} \\right)^{10 - 5}}\"></span>.</p>\n<p><span data-math=\"\\left( {252} \\right){\\left( {\\frac{1}{3}} \\right)^5}{\\left( {\\frac{2}{3}} \\right)^5} \\approx 0.1366\"></span></p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "0.1366"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 516915,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"P(1 \\leq B \\leq 4)\">P(1 \\leq B \\leq 4)</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p><span data-math=\"1{\\text{ }} \\leq {\\text{ B }} \\leq {\\text{ }}4\"></span></p>\n<p>You are looking for the outcome {1, 2, 3, 4}.</p>\n<p>To do this, you will find <span data-math=\"{\\text{B }} \\leq {\\text{ }}4\"></span> and subtract <span data-math=\"{\\text{B }} \\leq {\\text{ }}0\"></span>.</p>\n<p>The 6-sided die has 3 orange faces, 2 green faces, and 1 blue face.</p>\n<p>The probability of a blue side is 1/6.</p>\n<p>In Google Sheets, enter “=BINOMDIST(4,10, 0.1666666, TRUE)” to get the answer 0.98454.</p>\n<p>In Google Sheets, enter “=BINOMDIST(0,10, 0.1666666, TRUE)” to get the answer 0.16151.</p>\n<p>Subtracting the two, you get 0.8230.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "0.8230"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

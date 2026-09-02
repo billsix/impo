@@ -1,0 +1,399 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-12T05:05:21.610Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGtPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e4ec4c7ef1b2245d410477464a27a49b87976718",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGtPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e4ec4c7ef1b2245d410477464a27a49b87976718/American_roulette_table_layout.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:07-10-02",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:685f0750-5d11-4693-8bbf-97284946ff6d",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:7-10-the-binomial-distribution"
+ ],
+ "uuid": "1661efc5-79a3-4a4c-b86e-c71e9f0024c8",
+ "group_uuid": "9111d1a3-b7bf-4b52-8acf-5f2e52cb026f",
+ "number": 31605,
+ "version": 13,
+ "uid": "31605@13",
+ "published_at": "2024-11-12T05:05:25.559Z",
+ "nickname": "CM-C07-M10-Q011",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "The following exercises are about the casino game roulette. In this game, the dealer spins a marble around a wheel that contains 38 pockets that the marble can fall into. Each pocket has a number (each whole number from 0 to 36, along with a “double zero”) and a color (0 and 00 are both green; the other 36 numbers are evenly divided between black and red). Players make bets on which number (or groups of numbers) they think the marble will land on. The figure shows the layout of the numbers and colors, as well as some of the bets that can be made.\n<figure class=\"unnumbered\">\n<figcaption>Roulette Table (credit: \"American Roulette Table Layout\" by Film8ker/Wikimedia\nCommons, Public Domain)</figcaption>\n<img src=\"exercises/media/b72349fddc4dfce5.jpg\" alt=\"A Roulette table. The table has 12 rows and 3 columns. The first four rows represent the first dozen. The fifth to eighth rows represent the second dozen. The last four rows represent the third dozen. The columns represent 2 to 1, 2 to 1, and 2 to 1. Two green pockets, 0 and 00 are at the top-right. Six green pockets on the left represent 1 to 18, even, red, black, odd, and 19 to 36. The data from the table row-wise are as follows: 1 (red), 2 (black), 3 (red); 4 (black), 5 (red), 6 (black); 7 (red), 8 (black), 9 (red); 10 (black), 11 (black), 12 (red); 13 (black), 14 (red), 15 (black); 16 (red), 17 (black), 18 (red); 19 (red), 20 (black), 21 (red); 22 (black), 23 (red), 24 (black); 25 (red), 26 (black), 27 (red); 28 (black), 29 (black), 30 (red); 31 (black), 32 (red), 33 (black); 34 (red), 35 (black), and (36 (red).\">\n</figure>",
+ "questions": [
+  {
+   "id": 517242,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If a player bets $1 on red and wins, the player gets $2 back (the original $1 bet plus $1 winnings). What is the probability that the player wins more than they lose if the player bets on red on 5 consecutive spins?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517243,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What is the probability that the player wins more than they lose if the player bets on red on 15 consecutive spins?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517244,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What is the probability that the player wins more than they lose if the player bets on red on 30 consecutive spins?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517245,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What is the probability that the player wins more than they lose if the player bets on red on 100 consecutive spins?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517246,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What is the probability that the player wins more than they lose if the player bets on red on 200 consecutive spins?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517247,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What is the probability that the player wins more than they lose if the player bets on red on 1,000 consecutive spins?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517248,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What is the probability that the player wins more than they lose if the player bets on red on 5,000 consecutive spins?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

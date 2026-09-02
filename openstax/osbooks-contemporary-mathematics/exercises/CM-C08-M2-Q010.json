@@ -1,0 +1,351 @@
+{
+ "images": [
+  {
+   "created_at": "2023-02-02T00:25:20.782Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDBHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2d26931b5866b7eb532c218577f834ffc44c7be3",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDBHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2d26931b5866b7eb532c218577f834ffc44c7be3/CS_Figure_08_02_029.jpg"
+  },
+  {
+   "created_at": "2023-02-02T00:25:20.784Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDRHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d70a0fa633dedfb1601da9e35c1fb9fb7988e821",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDRHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d70a0fa633dedfb1601da9e35c1fb9fb7988e821/CS_Figure_08_02_030.jpg"
+  },
+  {
+   "created_at": "2023-02-02T00:25:20.787Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDhHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c448230c7567a474a336a4313568dc48f3e00cc",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDhHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c448230c7567a474a336a4313568dc48f3e00cc/CS_Figure_08_02_029.jpg"
+  },
+  {
+   "created_at": "2023-02-02T00:25:20.792Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUVHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3f0018f54d78db96d34d8226230a26ecf5dce94d",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUVHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3f0018f54d78db96d34d8226230a26ecf5dce94d/CS_Figure_08_02_031.jpg"
+  },
+  {
+   "created_at": "2023-02-02T00:25:20.794Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUlHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9f2aed013cf96bedb312a37addb564fc7d2c438f",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUlHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9f2aed013cf96bedb312a37addb564fc7d2c438f/CS_Figure_08_02_032.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:08-02-03"
+ ],
+ "uuid": "4185930e-0000-4202-814b-29c698eb0520",
+ "group_uuid": "11ef1bd6-5bd9-4aff-9ad1-6559f72b4aee",
+ "number": 28959,
+ "version": 16,
+ "uid": "28959@16",
+ "published_at": "2023-02-02T00:25:23.563Z",
+ "nickname": "CM-C08-M2-Q010",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 327169,
+   "is_answer_order_important": false,
+   "stimulus_html": "Take a look again at the win totals for teams in Major League Baseball in 2019 :\n<table>\n<caption>(source: https://www.espn.com/mlb/standings/_/season/2019/view)</caption>\n<thead>\n<tr>\n<th>Team</th>\n<th>Wins</th>\n<th>Team</th>\n<th>Wins</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>HOU</td>\n<td>107</td>\n<td>PHI</td>\n<td>81</td>\n</tr>\n<tr>\n<td>LAD</td>\n<td>106</td>\n<td>TEX</td>\n<td>78</td>\n</tr>\n<tr>\n<td>NYY</td>\n<td>103</td>\n<td>SFG</td>\n<td>77</td>\n</tr>\n<tr>\n<td>MIN</td>\n<td>101</td>\n<td>CIN</td>\n<td>75</td>\n</tr>\n<tr>\n<td>ATL</td>\n<td>97</td>\n<td>CHW</td>\n<td>72</td>\n</tr>\n<tr>\n<td>OAK</td>\n<td>97</td>\n<td>LAA</td>\n<td>72</td>\n</tr>\n<tr>\n<td>TBR</td>\n<td>96</td>\n<td>COL</td>\n<td>71</td>\n</tr>\n<tr>\n<td>CLE</td>\n<td>93</td>\n<td>SDP</td>\n<td>70</td>\n</tr>\n<tr>\n<td>WSN</td>\n<td>93</td>\n<td>PIT</td>\n<td>69</td>\n</tr>\n<tr>\n<td>STL</td>\n<td>91</td>\n<td>SEA</td>\n<td>68</td>\n</tr>\n<tr>\n<td>MIL</td>\n<td>89</td>\n<td>TOR</td>\n<td>67</td>\n</tr>\n<tr>\n<td>NYM</td>\n<td>86</td>\n<td>KCR</td>\n<td>59</td>\n</tr>\n<tr>\n<td>ARI</td>\n<td>85</td>\n<td>MIA</td>\n<td>57</td>\n</tr>\n<tr>\n<td>BOS</td>\n<td>84</td>\n<td>BAL</td>\n<td>54</td>\n</tr>\n<tr>\n<td>CHC</td>\n<td>84</td>\n<td>DET</td>\n<td>47</td>\n</tr></tbody>\n</table>",
+   "stem_html": "Make one good and one misleading chart showing the number of wins by the top ten teams. Then, looking at all the teams, make one good and one misleading histogram for the win totals.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p>Top ten teams by wins:</p>\n<p><img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDBHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2d26931b5866b7eb532c218577f834ffc44c7be3/CS_Figure_08_02_029.jpg\" alt=\"A bar graph represents the top ten MLB teams by wins, 2019 (good). The horizontal axis represents the team. The vertical axis representing wins ranges from 0 to 120, in increments of 20. The bar graph infers the following data. HOU: 107; LAD: 106; NYY: 103; MIN: 101; ATL: 97; OAK: 97; TBR: 96; CLE: 93; WSN: 93; STL: 91. Note: all values are approximate. \"></p>\n<p><img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDRHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d70a0fa633dedfb1601da9e35c1fb9fb7988e821/CS_Figure_08_02_030.jpg\" alt=\"A bar graph represents the top ten MLB teams by wins, 2019 (bad). The horizontal axis represents the team. The vertical axis representing wins ranges from 90 to 108, in increments of 2. The bar graph infers the following data. HOU: 107; LAD: 106; NYY: 103; MIN: 101; ATL: 97; OAK: 97; TBR: 96; CLE: 93; WSN: 93; STL: 91. Note: all values are approximate.\"></p>\n<p><img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUVHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3f0018f54d78db96d34d8226230a26ecf5dce94d/CS_Figure_08_02_031.jpg\" alt=\" A histogram represents wins by MLB teams, 2019 season (good). The horizontal axis representing wins ranges from 40 to 110, in increments of 10. The vertical axis representing frequency ranges from 0 to 8, in increments of 2. The histogram infers the following data. 40 to 50: 1. 50 to 60: 3. 60 to 70: 3. 70 to 80: 7. 80 to 90: 6. 90 to 100: 6. 100 to 110: 4.\"></p>\n<p><img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUlHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9f2aed013cf96bedb312a37addb564fc7d2c438f/CS_Figure_08_02_032.jpg\" alt=\"A histogram represents wins by MLB teams, 2019 season (bad). The horizontal axis representing wins ranges from under 70 to 110, in increments of 10. The vertical axis representing frequency ranges from 0 to 8, in increments of 1. The histogram infers the following data. Under 70: 7. 70 to 80: 7. 80 to 90: 6. 90 to 100: 6. 100 to 110: 4.\"></p>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

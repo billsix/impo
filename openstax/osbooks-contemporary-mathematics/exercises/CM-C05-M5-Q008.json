@@ -1,0 +1,385 @@
+{
+ "images": [
+  {
+   "created_at": "2024-10-26T08:17:38.780Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVFNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7930e029fe93eead6770e5a4e21372682014b412",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVFNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7930e029fe93eead6770e5a4e21372682014b412/CS_Figure_05_05_026.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:05-05-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:abbe819c-e1f8-400b-a6a2-60d4dc093265",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-5-graphing-linear-equations-and-inequalities"
+ ],
+ "uuid": "fffbb2d6-77ce-4f77-b618-a72438610ee4",
+ "group_uuid": "ef352e1c-bbfe-4ae5-a6a4-9114a857965c",
+ "number": 30375,
+ "version": 7,
+ "uid": "30375@7",
+ "published_at": "2024-10-26T08:17:42.029Z",
+ "nickname": "CM-C05-M5-Q008",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Harrison works two part time jobs. One at a gas station that pays $11 an hour and the other is as an IT consultant for $16.50 an hour. Between the two jobs, Harrison wants to earn at least $330 a week. How many hours does Harrison need to work at each job to earn at least $330?",
+ "questions": [
+  {
+   "id": 508454,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Let <span data-math=\"x\">x</span> be the number of hours he works at the gas station and let <span data-math=\"y\">y</span> be the number of hours he works as an IT consultant. Write an inequality that would model this situation.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"11x + 16.5y \\geq 330\">11x + 16.5y \\geq 330</span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Break the words into components.</p>\n<p>Let <i>x</i> = the number of hours worked at the gas station.</p>\n<p>$11 = the amount paid per hour at the gas station.</p>\n<p>Let <i>y</i> = the number of hours worked as an IT consultant.</p>\n<p>$16.50 = the amount paid per hour as an IT consultant.</p>\n<p>$330 = the least amount needed to earn per week.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Gas station pay</td>\n<td>plus</td>\n<td>IT pay</td>\n<td>is at least</td>\n<td>330</td>\n</tr>\n<tr>\n<td>11<i>x</i></td>\n<td>+</td>\n<td>16.50<i>y</i></td>\n<td>≥</td>\n<td>330</td>\n</tr>\n</tbody>\n</table>\n<p>Write an inequality to model the situation:</p>\n<p><span data-math=\"11x + 16.50y \\ge 330\"></span></p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 508455,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Graph the inequality.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVFNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7930e029fe93eead6770e5a4e21372682014b412/CS_Figure_05_05_026.jpg\" alt=\"A line is plotted on an x y coordinate plane. The x-axis ranges from 0 to 35, in increments of 5. The y-axis ranges from 0 to 35, in increments of 5. The line passes through the following points, (0, 20), (15, 10), and (30, 0). The region above the line is shaded.\">"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Graph the inequality: <span data-math=\"11x + 16.50y \\ge 330\"></span>.</p>\n<p>Graph the line<span data-math=\"11x + 16.50y = 330\"></span> with a solid line since it is an “or equal to” type.</p>\n<p>Test <span data-math=\"(0, 0)\"></span> in <span data-math=\"11x + 16.50y \\ge 330\"></span>.</p>\n<p><span data-math=\"11\\left( 0 \\right) + 16.50\\left( 0 \\right) \\ge 330\"></span></p>\n<p><span data-math=\"0 \\ge 330\"></span> is false, so shade the other side of the boundary.</p>\n<p>The shading should not include <span data-math=\"(0, 0)\"></span>.</p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 508456,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find three ordered pairs (<span data-math=\"x\">x</span>, <span data-math=\"y\">y</span>) that would be solutions to the inequality. Then, explain what that means for Harrison. ",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Answers will vary. "
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Test <span data-math=\"(0, 0)\"></span> in <span data-math=\"11x + 16.50y \\ge 330\"></span>.</p>\n<p><span data-math=\"11\\left( 0 \\right) + 16.50\\left( 0 \\right) \\ge 330\"></span></p>\n<p><span data-math=\"0 \\ge 330\"></span> is false. It is not part of the solution.</p>\n<p>Not working at all would not be good for Harrison. He would earn no money.</p>\n<p>Test <span data-math=\"(15, 5)\"></span>.</p>\n<p><span data-math=\"11\\left( {15} \\right) + 16.50\\left( 5 \\right) \\ge 330\"></span></p>\n<p><span data-math=\"247.5 \\ge 330\"></span></p>\n<p>This is not part of the solution.</p>\n<p>If Harrison works at the gas station for 15 hours and at the IT job for 5 hours, that will not earn enough money.</p>\n<p>Test <span data-math=\"(30,10)\"></span>.</p>\n<p><span data-math=\"11\\left( {30} \\right) + 16.50\\left( {10} \\right) \\ge 330\"></span></p>\n<p><span data-math=\"495 \\ge 330\"></span></p>\n<p>This point is part of the solution.</p>\n<p>If Harrison works at the gas station for 30 hours and 10 hours at the IT job, that will earn $496. That is more than enough money to exceed the $330 requirement. This is still working just 40 hours a week and is very doable.</p>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

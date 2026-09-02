@@ -1,0 +1,397 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:05-09-05",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:2c1d72ab-4f5d-4a61-8075-f4aa39ecb8cd",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-9-systems-of-linear-equations-in-two-variables"
+ ],
+ "uuid": "61628075-daf1-4b07-9609-928c7c761949",
+ "group_uuid": "a3d39b30-a1fe-435a-9694-2c696a794352",
+ "number": 30852,
+ "version": 5,
+ "uid": "30852@5",
+ "published_at": "2024-11-02T07:56:23.009Z",
+ "nickname": "CM-C05-M9-Q009",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, solve the system of equations by graphing, substitution, or elimination.",
+ "questions": [
+  {
+   "id": 511615,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{rcl}{3x + y}&amp;{ = }&amp;{ - 3 }\\\\{2x + 3y}&amp;{ = }&amp;{5 }\\end{array}  \\right.\">\\{ \\begin{array}{*{20}{rcl}}{{3x + y}&amp;{ = }&amp;{ - 3} }\\\\ {{2x + 3y}&amp;{ = }&amp;{5} \\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 511616,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{rcl}{y}&amp;{ = }&amp;{x + 2 }\\\\{y}&amp;{ = }&amp;{ - 2x + 2 }\\end{array}  \\right.\">\\{ \\begin{array}{*{20}{rcl}}{{y}&amp;{ = }&amp;{x + 2} }\\\\ {{y}&amp;{ = }&amp;{ - 2x + 2} \\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 511617,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{rcl}{y}&amp;{ = }&amp;{\\frac{3}{2}x + 1 }\\\\{y}&amp;{ = }&amp;{ - \\frac{1}{2}x + 5 }\\end{array}  \\right.\">\\{ \\begin{array}{*{20}{rcl}}{{y}&amp;{ = }&amp;{\\frac{3}{2}x + 1} }\\\\ {{y}&amp;{ = }&amp;{ - \\frac{1}{2}x + 5} \\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 511618,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{rcl}{x + y}&amp;{ = }&amp;{ - 4 }\\\\{- x + 2y}&amp;{ = }&amp;{ - 2 }\\end{array}  \\right.\">\\{ \\begin{array}{*{20}{rcl}}{{x + y}&amp;{ = }&amp;{ - 4} }\\\\ {{ - x + 2y}&amp;{ = }&amp;{ - 2} \\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 511619,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{rcl}{- 2x + 3y}&amp;{ = }&amp;{3 }\\\\{x + 3y}&amp;{ = }&amp;{12 }\\end{array}  \\right.\">\\{ \\begin{array}{*{20}{rcl}}{{ - 2x + 3y}&amp;{ = }&amp;{3} }\\\\ {{x + 3y}&amp;{ = }&amp;{12} \\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 511620,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{rcl}{x + 3y}&amp;{ = }&amp;{ - 6 }\\\\{y}&amp;{ = }&amp;{ - \\frac{4}{3}x + 4 }\\end{array}  \\right.\">\\{ \\begin{array}{*{20}{rcl}}{{x + 3y}&amp;{ = }&amp;{ - 6} }\\\\ {{y}&amp;{ = }&amp;{ - \\frac{4}{3}x + 4} \\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 511621,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{rcl}{4x - 3y}&amp;{ = }&amp;{8 }\\\\{8x - 6y}&amp;{ = }&amp;{14 }\\end{array}  \\right.\">\\{ \\begin{array}{*{20}{rcl}}{{4x - 3y}&amp;{ = }&amp;{8} }\\\\ {{8x - 6y}&amp;{ = }&amp;{14} \\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 511622,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"\\left\\{ \\begin{array}{rcl}{x}&amp;{ = }&amp;{ - 3y + 4 }\\\\{2x + 6y}&amp;{ = }&amp;{8 }\\end{array}  \\right.\">\\{ \\begin{array}{*{20}{rcl}}{{x}&amp;{ = }&amp;{ - 3y + 4} }\\\\ {{2x + 6y}&amp;{ = }&amp;{8} \\end{array}</span>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,332 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-03T06:46:16.616Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamtHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9611dbd9b2bd42b2bc0831f62d868fa9b25b6ad2",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamtHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9611dbd9b2bd42b2bc0831f62d868fa9b25b6ad2/CS_Figure_08_02_054.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:08-01-02",
+  "context-cnxmod:bba797da-6a1a-4809-b77e-bf7d6e8758c5",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-1-gathering-and-organizing-data"
+ ],
+ "uuid": "66302a40-ee87-467c-a871-1aa3768290b0",
+ "group_uuid": "9f281d23-266a-4421-b214-6372c916d64a",
+ "number": 28973,
+ "version": 9,
+ "uid": "28973@9",
+ "published_at": "2024-12-03T06:46:20.373Z",
+ "nickname": "CM-C08-M1-Q003",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 531486,
+   "is_answer_order_important": false,
+   "stimulus_html": "A question on a community survey asked each respondent to give the number of people who shared their residence, and the data from the responses was as follows:\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>1</td>\n<td>3</td>\n<td>2</td>\n<td>2</td>\n<td>1</td>\n<td>3</td>\n<td>3</td>\n<td>4</td>\n<td>2</td>\n<td>2</td>\n<td>2</td>\n<td>4</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>1</td>\n<td>1</td>\n<td>5</td>\n<td>2</td>\n</tr>\n<tr>\n<td>1</td>\n<td>4</td>\n<td>3</td>\n<td>2</td>\n<td>1</td>\n<td>2</td>\n<td>2</td>\n<td>1</td>\n<td>3</td>\n<td>1</td>\n<td>3</td>\n<td>3</td>\n<td>4</td>\n<td>1</td>\n<td>4</td>\n<td>2</td>\n<td>2</td>\n<td>2</td>\n<td>1</td>\n<td>4</td>\n</tr>\n</tbody>\n</table>\n",
+   "stem_html": "Create a frequency distribution to organize the responses.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>A categorical frequency distribution is a table with two columns. The first column contains all the categories present in the data, each listed once. The second column contains the frequencies of each category.</p>\n<p>Make a table with a header that describes your categories and labels for each row. The second column is labeled “Frequency.” Check your work by making sure the sum of the second column is correct.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Number of People in the Residence</th>\n<th>Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>12</td>\n</tr>\n<tr>\n<td>2</td>\n<td>13</td>\n</tr>\n<tr>\n<td>3</td>\n<td>8</td>\n</tr>\n<tr>\n<td>4</td>\n<td>6</td>\n</tr>\n<tr>\n<td>5</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<p>Check the sum: 12 + 13 + 8 + 6 + 1 = 40</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p>&nbsp;</p><table class=\"unnumbered\">\n<thead>\n<tr>\n<th>Number of people in the residence</th>\n<th>Frequency</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>12</td>\n</tr>\n<tr>\n<td>2</td>\n<td>13</td>\n</tr>\n<tr>\n<td>3</td>\n<td>8</td>\n</tr>\n<tr>\n<td>4</td>\n<td>6</td>\n</tr>\n<tr>\n<td>5</td>\n<td>1</td>\n</tr></tbody>\n</table><p></p>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

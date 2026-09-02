@@ -1,0 +1,671 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:08-05-02",
+  "context-cnxmod:c2d4586a-5677-4f52-9fc6-43745e91e68b",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-5-percentiles"
+ ],
+ "uuid": "5eb096df-718f-42d0-a377-2d22dae55ee2",
+ "group_uuid": "17874d31-2a9e-4ac5-8f06-831da220d212",
+ "number": 29068,
+ "version": 15,
+ "uid": "29068@15",
+ "published_at": "2024-11-28T06:36:01.761Z",
+ "nickname": "CM-C08-M5-007",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For the following exercises, use the data in <a href=\"https://openstax.org/r/Chapter8_Data-Sets\" rel=\"nofollow\" target=\"_blank\">\"TNSchools\"</a>, which has data on many institutions of higher education in the state of Tennessee. Here are what the columns represent:\n<table class=\"unnumbered\"><caption> (source: https://data.ed.gov)</caption>\n<thead>\n<tr>\n<th>Column Name</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>AdmRate</td>\n<td>Proportion of applicants that are admitted</td>\n</tr>\n<tr>\n<td>UGEnr</td>\n<td>Number of undergraduate students</td>\n</tr>\n<tr>\n<td>PTUG</td>\n<td>Proportion of undergraduates who attend part-time</td>\n</tr>\n<tr>\n<td>InState</td>\n<td>Tuition and fees for in-state students</td>\n</tr>\n<tr>\n<td>OutState</td>\n<td>Tuition and fees for out-of-state students</td>\n</tr>\n<tr>\n<td>FacSal</td>\n<td>Mean monthly faculty salary</td>\n</tr>\n<tr>\n<td>Pell</td>\n<td>Proportion of students receiving Pell Grants</td>\n</tr>\n<tr>\n<td>MedDebt</td>\n<td>Median student loan debt at degree completion</td>\n</tr>\n<tr>\n<td>StartAge</td>\n<td>Mean age at the time of entry</td>\n</tr>\n<tr>\n<td>Female</td>\n<td>Proportion of students who identify as female</td>\n</tr>\n</tbody>\n</table>\n",
+ "questions": [
+  {
+   "id": 529330,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What admission rate is at the second quintile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529331,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What admission rate is at the 80th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529332,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What admission rate is at the 90th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529333,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is East Tennessee State University for admission rate?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529334,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Rhodes College for admission rate?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529335,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Freed-Hardeman University for admission rate?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529336,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What proportion of part-time undergraduate enrollment is at the third quartile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529337,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What proportion of part-time undergraduate enrollment is at the 15th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529338,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What proportion of part-time undergraduate enrollment is at the 40th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529339,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Lee University for proportion of part-time undergraduate enrollment?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529340,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Fisk University for proportion of part-time undergraduate enrollment?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529341,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Middle Tennessee State University for proportion of part-time undergraduate enrollment?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529342,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What median student loan debt is at the 10th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529343,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What median student loan debt is at the fourth quintile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529344,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What median student loan debt is at the 85th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529345,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Carson-Newman College for median student loan debt?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529346,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Austin Peay State University for median student loan debt?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529347,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Belmont University for median student loan debt?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529348,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What mean starting age is at the first quartile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529349,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What mean starting age is at the 67th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529350,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What mean starting age is at the 35th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529351,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is the University of the South for mean starting age?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529352,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Lincoln Memorial University for mean starting age?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529353,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is the University of Tennessee-Chattanooga for mean starting age?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529354,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What proportion of students who identify as female is at the third quintile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529355,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What proportion of students who identify as female is at the 12th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529356,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What proportion of students who identify as female is at the 85th percentile?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529357,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Martin Methodist College for proportion of students who identify as female?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529358,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Tennessee Technological University for proportion of students who identify as female?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 529359,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile is Maryville College for proportion of students who identify as female?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

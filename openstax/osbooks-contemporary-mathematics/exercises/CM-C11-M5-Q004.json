@@ -1,0 +1,326 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:11-05-02",
+  "context-cnxmod:de68113b-2554-450f-88dd-7768f6d9f73f",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:11-5-fairness-in-apportionment-methods"
+ ],
+ "uuid": "1c97bc65-5fa6-4f05-b6e6-c0efa6c6277d",
+ "group_uuid": "55937f35-150e-4282-826e-00c0e970c18c",
+ "number": 29596,
+ "version": 5,
+ "uid": "29596@5",
+ "published_at": "2024-12-23T09:52:23.287Z",
+ "nickname": "CM-C11-M5-Q004",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 545386,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The country of Elbonia has three states: Mudston with a population of 866,000; WallaWalla with a population of 626,000; and Dilberta with a population of 256,000. There are 38 seats in the Congress of Elbonia. The apportionment of the seats is determined by Hamilton’s method to be: 19 for Mudston, 14 for WallaWalla, and 5 for Dilberta. A census reveals that the population has grown and the seats must be reapportioned. If Mudston now has 921,000 residents, WallaWalla now has 640,000 residents, and Dilberta now has 260,000 residents, how many seats will each state receive upon reapportionment? How is this an example of the population paradox?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Use Hamilton’s method.</p>\n<p>Step 1: Find the standard divisor.</p>\n<p>Total population: <span data-math=\"{\\text{866,000  +  626,000  +  256,000  =  1,748,000}}\"></span></p>\n<p><span data-math=\"{\\text{Standard Divisor = }}\\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}} = \\frac{{{\\text{1,748,000}}}}{{{\\text{38 seats}}}} = 46,000{\\text{ people per seat}}\"></span></p>\n<p>Step 2: Find each state’s standard quota.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th><span data-math=\"{\\text{Standard Quota = }}\\frac{{{\\text{State Population}}}}{{{\\text{Standard Divisor}}}}{\\text{ }}\"></span></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Mudston</td>\n<td><span data-math=\"\\frac{{{\\text{866,000 people}}}}{{46,000{\\text{ people per seat}}}}{\\text{ }} \\approx {\\text{ 18}}{\\text{.826 seats}}\"></span></td>\n</tr>\n<tr>\n<td>WallaWalla</td>\n<td><span data-math=\"\\frac{{{\\text{626,000 people}}}}{{46,000{\\text{ people per seat}}}}{\\text{ }} \\approx {\\text{ 13}}{\\text{.609 seats}}\"></span></td>\n</tr>\n<tr>\n<td>Dilberta</td>\n<td><span data-math=\"\\frac{{{\\text{256,000 people}}}}{{46,000{\\text{ people per seat}}}}{\\text{ }} \\approx 5.565{\\text{ seats}}\"></span></td>\n</tr>\n</tbody>\n</table>\n<p>Step 3: Give each state the state’s lower quota (with each state receiving at least 1 seat). The lower quota always rounds down.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th><span data-math=\"{\\text{Standard Quota = }}\\frac{{{\\text{State Population}}}}{{{\\text{Standard Divisor}}}}{\\text{ }}\"></span></th>\n<th>Lower Quota</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Mudston</td>\n<td><span data-math=\"\\frac{{{\\text{866,000 people}}}}{{46,000{\\text{ people per seat}}}}{\\text{ }} \\approx {\\text{ 18}}{\\text{.826 seats}}\"></span></td>\n<td>18</td>\n</tr>\n<tr>\n<td>WallaWalla</td>\n<td><span data-math=\"\\frac{{{\\text{626,000 people}}}}{{46,000{\\text{ people per seat}}}}{\\text{ }} \\approx {\\text{ 13}}{\\text{.609 seats}}\"></span></td>\n<td>13</td>\n</tr>\n<tr>\n<td>Dilberta</td>\n<td><span data-math=\"\\frac{{{\\text{256,000 people}}}}{{46,000{\\text{ people per seat}}}}{\\text{ }} \\approx 5.565{\\text{ seats}}\"></span></td>\n<td>5</td>\n</tr>\n</tbody>\n</table>\n<p>Step 4: Give each remaining seat one at a time to the states with the largest fractional parts of their standard quotas until no seats remain.</p>\n<p>Add up the lower quotas: <span data-math=\"{\\text{18  +  13  +  5  =  36}}\"></span>.</p>\n<p>There are two more seats to allot. The largest fractional parts are 0.825 for Mudstown and 0.608 for WallaWalla. Give them the extra seats.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th>Lower Quota</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Mudston</td>\n<td><span data-math=\"{\\text{18  +  1  =  19}}\"></span></td>\n</tr>\n<tr>\n<td>WallaWalla</td>\n<td><span data-math=\"{\\text{13  +  1  =  14}}\"></span></td>\n</tr>\n<tr>\n<td>Dilberta</td>\n<td>5</td>\n</tr>\n</tbody>\n</table>\n<p>Step 5: Check the solution by confirming that the sum of the modified quotas equals the house size.</p>\n<p><span data-math=\"{\\text{19  +  14  +  5  =  38}}\"></span></p>\n<p>Now, redo for the changed population:</p>\n<p>Step 1: Find the standard divisor.</p>\n<p>Total population: <span data-math=\"{\\text{921,000  +  640,000  +  260,000  =  1,821,000}}\"></span></p>\n<p><span data-math=\"{\\text{Standard Divisor = }}\\frac{{{\\text{Total Population}}}}{{{\\text{House Size}}}} = \\frac{{1,821,000}}{{{\\text{38 seats}}}} \\approx 47921.05263{\\text{ people per seat}}\"></span></p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th><span data-math=\"{\\text{Standard Quota = }}\\frac{{{\\text{State Population}}}}{{{\\text{Standard Divisor}}}}{\\text{ }}\"></span></th>\n<th>Lower Quota</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Mudston</td>\n<td><span data-math=\"\\frac{{{\\text{921,000 people}}}}{{47921.05263{\\text{ people per seat}}}}{\\text{ }} \\approx {\\text{ 19}}{\\text{.219 seats}}\"></span></td>\n<td>19</td>\n</tr>\n<tr>\n<td>WallaWalla</td>\n<td><span data-math=\"\\frac{{{\\text{640,000 people}}}}{{47921.05263{\\text{ people per seat}}}}{\\text{ }} \\approx {\\text{ 13}}{\\text{.355 seats}}\"></span></td>\n<td>13</td>\n</tr>\n<tr>\n<td>Dilberta</td>\n<td><span data-math=\"\\frac{{{\\text{260,000 people}}}}{{47921.05263{\\text{ people per seat}}}}{\\text{ }} \\approx 5.426{\\text{ seats}}\"></span></td>\n<td>5</td>\n</tr>\n</tbody>\n</table>\n<p>Step 2: Give each remaining seat one at a time to the states with the largest fractional parts of their standard quotas until no seats remain.</p>\n<p>Add up the lower quotas: <span data-math=\"{\\text{19  +  13  +  5  =  37}}\"></span>.</p>\n<p>There is one more seat to allot. The largest fractional part is 0.426 for Dilberta. Give Dilberta the extra seat.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th>Lower Quota</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Mudston</td>\n<td>19</td>\n</tr>\n<tr>\n<td>WallaWalla</td>\n<td>13</td>\n</tr>\n<tr>\n<td>Dilberta</td>\n<td><span data-math=\"{\\text{5  +  1  =  6}}\"></span></td>\n</tr>\n</tbody>\n</table>\n<p>Step 3: Check the solution by confirming that the sum of the modified quotas equals the house size.</p>\n<p><span data-math=\"{\\text{19  +  13  +  6  =  3}}\"></span></p>\n<p></p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th>Original Population</th>\n<th>New Population</th>\n<th>Difference</th>\n<th>Difference</th>\n<th>Percentage Difference</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Mudston</td>\n<td>866,000</td>\n<td>921,000</td>\n<td>921,000 – 866,000</td>\n<td>55,000</td>\n<td>6.35%</td>\n</tr>\n<tr>\n<td>Walla Walla</td>\n<td>626,000</td>\n<td>640,000</td>\n<td>640,000 – 626,000</td>\n<td>14,000</td>\n<td>2.24%</td>\n</tr>\n<tr>\n<td>Dilberta</td>\n<td>256,000</td>\n<td>260,000</td>\n<td>260,000 – 256,000</td>\n<td>4,000</td>\n<td>1.56%</td>\n</tr>\n</tbody>\n</table>\n<p>With the original population numbers, WallaWalla had 14 seats. Even though WallaWalla had a higher growth rate than Dilberta, Dilberta gained a seat and WallaWalla lost a seat.</p>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th>State</th>\n<th>Original Population</th>\n<th>Increased Population</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Mudston</td>\n<td><span data-math=\"{\\text{18  +  1  =  19}}\"></span></td>\n<td>19</td>\n</tr>\n<tr>\n<td>WallaWalla</td>\n<td><span data-math=\"{\\text{13  +  1  =  14}}\"></span></td>\n<td>13</td>\n</tr>\n<tr>\n<td>Dilberta</td>\n<td>5</td>\n<td><span data-math=\"{\\text{5  +  1  =  6}}\"></span></td>\n</tr>\n</tbody>\n</table>\n<p>This violates the population paradox.</p>\n<p>The population paradox occurs when a state with an increasing population loses a seat while a state with a decreasing population either retains or gains seats.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The Hamilton reapportionment is: 19 for Mudston, 13 for WallaWalla, and 6 for Dilberta. This is an example of the population paradox because WallaWalla lost a seat to Dilberta, even though WallaWalla’s population grew by 2.24 percent while Dilberta’s only grew by 1.56 percent."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

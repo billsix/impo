@@ -1,0 +1,461 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-12T04:43:09.288Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVVNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0d5bb9fc95bab776f9cbedc56092220c68c26629",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVVNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0d5bb9fc95bab776f9cbedc56092220c68c26629/CS_Figure_07_11_036.png"
+  },
+  {
+   "created_at": "2024-11-12T04:43:09.291Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdG9PIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c74af893714d97249cf9f2a6704824fb42d4a7f4",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdG9PIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c74af893714d97249cf9f2a6704824fb42d4a7f4/CS_Figure_07_11_036.png"
+  },
+  {
+   "created_at": "2024-11-12T04:43:09.294Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2tQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ea05b25ed8b3d6df31c9c688ae7c2bc0e354f57a",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2tQIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ea05b25ed8b3d6df31c9c688ae7c2bc0e354f57a/American_roulette_table_layout.jpg"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:07-11-01",
+  "lo:stax-cmath:07-11-02",
+  "lo:stax-cmath:07-11-03",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:3d4e8c5e-da3e-464c-a5a0-308d03d1c239",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:7-11-expected-value"
+ ],
+ "uuid": "241162cb-25c0-42aa-84a5-2ed1bebeeed9",
+ "group_uuid": "bc499b13-c4ec-45a6-a1f1-7b17bd7fab36",
+ "number": 31787,
+ "version": 14,
+ "uid": "31787@14",
+ "published_at": "2024-11-12T04:43:21.488Z",
+ "nickname": "CM-C07-M11-Q022",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "The following exercises are about the casino game roulette. In this game, the dealer spins a marble around a wheel that contains 38 pockets that the marble can fall into. Each pocket has a number (each whole number from 0 to 36, along with a “double zero”) and a color (0 and 00 are both green; the other 36 numbers are evenly divided between black and red). Players make bets on which number (or groups of numbers) they think the marble will land on. The figure shows the layout of the numbers and colors, as well as some of the bets that can be made.\n<figure class=\"unnumbered\">\n<figcaption>\nRoulette Table (credit: \"American Roulette Table Layout\" by Film8ker/Wikimedia Commons, Public Domain)\n</figcaption>\n<img src=\"exercises/media/0df6a7b44ea426be.jpg\" alt=\"A Roulette table. The table has 12 rows and 3 columns. The first four rows represent the first dozen. The fifth to eighth rows represent the second dozen. The last four rows represent the third dozen. The columns represent 2 to 1, 2 to 1, and 2 to 1. Two green pockets, 0 and 00 are at the top-right. Six green pockets on the left represent 1 to 18, even, red, black, odd, and 19 to 36. The data from the table row-wise are as follows: 1 (red), 2 (black), 3 (red); 4 (black), 5 (red), 6 (black); 7 (red), 8 (black), 9 (red); 10 (black), 11 (black), 12 (red); 13 (black), 14 (red), 15 (black); 16 (red), 17 (black), 18 (red); 19 (red), 20 (black), 21 (red); 22 (black), 23 (red), 24 (black); 25 (red), 26 (black), 27 (red); 28 (black), 29 (black), 30 (red); 31 (black), 32 (red), 33 (black); 34 (red), 35 (black), and 36 (red).\">\n</figure>",
+ "questions": [
+  {
+   "id": 517179,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If a player makes a $1 bet on a single number, they win $35 if that number comes up, but lose $1 if it doesn’t. What is the expected value of this bet?\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517180,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Interpret your answer to the previous question.\n\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517181,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Suppose a player makes the $1 bet on a single number in 5 consecutive spins. What is the expected value of this series of bets? (Hint: use the Binomial Distribution.)",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517182,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Interpret your answer to the previous question.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517183,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If a player makes a $10 bet on first dozen, they win $20 if one of the numbers 1–12 comes up but lose $10 otherwise. What is the expected value of this bet?\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517184,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Interpret your answer to the previous question.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517185,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Suppose a player makes the $10 bet on first dozen in 4 consecutive spins. What is the expected value of that series of bets?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517186,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Interpret your answer to the previous question.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517187,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If a player makes a $10 basket bet, they win $60 if 0, 00, 1, 2, or 3 come up but lose $10 otherwise. What is the expected value of this bet?\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517188,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Interpret your answer to previous question.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 517189,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Which is better for the player: a $10 first dozen bet or a $10 basket bet? How do you know?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

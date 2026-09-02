@@ -1,0 +1,351 @@
+{
+ "images": [],
+ "tags": [
+  "context-cnxmod:e8a3ff01-572e-4099-8766-7150c43c673d",
+  "book:stax-cmath",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:1-4-set-operations-with-two-sets"
+ ],
+ "uuid": "bf5ab02a-52aa-4df3-8b76-f939202902d9",
+ "group_uuid": "fe98ead9-3f23-473c-b7d8-4c22980de7a3",
+ "number": 29354,
+ "version": 9,
+ "uid": "29354@9",
+ "published_at": "2024-09-30T11:46:56.221Z",
+ "nickname": "CM-C01-M4-Q010",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Ravi and Priya are serving soup and salad along with the main course at their wedding reception. The reception will have a total of 150 guests in attendance. A total of 92 soups and 85 salads were ordered, while 23 guests did not order any soup or salad.",
+ "questions": [
+  {
+   "id": 495124,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many guests had soup or salad or both?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p>127</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Total number of guests = 150</p>\n<p><i>n</i>(neither soup nor salad) = 23</p>\n<p>To find the number who had soup, salad, or both, subtract 23 from 150.</p>\n<p><span data-math=\"150 - 23 = 127\"></span></p>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 495125,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many guests had both soup and a salad?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<p>50</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Total number of guests = 150</p>\n<p><i>n</i>(neither soup nor salad) = 23</p>\n<p>To find the number who had soup, salad, or both, subtract 23 from 150.</p>\n<p><span data-math=\"150 - 23 = 127\"></span></p>\n<p>This represents the number of elements in the union of the sets of Soup and Salad eaters.</p>\n<p><i>n</i>(Soup <span data-math=\"\\cup\"></span> Salad) = 127</p>\n<p><i>n</i> (Soup) = 92</p>\n<p><i>n</i> (Salad) = 85</p>\n<p>Use the formula: <span data-math=\"n\\left( {A \\cup B} \\right) = n(A) + n(B) - n\\left( {A \\cap B} \\right)\"></span></p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td>Substitute.</td>\n<td><span data-math=\"127 = 92 + 85 - n\\left( {A \\cap B} \\right)\"></span></td>\n</tr>\n<tr>\n<td>Simplify.</td>\n<td><span data-math=\"127 = 177 - n\\left( {A \\cap B} \\right)\"></span></td>\n</tr>\n<tr>\n<td>Subtract 127.</td>\n<td><span data-math=\"127 - 127 = 177 - n\\left( {A \\cap B} \\right) - 127\"></span></td>\n</tr>\n<tr>\n<td>Simplify.</td>\n<td><span data-math=\"0 = 50 - n\\left( {A \\cap B} \\right)\"></span></td>\n</tr>\n<tr>\n<td>Add the variable.</td>\n<td><span data-math=\"0 + n\\left( {A \\cap B} \\right) = 50 - n\\left( {A \\cap B} \\right) + n\\left( {A \\cap B} \\right)\"></span></td>\n</tr>\n<tr>\n<td>Simplify.</td>\n<td><span data-math=\"n\\left( {A \\cap B} \\right) = 50\"></span></td>\n</tr>\n</tbody>\n</table>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,379 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "lo:stax-cmath:06-03-02",
+  "context-cnxmod:c603f113-a4ac-4e30-9127-c49f56c29cde",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:6-3-simple-interest"
+ ],
+ "uuid": "eec52bbb-0612-40e7-b3cb-fda5a6507573",
+ "group_uuid": "2e5c01c4-0045-48aa-845e-d0e3ded1279f",
+ "number": 32312,
+ "version": 7,
+ "uid": "32312@7",
+ "published_at": "2024-11-13T05:02:04.319Z",
+ "nickname": "CM-C06-M3-Q011",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Compute the present value of the investment described. Interpret the result.",
+ "questions": [
+  {
+   "id": 518487,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"FV\">FV</span> = $25,000, <span data-math=\"t\">t</span> = 10 years, annual simple interest rate of 7.5%",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The present value, <i>PV</i>, of money deposited at an annual, simple interest rate of <i>r</i> (in decimal form) for time <i>t</i> (in years) with a specified future value of <i>FV</i> is calculated with the formula <span data-math=\"PV = \\frac{{FV}}{{1 + rt}}\"></span>. Present value, in this calculation, is always rounded up. Otherwise, the future value may fall short of the target future value.</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"PV = \\frac{{25,000}}{{1 + \\left( {0.075} \\right)\\left( {10} \\right)}} = \\$ 14,285.72\"></span></td>\n<td>(rounded up to the next cent)</td>\n</tr>\n</tbody>\n</table>\n<p>$14,285.72 needs to be invested in an account earning 7.5% annual simple interest to have $25,000 at the end of the 10 years.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$14,285.72. $14,285.72 needs to be invested so that, after 10 years at 7.5% interest, the investment will be worth $25,000."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 518488,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"FV\">FV</span> = $320,000, <span data-math=\"t\">t</span> = 35 years, annual simple interest rate of 6.5%",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The present value, <i>PV</i>, of money deposited at an annual, simple interest rate of <i>r</i> (in decimal form) for time <i>t</i> (in years) with a specified future value of <i>FV</i> is calculated with the formula <span data-math=\"PV = \\frac{{FV}}{{1 + rt}}\"></span>. Present value, in this calculation, is always rounded up. Otherwise, the future value may fall short of the target future value.</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"PV = \\frac{{320,000}}{{1 + \\left( {0.065} \\right)\\left( {35} \\right)}} = \\$ 97,709.93\"></span></td>\n<td>(rounded up to the next cent)</td>\n</tr>\n</tbody>\n</table>\n<p>$97,709.93 needs to be invested in an account earning 6.5% annual simple interest to have $320,000 at the end of the 35 years.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$97,709.93. $97,709.93 needs to be invested so that, after 35 years at 6.5% interest, the investment will be worth $320,000."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 518489,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"FV\">FV</span> = $90,000, <span data-math=\"t\">t</span> = 270 months, annual simple interest rate of 3.75%",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>The present value, <i>PV</i>, of money deposited at an annual, simple interest rate of <i>r</i> (in decimal form) for time <i>t</i> (in years) with a specified future value of <i>FV</i> is calculated with the formula <span data-math=\"PV = \\frac{{FV}}{{1 + rt}}\"></span>. Present value, in this calculation, is always rounded up. Otherwise, the future value may fall short of the target future value.</p>\n<p>270 months is 22.5 years.</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"PV = \\frac{{90,000}}{{1 + \\left( {0.0375} \\right)\\left( {22.5} \\right)}} = \\$ 48,813.56\"></span></td>\n<td>(rounded up to the next cent)</td>\n</tr>\n</tbody>\n</table>\n<p>$48,813.56 needs to be invested in an account earning 3.75% annual simple interest to have $90,000 at the end of the 22.5 years.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$48,813.56. $48,813.56 needs to be invested so that, after 270 months at 3.75% interest, the investment will be worth $90,000."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,327 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:06-10-01",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:021579c2-a0fe-4d4d-b3bd-8652553c60f9",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:6-10-credit-cards"
+ ],
+ "uuid": "cb01bc87-dc09-416e-b8b2-7afff2efb6b6",
+ "group_uuid": "2b3e4c6a-f9ac-4c52-a602-3ce74bd7d70a",
+ "number": 35276,
+ "version": 5,
+ "uid": "35276@5",
+ "published_at": "2024-11-13T13:14:38.266Z",
+ "nickname": "CM-C06-M10-Q032",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 519317,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The billing cycle goes from June 15 to July 14, or 30 days. The balance at the start of the billing cycle is $3,825.50. The list of transactions on the card is below. Find the average daily balance.<br>\n<table class=\"unnumbered\" summary=\".\">\n<thead>\n<tr>\n<th><b>Date</b></th>\n<th><b>Activity</b></th>\n<th><b>Amount</b></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>15-Jun</td>\n<td> Billing Date Balance</td>\n<td>$3,825.50</td>\n</tr>\n<tr>\n<td>20-Jun</td>\n<td>Food</td>\n<td>$125.31</td>\n</tr>\n<tr>\n<td>20-Jun</td>\n<td>Clothing</td>\n<td>$345.00</td>\n</tr>\n<tr>\n<td>29-Jun</td>\n<td>Payment</td>\n<td>$750.00</td>\n</tr>\n<tr>\n<td>1-Jul</td>\n<td>Restaurant</td>\n<td>$94.80</td>\n</tr>\n<tr>\n<td>6-Jul</td>\n<td>Gasoline</td>\n<td>$49.75</td>\n</tr>\n<tr>\n<td>6-Jul</td>\n<td>Home Repair Supplies</td>\n<td>$683.94</td>\n</tr>\n<tr>\n<td>6-Jul</td>\n<td>Internet</td>\n<td>$49.99</td>\n</tr>\n<tr>\n<td>10-Jul</td>\n<td>Cell Phone</td>\n<td>$85.00</td>\n</tr>\n<tr>\n<td>10-Jul</td>\n<td>Food</td>\n<td>$175.24</td>\n</tr>\n</tbody>\n</table>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Use a list of transactions.</p>\n<p>Step 1: Create a table that has the sum of transactions for each day. Expenditures are positive. Payments are negative.</p>\n<p>Step 2: Add a column, “Days Until Balance Changed,” where you write the number of days until the balance changed. This is the difference between the date of this row and the next.</p>\n<p>Step 3: Add a column, “Balance Times Days,” where you multiply the previous two columns.\n</p><table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Date</td>\n<td>Activity</td>\n<td>Transaction</td>\n<td>Balance</td>\n<td>Days Until Balance Changed</td>\n<td>Balance Times Days</td>\n</tr>\n<tr>\n<td>15-Jun</td>\n<td>Balance</td>\n<td>$3,825.50</td>\n<td>$3,825.50</td>\n<td>5</td>\n<td>$19,127.50</td>\n</tr>\n<tr>\n<td>20-Jun</td>\n<td>Food/Clothing</td>\n<td>$470.31</td>\n<td>$4,295.81</td>\n<td>9</td>\n<td>$38,662.29</td>\n</tr>\n<tr>\n<td>29-Jun</td>\n<td>Payment</td>\n<td>–$750.00</td>\n<td>$3,545.81</td>\n<td>2</td>\n<td>$7,091.62</td>\n</tr>\n<tr>\n<td>1-Jul</td>\n<td>Restaurant</td>\n<td>$94.80</td>\n<td>$3,640.61</td>\n<td>5</td>\n<td>$18,203.05</td>\n</tr>\n<tr>\n<td>6-Jul</td>\n<td>Gas/Repair/Int</td>\n<td>$783.68</td>\n<td>$4,424.29</td>\n<td>4</td>\n<td>$17,697.16</td>\n</tr>\n<tr>\n<td>10-Jul</td>\n<td>Cell/Food</td>\n<td>$260.24</td>\n<td>$4,684.53</td>\n<td>5</td>\n<td>$23,422.65</td>\n</tr>\n</tbody>\n</table>\nStep 4: Sum the last column.<p></p>\n<p>$124,204.27</p>\n<p>Step 5: Divide the sum by the number of days in the month. This is the average daily balance.</p>\n<p><span data-math=\"\\$124,204.27{\\text{ }} \\div {\\text{ }}30{\\text{ }} = {\\text{ }}\\$4,140.14\"></span></p>\n<p>The average daily balance (ADB) is $4,140.14.</p>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "$4,104.27"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

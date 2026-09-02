@@ -1,0 +1,405 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:01-04-03",
+  "context-cnxmod:e8a3ff01-572e-4099-8766-7150c43c673d",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:1-4-set-operations-with-two-sets"
+ ],
+ "uuid": "6615fd38-cd65-4396-b9a4-8b74911ebe75",
+ "group_uuid": "ac572a27-ff61-43a6-aed9-402da82dd6d5",
+ "number": 29250,
+ "version": 9,
+ "uid": "29250@9",
+ "published_at": "2024-09-30T06:16:43.554Z",
+ "nickname": "CM-C01-M4-Q009",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<span data-math=\"A = \\{h,a,p,y\\} ,\">A = \\{h,a,p,y\\} ,</span> and <span data-math=\"B = \\{a,w,e,s,o,m\\} ,\">B = \\{a,w,e,s,o,m\\} ,</span> and <span data-math=\"C = \\{m,a,t,h\\} .\">C = \\{m,a,t,h\\} .</span><br>\nFind the set consisting of elements in:",
+ "questions": [
+  {
+   "id": 494624,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"A {\\text{ or }}B\">A{\\text{or}}B</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>To find <i>A</i> or <i>B</i>, find <span data-math=\"A \\cup B\"></span>. The union of two sets includes all the members of the first set and all the members of the second set. Do not list duplicates twice.</p>\n<p><span data-math=\"A\\;{\\rm{or}}\\;B = A \\cup B = \\left\\{ {h,a,p,y,w,e,s,o,m} \\right\\}\"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"A\">A</span> or <span data-math=\"B = A \\cup B = \\{h, a, p, y, w, e, s, o, m\\} .\">B = A \\cup B = \\{h, a, p, y, w, e, s, o, m\\} .</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 494625,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"A{\\text{ and }}C\">A{\\text{and}}C</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>To find <i>A</i> and <i>C</i>, find <span data-math=\"A \\cap C\"></span>. The intersection of two sets includes the elements that are in both sets.</p>\n<p><span data-math=\"A\\;{\\rm{and}}\\;C = A \\cap C = \\left\\{ {a,h} \\right\\}\"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"A\">A</span> and <span data-math=\"C = A \\cap C = \\{a, h\\} .\">C = A \\cap C = \\{a, h\\} .</span>\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 494626,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"B{\\text{ or }}C\">B{\\text{or}}C</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>To find <i>B</i> or <i>C</i>, find <span data-math=\"B \\cup C\"></span>. The union of two sets includes all the members of the first set and all the members of the second set. Do not list duplicates twice.</p>\n<p><span data-math=\"B\\;{\\rm{or}}\\;C = B \\cup C = \\left\\{ {a,w,e,s,o,m,t,h} \\right\\}\"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"B\">B</span> or <span data-math=\"C = B \\cup C = \\{a, w, e, s, o, m, t, h\\} .\">C = B \\cup C = \\{a, w, e, s, o, m, t, h\\} .</span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 494627,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<span data-math=\"(A{\\text{ and }}C){\\text{ and }}B\">(A{\\text{and}}C){\\text{and}}B</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>To find (<i>A</i> and <i>C</i>) and <i>B</i>, you need to follow the order of operations and evaluate the parentheses first.</p>\n<p>First, evaluate inside the parentheses. Find <span data-math=\"A{\\text{ and }}C = A \\cap C\"></span>. The intersection of two sets includes the elements that are in both sets.</p>\n<p><span data-math=\"A\\;{\\rm{and}}\\;C = A \\cap C = \\{ h,a,p,y\\}  \\cap \\left\\{ {m,a,t,h} \\right\\} = \\left\\{ {a,h} \\right\\}\"></span></p>\n<p>To find (<i>A</i> and <i>C</i>) and <span data-math=\"B = \\left( {A \\cap C} \\right) \\cap B\"></span>, find <span data-math=\"\\left\\{ {a,h} \\right\\} \\cap B\"></span>.</p>\n<p><span data-math=\"\\left\\{ {a,h} \\right\\} \\cap \\left\\{ {a,w,e,s,o,m} \\right\\} = \\left\\{ a \\right\\}\"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "(<span data-math=\"A\">A</span> and <span data-math=\"C\">C</span>) and <span data-math=\"B = (A \\cap C) \\cap B = \\{a, h\\}  \\cap \\{a, w, e, s, o, m\\}  = \\{a\\} .\">B = (A \\cap C) \\cap B = \\{a, h\\}  \\cap \\{a, w, e, s, o, m\\}  = \\{a\\}.</span>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

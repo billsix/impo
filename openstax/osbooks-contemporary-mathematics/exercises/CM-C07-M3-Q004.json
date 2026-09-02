@@ -1,0 +1,326 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:07-03-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:49373543-22ae-4ebd-8e49-6b29e80ccc3d",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:7-3-combinations"
+ ],
+ "uuid": "18e5e9bb-a33e-4ac7-8f75-16cd66fd6e54",
+ "group_uuid": "b4b31a5d-32fe-4ba4-88a9-fe04de884659",
+ "number": 31465,
+ "version": 5,
+ "uid": "31465@5",
+ "published_at": "2024-11-09T06:19:05.258Z",
+ "nickname": "CM-C07-M3-Q004",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 515602,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How many ways are there to choose a hand of 6 cards from a standard deck with the constraint that 3 are <span data-math=\"\\spadesuit\">\\spadesuit</span>, 2 are <span data-math=\"\\heartsuit\">\\heartsuit</span>, and 1 is <span data-math=\"\\clubsuit\">\\clubsuit</span>?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>It does not matter in which order the cards are dealt to you. For each requirement, it is a combination. There are 13 cards in each suit.</p> \n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>Requirement</td>\n<td>3 spades</td>\n<td>2 hearts</td>\n<td>1 club</td>\n</tr>\n<tr>\n<td>Formula</td>\n<td>13C3</td>\n<td>13C2</td>\n<td>13C1</td>\n</tr>\n</tbody>\n</table>\n<p>Then, use the Multiplication Rule of Counting. The Multiplication Rule of Counting says that if there are <i>n</i> ways to accomplish one task and <i>m</i> ways to accomplish a second task, then there are <span data-math=\"n{\\text{ }} \\times {\\text{ }}m\"></span> ways to accomplish both tasks. You can tack on additional tasks by multiplying the number of ways to accomplish those tasks to your previous product.</p>\n<p>The number of ways to have the required hand is <span data-math=\"13{\\text{C}}3{\\text{ }} \\times {\\text{ }}13{\\text{C}}2{\\text{ }} \\times {\\text{ }}13{\\text{C}}1\"></span>.</p>\n<p>Evaluate each combination separately.</p>\n<p><span data-math=\"13C3 = \\frac{{n!}}{{r!\\left( {n - r} \\right)!}} = \\frac{{13!}}{{3!\\left( {13 - 3} \\right)!}} = \\frac{{13!}}{{3!10!}} = \\frac{{13 \\times 12 \\times 11 \\times \\cancel{{10!}}}}{{3 \\times 2 \\times 1 \\times \\cancel{{10!}}}} = \\frac{{1,716}}{6} = 286\"></span></p>\n<p><span data-math=\"13C2 = \\frac{{n!}}{{r!\\left( {n - r} \\right)!}} = \\frac{{13!}}{{2!\\left( {13 - 2} \\right)!}} = \\frac{{13!}}{{2!11!}} = \\frac{{13 \\times 12\\cancel{{11!}}}}{{2 \\times 1 \\times \\cancel{{11!}}}} = \\frac{{156}}{2} = 78\"></span></p>\n<p><span data-math=\"13C1 = \\frac{{n!}}{{r!\\left( {n - r} \\right)!}} = \\frac{{13!}}{{1!\\left( {13 - 1} \\right)!}} = \\frac{{13!}}{{1!12!}} = \\frac{{13\\cancel{{12!}}}}{{1 \\times \\cancel{{12!}}}} = 13\"></span></p>\n<p>Now you can evaluate <span data-math=\"13{\\text{C}}3{\\text{ }} \\times {\\text{ }}13{\\text{C}}2{\\text{ }} \\times {\\text{ }}13{\\text{C}}1{\\text{ }} = {\\text{ }}286{\\text{ }} \\times {\\text{ }}78{\\text{ }} \\times {\\text{ }}13{\\text{ }} = {\\text{ }}290,004\"></span>.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "290,004"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

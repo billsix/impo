@@ -1,0 +1,355 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:04-05-01",
+  "all",
+  "type:practice",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:ae53c519-30c8-484d-8eb1-9759b3d67790",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:4-5-multiplication-and-division-in-base-systems"
+ ],
+ "uuid": "6d7d5ebe-d389-445a-b116-24655b760125",
+ "group_uuid": "c483dc57-04dc-4f56-95e8-ac7fb6fdca73",
+ "number": 31216,
+ "version": 7,
+ "uid": "31216@7",
+ "published_at": "2024-10-30T06:30:16.494Z",
+ "nickname": "CM-C04-M5-Q003",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 510288,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Calculate <span data-math=\"{43_6} \\times {52_6}\">{43_6} \\times {52_6}</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>First step: You can use the base 6 multiplication table.</p>\n<p>In base 6:</p>\n<p>3 times 2 is 10.</p>\n<p>4 times 2 is 12.</p>\n<p>3 times 5 is 23.</p>\n<p>4 times 5 is 32.</p>\n<p>Remember to pad the entries by the appropriate number of zeros.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>4</td>\n<td>3</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>×</td>\n<td>5</td>\n<td>2</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Carry:</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>2</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>2</td>\n<td>3</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>3</td>\n<td>2</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Product:</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table>\n<p>Next step: In the rightmost column:</p>\n<p>base 10: 0 + 0 + 0 + 0 = 0</p>\n<p>base 6: 0</p>\n<p>In the rightmost product column, write 0.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>4</td>\n<td>3</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>×</td>\n<td>5</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Carry:</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>2</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>2</td>\n<td>3</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>3</td>\n<td>2</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Product:</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>0</td>\n</tr>\n</tbody>\n</table>\n<p>Next step: In the next column:</p>\n<p>base 10: 1 + 2 + 3 = 6</p>\n<p>base 6: 10</p>\n<p>In this product column, write 0.</p>\n<p>Carry 1.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>4</td>\n<td>3</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>×</td>\n<td>5</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Carry:</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>2</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>2</td>\n<td>3</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>3</td>\n<td>2</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Product:</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>0</td>\n<td>0</td>\n</tr>\n</tbody>\n</table>\n<p>Next step: In the next column:</p>\n<p>base 10: 1 + 1 + 2 + 2 = 6</p>\n<p>base 6: 10</p>\n<p>In this column, write 0.</p>\n<p>Carry 1.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>4</td>\n<td>3</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>×</td>\n<td>5</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Carry:</td>\n<td>1</td>\n<td>1</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>2</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>2</td>\n<td>3</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>3</td>\n<td>2</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Product:</td>\n<td>&nbsp;</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n</tbody>\n</table>\n<p>Next step: In the next column:</p>\n<p>base 10: 1 + 3 = 4</p>\n<p>base 6: 4</p>\n<p>In this column, write 4.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>4</td>\n<td>3</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>×</td>\n<td>5</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Carry:</td>\n<td>1</td>\n<td>1</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>2</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>2</td>\n<td>3</td>\n<td>0</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>3</td>\n<td>2</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Product:</td>\n<td>4</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"{4000_6}\"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "4000<sub>6</sub>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 510289,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Calculate <span data-math=\"{11101_2} \\times {11_2}\">{11101_2} \\times {11_2}</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>0 × 0 = 0</p>\n<p>0 × 1 = 0</p>\n<p>1 × 1 = 1</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>×</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Product:</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table>\n<p>Next step: In the rightmost column:</p>\n<p>base 10: 1 + 0 = 1</p>\n<p>base 2: 1</p>\n<p>In the rightmost product column, write 1.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>×</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Product:</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<p>Next step: In the next column:</p>\n<p>base 10: 0 + 1 = 1</p>\n<p>base 2: 1</p>\n<p>In this column, write 1.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>×</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Product:</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<p>Next step: In the next column:</p>\n<p>base 10: 1 + 0 = 1</p>\n<p>base 2: 1</p>\n<p>In this column, write 1.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>×</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Product:</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<p>Next step: In the next column:</p>\n<p>base 10: 1 + 1 = 2</p>\n<p>base 2: 10</p>\n<p>In this column, write 0.</p>\n<p>Carry 1.</p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>×</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Carry:</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Product:</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<p>Next step: In the next column:</p>\n<p>base 10: 1 + 1 + 1 = 3</p>\n<p>base 2: 11</p>\n<p>In this column, write 1.</p>\n<p>Carry 1.\n</p><table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>×</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Carry:</td>\n<td>&nbsp;</td>\n<td></td>\n<td></td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Product:</td>\n<td>&nbsp;</td>\n<td>10</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<p>Next step: In the next column:</p>\n<p>base 10: 1 + 1 = 2</p>\n<p>base 2: 10</p>\n<p>In this column, write 10.</p>\n<p>You can just write it in because that is the last column.</p>\n<p><span data-math=\"{1010111_2}\"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "1010111<sub>2</sub>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

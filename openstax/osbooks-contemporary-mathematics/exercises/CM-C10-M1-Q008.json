@@ -1,0 +1,382 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-06T10:37:30.811Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmtOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7996aa20b1b0e440469451b7140129e20f1cf0ce",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmtOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7996aa20b1b0e440469451b7140129e20f1cf0ce/CS_Figure_10_01_UN018.png"
+  }
+ ],
+ "tags": [
+  "lo:stax-cmath:10-01-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:8c7863e2-ef9e-40df-926b-2792e102adf3",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:10-1-points-lines-and-planes"
+ ],
+ "uuid": "9fdce2b0-8c8f-4e13-9dce-2591f8d73674",
+ "group_uuid": "bb75e68b-c508-4308-950b-b31529541162",
+ "number": 31812,
+ "version": 10,
+ "uid": "31812@10",
+ "published_at": "2024-12-06T10:37:34.551Z",
+ "nickname": "CM-C10-M1-Q008",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Use the line for the following exercises.\n<br><br>\n\n<img src=\"exercises/media/5f2467ba79e5f18a.png\" alt=\"A line with four points, A, B, C, and D marked on it.\">\n",
+ "questions": [
+  {
+   "id": 532742,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Determine <span data-math=\"{\\overline {AB}}  \\cup {\\overline {BD}}\">\\overline {AB}  \\cup \\overline {BD}</span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>You are looking for the union of line segment <span data-math=\"\\overline {AB} \"></span> and line segment <span data-math=\"\\overline {BD} \"></span>.</p>\n<p>Sketch the two parts separately above the line.</p>\n<p>Union includes all the elements that are in both drawings.</p>\n<p>The union is the line segment <span data-math=\"\\overline {AD} \"></span>.</p>\n<p><span data-math=\"\\overline {AB}  \\cup \\overline {BD}  = \\overline {AD} \"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"{\\overline {AB}}  \\cup {\\overline {BD}}  = \\overline {AD} \">{\\overline {AB}}  \\cup {\\overline {BD}}  = \\overline {AD}</span>. The union of line segment <span data-math=\"\\overline {AB} \">\\overline {AB} </span> and the line segment <span data-math=\"{\\overline {BD}}\">{\\overline {BD}}</span> contains all points in each line segment combined."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 532743,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Determine <span data-math=\"\\overleftarrow {BD}  \\cap {\\overline {BC}} \">\\overleftarrow {BD}  \\cap \\overline {BC} </span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>You are looking for the intersection of ray <span data-math=\"\\overleftarrow {BD} \"></span> and line segment <span data-math=\"\\overline {BC} \"></span>.</p>\n<p>Sketch the two parts separately above the line.</p>\n<p>Intersection includes only the elements that are common to both drawings.</p>\n<p>The intersection includes only line segment <span data-math=\"\\overline {BC} \"></span>.</p>\n<p><span data-math=\"\\overleftarrow {BD}  \\cap \\overline {BC}  = \\overline {BC} \"></span></p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\overrightarrow {BD}  \\cap {\\overline {BC}}  = {\\overline {BC}} \">\\overrightarrow {BD}  \\cap \\overline {BC}  = \\overline {BC} </span>. The intersection of the ray <span data-math=\"\\overrightarrow {BD} \">\\overrightarrow {BD} </span> and the line segment <span data-math=\"{\\overline {BC}} \">{\\overline {BC}} </span> contains only the points common to each set, <span data-math=\"{\\overline {BC}} \">\\overline {BC} </span>."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 532744,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Determine <span data-math=\"\\overleftarrow {BA}  \\cup \\overrightarrow {BD} \">\\overleftarrow {BA}  \\cup \\overrightarrow {BD} </span>.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\overrightarrow {BA}  \\cup \\overrightarrow {BD}  = \\overleftrightarrow {AD}\">\\overleftarrow {BA}  \\cup \\overrightarrow {BD}  = \\overleftrightarrow {AD}</span>. The union of the ray starting at point <span data-math=\"B\">B</span> and extending infinitely in the direction of <span data-math=\"A\">A</span> and the ray starting at point <span data-math=\"B\">B</span> and extending infinitely in the direction of <span data-math=\"D\">D</span> is the straight line extending infinitely in both directions containing points <span data-math=\"A\">A</span>, <span data-math=\"B\">B</span>, <span data-math=\"C\">C</span>, and <span data-math=\"D\">D</span>."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

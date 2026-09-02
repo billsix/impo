@@ -1,0 +1,326 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:05-11-01",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "context-cnxmod:099c0fba-3780-41f8-807e-ea0ad0333391",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:5-11-linear-programming"
+ ],
+ "uuid": "fad4f47f-2b82-4389-870d-6e373fd6780f",
+ "group_uuid": "159bce46-7a06-4b89-a2d6-3f2f1ad3b7ed",
+ "number": 30992,
+ "version": 5,
+ "uid": "30992@5",
+ "published_at": "2024-11-02T10:50:46.219Z",
+ "nickname": "CM-C05-M11-Q005",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 511718,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "For a fundraiser at school, the Robotics Club is selling bags of apples and bunches of bananas during lunch. They will make a profit of $4 per bag of apples and $6 per bunch of bananas. Due to school health regulations, the club is allowed to have only 20 bags and bunches of fruit on school grounds each day to sell. Another regulation: the container where the Robotics Club keeps the fruit has a maximum weight capacity of 70 pounds. Each bag of apples weighs 3 pounds, while each bunch of bananas weighs 5 pounds. Determine the number of bags of apples and the number of bags of bananas the Robotics Club should sell each day to maximize their profit.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "The maximum value for the profit <span data-math=\"P\">P</span> occurs when <span data-math=\"x = 15\">x = 15</span> and <span data-math=\"y = 5\">y = 5</span>. This means that to maximize their profit, the Robotics Club should sell 15 bags of apples and 5 bunches of bananas every day."
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Let <i>a</i> = the number of bags of apples.</p>\n<p>Let <i>b</i> = the number of bunches of bananas.</p>\n<p>The profit on apples is $4 per bag and the profit on bananas is $6 per bunch.</p>\n<p>Constraints:</p>\n<ul>\n<li>No more than a total of 20 bags and bunches on school grounds each day.</li>\n<li>The maximum weight capacity of the fruit is 70 pounds.\n<br>A bag of apples weighs 3 pounds.\n<br>A bunch of bananas weighs 5 pounds.</li>\n</ul>\n<p>Break the words into components.</p> \n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>The total profit</td>\n<td>is</td>\n<td>$4 times the number of bags of apples</td>\n<td>plus</td>\n<td>$6 times the number of bunches of bananas.</td>\n</tr>\n<tr>\n<td><i>P</i></td>\n<td>=</td>\n<td>4<i>a</i></td>\n<td>+</td>\n<td>6<i>b</i></td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"P = 4a + 6b\"></span>\n</p><table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>The number of bags of apples</td>\n<td>plus</td>\n<td>The number of bunches of bananas</td>\n<td>can be no more than</td>\n<td>20</td>\n</tr>\n<tr>\n<td><i>a</i></td>\n<td>+</td>\n<td><i>b</i></td>\n<td>≤</td>\n<td>20</td>\n</tr>\n</tbody>\n</table>\n<p><span data-math=\"a + b \\le 20\"></span></p>\n<table class=\"unnumbered\">\n<tbody>\n<tr>\n<td>The number of bags of apples times 3 pounds</td>\n<td>plus</td>\n<td>The number of bunches of bananas times 5 pounds</td>\n<td>can be no more than</td>\n<td>70 pounds</td>\n</tr>\n<tr>\n<td>3<i>a</i></td>\n<td>+</td>\n<td>5<i>b</i></td>\n<td>≤</td>\n<td>70</td>\n</tr>\n</tbody>\n</table>\n<span data-math=\"3a + 5b \\le 70\"></span><p></p>\n<p>The summary of this system:</p>\n<p><span data-math=\"P = 4a + 6b\"></span></p>\n<p><span data-math=\"a + b \\le 20\"></span></p>\n<p><span data-math=\"3a + 5b \\le 70\"></span></p>\n<p>Solve the system.</p>\n<p><span data-math=\"P = 4a + 6b\"></span></p>\n<p>Assume the normal <i>x</i>-axis is the <i>a-</i>axis and the <i>y-</i>axis is the <i>b-</i>axis.</p>\n<p>The maximum occurs at one of the corner points.</p>\n<p>Graph the system.</p>\n<p><span data-math=\"a + b \\le 20\"></span></p>\n<p>The boundary of this graph intersects the axes at <span data-math=\"\\left( {20,0} \\right)\"></span>and <span data-math=\"\\left( {0,20} \\right)\"></span>.</p>\n<p>Test (0,0).</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"0 + 0 \\le 20\"></span></td>\n<td>This is in the solution, so shade under the boundary in quadrant I.</td>\n</tr>\n</tbody>\n</table>\n<p>Graph <span data-math=\"3a + 5b \\le 70\"></span>.</p>\n<p>The boundary of this graph intersects the axes at <span data-math=\"\\left( {23.\\overline 3 ,0} \\right)\"></span> and <span data-math=\"\\left( {0,14} \\right)\"></span>.</p>\n<p>Test (0,0).</p>\n<table class=\"unnumbered unstyled\">\n<tbody>\n<tr>\n<td><span data-math=\"0 + 0 \\le 70\"></span></td>\n<td>This is in the solution, so shade under the boundary in quadrant I.</td>\n</tr>\n</tbody>\n</table>\n<p>The solution is the area shaded by both graphs. The corners of the shaded area are the intersection of the two boundary lines and the points <span data-math=\"\\left( {0,14} \\right)\"></span>, and <span data-math=\"\\left( {20,0} \\right)\"></span>. The maximum and minimum will occur at one of the corner points. You do not need to test (0,0) because you know the profit is 0 there.</p>\n<p>Where do the boundaries of these inequalities cross?</p>\n<p><span data-math=\"a + b \\le 20\"></span></p>\n<p><span data-math=\"3a + 5b \\le 70\"></span></p>\n<p>Solve <span data-math=\"a + b = 20\"></span> for <i>a</i>.</p>\n<p><span data-math=\"a = 20 - b\"></span></p>\n<p>Substitute into the second boundary equations and solve for <i>b</i>.</p>\n<p><span data-math=\"3\\left( {20 - b} \\right) + 5b = 70\"></span></p>\n<p><span data-math=\"60 - 3b + 5b = 70\"></span></p>\n<p><span data-math=\"2b = 10\"></span></p>\n<p><span data-math=\"b = 5\"></span></p>\n<p>Substitute into the first equation to find <i>b.</i></p>\n<p><span data-math=\"a + 5 = 20\"></span></p>\n<p><span data-math=\"a = 15\"></span></p>\n<p>Interpret.</p>\n<p>The corner points of the solution are the intersection of the two boundaries and the two points:<span data-math=\"\\left( {0,14} \\right)\"></span>, and <span data-math=\"\\left( {20,0} \\right)\"></span>.</p>\n<p><span data-math=\"\\left( {0,14} \\right)\"></span>What is the profit? <span data-math=\"P = 4a + 6b = 4(0) + 6(14) = \\$ 84\"></span></p>\n<p><span data-math=\"\\left( {20,0} \\right)\"></span>What is the profit? <span data-math=\"P = 4a + 6b = 4(20) + 6(0) = \\$ 80\"></span></p>\n<p><span data-math=\"\\left( {5,15} \\right)\"></span>What is the profit? <span data-math=\"P = 4a + 6b = 4(15) + 6(5) = 60 + 30 = \\$ 90\"></span></p>\n<p>The maximum profit is made when selling 15 bags of apples and 5 bunches of bananas each day.</p>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

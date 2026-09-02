@@ -1,0 +1,406 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-cmath:08-05-01",
+  "context-cnxmod:c2d4586a-5677-4f52-9fc6-43745e91e68b",
+  "book:stax-cmath",
+  "assignment-type:reading",
+  "blooms:1",
+  "time:medium",
+  "book-slug:contemporary-mathematics",
+  "module-slug:contemporary-mathematics:8-5-percentiles"
+ ],
+ "uuid": "b556990e-b10b-4903-a9ca-8273912e6d17",
+ "group_uuid": "d6ea1214-5339-461f-b8ff-ddef90538b8e",
+ "number": 29064,
+ "version": 10,
+ "uid": "29064@10",
+ "published_at": "2024-11-28T05:37:15.103Z",
+ "nickname": "CM-C08-M5-004",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Given the data 10, 12, 14, 18, 21, 23, 24, 25, 29, and 30, compute the following without technology:",
+ "questions": [
+  {
+   "id": 529208,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The value at the 30th percentile",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>If <i>p</i> percent of the values in a dataset are less than a number <i>n</i>, then we say that <i>n</i> is at the <i>p</i>th percentile.</p>\n<p>The data values are already in increasing order: 10, 12, 14, 18, 21, 23, 24, 25, 29, 30</p>\n<p>There are 10 data values.</p>\n<p>At the 30<sup>th</sup> percentile, 30% of the values are smaller than the number.</p>\n<p>30 percent of 10 data values is three values.</p>\n<p>In this set, three out of the 10 numbers are less than 18.</p>\n<p>The value at the 30<sup>th</sup> percentile is 18.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "18\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529209,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The value at the first quintile",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>Quintiles measure in fifths, or in steps of 20%. The first quintile is the 20<sup>th</sup> percentile.</p>\n<p>If <i>p</i> percent of the values in a dataset are less than a number <i>n</i>, then we say that <i>n</i> is at the <i>p</i>th percentile.</p>\n<p>The data values are already in increasing order: 10, 12, 14, 18, 21, 23, 24, 25, 29, 30</p>\n<p>There are 10 data values.</p>\n<p>At the 20<sup>th</sup> percentile, 20% of the values are smaller than the number.</p>\n<p>20 percent of 10 values is 2 values.</p>\n<p>In this set, two out of the 10 numbers are less than 14.</p>\n<p>The value at the 20<sup>th</sup> percentile (first quintile) is 14.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "14"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529210,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile 29 falls",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>If <i>p</i> percent of the values in a dataset are less than a number <i>n</i>, then we say that <i>n</i> is at the <i>p</i>th percentile.</p>\n<p>The data values are already in increasing order: 10, 12, 14, 18, 21, 23, 24, 25, 29, 30</p>\n<p>There are 10 data values.</p>\n<p>Eight of the ten values, or 80% of the data, are less than 29.</p>\n<p>29 is at the 80<sup>th</sup> percentile.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "80th"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 529211,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "At what percentile 24 falls",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<p>If <i>p</i> percent of the values in a dataset are less than a number <i>n</i>, then we say that <i>n</i> is at the <i>p</i>th percentile.</p>\n<p>The data values are already in increasing order: 10, 12, 14, 18, 21, 23, 24, 25, 29, 30</p>\n<p>There are 10 data values.</p>\n<p>Six of the ten values, or 60% of the data, are less than 24.</p>\n<p>24 is at the 60<sup>th</sup> percentile.</p>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "60th"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}
