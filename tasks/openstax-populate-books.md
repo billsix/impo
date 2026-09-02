@@ -104,26 +104,39 @@ because of downloaded exercise content; the toolchain itself is identical across
   cache so this costs ~one image on disk. (A single shared `openstax-tooling` tag would be marginally
   cleaner; not worth diverging the pilot for.)
 
+## Download caches — GREEN-LIT 2026-09-02 (William Emerison Six <billsix@gmail.com>) — being committed
+
+The maintainer green-lit committing the download caches (accepting the binary bulk): "a book should
+have all its content." Fetching + committing them now, per book with `os-embed` exercises, exactly as
+python-programming: `./fetch.sh && ./apply.sh && make fetch-exercises`, copy `checkout/exercises/`
+(JSON + any `media/`) up to the book folder's `exercises/` with a `COPYRIGHT` from
+`openstax/tooling/templates/exercises-COPYRIGHT`, commit per book. Books: the three large ones
+FIRST (`organic-chemistry` ~2076 jpg + 1959 json, `biology-bundle`, `contemporary-mathematics`), then
+`college-algebra-bundle`, `prealgebra-bundle`, `calculus-bundle`, `writing-guide`, `physics`,
+`algebra-1`. A book whose CNXML has no `os-embed` links is a no-op (nothing committed). Per book,
+only *downloaded* exercise content goes in the cache — upstream `media/` figures stay in the
+(gitignored) pinned checkout.
+
+## KEEP IN MIND — OpenStax may be extracted to its own imps-style repo later
+
+The maintainer noted (2026-09-02) they may later change their mind on the caches, or **extract the
+whole OpenStax family into its own standalone imps-for-openstax repo**. So keep the family **cleanly
+extractable**: everything book-specific already lives self-contained under `openstax/` (family
+`CLAUDE.md`, `tooling/`, `osbooks-*/`). What would need to move with it on an extraction: this task
+doc, `tasks/adhoc/openstax-populate-books/`, and any future `tasks/reference/openstax/` — i.e. the
+`openstax`-project-keyed slices of the shared `tasks/` tree (which are already namespaced by the
+project-keyed convention). Do NOT entangle openstax with N64 or the imps root beyond the one-line
+family index in the master `CLAUDE.md`/`README`. If the extraction happens, it's a `git mv openstax/`
++ moving the `openstax`-keyed task/reference/adhoc files + trimming the master index.
+
 ## Open items / to discuss later
 
-- **Deferred download caches — await a deliberate `make fetch-exercises` + commit, flagged for
-  maintainer review because of the binary bulk added to imps.** Not run unattended. The books with
-  `os-embed` exercises that were left structure-only: `college-algebra-bundle`, `prealgebra-bundle`,
-  `calculus-bundle` (small), `writing-guide`, `physics`, `algebra-1` (+ SVG figures), and **especially
-  the three large ones** — `biology-bundle`, `contemporary-mathematics`, and `organic-chemistry`
-  (~2076 jpg + 1959 json). For each: `./fetch.sh && ./apply.sh && make fetch-exercises`, then copy
-  `checkout/exercises/` (JSON + any `media/`) up to the book folder's `exercises/` with a `COPYRIGHT`
-  copied from `openstax/tooling/templates/exercises-COPYRIGHT`, and commit — exactly as done for
-  python-programming. (Per-book, verify the delta's images are *downloaded* exercise images, not
-  upstream `media/` figures — only the downloaded ones belong in the committed cache.)
 - Whether to build-verify all 16 PDFs (heavy) or accept the representative-subset + structure
-  verification above.
-- The large-download commit-bulk decision (see above): if unwanted on review, the alternative is
-  caching them out-of-band and keeping only the fetch script — the fetch script is the source of truth
-  either way.
-- The N64 stale-doc pass (separate, authorized "as I see fit"): update the pre-torch ocarina
-  asset-pipeline/build-system docs and the mario64 hooks→events docs against the current pins; fix the
-  5 pre-existing broken `../../CLAUDE.md`/`wiki/`/`docs/` links in the mario64 reference docs.
+  verification (anatomy full PDF + astronomy/algebra-1/python `make convert`).
+- The N64 stale-doc pass (separate, authorized "as I see fit"): the 5 broken mario64 links are FIXED
+  (commit `64dbc2e`); the deeper pre-torch → torch (ocarina asset-pipeline/build-system) and
+  hooks→`events/` (mario64) *content* rewrites against the current pins remain — flagged in-doc by
+  their stale banners; a focused later pass.
 
 ## Relationships
 
