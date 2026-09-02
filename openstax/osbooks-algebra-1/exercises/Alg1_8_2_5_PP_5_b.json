@@ -1,0 +1,411 @@
+{
+ "images": [],
+ "tags": [
+  "teks:A1.8.A",
+  "machine-teks:c663451e-af7c-541e-810a-0b632bfde4f0",
+  "raise-content-id:5c4d70dc-e487-45ef-b54c-4b2011eccc9d",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:fa86c886-2fb8-5d7d-91e8-67ae59b91676"
+ ],
+ "uuid": "f7602215-b2fd-47d8-9de0-998f0d0164c4",
+ "group_uuid": "53375ea5-a70f-4451-b39e-4c288b7e39af",
+ "number": 68885,
+ "version": 3,
+ "uid": "68885@3",
+ "published_at": "2025-07-28T23:21:23.056Z",
+ "nickname": "Alg1_8_2_5_PP_5_b",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>Use the following scenario to answer questions 5 – 8.</p>\n<blockquote>\nThe expressions <span data-math=\"t(90 − 3t)\">t(90 − 3t)</span> and <span data-math=\"-3t^2 + 90t\">-3t^2 + 90t</span> define the same function. The function models the number of lumens emitted by a spotlight in an art exhibit over the course of <span data-math=\"t\">t</span> seconds.</blockquote>",
+ "questions": [
+  {
+   "id": 632977,
+   "is_answer_order_important": false,
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"5\">\n  <li>Which equation represents the time when the spotlight is not emitting any light?</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1225931,
+     "content_html": "<span data-math=\"-3t^2 + 90t = 30\">-3t^2 + 90t = 30</span>"
+    },
+    {
+     "id": 1225934,
+     "content_html": "<span data-math=\"-3t^2 + 90t = 0\">-3t^2 + 90t = 0</span>"
+    },
+    {
+     "id": 1225932,
+     "content_html": "<span data-math=\"-3t^2 + 90t = 675\">-3t^2 + 90t = 675</span>"
+    },
+    {
+     "id": 1225933,
+     "content_html": "<span data-math=\"t(90 − 3t) = -3t^2 + 90t\">t(90 − 3t) = -3t^2 + 90t</span>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "stimulus_html": ""
+  },
+  {
+   "id": 632978,
+   "is_answer_order_important": false,
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"6\">\n  <li>At what time(s) does the spotlight not emit any light?</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1225935,
+     "content_html": "15 seconds"
+    },
+    {
+     "id": 1225936,
+     "content_html": "Only 0 seconds"
+    },
+    {
+     "id": 1225937,
+     "content_html": "10 and 25 seconds"
+    },
+    {
+     "id": 1225938,
+     "content_html": "0 and 30 seconds"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "stimulus_html": ""
+  },
+  {
+   "id": 632979,
+   "is_answer_order_important": false,
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"7\">\n  <li>The artist planned for the spotlight to emit 600 lumens at 10 seconds from the start. At what other time will the spotlight emit 600 lumens of light?</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1225939,
+     "content_html": "30 seconds"
+    },
+    {
+     "id": 1225940,
+     "content_html": "25 seconds"
+    },
+    {
+     "id": 1225942,
+     "content_html": "20 seconds"
+    },
+    {
+     "id": 1225941,
+     "content_html": "0 seconds"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "stimulus_html": ""
+  },
+  {
+   "id": 632980,
+   "is_answer_order_important": false,
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"8\">\n  <li>At 5 seconds, the spotlight will emit 375 lumens. Find another time that the spotlight emits 375 lumens.</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1225946,
+     "content_html": "25 seconds"
+    },
+    {
+     "id": 1225943,
+     "content_html": "15 seconds"
+    },
+    {
+     "id": 1225944,
+     "content_html": "10 seconds"
+    },
+    {
+     "id": 1225945,
+     "content_html": "0 seconds"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "stimulus_html": ""
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  3,
+  2,
+  1
+ ]
+}

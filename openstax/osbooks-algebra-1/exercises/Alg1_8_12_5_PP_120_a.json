@@ -1,0 +1,328 @@
+{
+ "images": [],
+ "tags": [
+  "teks:A1.8.B",
+  "machine-teks:6f25de63-5e5a-5307-96fe-4a1cf41196c9",
+  "raise-content-id:2bb7ca48-10c1-470e-8d66-afc1bebad136",
+  "context-cnxmod:362bcbcd-8db6-4bb0-94f1-18bac9d604e3",
+  "book-slug:algebra-1",
+  "module-slug:algebra-1:8-12-5-practice",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:fa86c886-2fb8-5d7d-91e8-67ae59b91676"
+ ],
+ "uuid": "16dc3f05-1032-4456-b177-f57e96d25958",
+ "group_uuid": "17441c46-1be0-4f83-94c2-2439921a3364",
+ "number": 68989,
+ "version": 4,
+ "uid": "68989@4",
+ "published_at": "2025-07-28T23:21:20.720Z",
+ "nickname": "Alg1_8_12_5_PP_120_a",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "questions": [
+  {
+   "id": 632965,
+   "is_answer_order_important": false,
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"3\">\n  <li>Enter the given data into Desmos, then calculate the regression approximation to determine the curve of best fit.     <table class=\"unnumbered\">\n      <thead>\n        <tr>\n          <th scope=\"col\"><span data-math=\"x_1\">x_1</span></th>\n          <th scope=\"col\"><span data-math=\"y_1\">y_1</span></th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>0.2</td>\n          <td>6.5</td>\n        </tr>\n        <tr>\n          <td>0.35</td>\n          <td>6.74</td>\n        </tr>\n        <tr>\n          <td>0.66</td>\n          <td>6.31</td>\n        </tr>\n        <tr>\n          <td>1</td>\n          <td>4.95</td>\n        </tr>\n        <tr>\n          <td>1.5</td>\n          <td>1.2</td>\n        </tr>\n      </tbody>\n    </table>\n  </li>\n</ol>\n<p>What is the equation for the curve of best fit that models the data?</p>",
+   "answers": [
+    {
+     "id": 1225883,
+     "content_html": "<span data-math=\"y = -5.1x^2 + 9.2x + 7.14\">y = -5.1x^2 + 9.2x + 7.14</span>"
+    },
+    {
+     "id": 1225886,
+     "content_html": "<span data-math=\"y = -4.31x^2+ 3.2x + 6.08\">y = -4.31x^2+ 3.2x + 6.08</span>"
+    },
+    {
+     "id": 1225884,
+     "content_html": "<span data-math=\"y = -3.1x^2+ 2.6x + 7.93\">y = -3.1x^2+ 2.6x + 7.93</span>"
+    },
+    {
+     "id": 1225885,
+     "content_html": "<span data-math=\"y = -6.3x^2+ 8x + 10.6\">y = -6.3x^2+ 8x + 10.6</span>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "stimulus_html": ""
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  4,
+  3,
+  2,
+  1
+ ],
+ "stimulus_html": ""
+}

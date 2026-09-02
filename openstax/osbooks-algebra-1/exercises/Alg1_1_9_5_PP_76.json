@@ -1,0 +1,433 @@
+{
+ "images": [],
+ "tags": [
+  "teks:A1.2.C",
+  "machine-teks:15afa70a-a5cd-512d-9586-6fb3aaa71e0c",
+  "teks:A1.12.E",
+  "machine-teks:ad901527-efdd-5c29-b9bf-c98d15da9b40",
+  "raise-content-id:c9c0b944-2eb3-43b2-acc4-79148148453b",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:b36fd845-f548-5d0b-839c-13aa29eebed3"
+ ],
+ "uuid": "3e3c6964-2053-45d6-bee8-e6f428429902",
+ "group_uuid": "ada6b20c-ac47-4ed6-8906-98aa2d74c195",
+ "number": 66609,
+ "version": 9,
+ "uid": "66609@9",
+ "published_at": "2025-08-12T15:39:57.263Z",
+ "nickname": "Alg1_1_9_5_PP_76",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>For numbers 1 – 9, use the following scenario:<br> A car has a 16-gallon fuel tank. When driven on a highway, it has a gas mileage of 30 miles per gallon. The gas mileage (also called \"fuel efficiency\") tells us the number of miles the car can travel for a particular amount of fuel (one gallon of gasoline, in this case). After filling the gas tank, the driver got on a highway and drove for a while.</p>",
+ "questions": [
+  {
+   "id": 645909,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\">\n  <li>How many miles has the car traveled if it has 15 gallons left in the tank?</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 645910,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"2\">\n  <li>How many miles has the car traveled if it has 10 gallons left in the tank?</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 645911,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"3\">\n  <li>How many miles has the car traveled if it has 2.5 gallons left in the tank?</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 645912,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"4\">\n  <li>Choose the equation that represents the relationship between the distance the car has traveled in miles, <span data-math=\"d\">d</span>, and the amount of gas left in the tank in gallons, <span data-math=\"x\">x</span>.</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1270996,
+     "content_html": "<span data-math=\"x=\\frac{30}{d-480}\">x=\\frac{30}{d-480}</span>"
+    },
+    {
+     "id": 1270997,
+     "content_html": "<span data-math=\"d=30(16-x)\">d=30(16-x)</span>"
+    },
+    {
+     "id": 1270998,
+     "content_html": "<span data-math=\"x=\\frac{d-480}{-30}\">x=\\frac{d-480}{-30}</span>"
+    },
+    {
+     "id": 1270999,
+     "content_html": "<span data-math=\"d=16(30-x)\">d=16(30-x)</span>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 645913,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"5\">\n  <li>How many gallons are left in the tank when the car has traveled 90 miles?</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 645914,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"6\">\n  <li>How many gallons are left in the tank when the car has traveled 246 miles?</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 645915,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"7\">\n  <li>Choose an equation that makes it easier to find the amount of gas left in the tank, <span data-math=\"x\">x</span>, if we know the car has traveled <span data-math=\"d\">d</span> miles.</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1271000,
+     "content_html": "<span data-math=\"x=\\frac{30}{d-480}\">x=\\frac{30}{d-480}</span>"
+    },
+    {
+     "id": 1271001,
+     "content_html": "<span data-math=\"d=30(16-x)\">d=30(16-x)</span>"
+    },
+    {
+     "id": 1271002,
+     "content_html": "<span data-math=\"x=\\frac{d-480}{-30}\">x=\\frac{d-480}{-30}</span>"
+    },
+    {
+     "id": 1271003,
+     "content_html": "<span data-math=\"d=16(30-x)\">d=16(30-x)</span>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 645916,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"8\">\n  <li>Noah was helping to collect the entry fees at his school's football game. Student entry costs $2.75 each and adult entry costs $5.25 each. By the end of the game, Diego had collected $281.25.</li>\n</ol>\n<p><strong>Select two </strong>equations that could represent the relationship between the number of students, <span data-math=\"s\">s</span>, the number of adults, <span data-math=\"a\">a</span>, and the dollar amount collected at the game.</p>\n<ol type=\"a\">\n  <li><span data-math=\"281.25 - 5.25a=2.75s\">281.25 - 5.25a=2.75s</span></li>\n  <li><span data-math=\"a=53.57- \\frac{2.75}{5.25}s\">a=53.57- \\frac{2.75}{5.25}s</span></li>\n  <li><span data-math=\"x - 2 =4\">x - 2 =4</span></li>\n  <li><span data-math=\"x - 2 = 12\">x - 2 = 12</span></li>\n  <li><span data-math=\"x -6 = 4\">x -6 = 4</span></li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,527 @@
+{
+ "images": [],
+ "tags": [
+  "teks:A1.12.B",
+  "machine-teks:75ad8f40-a6fc-5195-b41b-b0ee8e2c31dd",
+  "raise-content-id:4b80f75e-83fa-47fa-908b-5f41956b3084",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:b0dcf8b7-69de-57ca-bc14-098b44e4da00"
+ ],
+ "uuid": "48350893-5d07-47d1-8d8f-d8d64acc8b6b",
+ "group_uuid": "048c3bca-46ff-4db0-9abf-99048e005689",
+ "number": 66552,
+ "version": 13,
+ "uid": "66552@13",
+ "published_at": "2026-04-15T20:34:42.084Z",
+ "nickname": "Alg1_7_4_5_PP_18",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>Use the following to answer questions 1 – 7.</p>\n<p>The table shows values of the expressions <span data-math=\"10x^2\">10x^2</span> and <span data-math=\"2^x\">2^x</span>.</p>\n<table class=\"unnumbered\">\n  <thead>\n    <tr>\n      <th scope=\"col\"><span data-math=\"x\">x</span></th>\n      <th scope=\"col\"><span data-math=\"10x^2\">10x^2</span></th>\n      <th scope=\"col\"><span data-math=\"2^x\">2^x</span></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><span data-math=\"1\">1</span></td>\n      <td><span data-math=\"10\">10</span></td>\n      <td><span data-math=\"2\">2</span></td>\n    </tr>\n    <tr>\n      <td><span data-math=\"2\">2</span></td>\n      <td><span data-math=\"40\">40</span></td>\n      <td><span data-math=\"4\">4</span></td>\n    </tr>\n    <tr>\n      <td><span data-math=\"3\">3</span></td>\n      <td><span data-math=\"90\">90</span></td>\n      <td><span data-math=\"8\">8</span></td>\n    </tr>\n    <tr>\n      <td><span data-math=\"4\">4</span></td>\n      <td><span data-math=\"160\">160</span></td>\n      <td><span data-math=\"16\">16</span></td>\n    </tr>\n    <tr>\n      <td><span data-math=\"8\">8</span></td>\n      <td>&nbsp;</td>\n      <td>&nbsp;</td>\n    </tr>\n    <tr>\n      <td><span data-math=\"10\">10</span></td>\n      <td>&nbsp;</td>\n      <td>&nbsp;</td>\n    </tr>\n    <tr>\n      <td><span data-math=\"12\">12</span></td>\n      <td>&nbsp;</td>\n      <td>&nbsp;</td>\n    </tr>\n  </tbody>\n</table>",
+ "questions": [
+  {
+   "id": 669276,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" type=\"1\">\n<li>Complete the statement.</li>\n  </ol><ol class=\"os-raise-noindent\" start=\"1\" type=\"a\">\n    <li>When the value of <span data-math=\"x\">x</span> increases by <span data-math=\"1\">1</span>, the expression <span data-math=\"10x^2\">10x^2</span>:</li>\n  </ol>",
+   "answers": [
+    {
+     "id": 1334169,
+     "content_html": "Changes logarithmically. It has decreased by one-half."
+    },
+    {
+     "id": 1334170,
+     "content_html": "Grows by decreasing amounts but by increasing growth factors."
+    },
+    {
+     "id": 1334171,
+     "content_html": "Changes exponentially. It doubles."
+    },
+    {
+     "id": 1334172,
+     "content_html": "Grows by increasing amounts but by decreasing growth factors."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669277,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"2\" type=\"a\">\n  <li>When the value of <span data-math=\"x\">x</span> increases by <span data-math=\"1\">1</span>, the expression <span data-math=\"2^x\">2^x</span>:</li>\n  </ol>",
+   "answers": [
+    {
+     "id": 1334173,
+     "content_html": "Changes logarithmically. It has decreased by one-half."
+    },
+    {
+     "id": 1334174,
+     "content_html": "Grows by decreasing amounts but by increasing growth factors."
+    },
+    {
+     "id": 1334175,
+     "content_html": "Changes exponentially. It doubles."
+    },
+    {
+     "id": 1334176,
+     "content_html": "Grows by increasing amounts but by decreasing growth factors."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669278,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"2\">\n  <li>Will the value of <span data-math=\"10x^2\">10x^2</span> be greater than or less than <span data-math=\"2^x\">2^x</span> when <span data-math=\"x\">x</span> is <span data-math=\"8\">8</span>?</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1334177,
+     "content_html": "greater than"
+    },
+    {
+     "id": 1334178,
+     "content_html": "less than"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669279,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"3\">\n  <li>Will the value of <span data-math=\"2^x\">2^x</span> be greater than or less than <span data-math=\"10x^2\">10x^2</span> when <span data-math=\"x\">x</span> is <span data-math=\"10\">10</span>?</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1334179,
+     "content_html": "greater than"
+    },
+    {
+     "id": 1334180,
+     "content_html": "less than"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669280,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"4\">\n  <li>Will the value of <span data-math=\"10x^2\">10x^2</span> be greater than or less than <span data-math=\"2^x\">2^x</span> when <span data-math=\"x\">x</span> is <span data-math=\"12\">12</span>?</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1334181,
+     "content_html": "greater than"
+    },
+    {
+     "id": 1334182,
+     "content_html": "less than"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669281,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"5\">\n  <li>Determine the following values of <span data-math=\"10x^2\">10x^2</span>.</li>\n</ol><br>  <ol class=\"os-raise-noindent\" type=\"a\">\n    <li>What is the value of <span data-math=\"10x^2\">10x^2</span> when <span data-math=\"x\">x</span> is <span data-math=\"8\">8</span>?</li>\n  </ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669282,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"2\" type=\"a\">\n  <li>What is the value of <span data-math=\"10x^2\">10x^2</span> when <span data-math=\"x\">x</span> is <span data-math=\"10\">10</span>?</li>\n  </ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669283,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"3\" type=\"a\">\n  <li>What is the value of <span data-math=\"10x^2\">10x^2</span> when <span data-math=\"x\">x</span> is <span data-math=\"12\">12</span>?</li>\n  </ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669284,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"6\">\n  <li>Determine the following values of <span data-math=\"2^x\">2^x</span>.</li>\n</ol><br>  <ol class=\"os-raise-noindent\" type=\"a\">\n    <li>What is the value of <span data-math=\"2^x\">2^x</span> when <span data-math=\"x\">x</span> is <span data-math=\"8\">8</span>?</li>\n  </ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669285,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"2\" type=\"a\">\n  <li>What is the value of <span data-math=\"2^x\">2^x</span> when <span data-math=\"x\">x</span> is <span data-math=\"10\">10</span>?</li>\n  </ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669286,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"3\" type=\"a\">\n  <li>What is the value of <span data-math=\"2^x\">2^x</span> when <span data-math=\"x\">x</span> is <span data-math=\"12\">12</span>?</li>\n  </ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669287,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"7\">\n  <li>Choose the best statement that describes how the values of the exponential expression <span data-math=\"2^x\">2^x</span> and the quadratic expression <span data-math=\"10x^2\">10x^2x</span> change as <span data-math=\"x\">x</span> becomes greater and greater.</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1334183,
+     "content_html": "There is no change in the values of the expressions when <span data-math=\"x\">x</span> increases."
+    },
+    {
+     "id": 1334184,
+     "content_html": "They both grow at the same rate."
+    },
+    {
+     "id": 1334185,
+     "content_html": "The value of the quadratic expression grows much more quickly as <span data-math=\"x\">x</span> increases."
+    },
+    {
+     "id": 1334186,
+     "content_html": "The value of the exponential expression grows much more quickly as <span data-math=\"x\">x</span> increases."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

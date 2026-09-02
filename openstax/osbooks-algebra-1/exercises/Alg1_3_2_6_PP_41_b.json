@@ -1,0 +1,374 @@
+{
+ "images": [],
+ "tags": [
+  "teks:A1.4.C",
+  "machine-teks:c6167c81-1b38-524b-bc45-5efbc4ed28bd",
+  "raise-content-id:2213c4f6-63a8-43f1-88d4-65cbbcb95f2b",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:f48413a0-ef8a-57ab-8cfc-1ef9a3193314"
+ ],
+ "uuid": "ae258b91-1fc8-481e-8657-23a6c4ef22da",
+ "group_uuid": "af862ac9-11ca-41da-882f-09a256fdd728",
+ "number": 68586,
+ "version": 7,
+ "uid": "68586@7",
+ "published_at": "2025-08-19T17:49:21.245Z",
+ "nickname": "Alg1_3_2_6_PP_41_b",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>Use the following information to answer questions 3 - 5.</p>\n<blockquote>\n  <p>The scatter plots below show different lines that students used to model the relationship between body mass (in pounds) and bite force (in pounds) for crocodiles.</p>\n  <p>Match each graph to one of the equations below, and explain your reasoning. Let <span data-math=\"B\">B</span> represent bite force (in pounds) and <span data-math=\"W\">W</span> represent body mass (in pounds).</p>\n  <div class=\"os-raise-d-flex os-raise-justify-content-between\">\n<table class=\"unnumbered\">\n        <tbody><tr>\n            <td>\n                <img alt=\"A SCATTER PLOT THAT SHOWS BODY MASS IN POUNDS ON THE X-AXIS AND BITE FORCE IN POUNDS ON THE Y-AXIS. THE LINE DRAWN INCREASES FROM LEFT TO RIGHT AND HAS A y-intercepts BETWEEN 200 AND 300.\" height=\"178\" src=\"exercises/media/065e74993df3637c.jpg\" width=\"200\">\n            </td>\n            <td>\n                <img alt=\"A SCATTER PLOT THAT SHOWS BODY MASS IN POUNDS ON THE X-AXIS AND BITE FORCE IN POUNDS ON THE Y-AXIS. THE LINE DRAWN INCREASES FROM LEFT TO RIGHT AND HAS A y-intercepts BETWEEN 300 AND 400.\" height=\"184\" src=\"exercises/media/7badbbeb8f1b70e4.jpg\" width=\"200\">\n            </td>\n            <td>\n                <img alt=\"A SCATTER PLOT THAT SHOWS BODY MASS IN POUNDS ON THE X-AXIS AND BITE FORCE IN POUNDS ON THE Y-AXIS. THE LINE DRAWN INCREASES FROM LEFT TO RIGHT AND HAS A y-intercepts BETWEEN 100 AND 200.\" height=\"184\" src=\"exercises/media/a0ccb4a112ac09a9.jpg\" width=\"200\">\n            </td>\n        </tr>\n    </tbody></table>\n  </div>\n</blockquote>\n <br>",
+ "questions": [
+  {
+   "id": 646520,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"3\">\n  <li>Which graph represents data that could be modeled by the equation, <span data-math=\"B=3.28W+126\">B=3.28W+126</span>?</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1272848,
+     "content_html": "Line 1"
+    },
+    {
+     "id": 1272849,
+     "content_html": "Line 2"
+    },
+    {
+     "id": 1272850,
+     "content_html": "Line 3"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 646521,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"4\">\n    <li>Which graph represents data that could be modeled by the equation, <span data-math=\"B = 3.04W + 351\">B = 3.04W + 351</span>?</li>\n  </ol>",
+   "answers": [
+    {
+     "id": 1272851,
+     "content_html": "Line 1"
+    },
+    {
+     "id": 1272852,
+     "content_html": "Line 2"
+    },
+    {
+     "id": 1272853,
+     "content_html": "Line 3"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 646522,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"5\">\n    <li>Which graph represents data that could be modeled by the equation, <span data-math=\"B = 2.16W + 267\">B = 2.16W + 267</span>?</li>\n  </ol>",
+   "answers": [
+    {
+     "id": 1272854,
+     "content_html": "Line 1"
+    },
+    {
+     "id": 1272855,
+     "content_html": "Line 2"
+    },
+    {
+     "id": 1272856,
+     "content_html": "Line 3"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

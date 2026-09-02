@@ -1,0 +1,384 @@
+{
+ "images": [],
+ "tags": [
+  "teks:A1.4.C",
+  "machine-teks:c6167c81-1b38-524b-bc45-5efbc4ed28bd",
+  "teks:A1.4.A",
+  "machine-teks:9162b0e7-5695-5c9e-a05e-c39604c30347",
+  "raise-content-id:2c4b3d09-ef7f-4dc9-88bc-62b23bd166e1",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:f48413a0-ef8a-57ab-8cfc-1ef9a3193314"
+ ],
+ "uuid": "6918d2d0-892a-4e73-865e-c3b16d6fb193",
+ "group_uuid": "407ea555-6536-4fe4-875a-cfebb71e0db1",
+ "number": 68602,
+ "version": 6,
+ "uid": "68602@6",
+ "published_at": "2025-08-19T18:29:30.641Z",
+ "nickname": "Alg1_3_5_5_PP_87_c",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>For questions 4 – 6, use the following scenario.</p>\n<blockquote><p>The Collegiate Review publishes information about colleges and universities. The data below are for six public 4-year colleges in New York. Graduation rate is the percentage of students who graduate within six years. Student-to-faculty ratio is the number of students per full-time faculty member.</p></blockquote>\n\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th scope=\"col\">School</th>\n<th scope=\"col\">Number of Full-Time Students</th>\n<th scope=\"col\">Student-to-Faculty Ratio</th>\n<th scope=\"col\">Graduation Rate</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>\n<p>CUNY Bernard M. Baruch College</p>\n</td>\n<td>\n<p>11,477</p>\n</td>\n<td>\n<p>17</p>\n</td>\n<td>\n<p>63</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>CUNY Brooklyn College</p>\n</td>\n<td>\n<p>9,876</p>\n</td>\n<td>\n<p>15.3</p>\n</td>\n<td>\n<p>48</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>CUNY City College</p>\n</td>\n<td>\n<p>10,047</p>\n</td>\n<td>\n<p>13.1</p>\n</td>\n<td>\n<p>40</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>SUNY at Albany</p>\n</td>\n<td>\n<p>14,013</p>\n</td>\n<td>\n<p>19.5</p>\n</td>\n<td>\n<p>64</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>SUNY at Binghamton</p>\n</td>\n<td>\n<p>13,031</p>\n</td>\n<td>\n<p>20</p>\n</td>\n<td>\n<p>77</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>SUNY College at Buffalo</p>\n</td>\n<td>\n<p>9,398</p>\n</td>\n<td>\n<p>14.1</p>\n</td>\n<td>\n<p>47</p>\n</td>\n</tr>\n</tbody>\n</table>\n <br>",
+ "questions": [
+  {
+   "id": 646565,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol start=\"4\">\n<li>Use technology to calculate the value of the correlation coefficient between the number of full-time students and graduation rate. Let <span data-math=\"x\">x</span> represent the number of full-time students and <span data-math=\"y\">y</span> represent the graduation rate. Round to the nearest hundredth.</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1273018,
+     "content_html": "<span data-math=\"r≈0.27\">r≈0.27</span>"
+    },
+    {
+     "id": 1273019,
+     "content_html": "<span data-math=\"r≈−0.83\">r≈−0.83</span>"
+    },
+    {
+     "id": 1273020,
+     "content_html": "<span data-math=\"r≈0.83\">r≈0.83</span>"
+    },
+    {
+     "id": 1273021,
+     "content_html": "<span data-math=\"r≈−0.27\">r≈−0.27</span>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 646566,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol start=\"5\">\n<li>Is the linear relationship between graduation rate and number of full-time students weak, moderate, or strong?</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1273022,
+     "content_html": "weak"
+    },
+    {
+     "id": 1273023,
+     "content_html": "moderate"
+    },
+    {
+     "id": 1273024,
+     "content_html": "strong"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 646567,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol start=\"6\">\n<li>Let <span data-math=\"x\">x</span> represent the student-to-faculty ratio and the <span data-math=\"y\">y</span> represent the graduation rate. Use technology to calculate the value of the correlation coefficient between the student-to-faculty ratio and the graduation rate. Round to the nearest hundredth.</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1273025,
+     "content_html": "<span data-math=\"r \\approx -0.05\">r \\approx -0.05</span>"
+    },
+    {
+     "id": 1273026,
+     "content_html": "<span data-math=\"r \\approx 0.05\">r \\approx 0.05</span>"
+    },
+    {
+     "id": 1273027,
+     "content_html": "<span data-math=\"r \\approx -0.95\">r \\approx -0.95</span>"
+    },
+    {
+     "id": 1273028,
+     "content_html": "<span data-math=\"r \\approx 0.95\">r \\approx 0.95</span>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

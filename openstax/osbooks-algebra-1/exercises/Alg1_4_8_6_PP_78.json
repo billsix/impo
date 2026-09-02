@@ -1,0 +1,425 @@
+{
+ "images": [],
+ "tags": [
+  "teks:A1.3.B",
+  "machine-teks:52b4b9b4-002d-50d8-b7b4-dfa1ac555ef0",
+  "raise-content-id:36fb9833-9b22-48d3-ba94-bfb28c0d0c2e",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:8a41f10c-24bd-5df4-9763-caabcb011c9f"
+ ],
+ "uuid": "c1cc870c-c235-4aa1-b4df-d2775400428f",
+ "group_uuid": "ed595782-30d8-4139-b3c2-6dfc56f9ec84",
+ "number": 66611,
+ "version": 8,
+ "uid": "66611@8",
+ "published_at": "2026-03-09T20:20:16.755Z",
+ "nickname": "Alg1_4_8_6_PP_78",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>Use the following information to answer questions 1 - 5.</p>\n  <blockquote>\nThe temperature was recorded at several times during the day. Function <span data-math=\"T\">T</span> gives the temperature in degrees Fahrenheit, <span data-math=\"n\">n</span> hours since midnight. A graph for this function is provided.  </blockquote>\n  <p><img alt=\"A scatter plot illustrates the daily temperature fluctuation in F° over 24 hours, starting at midnight. Temperature drops in the early morning, peaks in the late afternoon, and then decreases, showing a typical diurnal cycle.\" height=\"278\" src=\"exercises/media/d805f4e258f834db.jpg\" width=\"300\"></p>",
+ "questions": [
+  {
+   "id": 667599,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\">\n  <li>For the interval from <span data-math=\"n = 1\">n = 1</span> to <span data-math=\"n = 5\">n = 5</span>, determine if the average rate of change of the temperature is positive, negative, or zero.</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1331712,
+     "content_html": "positive"
+    },
+    {
+     "id": 1331713,
+     "content_html": "negative"
+    },
+    {
+     "id": 1331714,
+     "content_html": "zero"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 667600,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"2\">\n  <li>For the interval from <span data-math=\"n = 5\">n = 5</span> to <span data-math=\"n = 7\">n = 7</span>, determine if the average rate of change of the temperature is positive, negative, or zero.</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1331715,
+     "content_html": "positive"
+    },
+    {
+     "id": 1331716,
+     "content_html": "negative"
+    },
+    {
+     "id": 1331717,
+     "content_html": "zero"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 667601,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"3\">\n  <li>For the interval from <span data-math=\"n = 10\">n = 10</span> to <span data-math=\"n = 20\">n = 20</span>, determine if the average rate of change of the temperature is positive, negative, or zero.</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1331718,
+     "content_html": "positive"
+    },
+    {
+     "id": 1331719,
+     "content_html": "negative"
+    },
+    {
+     "id": 1331720,
+     "content_html": "zero"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 667602,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"4\">\n  <li>For the interval from <span data-math=\"n = 15\">n = 15</span> to <span data-math=\"n = 18\">n = 18</span>, determine if the average rate of change of the temperature is positive, negative, or zero.</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1331721,
+     "content_html": "positive"
+    },
+    {
+     "id": 1331722,
+     "content_html": "negative"
+    },
+    {
+     "id": 1331723,
+     "content_html": "zero"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 667603,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"5\">\n  <li>For the interval from <span data-math=\"n = 20\">n = 20</span> to <span data-math=\"n = 24\">n = 24</span>, determine if the average rate of change of the temperature is positive, negative, or zero.</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1331724,
+     "content_html": "positive"
+    },
+    {
+     "id": 1331725,
+     "content_html": "negative"
+    },
+    {
+     "id": 1331726,
+     "content_html": "zero"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

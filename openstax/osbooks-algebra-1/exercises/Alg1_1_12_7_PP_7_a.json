@@ -1,0 +1,370 @@
+{
+ "images": [
+  {
+   "created_at": "2026-03-09T20:18:56.770Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNrIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d6fe9d3906820e37a4443cafee24bfcff605dc70",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNrIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d6fe9d3906820e37a4443cafee24bfcff605dc70/Algebra-1_01_14_16_01.png"
+  },
+  {
+   "created_at": "2026-03-09T20:18:56.772Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWdrIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1cdc8118e436a95715e4b86169a19f78efc49f70",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWdrIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1cdc8118e436a95715e4b86169a19f78efc49f70/Algebra-1_01_14_16_02.png"
+  }
+ ],
+ "tags": [
+  "teks:A1.2.C",
+  "machine-teks:15afa70a-a5cd-512d-9586-6fb3aaa71e0c",
+  "teks:A1.2.B",
+  "machine-teks:45e1c534-9a8a-5a7c-8a25-abd615caafb0",
+  "raise-content-id:8ef284c1-00ab-48a5-88e3-a507f9d890c1",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:b36fd845-f548-5d0b-839c-13aa29eebed3"
+ ],
+ "uuid": "0e32d65d-ac6c-4fcd-a2d7-2071e671a9f2",
+ "group_uuid": "2a5e3bd1-b714-48f8-aab6-3d4d6066e0fe",
+ "number": 68463,
+ "version": 7,
+ "uid": "68463@7",
+ "published_at": "2026-03-09T20:18:57.223Z",
+ "nickname": "Alg1_1_12_7_PP_7_a",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "In 3 – 4, Choose the slope-intercept form of the equation of the line, shown in each graph.",
+ "questions": [
+  {
+   "id": 667385,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"3\">\n  <li><img src=\"exercises/media/085cf4cf3b56dbb4.png\" alt=\"A graph displays a straight line on a coordinate plane, extending infinitely and passing through the point (1, -2). The x and y axes range from -8 to 8, with grid lines for easy reading.\" width=\"300\"></li>\n</ol>",
+   "answers": [
+    {
+     "id": 1331347,
+     "content_html": "<span data-math=\"y=3x-5\">y=3x-5</span>"
+    },
+    {
+     "id": 1331348,
+     "content_html": "<span data-math=\"y=-5x+3\">y=-5x+3</span>"
+    },
+    {
+     "id": 1331349,
+     "content_html": "<span data-math=\"y=5x-3\">y=5x-3</span>"
+    },
+    {
+     "id": 1331350,
+     "content_html": "<span data-math=\"y=-3x+5\">y=-3x+5</span>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 667386,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"4\">\n    <li><img src=\"exercises/media/0ff915d5eb19f332.png\" alt=\"A graph displays a Cartesian coordinate system with a straight blue line descending from left to right. The line passes through the point (0, 4) and a prominent blue point at (2, 0).\" width=\"300\"></li>\n  </ol>",
+   "answers": [
+    {
+     "id": 1331351,
+     "content_html": "<span data-math=\"y=\\frac12 x+2\">y=\\frac12 x+2</span>"
+    },
+    {
+     "id": 1331352,
+     "content_html": "<span data-math=\"y=\\frac12x -4\">y=\\frac12x -4</span>"
+    },
+    {
+     "id": 1331353,
+     "content_html": "<span data-math=\"y=2x+4\">y=2x+4</span>"
+    },
+    {
+     "id": 1331354,
+     "content_html": "<span data-math=\"y=-2x+4\">y=-2x+4</span>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

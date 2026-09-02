@@ -1,0 +1,397 @@
+{
+ "images": [],
+ "tags": [
+  "teks:A1.4.C",
+  "machine-teks:c6167c81-1b38-524b-bc45-5efbc4ed28bd",
+  "raise-content-id:30068c90-b089-4b92-a495-446e12f918e8",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:f48413a0-ef8a-57ab-8cfc-1ef9a3193314"
+ ],
+ "uuid": "f10de709-4eed-4f11-a69b-e78eac028ff5",
+ "group_uuid": "538bf66e-fe79-4632-9a42-4e0825c33731",
+ "number": 68579,
+ "version": 5,
+ "uid": "68579@5",
+ "published_at": "2025-08-19T17:30:50.238Z",
+ "nickname": "Alg1_3_1_6_PP_82_a",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For questions 2–5, use the following to answer each question.\n<blockquote>\n  <p>The scatter plot shows the number of minutes people had to wait for service at a restaurant and the number of waitstaff available at the time.</p>\n <img alt=\"A scatter plot. Horizontal, 0 to 9, by point 5’s, labeled staff. Vertical, 0 to 13, by point 5’s, labeled wait time. 10 dots trend linearly down and to the right.\" src=\"exercises/media/24ad6cfc7108f2e5.svg\">   <p>A line that models the data is given by the equation <span data-math=\"y=-1.62x+18\">y=-1.62x+18</span>, where <span data-math=\"y\">y</span> represents the wait time, and <span data-math=\"x\">x</span> represents the number of waitstaff available.</p>\n</blockquote>",
+ "questions": [
+  {
+   "id": 646499,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<div>\n  <ol class=\"os-raise-noindent\" start=\"2\">\n    <li>The slope of the line is <span data-math=\"-1.62\">-1.62</span>. What does this mean in this situation?</li>\n  </ol>\n</div>",
+   "answers": [
+    {
+     "id": 1272777,
+     "content_html": "When there are 18 staff people, there is no wait time"
+    },
+    {
+     "id": 1272778,
+     "content_html": "When there are 0 staff people, the wait time is 18 minutes"
+    },
+    {
+     "id": 1272779,
+     "content_html": "For every wait time increase of 1 minute the staff people increase by 1.62"
+    },
+    {
+     "id": 1272780,
+     "content_html": "For every increase of 1 staff person, the wait time decreases 1.62 minutes"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 646500,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"3\">\n  <li>The slope of the line is <span data-math=\"-1.62\">-1.62</span>. Is it realistic to conclude, for this slope, as <span data-math=\"x\">x</span> increases, <span data-math=\"y\">y</span> will decrease?</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1272781,
+     "content_html": "Yes"
+    },
+    {
+     "id": 1272782,
+     "content_html": "No"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 646501,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"4\">\n  <li>The <span data-math=\"y\">y</span>-intercept is <span data-math=\"(0,18)\">(0,18)</span>. What does this mean in this situation?</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1272783,
+     "content_html": "When there are 18 staff people, there is no wait time"
+    },
+    {
+     "id": 1272784,
+     "content_html": "When there are 0 staff people, the wait time is 18 minutes"
+    },
+    {
+     "id": 1272785,
+     "content_html": "For every wait time increase of 1 minute the staff people increase by 1.62"
+    },
+    {
+     "id": 1272786,
+     "content_html": "For every increase of 1 staff person, the wait time decreases 1.62 minutes"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 646502,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"5\">\n  <li>The <span data-math=\"y\">y</span>-intercept is <span data-math=\"(0,18)\">(0,18)</span>. Is this a realistic <span data-math=\"y\">y</span>-intercept point if <span data-math=\"y\">y</span> represents the wait time and <span data-math=\"x\">x</span> represents the number of staff available?</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1272787,
+     "content_html": "Yes"
+    },
+    {
+     "id": 1272788,
+     "content_html": "No"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

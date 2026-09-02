@@ -1,0 +1,414 @@
+{
+ "images": [],
+ "tags": [
+  "teks:A1.7.A",
+  "machine-teks:0f80c030-76af-58e4-8ff8-b3e241e96594",
+  "raise-content-id:af85d497-4717-4fc4-b6c7-2aacde1d05e9",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:b0dcf8b7-69de-57ca-bc14-098b44e4da00"
+ ],
+ "uuid": "96a6f114-fcd6-4923-be64-8d6d41b0f6c6",
+ "group_uuid": "86c5bbdd-f21f-4bac-bce1-ea0504d2cefa",
+ "number": 68829,
+ "version": 6,
+ "uid": "68829@6",
+ "published_at": "2026-04-15T20:34:17.807Z",
+ "nickname": "Alg1_7_14_6_PP_68_b",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<ol class=\"os-raise-noindent\" start=\"3\">\n  <li>The height in feet of a thrown football is modeled by the equation <span data-math=\"f(t)=6+30t−16t^2\">f(t)=6+30t−16t^2</span>, where time <span data-math=\"t\">t</span> is measured in seconds.</li>\n</ol>",
+ "questions": [
+  {
+   "id": 669180,
+   "is_answer_order_important": false,
+   "stem_html": "<ol class=\"os-raise-noindent\" type=\"a\">\n  <li>Which term in the equation describes how many feet above the ground the football was thrown?</li>\n  </ol>",
+   "answers": [
+    {
+     "id": 1334051,
+     "content_html": "The squared term <span data-math=\"16t^2\">16t^2</span>"
+    },
+    {
+     "id": 1334052,
+     "content_html": "The squared term <span data-math=\"-16t^2\">-16t^2</span>"
+    },
+    {
+     "id": 1334053,
+     "content_html": "The linear term <span data-math=\"30t\">30t</span>"
+    },
+    {
+     "id": 1334054,
+     "content_html": "The constant term 6"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "stimulus_html": ""
+  },
+  {
+   "id": 669181,
+   "is_answer_order_important": false,
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"2\" type=\"a\">\n  <li>Which term in the equation describes the initial upward velocity of the football in feet per second?</li>\n  </ol>",
+   "answers": [
+    {
+     "id": 1334055,
+     "content_html": "The squared term <span data-math=\"16t^2\">16t^2</span>"
+    },
+    {
+     "id": 1334056,
+     "content_html": "The squared term <span data-math=\"-16t^2\">-16t^2</span>"
+    },
+    {
+     "id": 1334057,
+     "content_html": "The linear term <span data-math=\"30t\">30t</span>"
+    },
+    {
+     "id": 1334058,
+     "content_html": "The constant term 6"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "stimulus_html": ""
+  },
+  {
+   "id": 669182,
+   "is_answer_order_important": false,
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"3\" type=\"a\">\n  <li>How does the squared term <span data-math=\"-16t^2\">-16t^2</span> affect the value of the function <span data-math=\"f\">f</span>?</li>\n  </ol>",
+   "answers": [
+    {
+     "id": 1334059,
+     "content_html": "The value of the function is zero when <span data-math=\"−16t^2\">−16t^2</span> is zero."
+    },
+    {
+     "id": 1334060,
+     "content_html": "The squared term has no effect on the value of the function."
+    },
+    {
+     "id": 1334061,
+     "content_html": "The squared term increases the value of the function."
+    },
+    {
+     "id": 1334062,
+     "content_html": "The squared term decreases the value of the function."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "stimulus_html": ""
+  },
+  {
+   "id": 669183,
+   "is_answer_order_important": false,
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"4\" type=\"a\">\n  <li>What does this term <span data-math=\"−16t^2\">−16t^2</span> reveal about the situation?</li>\n  </ol>",
+   "answers": [
+    {
+     "id": 1334063,
+     "content_html": "How long the ball is in the air before it hits the ground."
+    },
+    {
+     "id": 1334064,
+     "content_html": "How far the football was thrown above the ground."
+    },
+    {
+     "id": 1334065,
+     "content_html": "The initial upward velocity of the football."
+    },
+    {
+     "id": 1334066,
+     "content_html": "The influence of gravity pulling the ball down to the ground."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "stimulus_html": ""
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

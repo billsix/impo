@@ -1,0 +1,327 @@
+{
+ "images": [],
+ "tags": [
+  "teks:A1.12.B",
+  "machine-teks:75ad8f40-a6fc-5195-b41b-b0ee8e2c31dd",
+  "raise-content-id:4b80f75e-83fa-47fa-908b-5f41956b3084",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:b0dcf8b7-69de-57ca-bc14-098b44e4da00"
+ ],
+ "uuid": "772eeb96-506b-4f99-a0bc-7dca2922894c",
+ "group_uuid": "d209a4b3-f980-4c0d-b797-52cd660bb934",
+ "number": 68855,
+ "version": 6,
+ "uid": "68855@6",
+ "published_at": "2025-08-21T14:29:30.859Z",
+ "nickname": "Alg1_7_4_5_PP_18_b",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 648200,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"9\">\n  <li>The table shows the values of <span data-math=\"4^x\">4^x</span> and <span data-math=\"100x^2\">100x^2</span> for some values of <span data-math=\"x\">x</span>.<br>    \n<table class=\"os-raise-skinnytable unnumbered\">\n      <thead>\n        <tr>\n          <th scope=\"col\"><span data-math=\"x\">x</span></th>\n          <th scope=\"col\"><span data-math=\"4^x\">4^x</span></th>\n          <th scope=\"col\"><span data-math=\"100x^2\">100x^2</span></th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td><span data-math=\"1\">1</span></td>\n          <td><span data-math=\"4\">4</span></td>\n          <td><span data-math=\"100\">100</span></td>\n        </tr>\n        <tr>\n          <td><span data-math=\"2\">2</span></td>\n          <td><span data-math=\"16\">16</span></td>\n          <td><span data-math=\"400\">400</span></td>\n        </tr>\n        <tr>\n          <td><span data-math=\"3\">3</span></td>\n          <td><span data-math=\"64\">64</span></td>\n          <td><span data-math=\"900\">900</span></td>\n        </tr>\n        <tr>\n          <td><span data-math=\"4\">4</span></td>\n          <td><span data-math=\"256\">256</span></td>\n          <td><span data-math=\"1,600\">1,600</span></td>\n        </tr>\n        <tr>\n          <td><span data-math=\"5\">5</span></td>\n          <td><span data-math=\"1,024\">1,024</span></td>\n          <td><span data-math=\"2,500\">2,500</span></td>\n        </tr>\n      </tbody>\n    </table>\n <br>     <p>Looking at the patterns in the table, choose the best answer to explain why, as the value of <span data-math=\"x\">x</span> increases, the values of the exponential expression <span data-math=\"4^x\">4^x</span> will eventually overtake the values of the quadratic expression <span data-math=\"100x^2\">100x^2</span>.</p>\n</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1278257,
+     "content_html": "The value of <span data-math=\"100x^2\">100x^2</span> grows by a factor of <span data-math=\"x\">x</span> every time and the value of <span data-math=\"4^x\">4^x</span> grows by different factors."
+    },
+    {
+     "id": 1278258,
+     "content_html": "The value of <span data-math=\"100x^2\">100x^2</span> grows by different factors and the value of <span data-math=\"4^x\">4^x</span> grows by a factor of <span data-math=\"x\">x</span> every time."
+    },
+    {
+     "id": 1278259,
+     "content_html": "The value of <span data-math=\"100x^2\">100x^2</span> grows by a factor of 4 every time and the value of <span data-math=\"4^x\">4^x</span> grows by different factors."
+    },
+    {
+     "id": 1278260,
+     "content_html": "The value of <span data-math=\"100x^2\">100x^2</span> grows by different factors and the value of <span data-math=\"4^x\">4^x</span> grows by a factor of 4 every time."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

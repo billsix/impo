@@ -1,0 +1,422 @@
+{
+ "images": [],
+ "tags": [
+  "teks:A1.2.I",
+  "machine-teks:43db79a6-1853-5ddd-bbc2-56c2374f1799",
+  "teks:A1.3.G",
+  "teks:A1.3.F",
+  "machine-teks:416640b1-38ee-57d7-80b1-978e43e590ed",
+  "machine-teks:dd5d7789-1f47-52ff-8f7e-b7b90a75fb09",
+  "context-cnxmod:a7d36700-2a38-46f8-ab3d-4d10d0927999",
+  "raise-content-id:1f209805-d7b2-47b1-8d9f-e26f07909497",
+  "book-slug:algebra-1",
+  "module-slug:algebra-1:2-2-5-practice",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:071131ff-9492-5ead-aedc-813fff30dce7"
+ ],
+ "uuid": "2a7d93f6-d1d0-4543-8951-4a9eb3c103dc",
+ "group_uuid": "649fd2b4-d462-4b7c-a022-a739e303ce22",
+ "number": 68561,
+ "version": 7,
+ "uid": "68561@7",
+ "published_at": "2025-08-14T15:51:20.951Z",
+ "nickname": "Alg1_2_2_5_PP_121_d",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<p>For questions 5 – 8, use the following scenario and matching table.</p>\n<blockquote>\n  <p>A streaming service has two different membership plans. Option A charges $10 per month plus $5 for each movie. Option B charges $20 a month then $2 a movie.</p>\n</blockquote>\n<table class=\"unnumbered\">\n<thead>\n<tr>\n<th scope=\"col\">\n<p>Number of movies in a month, <span data-math=\"x\">x</span></p>\n</th>\n<th scope=\"col\">\n<p>0</p>\n</th>\n<th scope=\"col\">\n<p>1</p>\n</th>\n<th scope=\"col\">\n<p>2</p>\n</th>\n<th scope=\"col\">\n<p>3</p>\n</th>\n<th scope=\"col\">\n<p>4</p>\n</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">\n<p>Option A</p>\n</th>\n<td>\n<p>10</p>\n</td>\n<td>\n<p>15</p>\n</td>\n<td>\n<p>20</p>\n</td>\n<td>\n<p>25</p>\n</td>\n<td>\n<p>30</p>\n</td>\n</tr>\n<tr>\n<th scope=\"row\">\n<p>Option B</p>\n</th>\n<td>\n<p>20</p>\n</td>\n<td>\n<p>22</p>\n</td>\n<td>\n<p>24</p>\n</td>\n<td>\n<p>26</p>\n</td>\n<td>\n<p>28</p>\n</td>\n</tr>\n</tbody>\n</table>\n <br>",
+ "questions": [
+  {
+   "id": 646064,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"5\">\n  <li>What is the <span data-math=\"y\">y</span>-intercept for Option A and Option B?</li>\n</ol>",
+   "answers": [
+    {
+     "id": 1271510,
+     "content_html": "Option A: <span data-math=\"2\">2</span> Option B: <span data-math=\"5\">5</span>"
+    },
+    {
+     "id": 1271511,
+     "content_html": "Option A: <span data-math=\"5\">5</span> Option B: <span data-math=\"2\">2</span>"
+    },
+    {
+     "id": 1271512,
+     "content_html": "Option A: <span data-math=\"20\">20</span> Option B: <span data-math=\"10\">10</span>\n"
+    },
+    {
+     "id": 1271513,
+     "content_html": "Option A: <span data-math=\"10\">10</span> Option B: <span data-math=\"20\">20</span>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 646065,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"6\">\n  <li>What is the slope of Option A and Option B?</li>\n</ol>\n",
+   "answers": [
+    {
+     "id": 1271514,
+     "content_html": "Option A: <span data-math=\"m =5\">m =5</span> Option B: <span data-math=\"m =2\">m =2</span>\n"
+    },
+    {
+     "id": 1271515,
+     "content_html": "Option A: <span data-math=\"m =\\frac12\">m =\\frac12</span> Option B: <span data-math=\"m =\\frac15\">m =\\frac15</span>\n"
+    },
+    {
+     "id": 1271516,
+     "content_html": "Option A: <span data-math=\"m=2\">m=2</span> Option B: <span data-math=\"m =5\">m =5</span>"
+    },
+    {
+     "id": 1271517,
+     "content_html": "Option A: <span data-math=\"\\frac{52}x=9\">\\frac{52}x=9</span> Option B: <span data-math=\"m =\\frac 12\">m =\\frac 12</span>\n"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 646066,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"7\">\n  <li>What is the equation of Option A?</li>\n</ol>\n",
+   "answers": [
+    {
+     "id": 1271518,
+     "content_html": "<span data-math=\"y=10x-5\">y=10x-5</span>"
+    },
+    {
+     "id": 1271519,
+     "content_html": "<span data-math=\"y=5x+10\">y=5x+10</span>"
+    },
+    {
+     "id": 1271520,
+     "content_html": "<span data-math=\"y=5x-10\">y=5x-10</span>"
+    },
+    {
+     "id": 1271521,
+     "content_html": "<span data-math=\"y=10x+5\">y=10x+5</span>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 646067,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"8\">\n  <li>What is the equation of Option B?</li>\n</ol>\n",
+   "answers": [
+    {
+     "id": 1271522,
+     "content_html": "<span data-math=\"y=2x+10\">y=2x+10</span>"
+    },
+    {
+     "id": 1271523,
+     "content_html": "<span data-math=\"y=5x+10\">y=5x+10</span>"
+    },
+    {
+     "id": 1271524,
+     "content_html": "<span data-math=\"y=2x+20\">y=2x+20</span>"
+    },
+    {
+     "id": 1271525,
+     "content_html": "<span data-math=\"y=5x+20\">y=5x+20</span>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

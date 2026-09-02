@@ -1,0 +1,365 @@
+{
+ "images": [],
+ "tags": [
+  "teks:A1.8.A",
+  "machine-teks:c663451e-af7c-541e-810a-0b632bfde4f0",
+  "raise-content-id:2cba9f5d-8a29-47f5-8c43-8db679437249",
+  "assessment:practice:https://openstax.org/orn/book:subbook/c437e8a1-8b36-4723-ba43-b2afd6abad0c:70f51419-5de4-54c2-a8b6-53f0e58b327e"
+ ],
+ "uuid": "ce7dc6d8-d35d-4a80-9473-09349577147b",
+ "group_uuid": "aa0c7092-6e18-4bec-a3c0-082a840ffb02",
+ "number": 66545,
+ "version": 8,
+ "uid": "66545@8",
+ "published_at": "2026-04-15T20:35:01.911Z",
+ "nickname": "Alg1_9_7_5_PP_11",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 669380,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\">\n  <li>Mai and Jada are solving the equation <span data-math=\"2x^2−7x=15\">2x^2−7x=15</span> using the quadratic formula.</li>\n</ol>\n<p>Answer the following questions about the values of <span data-math=\"a\">a</span>, <span data-math=\"b\">b</span>, and <span data-math=\"c\">c</span> if this equation is written in standard form, <span data-math=\"ax^2+bx+c=0\">ax^2+bx+c=0</span>.</p>\n<ol class=\"os-raise-noindent\" type=\"a\">\n  <li>What is the value of <span data-math=\"a\">a</span>?</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669381,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"2\" type=\"a\">\n  <li>What is the value of <span data-math=\"b\">b</span>?</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669382,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" start=\"3\" type=\"a\">\n  <li>What is the value of <span data-math=\"c\">c</span>?</li>\n</ol>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 669383,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<ol class=\"os-raise-noindent\" type=\"a\" start=\"4\">\n  <li>Mai and Jada are solving the equation <span data-math=\"2x^2−7x=15\">2x^2−7x=15</span> using the quadratic formula but found different solutions.</li>\n</ol><br>  <table class=\"unnumbered\">\n<thead>\n<tr>\n<th scope=\"col\">Mai's Method</th>\n<th scope=\"col\">Jada's Method</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>\n<p>                  <span data-math=\"x=\\frac{-7 \\pm \\sqrt{7^2-4(2)(-15)}}{2(2)}\">x=\\frac{-7 \\pm \\sqrt{7^2-4(2)(-15)}}{2(2)}</span> <br>                  <span data-math=\"x=\\frac{-7 \\pm \\sqrt{49-(-120)}}{4}\">x=\\frac{-7 \\pm \\sqrt{49-(-120)}}{4}</span> <br>                  <span data-math=\"x=\\frac{-7 \\pm \\sqrt{169}}{4}\">x=\\frac{-7 \\pm \\sqrt{169}}{4}</span> <br>                  <span data-math=\"x=\\frac{-7 \\pm 13}{4}\">x=\\frac{-7 \\pm 13}{4}</span> <br>                  <span data-math=\"x=\\frac{-7+13}{4}=\\frac{6}{4}=\\frac{3}{2}\">x=\\frac{-7+13}{4}=\\frac{6}{4}=\\frac{3}{2}</span> <br>                  <span data-math=\"x=\\frac{-7-13}{4}=\\frac{-20}{4}=-5\">x=\\frac{-7-13}{4}=\\frac{-20}{4}=-5</span></p>\n</td>\n<td>\n<p>                  <span data-math=\"x=\\frac{-(-7) \\pm \\sqrt{(-7)^2-4(2)(-15)}}{2(2)}\">x=\\frac{-(-7) \\pm \\sqrt{(-7)^2-4(2)(-15)}}{2(2)}</span> <br>                  <span data-math=\"x=\\frac{7 \\pm \\sqrt{49-(-120)}}{4}\">x=\\frac{7 \\pm \\sqrt{49-(-120)}}{4}</span> <br>                  <span data-math=\"x=\\frac{7 \\pm \\sqrt{71}}{4}\">x=\\frac{7 \\pm \\sqrt{71}}{4}</span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>Who has the correct solution?</p>",
+   "answers": [
+    {
+     "id": 1334291,
+     "content_html": "Mai"
+    },
+    {
+     "id": 1334292,
+     "content_html": "Jada"
+    },
+    {
+     "id": 1334293,
+     "content_html": "Both of them"
+    },
+    {
+     "id": 1334294,
+     "content_html": "Neither one"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}
