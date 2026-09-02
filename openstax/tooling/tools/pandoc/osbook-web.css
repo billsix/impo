@@ -1,0 +1,94 @@
+/* calculus-web.css -- styles the pandoc HTML so the converted LaTeX reads like
+   the book: house teal accent, boxed environments mirroring the PDF's mdframed
+   styles. Environment NUMBERING + cross-reference text are done by xref.lua;
+   this file is presentation only. */
+
+:root {
+  --os: #00507d;          /* deep teal accent */
+  --os-dk: #003f63;
+  --os-lt: #eef4f8;       /* light tint for boxes */
+  --os-rule: #00507d33;
+}
+
+html { font-size: 18px; }
+body {
+  font-family: "Baskervville", Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  max-width: 46rem;
+  margin: 2rem auto;
+  padding: 0 1rem 4rem;
+}
+
+/* ---- headings ---- */
+h1, h2, h3, h4, .title, nav { font-family: system-ui, -apple-system, sans-serif; }
+h1.title { font-size: 2rem; color: var(--os); font-style: italic; font-weight: 700; }
+h1 { font-size: 1.7rem; color: var(--os); font-style: italic; font-weight: 700;
+     border-bottom: 2px solid var(--os); padding-bottom: .2rem; margin-top: 2.2rem; }
+h2 { font-size: 1.25rem; color: var(--os); font-weight: 700; margin-top: 1.6rem; }
+h3 { font-size: 1.05rem; color: var(--os-dk); font-weight: 700; }
+a { color: var(--os-dk); }
+
+/* ---- table of contents ---- */
+nav#TOC { background: var(--os-lt); border: 1px solid var(--os-rule);
+  border-radius: 4px; padding: .6rem 1rem; font-size: .9rem; }
+nav#TOC ul { margin: .2rem 0; }
+
+/* ---- environment heading run-in (xref.lua inserts a <strong> label) ---- */
+.envhead { font-family: system-ui, sans-serif; font-weight: 700; color: var(--os); }
+
+/* ---- shaded boxes: theorem family ---- */
+.theorem, .lemma, .corollary, .proposition {
+  background: var(--os-lt); padding: .5rem .8rem; margin: 1rem 0; border-radius: 3px;
+}
+/* ---- left-rule boxes: definition / strategy / rule ---- */
+.definition, .strategy, .mathrule {
+  border-left: 3px solid var(--os); background: #fafcfd;
+  padding: .4rem .8rem; margin: 1rem 0;
+}
+/* ---- titled outline boxes ---- */
+.objectives, .keyconcepts, .keyequations, .project {
+  border: 1px solid var(--os); border-radius: 4px; background: var(--os-lt);
+  padding: .5rem .9rem; margin: 1rem 0;
+}
+/* ---- examples / checkpoints: unboxed but set off ---- */
+.example, .checkpoint { margin: 1rem 0; }
+.example { border-left: 3px solid var(--os-rule); padding-left: .8rem; }
+/* ---- solutions / answers: indented, lighter ---- */
+.solution, .answer { margin: .3rem 0 .8rem; padding-left: .8rem;
+  border-left: 2px solid #ccc; color: #333; }
+.solution::before { content: "Solution. "; font-style: italic; font-weight: 600; }
+/* ---- notes ---- */
+.calcnote, .medianote { font-size: .95rem; background: #f7f7f5;
+  padding: .4rem .8rem; margin: .8rem 0; border-radius: 3px; }
+.medianote::before { content: "Media. "; font-weight: 700; color: var(--os); }
+
+/* ---- images: cap EVERY image to the column (bare <img> from media/ and
+   injected exercises weren't constrained, so large rasters overflowed) ---- */
+img { max-width: 100%; height: auto; }
+
+/* ---- figures ---- */
+.calcfig, figure { text-align: center; margin: 1.2rem 0; }
+.calcfig img, figure img { max-width: 90%; height: auto;
+  border: 1px solid #eee; background: #fff; }
+
+/* ---- injected practice exercises (os-embed; questions-only) ---- */
+.practice { border-left: 3px solid var(--os); background: #fafcfd;
+  padding: .4rem .8rem; margin: 1rem 0; }
+.practice::before { content: "Practice. "; font-family: system-ui, sans-serif;
+  font-weight: 700; color: var(--os); }
+figcaption, .calcfig p:last-child { font-size: .88rem; color: #444;
+  font-style: italic; margin-top: .3rem; }
+
+/* ---- math ---- */
+math { font-size: 1.02em; }
+math[display="block"] { display: block; overflow-x: auto; margin: .6rem 0; }
+
+/* ---- key-equations / key-concepts headers (xref.lua titles them) ---- */
+.objectives > :first-child::before { }
+
+/* ---- misc ---- */
+table { border-collapse: collapse; margin: 1rem auto; }
+th, td { border: 1px solid #ccc; padding: .25rem .6rem; }
+hr { border: none; border-top: 1px solid var(--os-rule); margin: 2rem 0; }
+@media (max-width: 32rem) { body { margin: 1rem auto; } html { font-size: 16px; } }

@@ -1,0 +1,147 @@
+% osbook-envs.sty
+% Pedagogical environments for the OpenStax Calculus LaTeX port.
+% Adapted from the Open Logic Project's open-logic-book-envs.sty, with
+% the CNXML block vocabulary of the calculus source mapped to LaTeX:
+%
+%   CNXML                              -> environment
+%   note[@class="theorem"]            -> theorem (boxed, shaded)
+%   note (Definition) / <definition>  -> definition (boxed, left rule)
+%   <example>                         -> example (titled, unboxed)
+%   note[@class="checkpoint"]         -> checkpoint
+%   note (Problem-Solving Strategy)   -> strategy (boxed, left rule)
+%   note[@class="rule"]               -> mathrule (boxed, left rule)
+%   note[@class="media*"]             -> medianote
+%   <note> (generic)                  -> calcnote (remark style)
+%   section[@class="key-concepts"]    -> keyconcepts (titled box)
+%   section[@class="key-equations"]   -> keyequations (titled box)
+%   <md:abstract> learning objectives -> objectives (titled box)
+%
+% Requires: thmtools, ntheorem, mdframed, xcolor (loaded by osbook.cls).
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{osbook-envs}[2026/06/20 OpenStax Calculus environments]
+
+% ---- mdframed box styles (from OpenLogic) ---------------------------
+\newlength{\thmwidth}
+\setlength{\thmwidth}{16pt}
+\addtolength{\thmwidth}{\textwidth}
+
+\mdfdefinestyle{thmstyle}{backgroundcolor=OSltcolor,
+  innerleftmargin=8pt, innerrightmargin=8pt,
+  userdefinedwidth=\thmwidth, everyline=true, needspace=1cm,
+  splittopskip=2\topsep, hidealllines=true,
+  beforesingleframe={\hskip-8pt}, beforebreak={\hskip-8pt}}
+
+\mdfdefinestyle{defstyle}{linecolor=OScolor,
+  linewidth=2pt, innerleftmargin=6pt, innerrightmargin=6pt,
+  userdefinedwidth=\thmwidth, everyline=true, needspace=1cm,
+  beforesingleframe={\hskip-8pt}, beforebreak={\hskip-8pt}}
+
+% ---- theorem-like environments --------------------------------------
+\declaretheorem[style=plain, name=Theorem,
+  mdframed={style=thmstyle}, numberwithin=chapter]{theorem}
+\declaretheorem[style=plain, name=Corollary,
+  mdframed={style=thmstyle}, refname={Corollary,Corollaries},
+  sibling=theorem]{corollary}
+\declaretheorem[style=plain, name=Lemma,
+  mdframed={style=thmstyle}, refname={Lemma,Lemmas},
+  sibling=theorem]{lemma}
+\declaretheorem[style=definition, name=Definition,
+  mdframed={style=defstyle}, sibling=theorem]{definition}
+\declaretheorem[style=definition, name=Example,
+  sibling=theorem]{example}
+\declaretheorem[style=definition, name=Checkpoint,
+  sibling=theorem]{checkpoint}
+% OpenStax does not number its running remark notes; drop the "Note 1." counter
+% so they read as a plain "Note." run-in (matches the official PDF).
+\declaretheorem[style=remark, name=Note, numbered=no]{calcnote}
+% The theorem-family counter resets per chapter (numberwithin=chapter), so the
+% siblings (example/checkpoint/definition/...) collide in hyperref's default
+% \theHtheorem. Override it to include the chapter for unique destinations.
+\def\theHtheorem{\thechapter.\arabic{theorem}}
+
+% cleveref names
+\crefname{theorem}{Theorem}{Theorems}
+\crefname{corollary}{Corollary}{Corollaries}
+\crefname{lemma}{Lemma}{Lemmas}
+\crefname{definition}{Definition}{Definitions}
+\crefname{example}{Example}{Examples}
+\crefname{checkpoint}{Checkpoint}{Checkpoints}
+\crefname{equation}{Equation}{Equations}
+\crefname{figure}{Figure}{Figures}
+\crefname{table}{Table}{Tables}
+
+% ---- titled-box environments (not numbered) -------------------------
+% A reusable boxed block with a sans-serif accent-colored heading.
+\newmdenv[linecolor=OScolor, linewidth=1pt, roundcorner=2pt,
+  backgroundcolor=OSltcolor, innerleftmargin=8pt, innerrightmargin=8pt,
+  innertopmargin=6pt, innerbottommargin=6pt,
+  userdefinedwidth=\thmwidth, skipabove=\topsep, skipbelow=\topsep]{OS@titledbox}
+
+\newcommand{\OS@boxhead}[1]{%
+  {\sffamily\bfseries\color{OScolor}#1\par}\smallskip}
+
+\newenvironment{objectives}{%
+  \begin{OS@titledbox}\OS@boxhead{Learning Objectives}}{\end{OS@titledbox}}
+\newenvironment{keyconcepts}{%
+  \begin{OS@titledbox}\OS@boxhead{Key Concepts}}{\end{OS@titledbox}}
+\newenvironment{keyequations}{%
+  \begin{OS@titledbox}\OS@boxhead{Key Equations}}{\end{OS@titledbox}}
+
+% Problem-Solving Strategy & named rules: left-rule boxes with a heading
+\newenvironment{strategy}[1][Problem-Solving Strategy]{%
+  \begin{mdframed}[style=defstyle]\OS@boxhead{#1}}{\end{mdframed}}
+\newenvironment{mathrule}[1][Rule]{%
+  \begin{mdframed}[style=defstyle]\OS@boxhead{#1}}{\end{mdframed}}
+
+% Non-floating figure block (works inside boxes; faithful to the inline web
+% layout). \maxfigwidth = natural width, capped at .85\linewidth.
+% (@ is already a letter throughout a .sty; no \makeatletter needed)
+\newcommand{\maxfigwidth}{%
+  \ifdim\Gin@nat@width>.85\linewidth .85\linewidth\else\Gin@nat@width\fi}
+\newenvironment{calcfig}{\par\medskip\begin{center}}{\end{center}\par\medskip}
+
+% Student project: a titled box for the extended end-of-chapter projects
+\newenvironment{project}[1][Student Project]{%
+  \begin{OS@titledbox}\OS@boxhead{#1}}{\end{OS@titledbox}}
+
+% Media / interactive callout
+\newenvironment{medianote}{%
+  \par\smallskip\noindent{\sffamily\bfseries\color{OScolor}Media.}\ }{\par\smallskip}
+
+% Injected os-embed practice exercise (questions-only; content fetched into
+% exercises/ by tools/cnxml2tex/fetch_exercises.py). Left-rule box, "Practice"
+% heading -- distinct from the book's own end-of-section exercises.
+\newenvironment{practice}{%
+  \par\smallskip\begin{mdframed}[style=defstyle]\OS@boxhead{Practice}}%
+  {\end{mdframed}\par\smallskip}
+
+% OpenStax lesson callouts (try / self-check / mini-lesson / links-to-learning):
+% a light-gray box with a teal sans run-in heading, approximating the web look.
+\newmdenv[backgroundcolor=OSltcolor, hidealllines=true,
+  innerleftmargin=8pt, innerrightmargin=8pt, innertopmargin=6pt,
+  innerbottommargin=6pt, skipabove=\topsep, skipbelow=\topsep,
+  userdefinedwidth=\thmwidth]{OS@calloutbox}
+\newcommand{\OS@calhead}[1]{{\sffamily\bfseries\color{OSmed}#1}\par\smallskip}
+\newenvironment{tryit}{\begin{OS@calloutbox}\OS@calhead{Try It}}{\end{OS@calloutbox}}
+\newenvironment{selfcheck}{\begin{OS@calloutbox}\OS@calhead{Self Check}}{\end{OS@calloutbox}}
+\newenvironment{minilesson}{\begin{OS@calloutbox}\OS@calhead{Mini-Lesson Question}}{\end{OS@calloutbox}}
+\newenvironment{linklearning}{\begin{OS@calloutbox}\OS@calhead{Links to Learning}}{\end{OS@calloutbox}}
+% Generic titled callout (light-gray box + teal title bar) for classless titled
+% notes -- e.g. procedural "How To" boxes in the OpenStax source.
+\newenvironment{oscallout}[1]{\begin{OS@calloutbox}\OS@calhead{#1}}{\end{OS@calloutbox}}
+
+% OpenStax "EXAMPLE N" marker: a teal filled badge with white sans-bold text.
+\newcommand{\OSexamplebadge}[1]{%
+  \colorbox{OScolor}{\color{OSaccent}\sffamily\bfseries\small\strut\,\MakeUppercase{#1}\,}}
+
+% ---- role-tagged discursive environments (from OpenLogic) -----------
+% Print transparently by default; \excludeenv{name} to drop, or
+% \let\name\comment\let\endname\endcomment to suppress.
+\newenvironment{explain}{}{}      % expansive explanation for novices
+\newenvironment{application}{\paragraph{Application}\par}{} % real-world application
+\newenvironment{digress}{}{}      % digression
+\newenvironment{history}{\paragraph{Historical Note}\par}{}
+\newenvironment{pitfall}{\paragraph{Common Pitfall}\par}{} % common mistake
+
+\endinput

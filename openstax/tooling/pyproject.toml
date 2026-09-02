@@ -1,0 +1,45 @@
+# Tooling config for the in-repo CNXML->LaTeX converter (tools/*.py).
+# This repo is a LaTeX-port project, NOT a Python package -- there is no
+# [project]/[build-system]; this file only configures ruff, ty, and pytest for
+# the converter sources. Modeled on the geometricalgebra project's setup.
+
+[tool.ruff]
+# Only tools/*.py is real source. Everything else (generated LaTeX, CNXML
+# modules, fetched exercises, media, build output) is data -- never lint it.
+extend-exclude = ["latex", "modules", "collections", "exercises", "media", "output"]
+line-length = 88
+
+[tool.ruff.lint]
+# Import/name hygiene + safe modernizations + the whitespace rules ruff-format
+# normalizes. Deliberately NARROWER than geometricalgebra's set: the converter is
+# a print()-driven CLI with intentionally long comment/string lines, so T201
+# (print) and the broad E5xx (line-length) families are omitted -- they would
+# flag legitimate code the formatter cannot auto-fix. Blank-line/whitespace
+# layout (E301/E302/E231) is left to `ruff format`, not the linter.
+select = [
+    "F401",   # unused import
+    "F811",   # redefinition of unused name
+    "F841",   # unused local variable
+    "E402",   # module import not at top of file
+    "I001",   # unsorted imports
+    "TID252", # ban relative imports
+    "UP007",  # use X | Y for unions
+    "UP035",  # deprecated typing imports
+    "B006",   # mutable default argument
+    "B007",   # unused loop variable
+    "B008",   # function call in default argument
+]
+ignore = []
+
+[tool.ty.environment]
+# The converter modules live in tools/cnxml2tex and tools/pandoc (not a package
+# on the default path). Declare them so `ty check tools/` resolves the
+# `import convert` / `import preprocess` in tools/tests/* (which add these dirs to
+# sys.path at runtime via conftest.py). Module-resolution config only -- every
+# rule still checks every file. Lets the format.sh / Docker gate run the
+# directory form `ty check tools/`, which is bundle-agnostic (covers whatever .py
+# a repo ships -- e.g. fetch_exercises.py exists only in osbooks-algebra-1).
+extra-paths = ["tools/cnxml2tex", "tools/pandoc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tools/tests"]

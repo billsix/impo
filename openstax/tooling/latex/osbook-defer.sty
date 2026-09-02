@@ -1,0 +1,73 @@
+% osbook-defer.sty
+% Exercise numbering + deferred answer-key collection for the OpenStax
+% Calculus LaTeX port. Adapted from the Open Logic Project's
+% open-logic-defer.sty (same underlying answers.sty mechanism), but
+% decoupled from OLP's part/chapter/section id scheme and tailored to
+% OpenStax's model:
+%
+%   * worked solutions (in examples / inline) print where they occur, via
+%     the `solution` environment;
+%   * end-of-section exercise answers are deferred to a back-of-book
+%     answer key, via the `answer` environment, and typeset by
+%     \printanswerkey.
+%
+% Exercises are numbered per chapter: \theexercise = chapter.counter.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{osbook-defer}[2026/06/20 Calculus exercises & answer key]
+
+\RequirePackage{etoolbox}
+\RequirePackage{answers}
+
+% ---- exercise numbering ---------------------------------------------
+% OpenStax restarts question numbers at each activity, as plain "1, 2, 3". The
+% converter emits \setcounter{exercise}{0} at every section/module heading; here
+% we print the bare number. Because bare numbers repeat across activities, a
+% separate never-reset counter (exabs) provides unique hyperref destinations.
+\newcounter{exercise}
+\renewcommand{\theexercise}{\arabic{exercise}}
+\newcounter{exabs}
+\def\theHexercise{ex.\arabic{exabs}}
+
+% An exercise: numbered, run-in. Body is the problem statement; it may
+% contain an `answer` environment whose body is deferred to the key.
+\newenvironment{exercise}{%
+  \stepcounter{exabs}%       unique hyperref dest (\theHexercise), before refstep
+  \refstepcounter{exercise}%
+  \par\smallskip\noindent\textbf{\theexercise.}\ %
+}{\par}
+
+% Inline worked solution (for examples and worked problems).
+\newenvironment{solution}{%
+  \par\smallskip\noindent\textit{Solution.}\ %
+}{\par}
+
+% ---- deferred answer key (back of book) -----------------------------
+% Collect every `answer' environment into a per-job file; each entry is
+% prefixed with its exercise number (written immediately, just before
+% the deferred body, via \pretocmd -- the OpenLogic trick).
+\Newassociation{answer}{OS@keybody}{ans}
+\renewenvironment{OS@keybody}[1]{}{}   % auto number arg ignored; we write our own
+% no @ in this name: it is written into the answer file and read back in the
+% document body, where @ is not a letter.
+\newcommand{\OSkeynum}[1]{\par\smallskip\noindent\textbf{#1.}\ }
+\pretocmd{\answer}{\Writetofile{ans}{\protect\OSkeynum{\theexercise}}}{}{%
+  \PackageError{osbook-defer}{could not patch answer environment}{}}
+
+\AtBeginDocument{\Opensolutionfile{ans}[\jobname-ans]}
+
+% \printanswerkey -- close the answer stream and typeset it as a chapter.
+\newcommand{\printanswerkey}{%
+  \Closesolutionfile{ans}%
+  \chapter*{Answer Key}%
+  \addcontentsline{toc}{chapter}{Answer Key}%
+  \markboth{Answer Key}{Answer Key}%
+  % Answer bodies are re-typeset here; a table/figure inside a deferred answer
+  % re-runs its \captionof, whose counter-based hyperref destination can collide
+  % with the body's (same \thetable value). Namespace the answer-key anchors.
+  \def\theHtable{ans.\arabic{table}}%
+  \def\theHfigure{ans.\arabic{figure}}%
+  \Readsolutionfile{ans}%
+}
+
+\endinput
