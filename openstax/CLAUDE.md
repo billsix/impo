@@ -14,12 +14,15 @@ at `openstax/tooling/` (see below).
    pins over time.
 2. **The delta is a SHARED toolchain, not a per-book patch series.** The maintainer's converter is
    fully automatic and **book-agnostic** (`convert.py` auto-detects a book's subcollection nesting;
-   `fetch_exercises.py` is bundle-agnostic; the generated LaTeX is never hand-edited). Surveyed
-   2026-09-02: across all 16 books the toolchain file-set is identical and the core files
-   (`convert.py`, `fetch_exercises.py`, `osbook.cls`) are **byte-identical**; the only per-book
-   variation was the hardcoded book slug in three scripts. So the toolchain is hoisted to
-   `openstax/tooling/` **once** and each book folder is thin — carrying 16 near-identical copies as
-   patches would be a maintenance smell.
+   `fetch_exercises.py` is bundle-agnostic; the generated LaTeX is never hand-edited). **Corrected
+   2026-09-03:** the per-book `latex`-branch converters were **not** byte-identical — `convert.py`
+   existed in **5 versions** (physics, organic-chemistry, python-programming, biology each diverged),
+   with further differences in `preprocess.py`, `fetch_exercises.py`, and `osbook.cls`. The shared
+   `openstax/tooling/` converter **merges** them into one feature-detecting superset (both os-embed
+   exercise schemes, math-in-titles, code blocks). Full comparison + remaining unification gaps:
+   `tasks/reference/tooling/converters.md`. Hoisting one merged toolchain and keeping each book
+   folder thin is still right — 16 near-identical copies as patches would be a maintenance smell;
+   they simply weren't identical to begin with.
 3. **"apply" = overlay the shared toolchain, not `git am`.** Because the delta is a shared file set
    (not upstream-code hunks), a book's `apply.sh` **copies `../tooling/` onto the fetched upstream
    checkout** rather than replaying patches. Everything else (fetch a pinned pristine upstream, build
