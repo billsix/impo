@@ -29,6 +29,12 @@ unreachable: `pi@192.168.0.186:/mnt/usbdrive2/gitRepos/openstax/**/osbooks-calcu
 
 - **Delta size:** 53 port-branch files; **small download cache**
   (per the `tasks/openstax-populate-books.md` survey table).
+- **No `os-embed` exercises** (0 in both schemes — confirmed 2026-09-03); 3 collection masters
+  (calculus-volume-1/2/3).
+- **Ships a per-book theme override:** `bookstyle.tex` (PDF: `\setmainfont{TeX Gyre Termes}` + a navy palette)
+  and `bookstyle-web.css` (HTML/EPUB: the same navy `:root` + Times body). These restore the maintainer's
+  calculus look over the default Roboto-Slab + teal; the shared `osbook.cls`/`html.sh`/`epub.sh` load them via
+  the per-book theme hook (see `../CLAUDE.md`). Edit these here for calculus styling — not the shared toolchain.
 - **Book specifics — single- vs multi-collection, subcollection nesting depth,
   whether `os-embed` exercises are actually present, and SVG vs raster figures —
   are verified on the first build**, not asserted here. The converter auto-detects
