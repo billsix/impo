@@ -1,0 +1,350 @@
+{
+ "images": [],
+ "tags": [
+  "k12phys-ch05-s02-lo02",
+  "k12phys-ch05-ex022",
+  "exid:k12phys-ch05-ex022",
+  "lo:stax-phys:3-3-1",
+  "aplo:stax-apphys:3.A.2.1",
+  "k12phys-ch05",
+  "aplo:stax-apphys:3.E.1.3",
+  "dok:2",
+  "k12phys",
+  "book:stax-phys",
+  "book:stax-k12phys",
+  "filter-type:import:has-context",
+  "k12phys-ch05-s02",
+  "context-cnxmod:0939b704-3646-4b02-a89d-4b31fbdf03a8",
+  "context-cnxmod:26a3d0a5-c3b8-45b9-a763-f0047e12fd7d",
+  "context-cnxmod:b7a2885d-9d3c-4e64-b382-b1da2b70d587",
+  "grasp-check",
+  "blooms:3",
+  "assignment-type:homework",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "book-slug:college-physics-ap-courses",
+  "module-slug:college-physics-ap-courses:3-3-vector-addition-and-subtraction-analytical-methods",
+  "time:medium"
+ ],
+ "uuid": "9e962d22-4a64-4c66-808b-c6a90d548ac5",
+ "group_uuid": "6efe028f-0ea5-482b-b89e-d60ae76d0188",
+ "number": 2218,
+ "version": 9,
+ "uid": "2218@9",
+ "published_at": "2024-11-09T10:56:49.434Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 516038,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "Three vectors, <span data-math=\"\\overrightarrow{\\text{u}}\">\\overrightarrow{\\text{u}}</span>, <span data-math=\"\\overrightarrow{\\text{v}}\">\\overrightarrow{\\text{v}}</span>, and <span data-math=\"\\overrightarrow{\\text{w}}\">\\overrightarrow{\\text{w}}</span>, have the same magnitude of <span data-math=\"5\\,\\text{units}\">5\\,\\text{units}</span>. Vector <span data-math=\"\\overrightarrow{\\text{v}}\">\\overrightarrow{\\text{v}}</span> points to the northeast. Vector <span data-math=\"\\overrightarrow{\\text{w}}\">\\overrightarrow{\\text{w}}</span> points to the southwest  exactly opposite to vector <span data-math=\"\\overrightarrow{\\text{u}}\">\\overrightarrow{\\text{u}}</span>. Vector <span data-math=\"\\overrightarrow{\\text{u}}\">\\overrightarrow{\\text{u}}</span> points in the northwest. If the vectors <span data-math=\"\\overrightarrow{\\text{u}}\">\\overrightarrow{\\text{u}}</span>, <span data-math=\"\\overrightarrow{\\text{v}}\">\\overrightarrow{\\text{v}}</span>, and <span data-math=\"\\overrightarrow{\\text{w}}\">\\overrightarrow{\\text{w}}</span> were added together, what would be the magnitude of the resultant vector? Why?",
+   "answers": [
+    {
+     "id": 1010674,
+     "content_html": "<span data-math=\"0\\,\\text{units}\">0\\,\\text{units}</span>. All of them will cancel each other out."
+    },
+    {
+     "id": 1010675,
+     "content_html": "<span data-math=\"5\\,\\text{units}\">5\\,\\text{units}</span>. Two of them will cancel each other out."
+    },
+    {
+     "id": 1010676,
+     "content_html": "<span data-math=\"10\\,\\text{units}\">10\\,\\text{units}</span>. Two of them will add together to give the resultant."
+    },
+    {
+     "id": 1010677,
+     "content_html": "<span data-math=\"15\">15</span> units. All of them will add together to give the resultant."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

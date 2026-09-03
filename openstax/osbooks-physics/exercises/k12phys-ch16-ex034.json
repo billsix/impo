@@ -1,0 +1,350 @@
+{
+ "images": [],
+ "tags": [
+  "os-practice-concepts",
+  "lo:stax-phys:25-3-1",
+  "k12phys-ch16",
+  "k12phys-ch16-s02",
+  "k12phys-ch16-s02-lo01",
+  "k12phys-ch16-ex034",
+  "exid:k12phys-ch16-ex034",
+  "context-cnxmod:56553201-8a7c-4a66-bedf-71375edb532c",
+  "context-cnxmod:25999bf2-d3b4-4763-b10b-86d9e977d218",
+  "context-cnxmod:c5086d6f-9d82-4f7a-803e-66da7f5d568e",
+  "aplo:stax-apphys:6.E.3.1",
+  "science-practice:mathematical-routines",
+  "dok:2",
+  "k12phys",
+  "book:stax-phys",
+  "book:stax-k12phys",
+  "book:stax-apphys",
+  "blooms:2",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "book-slug:college-physics-ap-courses",
+  "module-slug:college-physics-ap-courses:25-3-the-law-of-refraction",
+  "assignment-type:reading",
+  "time:medium"
+ ],
+ "uuid": "2d4cc234-653b-438c-a630-1156546a35a2",
+ "group_uuid": "64a0e529-97f2-4164-9f57-bd086cf15804",
+ "number": 11217,
+ "version": 9,
+ "uid": "11217@9",
+ "published_at": "2022-06-01T21:51:44.781Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 243305,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "Explain why the index of refraction is always greater than or equal to one.",
+   "answers": [
+    {
+     "id": 762627,
+     "content_html": "The formula for index of refraction, <span data-math=\"\\text{n}\">\\text{n}</span>, of a material is \n <span data-math=\"n = \\frac{\\text{speed of light in a material}}{\\text{speed of\n light in a vacuum}} = \\frac{v}{c},\">n = \\frac{\\text{speed of light in a material}}{\\text{speed of\n light in a vacuum}} = \\frac{v}{c},</span>\n where <span data-math=\"\\text{v} > \\text{c}\">\\text{v} &gt; \\text{c}</span>, so <span data-math=\"\\text{n}\">\\text{n}</span> is always greater than one."
+    },
+    {
+     "id": 762628,
+     "content_html": "The formula for index of refraction, <span data-math=\"\\text{n}\">\\text{n}</span>, of a material is \n <span data-math=\"n = \\frac{\\text{speed of light in a vacuum}}{\\text{speed of light\n in a material}} = \\frac{c}{v},\">n = \\frac{\\text{speed of light in a vacuum}}{\\text{speed of light\n in a material}} = \\frac{c}{v},</span>\n where <span data-math=\"\\text{c} > \\text{v}\">\\text{c} &gt; \\text{v}</span>, so <span data-math=\"\\text{n}\">\\text{n}</span> is always greater than one."
+    },
+    {
+     "id": 762626,
+     "content_html": "The formula for index of refraction, <span data-math=\"\\text{n}\">\\text{n}</span>, of a material is \n <span data-math=\"n = \\text{speed of light in a vacuum} \\times \\text{speed of light in a materaial}\">n = \\text{speed of light in a vacuum} \\times \\text{speed of light in a materaial}</span>\n <span data-math=\"= c \\times v,\">= c \\times v,</span>\n where <span data-math=\"\\text{c}\">\\text{c}</span>, <span data-math=\"\\text{v} > 1\">\\text{v} &gt; 1</span>, so <span data-math=\"\\text{n}\">\\text{n}</span> is always greater than one."
+    },
+    {
+     "id": 762625,
+     "content_html": "The formula for refractive index, <span data-math=\"\\text{n}\">\\text{n}</span>, of a material is \n <span data-math=\"n = \\frac{1}{\\text{speed of light in a vacuum} \\times \\text{speed\n of light in a material}} = \\frac{1}{c \\times v},\">n = \\frac{1}{\\text{speed of light in a vacuum} \\times \\text{speed\n of light in a material}} = \\frac{1}{c \\times v},</span> where <span data-math=\"% <![CDATA[\n\\text{c} < \\text{v} < 1 %]]>\">% </span>, so <span data-math=\"\\text{n}\">\\text{n}</span> is always greater than one."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}
