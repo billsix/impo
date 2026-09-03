@@ -9,7 +9,7 @@
 
 .DEFAULT_GOAL := help
 
-CONTAINER_CMD  = podman
+CONTAINER_CMD ?= $(shell command -v podman >/dev/null 2>&1 && echo podman || echo docker)
 CONTAINER_NAME = osbooks-microbiology
 
 TOOLING  = ../tooling
