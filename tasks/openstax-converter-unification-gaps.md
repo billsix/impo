@@ -17,9 +17,13 @@
   collapsible-answer + multicols-number fixes from [[openstax-html-exercise-rendering]]).
 - **Gaps #1, #2 (code blocks, math-in-titles) — already DONE** as build-all fixes.
 
-- **Gap #5 (calculus Times+blue theme) — DONE 2026-09-03.** Implemented the per-book style hook
-  (`osbook.cls` `\InputIfFileExists{osbook-bookstyle.tex}`, apply.sh copies a book's `bookstyle.tex`);
-  calculus ships Times + blue. All 3 volumes rebuilt + verified. Commit `684c871`.
+- **Gap #5 (calculus Times+blue theme) — DONE 2026-09-03.** Per-book style hook for BOTH editions:
+  - **PDF:** `osbook.cls` `\InputIfFileExists{osbook-bookstyle.tex}`; apply.sh copies a book's
+    `bookstyle.tex`. calculus ships Times + navy. 3 volumes rebuilt + verified. Commit `684c871`.
+  - **Web (HTML/EPUB):** `html.sh`/`epub.sh` append a per-book `bookstyle-web.css` (its `:root` wins);
+    apply.sh copies it into the checkout. calculus ships navy `#233A67` + Times body. Verified the
+    calculus HTML css ends with the navy override winning. Commit `fe94ce3`. (The web edition was
+    initially PDF-only — caught when the maintainer checked the calculus HTML.)
 - **`\crefname{exercise}` — DONE 2026-09-03** (`789c67c`).
 
 ### Still remaining (one item, low priority)
