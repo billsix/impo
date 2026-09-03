@@ -1,8 +1,31 @@
 # OpenStax converter unification — gaps between the shared toolchain and the original per-book converters
 
-**Status:** proposed — needs go-ahead
+**Status:** in progress — content + HTML gaps DONE 2026-09-03; #4 (font robustness), #5 (calculus theme), and the `\crefname{exercise}` warning remain
 **Priority:** 2
 **Difficulty:** 4
+
+## Progress (2026-09-03)
+
+- **Gap #3 (exercise scheme) — DONE.** Converter + fetcher handle both `#exercise/` and `#ost/api/ex/`;
+  physics (846) and biology (2337) exercises fetched, caches committed with COPYRIGHT, PDFs rebuilt and
+  verified (physics +149pp, biology AP +515pp). Audit confirmed only these two books were affected.
+  Commits `1054cda`, `2a07faf`, `e37639b`.
+- **`\unicode[<font>]{x<HEX>}` — DONE** (found remediating biology AP: a fatal `! Undefined control
+  sequence` on `\unicode[Arial]{x3B2}`). Translated to the raw codepoint (unicode-math + STIX render it).
+  Commit `438696f`.
+- **Gap #6 (`oscode`→verbatim for HTML/EPUB) — DONE** (in the HTML-fix commit `0e245cf`, with the
+  collapsible-answer + multicols-number fixes from [[openstax-html-exercise-rendering]]).
+- **Gaps #1, #2 (code blocks, math-in-titles) — already DONE** as build-all fixes.
+
+### Still remaining
+
+- **Gap #4 — `osbook.cls` `\DeclareOldFontCommand`** (belt-and-braces for `{\rm}` in chem formulae).
+  Low urgency: the converter's `{\rm X}`→`{\mathrm X}` substitution already handles the observed cases;
+  this is strictly-more-general robustness.
+- **Gap #5 — calculus Times+blue theme** via a per-book `\InputIfFileExists{book-style.tex}` style hook.
+  Cosmetic; the 3 calculus volumes build fine with the generic theme.
+- **`\crefname{exercise}` undefined** — cross-refs to exercises emit a harmless LaTeX warning (found in
+  the physics/biology rebuilds). Define `\crefname{exercise}{Exercise}{Exercises}` in `osbook.cls`.
 
 ## BLUF
 
