@@ -43,6 +43,9 @@ cp "$TOOLING/latex/osbook.cls" "$TOOLING/latex/osbook-envs.sty" \
 # to osbook-bookstyle.tex, which osbook.cls loads via \InputIfFileExists to
 # re-set the font/palette. No-op for books without one.
 [ -f bookstyle.tex ] && cp bookstyle.tex "$CHECKOUT/latex/osbook-bookstyle.tex"
+# Optional per-book WEB theme override: copy the book's bookstyle-web.css (if
+# any) into the checkout root; html.sh/epub.sh append it to osbook-web.css.
+[ -f bookstyle-web.css ] && cp bookstyle-web.css "$CHECKOUT/bookstyle-web.css"
 
 # Converter lint/type/test config (format.sh + test target read it).
 cp "$TOOLING/pyproject.toml" "$CHECKOUT/"

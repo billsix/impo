@@ -59,6 +59,11 @@ for slug in $(cd "$ROOT/collections" && ls *.collection.xml | sed 's/\.collectio
         defs.tex "${slug}.tex" \
         -o "$outdir"
     cp "$ROOT/tools/pandoc/osbook-web.css" "$outdir/osbook-web.css"
+    # Optional per-book web theme: a book may ship bookstyle-web.css (placed in the
+    # checkout by apply.sh) to override the shared palette/fonts. Appended AFTER the
+    # base css so its :root wins the cascade. No-op for books without one. This is
+    # the web-edition twin of the PDF's bookstyle.tex / osbook-bookstyle.tex hook.
+    [ -f "$ROOT/bookstyle-web.css" ] && cat "$ROOT/bookstyle-web.css" >> "$outdir/osbook-web.css"
     # pandoc COPIED media/ + exercises/ in to be self-contained; swap those for
     # symlinks to the repo dirs (identical files) to avoid ~100 MB of duplication.
     for res in media exercises; do

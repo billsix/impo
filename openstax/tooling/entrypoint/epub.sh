@@ -38,6 +38,13 @@ python3 tools/pandoc/preprocess.py "$BUILD"/*.tex "$BUILD"/sections/*.tex
 
 printf '%s\n' '\providecommand{\captionof}[2]{\par\textit{#2}}' > "$BUILD/defs.tex"
 
+# per-book web theme (same hook as html.sh): base css + optional book override
+# (bookstyle-web.css, placed in the checkout by apply.sh), appended so its :root
+# wins. Built once, embedded into every volume's EPUB. No-op without an override.
+WEBCSS="$BUILD/osbook-web.css"
+cp "$ROOT/tools/pandoc/osbook-web.css" "$WEBCSS"
+[ -f "$ROOT/bookstyle-web.css" ] && cat "$ROOT/bookstyle-web.css" >> "$WEBCSS"
+
 cd "$BUILD"
 for slug in $(cd "$ROOT/collections" && ls *.collection.xml | sed 's/\.collection\.xml$//'); do
     title=$(grep -m1 -oP '(?<=<md:title>)[^<]+' "$ROOT/collections/${slug}.collection.xml" || echo "$slug")
@@ -45,7 +52,7 @@ for slug in $(cd "$ROOT/collections" && ls *.collection.xml | sed 's/\.collectio
     pandoc -f latex -t epub3 \
         --toc --toc-depth=2 --mathml \
         --lua-filter="$ROOT/tools/pandoc/xref.lua" \
-        --css="$ROOT/tools/pandoc/osbook-web.css" \
+        --css="$WEBCSS" \
         --resource-path="$BUILD:$ROOT" \
         --metadata title="$title" \
         --metadata author="OpenStax" \
