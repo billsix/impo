@@ -39,6 +39,11 @@ mkdir -p "$CHECKOUT/latex"
 cp "$TOOLING/latex/osbook.cls" "$TOOLING/latex/osbook-envs.sty" \
    "$TOOLING/latex/osbook-defer.sty" "$CHECKOUT/latex/"
 
+# Optional per-book theme override: copy the book's own bookstyle.tex (if any)
+# to osbook-bookstyle.tex, which osbook.cls loads via \InputIfFileExists to
+# re-set the font/palette. No-op for books without one.
+[ -f bookstyle.tex ] && cp bookstyle.tex "$CHECKOUT/latex/osbook-bookstyle.tex"
+
 # Converter lint/type/test config (format.sh + test target read it).
 cp "$TOOLING/pyproject.toml" "$CHECKOUT/"
 
