@@ -38,7 +38,12 @@ def render(node: dict, current_page: str) -> tuple[str, bool]:
     number = s.get("number") or ""
     page = path.split("#", 1)[0]
     self_active = bool(page) and page == current_page
-    label = (number + "  " if number else "") + title
+    # Front matter is numbered 0.0.x; show it title-only ("Preface"), not
+    # "0.0.1 Preface". Chapters/sections keep their number ("1 Levels …").
+    if number and not number.startswith("0."):
+        label = number + "  " + title
+    else:
+        label = title
 
     # The left TOC has ONE entry per PAGE. A child that lives on a page already
     # listed here -- the parent's own page (e.g. section 2.1's 2.1.1, 2.1.2 …) or an
