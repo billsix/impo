@@ -858,6 +858,13 @@ def _fenced_row(node: _Element) -> str | None:
             "⟨",
         ):
             continue
+        # An <mo stretchy="false"> is an ordinary literal delimiter, NOT a fence to
+        # \left…\right -- e.g. the `(` `)` of `f(x)`. Without this guard, a plain
+        # `f(x)` sitting before a piecewise/matrix in the same mrow gets promoted to
+        # `\left(` by the mtable test below, and its \right lands past the whole
+        # system -> a giant `(` stretched over the cases. (Seen: calculus f(x)={…}.)
+        if c.get("stretchy") == "false":
+            continue
         if (
             c.get("fence") == "true"
             or c.get("stretchy") == "true"
