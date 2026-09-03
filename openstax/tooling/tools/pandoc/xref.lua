@@ -59,6 +59,22 @@ local function Header(h)
 end
 
 local function Div(d)
+  -- Collapsible answer: end-of-section Review/Critical-Thinking answers are
+  -- otherwise printed inline and fully visible, so a reader sees the answer
+  -- before attempting the question. Hide it behind a native <details> toggle
+  -- ("Show answer"), no JS. HTML/EPUB only -- this filter never runs in the PDF
+  -- build, which keeps the answer inline. <details>/<summary> are valid EPUB3;
+  -- a reader lacking support degrades to always-visible (today's behaviour).
+  for _, c in ipairs(d.classes) do
+    if c == "answer" then
+      local blocks = { pandoc.RawBlock("html",
+        '<details class="answer"><summary>Show answer</summary>') }
+      for _, b in ipairs(d.content) do table.insert(blocks, b) end
+      table.insert(blocks, pandoc.RawBlock("html", "</details>"))
+      return blocks
+    end
+  end
+
   local cls
   for _, c in ipairs(d.classes) do
     if NAMED[c] or TITLED[c] or c == "calcfig" then cls = c break end

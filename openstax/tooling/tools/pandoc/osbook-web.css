@@ -58,6 +58,15 @@ nav#TOC ul { margin: .2rem 0; }
 .solution, .answer { margin: .3rem 0 .8rem; padding-left: .8rem;
   border-left: 2px solid #ccc; color: #333; }
 .solution::before { content: "Solution. "; font-style: italic; font-weight: 600; }
+/* collapsible answer: .answer is emitted as a <details> (xref.lua); the summary
+   is a clickable "Show answer" button, and the answer indents when expanded. */
+details.answer { padding-left: 0; border-left: none; margin: .3rem 0 .8rem; }
+details.answer > summary { cursor: pointer; list-style: none; display: inline-block;
+  font-weight: 600; padding: .15rem .6rem; border: 1px solid var(--os-rule, #ccc);
+  border-radius: .25rem; user-select: none; color: #333; }
+details.answer > summary::-webkit-details-marker { display: none; }
+details.answer[open] { border-left: 2px solid #ccc; padding-left: .8rem; }
+details.answer[open] > summary { margin-bottom: .4rem; }
 /* ---- notes ---- */
 .calcnote, .medianote { font-size: .95rem; background: #f7f7f5;
   padding: .4rem .8rem; margin: .8rem 0; border-radius: 3px; }
