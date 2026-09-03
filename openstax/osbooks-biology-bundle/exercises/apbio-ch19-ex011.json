@@ -1,0 +1,371 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-12T07:14:04.651Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c5f048fc6f06aa438d86843d97ba674fc11bbae8",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c5f048fc6f06aa438d86843d97ba674fc11bbae8/5b0fc40ca9848fba36e6823c5394f9aa6168bf2a0925892d1c92b2f0583553df.png"
+  }
+ ],
+ "tags": [
+  "apbio-ch19-ex011",
+  "context-cnxmod:22277798-cbf5-46d5-8abd-9a50a79b2b54",
+  "exid:apbio-ch19-ex011",
+  "context-cnxmod:e9d0bcae-516d-49c1-8412-284725c0bad0",
+  "context-cnxmod:38be2b01-172f-49e0-862b-dbd191e63715",
+  "context-cnxmod:f19aec9a-f345-43da-b3a6-7330c91e0800",
+  "aplo:stax-apbio:IST-1.D",
+  "aplo:stax-apbio:IST-1.C",
+  "aplo:stax-apbio:IST-1.H",
+  "blooms:5",
+  "assignment-type:homework",
+  "book:stax-bio",
+  "apbio",
+  "book:stax-apbio",
+  "ost-chapter-review",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "ap-test-prep",
+  "science-practice:representing-describing-data",
+  "dok:3",
+  "apbio-ch19-s01",
+  "apbio-ch19",
+  "book-slug:biology-ap-courses",
+  "module-slug:biology:19-1-population-evolution",
+  "module-slug:biology-2e:19-1-population-evolution",
+  "module-slug:biology-ap-courses:19-1-population-evolution",
+  "time:medium",
+  "book-slug:biology",
+  "book-slug:biology-2e"
+ ],
+ "uuid": "8447fea1-8074-4bb7-ba84-05ac3af6876b",
+ "group_uuid": "9c79caa2-cb59-4203-bbb1-8f4d828ffbe2",
+ "number": 1479,
+ "version": 20,
+ "uid": "1479@20",
+ "published_at": "2024-11-12T16:06:17.013Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 517782,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<p>A scientist is studying two large populations of deer that are centralized in nearby forests. She takes blood samples from all of the deer in each population and records in how many individuals she finds allele A. She then computes the frequency of the alleles in each population. The allele frequencies observed over five years are shown in the tables provided. Evaluate the data to answer the following: Which forms of evolution are most likely occurring in populations 1 and 2? Provide evidence to support your answer.</p>\n<table>\n<tbody><tr><th colspan=\"3\">Population 1</th>\n</tr>\n<tr><th>Year</th><th>Allele A Frequency</th><th>Allele B Frequency</th>\n</tr>\n<tr><td>1</td><td>0.69</td><td>0.31</td>\n</tr>\n<tr><td>2</td><td>0.71</td><td>0.29</td>\n</tr>\n<tr><td>3</td><td>0.73</td><td>0.27</td>\n</tr>\n<tr><td>4</td><td>0.75</td><td>0.25</td>\n</tr>\n<tr><td>5</td><td>0.81</td><td>0.19</td>\n</tr>\n<tr><td>6</td><td>0.84</td><td>0.16</td>\n</tr>\n</tbody></table>\n<table>\n<tbody><tr><th colspan=\"3\">Population 2</th>\n</tr>\n<tr><th>Year</th><th>Allele A Frequency</th><th>Allele B Frequency</th>\n</tr>\n<tr><td>1</td><td>0.00</td><td>1.00</td>\n</tr>\n<tr><td>2</td><td>0.00</td><td>1.00</td>\n</tr>\n<tr><td>3</td><td>0.10</td><td>0.90</td>\n</tr>\n<tr><td>4</td><td>0.16</td><td>0.84</td>\n</tr>\n<tr><td>5</td><td>0.21</td><td>0.79</td>\n</tr>\n<tr><td>6</td><td>0.25</td><td>0.75</td>\n</tr>\n</tbody></table>\n",
+   "answers": [
+    {
+     "id": 1012306,
+     "content_html": "In population 1, genetic drift is likely occurring, causing allele A to become more prevalent than allele B. In population 2, a mutation apparently occurred, introducing allele A to population 2. Allele A also appears to be increasing due to genetic drift in population 2."
+    },
+    {
+     "id": 1012307,
+     "content_html": "In population 1, natural selection is likely occurring, with allele A being favored over allele B. In population 2, gene flow apparently occurred, allowing allele A to become established in population 2. Allele A also appears to be favored by selection in population 2."
+    },
+    {
+     "id": 1012308,
+     "content_html": "In population 1, gene flow apparently occurred, allowing allele B to become established in population 1. Allele A also appears to be favored by selection in population 1. In population 2, genetic drift is likely occurring, causing allele A to become more prevalent than allele B."
+    },
+    {
+     "id": 1012309,
+     "content_html": "In population 1, mutation apparently occurred, introducing allele B to population 1. Allele A also appears to be increasing due to genetic drift in population 1. In population 2, natural selection is likely occurring, with allele A being favored over allele B."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  20,
+  19,
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

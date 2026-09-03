@@ -1,0 +1,372 @@
+{
+ "images": [
+  {
+   "created_at": "2024-10-17T14:25:07.616Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzBDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1941f440b2d92f0cbb2f8171523ff203cb92964d",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzBDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1941f440b2d92f0cbb2f8171523ff203cb92964d/da402f4eea1a7c54ed77ef02c240b47368b3ad3ba8105b8146941dc41bf605e4.png"
+  }
+ ],
+ "tags": [
+  "apbio-ch05-s02",
+  "apbio-ch05-ex021",
+  "exid:apbio-ch05-ex021",
+  "context-cnxmod:0b8cbcb3-09db-486b-848f-fa0b8913f53f",
+  "apbio-ch05",
+  "aplo:stax-apbio:ENE-2.D",
+  "aplo:stax-apbio:ENE-2.G",
+  "aplo:stax-apbio:ENE-2.H",
+  "aplo:stax-apbio:ENE-2.J",
+  "blooms:6",
+  "aplo:stax-apbio:ENE-2.C",
+  "aplo:stax-apbio:ENE-2.E",
+  "aplo:stax-apbio:ENE-2.F",
+  "assignment-type:homework",
+  "time:long",
+  "book:stax-bio",
+  "apbio",
+  "book:stax-apbio",
+  "ost-chapter-review",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "ap-test-prep",
+  "dok:4",
+  "book-slug:biology-ap-courses",
+  "module-slug:biology-ap-courses:5-2-passive-transport"
+ ],
+ "uuid": "f680614c-6578-4ce8-b918-351a5c2da861",
+ "group_uuid": "09115b82-867a-4093-9201-24a757d10e4b",
+ "number": 353,
+ "version": 25,
+ "uid": "353@25",
+ "published_at": "2024-10-17T14:25:10.491Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 503063,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<p><img src=\"exercises/media/33fd27e5ea5176e6.png\" alt=\"A table with seven columns and seven rows summarizes the results of seven experiments that examined the locations of binding sites for sodium ions, potassium ions, and A T P. From left to right, the headings in the columns are as follows: Experiment; A T P present inside cells?; A T P present outside cells?; Ouabain present inside cells?; Oubain present outside cells?; Was N a plus transported?; Was K plus transported? From top to bottom, the Experiment column contains rows numbered 1 through 7. The data in the rows is as follows. A T P was present inside cells in experiments 1, 2, 5, 6, and 7 and was not present inside cells in experiments 3 and 4. A T P was present outside cells in experiments 1 and 3 only. Ouabain was present inside cells in experiments 5 and 6 only. Ouabain was present outside cells in experiments 5 and 7 only. N a plus was transported in experiments 1, 2, and 7 only. K plus was transported in experiments 1, 2, and 6 only.\"></p>\n\n<p>Describe the Na<sup>+</sup>/K<sup>+</sup> pump, labeling the binding sites for Na<sup>+</sup>, K<sup>+</sup>, and ATP. Explain how the data indicates the location of the binding sites for Na<sup>+</sup> and K<sup>+</sup> on the pump. Based on the data, which statement describes the location of the binding sites for Na<sup>+</sup> and K<sup>+</sup> on the pump?</p>\n",
+   "answers": [
+    {
+     "id": 988383,
+     "content_html": "The binding of Na<sup>+</sup> occurs on the outer surface of the cell, as its transportation remains unaffected by the presence of ouabain. The binding of K<sup>+</sup> occurs on the inner surface of the cell, as its transportation is blocked when ouabain is present inside the cell"
+    },
+    {
+     "id": 988384,
+     "content_html": "The binding of K<sup>+</sup> occurs on the outer surface of the cell, as its transportation is blocked when ouabain is present outside the cell. The binding of Na<sup>+</sup> occurs on the inner surface of the cell and its transportation is blocked by the presence of ouabain."
+    },
+    {
+     "id": 988385,
+     "content_html": "The binding of K<sup>+</sup> occurs on the outer surface of the cell and the binding of Na<sup>+</sup> occurs on the inner surface of the cell, as they are not transported when ATP is absent."
+    },
+    {
+     "id": 988386,
+     "content_html": "The binding of Na<sup>+</sup> occurs on the outer surface of the cell and the binding of K<sup>+</sup> occurs on the inner surface of the cell, as they are not transported when ATP is absent."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  25,
+  24,
+  23,
+  22,
+  21,
+  20,
+  19,
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

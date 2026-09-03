@@ -1,0 +1,372 @@
+{
+ "images": [
+  {
+   "created_at": "2023-03-07T22:33:00.749Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbklFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1cafe7d9f825d00e80f904b1df53aaad9f5c99c0",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbklFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1cafe7d9f825d00e80f904b1df53aaad9f5c99c0/a6f509fabe92829b6a94ac1ee6ff65c9780a6e640b9f2178b1f145c1526219ab.png"
+  }
+ ],
+ "tags": [
+  "apbio-ch17-s03-lo02",
+  "apbio-ch17-ex034",
+  "exid:apbio-ch17-ex034",
+  "interactive",
+  "aplo:stax-apbio:IST-1.P",
+  "apbio-ch17",
+  "apbio-ch17-s03",
+  "context-cnxmod:e65f38e1-9dfc-4da9-995c-f51db70d5abc",
+  "context-cnxmod:cf58eb28-a3b3-4d49-be08-dfdc7d7671db",
+  "context-cnxmod:bc525e86-ee0b-49e2-8c80-8693f8b1a945",
+  "context-cnxmod:46b2c3ea-6fbf-4f55-8afb-8317b2225c96",
+  "requires-context:true",
+  "dok:2",
+  "science-practice:visual-representations",
+  "filter-type:import:has-context",
+  "blooms:3",
+  "assignment-type:homework",
+  "blooms:2",
+  "book:stax-bio",
+  "apbio",
+  "book:stax-apbio",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "book-slug:biology-ap-courses",
+  "module-slug:biology:17-3-whole-genome-sequencing",
+  "module-slug:biology-2e:17-3-whole-genome-sequencing",
+  "module-slug:biology-ap-courses:17-3-whole-genome-sequencing",
+  "time:medium",
+  "book-slug:biology",
+  "book-slug:biology-2e",
+  "assessment:practice:https://openstax.org/orn/book:page/8d50a0af-948b-4204-a71d-4826cba765b8:bc525e86-ee0b-49e2-8c80-8693f8b1a945"
+ ],
+ "uuid": "c79bd838-797e-4f0b-b7dc-f8af35ed2753",
+ "group_uuid": "b0e89425-8612-4560-ad12-3f129b319623",
+ "number": 1281,
+ "version": 18,
+ "uid": "1281@18",
+ "published_at": "2023-03-07T22:33:00.751Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 334726,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<img src=\"exercises/media/36a195cc0c0681d3.png\" alt=\"Part A shows a template D N A strand and newly synthesized strands that were generated in the presence of dideoxynucleotides that terminate the chain at different points to generate fragments of different sizes. Each dideoxynucleotide is labeled a different color. Part B shows a sequence readout that was generated after the D N A fragments were separated on the basis of size. The color of the fragment indicates the identity of the nucleotide at the end of a given fragment. By reading the colors in order, the D N A sequence can be determined.\">\n<p>Review the Sanger sequencing method as pictured. Make a case for how deep sequencing offers an improvement on Sanger sequencing.</p>",
+   "answers": [
+    {
+     "id": 844526,
+     "content_html": "Deep sequencing allows for much faster sequencing of short DNA strands as compared to Sanger sequencing, which reads only short sequences of DNA at a slow rate, and it avoids Sanger's issues with chain termination and separation."
+    },
+    {
+     "id": 844523,
+     "content_html": "Sequence coverage is higher in Sanger sequencing as compared to deep sequencing."
+    },
+    {
+     "id": 844524,
+     "content_html": "Sanger sequencing is suitable when there is only one nucleotide difference between chains, whereas deep sequencing is suitable when there is  more than one nucleotide difference between chains."
+    },
+    {
+     "id": 844525,
+     "content_html": "Sanger sequencing reads and sequences a genome multiple times, whereas deep sequencing accurately reads sequences the whole genome in a single time."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

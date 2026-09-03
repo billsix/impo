@@ -1,0 +1,362 @@
+{
+ "images": [
+  {
+   "created_at": "2022-06-01T21:47:46.525Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c150d380ad3ee7b79418bf01d866e111dc5264b9",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c150d380ad3ee7b79418bf01d866e111dc5264b9/a2c32d19db63a5cba432638398a9cce7cc398a44375dcd8c544823ab19c33331.png"
+  }
+ ],
+ "tags": [
+  "apbio-ch36-ex016",
+  "exid:apbio-ch36-ex016",
+  "apbio-ch36",
+  "context-cnxmod:36b59ccb-df39-4ba6-85cc-52f3042c36ab",
+  "apbio-ch36-s01",
+  "context-cnxmod:e5f5ae27-625b-448a-ba52-0d6f287b6595",
+  "context-cnxmod:50d5b660-667d-4051-86f0-d3735751147c",
+  "context-cnxmod:18a41d9b-a634-4a8a-b7aa-970282e5172f",
+  "assignment-type:homework",
+  "blooms:4",
+  "time:long",
+  "aplo:stax-apbio:ENE-4.B",
+  "book:stax-bio",
+  "apbio",
+  "book:stax-apbio",
+  "ost-chapter-review",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "ap-test-prep",
+  "dok:4",
+  "book-slug:biology-ap-courses",
+  "module-slug:biology:45-1-population-demography",
+  "module-slug:biology-2e:45-1-population-demography",
+  "module-slug:biology-ap-courses:36-1-population-demography",
+  "book-slug:biology",
+  "book-slug:biology-2e"
+ ],
+ "uuid": "42a2a367-9eae-4f5c-9c25-3e91bb2133d3",
+ "group_uuid": "d7d2dfd3-0457-4c5b-b669-a6451d4a11d5",
+ "number": 10461,
+ "version": 13,
+ "uid": "10461@13",
+ "published_at": "2022-06-01T21:47:46.526Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 242552,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<p><img src=\"exercises/media/6ae7bda2d313dd44.jpg\" alt=\"Two graphs are shown, both with a y axis of Parous females number ranging from 0 to 350, data delineated with x’s for “obs” and a line for “max.”  Graph A has an x axis of “Temperature (°C)” ranging from 0 to 40.  The data is clustered around 25 degrees and stacks upward toward 100.  The curve shoves a steep rise and fall centered around about (27, 300) on the y, dropping to (30, 0).  Graph B has an x axis of “Relative humidity (%)” ranging from 0 to 100.  The data is clustered around about 90 on the x axis and ranges upward to about 100 on the y.  It The curve is broader than the one above, starting at about (40, 10), maxing out at about (80, 330), and dropping to (0,100).\"> </p><p>(credit: Revista da Sociedade Brasileira de Medicina Tropical)\n\nThese graphs summarize data collected in an area of Brazil between 2005 and 2006. Researchers captured mosquitos and counted the number of parous females. Parous females are females that produced viable offspring. Based on the information given, how would mosquito populations change in Brazil if the climate shifted to very hot (above 30°C) and very dry (below 60% humidity) conditions for an extended period of time? Explain your reasoning.</p>\n",
+   "answers": [
+    {
+     "id": 759669,
+     "content_html": "The mosquito populations would decrease at temperatures above 30°C, as this is the upper limit for parous females, leading to a drop in offspring production. Below 60% humidity not much change would be seen in the population of mosquitoes."
+    },
+    {
+     "id": 759670,
+     "content_html": "The mosquito populations would decrease, possibly reaching zero. As temperatures above 30°C are the upper limit for parous females, offspring production would drop. Drier conditions would do the same."
+    },
+    {
+     "id": 759668,
+     "content_html": "The mosquito populations would stay the same. This would be because temperature above 30°C and humidity below 60% is close to the favorable conditions of offspring production by parous females."
+    },
+    {
+     "id": 759667,
+     "content_html": "The mosquito populations would stay the same at temperatures above 30°C as higher temperatures will not affect the production of viable offspring by parous females. Drier conditions, below 60% humidity, would cause a drop in the population, as it is the lower limit for offspring production."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

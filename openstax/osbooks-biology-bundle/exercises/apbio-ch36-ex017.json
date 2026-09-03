@@ -1,0 +1,361 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-30T04:42:22.515Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--58b96715340042e963e8382e044f5ad41319e331",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--58b96715340042e963e8382e044f5ad41319e331/060dd6b1c87bee4b9d1cc8eb0aaab9e67e008b50004383d6e0450b13fcc2ebed.png"
+  }
+ ],
+ "tags": [
+  "apbio-ch36-ex017",
+  "exid:apbio-ch36-ex017",
+  "apbio-ch36",
+  "context-cnxmod:36b59ccb-df39-4ba6-85cc-52f3042c36ab",
+  "apbio-ch36-s01",
+  "context-cnxmod:e5f5ae27-625b-448a-ba52-0d6f287b6595",
+  "context-cnxmod:50d5b660-667d-4051-86f0-d3735751147c",
+  "assignment-type:homework",
+  "blooms:4",
+  "aplo:stax-apbio:ENE-4.B",
+  "book:stax-bio",
+  "apbio",
+  "ost-chapter-review",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "ap-test-prep",
+  "dok:4",
+  "module-slug:biology:45-1-population-demography",
+  "module-slug:biology-2e:45-1-population-demography",
+  "time:medium",
+  "book-slug:biology",
+  "book-slug:biology-2e"
+ ],
+ "uuid": "92832334-adee-4b69-8c1a-eda8843406d0",
+ "group_uuid": "438a263a-bc89-4a01-b7ca-ade20dffe717",
+ "number": 10462,
+ "version": 16,
+ "uid": "10462@16",
+ "published_at": "2024-12-02T05:20:49.197Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 530740,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<p><img src=\"exercises/media/be64c445afef11bc.jpg\" alt=\"Four graphs are shown, a vertically arranged whisker plot with three sets of “whiskers,” labeled, “control,” “low,” and “high.”  Each also has a y axis of “density (n per km2).” The first is labeled “all birds”; the “control” ranges from 330 to 500 with a mean of 410; the “low” ranges from 350 to 530 with a mean at 560; the “high” ranges from 430 to 700 with a mean at 670. The second is labeled “insect eaters”; the “control” ranges from 260 to 440 with a mean of 340; the “low” ranges from 330 to 590 with a mean at 390; the “high” ranges from 350 to 680 with a mean at 560. The third is labeled “meadow pipit”; the “control” ranges from 60 to 130 with a mean of 95; the “low” ranges from 60 to 140 with a mean at 90; the “high” ranges from 100 to 190 with a mean at 140. The fourth is labeled “meadow pipit”; the “control” ranges from 10 to 35 with a mean of 20; the “low” ranges from 5 to 30 with a mean at 15; the “high” ranges from 20 to 85 with a mean at 40.\"></p><p> (credit: The Royal Society Publishing: Biology Letters)\n\nResearchers were interested in answering the question, “How does sheep grazing affect the population densities of wild mountain birds?” To answer this question, the researchers counted population numbers of various birds in areas of low intensity sheep grazing and in areas of high intensity sheep grazing. A third set of data was collected from control areas in which no sheep grazing occurred. The results of this study are shown in these graphs. All of the bird species eat insects as their primary source of nutrition. The group labeled “insect eaters” combines many species because the numbers for individual species were too small to show separately as shown for the meadow pipit and willow grouse, which are both highly abundant. Because all of the birds are insect eaters, construct a scientific question related to this fact that the researchers could ask to refine their study even further. Explain your reasoning.</p>\n",
+   "answers": [
+    {
+     "id": 1038386,
+     "content_html": "Does sheep grazing make insects more available to birds? This question refines the question about how sheep grazing affects bird populations because it asks more specifically how sheep grazing changes the food availability for the birds."
+    },
+    {
+     "id": 1038387,
+     "content_html": "How does sheep grazing make insects more available to birds? This question refines the question about how sheep grazing affects insect populations because it asks more specifically how sheep grazing changes the food availability for the insects."
+    },
+    {
+     "id": 1038388,
+     "content_html": "Does sheep grazing make insects more available to birds? This question refines the question about how sheep grazing affects bird populations because it asks more specifically how sheep grazing changes the food availability for the insects."
+    },
+    {
+     "id": 1038389,
+     "content_html": "How does sheep grazing make insects more available to birds? This question refines the question about how sheep grazing affects bird populations because it asks more specifically how sheep grazing changes the food availability for the insects."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}
