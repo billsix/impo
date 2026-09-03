@@ -774,6 +774,17 @@ def _norm_math(s: str) -> str:
             r"{\\" + _new + r"{\1}}",
             s,
         )
+    # MathType/MathJax export emits \unicode[<font>]{x<HEX>} for a raw codepoint
+    # (e.g. \unicode[Arial]{x3B2} = beta) -- LaTeX has no \unicode command, so it
+    # aborts with "! Undefined control sequence". unicode-math + STIX Two Math
+    # (osbook.cls) render the raw character directly, so drop the font hint and
+    # emit the codepoint. Found building the osbooks-biology-bundle AP volume
+    # (Greek letters -- alpha/beta/sigma/... -- in glycosidic-bond exercises).
+    s = re.sub(
+        r"\\unicode\s*(?:\[[^\]]*\])?\s*\{x([0-9A-Fa-f]+)\}",
+        lambda m: chr(int(m.group(1), 16)),
+        s,
+    )
     # Systems of equations from the Exercises API come as \begin{gathered} rows with
     # & alignment tabs (`x-2y &=& -5 \\ ...`). `gathered` (like `gather`) does NOT
     # allow & -> lualatex aborts with "Extra alignment tab has been changed to \cr".
