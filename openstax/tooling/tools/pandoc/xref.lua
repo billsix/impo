@@ -67,8 +67,10 @@ local function Div(d)
   -- a reader lacking support degrades to always-visible (today's behaviour).
   for _, c in ipairs(d.classes) do
     if c == "answer" then
+      -- empty <summary>: the "Show answer"/"Hide answer" label is supplied by CSS
+      -- (details.answer > summary::after), so it can toggle on [open] without JS.
       local blocks = { pandoc.RawBlock("html",
-        '<details class="answer"><summary>Show answer</summary>') }
+        '<details class="answer"><summary></summary>') }
       for _, b in ipairs(d.content) do table.insert(blocks, b) end
       table.insert(blocks, pandoc.RawBlock("html", "</details>"))
       return blocks

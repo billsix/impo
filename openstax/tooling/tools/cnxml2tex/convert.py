@@ -2399,7 +2399,12 @@ def render_exercise(node: _Element, labels: set[str], depth: int) -> str:
         body = re.sub(r"^\s*\d+[.)]\s+", "", body)
         out.append(body)
     for s in sols:
-        out.append("\\begin{answer}\n%s\n\\end{answer}" % blocks(s, labels, depth))
+        ans: str = blocks(s, labels, depth)
+        # A bare single-letter MC answer key ("A") -> lowercase to match the
+        # a,b,c,d option labels. Prose/worked-solution answers are left as-is.
+        if re.fullmatch(r"\s*[A-Z]\s*", ans):
+            ans = ans.lower()
+        out.append("\\begin{answer}\n%s\n\\end{answer}" % ans)
     _IN_EXERCISE = prev
     out.append("\\end{exercise}")
     return "\n".join(out)
