@@ -73,6 +73,12 @@ details.answer[open] > summary { margin-bottom: .4rem; }
 /* multiple-choice options: labeled a,b,c,d to match the letter answer key (the
    book's own review-question option lists; injected exercises label in text). */
 .exercise > ol { list-style-type: lower-alpha; }
+/* glossary / Key Terms (a <dl>): bold hanging term + tidy indented definition,
+   matching the PDF's description-list look (was an unstyled default <dl>). */
+dl { margin: 1rem 0; }
+dl > dt { font-weight: 700; margin-top: .7rem; }
+dl > dd { margin: .1rem 0 .5rem 1.4rem; }
+dl > dd > p { margin: .15rem 0; }
 /* ---- notes ---- */
 .calcnote, .medianote { font-size: .95rem; background: #f7f7f5;
   padding: .4rem .8rem; margin: .8rem 0; border-radius: 3px; }
