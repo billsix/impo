@@ -40,16 +40,20 @@ def render(node: dict, current_page: str) -> tuple[str, bool]:
     self_active = bool(page) and page == current_page
     label = (number + "  " if number else "") + title
 
-    # The left TOC stops at the PAGE level: a child that lives on the SAME page as
-    # this node is an on-page anchor (e.g. section 2.1's 2.1.1, 2.1.2, …), which
-    # belongs to the right "On this page" sidebar, not the book tree. Recurse only
-    # into children that introduce a new page.
+    # The left TOC has ONE entry per PAGE. A child that lives on a page already
+    # listed here -- the parent's own page (e.g. section 2.1's 2.1.1, 2.1.2 …) or an
+    # earlier sibling's page (e.g. the front matter 0.0.1–0.0.7, all on page 001) --
+    # is an on-page anchor, so it collapses into that page's single entry and shows
+    # only in the right "On this page" sidebar. Recurse only into new pages.
     kids_html = ""
     any_active = self_active
+    seen_pages = {page} if page else set()
     for k in node.get("subsections") or []:
         k_page = ((k.get("section") or {}).get("path") or "").split("#", 1)[0]
-        if page and k_page == page:
+        if k_page and k_page in seen_pages:
             continue
+        if k_page:
+            seen_pages.add(k_page)
         kh, ka = render(k, current_page)
         kids_html += kh
         any_active = any_active or ka
@@ -90,9 +94,21 @@ def main(argv: list[str]) -> int:
             doc = f.read()
         if PLACEHOLDER not in doc:
             continue
+        # Dedup the TOP-LEVEL entries by page too (the front matter 0.0.1–0.0.7 all
+        # live on page 001 -> collapse to a single entry), the same one-entry-per-page
+        # rule render() applies to nested children.
+        seen: set[str] = set()
+        parts: list[str] = []
+        for c in chapters:
+            c_page = ((c.get("section") or {}).get("path") or "").split("#", 1)[0]
+            if c_page and c_page in seen:
+                continue
+            if c_page:
+                seen.add(c_page)
+            parts.append(render(c, cur)[0])
         toc = (
             '<a class="book-title" href="index.html">%s</a><ul>%s</ul>'
-            % (html.escape(book_title), "".join(render(c, cur)[0] for c in chapters))
+            % (html.escape(book_title), "".join(parts))
         )
         with open(pg, "w", encoding="utf-8") as f:
             f.write(doc.replace(PLACEHOLDER, toc))
