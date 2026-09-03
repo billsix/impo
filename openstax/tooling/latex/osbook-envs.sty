@@ -144,4 +144,18 @@
 \newenvironment{history}{\paragraph{Historical Note}\par}{}
 \newenvironment{pitfall}{\paragraph{Common Pitfall}\par}{} % common mistake
 
+% ---- program listings (multi-line <code> blocks) --------------------
+% The converter (convert.py) emits multi-line <code> here rather than as
+% inline \texttt{}, which cannot span a paragraph break. Content is already
+% LaTeX-escaped, so this is not a true verbatim: \obeylines turns each source
+% line into a display line and \ttfamily sets it monospace. \frenchspacing +
+% \raggedright keep code spacing/right edge sane; the small vertical skips set
+% it off from surrounding prose. Works inside list items and callouts.
+\newenvironment{oscode}{%
+  \par\smallskip\begingroup
+  \ttfamily\frenchspacing\parindent\z@\raggedright\obeylines\relax
+}{%
+  \endgroup\par\smallskip
+}
+
 \endinput

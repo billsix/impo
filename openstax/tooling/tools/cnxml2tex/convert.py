@@ -756,11 +756,24 @@ def _norm_math(s: str) -> str:
     # commands ("! Class memoir Error: Font command \rm is not supported"), aborting
     # the PDF build, so map them to the LaTeX2e math-font commands. \rm{X} -> \mathrm{X}
     # is exact for the argument form these carry (\sc/\sl have no math analogue -> mathrm/mathit).
-    for _old, _new in (
+    _FONT2E = (
         ("rm", "mathrm"), ("bf", "mathbf"), ("it", "mathit"), ("sf", "mathsf"),
         ("tt", "mathtt"), ("cal", "mathcal"), ("sc", "mathrm"), ("sl", "mathit"),
-    ):
+    )
+    for _old, _new in _FONT2E:
         s = s.replace("\\" + _old + "{", "\\" + _new + "{")
+    # The DECLARATION form {\rm X} (a font switch scoped to a group), which the
+    # argument-form replace above misses. memoir disables these two-letter
+    # switches too ("Font command \rm is not supported"), so map the common
+    # non-nested case {\rm CONTENT} -> {\mathrm{CONTENT}}. MathType/MathJax export
+    # emits {\rm O}{\rm C}{\rm N} for upright atom labels (found building
+    # osbooks-organic-chemistry, e.g. an amide O=C-N in an NMR exercise).
+    for _old, _new in _FONT2E:
+        s = re.sub(
+            r"\{\\" + _old + r"(?![a-zA-Z])\s*([^{}]*?)\}",
+            r"{\\" + _new + r"{\1}}",
+            s,
+        )
     # Systems of equations from the Exercises API come as \begin{gathered} rows with
     # & alignment tabs (`x-2y &=& -5 \\ ...`). `gathered` (like `gather`) does NOT
     # allow & -> lualatex aborts with "Extra alignment tab has been changed to \cr".
@@ -1432,7 +1445,22 @@ def inline_element(node: _Element, labels: set[str]) -> str:
     if tag == "footnote":
         return r"\footnote{%s}" % inline(node, labels)
     if tag == "code":
-        return r"\texttt{%s}" % inline(node, labels)
+        body = inline(node, labels)
+        # A multi-line <code> (author-inserted <newline/> -> \NLBREAK sentinels)
+        # is a program listing, not inline code. \texttt{} cannot hold a \par, so
+        # cleanup_latex's "sentinel at line end -> blank line" rule makes a
+        # multi-line \texttt{...} fatal ("Paragraph ended before \text@command
+        # was complete"). Emit a display monospace block instead: turn each
+        # sentinel into a real newline and wrap in the house `oscode` environment
+        # (\obeylines renders each line). oscode is in _NOWRAP_ENVS so the
+        # line-wrapper leaves the listing intact.
+        # Multi-line either via <newline/> sentinels OR literal newlines in the
+        # source text (some authors just hard-wrap the code). Both make an inline
+        # \texttt{} fatal, so both become a display listing.
+        if r"\NLBREAK" in body or "\n" in body.strip():
+            listing = body.replace(r"\NLBREAK", "\n").strip("\n")
+            return "\n\\begin{oscode}\n%s\n\\end{oscode}\n" % listing
+        return r"\texttt{%s}" % body
     if tag == "quote":
         return "``%s''" % inline(node, labels)
     if tag == "math":
@@ -1554,6 +1582,7 @@ _NOWRAP_ENVS = {
     "pmatrix",
     "cases",
     "verbatim",
+    "oscode",
 }
 # lines that are structural delimiters / restricted args -> leave untouched
 _SKIP_WRAP = re.compile(
@@ -2056,11 +2085,55 @@ def block_element(node: _Element, labels: set[str], depth: int) -> str:
 
 SECT = {1: "section", 2: "subsection", 3: "subsubsection", 4: "paragraph"}
 
+# Greek / common math tokens spelled out for a PDF-bookmark string (below).
+_MATH_ASCII = {
+    r"\alpha": "alpha", r"\beta": "beta", r"\gamma": "gamma", r"\delta": "delta",
+    r"\epsilon": "epsilon", r"\varepsilon": "epsilon", r"\zeta": "zeta",
+    r"\eta": "eta", r"\theta": "theta", r"\vartheta": "theta", r"\iota": "iota",
+    r"\kappa": "kappa", r"\lambda": "lambda", r"\mu": "mu", r"\nu": "nu",
+    r"\xi": "xi", r"\pi": "pi", r"\rho": "rho", r"\sigma": "sigma",
+    r"\tau": "tau", r"\upsilon": "upsilon", r"\phi": "phi", r"\varphi": "phi",
+    r"\chi": "chi", r"\psi": "psi", r"\omega": "omega",
+    r"\Gamma": "Gamma", r"\Delta": "Delta", r"\Theta": "Theta",
+    r"\Lambda": "Lambda", r"\Xi": "Xi", r"\Pi": "Pi", r"\Sigma": "Sigma",
+    r"\Phi": "Phi", r"\Psi": "Psi", r"\Omega": "Omega",
+    r"\times": "x", r"\cdot": ".", r"\pm": "+/-", r"\to": "->",
+    r"\rightarrow": "->", r"\leftarrow": "<-", r"\infty": "infinity",
+    r"\prime": "'", r"\circ": "deg", r"\degree": "deg",
+}
+def _title_to_ascii(s: str) -> str:
+    """Best-effort plain-text rendering of a section title for a hyperref
+    PDF-bookmark string: spell out greek, drop every LaTeX command and all
+    markup characters. Whole-title (not per-span) so it is robust to titles
+    that mix several math fragments with \\text{}/\\emph{} (e.g. chemistry
+    formulas like RC$\\equiv$N)."""
+    for k, v in _MATH_ASCII.items():
+        s = s.replace(k, v)
+    s = re.sub(r"\\[a-zA-Z]+\*?", "", s)  # drop any command (\emph, \text, ...)
+    s = re.sub(r"[{}$^_\\~]", "", s)  # strip markup chars (incl. all math shifts)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s or "section"
+
+
+def pdfsafe_title(title: str) -> str:
+    r"""If a section title contains inline math, wrap the WHOLE title once as
+    \texorpdfstring{<title>}{<ascii>}. The visible heading is unchanged (keeps
+    the math); hyperref uses the plain <ascii> for the PDF bookmark and running
+    head, avoiding both the "Token not allowed in a PDF string" warning and the
+    fatal "Improper alphabetic constant" when it tries to expand a math command
+    in a moving argument (found building osbooks-organic-chemistry). Wrapping
+    the whole title once (rather than each $...$ span) is robust to titles that
+    interleave several math fragments with \text{}/\emph{}."""
+    if "$" not in title:
+        return title
+    return r"\texorpdfstring{%s}{%s}" % (title, _title_to_ascii(title))
+
 
 def render_section(node: _Element, labels: set[str], depth: int) -> str:
     cls: str = node.get("class", "")
     title_el: _Element | None = get_title(node)
     title: str = inline(title_el, labels).strip() if title_el is not None else ""
+    title = pdfsafe_title(title)
     body: str = blocks(node, labels, depth + 1)
     lab: str = opt_label(node) if node.get("id") in labels else ""
     if cls == "key-concepts":
@@ -2585,6 +2658,7 @@ def convert_module(mid: str, standalone: bool = True) -> str:
 
     title_el: _Element | None = root.find(C + "title")
     title: str = inline(title_el, labels).strip() if title_el is not None else mid
+    title = pdfsafe_title(title)  # PDF-bookmark-safe math in the module heading
 
     # learning objectives from abstract
     obj_tex: str = ""
