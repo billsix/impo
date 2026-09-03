@@ -1,6 +1,6 @@
 # HTML/EPUB exercise rendering — collapse the answer behind "show answer", fix the floating number
 
-**Status:** proposed — needs go-ahead
+**Status:** DONE 2026-09-03 — collapsible "Show answer" (`<details>`) + floating-number fix, verified in HTML and EPUB (commit `0e245cf`)
 **Priority:** 3
 **Difficulty:** 3
 

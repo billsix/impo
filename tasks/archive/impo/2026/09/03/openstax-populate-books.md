@@ -22,6 +22,13 @@ exist. Done vs deferred:
   (0 os-embed nicknames → nothing committed):** biology-bundle, college-algebra-bundle,
   prealgebra-bundle, calculus-bundle, physics — their large delta was upstream `media/` figures,
   not practice exercises. Every committed cache carries a top-level `COPYRIGHT`.
+  - **CORRECTION (2026-09-03):** the "physics + biology are no-ops" claim was WRONG — an artifact of
+    the converter recognizing only the `#exercise/<nickname>` scheme. Both books use `#ost/api/ex/<id>`
+    and had their exercises silently dropped: physics has 846, biology 2337. Fixed and committed
+    2026-09-03 (converter now handles both schemes). college-algebra/prealgebra/calculus are genuine
+    zeros (raw-grep confirmed in both schemes). See the archived audit
+    (`tasks/archive/impo/2026/09/03/openstax-audit-all-books-for-exercises.md`) and
+    [[openstax-converter-unification-gaps]].
 **Priority:** 3
 **Difficulty:** 6
 **Created:** 2026-09-02 (William Emerison Six <billsix@gmail.com>).
