@@ -1,0 +1,365 @@
+{
+ "images": [
+  {
+   "created_at": "2022-06-01T21:33:01.525Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZG89IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--899074eb62f8a438649fa601972f2aecbcf5e6b6",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZG89IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--899074eb62f8a438649fa601972f2aecbcf5e6b6/2daa7144b8fbb7133873c39c46d1f9e3cb4c60d47d2cb8c99699b8d0b8d19eb3.png"
+  },
+  {
+   "created_at": "2022-06-01T21:33:01.529Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbElEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--261ed3e2442b7a9f760151c04078f9583efd688f",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbElEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--261ed3e2442b7a9f760151c04078f9583efd688f/52e24c44f1ebf984887e350fc08c106e6cbf6de32f3232d95094cf57979112ce.png"
+  },
+  {
+   "created_at": "2022-06-01T21:33:01.531Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbXNEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--60441b32a2f656b303aa6db26d70d0de67b5ef55",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbXNEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--60441b32a2f656b303aa6db26d70d0de67b5ef55/8d3c201bead6f4a6c26cf221b917887c0dd3e3cc696a419657ad0e87ea546aca.png"
+  }
+ ],
+ "tags": [
+  "k12phys-ch19-s02-lo02",
+  "k12phys-ch19-ex051",
+  "exid:k12phys-ch19-ex051",
+  "context-cnxmod:26396539-8aea-4808-93ee-181028b36fb2",
+  "lo:stax-phys:21-1-5",
+  "context-cnxmod:953ede56-7b47-4756-80ed-3d8f5df13bc7",
+  "aplo:stax-apphys:5.B.9.5",
+  "ost-test-prep",
+  "k12phys-ch19",
+  "k12phys-ch19-s02",
+  "context-cnxmod:31ef6ca8-473e-43fe-b06a-f989c9fa9c11",
+  "dok:2",
+  "k12phys",
+  "book:stax-phys",
+  "book:stax-k12phys",
+  "short-answer",
+  "time:short",
+  "assignment-type:homework",
+  "blooms:4",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "book-slug:college-physics-ap-courses",
+  "module-slug:college-physics-ap-courses:21-1-resistors-in-series-and-parallel"
+ ],
+ "uuid": "168b60df-254a-41ef-94fb-0753a5c83470",
+ "group_uuid": "4829a70c-d034-4655-a710-89498cfcb655",
+ "number": 7317,
+ "version": 9,
+ "uid": "7317@9",
+ "published_at": "2022-06-01T21:33:01.534Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 239408,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<p>What current flows through the <span data-math=\"75\\text{-}\\Omega\">75\\text{-}\\Omega</span> resistor in the circuit below?</p>\n\n<p><img src=\"exercises/media/708c12c85843b118.png\" alt=\"Circuit diagram with a $9\\text{-V}$ battery, a switch and two resistors ($50$ and $75\\,\\Omega$).\"></p>\n\n",
+   "answers": [
+    {
+     "id": 747201,
+     "content_html": "<span data-math=\"0.072\\,\\text{A}\">0.072\\,\\text{A}</span>"
+    },
+    {
+     "id": 747202,
+     "content_html": "<span data-math=\"0.12\\,\\text{A}\">0.12\\,\\text{A}</span>"
+    },
+    {
+     "id": 747200,
+     "content_html": "<span data-math=\"0.18\\,\\text{A}\">0.18\\,\\text{A}</span>"
+    },
+    {
+     "id": 747199,
+     "content_html": "<span data-math=\"0.3\\,\\text{A}\">0.3\\,\\text{A}</span>"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

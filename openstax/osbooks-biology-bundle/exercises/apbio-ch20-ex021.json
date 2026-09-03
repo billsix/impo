@@ -1,0 +1,379 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-29T06:55:21.013Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbllDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--450cde65f459f20ef8390ecc255e180f95dad9bf",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbllDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--450cde65f459f20ef8390ecc255e180f95dad9bf/d6f5af3248d0aaa6a4653e14cc3ea3cb706e71dbf76f9b6d0b84c4a543afbb96.png"
+  },
+  {
+   "created_at": "2024-11-29T06:55:21.018Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa3NJIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d84cd3022b5d060d5343e14d5f44e2c0543268f",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa3NJIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d84cd3022b5d060d5343e14d5f44e2c0543268f/APBio_Figure_20_01_212.jpg"
+  }
+ ],
+ "tags": [
+  "aplo:stax-apbio:EVO-2.B",
+  "aplo:stax-apbio:EVO-2.C",
+  "apbio-ch20-s01",
+  "context-cnxmod:dea1a856-6120-4e01-a6ea-1194cc584c66",
+  "context-cnxmod:67322fde-a447-4caa-94f6-2c072d3bda66",
+  "context-cnxmod:4bab9a65-c12d-4164-943f-c8d6d2d57963",
+  "context-cnxmod:e5e51e35-ba7e-45da-889f-a72f1b2e1f13",
+  "science-practice:visual-representations",
+  "apbio-ch20-ex021",
+  "exid:apbio-ch20-ex021",
+  "assignment-type:homework",
+  "blooms:4",
+  "book:stax-bio",
+  "apbio",
+  "book:stax-apbio",
+  "ost-chapter-review",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "ap-test-prep",
+  "apbio-ch20",
+  "dok:3",
+  "book-slug:biology-ap-courses",
+  "module-slug:biology:20-1-organizing-life-on-earth",
+  "module-slug:biology-2e:20-1-organizing-life-on-earth",
+  "module-slug:biology-ap-courses:20-1-organizing-life-on-earth",
+  "time:medium",
+  "book-slug:biology",
+  "book-slug:biology-2e",
+  "assessment:practice:https://openstax.org/orn/book:page/8d50a0af-948b-4204-a71d-4826cba765b8:4bab9a65-c12d-4164-943f-c8d6d2d57963"
+ ],
+ "uuid": "fdf67ab9-ff5a-4575-8f61-0bff4f37f51b",
+ "group_uuid": "0603defb-545f-442c-a4e5-73116ddaf502",
+ "number": 1573,
+ "version": 22,
+ "uid": "1573@22",
+ "published_at": "2024-11-29T06:55:24.914Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 530208,
+   "is_answer_order_important": true,
+   "stimulus_html": "<figure class=\"unnumbered\">\n<img src=\"exercises/media/818afe4e672c05a2.jpg\" alt=\"A phylogenetic tree includes  most organisms, including bacteria, plants, fungi, and metazoans. A key indicates that a filled circle represents a hypothetical common ancestor and a filled diamond represents a character change inherited by all descendants. Nodes are numbered for reference only. The lines of the tree are dashed. The tree begins with a horizontal line at the lower left with a circle labeled “C” at its center. This horizontal line meets a vertical line on the left that extends up to Bacteria and a short vertical line on its right that passes through a diamond labeled nucleus, mitochondria to meet a horizontal line at node 1. The horizontal line meets a vertical line on its left that passes through a circle labeled chloroplasts to a horizontal line that meets vertical lines on its left and right sides that give rise to all of the lineages labeled plants. The left-hand vertical line extends up to green algae. The right-hand meets a horizontal line at node 2 that meets a vertical line on the left to horn worts and a vertical line on the right that runs through a diamond labeled xylem, phloem before meeting a horizontal line at node 3. This horizontal line meets a vertical line on its right to ferns and a vertical line on its right that runs through a diamond labeled seeds meet to a horizontal line at node 4. The horizontal line at node 4 meets a vertical line on its left to conifers and a vertical line on its right that runs through a diamond labeled enclosed seeds to meet a horizontal line at node 5. The horizontal line at node 5 meets a vertical line to dicots on the left and a vertical line on the right that runs through a diamond labeled monocot to meet a horizontal line at node 5. The horizontal line at node 5 meets a vertical line on the left to palms and a vertical line on the right that meets a horizontal line that meets vertical lines to grasses and bananas on its left and right ends, respectively. Going back to node 1 near the bottom of the tree, the horizontal line that meets the line on the left that passes through the circle labeled chloroplasts also meets a horizontal line on its right that meets a vertical line at node 6. This horizontal line meets a vertical line on its left that extends up to a horizontal line that meets vertical lines on its left and right labeled yeasts and mushrooms, respectively, and both labeled as fungi. All of the remaining groups on the tree are labeled as metazoans (animals). The horizontal line at node 6 that branches to fungi on the left meets a vertical line on the right that meets a horizontal line at node 7 that meets a vertical line on the left to sponges and a vertical line on the right that runs through a diamond labeled organs to meet a horizontal line at node 8. The horizontal line at node 8 meets a vertical line on the left that extends up to jellyfish and a vertical line on the right that runs through a diamond labeled nervous and vascular system to meet a horizontal line at node 9. This horizontal line meets a vertical line on the left that  runs through a circle labeled protostome near the bottom and then meets a horizontal line at node 10. The horizontal line at node 10 meets a vertical line on the right that meets a horizontal line at node 11. The horizontal line at node 11 gives rise to a line on the right to Mollusks and to a vertical line on the left that passes through a diamond labeled external skeleton before meeting a horizontal line at node 11. The horizontal line at node 11 gives rise to a line on the right to crustaceans and a line on the right that meets a vertical line on the left that meets vertical lines to the left and right labeled insects and millipedes, respectively. The insects, millipedes, and crustaceans are labeled arthropods. Going back to node 9, the horizontal line also extends right to meet a vertical line that passes through a circle labeled deuterostome before meeting a horizontal line that meets a vertical line on the right to starfish and a vertical line on the left that passes through a diamond labeled vertebrae and then a diamond labeled jaws before meeting a horizontal line at node 12. This horizontal line meets a vertical line on the right to fish and a vertical line on the left that passes through a diamond labeled digits that extends up to a horizontal line at node 13. Just to the left of node 13, there is a circle labeled B on this horizontal line. The horizontal line at node 13 meets a vertical line on the right that extends up to amphibians. The same line extends left to a line that passes through a diamond labeled amniote to meet a horizontal line at node 14. This horizontal line at node 14 meets a vertical line on the left that passes through a diamond labeled two fenestrae before meeting a horizontal line at node 15. The line at node 15 meets a vertical line on the right that meets a horizontal line at node 16 at a circle labeled A. This horizontal line that passes through node 16 meets a vertical line on the left that extends up to a meet a horizontal line at node 16. This horizontal line meets a vertical line on the right labeled crocodiles and a vertical line on the right that passes through a diamond labeled feathers to birds. The horizontal line at node 15 meets a vertical line on the right to iguanas and a vertical line on the left that meets a horizontal line that meets vertical lines on the left and right to snakes and lizards, respectively. The snakes, lizards, iguanas, and crocodiles are labeled reptiles. Going back to node 15, the horizontal line also meets a vertical line on the right that passes through a diamond labeled hair, endothermy to meet a horizontal line at node 17. This line at node 17 meets a vertical line on the right to marsupials and a vertical line on the left that passes through a diamond labeled placenta to meet a horizontal line at node 18. This horizontal line meets a vertical line to the left that meets a horizontal line that meets vertical lines to the left and right to whales and cows, respectively. The same line at node 18 meets a vertical line to the right that extends up to a horizontal line that meets vertical lines to the left and right to humans and chimpanzees, respectively.\">\n<figcaption>(credit: modification of work by Douglas Theobald, Ph.D./The TalkOrigins Archive)</figcaption>\n</figure>\n",
+   "stem_html": "<p>The image shows a broad phylogenetic tree comparing most organisms.</p>\n<p>Make a claim about fungi based on this tree.</p>",
+   "answers": [
+    {
+     "id": 1037320,
+     "content_html": "Fungi are closer to bacteria  than plants."
+    },
+    {
+     "id": 1037321,
+     "content_html": "Fungi are closer to animals than plants."
+    },
+    {
+     "id": 1037322,
+     "content_html": "Fungi are closer to bacteria than animals."
+    },
+    {
+     "id": 1037323,
+     "content_html": "Fungi are closer to bacteria than plants."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  22,
+  21,
+  20,
+  19,
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

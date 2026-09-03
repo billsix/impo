@@ -8,6 +8,8 @@ CNXML fixtures on disk -- so they are safe to run as an image-build gate.
 
 from __future__ import annotations
 
+from lxml import etree  # ty: ignore[unresolved-import]
+
 import convert as c
 import preprocess as p
 
@@ -107,3 +109,28 @@ def test_strip_resizebox_keeps_content():
 
 def test_fix_content_breaks_out_inline_math():
     assert p.fix_content(r"$-$") == r"}-\text{"
+
+
+# -- os-embed exercise link: BOTH URL schemes resolve to a cache key --------
+def _osembed_para(url: str) -> etree._Element:
+    ns = c.C[1:-1]  # strip the {..} Clark braces back to a bare namespace URI
+    return etree.fromstring(
+        '<para xmlns="%s"><link class="os-embed" url="%s"/></para>' % (ns, url)
+    )
+
+
+def test_os_embed_nickname_scheme():
+    # #exercise/<nickname> (most books) -> the nickname is the cache key
+    node = _osembed_para("#exercise/anat-ch01-ex003")
+    assert c._os_embed_nickname(node) == "anat-ch01-ex003"
+
+
+def test_os_embed_tag_scheme():
+    # #ost/api/ex/<id> (physics, biology) -> the id is the cache key
+    node = _osembed_para("#ost/api/ex/k12phys-ch04-ex017")
+    assert c._os_embed_nickname(node) == "k12phys-ch04-ex017"
+
+
+def test_os_embed_other_link_is_none():
+    # a non-exercise os-embed url is not an injected exercise
+    assert c._os_embed_nickname(_osembed_para("#figure/foo")) is None

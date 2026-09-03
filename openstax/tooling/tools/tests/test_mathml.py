@@ -39,3 +39,18 @@ def test_row_concatenation():
     # <mrow> of a=b concatenates its children
     out = _latex("<mrow><mi>a</mi><mo>=</mo><mi>b</mi></mrow>")
     assert "a" in out and "b" in out and "=" in out
+
+
+def test_nonstretchy_paren_before_piecewise_stays_plain():
+    # f(x) with stretchy="false" parens, sitting before a piecewise {...} in the
+    # same row: the ( must stay literal, NOT become a giant \left( stretched over
+    # the whole cases table (the calculus f(x)={...} bug).
+    out = _latex(
+        '<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi>'
+        '<mo stretchy="false">)</mo><mo>=</mo>'
+        "<mrow><mo>{</mo><mtable><mtr><mtd><mn>1</mn></mtd></mtr>"
+        "<mtr><mtd><mn>2</mn></mtd></mtr></mtable></mrow></mrow>"
+    )
+    assert r"\left(" not in out               # no stretched f-paren
+    assert "f(x)" in out.replace(" ", "")
+    assert r"\left\{" in out                   # piecewise brace still stretchy

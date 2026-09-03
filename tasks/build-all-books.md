@@ -1,18 +1,38 @@
-# Build all 16 OpenStax books to PDF — results
+# Build all 16 OpenStax books — PDF + HTML + EPUB results
 
-**Status:** done (2026-09-03)
+**Status:** done (2026-09-03) — all three formats build for all 16 books
 **Priority:** 2
 **Difficulty:** 6
 
 ## BLUF
 
-All **16** `openstax/osbooks-*` books were seeded from the local mirror at their
-pinned SHA, overlaid with the shared toolchain (`openstax/tooling/`), converted
-CNXML→LaTeX, and compiled with lualatex. **Every book produced a correct PDF** —
-**28 collection masters total** (10 single-collection books + 6 multi-collection
-bundles), all with **0 LaTeX errors** and page counts > 0. Three shared-toolchain
-converter/style bugs were found and fixed along the way (commit `dc9f99c`); no
-book-specific fixes were needed.
+All **16** `openstax/osbooks-*` books build correctly in **all three formats**:
+**28 PDF masters** (this doc's original pass) + **28 chunked HTML sites** +
+**28 EPUBs** (the fan-out below) — every one clean, 0 failures. Three shared-
+toolchain converter/style bugs were fixed in the PDF pass (`dc9f99c`); the later
+exercise + HTML work added more toolchain fixes (see "Update" next). No
+book-specific fixes were ever needed.
+
+## Update 2026-09-03 — exercises fixed + HTML/EPUB fan-out
+
+After the PDF pass, two follow-on efforts landed (all shared-toolchain):
+
+- **Silent exercise content-loss fixed** (physics + biology). They use the
+  `#ost/api/ex/<id>` os-embed scheme the converter didn't recognize, so their
+  practice exercises were dropped. Fixed (both schemes now handled), exercises
+  fetched + committed, PDFs rebuilt: **physics 1112→1261pp**, **biology-2e 2147,
+  biology-ap-courses 1831→2346pp, concepts 844**. Plus a `\unicode[font]{xHEX}`
+  fix (biology AP was fatally crashing). See [[openstax-converter-unification-gaps]]
+  and the archived audit. Commits `1054cda`, `2a07faf`, `e37639b`, `438696f`.
+- **HTML/EPUB exercise rendering fixed** — collapsible "Show answer" (`<details>`),
+  the floating `\begin{multicols}{2}` "2" stripped, `oscode`→verbatim code blocks.
+  Commit `0e245cf`. Verified in both HTML and EPUB.
+- **HTML/EPUB fan-out:** all 16 books built both web formats — **32/32 PASS, 0
+  FAIL** (28 chunked HTML sites + 28 EPUBs, one per collection master). Driver:
+  `tasks/adhoc/openstax-html-epub-fanout/build-web-editions.sh`.
+
+The PDF table below is the original pass; physics/biology page counts there are
+pre-exercise (see the updated numbers above).
 
 ## Context
 

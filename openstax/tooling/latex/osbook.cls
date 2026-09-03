@@ -49,6 +49,12 @@
 \definecolor{OScolor}{HTML}{093D4C}        % primary dark teal
 \definecolor{OSmed}{HTML}{1E7A8F}          % medium teal (section headings)
 \definecolor{OSaccent}{HTML}{C6CE33}       % chartreuse pop
+% Per-book theme override: a book may ship an osbook-bookstyle.tex (placed beside
+% the class in checkout/latex/ by apply.sh) to re-set \setmainfont and/or the base
+% palette colors above (OScolor/OSmed/OSaccent). Loaded here -- BEFORE the derived
+% colors below -- so an override of OScolor flows into OSdkcolor. Absent = the
+% default Roboto-Slab + teal theme. (calculus ships a Times + blue book-style.)
+\InputIfFileExists{osbook-bookstyle.tex}{}{}
 \colorlet{OSdkcolor}{OScolor}
 \colorlet{OSltcolor}{black!5}              % light gray box tint (~#F1F1F1)
 

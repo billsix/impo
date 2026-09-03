@@ -1,0 +1,11 @@
+/* Calculus web theme override — appended to osbook-web.css by html.sh/epub.sh so
+   its :root wins the cascade. The web-edition twin of bookstyle.tex: the navy
+   palette + a Times-like serif body from the maintainer's calculus look, replacing
+   the shared teal accent + Baskervville. HTML + EPUB. */
+:root {
+  --os: #233A67;          /* primary dark navy blue (matches the PDF OScolor) */
+  --os-dk: #16264a;       /* darker navy for link/hover */
+  --os-lt: #eaf0f8;       /* light blue tint for boxes */
+  --os-rule: #233A6733;   /* navy rule at ~20% alpha */
+}
+body { font-family: "Times New Roman", Times, "Liberation Serif", serif; }

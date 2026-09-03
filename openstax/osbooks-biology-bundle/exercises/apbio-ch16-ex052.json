@@ -1,0 +1,355 @@
+{
+ "images": [
+  {
+   "created_at": "2022-06-01T21:07:09.148Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--05cca5318adea93a7d027d46bde4e28339515cc8",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--05cca5318adea93a7d027d46bde4e28339515cc8/518ed3357b039405762b67f2e1d39752819a69ff99122ffe3603aade0deadb83.png"
+  }
+ ],
+ "tags": [
+  "apbio-ch16-ex052",
+  "exid:apbio-ch16-ex052",
+  "aplo:stax-apbio:IST-2.D",
+  "apbio-ch16",
+  "apbio-ch16-s07",
+  "context-cnxmod:21b659c0-10cc-43be-a34e-e41db8d149f3",
+  "context-cnxmod:3f686629-aa95-49b1-8c5d-855963fbc85f",
+  "context-cnxmod:2ede30b5-95cd-41de-8011-d1b5b0f33acc",
+  "time:short",
+  "blooms:3",
+  "assignment-type:homework",
+  "book:stax-bio",
+  "apbio",
+  "ost-chapter-review",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "ap-test-prep",
+  "dok:3",
+  "module-slug:biology:16-7-cancer-and-gene-regulation",
+  "module-slug:biology-2e:16-7-cancer-and-gene-regulation",
+  "book-slug:biology",
+  "book-slug:biology-2e"
+ ],
+ "uuid": "b92a68d1-5c85-4a7c-b8c9-699cb5d55373",
+ "group_uuid": "e0c4deab-0090-4004-b542-c234e50a3246",
+ "number": 1215,
+ "version": 11,
+ "uid": "1215@11",
+ "published_at": "2022-06-01T21:07:09.149Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 233308,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<p><img src=\"exercises/media/fd104839a5ff1d58.jpg\" alt=\"The figure shows Low Fixed Nitrogen with an arrow pointing to the right to a box containing Increased free calcium and -oxglutarate. Another arrow points to the right to a box containing NtcA, HetR. From this box, an arrow points to heterocyst development and PatS. PatS points to Inhibit additional heterocyst development.\"></p>\n\n<p><em>Anabaena</em> is a simple multicellular photosynthetic cyanobacterium. In the absence of fixed nitrogen, certain newly developing cells along a filament express genes that code for nitrogen-fixing enzymes and become non-photosynthetic heterocysts. The specialization is advantageous because some nitrogen-fixing enzymes function best in the absence of oxygen. Heterocysts do not carry out photosynthesis but instead provides adjacent cells with fixed nitrogen and receives fixed carbon and reduced energy carriers in return. As shown in the diagram above, when there is low fixed nitrogen in the environment, an increase in the concentration of free calcium ions and 2-oxyglutarate stimulates the expression of genes that produce two transcription factors (NtcA and HetR) that promote the expression of genes responsible for heterocyst development. HetR also causes production of a signal, PatS, that prevents adjacent cells from developing as heterocysts. Based on your understanding of the ways in which signal transmission mediates cell function, which of the following predictions is most consistent with the information given above?</p>\n",
+   "answers": [
+    {
+     "id": 723378,
+     "content_html": "In an environment with low fixed nitrogen, treating the <em>Anabaena</em> cells with a calcium-binding compound should prevent heterocyst differentiation."
+    },
+    {
+     "id": 723377,
+     "content_html": "A strain that overexpresses the patS gene should develop many more heterocysts in a low nitrogen environment."
+    },
+    {
+     "id": 723376,
+     "content_html": "In an environment with abundant fixed nitrogen, free calcium levels should be high in all cells, preventing heterocysts from developing."
+    },
+    {
+     "id": 723375,
+     "content_html": "In environments with abundant fixed nitrogen, loss of the hetR gene should induce heterocyst development."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

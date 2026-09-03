@@ -1,0 +1,352 @@
+{
+ "images": [],
+ "tags": [
+  "k12phys-ch16",
+  "k12phys-ch16-s03",
+  "k12phys-ch16-s03-lo01",
+  "k12phys-ch16-ex047",
+  "exid:k12phys-ch16-ex047",
+  "context-cnxmod:6549d577-10e1-4231-8742-41eba2332b7a",
+  "context-cnxmod:e6bbfa83-1e4c-4ccb-be0f-53d7ed09c116",
+  "context-cnxmod:cce1289f-8a3c-4353-9036-2180e34b55b0",
+  "dok:1",
+  "requires-context:true",
+  "k12phys",
+  "book:stax-phys",
+  "book:stax-k12phys",
+  "filter-type:import:has-context",
+  "book:stax-apphys",
+  "grasp-check",
+  "time:short",
+  "assignment-type:homework",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "all",
+  "book-slug:physics",
+  "module-slug:physics:16-2-refraction",
+  "book-slug:college-physics-ap-courses",
+  "module-slug:college-physics-ap-courses:25-5-dispersion-the-rainbow-and-prisms",
+  "blooms:1"
+ ],
+ "uuid": "a6cdd212-5e50-4977-8359-0e8c6a48188c",
+ "group_uuid": "8899f8ce-2881-406c-a198-80bb3bbaa7e6",
+ "number": 11240,
+ "version": 8,
+ "uid": "11240@8",
+ "published_at": "2022-06-01T21:51:50.606Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "context": "<div data-type=\"note\" data-has-label=\"true\" id=\"fs-id1163996209811\" class=\"interactive\" data-label=\"\">\n<h3 class=\"os-title\" data-type=\"title\"><span class=\"os-title-label\">PhET Explorations</span></h3>\n<div class=\"os-note-body\">\n<h4 data-type=\"title\" id=\"10\" class=\"os-subtitle\"><span class=\"os-subtitle-label\">PhET Explorations: Geometric Optics</span></h4>\n<p id=\"eip-id2214479\" class=\" \">How does a lens form an image? See how light rays are refracted by a lens. Watch how the image changes when you adjust the focal length of the lens, move the object, move the lens, or move the screen.</p>\n<div class=\"os-figure\">\n<figure id=\"fs-id1163995187188\"><div data-type=\"media\" id=\"fs-id1167062368653\" data-alt=\"This simulation allows you to see how light rays are refracted by a lens.\">\n<div data-type=\"alternatives\" class=\"os-has-iframe os-has-link\">\n<a class=\"os-is-link\" target=\"_window\" href=\"https://openstax.org/l/28Geometric\">Click to view content</a><iframe width=\"660\" height=\"371.4\" src=\"https://openstax.org/l/28Geometric\" class=\"os-is-iframe\"><!-- no-selfclose --></iframe>\n</div>\n</div>\n</figure><div class=\"os-caption-container\">\n<span class=\"os-title-label\">Figure </span><span class=\"os-number\">25.25</span><span class=\"os-divider\"> </span>\n</div>\n</div>\n</div>\n</div>",
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 243328,
+   "is_answer_order_important": true,
+   "stimulus_html": "PhET Explorations: Geometric Optics\n\nHow does a lens form an image? See how light rays are refracted by a lens. Watch how the image changes when you adjust the focal length of the lens, move the object, move the lens, or move the screen.\n\n",
+   "stem_html": "How does the focal length, <span data-math=\"f\">f</span>, change with an increasing radius of curvature? How does<span data-math=\"f\">f</span> change with an increasing refractive index?",
+   "answers": [
+    {
+     "id": 762717,
+     "content_html": "The focal length increases in both cases: when the radius of curvature and the refractive index increase."
+    },
+    {
+     "id": 762716,
+     "content_html": "The focal length decreases in both cases: when the radius of curvature and the refractive index increase."
+    },
+    {
+     "id": 762718,
+     "content_html": "The focal length increases when the radius of curvature increases; it decreases when the refractive index increases."
+    },
+    {
+     "id": 762715,
+     "content_html": "The focal length decreases when the radius of curvature increases; it increases in when the refractive index increases."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,362 @@
+{
+ "images": [
+  {
+   "created_at": "2024-10-21T14:34:16.273Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzRDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0fe563ec859c5903cbee8e5b979070955f9c563e",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzRDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0fe563ec859c5903cbee8e5b979070955f9c563e/e2d11c9c4c12d4e919860b75b894c0ecdf966a4425c1c1a2abea501da4b69803.png"
+  },
+  {
+   "created_at": "2024-10-21T14:34:16.277Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzBHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--18ac3d85971ea58056d18fad16f1ab1c15ec16f8",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzBHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--18ac3d85971ea58056d18fad16f1ab1c15ec16f8/CNX_AP_Bio_Figure_13_04_05.jpg"
+  }
+ ],
+ "tags": [
+  "apbio-ch13-s01",
+  "apbio-ch13-ot004",
+  "aplo:stax-apbio:IST-1.J",
+  "apbio-ch13",
+  "dok:2",
+  "time:short",
+  "blooms:3",
+  "assignment-type:homework",
+  "book:stax-bio",
+  "apbio",
+  "book:stax-apbio",
+  "ost-chapter-review",
+  "filter-type:import:hs",
+  "ap-test-prep",
+  "tutor-only",
+  "type:practice"
+ ],
+ "uuid": "41c53b95-6101-4b8d-a15d-5e09c9db5f80",
+ "group_uuid": "6a1e31e8-f48f-45cd-aa0e-52625c7e1ade",
+ "number": 956,
+ "version": 19,
+ "uid": "956@19",
+ "published_at": "2024-10-21T14:34:19.729Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 504414,
+   "is_answer_order_important": true,
+   "stimulus_html": "<img src=\"exercises/media/2cea40e7d73505bf.jpg\" alt=\"A table with four columns and four rows presents the number of each of four categories observed for four F 2 genotypes. From left to right, the columns representing number observed are labeled A through D. The column containing the row headings is labeled F 2 genotype. The data in the rows is as follows. Row 1 F 2 genotype uppercase A lowercase a uppercase B lowercase b: number of uppercase A 46, number of uppercase B 4, number of uppercase C 25, number of uppercase D 50. Row 2 F 2 genotype uppercase A lowercase a lowercase B lowercase B: number of uppercase A 4, number of uppercase B 46, number of uppercase C 25, number of uppercase D 0. Row 3 F 2 genotype lowercase a lowercase a uppercase B lowercase B: number of uppercase A 4, number of uppercase B 46, number of uppercase C 25, number of uppercase D 0. Row 4 F 2 genotype lowercase a lowercase a lowercase b lowercase b: number of uppercase A 46, number of uppercase B 4, number of uppercase C 25, number of uppercase D 50.\">",
+   "stem_html": "<p></p>\n\n<p>A cross was made with true-breeding AABB flies and true-breeding aabb flies. The resulting <span data-math=\"F_1\">F_1</span> generation was then crossed with true-breeding aabb flies. Based on the linkage map, which of the following <span data-math=\"F_2\">F_2</span> generation genotype ratios is most likely to be observed?</p>\n",
+   "answers": [
+    {
+     "id": 992245,
+     "content_html": "Number Observed: AaBb (46), Aabb (4), aaBb (4), Aabb (46)"
+    },
+    {
+     "id": 992246,
+     "content_html": "Number Observed: AaBb (4), Aabb (46), aaBb (46), Aabb (4)"
+    },
+    {
+     "id": 992247,
+     "content_html": "Number Observed: AaBb (25), Aabb (25), aaBb (25), Aabb (25)"
+    },
+    {
+     "id": 992248,
+     "content_html": "Number Observed: AaBb (50), Aabb (0), aaBb (0), Aabb (50)"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  19,
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

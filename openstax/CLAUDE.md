@@ -14,12 +14,15 @@ at `openstax/tooling/` (see below).
    pins over time.
 2. **The delta is a SHARED toolchain, not a per-book patch series.** The maintainer's converter is
    fully automatic and **book-agnostic** (`convert.py` auto-detects a book's subcollection nesting;
-   `fetch_exercises.py` is bundle-agnostic; the generated LaTeX is never hand-edited). Surveyed
-   2026-09-02: across all 16 books the toolchain file-set is identical and the core files
-   (`convert.py`, `fetch_exercises.py`, `osbook.cls`) are **byte-identical**; the only per-book
-   variation was the hardcoded book slug in three scripts. So the toolchain is hoisted to
-   `openstax/tooling/` **once** and each book folder is thin — carrying 16 near-identical copies as
-   patches would be a maintenance smell.
+   `fetch_exercises.py` is bundle-agnostic; the generated LaTeX is never hand-edited). **Corrected
+   2026-09-03:** the per-book `latex`-branch converters were **not** byte-identical — `convert.py`
+   existed in **5 versions** (physics, organic-chemistry, python-programming, biology each diverged),
+   with further differences in `preprocess.py`, `fetch_exercises.py`, and `osbook.cls`. The shared
+   `openstax/tooling/` converter **merges** them into one feature-detecting superset (both os-embed
+   exercise schemes, math-in-titles, code blocks). Full comparison + remaining unification gaps:
+   `tasks/reference/tooling/converters.md`. Hoisting one merged toolchain and keeping each book
+   folder thin is still right — 16 near-identical copies as patches would be a maintenance smell;
+   they simply weren't identical to begin with.
 3. **"apply" = overlay the shared toolchain, not `git am`.** Because the delta is a shared file set
    (not upstream-code hunks), a book's `apply.sh` **copies `../tooling/` onto the fetched upstream
    checkout** rather than replaying patches. Everything else (fetch a pinned pristine upstream, build
@@ -83,18 +86,31 @@ The two layers have two different owners, and imps must not blur them:
 
 Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothing hardcodes a slug.
 
-- `tools/cnxml2tex/convert.py` — CNXML + Presentation-MathML → LaTeX; auto-discovers structure.
-- `tools/cnxml2tex/fetch_exercises.py` — the redownload script (the one networked step).
-- `tools/pandoc/` — templates + `xref.lua` + web CSS (HTML/EPUB editions).
+- `tools/cnxml2tex/convert.py` — CNXML + Presentation-MathML → LaTeX; auto-discovers structure. Handles BOTH
+  os-embed exercise schemes (`#exercise/<nickname>` and `#ost/api/ex/<id>` — physics/biology).
+- `tools/cnxml2tex/fetch_exercises.py` — the redownload script (the one networked step); fetches by nickname or tag.
+- `tools/pandoc/` — the HTML/EPUB leg: `xref.lua` (cross-ref → numbered link rewrite), `preprocess.py`,
+  `chunked-template.html` + `osbook-web.css` (the Furo-style layout), plus the web-edition nav — `build_nav.py`
+  (injects the collapsible book TOC into each page at build time, from `sitemap.json`) and `osbook-web.js`
+  (right "On this page" TOC + scrollspy + chapter/mobile toggles).
 - `tools/tests/` — converter unit tests (`make test`).
 - `latex/osbook.cls`, `osbook-envs.sty`, `osbook-defer.sty` — the house document class + pedagogical
   environments + per-chapter exercise numbering / answer key.
+- **Per-book theme override (optional):** a book may ship `bookstyle.tex` (PDF font/palette, loaded by
+  `osbook.cls` via `\InputIfFileExists{osbook-bookstyle.tex}`) and/or `bookstyle-web.css` (HTML/EPUB, appended to
+  `osbook-web.css` so its `:root` wins); `apply.sh` copies both into the checkout. Default is Roboto-Slab + teal;
+  **calculus** ships both (TeX Gyre Termes + navy). No-op for books without them.
 - `entrypoint/*.sh` — `convert`/`pdf`/`html`/`epub`/`fetch-exercises`/`shell`/`format` (all use `/book`).
 - `Dockerfile` — Fedora 44 + TeX Live + `python3-lxml` + pandoc + `rsvg-convert`.
 - `pyproject.toml`, `templates/exercises-COPYRIGHT`.
 
 **Changing the toolchain:** edit it here once; each book picks it up on its next `apply.sh`. This is
 the whole reason it's shared — one place to maintain the converter and the house style.
+
+**Reference docs** (`tasks/reference/tooling/`, read before touching the toolchain): **`converters.md`** — the
+converter landscape (the 5 historical per-book converter versions merged into one, gap analysis); and
+**`cross-references.md`** — how cross-refs become links (PDF cleveref / HTML xref.lua), and why literal-text
+internal references can't be reliably auto-linked.
 
 ## Adding a book
 
@@ -125,9 +141,11 @@ confirmed on each book's first build.
 - `osbooks-college-algebra-bundle/`, `osbooks-prealgebra-bundle/`, `osbooks-calculus-bundle/` —
   small download caches (survey).
 - `osbooks-writing-guide/` — **committed exercise cache** (182 JSON, 0 images) with `COPYRIGHT`.
-- `osbooks-physics/` — **no `os-embed` exercises** (0 nicknames → no exercise cache); large delta is
-  upstream `media/` figures. Likewise `osbooks-college-algebra-bundle/`, `osbooks-prealgebra-bundle/`,
-  `osbooks-calculus-bundle/` (all 0 os-embed → no caches).
+- `osbooks-physics/` — **committed exercise cache** (846 JSON + 31 images) with `COPYRIGHT`. Uses the
+  **`#ost/api/ex/<id>`** os-embed scheme (fetched by tag), not `#exercise/` — it was wrongly read as
+  "0 exercises" until the converter learned that scheme (2026-09-03; see the archived converter-gaps task).
+  `osbooks-college-algebra-bundle/`, `osbooks-prealgebra-bundle/`, `osbooks-calculus-bundle/` are genuine
+  0-os-embed (confirmed in both schemes) → no caches.
 - `osbooks-introduction-python-programming/` — **has committed exercises cache** (613 questions,
   no images; convert → `introduction-python-programming.tex`, 115 modules).
 - `osbooks-algebra-1/` — **committed exercise cache** (932 JSON + 288 images) with `COPYRIGHT`, plus
@@ -135,5 +153,7 @@ confirmed on each book's first build.
 - `osbooks-organic-chemistry/`, `osbooks-contemporary-mathematics/` — **committed exercise caches**
   (organic-chemistry 1959 JSON + 2076 images; contemporary-mathematics 3073 JSON + 578 images), each
   with its `COPYRIGHT` NOTICE (green-lit + fetched 2026-09-02 — see `tasks/openstax-populate-books.md`).
-- `osbooks-biology-bundle/` — large *figure* book but **no `os-embed` exercises** (0 nicknames → no
-  exercise cache); its large delta is upstream `media/` figures, not downloadable practice exercises.
+- `osbooks-biology-bundle/` — **committed exercise cache** (2337 JSON + 359 images) with `COPYRIGHT`, across
+  all 3 volumes. Like physics, it uses the **`#ost/api/ex/<id>`** scheme (fetched by tag), so it too was wrongly
+  read as "0 exercises" before the 2026-09-03 converter fix. (Its `\unicode[…]{x…}` Greek in exercise math also
+  drove a converter fix — see `tasks/reference/tooling/converters.md`.)

@@ -1,0 +1,356 @@
+{
+ "images": [],
+ "tags": [
+  "apbio-ch16-s02",
+  "apbio-ch16-s02-lo01",
+  "apbio-ch16-ex007",
+  "context-cnxmod:76b4a074-d223-4ad9-8d9e-4114c74f492c",
+  "exid:apbio-ch16-ex007",
+  "context-cnxmod:c78e5e22-f2f1-4914-8ad4-a6ca6db3ce2c",
+  "context-cnxfeature:fig-ch16_02_03",
+  "visual-connection",
+  "aplo:stax-apbio:IST-3.E",
+  "aplo:stax-apbio:IST-3.F",
+  "apbio-ch16",
+  "filter-type:import:has-context",
+  "assignment-type:homework",
+  "blooms:4",
+  "book:stax-bio",
+  "apbio",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "dok:4",
+  "module-slug:biology:16-2-prokaryotic-gene-regulation",
+  "time:medium",
+  "book-slug:biology",
+  "assessment:preparedness:https://openstax.org/orn/book:page/8d50a0af-948b-4204-a71d-4826cba765b8:29c9e8e2-3df2-4a63-9d97-da0859b7385b"
+ ],
+ "uuid": "c1f23a0f-c754-478f-af19-1cbf43063556",
+ "group_uuid": "b512e91f-3cc3-498e-990a-2c3f68a4a2df",
+ "number": 1171,
+ "version": 15,
+ "uid": "1171@15",
+ "published_at": "2025-08-06T23:17:39.071Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "context": "<figure id=\"fig-ch16_02_03\"><span data-type=\"media\" id=\"fs-idm178409184\" data-alt=\"The lac operon consists of a promoter, an operator, and three genes named lacZ, lacY, and lacA. RNA polymerase binds to the promoter. In the absence of lactose, the lac repressor binds to the operator and prevents RNA polymerase from transcribing the operon. In the presence of lactose, the repressor is released from the operator, and transcription proceeds at a slow rate. Binding of the cAMP–CAP complex to the promoter stimulates RNA polymerase activity and increases RNA synthesis. However, even in the presence of the cAMP–CAP complex, RNA synthesis is blocked if the repressor binds to the promoter.\">\n<img src=\"https://openstax.org/apps/archive/20241024.164013/resources/148ef2ddeb06de03f4a950e121ef77be6bde8c22\" data-media-type=\"image/png\" alt=\"The lac operon consists of a promoter, an operator, and three genes named lacZ, lacY, and lacA. RNA polymerase binds to the promoter. In the absence of lactose, the lac repressor binds to the operator and prevents RNA polymerase from transcribing the operon. In the presence of lactose, the repressor is released from the operator, and transcription proceeds at a slow rate. Binding of the cAMP–CAP complex to the promoter stimulates RNA polymerase activity and increases RNA synthesis. However, even in the presence of the cAMP–CAP complex, RNA synthesis is blocked if the repressor binds to the promoter.\" width=\"300\" height=\"530\">\n</span>\n</figure>",
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 639772,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "In <em>E. coli</em>, the <em>trp</em> operon is on by default, while the <em>lac</em> operon is off. Why do you think that this is the case?",
+   "answers": [
+    {
+     "id": 1246614,
+     "content_html": "The trp operon is inducible and is positively regulated. Therefore it is ON by default whereas the lac operon is repressible and is OFF by default."
+    },
+    {
+     "id": 1246615,
+     "content_html": "The trp operon synthesizes tryptophan which is essential for the cell and therefore remains ON, whereas the lac operon synthesizes enzymes for the breakdown of a sugar that is not always available and remains OFF by default."
+    },
+    {
+     "id": 1246613,
+     "content_html": "The trp operon is constitutive and remains ON by default, whereas the lac operon is repressible and therefore is OFF by default."
+    },
+    {
+     "id": 1246612,
+     "content_html": "The lac operon undergoes transcriptional attenuation and therefore is OFF by default, whereas the trp operon is not regulated by any such mechanism and is ON by default."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

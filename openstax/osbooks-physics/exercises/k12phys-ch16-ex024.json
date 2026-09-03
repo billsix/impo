@@ -1,0 +1,361 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-phys:25-4-3",
+  "k12phys-ch16",
+  "k12phys-ch16-s02",
+  "k12phys-ch16-s02-lo01",
+  "k12phys-ch16-ex024",
+  "exid:k12phys-ch16-ex024",
+  "context-cnxmod:bb69c740-3ff1-4594-be1f-a7e67e7feeba",
+  "context-cnxmod:d1df5bf8-e6f7-4e8c-a2af-8b3e8ff58e32",
+  "aplo:stax-apphys:6.E.3.2",
+  "context-cnxmod:cce1289f-8a3c-4353-9036-2180e34b55b0",
+  "dok:1",
+  "requires-context:true",
+  "k12phys",
+  "book:stax-phys",
+  "book:stax-k12phys",
+  "filter-type:import:has-context",
+  "book:stax-apphys",
+  "grasp-check",
+  "time:short",
+  "blooms:3",
+  "assignment-type:homework",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "all",
+  "book-slug:physics",
+  "module-slug:physics:16-2-refraction",
+  "book-slug:college-physics-ap-courses",
+  "module-slug:college-physics-ap-courses:25-4-total-internal-reflection"
+ ],
+ "uuid": "8887201d-0ef6-45c6-8a36-47d1c871cd28",
+ "group_uuid": "8ceeceef-e06c-4482-a8dd-ad0f20795971",
+ "number": 11201,
+ "version": 15,
+ "uid": "11201@15",
+ "published_at": "2022-06-01T21:51:41.489Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "context": "<div data-type=\"note\" data-has-label=\"true\" id=\"fs-id1169086046529\" class=\"interactive\" data-label=\"\">\n<h3 class=\"os-title\" data-type=\"title\"><span class=\"os-title-label\">PhET Explorations</span></h3>\n<div class=\"os-note-body\">\n<h4 data-type=\"title\" id=\"11\" class=\"os-subtitle\"><span class=\"os-subtitle-label\">PhET Explorations: Bending Light</span></h4>\n<p id=\"eip-id1530089\" class=\" \">Explore bending of light between two media with different indices of refraction. See how changing from air to water to glass changes the bending angle. Play with prisms of different shapes and make rainbows.</p>\n<div class=\"os-figure\">\n<figure id=\"fs-id1169085955604\"><div data-type=\"media\" id=\"fs-id1167065851428\" data-alt=\"This simulation allows you to explore bending of light between two media with different indices of refraction\">\n<div data-type=\"alternatives\" class=\"os-has-iframe os-has-link\">\n<a class=\"os-is-link\" target=\"_window\" href=\"https://openstax.org/l/28Bendinglight\">Click to view content</a><iframe width=\"660\" height=\"371.4\" src=\"https://openstax.org/l/28Bendinglight\" class=\"os-is-iframe\"><!-- no-selfclose --></iframe>\n</div>\n</div></figure><div class=\"os-caption-container\">\n<span class=\"os-title-label\">Figure </span><span class=\"os-number\">25.19</span><span class=\"os-divider\"> </span>\n</div>\n</div>\n</div>\n</div>",
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 243291,
+   "is_answer_order_important": true,
+   "stimulus_html": "PhET Explorations: Bending Light.\n\nExplore bending of light between two media with different indices of refraction. See how changing from air to water to glass changes the bending angle. Play with prisms of different shapes and make rainbows.\n<iframe src=\"https://openstax.org/l/28Bendinglight\"></iframe>",
+   "stem_html": "A light ray moving upward strikes a horizontal boundary at an acute angle relative to the perpendicular and enters the medium above the boundary. What must be true for the light to bend away from the perpendicular?",
+   "answers": [
+    {
+     "id": 762572,
+     "content_html": "The medium below the boundary must have a greater index of refraction than the medium above."
+    },
+    {
+     "id": 762571,
+     "content_html": "The medium below the boundary must have a lower index of refraction than the medium above."
+    },
+    {
+     "id": 762570,
+     "content_html": "The medium below the boundary must have an index of refraction of zero."
+    },
+    {
+     "id": 762569,
+     "content_html": " The medium above the boundary must have an infinite index of refraction."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

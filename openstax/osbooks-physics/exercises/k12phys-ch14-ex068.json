@@ -1,0 +1,358 @@
+{
+ "images": [],
+ "tags": [
+  "k12phys-ch14-ex068",
+  "exid:k12phys-ch14-ex068",
+  "context-cnxmod:caf00753-f63b-4b23-9468-25ddc8177407",
+  "context-cnxmod:919bd066-7964-4b5b-b352-bdf63ef6f5f8",
+  "context-cnxmod:ad694f2e-8fcc-4a8b-8c68-3e5190ef41fb",
+  "aplo:stax-apphys:6.B.5.1",
+  "k12phys-ch14",
+  "k12phys-ch14-s03",
+  "k12phys-ch14-s03-lo03",
+  "context-cnxmod:079e89ae-de07-426e-b7c1-1bef175b2af3",
+  "lo:stax-phys:17-4-2",
+  "requires-context:true",
+  "dok:2",
+  "k12phys",
+  "book:stax-phys",
+  "book:stax-k12phys",
+  "filter-type:import:has-context",
+  "grasp-check",
+  "time:short",
+  "blooms:3",
+  "assignment-type:homework",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "all",
+  "book-slug:physics",
+  "module-slug:physics:14-3-doppler-effect-and-sonic-booms",
+  "book-slug:college-physics-ap-courses",
+  "module-slug:college-physics-ap-courses:17-4-doppler-effect-and-sonic-booms"
+ ],
+ "uuid": "8116738f-6a81-4c2e-8294-6f14acc3bc1e",
+ "group_uuid": "8638d006-91be-48cc-b704-3d000b131442",
+ "number": 10971,
+ "version": 12,
+ "uid": "10971@12",
+ "published_at": "2022-06-01T21:50:24.038Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "context": "<div data-type=\"note\" data-has-label=\"true\" id=\"fs-id1169085705502\" class=\"watch-physics\" data-label=\"\">\n<div data-type=\"title\" id=\"8\">Watch Physics: Doppler Effect Formula when Source is Moving Away</div>\n<p id=\"fs-id1169082387210\" class=\" \">This video explains how the Doppler Effect formula differs when the source is moving away.</p>\n<div data-type=\"media\" id=\"fs-id1169085808478\" data-alt=\"This tutorial explains the Doppler Effect formulas when the source is moving away.\">\n<div data-type=\"alternatives\" class=\"os-has-iframe os-has-link\">\n<a class=\"os-is-link\" target=\"_window\" href=\"https://www.openstaxcollege.org/l/02dopemoveaway\">Click to view content</a><iframe width=\"660\" height=\"371.4\" src=\"https://www.openstaxcollege.org/l/02dopemoveaway\" class=\"os-is-iframe\"><!-- no-selfclose --></iframe>\n</div>\n</div>\n</div>",
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 243061,
+   "is_answer_order_important": true,
+   "stimulus_html": "Watch Physics: Doppler Effect Formula when Source is Moving Away.\n\nThis video explains how the Doppler Effect formula differs when the source is moving away.\n<iframe src=\"https://www.openstaxcollege.org/l/02dopemoveaway\"></iframe>",
+   "stem_html": "Sal uses two different formulas for the Doppler effect-one for when the source is moving toward the observer and another for when the source is moving away. However, in this textbook we use only one formula. Explain.",
+   "answers": [
+    {
+     "id": 761680,
+     "content_html": "The combined formula that can be used is, Use (<span data-math=\"+\">+</span>) when the source is moving toward the observer and (<span data-math=\"–\">–</span>) when the source is moving away from the observer."
+    },
+    {
+     "id": 761679,
+     "content_html": "The combined formula that can be used is,  <span data-math=\"f_{obs}=f_s\\left(\\frac{v_w\\pm v_s}{v_w}\\right)\">f_{obs}=f_s\\left(\\frac{v_w\\pm v_s}{v_w}\\right)</span>. Use (<span data-math=\"+\">+</span>) when the source is moving away from the observer and (<span data-math=\"–\">–</span>) when the source is moving toward the observer."
+    },
+    {
+     "id": 761678,
+     "content_html": "The combined formula that can be used is, <span data-math=\"f_{obs}=f_s\\left(\\frac{v_w}{v_w\\pm v_s}\\right)\">f_{obs}=f_s\\left(\\frac{v_w}{v_w\\pm v_s}\\right)</span> . Use (<span data-math=\"+\">+</span>) when the source is moving toward the observer and (<span data-math=\"–\">–</span>) when the source is moving away from the observer."
+    },
+    {
+     "id": 761681,
+     "content_html": "The combined formula that can be used is, <span data-math=\"f_{obs} = f_s\\left( \\frac{v_w}{v_w \\pm v_s} \\right)\">f_{obs} = f_s\\left( \\frac{v_w}{v_w \\pm v_s} \\right)</span>. Use (<span data-math=\"+\">+</span>) when the source is moving away from the observer and (<span data-math=\"–\">–</span>) when the source is moving toward the observer."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

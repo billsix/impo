@@ -1,0 +1,355 @@
+{
+ "images": [],
+ "tags": [
+  "k12phys-ch14-ex001",
+  "exid:k12phys-ch14-ex001",
+  "lo:stax-phys:17-5-2",
+  "aplo:stax-apphys:6.D.3.2",
+  "k12phys-ch14",
+  "k12phys-ch14-s01",
+  "k12phys-ch14-s01-lo03",
+  "context-cnxmod:e04c6e16-1d6d-4379-8c1e-085a8f054c42",
+  "requires-context:true",
+  "dok:2",
+  "context-cnxmod:5ca25b68-6908-432f-89f8-65d448065af9",
+  "context-cnxmod:57c669ea-5957-41c2-8d2c-c667c8ae4441",
+  "k12phys",
+  "book:stax-phys",
+  "book:stax-k12phys",
+  "filter-type:import:has-context",
+  "book:stax-apphys",
+  "grasp-check",
+  "assignment-type:homework",
+  "blooms:2",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "all",
+  "book-slug:college-physics-ap-courses",
+  "module-slug:college-physics-ap-courses:17-5-sound-interference-and-resonance-standing-waves-in-air-columns",
+  "time:medium"
+ ],
+ "uuid": "9c3076a1-310b-40af-80cd-9d79b52e5d31",
+ "group_uuid": "8e77e2b6-b902-4e77-aa38-852e78a41152",
+ "number": 10849,
+ "version": 11,
+ "uid": "10849@11",
+ "published_at": "2022-06-01T21:49:52.804Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "context": "<div data-type=\"note\" data-has-label=\"true\" id=\"eip-165\" class=\"interactive\" data-label=\"\">\n<h3 class=\"os-title\" data-type=\"title\"><span class=\"os-title-label\">PhET Explorations</span></h3>\n<div class=\"os-note-body\">\n<h4 data-type=\"title\" id=\"20\" class=\"os-subtitle\"><span class=\"os-subtitle-label\">PhET Explorations: Sound</span></h4>\n<p id=\"eip-421\" class=\" \">This simulation lets you see sound waves. Adjust the frequency or volume and you can see and hear how the wave changes. Move the listener around and hear what she hears.</p>\n<div class=\"os-figure\">\n<figure id=\"eip-id2339880\"><div data-type=\"media\" id=\"fs-id1167061330647\" data-alt=\"This simulation lets you see sound waves.\" data-display=\"block\">\n<div data-type=\"alternatives\" class=\"os-has-iframe os-has-link\">\n<a class=\"os-is-link\" target=\"_window\" href=\"https://openstax.org/l/28sound\">Click to view content</a><iframe width=\"660\" height=\"371.4\" src=\"https://openstax.org/l/28sound\" class=\"os-is-iframe\"><!-- no-selfclose --></iframe>\n</div>\n</div></figure><div class=\"os-caption-container\">\n<span class=\"os-title-label\">Figure </span><span class=\"os-number\">17.34</span><span class=\"os-divider\"> </span>\n</div>\n</div>\n\n</div>\n</div>",
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 242939,
+   "is_answer_order_important": true,
+   "stimulus_html": "PhET Explorations: Sound.\n\nThis simulation lets you see sound waves. Adjust the frequency or volume and you can see and hear how the wave changes. Move the listener around and hear what she hears.\n\n<iframe src=\"https://openstax.org/l/28sound\"></iframe>",
+   "stem_html": "In the first tab, Listen to a Single Source, move the listener as far away from the speaker as possible, and then change the frequency of the sound wave. You may have noticed that there is a delay between the time when you change the setting and the time when you hear the sound get lower or higher in pitch. Why is this?",
+   "answers": [
+    {
+     "id": 761217,
+     "content_html": "Because, intensity of the sound wave changes with the frequency."
+    },
+    {
+     "id": 761216,
+     "content_html": "Because, the speed of the sound wave changes when the frequency is changed."
+    },
+    {
+     "id": 761215,
+     "content_html": "Because, loudness of the sound wave takes time to adjust after a change in frequency."
+    },
+    {
+     "id": 761218,
+     "content_html": "Because it takes time for sound to reach the listener, so the listener perceives the new frequency of sound wave after a delay."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

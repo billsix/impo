@@ -1,0 +1,365 @@
+{
+ "images": [
+  {
+   "created_at": "2024-12-10T04:52:46.354Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbjBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bce295eed7c622820d840a57528c4931456f67e4",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbjBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bce295eed7c622820d840a57528c4931456f67e4/09643f8427e00afa3e227bca0a04fe7b6a89180fdb9a9c13e9b1d3358368bde1.png"
+  }
+ ],
+ "tags": [
+  "apbio-ch33-ex039",
+  "exid:apbio-ch33-ex039",
+  "aplo:stax-apbio:IST-3.A",
+  "aplo:stax-apbio:IST-3.C",
+  "apbio-ch33",
+  "context-cnxmod:7ad6686e-c53e-45bb-aaa2-15327dff8d3e",
+  "apbio-ch33-s02",
+  "context-cnxmod:d2a1b225-04a0-49ce-b2df-49e7fbbbdbb3",
+  "context-cnxmod:ddbbb44d-037d-4398-9e7c-ed069a52ccc3",
+  "aplo:stax-apbio:IST-3.B",
+  "aplo:stax-apbio:IST-3.D",
+  "blooms:3",
+  "assignment-type:homework",
+  "time:long",
+  "book:stax-bio",
+  "apbio",
+  "ost-chapter-review",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "ap-test-prep",
+  "dok:3",
+  "module-slug:biology:42-2-adaptive-immune-response",
+  "module-slug:biology-2e:42-2-adaptive-immune-response",
+  "book-slug:biology",
+  "book-slug:biology-2e"
+ ],
+ "uuid": "507dbaa6-1f79-48d2-ba26-acfdc3bfa67b",
+ "group_uuid": "4779a80c-9ad9-470d-85b1-ab9881c48d26",
+ "number": 10275,
+ "version": 17,
+ "uid": "10275@17",
+ "published_at": "2024-12-10T04:52:48.954Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 535472,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<p><img src=\"exercises/media/10f712c21419f6e4.jpg\" alt=\"The graph plots antibody titer on the y-axis versus time on the x-axis. An arrow with the label vaccination appears at 0 on the x-axis. A red line labeled IgM shows a dramatic peak at 10–14 days. A blue line labeled IgG shows a much less dramatic arc with its peak at a slightly later time interval.\"></p>\n\n<p>The graph shows changes in a person’s blood after they receive a vaccination. Explain how cell communication is involved in bringing about the changes depicted in the graph.</p>\n",
+   "answers": [
+    {
+     "id": 1048184,
+     "content_html": "The vaccine introduces antigens specific to a pathogen into the person’s blood. These antigens are moved to the cell surface of antigen-presenting cells present in the blood. Receptors on helper T cells bind to the antigens present on the antigen-presenting cell. This direct cell-to-cell contact initiates a series of events that leads to production of antibodies by B lymphocytes."
+    },
+    {
+     "id": 1048185,
+     "content_html": "The vaccine introduces antigens specific to a pathogen into the person’s blood. These antigens bind to the receptors on the surface of T cells. This direct cell-to-cell contact initiates a series of events that leads to production of antibodies by B lymphocytes."
+    },
+    {
+     "id": 1048186,
+     "content_html": "The vaccine introduces antigens specific to a pathogen into the person’s blood. These antigens are moved to the cell surface of antigen-presenting cells present in the blood. This direct cell-to-cell contact initiates a series of events that leads to production of antibodies by B lymphocytes."
+    },
+    {
+     "id": 1048187,
+     "content_html": "The vaccine introduces antigens specific to a pathogen into the person’s blood. These antigens are moved to the cell surface of antigen-presenting cells present in the blood. Receptors on helper T cells bind to the antigens present on the antigen-presenting cell. This direct cell-to-cell contact initiates a series of events that activates the complement system."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -15,9 +15,128 @@ body {
   font-family: "Baskervville", Georgia, "Times New Roman", serif;
   line-height: 1.5;
   color: #1a1a1a;
-  max-width: 46rem;
-  margin: 2rem auto;
-  padding: 0 1rem 4rem;
+  margin: 0;
+}
+
+/* ============================================================================
+   Three-column layout: book TOC (left) | content | on-this-page TOC (right).
+   Both sidebars are sticky (fixed as you scroll). Content is a centered reading
+   column. Collapses gracefully on narrow screens. See build_nav.py (left TOC,
+   injected at build time) and osbook-web.js (right TOC + scrollspy + toggle).
+   ========================================================================== */
+.layout {
+  display: grid;
+  /* fixed sidebars pinned to the edges, a flexible middle that the content
+     column centers within (so no big blank gap on either side). */
+  grid-template-columns: 18rem minmax(0, 1fr) 15rem;
+  gap: 0 2rem;
+  align-items: start;
+  padding: 0 1rem;
+}
+.book-toc, .page-toc {
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;           /* never let TOC content spill sideways */
+  padding: 1.5rem .5rem 2rem;
+  font-size: .82rem;
+  line-height: 1.35;
+}
+.content {
+  min-width: 0;
+  max-width: 46rem;             /* readable measure */
+  margin: 0 auto;              /* center within the flexible middle column */
+  padding: 1.5rem 1rem 4rem;
+}
+
+/* left: whole-book contents */
+.book-toc .book-title { display: block; font-weight: 700; font-size: .95rem;
+  color: var(--os); margin-bottom: .6rem; text-decoration: none; }
+.book-toc ul { list-style: none; margin: 0; padding-left: .7rem;
+  border-left: 1px solid var(--os-rule); }
+.book-toc > ul { padding-left: 0; border-left: none; }
+.book-toc li { margin: .1rem 0; }
+.book-toc a { display: block; color: #333; text-decoration: none;
+  padding: .12rem .4rem; border-radius: 3px; overflow-wrap: anywhere; }
+.book-toc a:hover { background: var(--os-lt); }
+.book-toc a.active { background: var(--os-lt); color: var(--os-dk);
+  font-weight: 700; box-shadow: inset 3px 0 0 var(--os); }
+
+/* collapsible chapters: the active branch starts open, the rest collapsed; the
+   caret toggles (osbook-web.js). A has-children <li> is a 2-col grid: caret | link,
+   with the nested <ul> spanning both. */
+.book-toc li.has-children { display: grid; grid-template-columns: 1rem 1fr;
+  align-items: baseline; }
+.book-toc li.has-children > .toc-toggle { grid-column: 1; align-self: start; }
+/* min-width:0 lets the grid tracks shrink below their content's intrinsic width
+   (grid items default to min-width:auto), so long/deep titles wrap inside the
+   sidebar instead of forcing it wider and spilling over the content/right TOC. */
+.book-toc li.has-children > a { grid-column: 2; min-width: 0; }
+.book-toc li.has-children > ul { grid-column: 1 / -1; min-width: 0; }
+.book-toc .toc-toggle { border: 0; background: none; cursor: pointer; color: #999;
+  font-size: .7rem; line-height: 1.5; padding: 0; }
+.book-toc .toc-toggle::before { content: "\25B8"; }            /* right arrow */
+.book-toc li.open > .toc-toggle::before { content: "\25BE"; }  /* down arrow */
+.book-toc li.has-children > ul { display: none; }
+.book-toc li.has-children.open > ul { display: block; }
+
+/* right: on-this-page */
+.page-toc-title { font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
+  font-size: .7rem; color: #666; margin-bottom: .5rem; }
+.page-toc ul { list-style: none; margin: 0; padding: 0; }
+.page-toc li.lvl-h3 { padding-left: .8rem; }
+.page-toc li.lvl-h4 { padding-left: 1.6rem; }
+.page-toc a { display: block; color: #555; text-decoration: none;
+  padding: .12rem .4rem; border-left: 2px solid transparent; }
+.page-toc a:hover { color: var(--os-dk); }
+.page-toc a.active { color: var(--os-dk); font-weight: 700;
+  border-left-color: var(--os); }
+
+/* breadcrumb (secondary Up/Top) */
+.breadcrumb { font-family: system-ui, sans-serif; font-size: .8rem; color: #777;
+  margin: 0 0 1rem; }
+.breadcrumb a { color: #777; text-decoration: none; }
+.breadcrumb a:hover { color: var(--os-dk); text-decoration: underline; }
+.crumb-sep { margin: 0 .35rem; color: #bbb; }
+
+/* PRIMARY navigation: big Previous / Next buttons at the foot of the content */
+.prevnext { display: flex; gap: 1rem; margin: 3rem 0 0;
+  border-top: 1px solid var(--os-rule); padding-top: 1.5rem;
+  font-family: system-ui, sans-serif; }
+.prevnext .pn { flex: 1 1 0; display: flex; flex-direction: column; gap: .2rem;
+  padding: .8rem 1rem; border: 1px solid var(--os-rule); border-radius: 6px;
+  text-decoration: none; color: var(--os-dk); background: #fff; transition: .12s; }
+.prevnext .pn:hover { border-color: var(--os); background: var(--os-lt); }
+.prevnext .pn.next { text-align: right; }
+.prevnext .pn.placeholder { border: none; background: none; }
+.pn-dir { font-size: .72rem; text-transform: uppercase; letter-spacing: .05em;
+  color: #888; font-weight: 700; }
+.pn-title { font-size: 1rem; font-weight: 700; }
+
+/* mobile toggle + scrim (hidden on wide screens) */
+.nav-toggle { display: none; position: fixed; top: .6rem; left: .6rem; z-index: 30;
+  font: 600 .85rem system-ui, sans-serif; background: var(--os); color: #fff;
+  border: none; border-radius: 5px; padding: .45rem .7rem; cursor: pointer; }
+.nav-scrim { display: none; }
+
+/* wide screens: hide the mobile toggle, sidebars are always shown */
+@media (max-width: 1180px) {
+  .layout { grid-template-columns: 17rem minmax(0, 1fr); }
+  .page-toc { display: none; }           /* drop on-this-page first */
+}
+@media (max-width: 900px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+  .nav-toggle { display: block; }
+  .content { padding-top: 3.2rem; }
+  .book-toc {
+    position: fixed; top: 0; left: 0; bottom: 0; width: 17rem; z-index: 25;
+    background: #fff; box-shadow: 2px 0 12px #0002; max-height: none;
+    transform: translateX(-100%); transition: transform .2s; padding-top: 3rem;
+  }
+  body.nav-open .book-toc { transform: none; }
+  body.nav-open .nav-scrim { display: block; position: fixed; inset: 0; z-index: 20;
+    background: #0005; }
 }
 
 /* ---- headings ---- */
@@ -58,6 +177,27 @@ nav#TOC ul { margin: .2rem 0; }
 .solution, .answer { margin: .3rem 0 .8rem; padding-left: .8rem;
   border-left: 2px solid #ccc; color: #333; }
 .solution::before { content: "Solution. "; font-style: italic; font-weight: 600; }
+/* collapsible answer: .answer is emitted as a <details> (xref.lua) with an EMPTY
+   <summary>; the button label is a CSS pseudo-element so it toggles Show/Hide on
+   [open] with no JS (works in EPUB too). The answer indents when expanded. */
+details.answer { padding-left: 0; border-left: none; margin: .3rem 0 .8rem; }
+details.answer > summary { cursor: pointer; list-style: none; display: inline-block;
+  font-weight: 600; padding: .15rem .6rem; border: 1px solid var(--os-rule, #ccc);
+  border-radius: .25rem; user-select: none; color: #333; }
+details.answer > summary::-webkit-details-marker { display: none; }
+details.answer > summary::after { content: "Show answer"; }
+details.answer[open] > summary::after { content: "Hide answer"; }
+details.answer[open] { border-left: 2px solid #ccc; padding-left: .8rem; }
+details.answer[open] > summary { margin-bottom: .4rem; }
+/* multiple-choice options: labeled a,b,c,d to match the letter answer key (the
+   book's own review-question option lists; injected exercises label in text). */
+.exercise > ol { list-style-type: lower-alpha; }
+/* glossary / Key Terms (a <dl>): bold hanging term + tidy indented definition,
+   matching the PDF's description-list look (was an unstyled default <dl>). */
+dl { margin: 1rem 0; }
+dl > dt { font-weight: 700; margin-top: .7rem; }
+dl > dd { margin: .1rem 0 .5rem 1.4rem; }
+dl > dd > p { margin: .15rem 0; }
 /* ---- notes ---- */
 .calcnote, .medianote { font-size: .95rem; background: #f7f7f5;
   padding: .4rem .8rem; margin: .8rem 0; border-radius: 3px; }

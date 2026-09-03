@@ -34,6 +34,11 @@
 \newenvironment{exercise}{%
   \stepcounter{exabs}%       unique hyperref dest (\theHexercise), before refstep
   \refstepcounter{exercise}%
+  % Multiple-choice options are labeled a,b,c,d (matching the letter answer key),
+  % not 1,2,3,4. Scoped to the exercise env (a group), so other enumerates are
+  % unaffected. (Injected os-embed exercises build option labels into the text,
+  % not via enumerate, so they are untouched.)
+  \renewcommand{\labelenumi}{(\alph{enumi})}%
   \par\smallskip\noindent\textbf{\theexercise.}\ %
 }{\par}
 

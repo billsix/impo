@@ -1,0 +1,370 @@
+{
+ "images": [
+  {
+   "created_at": "2025-08-06T23:17:26.500Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG9FIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8101da59745c19982502567dfa2531538428f552",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG9FIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8101da59745c19982502567dfa2531538428f552/60dcbb3c6ef8bd453ec93964d1b5c1f8a9727b63fb5cb934981003a467fe4a8e.png"
+  }
+ ],
+ "tags": [
+  "apbio-ch15-s02-lo01",
+  "apbio-ch15-ex011",
+  "exid:apbio-ch15-ex011",
+  "context-cnxfeature:fs-id889157",
+  "interactive",
+  "dok:1",
+  "aplo:stax-apbio:IST-1.O",
+  "apbio-ch15",
+  "apbio-ch15-s02",
+  "context-cnxmod:48fcec00-b861-4d5f-b1d3-1df6bbb80eb4",
+  "context-cnxmod:afdd12a8-7d04-41bf-93ea-589094dc7b32",
+  "context-cnxmod:3169e8b6-801f-45b9-8719-8891822d2266",
+  "science-practice:visual-representations",
+  "filter-type:import:has-context",
+  "assignment-type:homework",
+  "blooms:4",
+  "blooms:2",
+  "book:stax-bio",
+  "apbio",
+  "book:stax-apbio",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "book-slug:biology-ap-courses",
+  "module-slug:biology:15-2-prokaryotic-transcription",
+  "module-slug:biology-ap-courses:15-2-prokaryotic-transcription",
+  "time:medium",
+  "book-slug:biology",
+  "assessment:preparedness:https://openstax.org/orn/book:page/8d50a0af-948b-4204-a71d-4826cba765b8:3f1b97d6-823f-431d-a242-e34ca33628c1"
+ ],
+ "uuid": "8485ee03-4a2c-4307-ae31-3d992f59254e",
+ "group_uuid": "fdc944dc-de8b-4fea-a569-4a02d021f455",
+ "number": 1091,
+ "version": 18,
+ "uid": "1091@18",
+ "published_at": "2025-08-06T23:17:26.502Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "context": "<div data-type=\"note\" data-has-label=\"true\" id=\"fs-id889157\" class=\"interactive\" data-label=\"\">\n<h2 class=\"os-title\" data-type=\"title\">\n  <span class=\"os-title-label\">Link to Learning</span>\n</h2>\n<div class=\"os-note-body\">\n<h3 data-type=\"title\" class=\"os-subtitle\">\n  <span class=\"os-subtitle-label\">Link to Learning</span>\n</h3>\n<span data-type=\"media\" id=\"fs-id2217094\" data-alt=\"QR Code representing a URL\"> \n<img src=\"https://openstax.org/apps/archive/20240910.161227/resources/86ceb9654287c4b7dda97acf0aa993b843065e22\" data-media-type=\"image/png\" alt=\"QR Code representing a URL\" width=\"120\" height=\"120\"> \n</span> \n<p id=\"fs-id1292460\">View this <a href=\"https://openstaxcollege.org/l/transcription\" target=\"_blank\" rel=\"noopener nofollow\">MolecularMovies animation</a> to see the first part of transcription and the base sequence repetition of the TATA box.</p>\n</div>\n</div>",
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 639750,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<p><img src=\"exercises/media/3b9b01b6b60d04e4.png\" alt=\"A figure shows a horizontal cylindrical structure labeled the lac operon with a bracketed region labeled, lac operon system. This bracketed region contains segments that are labeled and described with adjacent text. The bracketed region is divided into two halves: the left-hand regulatory region and the right-hand coding region. From left to right, the labeled segments are as follows: a short segment labeled P subscript italicized i accompanied by text reading, promoter; a longer segment labeled i accompanied by text reading, structural gene for repressor protein; a short region labeled C A P accompanied by text reading, unwinding site; a short segment labeled P subscript italicized l a c accompanied by text reading, promoter; a short segment labeled O accompanied by text reading, operator; a small segment accompanied by text reading, leader; a long segment labeled Z accompanied by text reading structural gene for beta-galactosidase; a shorter segment labeled Y accompanied by text reading structural gene for permease; and a similar segment to Y labeled A and accompanied by text reading structural gene for transacetylase.\"></p>\n<p>What is a likely outcome of a mutation in the promoter sequence?</p>",
+   "answers": [
+    {
+     "id": 1246529,
+     "content_html": "DNA polymerase will not be able to release."
+    },
+    {
+     "id": 1246530,
+     "content_html": "RNA polymerase will not be able to attach."
+    },
+    {
+     "id": 1246528,
+     "content_html": "DNA polymerase will bind upstream of the promoter sequence."
+    },
+    {
+     "id": 1246527,
+     "content_html": "RNA polymerase will bind downstream of the promoter sequence."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

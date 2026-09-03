@@ -182,6 +182,17 @@ def main(argv: list[str]) -> None:
         out = strip_resizebox(out)  # unwrap PDF-only table fit wrapper
         out = strip_cmd_arg(out, "rowcolor")  # else pandoc eats 1st header cell
         out = strip_cmd_arg(out, "arrayrulecolor")  # table rule color -> irrelevant
+        # \begin{multicols}{N}: pandoc doesn't know multicols, so it renders the
+        # {N} column-count argument as a stray "N" before the content -- the bare
+        # floating "2" seen above each Review-Questions block. Strip the argument
+        # (HTML reflows, so print column count is irrelevant to the web edition).
+        out = re.sub(r"\\begin\{multicols\}\s*\{[^}]*\}", r"\\begin{multicols}", out)
+        # \begin{oscode}: our verbatim code env (osbook-envs.sty) is unknown to
+        # pandoc; rename to `verbatim`, which pandoc reads as a fenced code block
+        # (gap #6 -- the python-programming original renamed `codeblock` the same
+        # way; impo's env is `oscode`). Body is already raw, so a name swap is all.
+        out = out.replace(r"\begin{oscode}", r"\begin{verbatim}")
+        out = out.replace(r"\end{oscode}", r"\end{verbatim}")
         with open(path, "w", encoding="utf-8") as f:
             f.write(out)
 

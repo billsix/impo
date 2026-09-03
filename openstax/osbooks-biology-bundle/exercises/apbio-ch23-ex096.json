@@ -1,0 +1,363 @@
+{
+ "images": [
+  {
+   "created_at": "2022-06-01T21:41:54.284Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaU1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fdbb48a5a2b9f6cce74ba1b6fa9833ffb0177a18",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaU1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fdbb48a5a2b9f6cce74ba1b6fa9833ffb0177a18/a579d700b4b0aa1c435049318f84b3cf53a494ae913fbdfe33ded31fbc93017b.png"
+  }
+ ],
+ "tags": [
+  "apbio-ch23-ex096",
+  "exid:apbio-ch23-ex096",
+  "aplo:stax-apbio:ENE-1.I",
+  "apbio-ch23",
+  "context-cnxmod:c63b7f28-16a2-4602-b996-cdc7eb78219b",
+  "apbio-ch23-s06",
+  "context-cnxmod:b3a728f9-4179-432a-b93b-a8f32f9f20a6",
+  "context-cnxmod:7a273bb3-9d29-48df-9505-f84f3ae3bac1",
+  "context-cnxmod:38d757ee-f462-4937-991f-a4b9de126698",
+  "critical-thinking",
+  "aplo:stax-apbio:ENE-3.D",
+  "time:short",
+  "assignment-type:homework",
+  "blooms:4",
+  "book:stax-bio",
+  "apbio",
+  "book:stax-apbio",
+  "ost-chapter-review",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "science-practice:representing-describing-data",
+  "dok:3",
+  "book-slug:biology-ap-courses",
+  "module-slug:biology:30-6-plant-sensory-systems-and-responses",
+  "module-slug:biology-2e:30-6-plant-sensory-systems-and-responses",
+  "module-slug:biology-ap-courses:23-6-plant-sensory-systems-and-responses",
+  "time:medium",
+  "book-slug:biology",
+  "book-slug:biology-2e"
+ ],
+ "uuid": "8c11e071-35fe-474d-be67-be0387c0142b",
+ "group_uuid": "b6c26ed6-195e-42a7-9735-fd99380f755e",
+ "number": 9395,
+ "version": 11,
+ "uid": "9395@11",
+ "published_at": "2022-06-01T21:41:54.286Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 241486,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<p><img src=\"exercises/media/e7e23d8902a5ef49.jpg\" alt=\"Table with five columns and two rows. The top headers read: Plate A, Plate B, Plate C, and Plate D. Second row, left header reads: Percentage germination. Second row under Plate A reads: 95%. Second row under Plate B reads: 50%. Second row under Plate C reads: 96%. Second row under Plate D reads\"></p>\n<p>Seeds were germinated in the dark on three plates. Plate A was irradiated with a short pulse of red light; Plate B was irradiated with a short pulse of red light followed immediately by a pulse of far-red light; Plate D was irradiated by a short pulse of red light followed one hour later by a pulse of far-red light; and Plate C was the control and was maintained in the dark. After three days, the plates were scored for percentage of germination, as shown in this table. Evaluate the data to propose a hypothesis describing what the results suggest about the mechanism of the action of red light.</p>\n",
+   "answers": [
+    {
+     "id": 755406,
+     "content_html": "Red light converts the phytochrome to its active form Pr, which can be converted to the inactive form Pfr by far red light. After one hour, the cascade of events initiated by Pfr has already begun promoting germination, hence it cannot be reversed even by the pulse of far light."
+    },
+    {
+     "id": 755407,
+     "content_html": "Red light converts the phytochrome to its active form Pfr, which can be converted to the inactive form Pr by far-red light. After one hour, the cascade of events initiated by Pr has already begun promoting germination, hence it cannot be reversed even by the pulse of far light."
+    },
+    {
+     "id": 755405,
+     "content_html": "Far red light converts the phytochrome to its active form Pfr, which can be converted to the inactive form Pr by red light. After one hour, the cascade of events initiated by Pr has already begun promoting germination, hence it cannot be reversed even by the pulse of far light."
+    },
+    {
+     "id": 755404,
+     "content_html": "Red light converts the phytochrome to its active form Pfr, which can be converted to the inactive form Pr by far red light. After one hour, the cascade of events initiated by Pfr has already begun promoting germination, hence it cannot be reversed even by the pulse of far light."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

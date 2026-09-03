@@ -1,0 +1,369 @@
+{
+ "images": [],
+ "tags": [
+  "apbio-ch12",
+  "apbio-ch12-s02",
+  "apbio-ch12-s02-lo02",
+  "apbio-ch12-ex007",
+  "context-cnxmod:e2a834f2-7b7e-4ae4-bed8-f4d3c9fff598",
+  "exid:apbio-ch12-ex007",
+  "context-cnxmod:9d15ac23-a3d4-4181-b583-c2c5624aa7c0",
+  "context-cnxfeature:fig-ch12_02_02",
+  "context-cnxmod:0fa42abc-7142-4581-9d01-d70f456ee71e",
+  "context-cnxmod:aa7d6118-46d2-4152-86da-aea06a813e58",
+  "science-practice:statistical-tests-data-analysis",
+  "visual-connection",
+  "aplo:stax-apbio:IST-1.I",
+  "filter-type:import:has-context",
+  "blooms:3",
+  "assignment-type:homework",
+  "blooms:4",
+  "time:long",
+  "book:stax-bio",
+  "apbio",
+  "book:stax-apbio",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "dok:4",
+  "book-slug:biology-ap-courses",
+  "module-slug:biology:12-2-characteristics-and-traits",
+  "module-slug:biology-2e:12-2-characteristics-and-traits",
+  "module-slug:biology-ap-courses:12-2-characteristics-and-traits",
+  "time:medium",
+  "book-slug:biology",
+  "book-slug:biology-2e",
+  "assessment:practice:https://openstax.org/orn/book:page/8d50a0af-948b-4204-a71d-4826cba765b8:0fa42abc-7142-4581-9d01-d70f456ee71e",
+  "assessment:practice:https://openstax.org/orn/book:subbook/b3c1e1d2-839c-42b0-a314-e119a8aafbdd:07ffb740-edec-51f5-9cf5-a87da60341d6"
+ ],
+ "uuid": "44f722d6-6b81-4b7f-b4ec-78f4e21887ca",
+ "group_uuid": "403135a1-d79c-4d02-85b8-0fd9c1ca9cc0",
+ "number": 866,
+ "version": 18,
+ "uid": "866@18",
+ "published_at": "2023-08-21T20:41:10.165Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "context": "<figure id=\"fig-ch12_02_02\">\n<span data-type=\"media\" id=\"fs-id1236377\" data-alt=\"In a test cross, a parent with a dominant phenotype but unknown genotype is crossed with a recessive parent. If the parent with the unknown phenotype is homozygous dominant, all of the resulting offspring will have at least one dominant allele. If the parent with the unknown phenotype is heterozygous, fifty percent of the offspring will inherit a recessive allele from both parents and will have the recessive phenotype.\">\n<img src=\"https://openstax.org/apps/archive/20220509.174553/resources/7f5a165aff25b21b4b6b2423ca7411d7f34888ba\" data-media-type=\"image/jpg\" alt=\"In a test cross, a parent with a dominant phenotype but unknown genotype is crossed with a recessive parent. If the parent with the unknown phenotype is homozygous dominant, all of the resulting offspring will have at least one dominant allele. If the parent with the unknown phenotype is heterozygous, fifty percent of the offspring will inherit a recessive allele from both parents and will have the recessive phenotype.\" width=\"320\" id=\"4\">\n</span>\n\n</figure>",
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 358595,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "Mendel determined that in pea plants, round peas (R) are dominant to wrinkled peas (r). Assume you do a test cross between a pea plant with wrinkled peas (genotype rr) and a plant of unknown genotype that has round peas. You end up with three plants, all which have round peas. From this data, can you support either of two hypotheses, that a round pea parent plant is homozygous dominant, or that it is heterozygous dominant? If the round pea parent plant is heterozygous, determine the probability that a random sample of 3 progeny pea plants will all be round.",
+   "answers": [
+    {
+     "id": 872040,
+     "content_html": "The data set is too small to predict the genotype of the round pea plant and support either hypothesis. Assuming that the unknown parent is heterozygous, the probability of having only round pea plants from a random sample of 3 progeny will be <span data-math=\"% <![CDATA[\n{1\\over8}%]]>\">% </span>."
+    },
+    {
+     "id": 872039,
+     "content_html": "The genotype of the unknown round pea plant is Rr. Assuming that the unknown parent is heterozygous, then the probability of having only round pea plants from a random sample of 3 progeny will be <span data-math=\"% <![CDATA[\n{1\\over4}%]]>\">% </span>."
+    },
+    {
+     "id": 872038,
+     "content_html": "The genotype of the unknown round pea plant is Rr. Assuming that the unknown parent is heterozygous, the probability of having only round pea plants from a random sample of 3 progeny will be <span data-math=\"% <![CDATA[\n{1\\over2}%]]>\">% </span>."
+    },
+    {
+     "id": 872037,
+     "content_html": "The data set is too small to predict the genotype of the round pea plant and support either hypothesis. Assuming that the unknown parent is heterozygous, the probability of having only round pea plants from a random sample of 3 progeny will be <span data-math=\"% <![CDATA[\n{1\\over6}%]]>\">% </span>."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

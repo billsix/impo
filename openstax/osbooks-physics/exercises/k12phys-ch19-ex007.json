@@ -1,0 +1,356 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-phys:20-2-2",
+  "k12phys-ch19-s01",
+  "k12phys-ch19-s01-lo02",
+  "k12phys-ch19-ex007",
+  "exid:k12phys-ch19-ex007",
+  "context-cnxmod:2e9cd89d-9691-4a07-98dd-b79a2554625b",
+  "k12phys-ch19",
+  "context-cnxmod:336edd2d-e6ba-4e31-bdc5-ee8fe5bd4b26",
+  "aplo:stax-apphys:5.C.3.2",
+  "requires-context:true",
+  "dok:2",
+  "k12phys",
+  "book:stax-phys",
+  "book:stax-k12phys",
+  "filter-type:import:has-context",
+  "grasp-check",
+  "time:short",
+  "assignment-type:homework",
+  "blooms:2",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "all",
+  "book-slug:physics",
+  "module-slug:physics:19-1-ohms-law"
+ ],
+ "uuid": "03567132-1803-425b-8ea7-bccab12365ad",
+ "group_uuid": "e74f738b-576c-45d6-8d53-cf543c269d95",
+ "number": 7234,
+ "version": 14,
+ "uid": "7234@14",
+ "published_at": "2022-06-01T21:32:36.908Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "context": "<div data-type=\"note\" data-has-label=\"true\" id=\"fs-id1169084921906\" class=\"interactive\" data-label=\"\">\n<h3 class=\"os-title\" data-type=\"title\"><span class=\"os-title-label\">PhET Explorations</span></h3>\n<div class=\"os-note-body\">\n<h4 data-type=\"title\" id=\"6\" class=\"os-subtitle\"><span class=\"os-subtitle-label\">PhET Explorations: Ohm's Law</span></h4>\n<p id=\"eip-859\" class=\" \">See how the equation form of Ohm's law relates to a simple circuit. Adjust the voltage and resistance, and see the current change according to Ohm's law. The sizes of the symbols in the equation change to match the circuit diagram. </p>\n<div class=\"os-figure\">\n<figure id=\"fs-id1169084824230\"><div data-type=\"media\" id=\"fs-id1167067184393\" data-alt=\"This simulation mimics a simple circuit with batteries providing the voltage source and a resistor connected across the batteries.\">\n<div data-type=\"alternatives\" class=\"os-has-iframe os-has-link\">\n<a class=\"os-is-link\" target=\"_window\" href=\"https://openstax.org/l/28ohms_law\">Click to view content</a><iframe width=\"660\" height=\"371.4\" src=\"https://openstax.org/l/28ohms_law\" class=\"os-is-iframe\"><!-- no-selfclose --></iframe>\n</div>\n</div></figure><div class=\"os-caption-container\">\n<span class=\"os-title-label\">Figure </span><span class=\"os-number\">20.10</span><span class=\"os-divider\"> </span>\n</div>\n</div>\n</div>\n</div>",
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 239325,
+   "is_answer_order_important": true,
+   "stimulus_html": "PhET Explorations: Ohm's Law.\n\nSee how the equation form of Ohm's law relates to a simple circuit. Adjust the voltage and resistance, and see the current change according to Ohm's law. The sizes of the symbols in the equation change to match the circuit diagram. \n<iframe src=\"https://openstax.org/l/28ohms_law\"></iframe>",
+   "stem_html": "In a circuit, if the resistance is left constant and the voltage is doubled (for example, from  <span data-math=\"3\\,\\text{V}\">3\\,\\text{V}</span> to <span data-math=\"6\\,\\text{V}\">6\\,\\text{V}</span>), how does the current change? Does this conform to Ohm’s law?",
+   "answers": [
+    {
+     "id": 746886,
+     "content_html": "The current will get doubled. This conforms to Ohm’s law as the current is proportional to the voltage."
+    },
+    {
+     "id": 746885,
+     "content_html": "The current will double. This does not conform to Ohm’s law as the current is proportional to the voltage."
+    },
+    {
+     "id": 746884,
+     "content_html": "The current will increase by half. This conforms to Ohm’s law as the current is proportional to the voltage."
+    },
+    {
+     "id": 746883,
+     "content_html": "The current will decrease by half. This does not conform to Ohm’s law as the current is proportional to the voltage."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,366 @@
+{
+ "images": [
+  {
+   "created_at": "2024-11-15T07:09:19.790Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f6947df1af7cd10cefe77a163f1f97ab3f136ff9",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f6947df1af7cd10cefe77a163f1f97ab3f136ff9/9079145f63e67268f31dad5cd08abf5ee5dd5d164723c4175fa4c7ecac98d28d.png"
+  },
+  {
+   "created_at": "2024-11-15T07:09:19.793Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb0FDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2d4016de91433ff810394ff8450b53121390e62d",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb0FDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2d4016de91433ff810394ff8450b53121390e62d/88df83c57b61e61268394744112b92ecc5e6141d40db8e22b1553b34b54267dd.png"
+  }
+ ],
+ "tags": [
+  "apbio-ch24-ex059",
+  "exid:apbio-ch24-ex059",
+  "context-cnxmod:44503b54-9a4c-40c4-ae59-369526d2f9ef",
+  "apbio-ch24",
+  "apbio-ch24-s01",
+  "context-cnxmod:2ee0997f-1571-42ff-af0b-946736780f47",
+  "context-cnxmod:b1835f27-ca0d-4590-a977-a98c5218af75",
+  "dok:2",
+  "aplo:stax-apbio:ENE-3.D",
+  "time:short",
+  "assignment-type:homework",
+  "blooms:2",
+  "book:stax-bio",
+  "apbio",
+  "ost-chapter-review",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "ap-test-prep",
+  "module-slug:biology:33-1-animal-form-and-function",
+  "module-slug:biology-2e:33-1-animal-form-and-function",
+  "book-slug:biology",
+  "book-slug:biology-2e"
+ ],
+ "uuid": "df969827-6eb0-4bdb-9059-14acad90db04",
+ "group_uuid": "efe998b0-0a35-47e8-b56b-1549ee79d012",
+ "number": 9434,
+ "version": 16,
+ "uid": "9434@16",
+ "published_at": "2024-11-15T07:09:23.292Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 520451,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<p><img src=\"exercises/media/a5cf776337b2f1ac.png\" alt=\"This is a 5 by 5 table. The columns are labelled BM (g), CD (min), WU (min), NBT in degrees C, and BTH in degrees C. Bears have a BM of 80,000, a CD of 8307, a WU of 741, a NBT of 37 and a BTH of 33. Marmots have a BM of 4000, a CD of 1766 a WU of 237, a NBT of 40 and a BTH of 18. Honey possums have a BM of 10, a CD of 80, a WU of 24, a NBT of 37 and a BTH of 5. Hummingbirds have a BM of 4, a CD of 59, a WU of 17, a NBT of 40 and a BTH of 2. Shrews have a BM of 2, a CD of 35, a WU of 13, a NBT of 34 and a BTH of 2.\"></p>\n<p>In the data, BM = body mass, CD = cool-down time; WU = warm-up time, NBT = normal body temperature and BTH = body temperature during hibernation. What can you conclude from the data collected on five different animals as shown in the table above?</p>",
+   "answers": [
+    {
+     "id": 1017209,
+     "content_html": "The time it takes for animals to change body temperature is directly related to body size."
+    },
+    {
+     "id": 1017210,
+     "content_html": "The time it takes for animals to change their body temperature is indirectly related to their size."
+    },
+    {
+     "id": 1017211,
+     "content_html": "Larger animals hibernate for longer periods of time."
+    },
+    {
+     "id": 1017212,
+     "content_html": "Smaller animals hibernate for shorter periods of time"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,366 @@
+{
+ "images": [],
+ "tags": [
+  "k12phys-ch15",
+  "k12phys-ch15-s01",
+  "k12phys-ch15-s01-lo02",
+  "k12phys-ch15-ex004",
+  "exid:k12phys-ch15-ex004",
+  "context-cnxmod:1265f87b-fe08-4e80-817c-cf5ca9a03a73",
+  "context-cnxmod:5ab359e7-b922-4b27-b86b-aff3cc82175e",
+  "context-cnxmod:0f59bf7f-ccea-41d0-85aa-eaddc271ed44",
+  "context-cnxmod:ef5e1e15-c223-42a3-9a37-81f583f1baef",
+  "context-cnxmod:9346f183-c6da-4c52-8232-187eaba6c024",
+  "context-cnxmod:3a247428-8d85-4d9d-9494-d8a75bc7bd66",
+  "aplo:stax-apphys:6.F.3.1",
+  "context-cnxmod:7d996634-c209-41d3-a183-18f0081f9388",
+  "dok:2",
+  "k12phys",
+  "book:stax-phys",
+  "book:stax-k12phys",
+  "filter-type:import:has-context",
+  "book:stax-apphys",
+  "grasp-check",
+  "time:short",
+  "assignment-type:homework",
+  "blooms:4",
+  "science-practice:argumentation",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "all",
+  "book-slug:physics",
+  "module-slug:physics:15-1-the-electromagnetic-spectrum",
+  "book-slug:college-physics-ap-courses",
+  "module-slug:college-physics-ap-courses:24-3-the-electromagnetic-spectrum",
+  "module-slug:college-physics-ap-courses:29-3-photon-energies-and-the-electromagnetic-spectrum",
+  "module-slug:college-physics-ap-courses:26-3-color-and-color-vision",
+  "time:medium"
+ ],
+ "uuid": "0e0ef595-5b18-40c8-8746-0c41cea7e809",
+ "group_uuid": "2b6d8120-15a0-4bbc-9812-685ff38656e1",
+ "number": 11093,
+ "version": 14,
+ "uid": "11093@14",
+ "published_at": "2022-06-01T21:51:09.442Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "context": "<div data-type=\"note\" data-has-label=\"true\" id=\"fs-id1169083576345\" class=\"interactive\" data-label=\"\">\n<h3 class=\"os-title\" data-type=\"title\"><span class=\"os-title-label\">PhET Explorations</span></h3>\n<div class=\"os-note-body\">\n<h4 data-type=\"title\" id=\"22\" class=\"os-subtitle\"><span class=\"os-subtitle-label\">PhET Explorations: Color Vision</span></h4>\n<p id=\"import-auto-id1169738016042\" class=\" \">Make a whole rainbow by mixing red, green, and blue light. Change the wavelength of a monochromatic beam or filter white light. View the light as a solid beam, or see the individual photons. </p>\n<div class=\"os-figure\">\n<figure id=\"fs-id1169083514184\"><div data-type=\"media\" id=\"fs-id1167064871798\" data-alt=\"This video demonstrates additive color and color filters.\">\n<div data-type=\"alternatives\" class=\"os-has-iframe os-has-link\">\n<a class=\"os-is-link\" target=\"_window\" href=\"https://openstax.org/l/28Colorvision\">Click to view content</a><iframe width=\"660\" height=\"371.4\" src=\"https://openstax.org/l/28Colorvision\" class=\"os-is-iframe\"><!-- no-selfclose --></iframe>\n</div>\n</div></figure><div class=\"os-caption-container\">\n<span class=\"os-title-label\">Figure </span><span class=\"os-number\">24.21</span><span class=\"os-divider\"> </span>\n</div>\n</div>\n</div>\n</div>",
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 243183,
+   "is_answer_order_important": true,
+   "stimulus_html": "PhET Explorations: Color Vision. Make a whole rainbow by mixing red, green, and blue light. Change the wavelength of a monochromatic beam or filter white light. View the light as a solid beam, or see the individual photons. \n<iframe src=\"https://openstax.org/l/28Colorvision\"></iframe>",
+   "stem_html": "Ordinary white light is a combination of all colors of visible light. How would a blue absorption filter placed in front of a white light source affect the light you observe?\n",
+   "answers": [
+    {
+     "id": 762139,
+     "content_html": "A blue filter absorbs blue light, causing the observed light to be a combination of the other colors."
+    },
+    {
+     "id": 762138,
+     "content_html": "A blue filter absorbs the opposite color of light—orange, causing the observed light to be blue."
+    },
+    {
+     "id": 762140,
+     "content_html": "A blue filter permits only blue light to pass though, absorbing the other colors and leaving blue light for the observer."
+    },
+    {
+     "id": 762137,
+     "content_html": "A blue filter permits only the opposite color light—orange—to pass through, leaving orange light for the observer."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,367 @@
+{
+ "images": [
+  {
+   "created_at": "2025-01-07T06:56:39.259Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcUlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--62079af1e0a2313da5d0b4aafabfdfe75bb3ef2f",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcUlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--62079af1e0a2313da5d0b4aafabfdfe75bb3ef2f/8081446d8093fa38aa3e8da06d81cc25e26c3d3648ca1ac681f6d30a53b75025.png"
+  }
+ ],
+ "tags": [
+  "apbio-ch36-ex089",
+  "exid:apbio-ch36-ex089",
+  "apbio-ch36",
+  "aplo:stax-apbio:SYI-1.G",
+  "aplo:stax-apbio:SYI-1.H",
+  "context-cnxmod:774c6097-22c3-4621-a29f-62bb9d77d47e",
+  "apbio-ch36-s06",
+  "context-cnxmod:56aa613a-446b-4e4b-a9f7-79c3754b831d",
+  "context-cnxmod:d856d831-d708-41d0-afd2-8dfe51cec7c2",
+  "context-cnxmod:dac313a7-b283-4dc1-a873-e0999b484f6f",
+  "assignment-type:homework",
+  "blooms:4",
+  "time:long",
+  "book:stax-bio",
+  "apbio",
+  "book:stax-apbio",
+  "ost-chapter-review",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "ap-test-prep",
+  "dok:3",
+  "book-slug:biology-ap-courses",
+  "module-slug:biology:45-6-community-ecology",
+  "module-slug:biology-2e:45-6-community-ecology",
+  "module-slug:biology-ap-courses:36-6-community-ecology",
+  "book-slug:biology",
+  "book-slug:biology-2e"
+ ],
+ "uuid": "e543eeed-8e8a-4e4c-84bd-bee89f0c4275",
+ "group_uuid": "40bec621-f59b-4528-87a5-55a1db7a1778",
+ "number": 10588,
+ "version": 17,
+ "uid": "10588@17",
+ "published_at": "2025-01-07T06:56:41.815Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 546570,
+   "is_answer_order_important": true,
+   "stimulus_html": "",
+   "stem_html": "<p><img src=\"exercises/media/b2aa5eb50c8b5ded.jpg\" alt=\"A table with the first column indicated snail type and the other two columns give the survival rate of those snails. Of snails released into mottled snail region, 95% of mottled snails survived and 5% of solid snails survive.  Of snails released into solid snail region, 5% of mottled snails survive and 95% of solid snails survive.\"></p>\n\n<p>A species of marine snail is found in shallow waters near coastlines. This snail feeds on detritus on the ocean bottom. Researchers noticed that snails in one area had a mottled appearance, while snails in another area were solid in color. The researchers set up areas in each region for study and then released both mottled and solid snails into the solid snail region and released both mottled and solid snails into the mottled snail region. The survival rate of each variant was measured. Results are summarized in this table. \nConstruct a possible hypothesis that accounts for these data. Explain your reasoning.</p>\n",
+   "answers": [
+    {
+     "id": 1071438,
+     "content_html": "A possible hypothesis is that the coloration of the snail is dependent on environmental conditions. Camouflage in both mottled and solid snails is best during optimum environmental conditions and does not change according to the region in which they are placed."
+    },
+    {
+     "id": 1071439,
+     "content_html": "A possible hypothesis is that the coloration of the snail is an adaptation in the form of camouflage to protect the snail from predators in the region it is invading. Mottled snails are best camouflaged in the solid snail region and stand out to predators and suffer greater predation when placed in their native region."
+    },
+    {
+     "id": 1071440,
+     "content_html": "A possible hypothesis is that the coloration of the snail is an adaptation in the form of camouflage to protect the snail from predators in its native region. Mottled snails are best camouflaged in their native region and stand out to predators and suffer greater predation when placed in the region normally occupied by solid snails."
+    },
+    {
+     "id": 1071441,
+     "content_html": "A possible hypothesis is that the coloration of the snail is an adaptation in the form of camouflage to protect the snail from predators in its native region. Solid snails are best camouflaged in mottled snail region and are more obvious to predators when placed in their native region."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  17,
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

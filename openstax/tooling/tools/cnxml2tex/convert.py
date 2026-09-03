@@ -774,6 +774,17 @@ def _norm_math(s: str) -> str:
             r"{\\" + _new + r"{\1}}",
             s,
         )
+    # MathType/MathJax export emits \unicode[<font>]{x<HEX>} for a raw codepoint
+    # (e.g. \unicode[Arial]{x3B2} = beta) -- LaTeX has no \unicode command, so it
+    # aborts with "! Undefined control sequence". unicode-math + STIX Two Math
+    # (osbook.cls) render the raw character directly, so drop the font hint and
+    # emit the codepoint. Found building the osbooks-biology-bundle AP volume
+    # (Greek letters -- alpha/beta/sigma/... -- in glycosidic-bond exercises).
+    s = re.sub(
+        r"\\unicode\s*(?:\[[^\]]*\])?\s*\{x([0-9A-Fa-f]+)\}",
+        lambda m: chr(int(m.group(1), 16)),
+        s,
+    )
     # Systems of equations from the Exercises API come as \begin{gathered} rows with
     # & alignment tabs (`x-2y &=& -5 \\ ...`). `gathered` (like `gather`) does NOT
     # allow & -> lualatex aborts with "Extra alignment tab has been changed to \cr".
@@ -846,6 +857,13 @@ def _fenced_row(node: _Element) -> str | None:
             "‖",
             "⟨",
         ):
+            continue
+        # An <mo stretchy="false"> is an ordinary literal delimiter, NOT a fence to
+        # \left…\right -- e.g. the `(` `)` of `f(x)`. Without this guard, a plain
+        # `f(x)` sitting before a piecewise/matrix in the same mrow gets promoted to
+        # `\left(` by the mtable test below, and its \right lands past the whole
+        # system -> a giant `(` stretched over the cases. (Seen: calculus f(x)={…}.)
+        if c.get("stretchy") == "false":
             continue
         if (
             c.get("fence") == "true"
@@ -1422,7 +1440,11 @@ def inline_element(node: _Element, labels: set[str]) -> str:
         tgt: str | None = node.get("target-id")
         doc: str | None = node.get("document")
         url: str | None = node.get("url")
-        if node.get("class") == "os-embed" and url and url.startswith("#exercise/"):
+        if (
+            node.get("class") == "os-embed"
+            and url
+            and url.startswith(("#exercise/", "#ost/api/ex/"))
+        ):
             # os-embed exercises are injected block-level (see block_element);
             # if one appears inline, emit a short marker, never a dead \url.
             return r"\emph{(practice exercise --- online edition)}"
@@ -1772,8 +1794,11 @@ _EX_ONLINE = (
 
 
 def _os_embed_nickname(node: _Element) -> str | None:
-    """If this <para> is nothing but an os-embed #exercise link, return its
-    nickname (else None). These links are always the sole content of a para."""
+    """If this <para> is nothing but an os-embed exercise link, return its cache
+    key (else None). These links are always the sole content of a para. Two URL
+    schemes appear across the books: `#exercise/<nickname>` (most books) and
+    `#ost/api/ex/<id>` (physics, biology; e.g. `k12phys-ch04-ex017`). The
+    trailing token is the cache key either way -> exercises/<key>.json."""
     links: list[_Element] = node.findall(C + "link")
     if len(links) != 1:
         return None
@@ -1781,7 +1806,11 @@ def _os_embed_nickname(node: _Element) -> str | None:
     if ln.get("class") != "os-embed":
         return None
     url: str = ln.get("url") or ""
-    if not url.startswith("#exercise/"):
+    if url.startswith("#exercise/"):
+        key: str = url[len("#exercise/") :]
+    elif url.startswith("#ost/api/ex/"):
+        key = url[len("#ost/api/ex/") :]
+    else:
         return None
     if (node.text or "").strip():
         return None
@@ -1791,7 +1820,7 @@ def _os_embed_nickname(node: _Element) -> str | None:
                 return None
         elif local(c.tag) is not None:
             return None
-    return url[len("#exercise/") :]
+    return key
 
 
 def _ex_img(src: str | None) -> str | None:
@@ -2377,7 +2406,12 @@ def render_exercise(node: _Element, labels: set[str], depth: int) -> str:
         body = re.sub(r"^\s*\d+[.)]\s+", "", body)
         out.append(body)
     for s in sols:
-        out.append("\\begin{answer}\n%s\n\\end{answer}" % blocks(s, labels, depth))
+        ans: str = blocks(s, labels, depth)
+        # A bare single-letter MC answer key ("A") -> lowercase to match the
+        # a,b,c,d option labels. Prose/worked-solution answers are left as-is.
+        if re.fullmatch(r"\s*[A-Z]\s*", ans):
+            ans = ans.lower()
+        out.append("\\begin{answer}\n%s\n\\end{answer}" % ans)
     _IN_EXERCISE = prev
     out.append("\\end{exercise}")
     return "\n".join(out)

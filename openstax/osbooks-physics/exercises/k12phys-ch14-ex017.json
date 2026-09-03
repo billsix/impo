@@ -1,0 +1,358 @@
+{
+ "images": [],
+ "tags": [
+  "k12phys-ch14-ex017",
+  "exid:k12phys-ch14-ex017",
+  "context-cnxmod:cce64fde-f448-43b8-ae88-27705cceb0da",
+  "aplo:stax-apphys:6.A.2.1",
+  "problem",
+  "k12phys-ch14",
+  "k12phys-ch14-s01",
+  "k12phys-ch14-s01-lo03",
+  "context-cnxmod:e04c6e16-1d6d-4379-8c1e-085a8f054c42",
+  "context-cnxmod:085589bb-9ea4-443a-84c3-72c56f6b265d",
+  "context-cnxmod:177f95a9-8db4-4ede-a8e9-1838cc34e42d",
+  "dok:2",
+  "k12phys",
+  "book:stax-phys",
+  "book:stax-k12phys",
+  "book:stax-apphys",
+  "aplo:stax-apphys:6.B.4.1",
+  "lo:stax-phys:17-2-3",
+  "time:short",
+  "blooms:3",
+  "assignment-type:homework",
+  "blooms:4",
+  "science-practice:argumentation",
+  "ost-chapter-review",
+  "filter-type:import:hs",
+  "inbook-yes",
+  "all",
+  "book-slug:college-physics-ap-courses",
+  "module-slug:college-physics-ap-courses:17-2-speed-of-sound-frequency-and-wavelength",
+  "time:medium"
+ ],
+ "uuid": "802fcc40-e0db-4a37-b578-dde62b5029fa",
+ "group_uuid": "57384d6d-1b13-47e2-b47f-8123b9b449a3",
+ "number": 10885,
+ "version": 10,
+ "uid": "10885@10",
+ "published_at": "2022-06-01T21:50:02.051Z",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "context": "<table id=\"import-auto-id3177545\" summary=\"Table 17.1 Speed of Sound in Various Media \">\n<thead><tr>\n            <th>Medium</th>\n            <th>\n<em data-effect=\"italics\">v</em><sub>w</sub>(m/s)</th>\n          </tr></thead>\n<tbody>\n<tr>\n            <td colspan=\"2\"><strong data-effect=\"bold\"><em data-effect=\"italics\">Gases at <math display=\"inline\"><semantics><mrow>\n <mtext fontstyle=\"italic\">0ºC</mtext>\n</mrow><annotation-xml encoding=\"MathML-Content\"><semantics>\n  <mtext fontstyle=\"italic\">0ºC</mtext>\n </semantics></annotation-xml></semantics></math></em></strong></td>\n             </tr>\n<tr>\n            <td>Air</td>\n            <td>331</td>\n          </tr>\n<tr>\n            <td>Carbon dioxide</td>\n            <td>259</td>\n          </tr>\n<tr>\n            <td>Oxygen</td>\n            <td>316</td>\n          </tr>\n<tr>\n            <td>Helium</td>\n            <td>965</td>\n          </tr>\n<tr>\n            <td>Hydrogen</td>\n            <td>1290</td>\n          </tr>\n<tr>\n            <td colspan=\"2\"><strong data-effect=\"bold\"><em data-effect=\"italics\">Liquids at <math display=\"inline\"><semantics><mrow>\n <mtext fontstyle=\"italic\">20ºC</mtext>\n</mrow><annotation-xml encoding=\"MathML-Content\"><semantics>\n  <mtext fontstyle=\"italic\">20ºC</mtext>\n </semantics></annotation-xml></semantics></math></em></strong></td>\n             </tr>\n<tr>\n            <td>Ethanol</td>\n            <td>1160</td>\n          </tr>\n<tr>\n            <td>Mercury</td>\n            <td>1450</td>\n          </tr>\n<tr>\n            <td>Water, fresh</td>\n            <td>1480</td>\n          </tr>\n<tr>\n            <td>Sea water</td>\n            <td>1540</td>\n          </tr>\n<tr>\n            <td>Human tissue</td>\n            <td>1540</td>\n          </tr>\n<tr>\n            <td colspan=\"2\"><strong data-effect=\"bold\"><em data-effect=\"italics\">Solids (longitudinal or bulk)</em></strong></td>\n              </tr>\n<tr>\n            <td>Vulcanized rubber</td>\n            <td>54</td>\n          </tr>\n<tr>\n            <td>Polyethylene</td>\n            <td>920</td>\n          </tr>\n<tr>\n            <td>Marble</td>\n            <td>3810</td>\n          </tr>\n<tr>\n            <td>Glass, Pyrex</td>\n            <td>5640</td>\n          </tr>\n<tr>\n            <td>Lead</td>\n            <td>1960</td>\n          </tr>\n<tr>\n            <td>Aluminum</td>\n            <td>5120</td>\n          </tr>\n<tr>\n            <td>Steel</td>\n            <td>5960</td>\n          </tr>\n</tbody>\n</table>\n",
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 242975,
+   "is_answer_order_important": true,
+   "stimulus_html": "<table><tbody><tr>\n<td>Medium</td>\n<td>v<sub>w</sub> (m/s)</td>\n</tr>\n\n</tbody><tbody>\n<tr>\n<td><b><i>Gases at 0 °C</i></b></td>\n</tr>\n<tr>\n<td>Air</td>\n<td>331</td>\n</tr>\n<tr>\n<td>Carbon dioxide</td>\n<td>259</td>\n</tr>\n<tr>\n<td>Oxygen</td>\n<td>316</td>\n</tr>\n<tr>\n<td>Helium</td>\n<td>965</td>\n</tr>\n<tr>\n<td>Hydrogen</td>\n<td>1290</td>\n</tr>\n<tr>\n<td><b><i>Liquids at 20 °C</i></b></td>\n</tr>\n<tr>\n<td>Ethanol</td>\n<td>1160</td>\n</tr>\n<tr>\n<td>Mercury</td>\n<td>1450</td>\n</tr>\n<tr>\n<td>Water, fresh</td>\n<td>1480</td>\n</tr>\n<tr>\n<td>Sea water</td>\n<td>1540</td>\n</tr>\n<tr>\n<td>Human tissue</td>\n<td>1540</td>\n</tr>\n<tr>\n<td><b><i>Solids (longitudinal or bulk)</i></b></td>\n</tr>\n<tr>\n<td>Vulcanized rubber</td>\n<td>54</td>\n</tr>\n<tr>\n<td>Polyethylene</td>\n<td>920</td>\n</tr>\n<tr>\n<td>Marble</td>\n<td>3810</td>\n</tr>\n<tr>\n<td>Glass, Pyrex</td>\n<td>5640</td>\n</tr>\n<tr>\n<td>Lead</td>\n<td>1960</td>\n</tr>\n<tr>\n<td>Aluminum</td>\n<td>5120</td>\n</tr>\n<tr>\n<td>Steel</td>\n<td>5960</td>\n</tr>\n</tbody></table>",
+   "stem_html": "A sound wave with a frequency of 80 Hz is traveling through air at  0°C. The sound wave enters a block of aluminum. If the sound's frequency does not change, what happens to the sound's wavelength?",
+   "answers": [
+    {
+     "id": 761354,
+     "content_html": "It's wavelength increases by a factor of 4.2."
+    },
+    {
+     "id": 761355,
+     "content_html": "It's wavelength increases by a factor of 18."
+    },
+    {
+     "id": 761353,
+     "content_html": "It's wavelength decreases by a factor of 4.2."
+    },
+    {
+     "id": 761352,
+     "content_html": "It's wavelength decreases by a factor of 18."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}
