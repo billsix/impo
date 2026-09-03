@@ -4,6 +4,10 @@
 **Priority:** 8
 **Difficulty:** 5
 
+**Durable write-up:** `tasks/reference/tooling/cross-references.md` (how cross-refs work + this investigation +
+what a revival needs). The prototype `build_xref_links.py` is kept under `tasks/adhoc/` (not deleted — it's the
+revival starting point the reference doc points at).
+
 ## Outcome (2026-09-03) — built a safe linker, but it can't resolve the refs; parked
 
 Built `build_xref_links.py` (a two-pass, lxml-based, safety-netted linker — kept at
