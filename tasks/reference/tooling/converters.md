@@ -74,9 +74,9 @@ silently rendered zero** — the "physics/biology have 0 exercises" reading was 
 
 | File | versions | who diverged | what it was | impo |
 |------|------|------|------|------|
-| `tools/pandoc/preprocess.py` | 2 | python | rename `codeblock`→`verbatim` so pandoc (HTML/EPUB) reads the code env | ⚠️ impo uses the majority; the env is now `oscode`, so HTML/EPUB code blocks for python still need an `oscode`→verbatim rename (open, task [[openstax-html-exercise-rendering]] / gap #6) |
+| `tools/pandoc/preprocess.py` | 2 | python | rename `codeblock`→`verbatim` so pandoc (HTML/EPUB) reads the code env | ✅ **DONE 2026-09-03** — impo's env is `oscode`; `preprocess.py` renames `oscode`→`verbatim` for pandoc, so python HTML/EPUB code blocks render (gap #6 closed) |
 | `tools/cnxml2tex/fetch_exercises.py` | 2 | physics, biology | `discover_targets` — both `nickname:` and `tag:` queries | ✅ (fixed 2026-09-03) |
-| `latex/osbook.cls` | 3 | organic+biology; calculus | organic/biology: `\DeclareOldFontCommand{\rm…\mathrm}` (+`\bf\it\sf\tt\cal`) — robust obsolete-font fix for chem formulae. calculus: `\setmainfont{TeX Gyre Termes}` (Times) + a **blue** palette | ⚠️ impo uses majority `.cls`; the `{\rm}` case is handled a different way in `convert.py` (~757, `{\rm X}`→`{\mathrm X}` substitution, build-all fix #3) — less general than the `.cls` form; the calculus font+palette is **missing** (calculus builds with the generic Roboto-Slab+teal theme) — open, gap #5 |
+| `latex/osbook.cls` | 3 | organic+biology; calculus | organic/biology: `\DeclareOldFontCommand{\rm…\mathrm}` (+`\bf\it\sf\tt\cal`) — robust obsolete-font fix for chem formulae. calculus: `\setmainfont{TeX Gyre Termes}` (Times) + a **blue** palette | ⚠️ impo uses majority `.cls`; the `{\rm}` case is handled a different way in `convert.py` (~757, `{\rm X}`→`{\mathrm X}` substitution, build-all fix #3) — less general than the `.cls` form; calculus's Times+navy theme is ✅ **DONE 2026-09-03** via the per-book style hook (`bookstyle.tex` for PDF, `bookstyle-web.css` for HTML/EPUB); the `{\rm}` case is handled in `convert.py` (build-all fix #3), the more-general `\DeclareOldFontCommand` (gap #4) is deferred |
 | `latex/osbook-envs.sty` | 2 | python | the code env | ✅ impo has `oscode` (new hash; build-all fix #1) |
 | `latex/osbook-defer.sty` | 1 | — | identical across all 16 | ✅ (confirmed same) |
 
@@ -89,8 +89,9 @@ Divergences split into two kinds, unified differently:
   (`discover_targets` returning both queries). The right answer is a superset, not "pick one."
 - **Presentation divergences** (calculus's Times+blue theme) → do **not** belong in a universal converter. The
   clean unification is a **per-book style hook**: `osbook.cls` `\InputIfFileExists{book-style.tex}`, defaulting to
-  the shared Roboto-Slab+teal theme, so a book can override only its font+palette. (Proposed in gap #5, not yet
-  built.)
+  the shared Roboto-Slab+teal theme, so a book can override only its font+palette. **Implemented 2026-09-03:**
+  `osbook.cls` `\InputIfFileExists{osbook-bookstyle.tex}` for the PDF + `html.sh`/`epub.sh` appending a book's
+  `bookstyle-web.css` for the web edition; calculus ships both (Times + navy).
 
 ## Per-book quick reference
 
@@ -106,9 +107,9 @@ Figure format and os-embed scheme are the durable facts; exercise counts are as 
 | introduction-python-programming | 1 | `#exercise/` | 613 | none |
 | writing-guide | 1 | `#exercise/` | 182 (0 img) | — |
 | **physics** | 1 | **`#ost/api/ex/`** | **846** (fixed 2026-09-03) | raster |
-| **biology-bundle** | 3 | **`#ost/api/ex/`** | (re-fetching 2026-09-03) | raster |
+| **biology-bundle** | 3 | **`#ost/api/ex/`** | **2337** (fixed 2026-09-03) | raster |
 | chemistry-bundle | 2 | none/survey | 0 | — |
-| calculus-bundle | 3 | none | 0 | — (wants Times+blue theme, gap #5) |
+| calculus-bundle | 3 | none | 0 | Times+navy theme (bookstyle.tex + bookstyle-web.css) |
 | college-algebra-bundle | 4 | survey | 0 | — |
 | prealgebra-bundle | 3 | survey | 0 | — |
 | university-physics-bundle | 3 | survey | 0 | — |
