@@ -26,11 +26,12 @@ body {
    ========================================================================== */
 .layout {
   display: grid;
-  grid-template-columns: 18rem minmax(0, 46rem) 15rem;
-  justify-content: start;        /* hug the left; don't center with big side gaps */
+  /* fixed sidebars pinned to the edges, a flexible middle that the content
+     column centers within (so no big blank gap on either side). */
+  grid-template-columns: 18rem minmax(0, 1fr) 15rem;
   gap: 0 2rem;
   align-items: start;
-  padding-left: 1rem;            /* small breathing room from the window edge */
+  padding: 0 1rem;
 }
 .book-toc, .page-toc {
   position: sticky;
@@ -44,6 +45,8 @@ body {
 }
 .content {
   min-width: 0;
+  max-width: 46rem;             /* readable measure */
+  margin: 0 auto;              /* center within the flexible middle column */
   padding: 1.5rem 1rem 4rem;
 }
 
@@ -119,11 +122,11 @@ body {
 
 /* wide screens: hide the mobile toggle, sidebars are always shown */
 @media (max-width: 1180px) {
-  .layout { grid-template-columns: 17rem minmax(0, 44rem); }
+  .layout { grid-template-columns: 17rem minmax(0, 1fr); }
   .page-toc { display: none; }           /* drop on-this-page first */
 }
 @media (max-width: 900px) {
-  .layout { grid-template-columns: minmax(0, 46rem); justify-content: center; }
+  .layout { grid-template-columns: minmax(0, 1fr); }
   .nav-toggle { display: block; }
   .content { padding-top: 3.2rem; }
   .book-toc {
