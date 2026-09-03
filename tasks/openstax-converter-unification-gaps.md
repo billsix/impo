@@ -17,15 +17,18 @@
   collapsible-answer + multicols-number fixes from [[openstax-html-exercise-rendering]]).
 - **Gaps #1, #2 (code blocks, math-in-titles) — already DONE** as build-all fixes.
 
-### Still remaining
+- **Gap #5 (calculus Times+blue theme) — DONE 2026-09-03.** Implemented the per-book style hook
+  (`osbook.cls` `\InputIfFileExists{osbook-bookstyle.tex}`, apply.sh copies a book's `bookstyle.tex`);
+  calculus ships Times + blue. All 3 volumes rebuilt + verified. Commit `684c871`.
+- **`\crefname{exercise}` — DONE 2026-09-03** (`789c67c`).
+
+### Still remaining (one item, low priority)
 
 - **Gap #4 — `osbook.cls` `\DeclareOldFontCommand`** (belt-and-braces for `{\rm}` in chem formulae).
-  Low urgency: the converter's `{\rm X}`→`{\mathrm X}` substitution already handles the observed cases;
-  this is strictly-more-general robustness.
-- **Gap #5 — calculus Times+blue theme** via a per-book `\InputIfFileExists{book-style.tex}` style hook.
-  Cosmetic; the 3 calculus volumes build fine with the generic theme.
-- **`\crefname{exercise}` undefined** — cross-refs to exercises emit a harmless LaTeX warning (found in
-  the physics/biology rebuilds). Define `\crefname{exercise}{Exercise}{Exercises}` in `osbook.cls`.
+  **Deliberately DEFERRED** (William Emerison Six <billsix@gmail.com>, 2026-09-03): the converter's
+  `{\rm X}`→`{\mathrm X}` substitution already handles every observed case, so this is speculative
+  robustness whose only cost is re-verifying all 16 books. Do it only if an un-stripped `{\rm}` case
+  ever surfaces.
 
 ## BLUF
 
