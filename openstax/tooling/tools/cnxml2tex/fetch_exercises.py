@@ -54,9 +54,15 @@ _EXT = {
 }
 
 
-def discover_nicknames() -> dict[str, str]:
-    """Map every #exercise/<nickname> os-embed link to its first-seen module."""
-    nicks: dict[str, str] = {}
+def discover_targets() -> dict[str, str]:
+    """Map every os-embed exercise link to the API query that fetches it.
+
+    Two URL schemes appear across the OpenStax books:
+      * `#exercise/<nickname>`   -> query `nickname:<nickname>`
+      * `#ost/api/ex/<id>`       -> query `tag:<id>`  (physics/biology; e.g.
+                                     `k12phys-ch04-ex017`, `apbio-ch01-ex001`)
+    The trailing token is the cache key (exercises/<key>.json) either way."""
+    targets: dict[str, str] = {}
     for mid in sorted(os.listdir(MODULES)):
         path: str = os.path.join(MODULES, mid, "index.cnxml")
         if not os.path.exists(path):
@@ -69,11 +75,16 @@ def discover_nicknames() -> dict[str, str]:
             print("  WARN parse %s: %s" % (mid, e))
             continue
         for ln in tree.iter(CNXML + "link"):
-            if ln.get("class") == "os-embed":
-                url: str = ln.get("url") or ""
-                if url.startswith("#exercise/"):
-                    nicks.setdefault(url[len("#exercise/") :], mid)
-    return nicks
+            if ln.get("class") != "os-embed":
+                continue
+            url: str = ln.get("url") or ""
+            if url.startswith("#exercise/"):
+                key: str = url[len("#exercise/") :]
+                targets.setdefault(key, "nickname:" + key)
+            elif url.startswith("#ost/api/ex/"):
+                key = url[len("#ost/api/ex/") :]
+                targets.setdefault(key, "tag:" + key)
+    return targets
 
 
 def http_get(
@@ -155,19 +166,19 @@ def localize_item(item: dict[str, Any], stats: dict[str, int]) -> dict[str, Any]
     return item
 
 
-def fetch_one(nick: str, stats: dict[str, int]) -> None:
-    out: str = os.path.join(CACHE, nick + ".json")
+def fetch_one(key: str, query: str, stats: dict[str, int]) -> None:
+    out: str = os.path.join(CACHE, key + ".json")
     if os.path.exists(out):
         stats["cached"] += 1
         return
-    url: str = API + "?" + urllib.parse.urlencode({"q": "nickname:" + nick})
+    url: str = API + "?" + urllib.parse.urlencode({"q": query})
     data: Any = json.loads(http_get(url)[0])
     os.makedirs(CACHE, exist_ok=True)
     if not data.get("total_count"):
         with open(out, "w") as f:
-            json.dump({"_missing": True, "nickname": nick}, f, indent=1)
+            json.dump({"_missing": True, "key": key, "query": query}, f, indent=1)
         stats["missing"] += 1
-        print("  MISSING %s" % nick)
+        print("  MISSING %s" % key)
         return
     item: dict[str, Any] = localize_item(data["items"][0], stats)
     with open(out, "w") as f:
@@ -183,24 +194,24 @@ def main(argv: list[str]) -> None:
             limit = int(a.split("=", 1)[1])
         elif a == "--list":
             list_only = True
-    nicks: dict[str, str] = discover_nicknames()
-    print("discovered %d unique os-embed exercise nicknames" % len(nicks))
+    targets: dict[str, str] = discover_targets()
+    print("discovered %d unique os-embed exercises" % len(targets))
     if list_only:
-        for n in sorted(nicks):
-            print(n)
+        for k in sorted(targets):
+            print(k)
         return
-    names: list[str] = sorted(nicks)
+    keys: list[str] = sorted(targets)
     if limit:
-        names = names[:limit]
+        keys = keys[:limit]
     stats: dict[str, int] = {"fetched": 0, "cached": 0, "missing": 0, "img": 0}
-    for i, nick in enumerate(names, 1):
-        fetch_one(nick, stats)
-        if i % 25 == 0 or i == len(names):
+    for i, key in enumerate(keys, 1):
+        fetch_one(key, targets[key], stats)
+        if i % 25 == 0 or i == len(keys):
             print(
                 "[%d/%d] fetched=%d cached=%d missing=%d images=%d"
                 % (
                     i,
-                    len(names),
+                    len(keys),
                     stats["fetched"],
                     stats["cached"],
                     stats["missing"],

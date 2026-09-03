@@ -1422,7 +1422,11 @@ def inline_element(node: _Element, labels: set[str]) -> str:
         tgt: str | None = node.get("target-id")
         doc: str | None = node.get("document")
         url: str | None = node.get("url")
-        if node.get("class") == "os-embed" and url and url.startswith("#exercise/"):
+        if (
+            node.get("class") == "os-embed"
+            and url
+            and url.startswith(("#exercise/", "#ost/api/ex/"))
+        ):
             # os-embed exercises are injected block-level (see block_element);
             # if one appears inline, emit a short marker, never a dead \url.
             return r"\emph{(practice exercise --- online edition)}"
@@ -1772,8 +1776,11 @@ _EX_ONLINE = (
 
 
 def _os_embed_nickname(node: _Element) -> str | None:
-    """If this <para> is nothing but an os-embed #exercise link, return its
-    nickname (else None). These links are always the sole content of a para."""
+    """If this <para> is nothing but an os-embed exercise link, return its cache
+    key (else None). These links are always the sole content of a para. Two URL
+    schemes appear across the books: `#exercise/<nickname>` (most books) and
+    `#ost/api/ex/<id>` (physics, biology; e.g. `k12phys-ch04-ex017`). The
+    trailing token is the cache key either way -> exercises/<key>.json."""
     links: list[_Element] = node.findall(C + "link")
     if len(links) != 1:
         return None
@@ -1781,7 +1788,11 @@ def _os_embed_nickname(node: _Element) -> str | None:
     if ln.get("class") != "os-embed":
         return None
     url: str = ln.get("url") or ""
-    if not url.startswith("#exercise/"):
+    if url.startswith("#exercise/"):
+        key: str = url[len("#exercise/") :]
+    elif url.startswith("#ost/api/ex/"):
+        key = url[len("#ost/api/ex/") :]
+    else:
         return None
     if (node.text or "").strip():
         return None
@@ -1791,7 +1802,7 @@ def _os_embed_nickname(node: _Element) -> str | None:
                 return None
         elif local(c.tag) is not None:
             return None
-    return url[len("#exercise/") :]
+    return key
 
 
 def _ex_img(src: str | None) -> str | None:
