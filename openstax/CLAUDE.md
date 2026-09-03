@@ -1,9 +1,10 @@
-# OpenStax — LaTeX ports of OpenStax textbooks, under imps
+# OpenStax — LaTeX ports of OpenStax textbooks, under impo
 
-This family carries the maintainer's **hand-owned LaTeX/PDF/EPUB/HTML port toolchain** for OpenStax
-open textbooks, on top of pristine, pinned OpenStax content — the same imps idea as the N64 ports
-(`../n64/CLAUDE.md`), but for books instead of games. One folder per book (`osbooks-<subject>/`),
-plus a **single shared toolchain** at `openstax/tooling/` (see below).
+This is the sole family in **impo** (see the repo-root `../CLAUDE.md`). It carries the maintainer's
+**hand-owned LaTeX/PDF/EPUB/HTML port toolchain** for OpenStax open textbooks, on top of pristine,
+pinned OpenStax content — the same idea as impo's sibling **imps** (the N64 PC-ports carrier), but for
+books instead of games. One folder per book (`osbooks-<subject>/`), plus a **single shared toolchain**
+at `openstax/tooling/` (see below).
 
 ## How this family differs from N64 (read this first)
 
@@ -22,7 +23,7 @@ plus a **single shared toolchain** at `openstax/tooling/` (see below).
 3. **"apply" = overlay the shared toolchain, not `git am`.** Because the delta is a shared file set
    (not upstream-code hunks), a book's `apply.sh` **copies `../tooling/` onto the fetched upstream
    checkout** rather than replaying patches. Everything else (fetch a pinned pristine upstream, build
-   from the applied checkout, gitignore the checkout) is the same imps shape.
+   from the applied checkout, gitignore the checkout) is the same imps/impo carrier shape.
 
 ## The content model — downloaded → commit; generated → ignore
 
@@ -47,7 +48,7 @@ plus a **single shared toolchain** at `openstax/tooling/` (see below).
 
 The two layers have two different owners, and imps must not blur them:
 
-- **The toolchain is the maintainer's** — MIT, like the rest of imps (see `../LICENSE`).
+- **The toolchain is the maintainer's** — MIT, like the rest of impo (see `../LICENSE`).
 - **The OpenStax content is NOT the maintainer's.** The pinned CNXML/`media`, **and any downloaded
   `exercises/` (problem sets) and their images, are © OpenStax and the respective authors, licensed
   CC BY 4.0** — carried here for reproducibility, not authored here. This mirrors imps' README note
