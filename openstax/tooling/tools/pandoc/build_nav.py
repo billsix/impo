@@ -39,24 +39,31 @@ def render(node: dict, current_page: str) -> tuple[str, bool]:
     page = path.split("#", 1)[0]
     self_active = bool(page) and page == current_page
     label = (number + "  " if number else "") + title
-    kids = node.get("subsections") or []
 
+    # The left TOC stops at the PAGE level: a child that lives on the SAME page as
+    # this node is an on-page anchor (e.g. section 2.1's 2.1.1, 2.1.2, …), which
+    # belongs to the right "On this page" sidebar, not the book tree. Recurse only
+    # into children that introduce a new page.
     kids_html = ""
     any_active = self_active
-    for k in kids:
+    for k in node.get("subsections") or []:
+        k_page = ((k.get("section") or {}).get("path") or "").split("#", 1)[0]
+        if page and k_page == page:
+            continue
         kh, ka = render(k, current_page)
         kids_html += kh
         any_active = any_active or ka
 
+    has_kids = bool(kids_html)
     li_class = ""
-    if kids:
+    if has_kids:
         li_class = ' class="has-children%s"' % (" open" if any_active else "")
     a_class = ' class="active"' if self_active else ""
     li = "<li%s>" % li_class
-    if kids:
+    if has_kids:
         li += '<button class="toc-toggle" aria-label="Expand section"></button>'
     li += '<a href="%s"%s>%s</a>' % (html.escape(path), a_class, html.escape(label))
-    if kids:
+    if has_kids:
         li += "<ul>%s</ul>" % kids_html
     li += "</li>"
     return li, any_active
