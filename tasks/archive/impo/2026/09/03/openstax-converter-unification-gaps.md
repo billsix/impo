@@ -1,6 +1,6 @@
 # OpenStax converter unification — gaps between the shared toolchain and the original per-book converters
 
-**Status:** in progress — content + HTML gaps DONE 2026-09-03; #4 (font robustness), #5 (calculus theme), and the `\crefname{exercise}` warning remain
+**Status:** DONE 2026-09-03 — all gaps closed except #4 (a speculative font-robustness tweak), deliberately deferred + documented in `tasks/reference/tooling/converters.md`. Archived.
 **Priority:** 2
 **Difficulty:** 4
 
