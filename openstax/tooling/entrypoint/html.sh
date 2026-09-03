@@ -64,6 +64,11 @@ for slug in $(cd "$ROOT/collections" && ls *.collection.xml | sed 's/\.collectio
     # base css so its :root wins the cascade. No-op for books without one. This is
     # the web-edition twin of the PDF's bookstyle.tex / osbook-bookstyle.tex hook.
     [ -f "$ROOT/bookstyle-web.css" ] && cat "$ROOT/bookstyle-web.css" >> "$outdir/osbook-web.css"
+    # the web-edition JS (right "On this page" TOC + scrollspy + mobile toggle)
+    cp "$ROOT/tools/pandoc/osbook-web.js" "$outdir/osbook-web.js"
+    # inject the whole-book TOC into each page's left sidebar (from sitemap.json,
+    # at build time so it works offline/file://; see build_nav.py)
+    python3 "$ROOT/tools/pandoc/build_nav.py" "$outdir"
     # pandoc COPIED media/ + exercises/ in to be self-contained; swap those for
     # symlinks to the repo dirs (identical files) to avoid ~100 MB of duplication.
     for res in media exercises; do
