@@ -1,6 +1,6 @@
 # Author a reference doc: the OpenStax converters — similarities and differences, in detail
 
-**Status:** proposed — needs go-ahead
+**Status:** DONE 2026-09-03 — reference doc authored at `tasks/reference/tooling/converters.md`
 **Priority:** 3
 **Difficulty:** 3
 
