@@ -1,6 +1,6 @@
 # HTML web edition: make Next/Previous navigation easy to find
 
-**Status:** in progress 2026-09-03
+**Status:** DONE 2026-09-03 — big Prev/Next buttons + breadcrumb; verified anatomy (commit `547064f`)
 **Priority:** 3
 **Difficulty:** 2
 

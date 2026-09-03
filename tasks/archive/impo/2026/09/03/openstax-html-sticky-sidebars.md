@@ -1,6 +1,6 @@
 # HTML web edition: Furo-style sticky sidebars (book TOC left, on-page TOC right)
 
-**Status:** in progress 2026-09-03
+**Status:** DONE 2026-09-03 — sticky collapsible left book-TOC + right on-this-page + scrollspy; anchors already existed; verified anatomy (commit `547064f`)
 **Priority:** 3
 **Difficulty:** 5
 
