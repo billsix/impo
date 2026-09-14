@@ -15,6 +15,17 @@ version stands, so a future session understands the whole landscape without re-d
 2900+ lines. (An earlier survey wrongly claimed the converters were "byte-identical except the slug"; that claim
 is corrected here and was the reason for the whole investigation.)
 
+**Why hoist one toolchain (the design call, moved from `openstax/CLAUDE.md` 2026-09-13).** The delta is a
+SHARED toolchain, not a per-book patch series. The maintainer's converter is fully automatic and
+book-agnostic (`convert.py` auto-detects a book's subcollection nesting; `fetch_exercises.py` is
+bundle-agnostic; the generated LaTeX is never hand-edited). Corrected 2026-09-03: the per-book
+`latex`-branch converters were **not** byte-identical — `convert.py` existed in 5 versions (physics,
+organic-chemistry, python-programming, biology each diverged), with further differences in
+`preprocess.py`, `fetch_exercises.py`, and `osbook.cls`; the shared `openstax/tooling/` converter merges
+them into one feature-detecting superset (both os-embed exercise schemes, math-in-titles, code blocks).
+Hoisting one merged toolchain and keeping each book folder thin is still right — 16 near-identical copies
+as patches would be a maintenance smell; they simply weren't identical to begin with.
+
 **Source of truth for the originals:** each source repo's `latex` branch at `/foo/opt/openstax/osbooks-<subject>`
 (an **upstream-only, read-only** checkout — the `latex` branch is the maintainer's own work; never edit it). Read
 with `git -C <repo> cat-file -p latex:<path>`. All `file:line` anchors below point at impo's maintained copy under

@@ -12,17 +12,11 @@ at `openstax/tooling/` (see below).
    unlike the N64 family's "upstreaming is the goal" ranking — there is **no upstream-submission
    tier** here. Every change is a permanent personal patch, replayed onto newer OpenStax content
    pins over time.
-2. **The delta is a SHARED toolchain, not a per-book patch series.** The maintainer's converter is
-   fully automatic and **book-agnostic** (`convert.py` auto-detects a book's subcollection nesting;
-   `fetch_exercises.py` is bundle-agnostic; the generated LaTeX is never hand-edited). **Corrected
-   2026-09-03:** the per-book `latex`-branch converters were **not** byte-identical — `convert.py`
-   existed in **5 versions** (physics, organic-chemistry, python-programming, biology each diverged),
-   with further differences in `preprocess.py`, `fetch_exercises.py`, and `osbook.cls`. The shared
-   `openstax/tooling/` converter **merges** them into one feature-detecting superset (both os-embed
-   exercise schemes, math-in-titles, code blocks). Full comparison + remaining unification gaps:
-   `tasks/reference/tooling/converters.md`. Hoisting one merged toolchain and keeping each book
-   folder thin is still right — 16 near-identical copies as patches would be a maintenance smell;
-   they simply weren't identical to begin with.
+2. **The delta is a SHARED toolchain, not a per-book patch series.** One book-agnostic converter
+   (`convert.py` auto-detects nesting; generated LaTeX is never hand-edited), hoisted so each book
+   folder stays thin. It is a **feature-detecting superset** merging the 5 historical per-book
+   converter versions — history, the divergences, and unification gaps:
+   `tasks/reference/tooling/converters.md`.
 3. **"apply" = overlay the shared toolchain, not `git am`.** Because the delta is a shared file set
    (not upstream-code hunks), a book's `apply.sh` **copies `../tooling/` onto the fetched upstream
    checkout** rather than replaying patches. Everything else (fetch a pinned pristine upstream, build
@@ -123,37 +117,27 @@ internal references can't be reliably auto-linked.
 
 ## Books
 
-- `osbooks-anatomy-physiology/` — OpenStax **Anatomy & Physiology 2e**. Single-collection, two
-  subcollection levels, **no** `os-embed` exercises, raster figures (no SVG step). The **pilot** for
-  this family's shared-toolchain contract. Details: `osbooks-anatomy-physiology/CLAUDE.md`.
+One thin `openstax/osbooks-<subject>/` folder per book (16 total); each carries its own `CLAUDE.md`
+with its pin and book-specific facts. **anatomy-physiology** is the pilot for this family's
+shared-toolchain contract.
 
-The other 15 books were scaffolded on the pilot pattern (2026-09-02); each carries the thin
-per-book folder and a `CLAUDE.md` with its pin. Build-verified so far: **astronomy**,
-**algebra-1**, **introduction-python-programming** (image + `make convert` generate the LaTeX
-master; python-programming's 613-exercise download cache is fetched, committed, and injection-
-verified). The rest are structure-verified only (`bash -n`, and the generic pattern is proven).
-Per-book structural facts (collection layout, nesting, real exercise/figure presence) are
-confirmed on each book's first build.
+- `osbooks-anatomy-physiology/` — Anatomy & Physiology 2e (pilot)
+- `osbooks-astronomy/` — Astronomy 2e
+- `osbooks-algebra-1/` — Algebra 1
+- `osbooks-organic-chemistry/` — Organic Chemistry
+- `osbooks-contemporary-mathematics/` — Contemporary Mathematics
+- `osbooks-introduction-python-programming/` — Introduction to Python Programming
+- `osbooks-writing-guide/` — Writing Guide
+- `osbooks-physics/` — Physics
+- `osbooks-biology-bundle/` — Biology (3 volumes)
+- `osbooks-chemistry-bundle/` — Chemistry
+- `osbooks-calculus-bundle/` — Calculus (Times + navy theme)
+- `osbooks-college-algebra-bundle/` — College Algebra
+- `osbooks-prealgebra-bundle/` — Prealgebra
+- `osbooks-university-physics-bundle/` — University Physics
+- `osbooks-microbiology/` — Microbiology
+- `osbooks-psychology/` — Psychology
 
-- `osbooks-astronomy/` — Astronomy 2e (single-collection; convert → `astronomy-2e.tex`, 199 modules).
-- `osbooks-chemistry-bundle/`, `osbooks-microbiology/`, `osbooks-psychology/`,
-  `osbooks-university-physics-bundle/` — the other toolchain-only (no-download) books.
-- `osbooks-college-algebra-bundle/`, `osbooks-prealgebra-bundle/`, `osbooks-calculus-bundle/` —
-  small download caches (survey).
-- `osbooks-writing-guide/` — **committed exercise cache** (182 JSON, 0 images) with `COPYRIGHT`.
-- `osbooks-physics/` — **committed exercise cache** (846 JSON + 31 images) with `COPYRIGHT`. Uses the
-  **`#ost/api/ex/<id>`** os-embed scheme (fetched by tag), not `#exercise/` — it was wrongly read as
-  "0 exercises" until the converter learned that scheme (2026-09-03; see the archived converter-gaps task).
-  `osbooks-college-algebra-bundle/`, `osbooks-prealgebra-bundle/`, `osbooks-calculus-bundle/` are genuine
-  0-os-embed (confirmed in both schemes) → no caches.
-- `osbooks-introduction-python-programming/` — **has committed exercises cache** (613 questions,
-  no images; convert → `introduction-python-programming.tex`, 115 modules).
-- `osbooks-algebra-1/` — **committed exercise cache** (932 JSON + 288 images) with `COPYRIGHT`, plus
-  SVG figures (convert → `algebra-1.tex`, 976 modules).
-- `osbooks-organic-chemistry/`, `osbooks-contemporary-mathematics/` — **committed exercise caches**
-  (organic-chemistry 1959 JSON + 2076 images; contemporary-mathematics 3073 JSON + 578 images), each
-  with its `COPYRIGHT` NOTICE (green-lit + fetched 2026-09-02 — see `tasks/openstax-populate-books.md`).
-- `osbooks-biology-bundle/` — **committed exercise cache** (2337 JSON + 359 images) with `COPYRIGHT`, across
-  all 3 volumes. Like physics, it uses the **`#ost/api/ex/<id>`** scheme (fetched by tag), so it too was wrongly
-  read as "0 exercises" before the 2026-09-03 converter fix. (Its `\unicode[…]{x…}` Greek in exercise math also
-  drove a converter fix — see `tasks/reference/tooling/converters.md`.)
+Per-book status (build-verified dates, exercise/image counts, os-embed scheme post-mortems, structural
+facts): `tasks/reference/openstax/book-inventory.md`. Figure format + os-embed scheme + exercise counts
+also in `tasks/reference/tooling/converters.md` (per-book quick reference).
