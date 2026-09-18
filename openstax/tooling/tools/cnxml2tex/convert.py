@@ -2915,7 +2915,7 @@ def build_master(
         "\\graphicspath{{../media/}{media/}{../exercises/media/}"
         "{../exercises/media-derived/}{../}}\n"
         "\\setOSbooktitle{%s}\n"
-        "\\setOSbooksubtitle{LaTeX edition}\n"
+        "\\setOSbooksubtitle{Formatted by Bill Six}\n"
         "\\begin{document}\n"
         "\\OSfrontmatter\n"
         "%% front-matter units: unnumbered headings, kept in the TOC\n"
