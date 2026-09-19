@@ -33,25 +33,24 @@
     });
     host.appendChild(title);
     host.appendChild(ul);
-    // Mobile: the right sidebar is CSS-hidden below 1180px, so also surface the
-    // same links as a collapsible "On this page" at the top of the content (CSS
-    // shows .page-toc-mobile only on narrow screens). Native <details> gives free
-    // keyboard/AT support and no drawer/scroll-lock machinery.
-    var det = document.createElement("details");
-    det.className = "page-toc-mobile";
-    var sum = document.createElement("summary");
-    sum.textContent = "On this page";
-    det.appendChild(sum);
-    det.appendChild(ul.cloneNode(true));
-    var h1 = content.querySelector("h1");
-    if (h1 && h1.parentNode === content) {
-      content.insertBefore(det, h1.nextSibling);   // just under the page title
-    } else {
-      content.insertBefore(det, content.firstChild);
-    }
-    det.addEventListener("click", function (e) {    // tap a link -> jump + close
-      if (e.target.closest("a")) det.removeAttribute("open");
-    });
+    // Mobile: the static right sidebar is CSS-hidden below 1180px; expose the same
+    // #page-toc as an off-canvas RIGHT drawer (mirror of the left ☰ Chapters
+    // drawer). Create an upper-right toggle button + a scrim (CSS turns #page-toc
+    // into the drawer on narrow screens). Only built here — i.e. only when the page
+    // actually has an on-this-page (>=2 sub-headings) — so no orphan button.
+    var btn = document.createElement("button");
+    btn.id = "page-toc-toggle";
+    btn.className = "page-toc-toggle";
+    btn.setAttribute("aria-label", "Toggle on this page");
+    btn.textContent = "On this page";
+    var scrim = document.createElement("div");
+    scrim.id = "toc-scrim";
+    document.body.appendChild(btn);
+    document.body.appendChild(scrim);
+    function closeToc() { document.body.classList.remove("toc-open"); }
+    btn.addEventListener("click", function () { document.body.classList.toggle("toc-open"); });
+    scrim.addEventListener("click", closeToc);       // tap outside -> close
+    host.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeToc); });
     return heads;
   }
 
@@ -91,14 +90,18 @@
   function mobileToggle() {
     var btn = document.getElementById("nav-toggle");
     if (!btn) return;
+    function close() { document.body.classList.remove("nav-open"); }
     btn.addEventListener("click", function () {
       document.body.classList.toggle("nav-open");
     });
+    // tapping a chapter link closes the drawer (then navigates)
     document.querySelectorAll("#book-toc a").forEach(function (a) {
-      a.addEventListener("click", function () {
-        document.body.classList.remove("nav-open");
-      });
+      a.addEventListener("click", close);
     });
+    // tapping the page (the dimming scrim over the content, shown while the drawer
+    // is open) closes it too — the expected "tap outside to dismiss" behaviour.
+    var scrim = document.getElementById("nav-scrim");
+    if (scrim) scrim.addEventListener("click", close);
   }
 
   // bring the active book-toc entry into view within the sticky sidebar

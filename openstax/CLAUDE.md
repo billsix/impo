@@ -112,9 +112,12 @@ Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothi
 the whole reason it's shared — one place to maintain the converter and the house style.
 
 **Reference docs** (`tasks/reference/tooling/`, read before touching the toolchain): **`converters.md`** — the
-converter landscape (the 5 historical per-book converter versions merged into one, gap analysis); and
+converter landscape (the 5 historical per-book converter versions merged into one, gap analysis);
 **`cross-references.md`** — how cross-refs become links (PDF cleveref / HTML xref.lua), and why literal-text
-internal references can't be reliably auto-linked.
+internal references can't be reliably auto-linked; and **`web-editions-mobile.md`** — the web theme's
+mobile/responsive layer (osbook-web.css/.js): the apply.sh-before-build propagation trap, the MathML
+horizontal-overflow root cause + fix, the drawer/on-this-page behaviour, and how to verify with a real
+headless browser (read before touching osbook-web.css/.js).
 
 ## Adding a book
 
