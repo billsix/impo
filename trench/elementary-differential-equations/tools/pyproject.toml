@@ -1,0 +1,36 @@
+# Tooling config for THIS book's build scripts (tools/*.py) -- the PDF preamble
+# transform (normalize_master.py) and the web-edition preprocessors
+# (web_preprocess.py, over_to_frac.py). Like the shared openstax tooling, this
+# book is a LaTeX-port project, NOT a Python package -- there is no
+# [project]/[build-system]; this file only configures ruff + ty so `make image`
+# can gate the tools (see the book Makefile's `check-tools`).
+#
+# It deliberately does NOT reuse ../../../openstax/tooling/pyproject.toml directly:
+# that file's [tool.ty.environment] declares openstax-only extra-paths
+# (tools/cnxml2tex, tools/pandoc) which don't exist here, so ty errors on them.
+# The ruff lint SELECT list below is kept identical to the shared one, so this
+# book's tools meet the exact same bar; only the ty module-resolution differs
+# (these scripts are flat single files -- web_preprocess imports over_to_frac from
+# the same dir at runtime -- so no extra-paths are needed).
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+# Identical to openstax/tooling/pyproject.toml: import/name hygiene + safe
+# modernizations. T201 (print) and the E5xx line-length families are omitted --
+# these are print()-driven CLIs with intentionally long comment/string lines.
+select = [
+    "F401",   # unused import
+    "F811",   # redefinition of unused name
+    "F841",   # unused local variable
+    "E402",   # module import not at top of file
+    "I001",   # unsorted imports
+    "TID252", # ban relative imports
+    "UP007",  # use X | Y for unions
+    "UP035",  # deprecated typing imports
+    "B006",   # mutable default argument
+    "B007",   # unused loop variable
+    "B008",   # function call in default argument
+]
+ignore = []

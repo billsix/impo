@@ -1,0 +1,215 @@
+% trench-osbook.sty
+% ---------------------------------------------------------------------------
+% The trench -> osbook compatibility shim (impo, trench family). Phase 2 of
+% tasks/add-trench-differential-equations-book.md.
+%
+% Trench's "Elementary Differential Equations" ships as a `book`-class document
+% whose look, its faked sectioning, and its exercise/answer apparatus all live in
+% wtrench.sty plus ~90 lines of preamble macros. This shim REPLACES wtrench.sty
+% (the normalize step drops \usepackage{wtrench}) and is loaded LAST, after
+% osbook.cls + osbook-envs, so its redefinitions win. It:
+%
+%   * keeps every harmless Trench helper (math shorthands, matrix builders,
+%     custom list environments, badges) so nothing in the 1.6MB body is undefined;
+%   * DROPS what osbook.cls owns (page geometry, fonts, \pagestyle, per-section
+%     \numberwithin) -- osbook sets those, and chapter-based numbering is the
+%     uniform look we want;
+%   * REMAPS the faked sectioning onto osbook's real \chapter/\section (so osbook's
+%     chapter titles + auto-TOC + running heads apply);
+%   * OVERRIDES the three name clashes osbook introduces (\proof and \solution,
+%     which osbook's ntheorem/amsthm turn into environments, and `definition`,
+%     whose osbook signature differs from Trench's mandatory-arg one).
+%
+% FIRST CUT (phase 2): validated on a small representative document, NOT yet the
+% full book -- the full lualatex compile + its error tail is phase 5, and this
+% file is expected to grow there. Aesthetics only: no mathematical content changes.
+% ---------------------------------------------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{trench-osbook}[2026/09/19 Trench Elementary DE -> osbook shim]
+
+% osbook.cls loads amsmath/mathtools/xcolor/graphicx/hyperref/mdframed/unicode-math;
+% osbook-envs provides the boxed theorem/example/definition look + colors
+% (OScolor/OSmed/OSltcolor) and the defstyle mdframed. We require nothing extra.
+
+% ===========================================================================
+% 0. Old LaTeX 2.09 font declarations. Trench's 2001-era source uses \bf \it \sc
+%    \rm \sf \tt \sl \cal throughout; memoir (osbook's base) disables these and
+%    errors ("Font command \bf is not supported"). Re-enable them (equivalent to
+%    memoir's `oldfontcommands` option), scoped to this book -- unblocks the whole
+%    body, not just the front matter.
+% ===========================================================================
+% \DeclareOldFontCommand gives each command a TEXT meaning and a MATH meaning, so
+% `{\bf x}` works in text AND in math ($...$/arrays), which Trench uses heavily.
+\RequirePackage{float}                 % Trench uses \begin{figure}[H]
+\RequirePackage[export]{adjustbox}     % 'max width' key to cap oversized figures at the text width
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\mathrm}
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\mathit}
+\DeclareOldFontCommand{\cal}{\normalfont}{\mathcal}
+\let\mit\mathnormal
+
+% ===========================================================================
+% 0b. Wider text measure for THIS book only (trench family). Trench's dense
+%     display math and arrays were typeset for a wider measure than osbook's 5in,
+%     so dozens ran off the right margin (>50pt Overfull \hbox). Widen the text
+%     block to ~6.5in (1in side margins on the 8.5in page). Height stays ~8.6in so
+%     it still fits the 11in page -- this deliberately drops osbook's golden-ratio
+%     proportion, scoped to this book. Re-fix memoir's layout after the class set it.
+% ===========================================================================
+\setlrmarginsandblock{1in}{1in}{*}
+\setulmarginsandblock{1.1in}{1.3in}{*}
+\checkandfixthelayout
+
+% ===========================================================================
+% 1. Structural remap: faked sectioning -> osbook \chapter / \section
+% ===========================================================================
+% Trench: \setcounter{chapter}{N} (dropped by the normalize step) then
+%   \chaptertitle{Title}; and \newsection{num}{ChapName}{Title} then
+%   \sectiontitle{UPPER TITLE}. osbook auto-numbers, so we route the *title*
+% through \chapter/\section and gobble the counter-setting calls.
+\newcommand{\chaptertitle}[1]{\chapter{#1}}
+% \newsection: arg1 = section number (ignore; osbook auto-numbers),
+%              arg2 = chapter name for the running head (ignore; osbook handles),
+%              arg3 = the section title -> \section.
+\newcommand{\newsection}[3]{\section{#3}}
+% \sectiontitle prints the old red heading; \newsection already emitted the
+% osbook \section, so gobble it (and its argument).
+\newcommand{\sectiontitle}[1]{}
+% \thissection is \newcommand'd then \renewcommand'd by the body itself -- do NOT
+% predefine it here (that clashes with the body's \newcommand).
+% \markonleft/\markonright fed \markboth in the old \newsection; keep them inert.
+\newcommand{\markonleft}[1]{}
+\newcommand{\markonright}[1]{}
+
+% ===========================================================================
+% 2. Theorem / example / definition -- osbook look
+% ===========================================================================
+% theorem + example come from osbook-envs (declaretheorem, boxed, chapter-numbered)
+% -- do not redefine. Trench's `definition` takes a MANDATORY arg (the lead text)
+% and shares the theorem counter; reproduce that signature in osbook's defstyle box.
+\renewenvironment{definition}[1]{%
+  \begin{mdframed}[style=defstyle]%
+  \refstepcounter{theorem}%
+  {\sffamily\bfseries\color{OScolor}Definition~\thetheorem}\quad #1%
+}{\end{mdframed}}
+
+% ===========================================================================
+% 3. Proof / solution -- Trench uses these as RUN-IN COMMANDS, but osbook's
+%    ntheorem[amsthm] defines `proof`/`solution` as environments (so bare \proof
+%    / \solution would be an unclosed environment). Restore the command forms.
+% ===========================================================================
+% \def (not \renewcommand): osbook's ntheorem[amsthm] may already define these as
+% environments; \def overrides whatever form exists, restoring Trench's run-in use.
+\def\proof{\par\noindent{\sffamily\bfseries\color{OScolor}Proof.}\quad}
+\def\endproof{{\hfill\rule{1.2ex}{1.2ex}}\par}
+\def\bbox{\phantom{1}\hfill{\rule{6pt}{6pt}}}
+\def\solution{\par\smallskip\noindent{\sffamily\bfseries\color{OScolor}Solution.}\quad}
+\newcommand{\solutionpart}[1]{\par\smallskip\noindent{\sffamily\bfseries\color{OSmed}Solution (#1).}\quad}
+
+% ===========================================================================
+% 4. Exercise / answer apparatus -- kept as Trench's own system (osbook-defer is
+%    deliberately NOT loaded: it would clash on `exercise`/`solution`/`answer`
+%    and change the whole answer-key model). Only the section "Exercises" heading
+%    is restyled to osbook's accent color.
+% ===========================================================================
+\newcounter{exercise}
+\newenvironment{exerciselist}{\begin{list}{\bfseries\arabic{exercise}.}%
+  {\topsep 10pt\partopsep 0pt\labelwidth 16pt\labelsep 12pt\leftmargin 28pt
+   \itemsep 0pt\usecounter{exercise}}}{\end{list}}
+\newcounter{place}
+\newcommand{\exercisetext}[1]{\setcounter{place}{\value{exercise}}%
+  \end{exerciselist}{\itshape #1}\begin{exerciselist}\setcounter{exercise}{\value{place}}}
+\newcommand{\exer}[1]{\par\noindent{\bfseries #1}.}
+\newcommand{\answer}[1]{\;{\bfseries $\mathbf{#1}$ (p.~\pageref{exer:#1})}\;}
+\newcommand{\exercises}{\bigskip{\noindent\large\sffamily\bfseries\color{OSmed}%
+  \thesection\ Exercises}\par\nobreak\smallskip
+  \label{exerstart:\thesection}\noindent}
+
+% Sub-part list environments (a)(b).., (A)(B).., (i)(ii)..
+\newcounter{lcal}
+\newenvironment{alist}{\begin{list}{\bfseries (\alph{lcal})}%
+  {\topsep 0pt\partopsep 0pt\labelwidth 14pt\labelsep 8pt\leftmargin 22pt
+   \itemsep 0pt\usecounter{lcal}}}{\end{list}}
+\newenvironment{Alist}{\begin{list}{\bfseries (\Alph{lcal})}%
+  {\topsep 0pt\partopsep 0pt\labelwidth 14pt\labelsep 8pt\leftmargin 22pt
+   \itemsep 0pt\usecounter{lcal}}}{\end{list}}
+\newcounter{rm}
+\newenvironment{rmlist}{\begin{list}{\bfseries (\roman{rm})}%
+  {\topsep 0pt\partopsep 0pt\labelwidth 24pt\labelsep 8pt\leftmargin 32pt
+   \itemsep 0pt\usecounter{rm}}}{\end{list}}
+\newenvironment{numberlist}{\begin{list}{\bfseries \arabic{rm}.}%
+  {\topsep 12pt\partopsep 0pt\labelwidth 14pt\labelsep 8pt\leftmargin 22pt
+   \itemsep 0pt\usecounter{rm}}}{\end{list}}
+% Trench's two-column index -> osbook chapter head + multicol (osbook loads multicol).
+\newenvironment{tindex}{%
+  \chapter*{Index}\addcontentsline{toc}{chapter}{Index}\markboth{Index}{Index}%
+  \begin{multicols}{2}\setlength{\parindent}{0pt}\footnotesize\let\item\@idxitem}%
+  {\end{multicols}}
+
+% ===========================================================================
+% 5. Technology badges, remark, boxes, tables -- Trench helpers kept verbatim
+%    (harmless; restyled to osbook accent where they used raw red).
+% ===========================================================================
+\newcommand{\Cex}{\fbox{\color{OScolor}C}\, }
+\newcommand{\CGex}{\fbox{\color{OScolor}C/G}\, }
+\newcommand{\Lex}{\fbox{\color{OScolor}L}\, }
+\newcommand{\technology}{\bigskip\noindent\fbox{\color{OScolor}USING TECHNOLOGY}\par}
+\newcommand{\remark}[1]{\par\noindent{\sffamily\bfseries\color{OScolor}Remark.}\ #1}
+\newcommand{\place}{\bigskip\hrule\bigskip\noindent}
+\newcommand{\boxit}[1]{\medskip\noindent\textcolor{OScolor}{#1}\par}
+\newcommand{\helpbox}{\vspace*{-20pt}}
+\newcommand{\topfig}[1]{\newpage\mbox{}\newline\vspace*{#1pc}}
+\newcommand{\bigbox}[1]{\vskip10pt\vbox{\hrule\hbox{\vrule\kern5pt
+  \vbox{\noindent\strut\kern5pt\mbox{}\newline#1\mbox{}\newline\kern5pt\strut}\kern5pt\vrule}\hrule}}
+\newcommand{\blankbox}[1]{\vskip10pt\vbox{\hbox{\kern5pt
+  \vbox{\noindent\strut\kern5pt\vspace*{-15pt}#1\vspace*{-20pt}\kern5pt\strut}\kern5pt}}}
+\newenvironment{newtable}[1]{\begin{quote}Table\space\refstepcounter{table}\thetable. #1}{\end{quote}}
+\newcommand{\hint}[1]{{\scshape Hint}:\ {\itshape #1}}
+\newcommand{\note}[1]{({\scshape Note}:\ #1)}
+\newcommand{\svc}[1]{\mbox{\tiny{\bfseries #1}}}
+\newcommand{\flushtable}{\mbox{}\hskip-7pt}
+\newcommand{\twotab}{\begin{tabular}[t]{@{}p{168pt}@{}p{168pt}}}
+\newcommand{\threetab}{\begin{tabular}[t]{@{}p{112pt}@{}p{122pt}@{}p{112pt}}}
+\newcommand{\arraytext}[1]{\noalign{\hspace*{-1.75em}\mbox{#1}\vspace*{-9\jot}}\nonumber\\}
+% \part is used INLINE by Trench as a "(a)" marker, not as memoir sectioning
+% (this book has no \part sections). Reproduce Trench's inline meaning.
+\renewcommand{\part}[1]{\ifmmode\mathbf{(#1)}\else{\bfseries (#1)}\fi}
+
+% ===========================================================================
+% 6. Math shorthands (from wtrench.sty + the main-file preamble) -- kept verbatim
+% ===========================================================================
+\def\R{\mathbb R}
+\def\E{\mathbb E}
+\newcommand{\dst}{\displaystyle}
+\newcommand{\set}[2]{\left\{#1\, \big|\, #2\right\}}
+\newcommand{\dist}{\mathop{\rm dist}}
+\newcommand{\adj}{\mathop{\rm adj}}
+\renewcommand{\limsup}{\mathop{\rm \overline{lim}}}
+\renewcommand{\liminf}{\mathop{\rm \underline{lim}}}
+\newcommand{\casespace}{\negthickspace\negthickspace}
+\newcommand{\ar}[1]{\hspace*{-.75em}&{#1}&\hspace*{-.75em}}
+\newcommand{\eq}{$\ar{$=$}$}
+\newcommand{\df}{=_{\mbox{\small df}}}
+\newcommand{\lims}[2]{\,\bigg|_{#1}^{#2}}
+\newcommand{\eqline}[1]{\centerline{\hfill$\displaystyle#1$\hfill}}
+\newcommand{\threecol}[3]{\left[\begin{array}{r}#1\\#2\\#3\end{array}\right]}
+\newcommand{\threecolj}[3]{\left[\begin{array}{r}#1\\[1\jot]#2\\[1\jot]#3\end{array}\right]}
+\newcommand{\twocol}[2]{\left[\begin{array}{l}#1\\#2\end{array}\right]}
+\newcommand{\ctwocol}[2]{\left[\begin{array}{c}#1\\#2\end{array}\right]}
+\newcommand{\cthreecol}[3]{\left[\begin{array}{c}#1\\#2\\#3\end{array}\right]}
+\newcommand{\cthreebythree}[9]{\left[\begin{array}{ccc}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{array}\right]}
+\newcommand{\twochar}[4]{\left|\begin{array}{cc}#1-\lambda&#2\\#3&#4-\lambda\end{array}\right|}
+\newcommand{\twobytwo}[4]{\left[\begin{array}{rr}#1&#2\\#3&#4\end{array}\right]}
+\newcommand{\threechar}[9]{\left[\begin{array}{ccc}#1-\lambda&#2&#3\\#4&#5-\lambda&#6\\#7&#8&#9-\lambda\end{array}\right]}
+\newcommand{\threebythree}[9]{\left[\begin{array}{rrr}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{array}\right]}
+\newcommand{\col}[2]{\left[\begin{array}{c}#1_1\\#1_2\\\vdots\\#1_#2\end{array}\right]}
+\newcommand{\colfunc}[2]{\left[\begin{array}{c}#1_1(t)\\#1_2(t)\\\vdots\\#1_#2(t)\end{array}\right]}
+\newcommand{\matfunc}[3]{\left[\begin{array}{cccc}#1_{11}(t)&#1_{12}(t)&\cdots&#1_{1#3}(t)\\%
+  #1_{21}(t)&#1_{22}(t)&\cdots&#1_{2#3}(t)\\\vdots&\vdots&\ddots&\vdots\\%
+  #1_{#21}(t)&#1_{#22}(t)&\cdots&#1_{#2#3}(t)\end{array}\right]}
+
+\endinput

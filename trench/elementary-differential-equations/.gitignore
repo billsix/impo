@@ -1,0 +1,11 @@
+# Pristine Trench LaTeX source fetched by ./fetch.sh and the house style overlaid
+# by ./apply.sh -- regenerated, never committed (it's the author's CC BY-NC-SA 3.0
+# content, and it comes back from the pin). Also covers checkout/output/.
+checkout/
+
+# Any stray top-level build output, and saved image tars.
+output/
+*.tar
+
+# Python bytecode cache from running the tools/*.py scripts.
+__pycache__/

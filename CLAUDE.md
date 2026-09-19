@@ -11,24 +11,28 @@ maintaining forks of them: impo stores the shared conversion toolchain plus, per
 that fetch pristine upstream content at a pinned commit, overlay the toolchain, and build the book —
 in an ephemeral podman container. One folder per book; the family is self-contained under `openstax/`.
 
-## Structure — one family, `openstax/`
+## Structure — families under the repo root
 
-impo currently carries a single family, so the layout is `openstax/<the family>`:
+impo groups books into **families** (a family = books of the same source/kind), each a top-level
+folder. Two families exist:
 
-- **`openstax/CLAUDE.md`** — **the family contract; read it first.** How the shared toolchain works, the
-  per-book folder contract (fetch → apply-overlay → build), the *downloaded → commit / generated →
-  ignore* content model, and the **licensing split** (toolchain is the maintainer's MIT; OpenStax
-  content is CC BY, not the maintainer's).
-- **`openstax/tooling/`** — the shared, book-agnostic toolchain (CNXML→LaTeX converter, exercise
-  fetcher, house LaTeX class/styles, pandoc web templates, tests, Fedora+TeXLive Dockerfile), maintained
-  once. Each book mounts at the fixed path `/book` so nothing hardcodes a slug.
-- **`openstax/osbooks-<subject>/`** — one thin folder per book: `fetch.sh` (pins pristine OpenStax
-  content into a gitignored `checkout/`), `apply.sh` (overlays `../tooling/`), a thin `Makefile`,
-  `CLAUDE.md`, `README.md`, and — for books with `os-embed` exercises — a committed `exercises/`
-  download cache **with its `COPYRIGHT` NOTICE**.
-
-(If a second, non-OpenStax book family is ever added, it becomes a sibling family folder and this
-master doc grows a family index — mirroring how imps carries `n64/`.)
+- **`openstax/`** — LaTeX ports of OpenStax open textbooks (16 books) that convert **CNXML→LaTeX**
+  with a shared python converter. **The pilot family; read `openstax/CLAUDE.md` first.** Layout:
+  - **`openstax/CLAUDE.md`** — the family contract: the shared toolchain, the per-book folder
+    contract (fetch → apply-overlay → build), the *downloaded → commit / generated → ignore* content
+    model, and the **licensing split** (toolchain is the maintainer's MIT; OpenStax content is CC BY,
+    not the maintainer's).
+  - **`openstax/tooling/`** — the shared, book-agnostic toolchain (CNXML→LaTeX converter, exercise
+    fetcher, house LaTeX class/styles `osbook.cls`+envs+defer, pandoc web templates, tests,
+    Fedora+TeXLive Dockerfile). Each book mounts at the fixed path `/book` so nothing hardcodes a slug.
+  - **`openstax/osbooks-<subject>/`** — one thin folder per book: `fetch.sh`, `apply.sh` (overlays
+    `../tooling/`), `Makefile`, `CLAUDE.md`, `README.md`, and — for os-embed books — a committed
+    `exercises/` cache **with its `COPYRIGHT` NOTICE**.
+- **`trench/`** — open textbooks that ship as **native LaTeX source** (not CNXML), restyled to the
+  same osbook house look via a per-book LaTeX shim, **reusing `openstax/tooling/`** (its `osbook.cls`
+  layer + the Fedora/TeXLive/pandoc image) rather than a converter. Read `trench/CLAUDE.md`. First
+  book: `trench/elementary-differential-equations/` (William F. Trench, CC BY-NC-SA 3.0). Added
+  2026-09-19; tracked in `tasks/add-trench-differential-equations-book.md`.
 
 ## Contracts (the parts that aren't in `openstax/CLAUDE.md`)
 

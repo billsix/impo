@@ -89,13 +89,19 @@ Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothi
   (right "On this page" TOC + scrollspy + chapter/mobile toggles).
 - `tools/tests/` — converter unit tests (`make test`).
 - `latex/osbook.cls`, `osbook-envs.sty`, `osbook-defer.sty` — the house document class + pedagogical
-  environments + per-chapter exercise numbering / answer key.
+  environments + per-chapter exercise numbering / answer key. Front-matter metadata setters:
+  `\setOSbooktitle`/`\setOSbooksubtitle`/`\setOSbookversion`, plus (added 2026-09-19,
+  backward-compatible) `\setOSbooklicense`/`\setOSbookdedication`/`\setOSbookpublisher` — defaults
+  reproduce the OpenStax CC BY-NC-SA 4.0 page, so books that don't call them are unchanged; the
+  sibling `trench/` family overrides them for a CC BY-NC-SA 3.0 book.
 - **Per-book theme override (optional):** a book may ship `bookstyle.tex` (PDF font/palette, loaded by
   `osbook.cls` via `\InputIfFileExists{osbook-bookstyle.tex}`) and/or `bookstyle-web.css` (HTML/EPUB, appended to
   `osbook-web.css` so its `:root` wins); `apply.sh` copies both into the checkout. Default is Roboto-Slab + teal;
   **calculus** ships both (TeX Gyre Termes + navy). No-op for books without them.
 - `entrypoint/*.sh` — `convert`/`pdf`/`html`/`epub`/`fetch-exercises`/`shell`/`format` (all use `/book`).
-- `Dockerfile` — Fedora 44 + TeX Live + `python3-lxml` + pandoc + `rsvg-convert`.
+- `Dockerfile` — Fedora 44 + TeX Live + `python3-lxml` + pandoc + `rsvg-convert` (+ `zip`/`tidy` in a
+  separate layer, used only by the sibling `trench/` family's make4ht/tex4ebook web editions — inert
+  for the OpenStax books).
 - `pyproject.toml`, `templates/exercises-COPYRIGHT`.
 
 **Changing the toolchain:** edit it here once; each book picks it up on its next `apply.sh`. This is

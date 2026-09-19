@@ -1,9 +1,36 @@
 # Add the Trench "Elementary Differential Equations" book to impo, in OpenStax house style
 
-**Status:** proposed — needs go-ahead + several architecture decisions (open questions below)
+**Status:** MAIN BOOK COMPLETE 2026-09-19 — phases 1–5 done; builds to a clean **673-page** osbook-styled
+PDF via `make pdf` (wider per-book measure; Overfull \hbox 578→97, big ones 59→1). Pending: maintainer
+visual review + minor polish (below).
 **Priority:** 4
 **Difficulty:** 8 (large, multi-phase: LaTeX restyle of a 1.6MB custom-class book + build wiring)
 Created 2026-09-19 (William Emerison Six <billsix@gmail.com>).
+**Book folder:** `trench/elementary-differential-equations/` (new sibling family `trench/`).
+
+> **Decisions (William Emerison Six <billsix@gmail.com>, 2026-09-19):**
+> 1. **Location/name:** new **sibling family folder `trench/`** (the author's name), holding the book at
+>    `trench/elementary-differential-equations/`. Not under `openstax/`.
+> 2. **Tooling (maintainer deferred to my recommendation):** **reuse the OpenStax toolchain in place** —
+>    `trench/`'s book builds the shared image from `../../openstax/tooling` and its `apply.sh` overlays
+>    the osbook LaTeX layer (`osbook.cls`+`osbook-envs`+`osbook-defer`) plus the trench shim. **No
+>    refactor of the 16 existing books.** The cleaner "promote a shared `tooling/` to the repo root" is
+>    deferred as a future cleanup (revisit if/when a third family appears) — not worth touching 16
+>    working books to add one.
+> 3. **Scope:** **main book (`TRENCH_DIFFEQ.tex`) → PDF only** in this task. Follow-ons below.
+> 4. **Fidelity:** **full osbook restyle — aesthetics only.** The mathematical content, prose,
+>    equations, examples, and exercises stay **identical**; only their *presentation* (fonts, colors,
+>    chapter/section/theorem/exercise styling, TOC) changes. One honest caveat: swapping the faked
+>    sectioning and bespoke exercise system for osbook's real ones may change how numbering is
+>    *rendered/labeled* — not the content, but its label form (e.g. how "Theorem 2.3.4" is styled).
+> 5. **HTML/EPUB:** PDF-only first cut; deferred to a separate gated task.
+>
+> **Follow-on tasks (created 2026-09-19, sequenced after this one via `Depends on`, not `blocked` —
+> internal sequence, within our control, per the task-doc convention):**
+> - `add-trench-bv-and-student-manual.md` — the boundary-value variant + student solutions manual;
+>   depends on this task.
+> - `trench-differential-equations-html-epub.md` — HTML + EPUB via the reused pandoc legs; depends on
+>   this task's PDF.
 
 ## BLUF
 
@@ -117,30 +144,110 @@ Instead the maintainer's delta is a **LaTeX compatibility layer** overlaid at ap
 
 ## Phased plan
 
-- **Phase 0 — decisions.** Resolve open questions 1–4 (family location/name, tooling sharing, scope,
-  fidelity target). Nothing else starts until these are set.
-- **Phase 1 — scaffold the book folder.** `fetch.sh` (pin `a7c17e3…`, URL as above), `apply.sh`
-  (overlay the shared LaTeX layer + the shim), `Makefile`+`Dockerfile` (reuse the OpenStax base;
-  swap the CNXML seams), `CLAUDE.md`/`README.md`/`.gitignore`.
-- **Phase 2 — the shim + preprocessing patch.** Build `trench-osbook.sty` per the mapping table; the
-  deterministic patch/transform of the master preamble + sectioning + title/TOC.
-- **Phase 3 — figures & engine.** EPS→PDF step; confirm the 155 `\includegraphics` resolve; drop
-  dvips/hyperref-dvips options.
-- **Phase 4 — front matter & license.** A per-book license page for **CC BY-NC-SA 3.0 + AIM Open
-  Textbook** (osbook.cls's `\OSfrontmatter` license page is written for CC BY-NC-SA 4.0 — needs a
-  per-book override or an osbook.cls license-setter). Subtitle "Formatted by Bill Six" (consistent
-  with the other books).
-- **Phase 5 — build & verify.** Iterate to a clean lualatex compile; verify fidelity: all 10
-  chapters, ~54 sections, 69 theorems, 250 examples, 52 exercise sets, 155 figures render; the answer
-  key builds and its cross-refs resolve; page count and structure are sane. This is the "done" gate.
-- **Phase 6 — stretch / follow-ups.** HTML+EPUB via the reused pandoc legs (risky — pandoc `-f latex`
-  may choke on the dense custom macros; the shim should define macros in pandoc-friendly forms). Then
-  the BV variant and the student solutions manual as sibling masters.
+- **Phase 0 — decisions.** DONE 2026-09-19 (see the Decisions block above): family `trench/`, reuse
+  OpenStax tooling in place, main book → PDF only, full aesthetics-only restyle.
+- **Phase 1 — scaffold the book folder** at `trench/elementary-differential-equations/`. **DONE
+  2026-09-19.** Created: `fetch.sh` (pin `a7c17e3…`), `apply.sh` (overlays `osbook.cls`+envs+defer
+  from `../../openstax/tooling/latex/`; the phase-2 shim is copied when present), `Makefile` (image
+  from `../../openstax/tooling`; `figures`/`pdf` are honest phase-3/5 stubs that `@false`; no CNXML
+  seams), `CLAUDE.md`/`README.md`/`.gitignore`/`latex/.keep`, the family `trench/CLAUDE.md`, and the
+  root `CLAUDE.md` two-family index. **Smoke-tested:** `make help` parses; `./fetch.sh` clones the
+  pinned source (HEAD matches `a7c17e3…`; 3 `.tex` + `wtrench.sty` + `EPS/`); `./apply.sh` drops the
+  osbook class into `checkout/`. (No Dockerfile — reuses `../../openstax/tooling/Dockerfile`; its
+  baked CNXML converter is unused by trench but harmless.)
+- **Phase 2 — the shim + preprocessing patch.** **DONE 2026-09-19.** Created
+  `latex/trench-osbook.sty` (keeps Trench's helper macros; remaps `\chaptertitle`→`\chapter`,
+  `\newsection`→`\section`, gobbles `\sectiontitle`; overrides the `\proof`/`\solution`/`definition`
+  clashes; drops geometry/fonts/`\numberwithin`) and `tools/normalize_master.py` (swaps the
+  book/dvips preamble for an osbook preamble loading `osbook-envs`+the shim+metadata, drops the manual
+  `\setcounter{chapter}` lines; writes a sibling `-osbook.tex`, never mutating the source). Wired as
+  `make normalize`. **Validated:** a representative test doc compiles cleanly under lualatex (exit 0,
+  PDF, no errors) and renders in osbook style — `CHAPTER 1`, auto-numbered `1.1` sections, boxed
+  `Theorem 1.1`/`Example 1.2`/`Definition 1.3`, run-in `Proof.`/`Solution.`/`Remark.`, matrices,
+  inline `\part`, exercise lists. **Note (aesthetics-only consequence):** theorem/example/definition
+  now share one **chapter-based** counter (osbook's uniform scheme) rather than Trench's section-based
+  `X.Y.Z` — the intended restyle, content unchanged. The full-book compile + its error tail is Phase 5
+  (needs Phase 3 EPS→PDF); the shim is expected to grow there.
+- **Phase 3 — figures & engine.** **DONE 2026-09-19.** Created `tools/eps2pdf.sh` (epstopdf over
+  `checkout/EPS/*.eps` → `checkout/EPS-pdf/*.pdf`, idempotent, batch-failure-propagating), wired as
+  `make figures` (mounts `tools/` at `/toolsrc`; `pdf` now depends on `figures`). The dvips/geometry
+  drop was already handled by the phase-2 preamble swap. **Validated:** all **206** EPS converted
+  (status 0, incl. `cover.pdf`); a test doc `\includegraphics{exer010301}` resolves to
+  `./EPS-pdf/exer010301.pdf` and embeds under lualatex (exit 0). `EPS-pdf/` is on the normalized
+  master's `\graphicspath` and is gitignored (regenerable, under `checkout/`).
+- **Phase 4 — front matter & license.** **DONE 2026-09-19.** Chose the general fix (impl. OQ1 (a)):
+  **parameterized the shared `openstax/tooling/latex/osbook.cls`** with three backward-compatible
+  setters — `\setOSbooklicense`, `\setOSbookdedication`, `\setOSbookpublisher` — whose DEFAULTS
+  reproduce the OpenStax CC BY-NC-SA 4.0 page verbatim (verified: a bare-osbook doc still renders
+  OpenStax + CC-4.0, so the 16 existing books are unchanged). The transform now cuts the hand
+  title/license/dedication/TOC at the `\pdfbookmark[0]{Preface}` marker (preserving the **Preface**
+  prose + all chapters) and injects `\OSfrontmatter` with Trench's **CC BY-NC-SA 3.0 + AIM** license,
+  the **TO BEVERLY** dedication, and an empty publisher (no false "OpenStax" imprint). Also unblocked
+  a body-wide issue found here: the shim re-enables the old LaTeX 2.09 font declarations
+  (`\bf`/`\it`/`\sc`/…) that memoir disables. **Validated:** the front matter compiles (exit 0) and
+  renders osbook title, the CC-3.0 license page, the dedication, the auto-TOC, and the preserved
+  preface. NOTE: this is a **shared-class change** (also gives the OpenStax colophon a proper
+  per-book license setter — see `openstax-book-subtitle-attribution.md`).
+- **Phase 5 — build & verify.** **DONE 2026-09-19.** Wired `make pdf` (image → normalize → figures →
+  `latexmk -pdflua` into `checkout/output/`). Iterated the full-book compile from **2467 → 0 errors**
+  over a few cycles; the shim grew to cover the real book: `\DeclareOldFontCommand` (the 2.09 fonts
+  work in **math** too, ~2060 errors), `\RequirePackage{float}` (`[H]`, 51), a `tindex` index env,
+  `\part` made math-safe, `\thissection` left to the body, and one body-fixup in the transform
+  (`\enlargethispage{1\in}`→`1in`, a source typo). **Result: a clean 762-page PDF, 0 LaTeX errors**,
+  latexmk exit 0. Only **4 undefined references remain — pre-existing danglers in Trench's own source**
+  (`exer:11.2.30`, `eq:12.2.1`, `eq:12.2.23` → chapters 11–12, which exist only in the boundary-value
+  edition, not this 10-chapter main book); fixing them would change content, so out of scope.
 
-> This is big enough that it may warrant splitting into **step-tasks** (umbrella + per-phase children)
-> at execution — see `~/.claude/reference/task-doc-conventions.md`. Left as one doc for now so the
-> whole shape is reviewable; propose the split when picking it up if phases 2–5 each grow commit
-> boundaries.
+- **Figure placement fix (2026-09-19, maintainer-reported).** Figures rendered offset down/right over
+  their captions: Trench stamps the same EPS `bb=-78 148 689 643` on every `\includegraphics`, but
+  `epstopdf` already crops each PDF to its own box, so the transform now **strips `bb=`** and lets
+  graphicx use each PDF's MediaBox. Verified visually (Figure 1.1). Gotcha documented in the book
+  `CLAUDE.md`.
+
+## Build-warnings review (2026-09-19, autonomous session — for maintainer review)
+
+The maintainer flagged "a ton of warnings." Full triage of the `make pdf` log (0 errors, 761 pp):
+
+**Fixed this session:**
+- **Figure right-overflow** → capped figure width at `\linewidth` via `adjustbox`'s `max width`
+  (shim loads `[export]{adjustbox}`; transform injects `max width=\linewidth` into every
+  `\includegraphics`). Verified visually: Figure 1.1 now fits the column.
+- **`\l` in math (6 warnings: 3 "invalid in math" + 3 "missing character ł")** → a source typo for
+  `\ell`; transform replaces a bare `\l` with `\ell`. Now 0.
+
+**Wide display equations off the right — FIXED (maintainer chose option (a), 2026-09-19).** Trench's
+dense math/arrays were typeset for a wider measure than osbook's 5 in, so ~59 equations ran >50 pt
+(up to ~2.4 in) off the page. **The shim now widens the text block to ~6.5 in for THIS book only**
+(`\setlrmarginsandblock{1in}{1in}{*}` + `\setulmarginsandblock{1.1in}{1.3in}{*}` +
+`\checkandfixthelayout`; deliberately drops osbook's golden-ratio proportion, scoped to the trench
+family via the shim — the shared `osbook.cls` and the OpenStax books are untouched). Result:
+**Overfull \hbox 578 → 97; the >50 pt "real" ones 59 → 1** (a single intrinsically-huge equation),
+**Overfull \vbox 0** (no vertical overflow — the taller block still fits the 11 in page), 673 pp,
+0 errors. Verified visually (page layout uses the page well, equations fit, margins balanced). The
+remaining ~97 are the small/invisible line-breaking noise (<10–50 pt).
+
+**Other warnings — cosmetic / source-content, left as-is:** `\over` primitive (1, works),
+`table:4.1.1` label multiply-defined (1, a Trench source bug — a content fix), `mdframed` bad page
+breaks in theorem/definition boxes (6), hyperref PDF-bookmark token warnings (4), `unicode-math`
+informational (2). None affect correctness.
+
+## Minor polish (post-completion; none block the build)
+
+- The **Preface** currently renders in `\mainmatter` (arabic) rather than front-matter roman, because
+  `\OSfrontmatter` ends with `\mainmatter`; chapter 1 then resets to page 1. Cosmetic pagination.
+- The license page's "Typeset … in the OpenStax house style" wording is deliberate but could be
+  softened for a non-OpenStax book.
+- PDF metadata title is empty (osbook.cls doesn't set `pdftitle`) — an osbook-wide nicety, not
+  trench-specific.
+- The 4 source danglers above (would need a content decision, e.g. cross-linking the BV edition).
+- **Follow-ons (separate tasks, gated on this one):** the BV variant + student manual
+  (`add-trench-bv-and-student-manual.md`) and HTML+EPUB
+  (`trench-differential-equations-html-epub.md`). Out of scope here.
+
+> This task (phases 1–5) is itself big enough that it may warrant splitting into **step-tasks**
+> (umbrella + per-phase children) at execution — see `~/.claude/reference/task-doc-conventions.md`.
+> Left as one doc for now so the whole shape is reviewable; propose the split when picking it up if
+> phases 2–5 each grow commit boundaries.
 
 ## Risks / watch-items
 
@@ -163,21 +270,13 @@ Instead the maintainer's delta is a **LaTeX compatibility layer** overlaid at ap
 
 ## Open questions
 
-1. **Family location & name.** The master `CLAUDE.md` says a non-OpenStax book should be a **sibling
-   family folder** (mirroring how imps carries `n64/`). Recommendation: a new family, e.g. **`aimath/`**
-   (AIM open textbooks — Trench is one, and more could join), holding `aimath/differential-equations/`.
-   OK — and what name (`aimath/`, `trench/`, `latex-textbooks/`)? Or do you want it under `openstax/`
-   despite not being OpenStax?
-2. **Tooling sharing.** The house style (`osbook.cls`+envs+defer), Dockerfile base, and pandoc legs
-   live in `openstax/tooling/`. Recommendation: **promote the shared layer to a repo-level `tooling/`**
-   both families use (clean, no drift) — a small refactor of the existing books' `apply.sh`
-   references. Lighter alternatives: the new family references `../openstax/tooling` in place, or
-   copies it (drift risk). Which?
-3. **Scope.** Recommendation: **main book (`TRENCH_DIFFEQ.tex`) only for phase 1**; BV variant +
-   student manual as follow-ups (phase 6). OK, or do you want all three from the start?
-4. **Fidelity target.** You asked for "uniformity" — I read that as a **full osbook restyle** of
-   sectioning/theorems/exercises (recommended). Confirm, vs. a lighter "osbook cover/fonts only, keep
-   Trench's internal layout" (less work, less uniform).
-5. **HTML/EPUB.** Attempt them via the reused pandoc pipeline (stretch, may need extra shim work), or
-   **PDF-only** for the first cut? Recommendation: PDF-only first, HTML/EPUB as a follow-up once the
-   master compiles.
+All five original questions were resolved 2026-09-19 — see the Decisions block at the top (family
+`trench/`; reuse OpenStax tooling in place; main book → PDF only; full aesthetics-only restyle;
+HTML/EPUB deferred). Two implementation sub-decisions remain, both deferrable to execution:
+
+1. ~~**License-page mechanism.**~~ **RESOLVED 2026-09-19: (a)** — added `\setOSbooklicense` +
+   `\setOSbookdedication` + `\setOSbookpublisher` to the shared `osbook.cls` (backward-compatible
+   defaults). Also gives the OpenStax colophon a per-book license setter.
+2. **`definition` numbering.** Trench shares one counter across theorem/definition; osbook may number
+   them independently. Recommendation: match Trench (shared) to keep the book's internal references
+   stable; revisit only if it looks wrong. Decide at phase 2.

@@ -62,6 +62,14 @@ RUN --mount=type=cache,target=/var/cache/libdnf5 \
     --mount=type=cache,target=/var/lib/dnf \
     dnf install -y google-roboto-slab-fonts && dnf clean dbcache && fc-cache -f
 
+# EPUB packaging + validation for the sibling `trench/` family's HTML/EPUB web
+# editions (make4ht/tex4ebook ship with TeX Live; they need `zip` to pack the
+# .epub and `tidy` to clean the XHTML into a valid EPUB). Harmless to the OpenStax
+# books, which don't use them. Own layer so the big TeX layer stays cache-shared.
+RUN --mount=type=cache,target=/var/cache/libdnf5 \
+    --mount=type=cache,target=/var/lib/dnf \
+    dnf install -y zip tidy && dnf clean dbcache
+
 # entrypoint scripts
 COPY entrypoint/shell.sh   /usr/local/bin/shell.sh
 COPY entrypoint/pdf.sh     /usr/local/bin/pdf.sh

@@ -59,4 +59,9 @@ if [ -d exercises ]; then
     cp -R exercises "$CHECKOUT/"
 fi
 
+# A re-apply means the shared toolchain changed, so the previously generated
+# LaTeX masters are stale -- drop the convert stamp so the next build reconverts
+# with the just-overlaid converter (otherwise a stale checkout copy could linger).
+rm -f "$CHECKOUT/latex/.converted"
+
 echo "apply.sh: done. Next: make dist  (or make convert / make pdf)."

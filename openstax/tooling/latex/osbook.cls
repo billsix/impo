@@ -213,6 +213,28 @@
 \newcommand{\setOSbooksubtitle}[1]{\renewcommand{\OSbooksubtitle}{#1}}
 \newcommand{\setOSbookversion}[1]{\renewcommand{\OSbookversion}{#1}}
 
+% License-page body and an optional dedication, both overridable per book so a
+% NON-OpenStax book (e.g. the impo trench family) can state its own license and
+% dedication. The DEFAULTS below reproduce the OpenStax CC BY-NC-SA 4.0 license
+% page exactly, so any book that does not call these setters is unchanged.
+\newcommand{\OSbookdedication}{}
+\newcommand{\setOSbookdedication}[1]{\renewcommand{\OSbookdedication}{#1}}
+\newcommand{\OSbookpublisher}{OpenStax}
+\newcommand{\setOSbookpublisher}[1]{\renewcommand{\OSbookpublisher}{#1}}
+\newcommand{\OSlicensetext}{%
+  This work is produced from the OpenStax \emph{\OSbooktitle} textbook,
+  published by OpenStax, a nonprofit educational initiative of Rice
+  University. The original work is available at
+  \url{https://openstax.org/} and is licensed under a Creative Commons
+  Attribution-NonCommercial-ShareAlike 4.0 International License
+  (CC BY-NC-SA 4.0).\par
+  \medskip
+  \noindent This LaTeX edition is likewise distributed under
+  CC BY-NC-SA 4.0.\par
+  \medskip
+  \noindent Typeset in Latin Modern and Computer Modern Sans with \LaTeX.}
+\newcommand{\setOSbooklicense}[1]{\renewcommand{\OSlicensetext}{#1}}
+
 % \OSfrontmatter -- half-title, title page, license page, contents
 \newcommand{\OSfrontmatter}{%
   \frontmatter
@@ -235,27 +257,26 @@
       \bigskip{\fontsize{18pt}{22pt}\selectfont\bfseries\itshape\OSbooksubtitle\par}
     \fi
     \vspace{120pt}
-    {\fontsize{13pt}{16pt}\selectfont OpenStax\par}
+    {\fontsize{13pt}{16pt}\selectfont\OSbookpublisher\par}
     \vfill
     \ifx\OSbookversion\empty\else{\textsc{\OSbookversion}\par}\fi
   \end{raggedleft}
   \newpage
-  % copyright / license page
+  % copyright / license page (body is \OSlicensetext, overridable per book)
   \vspace*{\fill}
   \noindent\small
-  This work is produced from the OpenStax \emph{\OSbooktitle} textbook,
-  published by OpenStax, a nonprofit educational initiative of Rice
-  University. The original work is available at
-  \url{https://openstax.org/} and is licensed under a Creative Commons
-  Attribution-NonCommercial-ShareAlike 4.0 International License
-  (CC BY-NC-SA 4.0).\par
-  \medskip
-  \noindent This LaTeX edition is likewise distributed under
-  CC BY-NC-SA 4.0.\par
-  \medskip
-  \noindent Typeset in Latin Modern and Computer Modern Sans with \LaTeX.\par
+  \OSlicensetext\par
   \vspace*{\fill}
   \newpage
+  % optional dedication page (empty by default -> no page)
+  \ifx\OSbookdedication\empty\else
+    \vspace*{\fill}
+    \begin{center}%
+      {\fontsize{20pt}{24pt}\selectfont\itshape\color{OScolor}\OSbookdedication\par}%
+    \end{center}
+    \vspace*{\fill}
+    \newpage
+  \fi
   % contents
   \pagestyle{OSpage}
   \currentpdfbookmark{Table of Contents}{toc}

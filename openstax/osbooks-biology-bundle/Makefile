@@ -38,7 +38,15 @@ FILES_TO_MOUNT = \
 	-v "$(shell pwd)/$(TOOLING)/entrypoint/fetch-exercises.sh":/usr/local/bin/fetch-exercises.sh:Z \
 	-v "$(shell pwd)/$(TOOLING)/entrypoint/format.sh":/usr/local/bin/format.sh:Z
 
-RUN = $(CONTAINER_CMD) run --rm $(PODMAN_RUN_FLAGS) $(FILES_TO_MOUNT) \
+# impo provenance for the converter's "About This Edition" colophon: the impo repo
+# HEAD + build date, captured on the host and passed into the container (convert.py
+# reads IMPO_COMMIT / IMPO_BUILD_DATE from the env). See
+# ../../tasks/openstax-about-this-edition-colophon.md.
+IMPO_COMMIT ?= $(shell git rev-parse HEAD 2>/dev/null)
+IMPO_BUILD_DATE ?= $(shell date +%Y-%m-%d)
+IMPO_PROVENANCE = -e IMPO_COMMIT="$(IMPO_COMMIT)" -e IMPO_BUILD_DATE="$(IMPO_BUILD_DATE)"
+
+RUN = $(CONTAINER_CMD) run --rm $(PODMAN_RUN_FLAGS) $(IMPO_PROVENANCE) $(FILES_TO_MOUNT) \
 	--entrypoint /bin/bash $(CONTAINER_NAME)
 
 # Every CNXML input the converter reads; a change re-triggers convert. Guarded

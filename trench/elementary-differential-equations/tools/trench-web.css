@@ -1,0 +1,45 @@
+/* trench-web.css -- reconciles tex4ht's generated `bookW.css` with the shared
+   osbook-web.css for the trench book's Furo-like web edition. Loaded LAST, after
+   bookW.css (tex4ht content typography: .cmti->italic, .cmbx->bold, arrays,
+   MathML) and osbook-web.css (the 3-column theme + teal palette). This file only
+   resolves the handful of clashes and adds trench-specific polish; the palette and
+   layout come from osbook-web.css so the book matches the OpenStax ports. */
+
+/* READABILITY FIX (do not remove): tex4ht's bookW.css declares
+   `body{ color-scheme: light dark; background-color: Canvas; color: CanvasText }`,
+   so in a DARK-MODE browser the canvas turns dark -- but osbook-web.css (loaded
+   after) hardcodes `color:#1a1a1a` (dark text), giving dark-text-on-dark-canvas
+   that's unreadable. The OpenStax books never load bookW.css so they stay white;
+   the osbook palette (teal on white) is a LIGHT design, so pin THIS book to light
+   too. `color-scheme: light` makes the UA resolve Canvas/CanvasText + scrollbars to
+   light regardless of the OS setting; the explicit bg/color are a backstop. Set on
+   both html and body (bookW.css sets color-scheme on body). */
+html { color-scheme: light; }
+body { color-scheme: light; background-color: #ffffff; color: #1a1a1a; }
+
+/* bookW.css sets `body{max-width:80ch; margin:1em auto; padding:0 .62em}`, which
+   would cage the whole 3-column .layout in an 80ch column. Undo it so
+   osbook-web.css's grid spans the viewport (osbook already sets body font/color). */
+body { max-width: none; margin: 0; padding: 0; }
+
+/* tex4ht wraps each figure in <div class='minipage'> (an <img src='EPS/*.png'>);
+   center it and cap the width, matching osbook's figure rule. */
+.minipage { text-align: center; margin: 1.4rem auto; }
+.minipage img { max-width: 90%; height: auto; border: 1px solid #eee; background: #fff; }
+
+/* tex4ht centers display boxes (solution procedures, small tables) in a
+   .centerline div; keep them centered and set off from the running text. */
+.centerline { margin: 1.1rem 0; }
+
+/* Long display equations: let a wide <math display='block'> scroll rather than
+   force the reading column wider (osbook-web.css already does this; restated in
+   case bookW.css's table-based equation wrappers need it too). */
+.equation, .equation-star { overflow-x: auto; }
+
+/* tex4ht emits itemize/enumerate with its own classes; give them normal indent
+   inside the narrower osbook reading measure. */
+.content ul, .content ol { padding-left: 1.5rem; }
+
+/* Run-in heads (Theorem./Proof./Example./Definition.) are plain bold text in
+   Trench's own style -- no semantic class exists to box them, so they stay as
+   emphasised lead-ins (consistent with the print edition). */

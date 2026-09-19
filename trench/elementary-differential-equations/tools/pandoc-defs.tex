@@ -1,0 +1,100 @@
+% pandoc-defs.tex -- pandoc-friendly redefinitions of Trench's custom macros for
+% the HTML/EPUB web edition (impo trench family). Prepended to the (\over-converted)
+% source so pandoc EXPANDS these to constructs it understands; the PDF's real shim
+% (trench-osbook.sty) is untouched. Spike version -- grows as chapters surface more.
+
+% --- sectioning ---
+% NOTE: sectioning is rewritten to real \chapter/\section as TEXT by the web
+% preprocessor, NOT via macros here -- pandoc empties the whole document if two
+% \newcommands both expand to sectioning commands (\chapter and \section). So the
+% preprocessor does:  \chaptertitle{X}->\chapter{X}, \newsection{a}{b}{c}->\section{c},
+% \sectiontitle{X}->(removed). Only these harmless leftovers are defined here:
+% (\thissection is \newcommand'd by the body itself; do not predefine it here.)
+% PDF-bookmark commands (hyperref/bookmark) -> no-ops for the web edition.
+\providecommand{\currentpdfbookmark}[2]{}
+\providecommand{\subpdfbookmark}[2]{}
+% counters the body references (exercise/place; list counters lcal/rm)
+\newcounter{exercise}\newcounter{place}\newcounter{lcal}\newcounter{rm}
+% the answer key does \renewcommand{\newsection}[1]{...}; give it a dummy to renew
+\providecommand{\newsection}{}
+\newcommand{\markonleft}[1]{}
+\newcommand{\markonright}[1]{}
+
+% --- theorem-likes -> simple labelled blocks ---
+\newenvironment{theorem}{\par\medskip\noindent\textbf{Theorem.}\itshape\ }{\par\medskip}
+\newenvironment{example}{\par\medskip\noindent\textbf{Example.}\ }{\par\medskip}
+% NOTE: no `\ ` after #1 -- the source writes `\begin{definition}\color{blue}...`
+% (unbraced), so #1 grabs \color and a trailing `\ ` would become \color's arg.
+\newenvironment{definition}[1]{\par\medskip\noindent\textbf{Definition.}\ #1}{\par\medskip}
+\newcommand{\proof}{\par\noindent\textit{Proof.}\ }
+\def\endproof{}%  \newcommand refuses \end... names
+\newcommand{\bbox}{}
+\newcommand{\solution}{\par\noindent\textit{Solution.}\ }
+\newcommand{\solutionpart}[1]{\par\noindent\textit{Solution (#1).}\ }
+\newcommand{\remark}[1]{\par\noindent\textbf{Remark.}\ #1}
+
+% --- exercises: page-refs become HYPERLINKS to the target (maintainer-approved) ---
+\newcommand{\exercises}{\par\medskip\noindent\textbf{Exercises}\par}
+\newenvironment{exerciselist}{\begin{enumerate}}{\end{enumerate}}
+\newcommand{\exercisetext}[1]{\end{enumerate}#1\begin{enumerate}}
+\newcommand{\exer}[1]{\textbf{#1.}\ }
+% \answer{N} used to print "N (p. <page>)"; now: link to the exercise, no page number.
+\newcommand{\answer}[1]{\ (\ref{exer:#1})}
+\renewcommand{\pageref}[1]{\ref{#1}}   % any surviving \pageref -> a link, not a page
+\newcommand{\Cex}{\textbf{[C]}\ }
+\newcommand{\CGex}{\textbf{[C/G]}\ }
+\newcommand{\Lex}{\textbf{[L]}\ }
+\newcommand{\technology}{\par\noindent\textbf{USING TECHNOLOGY}\par}
+\newenvironment{alist}{\begin{enumerate}}{\end{enumerate}}
+\newenvironment{Alist}{\begin{enumerate}}{\end{enumerate}}
+\newenvironment{rmlist}{\begin{enumerate}}{\end{enumerate}}
+\newenvironment{numberlist}{\begin{enumerate}}{\end{enumerate}}
+\newenvironment{newtable}[1]{\begin{quote}\textbf{Table.}\ #1}{\end{quote}}
+
+% --- boxes / spacing helpers -> passthrough ---
+\newcommand{\place}{\par}
+\newcommand{\boxit}[1]{#1}
+\newcommand{\helpbox}{}
+\newcommand{\bigbox}[1]{#1}
+\newcommand{\blankbox}[1]{#1}
+\newcommand{\topfig}[1]{}
+\newcommand{\hint}[1]{\textsc{Hint}: \textit{#1}}
+\newcommand{\note}[1]{(\textsc{Note}: #1)}
+\renewcommand{\part}[1]{(\textbf{#1})}
+
+% --- old LaTeX 2.09 font declarations (Trench uses \bf \it \rm \sc in text AND math) ---
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\mathrm}
+\DeclareOldFontCommand{\sl}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\cal}{\normalfont}{\mathcal}
+
+% --- math shorthands ---
+\newcommand{\dst}{\displaystyle}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\set}[2]{\left\{#1 \,\middle|\, #2\right\}}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\adj}{\operatorname{adj}}
+\newcommand{\df}{=_{\mathrm{df}}}
+\newcommand{\lims}[2]{\Big|_{#1}^{#2}}
+\newcommand{\eqline}[1]{#1}
+\newcommand{\twocol}[2]{\left[\begin{array}{l}#1\\#2\end{array}\right]}
+\newcommand{\ctwocol}[2]{\left[\begin{array}{c}#1\\#2\end{array}\right]}
+\newcommand{\threecol}[3]{\left[\begin{array}{r}#1\\#2\\#3\end{array}\right]}
+\newcommand{\cthreecol}[3]{\left[\begin{array}{c}#1\\#2\\#3\end{array}\right]}
+\newcommand{\twobytwo}[4]{\left[\begin{array}{rr}#1&#2\\#3&#4\end{array}\right]}
+\newcommand{\threebythree}[9]{\left[\begin{array}{rrr}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{array}\right]}
+% more matrix/array builders used in the later chapters (from the shim)
+\newcommand{\col}[2]{\left[\begin{array}{c}#1_1\\#1_2\\\vdots\\#1_#2\end{array}\right]}
+\newcommand{\colfunc}[2]{\left[\begin{array}{c}#1_1(t)\\#1_2(t)\\\vdots\\#1_#2(t)\end{array}\right]}
+\newcommand{\cthreebythree}[9]{\left[\begin{array}{ccc}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{array}\right]}
+\newcommand{\twochar}[4]{\left|\begin{array}{cc}#1-\lambda&#2\\#3&#4-\lambda\end{array}\right|}
+\newcommand{\threechar}[9]{\left[\begin{array}{ccc}#1-\lambda&#2&#3\\#4&#5-\lambda&#6\\#7&#8&#9-\lambda\end{array}\right]}
+\newcommand{\matfunc}[3]{\left[\begin{array}{cccc}#1_{11}(t)&#1_{12}(t)&\cdots&#1_{1#3}(t)\\%
+  #1_{21}(t)&#1_{22}(t)&\cdots&#1_{2#3}(t)\\\vdots&\vdots&\ddots&\vdots\\%
+  #1_{#21}(t)&#1_{#22}(t)&\cdots&#1_{#2#3}(t)\end{array}\right]}
+\newcommand{\arraytext}[1]{\noalign{\hspace*{-1.75em}\mbox{#1}\vspace*{-9\jot}}\nonumber\\}

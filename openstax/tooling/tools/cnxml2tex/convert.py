@@ -2896,6 +2896,42 @@ def convert_collection(slug: str) -> tuple[str, list[str]]:
     return mpath, module_ids
 
 
+def about_this_edition(title_tex: str) -> str:
+    r"""The "About This Edition" front-matter colophon: who formatted it (Bill Six),
+    the impo toolchain + the build commit SHA + date, and the licensing split
+    (OpenStax content CC BY 4.0 / the toolchain + formatting MIT). Plain LaTeX (a
+    heading + \href, so it renders in the PDF AND flows through pandoc to the
+    HTML/EPUB editions -- NOT an osbook.cls house-style macro). The impo commit SHA
+    and build date come from the IMPO_COMMIT / IMPO_BUILD_DATE env vars the book
+    Makefile sets at build time; absent them it degrades to a development-build note.
+    (title_tex must already be esc_text'd.)"""
+    sha: str = os.environ.get("IMPO_COMMIT", "").strip()
+    date: str = os.environ.get("IMPO_BUILD_DATE", "").strip()
+    if sha:
+        built: str = ", built from commit \\texttt{%s}" % esc_text(sha)
+        if date:
+            built += " on %s" % esc_text(date)
+    else:
+        built = " (a local development build)"
+    # \chapter* (NOT \chapter): \OSfrontmatter ends with \mainmatter, so a plain
+    # \chapter here would step the chapter counter and shift "Chapter 1" -> "2".
+    # Starred = unnumbered + no increment; \addcontentsline keeps it in the TOC.
+    return (
+        "\\chapter*{About This Edition}\n"
+        "\\addcontentsline{toc}{chapter}{About This Edition}\n"
+        "This edition of \\emph{%s} was formatted by William Emerison Six "
+        "(``Bill~Six'') from OpenStax's freely licensed content, using the "
+        "\\emph{impo} toolchain "
+        "(\\href{https://github.com/billsix/impo}{github.com/billsix/impo})%s.\n\n"
+        "\\medskip\\noindent The text and figures are \\textcopyright{} OpenStax and "
+        "are licensed under a Creative Commons Attribution 4.0 International License "
+        "(\\href{https://creativecommons.org/licenses/by/4.0/}{CC~BY~4.0}). The impo "
+        "toolchain and this LaTeX formatting are \\textcopyright{} William Emerison "
+        "Six, released under the MIT License. This edition is not endorsed by or "
+        "affiliated with OpenStax.\n" % (title_tex, built)
+    )
+
+
 def build_master(
     slug: str,
     title: str,
@@ -2903,7 +2939,9 @@ def build_master(
     main_lines: list[str],
     back_lines: list[str],
 ) -> str:
-    front: str = "\n".join(front_lines)
+    # "About This Edition" colophon is the FIRST front-matter unit (before the
+    # Preface): an unnumbered heading kept in the TOC (secnumdepth is -10 here).
+    front: str = about_this_edition(esc_text(title)) + "\n" + "\n".join(front_lines)
     main: str = "\n".join(main_lines)
     back: str = "\n".join(back_lines)
     return (
