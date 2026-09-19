@@ -33,6 +33,25 @@
     });
     host.appendChild(title);
     host.appendChild(ul);
+    // Mobile: the right sidebar is CSS-hidden below 1180px, so also surface the
+    // same links as a collapsible "On this page" at the top of the content (CSS
+    // shows .page-toc-mobile only on narrow screens). Native <details> gives free
+    // keyboard/AT support and no drawer/scroll-lock machinery.
+    var det = document.createElement("details");
+    det.className = "page-toc-mobile";
+    var sum = document.createElement("summary");
+    sum.textContent = "On this page";
+    det.appendChild(sum);
+    det.appendChild(ul.cloneNode(true));
+    var h1 = content.querySelector("h1");
+    if (h1 && h1.parentNode === content) {
+      content.insertBefore(det, h1.nextSibling);   // just under the page title
+    } else {
+      content.insertBefore(det, content.firstChild);
+    }
+    det.addEventListener("click", function (e) {    // tap a link -> jump + close
+      if (e.target.closest("a")) det.removeAttribute("open");
+    });
     return heads;
   }
 

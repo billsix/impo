@@ -18,6 +18,14 @@ body {
   margin: 0;
 }
 
+/* --- mobile overflow safety net (no sideways scroll on phones): border-box so
+   padding/border never add to an element's width; overflow-x:clip catches any
+   residual (e.g. the off-canvas drawer) without breaking sticky; grid/flex
+   children must be allowed to shrink below their content's intrinsic width. --- */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+.layout > * { min-width: 0; }
+
 /* ============================================================================
    Three-column layout: book TOC (left) | content | on-this-page TOC (right).
    Both sidebars are sticky (fixed as you scroll). Content is a centered reading
@@ -48,6 +56,7 @@ body {
   max-width: 46rem;             /* readable measure */
   margin: 0 auto;              /* center within the flexible middle column */
   padding: 1.5rem 1rem 4rem;
+  overflow-wrap: anywhere;      /* break long URLs/identifiers instead of widening the page */
 }
 
 /* left: whole-book contents */
@@ -120,10 +129,26 @@ body {
   border: none; border-radius: 5px; padding: .45rem .7rem; cursor: pointer; }
 .nav-scrim { display: none; }
 
+/* the mobile "On this page" collapsible (osbook-web.js clones the right-TOC list
+   into a <details> at the top of the content); hidden on desktop where the real
+   right sidebar shows. */
+.page-toc-mobile { display: none; }
+
 /* wide screens: hide the mobile toggle, sidebars are always shown */
 @media (max-width: 1180px) {
   .layout { grid-template-columns: 17rem minmax(0, 1fr); }
-  .page-toc { display: none; }           /* drop on-this-page first */
+  .page-toc { display: none; }           /* drop the static on-this-page column... */
+  /* ...but surface the same links as a collapsible at the top of the content */
+  .page-toc-mobile { display: block; margin: 0 0 1.5rem; border: 1px solid var(--os-rule);
+    border-radius: 6px; background: var(--os-lt); }
+  .page-toc-mobile > summary { cursor: pointer; padding: .6rem .9rem; font-weight: 600;
+    color: var(--os-dk); font-family: system-ui, sans-serif; list-style: none; }
+  .page-toc-mobile > summary::-webkit-details-marker { display: none; }
+  .page-toc-mobile[open] > summary { border-bottom: 1px solid var(--os-rule); }
+  .page-toc-mobile > ul { margin: .4rem 0; padding: .2rem .9rem .6rem 1.4rem; list-style: none; }
+  .page-toc-mobile a { display: block; padding: .2rem 0; color: #555; text-decoration: none; }
+  .page-toc-mobile a:hover { color: var(--os-dk); }
+  .content table { display: block; overflow-x: auto; }  /* wide tables scroll, don't widen the page */
 }
 @media (max-width: 900px) {
   .layout { grid-template-columns: minmax(0, 1fr); }
@@ -222,7 +247,11 @@ figcaption, .calcfig p:last-child { font-size: .88rem; color: #444;
 
 /* ---- math ---- */
 math { font-size: 1.02em; }
-math[display="block"] { display: block; overflow-x: auto; margin: .6rem 0; }
+/* wide display equations scroll WITHIN the column instead of widening the page;
+   overflow-y:hidden avoids a spurious vertical scrollbar the x-scrollbar triggers. */
+math[display="block"] { display: block; max-width: 100%; overflow-x: auto; overflow-y: hidden;
+  margin: .6rem 0; }
+.content pre { max-width: 100%; overflow-x: auto; }
 
 /* ---- key-equations / key-concepts headers (xref.lua titles them) ---- */
 .objectives > :first-child::before { }

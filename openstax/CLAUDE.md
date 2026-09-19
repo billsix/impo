@@ -81,7 +81,11 @@ The two layers have two different owners, and imps must not blur them:
 Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothing hardcodes a slug.
 
 - `tools/cnxml2tex/convert.py` — CNXML + Presentation-MathML → LaTeX; auto-discovers structure. Handles BOTH
-  os-embed exercise schemes (`#exercise/<nickname>` and `#ost/api/ex/<id>` — physics/biology).
+  os-embed exercise schemes (`#exercise/<nickname>` and `#ost/api/ex/<id>` — physics/biology). Also emits an
+  **"About This Edition" colophon** as the first front-matter unit (`\chapter*`, so it doesn't step the
+  chapter counter) — impo link + build commit SHA/date (from `IMPO_COMMIT`/`IMPO_BUILD_DATE`, passed by each
+  book Makefile's `IMPO_PROVENANCE`) + the CC BY 4.0 / MIT licensing split; it flows to all three editions
+  via the shared master.
 - `tools/cnxml2tex/fetch_exercises.py` — the redownload script (the one networked step); fetches by nickname or tag.
 - `tools/pandoc/` — the HTML/EPUB leg: `xref.lua` (cross-ref → numbered link rewrite), `preprocess.py`,
   `chunked-template.html` + `osbook-web.css` (the Furo-style layout), plus the web-edition nav — `build_nav.py`

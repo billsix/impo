@@ -1,11 +1,23 @@
 # Fix the HTML web edition on mobile: horizontal overflow + missing right TOC
 
-**Status:** open — **two bugs CONFIRMED on a phone by the maintainer (2026-09-19)**; detailed fix below,
-ready to implement. Affects **both** families (OpenStax books AND the trench diffeq book) because they
-share `openstax/tooling/tools/pandoc/osbook-web.css` + `osbook-web.js`; the trench book also layers
-`trench/elementary-differential-equations/tools/trench-web.css`.
+**Status:** IMPLEMENTED 2026-09-19 — the fixes below are applied to the shared assets
+(`openstax/tooling/tools/pandoc/osbook-web.css` + `osbook-web.js`) and the trench adapter
+(`trench/elementary-differential-equations/tools/trench-web.css`), so **both** families get them (the
+trench book reads the shared assets via its `/osbook-assets` build mount). JS syntax-checked; the new
+rules verified present in a rebuilt site. **Remaining: maintainer phone re-verification** (open the site
+on a phone — no sideways scroll, and the "On this page" collapsible appears under each page title). Not
+archived pending that check.
 **Priority:** 4
 **Difficulty:** 3
+
+## What shipped (2026-09-19)
+- `osbook-web.css`: `box-sizing:border-box` globally; `html,body{overflow-x:clip}`; `.layout>*{min-width:0}`;
+  `.content{overflow-wrap:anywhere}`; `math[display=block]` + `.content pre` + (mobile) `.content table`
+  scroll within the column; and the `.page-toc-mobile` `<details>` styles (hidden ≥1180px, shown below).
+- `osbook-web.js`: `buildPageToc()` now also clones the right-TOC list into a `<details class="page-toc-mobile">`
+  "On this page" inserted just under the page's `<h1>`, closing on link-tap.
+- `trench-web.css`: `table.equation, table.tabular { display:block; overflow-x:auto }` (tex4ht wraps
+  display math in width:100% tables, which the `math[display=block]` rule can't constrain).
 
 ## BLUF
 

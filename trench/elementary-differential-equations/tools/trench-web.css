@@ -36,6 +36,12 @@ body { max-width: none; margin: 0; padding: 0; }
    case bookW.css's table-based equation wrappers need it too). */
 .equation, .equation-star { overflow-x: auto; }
 
+/* MOBILE OVERFLOW: tex4ht wraps display math in `table.equation { width:100% }`
+   and arrays in `table.tabular` -- the TABLE is the constraining box, so
+   osbook-web.css's `math[display=block]{overflow-x:auto}` can't stop a wide
+   equation from widening the page. Make the table itself scroll in its column. */
+table.equation, table.tabular { display: block; max-width: 100%; overflow-x: auto; }
+
 /* tex4ht emits itemize/enumerate with its own classes; give them normal indent
    inside the narrower osbook reading measure. */
 .content ul, .content ol { padding-left: 1.5rem; }
