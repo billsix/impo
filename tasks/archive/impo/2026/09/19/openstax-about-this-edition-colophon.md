@@ -38,8 +38,9 @@ family too.
   interpolated title, and "Levels of Organization" stays a numbered `\chapter` (Chapter 1). ty+pytest gate
   green.
 - **All 16 book Makefiles** got an `IMPO_PROVENANCE` block (`IMPO_COMMIT ?= $(shell git rev-parse HEAD)` +
-  date, threaded into `RUN`) via the idempotent codemod `tasks/adhoc/openstax-colophon/add_provenance_env.py`
-  (15 changed + anatomy done by hand; second run = 0 changed).
+  date, threaded into `RUN`) via a one-shot idempotent codemod `add_provenance_env.py` (15 changed +
+  anatomy done by hand; second run = 0 changed). _One-shot: removed at archive — recover from git history
+  if a book's Makefile ever drifts._
 - **trench PDF** — `normalize_master.py` gained the same colophon (tailored to Trench's CC BY-NC-SA 3.0
   content), inserted after `\OSfrontmatter`; its `make normalize` target passes `IMPO_COMMIT`/`IMPO_BUILD_DATE`
   (the script also git-falls-back since normalize runs on the host). Verified in the generated master.
@@ -63,7 +64,7 @@ re-run there since the toolchain change. Worse, `apply.sh` overlaid the new conv
 `checkout/latex/.converted` stamp, so `make pdf` could skip regenerating and keep serving the OLD master.
 **Fix (applied, all 16 books):** `apply.sh` now ends with `rm -f "$CHECKOUT/latex/.converted"`, so a
 re-apply always invalidates the generated LaTeX and the next build reconverts with the fresh converter
-(codemod `tasks/adhoc/openstax-colophon/invalidate_converted_on_apply.py`, idempotent). **To get the
+(one-shot idempotent codemod `invalidate_converted_on_apply.py`, removed at archive — in git history). **To get the
 colophon into an existing book now:** `./apply.sh && make dist` (or `make pdf`). Verified end-to-end on
 college-algebra: after `./apply.sh` (stamp dropped) + `make convert`, `college-algebra-2e.tex` carries the
 colophon.

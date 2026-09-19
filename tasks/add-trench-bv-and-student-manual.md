@@ -1,7 +1,7 @@
 # Add the Trench boundary-value variant + student solutions manual (osbook style)
 
 **Status:** proposed — gated
-**Depends on:** `add-trench-differential-equations-book.md` (the main book must build in osbook style
+**Depends on:** `tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md` (the main book must build in osbook style
 first — this reuses its shim, build wiring, and family folder). Internal sequence, so this is a
 `Depends on`, not a `blocked` external gate.
 **Priority:** 7 (do after the main book; not an easy win)
@@ -11,7 +11,7 @@ Created 2026-09-19 (William Emerison Six <billsix@gmail.com>).
 ## BLUF
 
 Once the main Trench *Elementary Differential Equations* book builds in OpenStax house style (task
-`add-trench-differential-equations-book.md`), bring in the other two `.tex` from the same pinned
+`tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md`), bring in the other two `.tex` from the same pinned
 source in the same style: **`TRENCH_DIFFEQ_BV.tex`** (the boundary-value-problems variant) and
 **`TRENCH_DIFFEQ_STUDENT_MANUAL.tex`** (the student solutions manual). They share Trench's
 `wtrench.sty` + `book` class, so the **shim and build machinery from task 1 should largely carry

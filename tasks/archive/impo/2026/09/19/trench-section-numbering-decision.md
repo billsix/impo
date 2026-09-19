@@ -53,7 +53,7 @@ fix it** (make Chapter 2 start at §2.1, matching the other chapters and Trench'
 - **Why it was raised as a decision rather than fixed pre-emptively.** The obvious fix (also strip
   `\setcounter{section}{N}`) is correct and low-risk, but it changes the **PDF** numbering too, so it was
   surfaced rather than silently altering the PDF edition (a different task's output —
-  `tasks/add-trench-differential-equations-book.md`) or leaving the two editions numbered differently.
+  `tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md`) or leaving the two editions numbered differently.
 
 ## The options
 
@@ -73,7 +73,7 @@ fix it** (make Chapter 2 start at §2.1, matching the other chapters and Trench'
 
 ## Related
 
-- `tasks/trench-differential-equations-html-epub.md` — the web-edition task (records this quirk under
+- `tasks/archive/impo/2026/09/19/trench-differential-equations-html-epub.md` — the web-edition task (records this quirk under
   "Known residual quirk" in the "DONE — Furo restyle" section).
-- `tasks/add-trench-differential-equations-book.md` — the PDF task (the other edition the fix would touch).
+- `tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md` — the PDF task (the other edition the fix would touch).
 - Files a fix would edit: `trench/elementary-differential-equations/tools/{normalize_master.py,web_preprocess.py}`.

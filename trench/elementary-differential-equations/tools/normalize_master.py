@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 r"""Normalize a Trench master .tex to build under osbook.cls (impo, trench family).
 
-Phase 2 of tasks/add-trench-differential-equations-book.md. A deterministic
+Phase 2 of tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md. A deterministic
 LaTeX->LaTeX transform: replace the Trench `book`/dvips preamble with an osbook
 preamble (loading osbook-envs + the trench-osbook shim + the book metadata), and
 drop the manual `\setcounter{chapter}{N}` lines (osbook's \chapter auto-numbers).

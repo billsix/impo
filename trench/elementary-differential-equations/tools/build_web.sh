@@ -1,7 +1,7 @@
 #!/bin/bash
 # Build the HTML or EPUB web edition of the Trench book (impo trench family),
 # restyled to the OpenStax family's Furo-like chunked theme (route a of
-# tasks/trench-differential-equations-html-epub.md). Runs INSIDE the build
+# tasks/archive/impo/2026/09/19/trench-differential-equations-html-epub.md). Runs INSIDE the build
 # container (make4ht/tex4ebook/gs from TeX Live), cwd=/book.
 #
 # Pipeline:

@@ -32,7 +32,7 @@ folder. Two families exist:
   same osbook house look via a per-book LaTeX shim, **reusing `openstax/tooling/`** (its `osbook.cls`
   layer + the Fedora/TeXLive/pandoc image) rather than a converter. Read `trench/CLAUDE.md`. First
   book: `trench/elementary-differential-equations/` (William F. Trench, CC BY-NC-SA 3.0). Added
-  2026-09-19; tracked in `tasks/add-trench-differential-equations-book.md`.
+  2026-09-19; tracked in `tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md`.
 
 ## Contracts (the parts that aren't in `openstax/CLAUDE.md`)
 
@@ -47,6 +47,10 @@ folder. Two families exist:
 - **`tasks/`** — task docs at `tasks/*.md`; per-project reference docs under `tasks/reference/<project>/`;
   archives per project at `tasks/archive/<project>/<YYYY>/<MM>/<DD>/`. The `<project>` key is the book
   slug (e.g. `osbooks-anatomy-physiology`); repo-wide tasks use `impo`.
+- **`tools/`** — repo-level dev scripts (not copied into any book checkout, unlike
+  `openstax/tooling/tools/`). Currently `build-web-editions.sh` — a fan-out that re-applies the toolchain
+  overlay and runs `make html && make epub` across all 16 OpenStax books, logging PASS/FAIL per book
+  (`bash tools/build-web-editions.sh [book-slug]`). Promoted from an ad-hoc script 2026-09-19.
 - **ROM/asset acquisition is out of scope** — a book's content comes from its pinned OpenStax upstream
   via `fetch.sh`; never commit the upstream `checkout/`.
 

@@ -1,21 +1,22 @@
 #!/bin/bash
 # Build the HTML (chunked web) + EPUB editions for every OpenStax book, to
 # validate those two formats across all 16 books (the PDF pass was done earlier;
-# see tasks/build-all-books.md). Refreshes each book's tooling overlay first
+# see tasks/archive/impo/2026/09/03/build-all-books.md). Refreshes each book's tooling overlay first
 # (./apply.sh) so the latest converter + pandoc filters are used, then runs
 # `make html` and `make epub`. Non-fatal: logs each book's result and continues,
 # so one broken book doesn't stop the sweep (the report-everything discipline).
 #
-# Run from the impo repo root:  bash tasks/adhoc/openstax-html-epub-fanout/build-web-editions.sh
+# Run from anywhere:  bash tools/build-web-editions.sh   (promoted from an ad-hoc
+# fan-out script — repo dev tooling, not copied into any book checkout).
 # Concise per-book status goes to stdout (and $SUMMARY); verbose per-book build
 # logs go to $LOGDIR/<book>.<fmt>.log for diagnosing a failure.
 #
 # Idempotent: re-running rebuilds; make skips up-to-date targets. Pass a single
 # book slug as $1 to build just that one (used to re-run a book after a fix).
 set -u
-cd "$(dirname "$0")/../../.." || exit 1   # tasks/adhoc/<slug>/ -> repo root
+cd "$(dirname "$0")/.." || exit 1   # tools/ -> repo root
 
-LOGDIR="${LOGDIR:-/tmp/claude-0/-foo-opt/88fea41b-84fa-46ae-b72d-0fa3a0da0348/scratchpad/fanout}"
+LOGDIR="${LOGDIR:-/tmp/impo-web-fanout}"
 SUMMARY="$LOGDIR/summary.log"
 mkdir -p "$LOGDIR"
 

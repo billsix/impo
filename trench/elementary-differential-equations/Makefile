@@ -3,7 +3,7 @@
 # shared toolchain image is built from ../../openstax/tooling, and this book's
 # source + shim are mounted into it at /book. Unlike the OpenStax books, the
 # source is native LaTeX (no CNXML converter) -- see the task doc
-# tasks/add-trench-differential-equations-book.md.
+# tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md.
 #
 # First run:  ./fetch.sh && ./apply.sh && make pdf   (pdf needs phases 2-3)
 #
@@ -37,7 +37,7 @@ FILES_TO_MOUNT = -v "$(shell pwd)/$(CHECKOUT)":/book/:Z \
 # impo provenance for the web/EPUB "About This Edition" colophon (web_preprocess.py
 # reads IMPO_COMMIT / IMPO_BUILD_DATE from the env; the impo .git isn't mounted in the
 # build container, so the SHA must come from the host here). See
-# ../../tasks/openstax-about-this-edition-colophon.md.
+# ../../tasks/archive/impo/2026/09/19/openstax-about-this-edition-colophon.md.
 IMPO_COMMIT ?= $(shell git rev-parse HEAD 2>/dev/null)
 IMPO_BUILD_DATE ?= $(shell date +%Y-%m-%d)
 IMPO_PROVENANCE = -e IMPO_COMMIT="$(IMPO_COMMIT)" -e IMPO_BUILD_DATE="$(IMPO_BUILD_DATE)"

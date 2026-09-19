@@ -52,7 +52,7 @@ and appear, and the gap table below is all green.
 **Read first:** `openstax/CLAUDE.md` (the family contract — note its **incorrect** claim, to be fixed, that
 "the core files … are byte-identical; the only per-book variation was the hardcoded book slug"),
 `openstax/tooling/tools/cnxml2tex/convert.py`, `.../fetch_exercises.py`, `openstax/tooling/latex/osbook.cls`,
-`tasks/build-all-books.md` (the build-all run that produced the 3 converter fixes referenced below).
+`tasks/archive/impo/2026/09/03/build-all-books.md` (the build-all run that produced the 3 converter fixes referenced below).
 
 **How this was found (2026-09-03):** the maintainer recalled the per-book converters differing. Verified by
 hashing the core toolchain files across all 16 source repos' `latex` branches (at `/foo/opt/openstax/osbooks-*`,

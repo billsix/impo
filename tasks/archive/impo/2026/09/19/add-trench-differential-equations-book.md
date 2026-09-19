@@ -1,8 +1,9 @@
 # Add the Trench "Elementary Differential Equations" book to impo, in OpenStax house style
 
-**Status:** MAIN BOOK COMPLETE 2026-09-19 — phases 1–5 done; builds to a clean **673-page** osbook-styled
-PDF via `make pdf` (wider per-book measure; Overfull \hbox 578→97, big ones 59→1). Pending: maintainer
-visual review + minor polish (below).
+**Status:** COMPLETE 2026-09-19 — phases 1–5 done; builds to a clean **673-page** osbook-styled PDF via
+`make pdf` (wider per-book measure; Overfull \hbox 578→97, big ones 59→1). The remaining non-blocking
+maintainer visual review + minor polish are spun out to `trench-pdf-review-and-polish.md` so this build
+task can close.
 **Priority:** 4
 **Difficulty:** 8 (large, multi-phase: LaTeX restyle of a 1.6MB custom-class book + build wiring)
 Created 2026-09-19 (William Emerison Six <billsix@gmail.com>).
@@ -231,18 +232,13 @@ remaining ~97 are the small/invisible line-breaking noise (<10–50 pt).
 breaks in theorem/definition boxes (6), hyperref PDF-bookmark token warnings (4), `unicode-math`
 informational (2). None affect correctness.
 
-## Minor polish (post-completion; none block the build)
+## Minor polish + review — MOVED OUT (2026-09-19)
 
-- The **Preface** currently renders in `\mainmatter` (arabic) rather than front-matter roman, because
-  `\OSfrontmatter` ends with `\mainmatter`; chapter 1 then resets to page 1. Cosmetic pagination.
-- The license page's "Typeset … in the OpenStax house style" wording is deliberate but could be
-  softened for a non-OpenStax book.
-- PDF metadata title is empty (osbook.cls doesn't set `pdftitle`) — an osbook-wide nicety, not
-  trench-specific.
-- The 4 source danglers above (would need a content decision, e.g. cross-linking the BV edition).
-- **Follow-ons (separate tasks, gated on this one):** the BV variant + student manual
-  (`add-trench-bv-and-student-manual.md`) and HTML+EPUB
-  (`trench-differential-equations-html-epub.md`). Out of scope here.
+The maintainer visual review and the cosmetic polish items (Preface pagination, license-page wording,
+empty PDF metadata title, the 4 source danglers, `definition` numbering) are now their own task,
+`trench-pdf-review-and-polish.md`, so this build task can close. **Follow-ons (separate tasks, gated on
+this one):** the BV variant + student manual (`add-trench-bv-and-student-manual.md`), and the HTML+EPUB
+web editions (`trench-differential-equations-html-epub.md`, done).
 
 > This task (phases 1–5) is itself big enough that it may warrant splitting into **step-tasks**
 > (umbrella + per-phase children) at execution — see `~/.claude/reference/task-doc-conventions.md`.

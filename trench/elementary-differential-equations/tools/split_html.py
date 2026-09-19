@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 r"""Split make4ht's monolithic bookW.html into OpenStax-style chunked pages.
 
-Route (a) of tasks/trench-differential-equations-html-epub.md. The trench web
+Route (a) of tasks/archive/impo/2026/09/19/trench-differential-equations-html-epub.md. The trench web
 edition is compiled by make4ht (a real LaTeX engine via tex4ht) into ONE big
 bookW.html carrying tex4ht's own CSS + native MathML. This restyles it to match
 the OpenStax family's Furo-like chunked theme WITHOUT re-rendering the math.

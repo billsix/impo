@@ -41,7 +41,7 @@ FILES_TO_MOUNT = \
 # impo provenance for the converter's "About This Edition" colophon: the impo repo
 # HEAD + build date, captured on the host and passed into the container (convert.py
 # reads IMPO_COMMIT / IMPO_BUILD_DATE from the env). See
-# ../../tasks/openstax-about-this-edition-colophon.md.
+# ../../tasks/archive/impo/2026/09/19/openstax-about-this-edition-colophon.md.
 IMPO_COMMIT ?= $(shell git rev-parse HEAD 2>/dev/null)
 IMPO_BUILD_DATE ?= $(shell date +%Y-%m-%d)
 IMPO_PROVENANCE = -e IMPO_COMMIT="$(IMPO_COMMIT)" -e IMPO_BUILD_DATE="$(IMPO_BUILD_DATE)"

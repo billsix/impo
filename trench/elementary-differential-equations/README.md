@@ -6,8 +6,8 @@ toolchain in [`../../openstax/tooling/`](../../openstax/tooling). See [`../CLAUD
 for the `trench/` family model and [`CLAUDE.md`](./CLAUDE.md) for this book's facts.
 
 All three editions build: the osbook-styled **PDF**, and the **HTML** + **EPUB** web editions (native
-MathML). Plans: [`../../tasks/add-trench-differential-equations-book.md`](../../tasks/add-trench-differential-equations-book.md)
-(PDF), [`../../tasks/trench-differential-equations-html-epub.md`](../../tasks/trench-differential-equations-html-epub.md)
+MathML). Plans: [`../../tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md`](../../tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md)
+(PDF), [`../../tasks/archive/impo/2026/09/19/trench-differential-equations-html-epub.md`](../../tasks/archive/impo/2026/09/19/trench-differential-equations-html-epub.md)
 (web).
 
 ## Build

@@ -94,7 +94,7 @@ sidebar" below). What shipped:
 - **Chapter AND section numbering fixed** — `web_preprocess.py` and `normalize_master.py` strip both
   `\setcounter{chapter}{N}` and `\setcounter{section}{N}`, so chapters are 1–10 (not 2–11) and every
   chapter's sections auto-number consecutively from .1 (chapter 2 was 2.2–2.7, now 2.1–2.6). Details:
-  `tasks/trench-section-numbering-decision.md` (RESOLVED 2026-09-19).
+  `tasks/archive/impo/2026/09/19/trench-section-numbering-decision.md` (RESOLVED 2026-09-19).
 
 **Verified (structural, 2026-09-19):** `make html` → index + 11 pages (Preface + 10 chapters), no broken
 internal links, left TOC injected into all pages, 154/154 figures resolve, MathML present (18k+ tags),
@@ -109,7 +109,7 @@ numbering. `make epub` → valid EPUB3 (mimetype Stored/first), theme CSS inject
   boxed-env rules don't bind. Matching the OpenStax boxes would need pandoc-defs.tex to emit classed
   wrappers tex4ht can style — deferred (the run-in style is clean and true to the book).
 - ~~Section-number quirk (chapter 2 → 2.2 start)~~ — FIXED 2026-09-19 (see the numbering bullet above +
-  `tasks/trench-section-numbering-decision.md`).
+  `tasks/archive/impo/2026/09/19/trench-section-numbering-decision.md`).
 - **Right "On this page" TOC is empty** — now an ACTIVE request (the maintainer, 2026-09-19: wants the
   diffeq book to have both a left and right sidebar like the OpenStax books). Full study + options below,
   "## Right 'On this page' sidebar — study + options".

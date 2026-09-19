@@ -14,7 +14,7 @@ a chosen publishing target + a repeatable publish step, and the cross-book refer
 
 ## Context
 
-- Build story is complete: `tasks/build-all-books.md` (28 PDFs + 28 HTML sites + 28 EPUBs, all clean); the HTML
+- Build story is complete: `tasks/archive/impo/2026/09/03/build-all-books.md` (28 PDFs + 28 HTML sites + 28 EPUBs, all clean); the HTML
   web edition has the full Furo-style nav (archived `openstax-html-*` tasks). Outputs land in each book's
   gitignored `checkout/output/` (PDF, `output/<slug>/` chunked HTML site, `<slug>.epub`).
 - The books cross-reference each other. The known case: corequisite-support books tag objectives with

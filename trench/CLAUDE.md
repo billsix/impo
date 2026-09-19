@@ -34,6 +34,6 @@ artifacts live in the gitignored `checkout/`.
   (CC BY-NC-SA 3.0). github.com/billsix/differentialEquationsTrench @ `a7c17e3…`. **PDF + HTML + EPUB
   all build (2026-09-19)** — `make pdf`/`html`/`epub`. The web editions take a separate make4ht/
   tex4ebook path (native MathML), not `osbook.cls`. Tasks:
-  `../tasks/add-trench-differential-equations-book.md` (main → PDF),
+  `../tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md` (main → PDF),
   `../tasks/add-trench-bv-and-student-manual.md` (BV variant + student manual, follow-on),
-  `../tasks/trench-differential-equations-html-epub.md` (HTML/EPUB, done).
+  `../tasks/archive/impo/2026/09/19/trench-differential-equations-html-epub.md` (HTML/EPUB, done).

@@ -9,8 +9,8 @@ book*.
 
 > **Status: all three editions build.** `make pdf` (osbook-styled PDF), `make html` and `make epub`
 > (the MathML web editions) all work. Plans/rationale:
-> [`../../tasks/add-trench-differential-equations-book.md`](../../tasks/add-trench-differential-equations-book.md)
-> (PDF) and [`../../tasks/trench-differential-equations-html-epub.md`](../../tasks/trench-differential-equations-html-epub.md)
+> [`../../tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md`](../../tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md)
+> (PDF) and [`../../tasks/archive/impo/2026/09/19/trench-differential-equations-html-epub.md`](../../tasks/archive/impo/2026/09/19/trench-differential-equations-html-epub.md)
 > (web).
 
 ## What lives here (thin per-book folder)
@@ -80,7 +80,7 @@ container pass) feeds the **pristine** `TRENCH_DIFFEQ.tex` through `tools/web_pr
 plain `\documentclass{book}` `bookW.tex` that **make4ht** (HTML) / **tex4ebook** (EPUB) compile fast,
 with math as native **MathML**. Pandoc was tried first and abandoned — its LaTeX *parser* can't handle
 Trench's raw-TeX primitives; make4ht runs the real engine. Full rationale + the pandoc spike:
-[`../../tasks/trench-differential-equations-html-epub.md`](../../tasks/trench-differential-equations-html-epub.md).
+[`../../tasks/archive/impo/2026/09/19/trench-differential-equations-html-epub.md`](../../tasks/archive/impo/2026/09/19/trench-differential-equations-html-epub.md).
 
 Pipeline steps (all in `build_web.sh`):
 1. `tools/eps2png.sh` rasterizes the cropped `EPS-pdf/*.pdf` (from `make figures`) to PNG at 120 dpi

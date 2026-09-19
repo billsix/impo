@@ -14,7 +14,7 @@ cd "$(dirname "$0")"
 
 # The shared toolchain lives in the openstax family; the trench family reuses its
 # LaTeX house-style layer and its Fedora/TeXLive/pandoc image (see the impo family
-# contract, ../../openstax/CLAUDE.md, and tasks/add-trench-differential-equations-book.md).
+# contract, ../../openstax/CLAUDE.md, and tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md).
 TOOLING=../../openstax/tooling
 CHECKOUT=checkout
 
@@ -34,7 +34,7 @@ echo "apply.sh: overlaying the OpenStax house style onto $CHECKOUT/ ..."
 cp "$TOOLING/latex/osbook.cls" "$TOOLING/latex/osbook-envs.sty" \
    "$TOOLING/latex/osbook-defer.sty" "$CHECKOUT/"
 
-# PHASE 2 (tasks/add-trench-differential-equations-book.md): the trench->osbook
+# PHASE 2 (tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md): the trench->osbook
 # compatibility shim (latex/trench-osbook.sty) maps wtrench.sty's macros/sectioning
 # onto osbook; a deterministic transform then normalizes the .tex master preamble.
 # Both are added in phase 2. Until the shim exists this overlay only supplies the
