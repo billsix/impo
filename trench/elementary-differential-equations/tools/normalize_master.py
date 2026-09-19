@@ -104,8 +104,14 @@ def normalize(text: str) -> str:
     if m is None:
         raise SystemExit("normalize: Preface marker not found (front-matter cut point)")
     body: str = text[m.start():]
-    # 2. Drop the manual chapter-counter setters (osbook \chapter auto-numbers).
-    body = re.sub(r"^[ \t]*\\setcounter\{chapter\}\{\d+\}[ \t]*\n", "", body, flags=re.M)
+    # 2. Drop the manual chapter- AND section-counter setters (osbook \chapter/\section
+    #    auto-number). The source stamps `\setcounter{section}{1}` at the top of some
+    #    chapters BEFORE their first section, which bumps that chapter's first section to
+    #    ".2" (e.g. Chapter 2 started at 2.2, missing 2.1). The correct number is already
+    #    in \newsection's first arg, and the shim auto-numbers from it, so removing the
+    #    setters makes sections number consecutively from .1. (`\setcounter{section}{#1}`
+    #    inside a macro body has `#1`, not `\d+`, so it is left alone.)
+    body = re.sub(r"^[ \t]*\\setcounter\{(?:chapter|section)\}\{\d+\}[ \t]*\n", "", body, flags=re.M)
     # 3. Body fixups:
     #    (a) \enlargethispage{1\in} -- \in is the math ∈ symbol, not a length unit;
     #        the author meant 1in.

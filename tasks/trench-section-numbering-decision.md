@@ -1,10 +1,29 @@
-# Decision needed: Trench book — chapter 2's sections start at §2.2 (a shared PDF/web quirk)
+# Trench book — chapter 2's sections started at §2.2 (FIXED 2026-09-19)
 
-**Status:** needs maintainer decision (a cold-start question for William Emerison Six
-<billsix@gmail.com> to answer later; raised 2026-09-19 while he was away). No code change until he picks
-an option below.
+**Status:** RESOLVED 2026-09-19 — the maintainer chose to **fix it** ("fix the numbering in a patch if
+needed, or just in code"). Fixed **in code** (no patch needed — impo owns the transforms): both
+`normalize_master.py` (PDF) and `web_preprocess.py` (web/EPUB) now strip `\setcounter{section}{N}` as
+well as `\setcounter{chapter}{N}`, so sections auto-number consecutively from .1. Verified: all 10
+chapters number correctly (chapter 2 now 2.1–2.6, chapter 1 unaffected 1.1–1.3). Not archived per the
+standing instruction.
 **Priority:** 6
-**Difficulty:** 2 (the fix itself is a one-line regex in two files + a PDF rebuild; the decision is yours)
+**Difficulty:** 2
+
+## Resolution (2026-09-19)
+
+`\newsection{num}{chap}{title}`'s first arg IS the correct section number, but both transforms
+auto-number (the shim `\newcommand{\newsection}[3]{\section{#3}}` ignores arg1; web_preprocess rewrites
+to `\section{#3}`). Chapter 2's source stamps `\setcounter{section}{1}` *before* its first section
+(line 2225 → 2230), bumping it to 2.2; chapter 1's sits *after* its first section (harmless). Stripping
+the section setters makes auto-numbering line up with arg1: verified on `make html` — every chapter's
+sections run consecutively from `.1` (1.1–1.3, **2.1–2.6**, 3.1–3.3, … 10.1–10.7). The EPUB shares
+`bookW.tex` so it's fixed too; the PDF master was regenerated (`make normalize`) and auto-numbers the
+same way via the shim. Edited: `tools/{normalize_master.py,web_preprocess.py}` (one regex each,
+`chapter` → `(?:chapter|section)`).
+
+---
+
+_Original decision doc (kept for the record):_
 
 ## BLUF
 
@@ -31,10 +50,10 @@ fix it** (make Chapter 2 start at §2.1, matching the other chapters and Trench'
 - **The quirk.** Only chapters 1 and 2 carry a `\setcounter{section}{1}` in the source. For chapter 1
   ("Introduction") it happens to be harmless (sections come out 1.1, 1.2, 1.3). For chapter 2 it bumps the
   first section to §2.2 — so §2.1 is missing. All other chapters (no section setter) are correct.
-- **Why I didn't just fix it while you were away.** The obvious fix (also strip `\setcounter{section}{N}`)
-  is correct and low-risk, but it changes the **PDF** numbering too, and I didn't want to silently alter
-  the PDF edition (a different task's output — `tasks/add-trench-differential-equations-book.md`) or leave
-  the two editions numbered differently. So: your call.
+- **Why it was raised as a decision rather than fixed pre-emptively.** The obvious fix (also strip
+  `\setcounter{section}{N}`) is correct and low-risk, but it changes the **PDF** numbering too, so it was
+  surfaced rather than silently altering the PDF edition (a different task's output —
+  `tasks/add-trench-differential-equations-book.md`) or leaving the two editions numbered differently.
 
 ## The options
 
@@ -48,11 +67,9 @@ fix it** (make Chapter 2 start at §2.1, matching the other chapters and Trench'
   counter directives. No code change. The editions already match each other.
 - **(C) Fix web only.** Not recommended — it would make the web section numbers diverge from the PDF.
 
-## What I need from you
+## Decision taken (2026-09-19)
 
-**Pick A, B, or C.** If (A), I'll add the one-line strip to both tools, rebuild all three editions, verify
-Chapter 2 reads §2.1…§2.7, and stage. If (B), I'll close this task with a note in the book `CLAUDE.md`
-recording the quirk as intentional.
+**(A)** — fixed in both editions, in code. See the "Resolution" section at the top of this doc.
 
 ## Related
 

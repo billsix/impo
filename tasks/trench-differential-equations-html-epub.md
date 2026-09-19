@@ -91,12 +91,10 @@ sidebar" below). What shipped:
   stylesheet (the `.layout` grid rules are inert in a reader; palette/heading/figure/MathML rules apply),
   and repackages per EPUB rules (mimetype first + STORED). Figures: `<img>` srcs are `EPS-png/*.png`
   (make4ht graphicspath prefers PNG), copied to `output/html/EPS-png/`.
-- **Chapter numbering fixed** — `web_preprocess.py` now strips `\setcounter{chapter}{N}` (mirroring
-  `normalize_master.py` for the PDF), so chapters are 1–10 not 2–11 ("Introduction" was showing as
-  "Chapter 2"). **Known residual quirk:** chapter 2 ("First Order Equations") sections start at 2.2 (a
-  vestigial `\setcounter{section}{1}` in the source that also affects the PDF). Left as-is so web section
-  numbers match the PDF; a proper fix would strip section setcounters in BOTH `normalize_master.py` and
-  `web_preprocess.py` together (with a PDF rebuild) — filed as a follow-up thought, not done here.
+- **Chapter AND section numbering fixed** — `web_preprocess.py` and `normalize_master.py` strip both
+  `\setcounter{chapter}{N}` and `\setcounter{section}{N}`, so chapters are 1–10 (not 2–11) and every
+  chapter's sections auto-number consecutively from .1 (chapter 2 was 2.2–2.7, now 2.1–2.6). Details:
+  `tasks/trench-section-numbering-decision.md` (RESOLVED 2026-09-19).
 
 **Verified (structural, 2026-09-19):** `make html` → index + 11 pages (Preface + 10 chapters), no broken
 internal links, left TOC injected into all pages, 154/154 figures resolve, MathML present (18k+ tags),
@@ -110,7 +108,8 @@ numbering. `make epub` → valid EPUB3 (mimetype Stored/first), theme CSS inject
   print style), NOT semantic `<div class="theorem">` like the OpenStax converter emits, so osbook-web.css's
   boxed-env rules don't bind. Matching the OpenStax boxes would need pandoc-defs.tex to emit classed
   wrappers tex4ht can style — deferred (the run-in style is clean and true to the book).
-- **Section-number quirk** (chapter 2 → 2.2 start), per above.
+- ~~Section-number quirk (chapter 2 → 2.2 start)~~ — FIXED 2026-09-19 (see the numbering bullet above +
+  `tasks/trench-section-numbering-decision.md`).
 - **Right "On this page" TOC is empty** — now an ACTIVE request (the maintainer, 2026-09-19: wants the
   diffeq book to have both a left and right sidebar like the OpenStax books). Full study + options below,
   "## Right 'On this page' sidebar — study + options".
@@ -219,7 +218,7 @@ make4ht compile is unchanged, so the proven math/figure rendering is untouched:
 1. **NEW splitter tool** (`tools/split_html.py`, Python) — parse `bookW.html`, cut at the
    `chapterHead`/`sectionHead` boundaries into per-section (or per-chapter) chunk pages named
    `NNN-<slug>.html` (zero-padded so ordering is stable and no name starts with `-`), wrap each chunk's
-   content in the `chunked-template.html` layout (port its HTML into the splitter, since we're not going
+   content in the `chunked-template.html` layout (port its HTML into the splitter, since this path is not going
    through pandoc), compute **prev/next/up + breadcrumb** links itself, and drop the `<!--BOOK-TOC-->`
    placeholder into each page.
 2. **Synthesize `sitemap.json`** from the heading tree, in the exact schema `build_nav.py` requires —
@@ -261,7 +260,7 @@ HTML/MathML, you're post-processing make4ht output, which *is* route (a).)
 
 - **Reuse unchanged** (copy or symlink from `openstax/tooling/tools/pandoc/`): `osbook-web.css`,
   `osbook-web.js`, `build_nav.py`.
-- **Port into the splitter** (not reuse directly — we don't go through pandoc): the layout markup of
+- **Port into the splitter** (not reused directly — this path does not go through pandoc): the layout markup of
   `chunked-template.html`.
 - **NOT reusable:** `xref.lua`, `preprocess.py` (pandoc-only).
 - **New trench tools:** `tools/split_html.py` (splitter + `sitemap.json` synth + template wrap + prev/next
@@ -325,7 +324,7 @@ Trench's cross-refs in a form that path understands.
    `\sectiontitle{X}`→(removed) as text; `defs.tex` never defines sectioning.
 2. **`%` comments in `defs.tex` break pandoc** (they contained `\chapter`/`\section`/`\newcommand`
    text and pandoc's reader chokes). Fix: strip `%` comments from the defs before feeding pandoc.
-   (Lesson: much of my earlier "empty output" was these two, compounded by rapid file-state churn.)
+   (Lesson: much of the earlier "empty output" was these two, compounded by rapid file-state churn.)
 
 **Third blocker: do the whole preprocess in ONE pass** — mixing host and container steps produced
 maddeningly inconsistent "empty output" results (a file-crossing artifact, not real breakage). Doing
@@ -404,7 +403,7 @@ So this task is **real work**, not a wiring job. What it needs (superset of the 
 
 ### Suggested approach (revised after testing, 2026-09-19)
 
-**Recommendation: pandoc, math via `--mathjax`.** Testing flipped my earlier tex4ht lean: the thing
+**Recommendation: pandoc, math via `--mathjax`.** Testing flipped the earlier tex4ht lean: the thing
 that looked like the dealbreaker — pandoc can't parse `\over` (used ~4700×) — was an artifact of
 `--mathml` (which makes pandoc parse the math itself). With **`--mathjax`, pandoc passes the raw TeX
 to MathJax, which renders `\over` natively — verified, zero preprocessing.** And pandoc reuses the

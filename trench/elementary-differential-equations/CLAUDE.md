@@ -112,9 +112,10 @@ Gotchas that are load-bearing (do not undo):
   can't resolve (separate container mounts), so the mount is the working equivalent.
 - **Figure `<img>` srcs are `EPS-png/*.png`** (make4ht graphicspath prefers PNG), so `build_web.sh` copies
   the PNGs to `output/html/EPS-png/` — the dir name must match the src, or figures 404.
-- **`web_preprocess.py` strips `\setcounter{chapter}{N}`** (like `normalize_master.py`) so chapters number
-  1–10, not 2–11. (Section setcounters are left, matching the PDF; chapter 2 thus starts at §2.2 — a
-  shared quirk, see the task doc.)
+- **`web_preprocess.py` and `normalize_master.py` strip both `\setcounter{chapter}{N}` and
+  `\setcounter{section}{N}`** so chapters number 1–10 and every chapter's sections auto-number from .1
+  (chapter 2 was 2.2–2.7, fixed to 2.1–2.6, 2026-09-19). The correct numbers come from `\newsection`'s
+  first arg; auto-numbering matches it once the manual setters are gone.
 - **`split_html.py` + `trench-web.css` restyle WITHOUT re-rendering math** — the MathML from make4ht is
   copied verbatim; only the page shell/CSS changes.
 - **`pandoc-defs.tex` is what makes the whole book compile 0-error** — ~60 custom-macro definitions

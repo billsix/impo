@@ -24,7 +24,7 @@ the Bill Six credit, content still credited to OpenStax (CC BY).
 
 ## Decisions (2026-09-19) + what shipped
 
-The maintainer answered the open questions: **(1)** title "About This Edition"; **(2)** my recommended
+The maintainer answered the open questions: **(1)** title "About This Edition"; **(2)** the recommended
 mechanism (generation-time in `convert.py`); **(3)** verb "**Formatted by**" (consistent with the
 subtitle); **(4)** include the build date; **(5)** no per-book customization; **(6)** mirror to the trench
 family too.

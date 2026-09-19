@@ -83,12 +83,13 @@ def rewrite_sectioning(s: str) -> str:
     s = s.replace(r"\chaptertitle{", r"\chapter{")
     s = re.sub(r"\\newsection\s*\{[^}]*\}\s*\{[^}]*\}\s*\{([^}]*)\}", r"\\section{\1}", s)
     s = re.sub(r"\\sectiontitle\s*\{[^}]*\}", "", s)
-    # Drop the manual chapter-counter setters, exactly as normalize_master.py does
-    # for the PDF: the source stamps `\setcounter{chapter}{N}` before each
-    # `\chaptertitle`, but \chapter auto-numbers, so keeping them offsets every
-    # chapter by one ("Introduction" -> "Chapter 2"). Section setcounters are LEFT
-    # (as the PDF path leaves them) so the web section numbers match the PDF.
-    s = re.sub(r"^[ \t]*\\setcounter\{chapter\}\{\d+\}[ \t]*\n", "", s, flags=re.M)
+    # Drop the manual chapter- AND section-counter setters, exactly as
+    # normalize_master.py does for the PDF. `\setcounter{chapter}{N}` before each
+    # `\chaptertitle` would offset every chapter by one ("Introduction" -> "Chapter 2");
+    # `\setcounter{section}{1}` before a chapter's first section bumps it to ".2"
+    # (Chapter 2 started at 2.2). \chapter/\section auto-number from \newsection's real
+    # first arg once the setters are gone, so sections run 2.1, 2.2, ... consecutively.
+    s = re.sub(r"^[ \t]*\\setcounter\{(?:chapter|section)\}\{\d+\}[ \t]*\n", "", s, flags=re.M)
     # Drop the back-of-book index (tindex): it is page-number based and useless on
     # the web (no pages; use browser search), and pandoc has no binding for it.
     s = re.sub(r"\\begin\{tindex\}.*?\\end\{tindex\}", "", s, flags=re.DOTALL)
