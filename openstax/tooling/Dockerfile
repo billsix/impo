@@ -9,7 +9,18 @@
 
 FROM registry.fedoraproject.org/fedora:44
 
+# Whether to install TeX Live + the book-output deps (SVG->PDF via rsvg, the
+# Roboto Slab body font, EPUB zip/tidy). Default 1: the book builds
+# (pdf/html/epub) need LaTeX. Set 0 for a LEAN image carrying only the
+# converter + gate deps (python3-lxml, pandoc, ruff, ty, pytest) -- enough for
+# the tooling type-check gate (entrypoint/check-tools.sh) and its CI
+# (.github/workflows/checks.yml), which need no LaTeX. Mirrors
+# modelviewprojection's BUILD_DOCS=0 lean-CI pattern (`make type-check`).
+ARG WITH_TEXLIVE=1
+
 # dnf cache idiom: keep downloaded packages in a build cache mount.
+# BASE deps -- ALWAYS installed: the CNXML->LaTeX converter (python3-lxml), the
+# HTML/EPUB leg (pandoc), and the Python gate tools (ruff, ty, pytest).
 RUN --mount=type=cache,target=/var/cache/libdnf5 \
     --mount=type=cache,target=/var/lib/dnf \
     echo "keepcache=True" >> /etc/dnf/dnf.conf && \
@@ -18,25 +29,6 @@ RUN --mount=type=cache,target=/var/cache/libdnf5 \
         make \
         which \
         findutils \
-        latexmk \
-        texlive-scheme-medium \
-        texlive-collection-latexrecommended \
-        texlive-collection-latexextra \
-        texlive-collection-mathscience \
-        texlive-collection-fontsrecommended \
-        texlive-collection-fontsextra \
-        texlive-memoir \
-        texlive-baskervaldx \
-        texlive-newtx \
-        texlive-boondox \
-        texlive-mathalpha \
-        texlive-textgreek \
-        texlive-mdframed \
-        texlive-thmtools \
-        texlive-ntheorem \
-        texlive-answers \
-        texlive-cleveref \
-        texlive-subfiles \
         python3 \
         python3-lxml \
         python3-pytest \
@@ -45,30 +37,44 @@ RUN --mount=type=cache,target=/var/cache/libdnf5 \
         pandoc && \
     dnf clean dbcache
 
-# refresh the TeX filename database so newly installed packages are found
-RUN mktexlsr
-
-# rsvg-convert (this book ships SVG figures; pdflatex can't embed SVG, so the
-# build converts them to PDF). In its own layer so the big TeX layer above stays
-# cache-shared with the other bundles' identical images.
+# TeX Live + book-output deps (SVG->PDF via rsvg, the Roboto Slab body font --
+# Noto Sans headings + STIX Two Math come with texlive -- and EPUB zip/tidy for
+# the sibling trench/ family's make4ht/tex4ebook editions). Installed ONLY when
+# WITH_TEXLIVE=1 (the default), so the lean gate image skips them. One
+# conditional layer; with WITH_TEXLIVE=1 it is identical across every bundle, so
+# it stays cache-shared. `mktexlsr` refreshes the TeX filename DB; `fc-cache -f`
+# picks up the new font.
 RUN --mount=type=cache,target=/var/cache/libdnf5 \
     --mount=type=cache,target=/var/lib/dnf \
-    dnf install -y librsvg2-tools && dnf clean dbcache
-
-# OpenStax house fonts for the LaTeX restyle: Roboto Slab (body serif). Noto Sans
-# (headings) and STIX Two Math (texlive) are already present. Own layer so the
-# big TeX layer above stays cache-shared with the other bundles.
-RUN --mount=type=cache,target=/var/cache/libdnf5 \
-    --mount=type=cache,target=/var/lib/dnf \
-    dnf install -y google-roboto-slab-fonts && dnf clean dbcache && fc-cache -f
-
-# EPUB packaging + validation for the sibling `trench/` family's HTML/EPUB web
-# editions (make4ht/tex4ebook ship with TeX Live; they need `zip` to pack the
-# .epub and `tidy` to clean the XHTML into a valid EPUB). Harmless to the OpenStax
-# books, which don't use them. Own layer so the big TeX layer stays cache-shared.
-RUN --mount=type=cache,target=/var/cache/libdnf5 \
-    --mount=type=cache,target=/var/lib/dnf \
-    dnf install -y zip tidy && dnf clean dbcache
+    if [ "$WITH_TEXLIVE" = "1" ]; then \
+        dnf install -y \
+            latexmk \
+            texlive-scheme-medium \
+            texlive-collection-latexrecommended \
+            texlive-collection-latexextra \
+            texlive-collection-mathscience \
+            texlive-collection-fontsrecommended \
+            texlive-collection-fontsextra \
+            texlive-memoir \
+            texlive-baskervaldx \
+            texlive-newtx \
+            texlive-boondox \
+            texlive-mathalpha \
+            texlive-textgreek \
+            texlive-mdframed \
+            texlive-thmtools \
+            texlive-ntheorem \
+            texlive-answers \
+            texlive-cleveref \
+            texlive-subfiles \
+            librsvg2-tools \
+            google-roboto-slab-fonts \
+            zip \
+            tidy && \
+        dnf clean dbcache && \
+        mktexlsr && \
+        fc-cache -f; \
+    fi
 
 # entrypoint scripts
 COPY entrypoint/shell.sh   /usr/local/bin/shell.sh

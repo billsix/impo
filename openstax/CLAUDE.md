@@ -111,6 +111,11 @@ Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothi
   plus `check-tools.sh` — the read-only gate (ruff check + the annotation checker + `ty check` + pytest)
   run BOTH by the Dockerfile build gate and the GitHub CI workflow (`.github/workflows/checks.yml`), so the
   two can't drift. `make format` runs the annotation checker too (after its ruff `--fix`/`ty`).
+- **`openstax/tooling/Makefile`** — the toolchain's own Makefile (separate from the per-book ones): `make
+  type-check` (alias `check`) builds a LEAN image (`WITH_TEXLIVE=0`, no TeX Live — fast) and runs
+  `check-tools.sh` in it; `make shell`/`shell-exec` open the toolchain image. CI wraps `make type-check`.
+  The `Dockerfile`'s `WITH_TEXLIVE` build-arg (default 1) gates the TeX Live/font/rsvg layer so the gate can
+  build without it. Modeled on github.com/billsix/modelviewprojection.
 - `Dockerfile` — Fedora 44 + TeX Live + `python3-lxml` + pandoc + `rsvg-convert` (+ `zip`/`tidy` in a
   separate layer, used only by the sibling `trench/` family's make4ht/tex4ebook web editions — inert
   for the OpenStax books).

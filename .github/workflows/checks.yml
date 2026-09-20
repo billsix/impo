@@ -1,28 +1,25 @@
 name: checks
 
-# Thin wrapper over the toolchain gate. All the check LOGIC lives in
-# openstax/tooling/entrypoint/check-tools.sh (the same script the Dockerfile
-# build gate runs), so CI and the image can't drift: this workflow only installs
-# the tools and runs that script. It deliberately does NOT build the full
-# TeX Live toolchain image (a ~GB, many-minute build) just to lint the
-# converter's Python -- the gate's Python deps (ruff, ty, pytest, lxml) install
-# in seconds on the runner, and the image build re-runs the identical gate.
+# Governing principle (from modelviewprojection): CI is a THIN WRAPPER over the
+# make/Dockerfile system -- each job is `checkout` -> `make <target>`, and ALL
+# check logic lives in the Makefile/Dockerfile + entrypoint/check-tools.sh, so
+# CI and the container run IDENTICAL checks and can't drift.
+#
+# `make type-check` builds a LEAN toolchain image (WITH_TEXLIVE=0 -- no TeX Live,
+# so it's fast: only the converter + gate deps install) and runs the gate (ruff +
+# the local/global annotation checker + `ty` + pytest) inside it. Read-only: it
+# touches no files and never commits.
 
 on:
   push:
   pull_request:
 
 jobs:
-  tools:
-    name: converter tooling (ruff + annotations + ty + pytest)
+  type-check:
+    name: converter tooling gate (ruff + annotations + ty + pytest)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.13"
-      - name: Install gate tools
-        run: pip install ruff ty pytest lxml
-      - name: Run the toolchain gate
+      - name: make type-check
         working-directory: openstax/tooling
-        run: bash entrypoint/check-tools.sh
+        run: make type-check
