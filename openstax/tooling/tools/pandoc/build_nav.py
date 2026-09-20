@@ -21,25 +21,32 @@ import html
 import json
 import os
 import sys
+from typing import Any
 
-PLACEHOLDER = "<!--BOOK-TOC-->"
+# A sitemap node is a JSON object parsed from sitemap.json (pandoc's chunkedhtml
+# writer output): {"section": {...}, "subsections": [SitemapNode, ...]}. Genuinely
+# dynamic JSON, so Any inside the dict rather than a hand-maintained TypedDict.
+SitemapNode = dict[str, Any]
+
+PLACEHOLDER: str = "<!--BOOK-TOC-->"
 
 
-def render(node: dict, current_page: str) -> tuple[str, bool]:
+def render(node: SitemapNode, current_page: str) -> tuple[str, bool]:
     """Render one <li> for a sitemap node; return (html, contains_active).
 
     A node with children is collapsible: it gets `has-children`, plus `open` when
     it (or a descendant) is on the current page, so the active branch starts
     expanded and everything else collapsed (osbook-web.js toggles the rest).
     """
-    s = node.get("section") or {}
-    path = s.get("path") or ""
-    title = s.get("title") or ""
-    number = s.get("number") or ""
-    page = path.split("#", 1)[0]
-    self_active = bool(page) and page == current_page
+    s: SitemapNode = node.get("section") or {}
+    path: str = s.get("path") or ""
+    title: str = s.get("title") or ""
+    number: str = s.get("number") or ""
+    page: str = path.split("#", 1)[0]
+    self_active: bool = bool(page) and page == current_page
     # Front matter is numbered 0.0.x; show it title-only ("Preface"), not
     # "0.0.1 Preface". Chapters/sections keep their number ("1 Levels …").
+    label: str
     if number and not number.startswith("0."):
         label = number + "  " + title
     else:
@@ -50,25 +57,28 @@ def render(node: dict, current_page: str) -> tuple[str, bool]:
     # earlier sibling's page (e.g. the front matter 0.0.1–0.0.7, all on page 001) --
     # is an on-page anchor, so it collapses into that page's single entry and shows
     # only in the right "On this page" sidebar. Recurse only into new pages.
-    kids_html = ""
-    any_active = self_active
-    seen_pages = {page} if page else set()
+    kids_html: str = ""
+    any_active: bool = self_active
+    seen_pages: set[str] = {page} if page else set()
+    k: SitemapNode
     for k in node.get("subsections") or []:
-        k_page = ((k.get("section") or {}).get("path") or "").split("#", 1)[0]
+        k_page: str = ((k.get("section") or {}).get("path") or "").split("#", 1)[0]
         if k_page and k_page in seen_pages:
             continue
         if k_page:
             seen_pages.add(k_page)
+        kh: str
+        ka: bool
         kh, ka = render(k, current_page)
         kids_html += kh
         any_active = any_active or ka
 
-    has_kids = bool(kids_html)
-    li_class = ""
+    has_kids: bool = bool(kids_html)
+    li_class: str = ""
     if has_kids:
         li_class = ' class="has-children%s"' % (" open" if any_active else "")
-    a_class = ' class="active"' if self_active else ""
-    li = "<li%s>" % li_class
+    a_class: str = ' class="active"' if self_active else ""
+    li: str = "<li%s>" % li_class
     if has_kids:
         li += '<button class="toc-toggle" aria-label="Expand section"></button>'
     li += '<a href="%s"%s>%s</a>' % (html.escape(path), a_class, html.escape(label))
@@ -82,21 +92,22 @@ def main(argv: list[str]) -> int:
     if len(argv) != 1:
         print("usage: build_nav.py <output-site-dir>", file=sys.stderr)
         return 2
-    site = argv[0]
-    smpath = os.path.join(site, "sitemap.json")
+    site: str = argv[0]
+    smpath: str = os.path.join(site, "sitemap.json")
     if not os.path.exists(smpath):
         print("build_nav: no sitemap.json in %s -- skipping" % site, file=sys.stderr)
         return 0
     with open(smpath, encoding="utf-8") as f:
-        sm = json.load(f)
-    chapters = sm.get("subsections") or []
-    book_title = (sm.get("section") or {}).get("title") or "Contents"
+        sm: SitemapNode = json.load(f)
+    chapters: list[SitemapNode] = sm.get("subsections") or []
+    book_title: str = (sm.get("section") or {}).get("title") or "Contents"
 
-    injected = 0
+    injected: int = 0
+    pg: str
     for pg in sorted(glob.glob(os.path.join(site, "*.html"))):
-        cur = os.path.basename(pg)
+        cur: str = os.path.basename(pg)
         with open(pg, encoding="utf-8") as f:
-            doc = f.read()
+            doc: str = f.read()
         if PLACEHOLDER not in doc:
             continue
         # Dedup the TOP-LEVEL entries by page too (the front matter 0.0.1–0.0.7 all
@@ -104,14 +115,15 @@ def main(argv: list[str]) -> int:
         # rule render() applies to nested children.
         seen: set[str] = set()
         parts: list[str] = []
+        c: SitemapNode
         for c in chapters:
-            c_page = ((c.get("section") or {}).get("path") or "").split("#", 1)[0]
+            c_page: str = ((c.get("section") or {}).get("path") or "").split("#", 1)[0]
             if c_page and c_page in seen:
                 continue
             if c_page:
                 seen.add(c_page)
             parts.append(render(c, cur)[0])
-        toc = (
+        toc: str = (
             '<a class="book-title" href="index.html">%s</a><ul>%s</ul>'
             % (html.escape(book_title), "".join(parts))
         )

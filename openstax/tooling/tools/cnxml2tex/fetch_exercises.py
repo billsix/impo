@@ -34,17 +34,17 @@ from typing import Any, cast
 
 from lxml import etree  # ty: ignore[unresolved-import]
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-MODULES = os.path.join(ROOT, "modules")
-CACHE = os.path.join(ROOT, "exercises")
-MEDIA = os.path.join(CACHE, "media")
-API = "https://exercises.openstax.org/api/exercises"
-CNXML = "{http://cnx.rice.edu/cnxml}"
-UA = "osbooks-latex-port exercise fetcher (contact: billsix@gmail.com)"
+ROOT: str = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+MODULES: str = os.path.join(ROOT, "modules")
+CACHE: str = os.path.join(ROOT, "exercises")
+MEDIA: str = os.path.join(CACHE, "media")
+API: str = "https://exercises.openstax.org/api/exercises"
+CNXML: str = "{http://cnx.rice.edu/cnxml}"
+UA: str = "osbooks-latex-port exercise fetcher (contact: billsix@gmail.com)"
 
-_IMG_TAG = re.compile(r"<img\b[^>]*>", re.I)
-_SRC = re.compile(r'src="([^"]+)"')
-_EXT = {
+_IMG_TAG: re.Pattern[str] = re.compile(r"<img\b[^>]*>", re.I)
+_SRC: re.Pattern[str] = re.compile(r'src="([^"]+)"')
+_EXT: dict[str, str] = {
     "image/png": ".png",
     "image/jpeg": ".jpg",
     "image/jpg": ".jpg",
@@ -74,6 +74,7 @@ def discover_targets() -> dict[str, str]:
         except Exception as e:  # noqa: BLE001
             print("  WARN parse %s: %s" % (mid, e))
             continue
+        ln: etree._Element
         for ln in tree.iter(CNXML + "link"):
             if ln.get("class") != "os-embed":
                 continue
@@ -158,9 +159,11 @@ def localize_images(html: str, stats: dict[str, int]) -> str:
 
 def localize_item(item: dict[str, Any], stats: dict[str, int]) -> dict[str, Any]:
     item["stimulus_html"] = localize_images(item.get("stimulus_html", ""), stats)
+    q: dict[str, Any]
     for q in item.get("questions", []) or []:
         q["stimulus_html"] = localize_images(q.get("stimulus_html", ""), stats)
         q["stem_html"] = localize_images(q.get("stem_html", ""), stats)
+        a: dict[str, Any]
         for a in q.get("answers", []) or []:
             a["content_html"] = localize_images(a.get("content_html", ""), stats)
     return item

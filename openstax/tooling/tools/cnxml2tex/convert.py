@@ -26,33 +26,33 @@ import os
 import re
 import sys
 import unicodedata
-from collections.abc import Iterable
+from collections.abc import Callable, Iterable
 from html.parser import HTMLParser
-from typing import Any, cast
+from typing import Any, TypeAlias, cast
 
 from lxml import etree  # ty: ignore[unresolved-import]  # ty's lxml stub lacks etree
 
-_Element = etree._Element  # MathML/CNXML node type, for annotations
-_ElementTree = etree._ElementTree  # parsed-document type, for annotations
+_Element: TypeAlias = etree._Element  # MathML/CNXML node type, for annotations
+_ElementTree: TypeAlias = etree._ElementTree  # parsed-document type, for annotations
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-MODULES = os.path.join(ROOT, "modules")
-COLLECTIONS = os.path.join(ROOT, "collections")
-OUT_SECTIONS = os.path.join(ROOT, "latex", "sections")
+ROOT: str = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+MODULES: str = os.path.join(ROOT, "modules")
+COLLECTIONS: str = os.path.join(ROOT, "collections")
+OUT_SECTIONS: str = os.path.join(ROOT, "latex", "sections")
 
-C = "{http://cnx.rice.edu/cnxml}"
-M = "{http://www.w3.org/1998/Math/MathML}"
-MD = "{http://cnx.rice.edu/mdml}"
-COL = "{http://cnx.rice.edu/collxml}"
+C: str = "{http://cnx.rice.edu/cnxml}"
+M: str = "{http://www.w3.org/1998/Math/MathML}"
+MD: str = "{http://cnx.rice.edu/mdml}"
+COL: str = "{http://cnx.rice.edu/collxml}"
 
 # --------------------------------------------------------------------------
 # per-book configuration -- auto-derived so the SAME converter serves every
 # bundle. Collections are discovered from collections/*.collection.xml, and
 # the sectioning depth adapts to the collection's subcollection nesting.
 # --------------------------------------------------------------------------
-BOOK_CLASS = "osbook"
-ENVS_PKG = "osbook-envs"
-DEFER_PKG = "osbook-defer"
+BOOK_CLASS: str = "osbook"
+ENVS_PKG: str = "osbook-envs"
+DEFER_PKG: str = "osbook-defer"
 
 
 def _slugs() -> list[str]:
@@ -60,8 +60,8 @@ def _slugs() -> list[str]:
     return [os.path.basename(f)[: -len(".collection.xml")] for f in fs]
 
 
-COLLECTION_SLUGS = _slugs()
-SUBFILES_MAIN = COLLECTION_SLUGS[0] if COLLECTION_SLUGS else "book"
+COLLECTION_SLUGS: list[str] = _slugs()
+SUBFILES_MAIN: str = COLLECTION_SLUGS[0] if COLLECTION_SLUGS else "book"
 
 
 def _max_subcol_depth() -> int:
@@ -88,9 +88,11 @@ def _max_subcol_depth() -> int:
     return md
 
 
-MAX_DEPTH = _max_subcol_depth()
+MAX_DEPTH: int = _max_subcol_depth()
 # subcollection sectioning command by nesting level (0 = outermost); modules
 # sit one level below the deepest subcollection.
+SUBCOL_CMDS: list[str]
+MODULE_CMD: str
 if MAX_DEPTH >= 2:
     SUBCOL_CMDS = ["chapter", "section", "subsection"]
     MODULE_CMD = "subsection"
@@ -271,7 +273,9 @@ _GREEK_CAP_LATIN: dict[int, str] = {
     0x3A7: "X",
 }
 
-_RAW_LATEX_ENV = re.compile(r"\\begin\{([a-zA-Z*]+)\}.*?\\end\{\1\}", re.DOTALL)
+_RAW_LATEX_ENV: re.Pattern[str] = re.compile(
+    r"\\begin\{([a-zA-Z*]+)\}.*?\\end\{\1\}", re.DOTALL
+)
 
 
 def esc_text(s: str | None) -> str:
@@ -352,7 +356,7 @@ def collapse_ws(s: str) -> str:
 # --------------------------------------------------------------------------
 # MathML -> LaTeX
 # --------------------------------------------------------------------------
-MO_MAP = {
+MO_MAP: dict[str, str] = {
     "−": "-",
     "∗": "*",
     "×": r"\times ",
@@ -443,7 +447,7 @@ MO_MAP = {
     "⊤": r"\top ",
 }
 # Greek letters (lower/upper) appearing as <mi>
-GREEK = {
+GREEK: dict[str, str] = {
     "α": r"\alpha ",
     "β": r"\beta ",
     "γ": r"\gamma ",
@@ -485,7 +489,7 @@ GREEK = {
     "ϑ": r"\vartheta ",
 }
 # symbols that appear as <m:mi> (identifiers) but are really math symbols
-MI_SYM = {
+MI_SYM: dict[str, str] = {
     "∞": r"\infty ",
     "∅": r"\emptyset ",
     "□": r"\square ",
@@ -532,7 +536,7 @@ MI_SYM = {
     "℘": r"\wp ",
 }
 # function-name words that should become math operators
-FUNC_WORDS = {
+FUNC_WORDS: set[str] = {
     "sin",
     "cos",
     "tan",
@@ -681,13 +685,13 @@ def mtext_to_latex(s: str) -> str:
     return "\\text{%s}" % esc_text(raw)
 
 
-_SYMBOLS = None  # combined math-symbol map, built lazily
-_CELL_MODE = False  # True while rendering a tabular cell (LR mode)
+_SYMBOLS: dict[str, str] | None = None  # combined math-symbol map, built lazily
+_CELL_MODE: bool = False  # True while rendering a tabular cell (LR mode)
 # Sentinel for <mspace linebreak="newline"/> (an author-declared line break in a
 # multi-line derivation). Emitted by mml(), then consumed by the aligned-display
 # promotion (render_math / render_equation); any stray one is scrubbed to a thin
 # space in cleanup_latex. A private-use codepoint so it never collides with content.
-_MNL = "\ue000"
+_MNL: str = "\ue000"
 
 
 def _math_literal(s: str) -> str:
@@ -727,7 +731,7 @@ def _math_literal(s: str) -> str:
 
 
 # backward-compatible alias
-_esc_math_lit = _math_literal
+_esc_math_lit: Callable[[str], str] = _math_literal
 
 
 def _norm_math(s: str) -> str:
@@ -756,7 +760,7 @@ def _norm_math(s: str) -> str:
     # commands ("! Class memoir Error: Font command \rm is not supported"), aborting
     # the PDF build, so map them to the LaTeX2e math-font commands. \rm{X} -> \mathrm{X}
     # is exact for the argument form these carry (\sc/\sl have no math analogue -> mathrm/mathit).
-    _FONT2E = (
+    _FONT2E: tuple[tuple[str, str], ...] = (
         ("rm", "mathrm"), ("bf", "mathbf"), ("it", "mathit"), ("sf", "mathsf"),
         ("tt", "mathtt"), ("cal", "mathcal"), ("sc", "mathrm"), ("sl", "mathit"),
     )
@@ -906,7 +910,7 @@ def mml(node: _Element) -> str:
     txt: str = node.text or ""
 
     if tag == "mrow":
-        fenced = _fenced_row(node)  # {system} -> stretchy \left\{ ... \right.
+        fenced: str | None = _fenced_row(node)  # {system} -> stretchy \left\{ ... \right.
         return fenced if fenced is not None else mml_children(node)
     if tag == "math" or tag == "mstyle" or tag == "semantics":
         return mml_children(node)
@@ -1021,7 +1025,7 @@ def mml(node: _Element) -> str:
             base = mml(ch[0])
             # A lowline/underbar under-glyph is a vinculum (e.g. long-division
             # subtraction bars): render a true \underline, not a tiny \underset.
-            under_raw = "".join(ch[1].itertext()).strip()
+            under_raw: str = "".join(ch[1].itertext()).strip()
             if under_raw in ("_", "‾", "̲", "―", "_"):
                 return r"\underline{%s}" % base
             sub = mml(ch[1])
@@ -1039,11 +1043,11 @@ def mml(node: _Element) -> str:
             # U+203E / combining U+0305) is dropped by mo's unknown-glyph net,
             # so mml() would return "" and the vinculum would be lost. Detecting
             # it here yields a true \overline (fixes long-division bars, etc.).
-            over_raw = "".join(ch[1].itertext()).strip()
+            over_raw: str = "".join(ch[1].itertext()).strip()
             if over_raw in ("¯", "‾", "̅", "_", "―"):
                 return r"\overline{%s}" % base
-            over = mml(ch[1]).strip()
-            acc = {
+            over: str = mml(ch[1]).strip()
+            acc: str | None = {
                 "¯": r"\overline",
                 "→": r"\vec",
                 "^": r"\hat",
@@ -1480,7 +1484,7 @@ def inline_element(node: _Element, labels: set[str]) -> str:
         # source text (some authors just hard-wrap the code). Both make an inline
         # \texttt{} fatal, so both become a display listing.
         if r"\NLBREAK" in body or "\n" in body.strip():
-            listing = body.replace(r"\NLBREAK", "\n").strip("\n")
+            listing: str = body.replace(r"\NLBREAK", "\n").strip("\n")
             return "\n\\begin{oscode}\n%s\n\\end{oscode}\n" % listing
         return r"\texttt{%s}" % body
     if tag == "quote":
@@ -1504,7 +1508,7 @@ def inline_element(node: _Element, labels: set[str]) -> str:
 # --------------------------------------------------------------------------
 # module-scoped label state (CNXML reuses fs-id values across modules, so a
 # bare id is NOT globally unique -> prefix every label with its owning module)
-_CURMOD = ""  # module currently being converted
+_CURMOD: str = ""  # module currently being converted
 _LOCAL_IDS: set[str] = set()  # ids defined in the current module
 _ID2MOD: dict[
     str, str
@@ -1532,7 +1536,7 @@ def link_label(tgt: str, doc: str | None) -> str:
     return mklabel(tgt, m)
 
 
-_BLOCK_BEGIN = (
+_BLOCK_BEGIN: str = (
     r"\\begin\{(?:figure|equation|center|itemize|enumerate|example|"
     r"theorem|corollary|lemma|definition|exercise|checkpoint|calcnote|"
     r"strategy|mathrule|objectives|keyconcepts|keyequations|medianote|"
@@ -1583,8 +1587,8 @@ def cleanup_latex(s: str) -> str:
 #  - inline math $...$ is an unbreakable unit (kept whole on whatever line it
 #    lands on); everything else (\cref{}, \emph{}, \includegraphics{}, ...) has
 #    no internal spaces, so plain whitespace splitting already keeps it intact.
-WRAP_WIDTH = 95
-_NOWRAP_ENVS = {
+WRAP_WIDTH: int = 95
+_NOWRAP_ENVS: set[str] = {
     "equation",
     "equation*",
     "align",
@@ -1607,13 +1611,13 @@ _NOWRAP_ENVS = {
     "oscode",
 }
 # lines that are structural delimiters / restricted args -> leave untouched
-_SKIP_WRAP = re.compile(
+_SKIP_WRAP: re.Pattern[str] = re.compile(
     r"\\(begin|end)\{|"
     r"\\(chapter|section|subsection|subsubsection|paragraph|part)\*?\{|"
     r"\\(includegraphics|input|subfile|printanswerkey|tableofcontents|"
     r"frontmatter|mainmatter|backmatter|OSfrontmatter)\b"
 )
-_INLINE_MATH = re.compile(
+_INLINE_MATH: re.Pattern[str] = re.compile(
     r"((?<!\\)\$.*?(?<!\\)\$)"
 )  # capturing -> re.split keeps spans
 
@@ -1673,7 +1677,7 @@ def wrap_latex(s: str, width: int = WRAP_WIDTH) -> str:
 # --------------------------------------------------------------------------
 # block content
 # --------------------------------------------------------------------------
-BLOCK_TAGS = {
+BLOCK_TAGS: set[str] = {
     "para",
     "section",
     "list",
@@ -1783,11 +1787,11 @@ def get_title(node: _Element) -> _Element | None:
 # tools/cnxml2tex/fetch_exercises.py. Questions-only: we render the stem and the
 # multiple-choice options (the public API gives no answer key or solution).
 # --------------------------------------------------------------------------
-EXERCISES = os.path.join(ROOT, "exercises")
-_EX_LETTERS = "abcdefghijklmnop"  # OpenStax uses lowercase option labels
-_IN_CALLOUT = False  # True while rendering a callout box body
-_IN_EXERCISE = False  # True while rendering an <exercise> body
-_EX_ONLINE = (
+EXERCISES: str = os.path.join(ROOT, "exercises")
+_EX_LETTERS: str = "abcdefghijklmnop"  # OpenStax uses lowercase option labels
+_IN_CALLOUT: bool = False  # True while rendering a callout box body
+_IN_EXERCISE: bool = False  # True while rendering an <exercise> body
+_EX_ONLINE: str = (
     "\\begin{practice}\n\\emph{Practice exercise available in the "
     "online edition.}\n\\end{practice}\n"
 )
@@ -1965,6 +1969,8 @@ class _ExHTML(HTMLParser):
             lines.append("\\arrayrulecolor{OScolor}")
         lines.append("\\begin{tabular}{|%s}" % ("l|" * ncols))
         lines.append("\\hline")
+        cells: list[str]
+        is_header: bool
         for cells, is_header in rows:
             cells = (list(cells) + [""] * ncols)[:ncols]
             if is_header and not nested:
@@ -2112,10 +2118,10 @@ def block_element(node: _Element, labels: set[str], depth: int) -> str:
     return blocks(node, labels, depth)
 
 
-SECT = {1: "section", 2: "subsection", 3: "subsubsection", 4: "paragraph"}
+SECT: dict[int, str] = {1: "section", 2: "subsection", 3: "subsubsection", 4: "paragraph"}
 
 # Greek / common math tokens spelled out for a PDF-bookmark string (below).
-_MATH_ASCII = {
+_MATH_ASCII: dict[str, str] = {
     r"\alpha": "alpha", r"\beta": "beta", r"\gamma": "gamma", r"\delta": "delta",
     r"\epsilon": "epsilon", r"\varepsilon": "epsilon", r"\zeta": "zeta",
     r"\eta": "eta", r"\theta": "theta", r"\vartheta": "theta", r"\iota": "iota",
@@ -2182,7 +2188,7 @@ def render_section(node: _Element, labels: set[str], depth: int) -> str:
 
 # A list item leads with a circled sub-part marker: now a RAW circled char (ⓐ ①),
 # not \textcircled{...} (see the _CIRCLED_CHARS note above).
-_CIRCLED_ITEM = re.compile(r"^" + _CIRCLED_CLASS)
+_CIRCLED_ITEM: re.Pattern[str] = re.compile(r"^" + _CIRCLED_CLASS)
 
 
 def render_list(node: _Element, labels: set[str], depth: int) -> str:
@@ -2360,6 +2366,9 @@ def render_example(node: _Element, labels: set[str], depth: int) -> str:
     inner_ex: _Element | None = node.find(C + "exercise")
     out: list[str] = ["\\begin{example}%s%s" % (opt, lab)]
     if inner_ex is not None:
+        prob: _Element | None
+        sols: list[_Element]
+        ptext: str
         prob, sols, ptext = _problem_solution(inner_ex, labels, depth)
         out.append(ptext)
         for s in sols:
@@ -2417,7 +2426,7 @@ def render_exercise(node: _Element, labels: set[str], depth: int) -> str:
     return "\n".join(out)
 
 
-NOTE_ENV = {
+NOTE_ENV: dict[str, str] = {
     "theorem": "theorem",
     "definition": "definition",
     "rule": "mathrule",
@@ -2981,6 +2990,7 @@ def main() -> int:
             p: str = write_module(mid)
             print("wrote", p)
     elif cmd == "collection":
+        mids: list[str]
         for slug in sys.argv[2:]:
             p, mids = convert_collection(slug)
             print("wrote", p, "with", len(mids), "modules")

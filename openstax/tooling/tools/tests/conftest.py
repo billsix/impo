@@ -12,8 +12,9 @@ from __future__ import annotations
 import os
 import sys
 
-_HERE = os.path.dirname(os.path.abspath(__file__))
-_TOOLS = os.path.dirname(_HERE)
+_HERE: str = os.path.dirname(os.path.abspath(__file__))
+_TOOLS: str = os.path.dirname(_HERE)
+_d: str
 for _d in (os.path.join(_TOOLS, "cnxml2tex"), os.path.join(_TOOLS, "pandoc")):
     if _d not in sys.path:
         sys.path.insert(0, _d)
