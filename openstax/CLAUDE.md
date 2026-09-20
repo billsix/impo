@@ -92,6 +92,11 @@ Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothi
   (injects the collapsible book TOC into each page at build time, from `sitemap.json`) and `osbook-web.js`
   (right "On this page" TOC + scrollspy + chapter/mobile toggles).
 - `tools/tests/` — converter unit tests (`make test`).
+- `tools/check_local_annotations.py` — AST checker enforcing the house rule that every LOCAL and
+  MODULE-LEVEL variable in `tools/*.py` carries an explicit annotation (`ty`/ruff only cover signatures).
+  Ported from github.com/billsix/modelviewprojection. Part of the gate (below); do not add un-annotated
+  `name = …` bindings to the tooling or the build fails. History: the one-time sweep is archived at
+  `tasks/archive/impo/2026/09/20/annotate-tooling-python-types.md`.
 - `latex/osbook.cls`, `osbook-envs.sty`, `osbook-defer.sty` — the house document class + pedagogical
   environments + per-chapter exercise numbering / answer key. Front-matter metadata setters:
   `\setOSbooktitle`/`\setOSbooksubtitle`/`\setOSbookversion`, plus (added 2026-09-19,
@@ -102,7 +107,10 @@ Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothi
   `osbook.cls` via `\InputIfFileExists{osbook-bookstyle.tex}`) and/or `bookstyle-web.css` (HTML/EPUB, appended to
   `osbook-web.css` so its `:root` wins); `apply.sh` copies both into the checkout. Default is Roboto-Slab + teal;
   **calculus** ships both (TeX Gyre Termes + navy). No-op for books without them.
-- `entrypoint/*.sh` — `convert`/`pdf`/`html`/`epub`/`fetch-exercises`/`shell`/`format` (all use `/book`).
+- `entrypoint/*.sh` — `convert`/`pdf`/`html`/`epub`/`fetch-exercises`/`shell`/`format` (all use `/book`),
+  plus `check-tools.sh` — the read-only gate (ruff check + the annotation checker + `ty check` + pytest)
+  run BOTH by the Dockerfile build gate and the GitHub CI workflow (`.github/workflows/checks.yml`), so the
+  two can't drift. `make format` runs the annotation checker too (after its ruff `--fix`/`ty`).
 - `Dockerfile` — Fedora 44 + TeX Live + `python3-lxml` + pandoc + `rsvg-convert` (+ `zip`/`tidy` in a
   separate layer, used only by the sibling `trench/` family's make4ht/tex4ebook web editions — inert
   for the OpenStax books).

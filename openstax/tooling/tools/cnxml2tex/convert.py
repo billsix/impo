@@ -2818,7 +2818,7 @@ def convert_collection(slug: str) -> tuple[str, list[str]]:
             continue
         root = parse(mp).getroot()
         for ln in root.iter(C + "link"):
-            t = ln.get("target-id")
+            t: str | None = ln.get("target-id")
             if t:
                 _ALL_TARGETS.add(t)
         for el in root.iter():

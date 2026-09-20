@@ -1,0 +1,28 @@
+name: checks
+
+# Thin wrapper over the toolchain gate. All the check LOGIC lives in
+# openstax/tooling/entrypoint/check-tools.sh (the same script the Dockerfile
+# build gate runs), so CI and the image can't drift: this workflow only installs
+# the tools and runs that script. It deliberately does NOT build the full
+# TeX Live toolchain image (a ~GB, many-minute build) just to lint the
+# converter's Python -- the gate's Python deps (ruff, ty, pytest, lxml) install
+# in seconds on the runner, and the image build re-runs the identical gate.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  tools:
+    name: converter tooling (ruff + annotations + ty + pytest)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install gate tools
+        run: pip install ruff ty pytest lxml
+      - name: Run the toolchain gate
+        working-directory: openstax/tooling
+        run: bash entrypoint/check-tools.sh

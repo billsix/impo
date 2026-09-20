@@ -77,22 +77,23 @@ COPY entrypoint/convert.sh /usr/local/bin/convert.sh
 COPY entrypoint/html.sh    /usr/local/bin/html.sh
 COPY entrypoint/epub.sh    /usr/local/bin/epub.sh
 COPY entrypoint/format.sh  /usr/local/bin/format.sh
+COPY entrypoint/check-tools.sh /usr/local/bin/check-tools.sh
 RUN chmod +x /usr/local/bin/shell.sh /usr/local/bin/pdf.sh /usr/local/bin/convert.sh \
         /usr/local/bin/html.sh /usr/local/bin/epub.sh \
-        /usr/local/bin/format.sh
+        /usr/local/bin/format.sh /usr/local/bin/check-tools.sh
 
-# --- converter type-check + unit-test gate (HARD: any failure aborts the build) ---
-# ty must pass clean over tools/ and the pytest suite must be green, or
-# `podman build` (hence every `make pdf/html/epub`) fails. Copy only tools/ +
-# pyproject.toml so this layer's cache invalidates just when they change; at
-# runtime the Makefile bind-mounts the live repo over these, so the COPYed copies
-# are used ONLY for this gate. `ty check tools/` (directory form) covers whatever
-# .py the repo ships and resolves the tests via [tool.ty.environment] in
-# pyproject.toml -- identical across all bundles.
+# --- converter lint + type + annotation + unit-test gate (HARD: any failure aborts the build) ---
+# The whole gate lives in entrypoint/check-tools.sh (ruff check + the
+# local/global annotation checker + `ty check` + pytest), so the Dockerfile and
+# the CI workflow run IDENTICAL checks. If any fails, `podman build` (hence every
+# `make pdf/html/epub`) fails. Copy only tools/ + pyproject.toml so this layer's
+# cache invalidates just when they change; at runtime the Makefile bind-mounts
+# the live repo over these, so the COPYed copies are used ONLY for this gate.
+# `ty check tools/` (directory form) covers whatever .py the repo ships and
+# resolves the tests via [tool.ty.environment] in pyproject.toml -- identical
+# across all bundles.
 COPY pyproject.toml /book/pyproject.toml
 COPY tools /book/tools
-RUN cd /book && \
-    ty check tools/ && \
-    python3 -m pytest tools/tests -q
+RUN cd /book && /usr/local/bin/check-tools.sh
 
 WORKDIR /book

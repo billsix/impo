@@ -21,12 +21,12 @@ import html
 import json
 import os
 import sys
-from typing import Any
+from typing import Any, TypeAlias
 
 # A sitemap node is a JSON object parsed from sitemap.json (pandoc's chunkedhtml
 # writer output): {"section": {...}, "subsections": [SitemapNode, ...]}. Genuinely
 # dynamic JSON, so Any inside the dict rather than a hand-maintained TypedDict.
-SitemapNode = dict[str, Any]
+SitemapNode: TypeAlias = dict[str, Any]
 
 PLACEHOLDER: str = "<!--BOOK-TOC-->"
 

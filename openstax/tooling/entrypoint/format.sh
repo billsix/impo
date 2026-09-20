@@ -24,3 +24,9 @@ ruff format tools/
 # fetch_exercises.py); tools/tests/* resolve via [tool.ty.environment] in
 # pyproject.toml. Bundle-agnostic, so this file is identical across all bundles.
 ty check tools/
+
+# Enforce the house rule that every local AND module-level variable carries an
+# explicit annotation (ty/ruff don't). The same check runs in the build/CI gate
+# (entrypoint/check-tools.sh); running it here means `make format` catches a
+# missing annotation before the image build does.
+python3 tools/check_local_annotations.py --include-module tools
