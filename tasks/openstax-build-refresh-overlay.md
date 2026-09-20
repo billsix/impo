@@ -57,6 +57,6 @@ recent Makefile ones).
    twice to confirm idempotent + no needless rebuild churn.
 
 ## Related
-- `tasks/openstax-html-mobile-verify.md` (the mobile fix this trap hid).
+- `tasks/archive/impo/2026/09/20/openstax-html-mobile-verify.md` (the mobile fix this trap hid).
 - `tasks/archive/impo/2026/09/19/openstax-about-this-edition-colophon.md` (the colophon, hit by the same
   trap; its partial fix — apply.sh dropping `.converted` — only covers the converter).

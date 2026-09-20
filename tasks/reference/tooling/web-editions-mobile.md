@@ -73,11 +73,12 @@ element wider than the portrait viewport. On these math books it is almost alway
    (mobile) `overflow-x:auto` (wide code/tables scroll). Trench adds `table.equation, table.tabular
    {display:block;overflow-x:auto}` in `trench-web.css` (tex4ht wraps display math in width:100% tables,
    the same "container isn't a scroll box" problem).
-5. **`html,body{overflow-x:clip}` is a BACKSTOP, and it MASKS diagnosis.** Clip stops page scroll but
-   *clips* (cuts off) anything a scroll rule missed, and — critically — it clamps
-   `document.documentElement.scrollWidth`, so a test that only measures document scrollWidth reports
-   "clean" while a child is still too wide. Always measure *element* rects (below), and temporarily
-   disable clip when diagnosing.
+5. **`html,body{overflow-x:clip}` is a BACKSTOP.** It stops the page scrolling sideways even if a scroll
+   rule is missed — but it *clips* (cuts off) content that isn't in its own scroll box, so it's a safety
+   net, NOT a substitute for the real fixes above (wide content must SCROLL in an `overflow-x:auto` box,
+   not be clipped-lost). For testing: clip clamps `document.scrollWidth`, which is exactly right for the
+   VERIFY metric (no page scroll = the user's experience — see below) but means a scrollWidth test won't
+   reveal a clipped-lost element; so when DIAGNOSING a culprit, disable clip and measure element rects.
 
 ## How to VERIFY mobile (there is no browser in the base sandbox by default)
 
@@ -85,18 +86,20 @@ element wider than the portrait viewport. On these math books it is almost alway
   widths, no CSS media/visibility), so it can only verify DOM/JS (e.g. that the `#page-toc-toggle` button +
   `#toc-scrim` get injected). For overflow, install a headless browser: `npm i playwright` +
   `npx playwright install chromium` (network is available), then render at a phone viewport and measure.
-- **The overflow diagnostic** (run in `page.evaluate` at `viewport:{width:390}`), and **disable clip
-  first** or it lies:
-  ```js
-  // after: page.addStyleTag({content:'html,body{overflow-x:visible!important}'})
-  const vw = innerWidth, bad = [];
-  document.querySelectorAll('*').forEach(el => { const r = el.getBoundingClientRect();
-    if (r.right > vw+1) bad.push({tag:el.tagName, cls:el.className, right:Math.round(r.right), w:Math.round(r.width)}); });
-  bad.sort((a,b)=>b.right-a.right);            // widest offenders first
-  ```
-  To find WHERE a container expands, measure the width chain: `html → body → .layout → grid track
-  (getComputedStyle(.layout).gridTemplateColumns) → .content → the math's <p> → <math>`; the first box
-  wider than the viewport is the break (here it was `.content`).
+- **The automated regression check: `tools/check-mobile.js`** (Playwright). Scans every page of a built
+  site for **page** horizontal scroll and verifies the on-this-page drawer; exits nonzero on overflow.
+  `NODE_PATH=<pw-install>/node_modules node tools/check-mobile.js <built-site-dir> [width]`.
+- **VERIFY vs DIAGNOSE — do not confuse them:**
+  - **Verify (pass/fail):** measure the **page**, clip in place (the real experience) —
+    `document.documentElement.scrollWidth > window.innerWidth`. This is what `check-mobile.js` does. It's
+    what the maintainer feels as "scrolls sideways." (On college-algebra after the fix: 0/370 pages.)
+  - **Diagnose (find the culprit):** to locate WHAT is too wide, disable clip
+    (`addStyleTag('html,body{overflow-x:visible!important}')`) and list elements with `getBoundingClientRect().right
+    > innerWidth`, then walk the width chain `html → body → .layout → grid track
+    (getComputedStyle(.layout).gridTemplateColumns) → .content → the math's <p> → <math>` (the first box
+    wider than the viewport is the break — here it was `.content`). **This over-reports for a gate:** it
+    flags MathML/table content that correctly scrolls *within* its own `overflow-x:auto` box, and the
+    off-canvas drawers parked off-screen. Use it to find a cause, NOT as pass/fail.
 - **Full reproduction from clean** (what to do after a `git clean -fdx`): in a book folder,
   `./fetch.sh && ./apply.sh && make image && make html`, then Playwright-measure the output pages at
   320/360/390/430 px. Result on college-algebra after the fix: **0/370 pages overflow** across the 4
@@ -112,6 +115,6 @@ model): **left** ☰ Chapters (`#nav-toggle` → `body.nav-open` → the book-TO
 JS-created only when the page has an on-this-page. Both close on scrim-tap and link-tap.
 
 ## Pointers
-- `tasks/openstax-html-mobile-verify.md` — the fix task (verification record).
+- `tasks/archive/impo/2026/09/20/openstax-html-mobile-verify.md` — the fix task (verification record).
 - `tasks/openstax-build-refresh-overlay.md` — the proposed durable fix for the stale-checkout trap.
 - Furo mechanism reference: github.com/pradyunsg/furo `src/furo/assets/styles/_scaffold.sass`.

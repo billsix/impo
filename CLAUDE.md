@@ -48,9 +48,14 @@ folder. Two families exist:
   archives per project at `tasks/archive/<project>/<YYYY>/<MM>/<DD>/`. The `<project>` key is the book
   slug (e.g. `osbooks-anatomy-physiology`); repo-wide tasks use `impo`.
 - **`tools/`** — repo-level dev scripts (not copied into any book checkout, unlike
-  `openstax/tooling/tools/`). Currently `build-web-editions.sh` — a fan-out that re-applies the toolchain
-  overlay and runs `make html && make epub` across all 16 OpenStax books, logging PASS/FAIL per book
-  (`bash tools/build-web-editions.sh [book-slug]`). Promoted from an ad-hoc script 2026-09-19.
+  `openstax/tooling/tools/`):
+  - `build-web-editions.sh` — a fan-out that re-applies the toolchain overlay and runs `make html &&
+    make epub` across all 16 OpenStax books, logging PASS/FAIL per book (`bash tools/build-web-editions.sh
+    [book-slug]`).
+  - `check-mobile.js` — a Playwright regression check that a built book has no phone horizontal-scroll
+    and a working on-this-page drawer (`NODE_PATH=<pw>/node_modules node tools/check-mobile.js
+    <built-site-dir> [width]`; needs `npm i playwright && npx playwright install chromium` — a dev-only
+    dep, not a repo dependency). See `tasks/reference/tooling/web-editions-mobile.md`.
 - **ROM/asset acquisition is out of scope** — a book's content comes from its pinned OpenStax upstream
   via `fetch.sh`; never commit the upstream `checkout/`.
 

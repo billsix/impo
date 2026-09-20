@@ -1,9 +1,10 @@
 # Fix the HTML web edition on mobile: overflow + on-this-page drawer
 
-**Status:** DONE (2026-09-19) — fixes implemented in the shared web assets and browser-verified; the only
-remaining item is the maintainer's final phone confirmation after a rebuild. Affects **both** families
-(OpenStax + trench) — they share `openstax/tooling/tools/pandoc/osbook-web.css` + `osbook-web.js` (trench
-reads them via its `/osbook-assets` build mount). Not archived pending the phone check.
+**Status:** DONE — confirmed on a real phone by the maintainer (overflow fixed + the right "On this page"
+drawer works), 2026-09-20. Fixes are in the shared web assets, so **both** families get them (OpenStax +
+trench, which reads them via its `/osbook-assets` build mount). A reusable regression check,
+`tools/check-mobile.js`, was promoted from the debugging harness. Durable analysis lives in
+`tasks/reference/tooling/web-editions-mobile.md`. Archived.
 **Priority:** 4
 **Difficulty:** 3
 
@@ -39,11 +40,12 @@ across the 4 collections. On a real content page (022, 390px): page does not ove
 equations scroll within their box; the "On this page" button shows and opens the right drawer (23 links,
 slides in to on-screen); scrim/link taps close both drawers.
 
-## Remaining
-- **Maintainer phone confirmation** after `./apply.sh && make html` **and a hard-refresh** (the CSS/JS
-  filenames are unchanged, so a phone caches the old versions — a very common "still looks broken").
-- The durable "build auto-refreshes the overlay" fix (so `apply.sh` can't be forgotten) is proposed in
-  `tasks/openstax-build-refresh-overlay.md`.
+## Done + follow-ons
+- **Maintainer phone confirmation: DONE (2026-09-20)** — overflow fixed and the right on-this-page drawer
+  works on a real device. (Reminder for future rebuilds: `./apply.sh && make html` then hard-refresh the
+  phone — the CSS/JS filenames are unchanged, so a phone caches the old versions.)
+- Follow-on (separate, proposed): the durable "build auto-refreshes the overlay" fix so `apply.sh` can't
+  be forgotten — `tasks/openstax-build-refresh-overlay.md`.
 
 ## Related
 - `tasks/reference/tooling/web-editions-mobile.md` — the durable reference (root causes, propagation trap,

@@ -118,6 +118,11 @@ Gotchas that are load-bearing (do not undo):
   first arg; auto-numbering matches it once the manual setters are gone.
 - **`split_html.py` + `trench-web.css` restyle WITHOUT re-rendering math** — the MathML from make4ht is
   copied verbatim; only the page shell/CSS changes.
+- **Mobile/responsive lives in the SHARED theme** (`osbook-web.css`/`.js`), so this book inherits the
+  phone layout — the content-column overflow fix and the off-canvas left ☰ Chapters / right "On this page"
+  drawers. `trench-web.css` adds only the trench-specific piece: `table.equation, table.tabular
+  {display:block; overflow-x:auto}` (tex4ht wraps display math in `width:100%` tables, so they need their
+  own scroll box). Root causes + how to verify: `../../tasks/reference/tooling/web-editions-mobile.md`.
 - **`pandoc-defs.tex` is what makes the whole book compile 0-error** — ~60 custom-macro definitions
   (2.09 math fonts, the missing counters, the ch2–10 matrix macros, bookmark no-ops, `\def\endproof{}`
   because `\newcommand` refuses `\end…` names). The `definition` env must NOT have a trailing `\ `
