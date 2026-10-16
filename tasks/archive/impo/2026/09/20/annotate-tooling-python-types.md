@@ -58,7 +58,7 @@ compliant (zero changes).
 
 ## Context (cold-start)
 
-- **The standard** is the maintainer's cross-project one: `~/.claude/reference/python-coding-standard.md`
+- **The standard** is the maintainer's cross-project one: `github.com/billsix/runClaudeInContainer:tasks/reference/python-coding-standard.md`
   ("annotate generously — locals + globals too"). The trench book's `tools/*.py` were done to it this
   month and are the pattern to match (e.g. `re.Match[str] | None`, `list[int]`, `re.Pattern[str]`, every
   local `x: T = …`). Read one (`split_html.py`) before starting.
@@ -105,6 +105,6 @@ annotated; older ones can be left), the trench `tools/*.py` (done), and anything
 
 ## Related
 - Exemplar: `trench/elementary-differential-equations/tools/*.py` (done to the target density).
-- Standard: `~/.claude/reference/python-coding-standard.md`.
+- Standard: `github.com/billsix/runClaudeInContainer:tasks/reference/python-coding-standard.md`.
 - Sibling: `imps/tasks/annotate-tooling-python-types.md` (imps `tools/squash_series.py`).
 - Enforcement precedent: github.com/billsix/modelviewprojection `make type-check` (annotation checker).

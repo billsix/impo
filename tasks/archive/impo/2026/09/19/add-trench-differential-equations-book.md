@@ -241,7 +241,7 @@ this one):** the BV variant + student manual (`add-trench-bv-and-student-manual.
 web editions (`trench-differential-equations-html-epub.md`, done).
 
 > This task (phases 1–5) is itself big enough that it may warrant splitting into **step-tasks**
-> (umbrella + per-phase children) at execution — see `~/.claude/reference/task-doc-conventions.md`.
+> (umbrella + per-phase children) at execution — see `github.com/billsix/runClaudeInContainer:tasks/reference/task-doc-conventions.md`.
 > Left as one doc for now so the whole shape is reviewable; propose the split when picking it up if
 > phases 2–5 each grow commit boundaries.
 
