@@ -12,7 +12,8 @@ cd "$(dirname "$0")"
 # The merge-base where the maintainer's `latex` port branch diverged from
 # OpenStax's `main`, i.e. the pristine content the port was made against.
 # Resolved from the short pin in tasks/openstax-populate-books.md (2026-09-02).
-PIN_SHA=789b54099106b071d1d32bfcee454fed72eb4768
+# Resync 2026-10-19 (agent): bumped to upstream HEAD; prior pin in git history.
+PIN_SHA=463991614337632b0e02cbb6c76223cbb0d423d3
 
 # Canonical upstream; the pin is a commit on OpenStax's main history and is
 # fetchable there by SHA. The maintainer's Pi mirror

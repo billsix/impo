@@ -13,7 +13,8 @@ cd "$(dirname "$0")"
 # diverged from OpenStax's `main`, i.e. the pristine content the port was made
 # against. It is main/HEAD of the canonical repo, verified fetchable there via
 # `git ls-remote` (2026-09-02). OpenStax Anatomy & Physiology 2e content pin.
-PIN_SHA=716383a4c6c16037b14d75a156c65145e75e895e
+# Resync 2026-10-19 (agent): bumped to upstream HEAD; prior pin in git history.
+PIN_SHA=5ae32b3f4bc24ed003e91dc38bf47dba80751044
 
 # Canonical upstream (the pin is fetchable here — verified 2026-09-02). The
 # maintainer's Pi mirror
