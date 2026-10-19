@@ -59,10 +59,16 @@ Target = upstream **default-branch HEAD** (OpenStax repos have no release tags; 
    the original pin was chosen. (If the maintainer wants the pin tied to a `latex`-branch merge-base
    rather than bare HEAD — see Open question 1 — these should be re-resolved.)
 
-## Canary result
+## Canary result — PASSED (2026-10-19)
 
-See `tasks/adhoc/openstax-resync/` run log (session report has the outcome): prealgebra-bundle
-fetch + overlay + `make convert` at the new pin `38cae454`.
+prealgebra-bundle at the new pin `38cae454`: `./fetch.sh && ./apply.sh && make convert` ran in the
+sandbox (it rebuilt the book image first — the nested `: image` trap — then ran `convert.sh`). The
+CNXML→LaTeX converter ingested the current content cleanly and wrote all three masters —
+`elementary-algebra-2e.tex` (82 modules), `intermediate-algebra-2e.tex` (83), `prealgebra-2e.tex`
+(75) — with the `.converted` stamp. The "Unknown/fallback elements: inline:span/space/label" lines
+are the converter's normal fallback handling, not errors; no convert errors. So the bump does not
+break the converter for this book. The lualatex PDF and the other 11 books remain the maintainer's
+to build (Open question 2).
 
 ## Open questions
 
