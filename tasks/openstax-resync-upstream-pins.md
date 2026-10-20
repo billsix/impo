@@ -1,7 +1,8 @@
 # OpenStax resync — bump content pins to current upstream
 
-**Status:** in progress 2026-10-19 — the 12 behind books' `PIN_SHA`s bumped to upstream HEAD and
-committed; per-book build/visual verification is the maintainer's (one canary built in-sandbox).
+**Status:** done 2026-10-20 — 12 behind books' `PIN_SHA`s bumped to upstream HEAD and committed;
+HEAD confirmed as the pin target (resolved below); per-book build/visual verification is the
+maintainer's by their own decision and does **not** gate this task.
 **Priority:** 5
 **Difficulty:** 4 (mechanical bump; the risk is content drift the converter must still handle)
 **Created:** 2026-10-19 (William Emerison Six <billsix@gmail.com>, unattended batch: "impo, resync
@@ -56,8 +57,8 @@ Target = upstream **default-branch HEAD** (OpenStax repos have no release tags; 
    "merge-base where the maintainer's `latex` port branch diverged from main." After the bump the
    pin is upstream HEAD, not that merge-base; a dated resync marker line is inserted directly above
    each `PIN_SHA=` to state the current state, and the historical prose is kept as context for how
-   the original pin was chosen. (If the maintainer wants the pin tied to a `latex`-branch merge-base
-   rather than bare HEAD — see Open question 1 — these should be re-resolved.)
+   the original pin was chosen. (Resolved 2026-10-20: the maintainer confirmed bare upstream HEAD is
+   the intended target — see "Resolved / handed off" item 1 — so no re-resolution is needed.)
 
 ## Canary result — PASSED (2026-10-19)
 
@@ -70,15 +71,17 @@ are the converter's normal fallback handling, not errors; no convert errors. So 
 break the converter for this book. The lualatex PDF and the other 11 books remain the maintainer's
 to build (Open question 2).
 
-## Open questions
+## Resolved / handed off
 
-1. **Is bare upstream HEAD the right target**, or should each pin track a specific stable
-   commit / the maintainer's own `latex`-branch merge-base (as the old physics/`fetch.sh` prose
-   implies)? Recommend confirming; bumping to HEAD is the literal "resync from upstream" reading and
-   is what this task did, but OpenStax `main` is continuously edited, so HEAD can be mid-revision.
-2. **Per-book build + visual verification** — the maintainer builds each bumped book (`./fetch.sh &&
-   ./apply.sh && make dist`) and eyeballs the PDF/web edition for converter regressions on the new
-   content. The 11 un-imaged books especially.
+1. **Pin target = bare upstream HEAD — CONFIRMED.** The maintainer (William Emerison Six
+   <billsix@gmail.com>, 2026-10-20: "sure, head is fine") confirmed the literal "resync from
+   upstream" reading. No merge-base / stable-commit pinning; the 12 bumps stand as committed. The
+   historical `fetch.sh` prose about the old merge-base pin is left as context (decision 3), with
+   the dated resync marker above each `PIN_SHA=` stating the current HEAD-tracking state.
+2. **Per-book build + visual verification is the maintainer's and does NOT gate this task**
+   (maintainer, 2026-10-20: "I'll do that myself, don't gate the task on it"). They build each
+   bumped book (`./fetch.sh && ./apply.sh && make dist`) and eyeball the PDF/web edition for
+   converter regressions on the new content — the 11 un-imaged books especially.
 
 ## See also
 
