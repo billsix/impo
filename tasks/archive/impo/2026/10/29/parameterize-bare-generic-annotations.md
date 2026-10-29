@@ -1,6 +1,6 @@
 # Parameterize bare generic type annotations
 
-**Status:** in progress. **Priority:** 5  **Difficulty:** 1
+**Status:** done (2026-10-29). **Priority:** 5  **Difficulty:** 1
 
 ## BLUF
 
