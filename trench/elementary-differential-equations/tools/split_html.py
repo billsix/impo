@@ -36,6 +36,7 @@ import html as htmlmod
 import json
 import re
 from pathlib import Path
+from typing import Any
 
 # make4ht/tex4ht heading markup. Chapters split the book; sections stay ON the
 # chapter page as its subheadings (the right "On this page" bar reads them).
@@ -110,10 +111,10 @@ def split_pages(body: str) -> list[Page]:
     return pages
 
 
-def build_sitemap(pages: list[Page], book_title: str) -> dict:
+def build_sitemap(pages: list[Page], book_title: str) -> dict[str, Any]:
     """Flat chapter list (+ front) under the book root -- the left TOC has one entry
     per page; sections are on-page (right bar), so they are NOT sitemap nodes."""
-    root: dict = {
+    root: dict[str, Any] = {
         "section": {"id": "", "level": "0", "number": None,
                     "path": "index.html", "title": book_title},
         "subsections": [],
