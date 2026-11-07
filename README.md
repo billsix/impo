@@ -9,6 +9,20 @@ Each book lives in a self-contained folder under `openstax/`; a single shared to
 (`openstax/tooling/`) does the conversion. The upstream OpenStax checkout and all build products are
 gitignored — the toolchain, per-book scripts, committed exercise caches, and docs ARE the repo.
 
+## Build every book, or one (one call, like modelviewprojection's `make docs`)
+
+```sh
+make books                   # [HOST] every book folder: PDF + HTML + EPUB, collected into ./output/
+make anatomy-physiology      # [HOST] one book folder (names: make list-books)
+```
+
+- Output: `output/<book>/` (self-contained HTML site), `output/<book>.pdf`, `output/<book>.epub`;
+  per-folder logs in `output/logs/`. A failing book doesn't stop the others; the exit status reports it.
+- First run fetches each book's pinned content (network) and builds the TeX Live image (large, slow once).
+- **Release downloads:** pushing a version tag (`git tag v2026.11.0 && git push github v2026.11.0`) runs
+  `.github/workflows/release.yml`, which builds every book and attaches the PDFs + EPUBs to a GitHub
+  Release.
+
 ## Build a book
 
 ```sh

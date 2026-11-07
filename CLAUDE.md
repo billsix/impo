@@ -49,6 +49,11 @@ folder. Two families exist:
   slug (e.g. `osbooks-anatomy-physiology`); repo-wide tasks use `impo`.
 - **`tools/`** — repo-level dev scripts (not copied into any book checkout, unlike
   `openstax/tooling/tools/`):
+  - **`build-books.sh`** (behind the root `Makefile`: `make books`, `make <book>`, `make list-books`) —
+    the one-call build: per book folder, fetch (if no checkout) → `apply.sh` → `make dist` → collect into
+    the root `output/` (`<book>/` HTML with `media/` copied in, `<book>.pdf`, `<book>.epub`). Non-fatal per
+    folder, exit 1 if any failed. `.github/workflows/release.yml` runs `make <book>` per folder on a `v*`
+    tag push and attaches the PDFs/EPUBs to a GitHub Release.
   - `build-web-editions.sh` — a fan-out that re-applies the toolchain overlay and runs `make html &&
     make epub` across all 16 OpenStax books, logging PASS/FAIL per book (`bash tools/build-web-editions.sh
     [book-slug]`).

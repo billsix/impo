@@ -1,7 +1,8 @@
 # One `make` call per book (and for all books), release downloads on tag push, manual Pages publish
 
-**Status:** in progress (authorized batch, 2026-11-07) — `make publish-pages` deferred by the
-maintainer; everything else is in scope (William Emerison Six <billsix@gmail.com>, 2026-11-07)
+**Status:** implemented and locally verified 2026-11-07 (branch `per-book-make-and-release`); waiting
+on the maintainer's first tag push to exercise `release.yml` on GitHub. `make publish-pages` is
+deferred (William Emerison Six <billsix@gmail.com>, 2026-11-07).
 **Priority:** 4
 **Difficulty:** 5
 
@@ -11,10 +12,10 @@ Make impo build its books the way modelviewprojection does: **one command**. `ma
 that book's HTML, PDF, and EPUB, and `make books` builds all 17 book folders. Then publish in two
 parts. (1) **Pushing a version tag** (`v*`) runs a GitHub Actions job that builds every book and
 attaches the PDFs and EPUBs to a GitHub Release, like mvp's `release.yml`. (2) The HTML web editions
-go to **GitHub Pages by a manual `make publish-pages`** run on the maintainer's host. Everything
-cannot go on Pages, because the outputs total about 4 GB (mostly EPUBs) and a Pages site is capped
-at 1 GB. Done = both make targets work locally, the tag workflow produces a Release with every
-PDF/EPUB attached, and `make publish-pages` publishes the HTML (once open question 2 is answered).
+would go to **GitHub Pages by a manual `make publish-pages`**, which is deferred. Everything cannot go
+on Pages, because the outputs total about 4 GB (mostly EPUBs) and a Pages site is capped at 1 GB.
+Done = both make targets work locally (done) and the tag workflow produces a Release with every
+PDF/EPUB attached (needs a real tag push).
 
 ## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-07)
 
@@ -106,6 +107,33 @@ later would be one extra step, if the maintainer ever wants that.
    reveals (disk, podman, timing).
 5. `make publish-pages` once open question 2 is answered; then narrow
    `tasks/openstax-publish-books.md` to the cross-book links and un-park the IA-link task.
+
+## Progress (2026-11-07)
+
+- **Added:** root `Makefile` (`make books`, `make <book>` for each of the 17 folders derived from the
+  tree, `make list-books`, `make clean-output`, `help`); `tools/build-books.sh` (fetch if no checkout →
+  `apply.sh` → `make dist` → collect into `output/`, non-fatal per folder, exit 1 if any failed, logs in
+  `output/logs/`); `dist` in the Trench Makefile; root `.gitignore` (`/output/`);
+  `.github/workflows/release.yml` (`list` job reads `make -s list-books` into the matrix; one `book` job
+  per folder, `fail-fast: false`, frees ~30 GB of unused runner SDKs, runs `make <book>`, uploads
+  `output/*.pdf` + `*.epub`; `release` job merges the artifacts and attaches them with
+  `softprops/action-gh-release@v2`). README and `CLAUDE.md` document the one-call build.
+- `tools/build-web-editions.sh` was left as it is (an HTML+EPUB validation sweep over the OpenStax
+  books only); `build-books.sh` is the general builder.
+- **The "too small" HTML mystery:** `html.sh` replaces each site's `media/` (and `exercises/`) with a
+  symlink back into the checkout, to save ~100 MB per book. The collector copies with `cp -rL`, so each
+  `output/<book>/` is self-contained (verified: `media/` is a real directory).
+- **Verified locally (nested podman):** `make introduction-python-programming
+  elementary-differential-equations` → `PASS` (69 s) and `PASS` (113 s), giving
+  `output/introduction-python-programming/` (96 MB site) + `.pdf` (6.4 MB) + `.epub` (5.4 MB) and
+  `output/elementary-differential-equations/` (19 MB site, its own `index.html`) + `.pdf` (5.5 MB) +
+  `.epub` (9.5 MB). The first run also built the shared TeX Live image (~65 min, once). Nested gotcha:
+  the image build had to be run by hand with `podman build --network=host` (nested `RUN dnf` dies with
+  `pasta failed`); later `make image` steps cache-hit it.
+- **Not verified here:** the full 17-folder `make books` (hours; the 15 untested folders use the same
+  OpenStax path as the one that passed), and `release.yml` on GitHub (disk, podman on `ubuntu-latest`,
+  timing). **Maintainer step:** push a test tag (`git tag v0.0.1 && git push github v0.0.1`) and check
+  the Actions run and the Release; then this task can be archived.
 
 ## Deferred (not in this task's scope)
 
