@@ -134,6 +134,12 @@ later would be one extra step, if the maintainer ever wants that.
   OpenStax path as the one that passed), and `release.yml` on GitHub (disk, podman on `ubuntu-latest`,
   timing). **Maintainer step:** push a test tag (`git tag v0.0.1 && git push github v0.0.1`) and check
   the Actions run and the Release; then this task can be archived.
+- **Release on partial success (William Emerison Six <billsix@gmail.com>, 2026-11-07):** the `release`
+  job runs `if: !cancelled() && needs.list.result == 'success'`, so the Release carries every book that
+  built and a failed book is only a red matrix job (it no longer blocks the whole Release). If every book
+  fails, `download-artifact` finds nothing and the job fails rather than publishing an empty Release. The
+  per-book handoff artifacts use `retention-days: 1` (the Release holds the files; GitHub's default
+  would keep the handoff copies 90 days). Branch `release-partial-books`.
 
 ## Deferred (not in this task's scope)
 

@@ -62,9 +62,14 @@ jobs:
             output/*.pdf
             output/*.epub
           if-no-files-found: error
+          retention-days: 1   # only a handoff to the release job; the Release keeps the files
 
+  # Runs even when some books failed, so the Release carries every book that
+  # built; a failed book shows as a red matrix job in the run. Skipped only if
+  # the run was cancelled or the book list itself could not be produced.
   release:
-    needs: book
+    needs: [list, book]
+    if: ${{ !cancelled() && needs.list.result == 'success' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write         # create the Release and upload its assets
