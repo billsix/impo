@@ -1,0 +1,82 @@
+# Release workflow: on a version-tag push, build every book and attach each
+# book's PDF and EPUB to a GitHub Release.
+#
+# CI is a thin wrapper over make (the modelviewprojection pattern): the book list
+# comes from `make list-books`, and each book is built by `make <book>` — the same
+# command you run locally, which writes output/<book>.pdf and output/<book>.epub.
+# Only the GitHub-specific parts live here: the per-book matrix, passing files
+# between jobs, and creating the Release.
+#
+# One job per book folder, so each gets its own 6-hour job limit and its own disk
+# (the TeX Live image plus one bundle's output), and they run in parallel.
+# A Release asset must be < 2 GiB; the largest book file (biology-2e.epub) is
+# ~400 MB. HTML is not attached here (GitHub Pages publishing is a separate,
+# deferred task).
+#
+# Cut a release:  git tag v2026.11.0 && git push github v2026.11.0
+name: release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      books: ${{ steps.books.outputs.books }}
+    steps:
+      - uses: actions/checkout@v5
+      - id: books
+        run: echo "books=$(make -s list-books | jq -R . | jq -cs .)" >> "$GITHUB_OUTPUT"
+
+  book:
+    needs: list
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false        # one broken book must not cancel the others
+      matrix:
+        book: ${{ fromJSON(needs.list.outputs.books) }}
+    steps:
+      - uses: actions/checkout@v5
+
+      # The runner image ships ~30 GB of SDKs this build never uses; the Fedora +
+      # TeX Live image and a bundle's output need the room.
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+          df -h /
+
+      - name: Build ${{ matrix.book }}
+        run: make ${{ matrix.book }}
+
+      - name: Show the build log on failure
+        if: failure()
+        run: tail -100 output/logs/*.log
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: book-${{ matrix.book }}
+          path: |
+            output/*.pdf
+            output/*.epub
+          if-no-files-found: error
+
+  release:
+    needs: book
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write         # create the Release and upload its assets
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: book-*
+          path: dist
+          merge-multiple: true
+      - run: ls -la dist
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/*.pdf
+            dist/*.epub

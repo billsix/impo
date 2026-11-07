@@ -1,92 +1,144 @@
-# One `make` target per book + an all-books build, then a GitHub Pages publish path
+# One `make` call per book (and for all books), release downloads on tag push, manual Pages publish
 
-**Status:** proposed — needs go-ahead (William Emerison Six <billsix@gmail.com>, 2026-11-07)
+**Status:** implemented and locally verified 2026-11-07 (branch `per-book-make-and-release`); waiting
+on the maintainer's first tag push to exercise `release.yml` on GitHub. `make publish-pages` is
+deferred (William Emerison Six <billsix@gmail.com>, 2026-11-07).
 **Priority:** 4
-**Difficulty:** 4
+**Difficulty:** 5
 
 ## BLUF
 
-Give impo a **root `Makefile`** with one target per book (e.g. `make anatomy-physiology`) that
-builds that book's HTML, PDF, and EPUB in one command, the way modelviewprojection's `make docs`
-builds its book. Add `make all-books` (backed by a script, generalizing
-`tools/build-web-editions.sh` to all three formats and both families) to build every book. Then
-publish. **The size research below rules out the obvious "one GitHub Pages site with everything":**
-the built outputs total about **4 GB** (mostly EPUBs; biology alone is 789 MB), and a GitHub Pages
-site is capped at **1 GB**. The workable shape is **HTML on Pages, PDF/EPUB as GitHub Release
-assets**. Done = the per-book + all-books targets work, and the publish step is chosen and wired
-(this task supersedes the "where to publish" half of `tasks/openstax-publish-books.md`).
+Make impo build its books the way modelviewprojection does: **one command**. `make <book>` builds
+that book's HTML, PDF, and EPUB, and `make books` builds all 17 book folders. Then publish in two
+parts. (1) **Pushing a version tag** (`v*`) runs a GitHub Actions job that builds every book and
+attaches the PDFs and EPUBs to a GitHub Release, like mvp's `release.yml`. (2) The HTML web editions
+would go to **GitHub Pages by a manual `make publish-pages`**, which is deferred. Everything cannot go
+on Pages, because the outputs total about 4 GB (mostly EPUBs) and a Pages site is capped at 1 GB.
+Done = both make targets work locally (done) and the tag workflow produces a Release with every
+PDF/EPUB attached (needs a real tag push).
+
+## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-07)
+
+1. **Pages publishing is manual**: `make publish-pages`, run on the host (ghp-import), like
+   geometricalgebra's manual PyPI upload. No CI deploys the website.
+2. **`make publish-pages` is deferred** (and with it the question of where the website's files
+   live: a separate repo, or a `gh-pages` branch in impo). The mvp-style build target is still
+   required: `make books` builds every book's HTML/PDF/EPUB into one output tree, the way
+   modelviewprojection's `make docs` does.
+3. **PDFs/EPUBs become GitHub Release assets, built and attached by a CI job on tag push.** The
+   maintainer asked for help with the mechanism; the design is below.
+4. **The model is modelviewprojection:** one `make` call builds a book's three formats
+   (github.com/billsix/modelviewprojection: `make docs` → HTML+PDF+EPUB; `release.yml` on `v*`
+   tags runs `make release-artifacts` and attaches `dist/*` with `softprops/action-gh-release@v2`).
 
 ## Context
 
-- Read first: `CLAUDE.md` (families, `tools/`), `openstax/CLAUDE.md`, `trench/CLAUDE.md`,
-  `tasks/openstax-publish-books.md` (the existing publish decision, whose open questions this task
-  answers with data), and `tasks/openstax-ia-crossref-links.md` (parked until books have stable
-  URLs).
-- **Today:** every book folder has its own Makefile. OpenStax books have `pdf`, `html`, `epub`, and
-  `dist` (= all three). **Trench has `pdf`/`html`/`epub` but no `dist`.** Add one so every book
-  answers the same target. There is no root `Makefile`. `tools/build-web-editions.sh` loops over
-  the 16 OpenStax books for `html epub` only (non-fatal per book, logs to `$LOGDIR`).
-- Bundles produce several books each (the biology bundle produces `concepts-biology`, `biology-2e`,
-  and `biology-ap-courses`), so "a target per book" means **a target per book folder** (17: 16
-  OpenStax + 1 Trench). Each target builds every book in its bundle.
-- The modelviewprojection precedent (github.com/billsix/modelviewprojection): `make docs` builds
-  HTML+PDF+EPUB into `./output/`, and `release-book-assets` stages standalone PDF/EPUB/HTML-zip for
-  a GitHub Release. Its Pages decision is still open in that repo's
-  `tasks/release-book-github-pages-decision.md`, which also explains GitHub Pages in plain terms.
+- Read first: `CLAUDE.md`, `openstax/CLAUDE.md`, `trench/CLAUDE.md`,
+  `tasks/openstax-publish-books.md` (the older publish task; this task answers its open questions
+  and narrows it to the cross-book-link work), `tasks/openstax-ia-crossref-links.md` (parked until
+  stable URLs exist).
+- **Today:** each book folder has its own Makefile. OpenStax books have `pdf`/`html`/`epub`/`dist`.
+  **Trench has `pdf`/`html`/`epub` but no `dist`.** There is no root `Makefile`.
+  `tools/build-web-editions.sh` builds `html epub` for the 16 OpenStax books only (non-fatal per
+  book, logs to `$LOGDIR`).
+- One folder can produce several books (biology-bundle → `concepts-biology`, `biology-2e`,
+  `biology-ap-courses`), so the targets are **per book folder** (17: 16 OpenStax + 1 Trench).
+- **Sizes (2026-11-07, `du` of existing `checkout/output/`):** ~4 GB total across the OpenStax
+  folders, mostly EPUB (biology-2e.epub 392 MB). HTML dirs total ~253 MB, which looks too small to
+  include the figures. **Verify** whether the web edition references images outside
+  `output/<book>/`. If it does, the published site must copy them in.
 
-## Size measurements (2026-11-07, existing `checkout/output/` dirs, `du`)
+## Limits that shaped the design (researched 2026-11-07)
 
-- Total of the 16 OpenStax outputs: **~4 GB**. The largest are biology-bundle 789 MB,
-  chemistry-bundle 492 MB, and anatomy-physiology 414 MB.
-- Most of it is **EPUB** (biology-2e.epub 392 MB). The chunked **HTML dirs total only ~253 MB**
-  across all books (biology-2e HTML 6.3 MB).
-- **To verify:** the HTML dirs look too small to contain the figures. Check whether the web edition
-  references images outside `output/<book>/` (e.g. the checkout's `media/`). If so, the published
-  site must copy them in, and the real HTML size will be larger. **This number decides whether one
-  combined Pages site fits under 1 GB.**
+- **GitHub Pages:** published site ≤ 1 GB, deploy ≤ 10 min (docs.github.com, "GitHub Pages
+  limits"). This rules out putting the 4 GB of downloads on Pages.
+- **GitHub Releases:** each asset < 2 GiB, ≤ 1000 assets per release, **no limit on total release
+  size** (docs.github.com, "About releases"). The largest file, biology-2e.epub at 392 MB, fits
+  easily.
+- **GitHub Actions (hosted runners):** each *job* may run ≤ 6 hours; the free plan allows 20
+  concurrent jobs. So the tag workflow runs **one job per book folder** (a matrix): every book
+  gets its own 6-hour budget and its own disk, and they run in parallel. **Verify:** the runner's
+  free disk (the Fedora + TeX Live image plus one book's output must fit, and a "free disk space"
+  step may be needed), that `podman` is present on `ubuntu-latest` (the book Makefiles call
+  podman), and that impo is public. Private-repo Actions minutes are metered, and 17 TeX builds
+  per tag would use them quickly.
 
-## GitHub Pages facts (researched 2026-11-07)
+## Design
 
-- Pages = free static hosting at `https://billsix.github.io/<repo>/`. Limits (docs.github.com
-  "GitHub Pages limits"): **published site ≤ 1 GB**, source repo recommended ≤ 1 GB, deploy timeout
-  10 min, soft bandwidth 100 GB/month.
-- **Automated:** a GitHub Actions workflow builds and then runs `actions/upload-pages-artifact` +
-  `actions/deploy-pages` (artifact must be < 10 GB, recommended < 1 GB). Building 17 books with
-  TeX Live in CI is slow and heavy, so automation would more likely deploy pre-built HTML than
-  build in CI.
-- **Manual (the analogue of geometricalgebra's `make upload` to PyPI):** build locally, then push
-  the HTML to a `gh-pages` branch with **`ghp-import -n -o -p <dir>`** (`-n` writes `.nojekyll`, `-o`
-  keeps a single commit so the branch never accumulates history, `-p` pushes). Set the repo's Pages
-  source to "Deploy from branch: gh-pages". This can be a `make publish-pages` target, run by the
-  maintainer on the host, with no CI and no tokens beyond normal git push rights.
-- **PDF/EPUB downloads:** attach them to a GitHub Release (`gh release upload`). Release assets are
-  not part of the Pages site, so they don't count against its 1 GB. The site's landing page links to
-  them.
-- A **separate repo** for the site (e.g. `billsix/openstax-books`) keeps the large `gh-pages` branch
-  out of impo's own clone. Pages from impo itself would add every published HTML snapshot to impo's
-  object store (mitigated, not removed, by `-o`).
+**Local (the mvp-style one call):**
+- Root `Makefile`: a pattern rule so `make anatomy-physiology` (the folder slug without
+  `osbooks-`), `make elementary-differential-equations`, etc. each runs that folder's `make dist`.
+  Also `make books` (all folders, via the script), `make list-books`, and `help`. No 17
+  hand-written stanzas: derive the list from `openstax/osbooks-*/` + `trench/*/`.
+- Add `dist` to the Trench Makefile so every folder answers the same target.
+- `tools/build-books.sh [book…]` generalizes `build-web-editions.sh` to all three formats and both
+  families, keeping the non-fatal PASS/FAIL summary. Keep `build-web-editions.sh` as a two-line
+  shim (or update its references in `CLAUDE.md`).
+- `make release-assets BOOK=<slug>` copies that folder's PDFs + EPUBs into `dist/` with
+  unambiguous names (`<book>.pdf`, `<book>.epub`).
+
+**CI on tag push (`.github/workflows/release.yml`, a thin wrapper over make, like mvp):**
+1. Trigger: `push: tags: ['v*']`.
+2. Job `books` (matrix over the 17 folder slugs, `fail-fast: false`): checkout → `make <slug>` →
+   `make release-assets BOOK=<slug>` → `actions/upload-artifact` of `dist/`.
+3. Job `release` (`needs: books`, `permissions: contents: write`): `actions/download-artifact`
+   (merge all) → `softprops/action-gh-release@v2` with `files: dist/*`.
+4. Each matrix job builds the shared toolchain image itself. If that dominates the run time,
+   build it once in a first job and pass it to the others as a `podman save` artifact.
+5. The maintainer cuts a release by `git tag vX.Y.Z && git push github vX.Y.Z`. This is the only
+   step the workflow needs from him, and it only runs on GitHub (it cannot be tested locally until
+   the first tag push).
+
+**Pages (manual, host):** `make publish-pages` collects every book's HTML dir (plus figures, per
+the verify item) into one staging dir with an index page linking each book and its Release
+downloads, then runs `ghp-import -n -o -p` (`-n` writes `.nojekyll`; `-o` keeps a single commit on
+the branch so it does not grow with every publish; `-p` pushes). Where it pushes depends on open
+question 2. Because the tag job already builds the HTML, adding an automatic Pages deploy to it
+later would be one extra step, if the maintainer ever wants that.
 
 ## Plan
 
-1. Add `dist` to the Trench Makefile. Add a root `Makefile` with a target per book folder
-   (generated from the folder list via a pattern rule, not 17 hand-written stanzas), `all-books`,
-   and `help`.
-2. Generalize `tools/build-web-editions.sh` → `tools/build-books.sh [formats] [book…]` covering both
-   families and `pdf html epub`, keeping its non-fatal PASS/FAIL report. Keep the old name working
-   (a shim) or update its references.
-3. Measure the real self-contained HTML size (resolve the "To verify" item above).
-4. Add `make publish-pages` (manual ghp-import to the chosen repo) and `make publish-downloads`
-   (`gh release upload` of PDFs/EPUBs), per the answers below.
-5. Update `tasks/openstax-publish-books.md` (close or narrow it) and un-park the IA cross-link task
-   once URLs exist.
+1. Root `Makefile` + Trench `dist` + `tools/build-books.sh`; build one book end to end with
+   `make <slug>`, and record per-book build times here (they size the CI expectation).
+2. Resolve the HTML-figures verify item and measure the real site size.
+3. `make release-assets` + `.github/workflows/release.yml`; dry-run the make side locally
+   (`make <slug> release-assets`) for two books.
+4. Maintainer pushes a test tag (e.g. `v0.0.1`) and checks the Release. Fix whatever only GitHub
+   reveals (disk, podman, timing).
+5. `make publish-pages` once open question 2 is answered; then narrow
+   `tasks/openstax-publish-books.md` to the cross-book links and un-park the IA-link task.
 
-## Open questions
+## Progress (2026-11-07)
 
-1. Publish mechanism: (a) **manual `make publish-pages`** (ghp-import from the maintainer's host,
-   the PyPI-style flow) or (b) **automated GitHub Actions** deploy on push/tag? *Recommend (a): the
-   books need a TeX Live container and a lot of build time, and a manual push matches how
-   geometricalgebra publishes.*
-2. Site home: (a) **a separate repo** (e.g. `billsix/openstax-books`, one combined site with a path per
-   book) or (b) **impo's own `gh-pages`**? *Recommend (a), to keep impo's clone small.*
-3. PDF/EPUB: publish them as GitHub Release assets linked from the site? *Recommend yes. They are
-   about 4 GB and cannot go on Pages.*
+- **Added:** root `Makefile` (`make books`, `make <book>` for each of the 17 folders derived from the
+  tree, `make list-books`, `make clean-output`, `help`); `tools/build-books.sh` (fetch if no checkout →
+  `apply.sh` → `make dist` → collect into `output/`, non-fatal per folder, exit 1 if any failed, logs in
+  `output/logs/`); `dist` in the Trench Makefile; root `.gitignore` (`/output/`);
+  `.github/workflows/release.yml` (`list` job reads `make -s list-books` into the matrix; one `book` job
+  per folder, `fail-fast: false`, frees ~30 GB of unused runner SDKs, runs `make <book>`, uploads
+  `output/*.pdf` + `*.epub`; `release` job merges the artifacts and attaches them with
+  `softprops/action-gh-release@v2`). README and `CLAUDE.md` document the one-call build.
+- `tools/build-web-editions.sh` was left as it is (an HTML+EPUB validation sweep over the OpenStax
+  books only); `build-books.sh` is the general builder.
+- **The "too small" HTML mystery:** `html.sh` replaces each site's `media/` (and `exercises/`) with a
+  symlink back into the checkout, to save ~100 MB per book. The collector copies with `cp -rL`, so each
+  `output/<book>/` is self-contained (verified: `media/` is a real directory).
+- **Verified locally (nested podman):** `make introduction-python-programming
+  elementary-differential-equations` → `PASS` (69 s) and `PASS` (113 s), giving
+  `output/introduction-python-programming/` (96 MB site) + `.pdf` (6.4 MB) + `.epub` (5.4 MB) and
+  `output/elementary-differential-equations/` (19 MB site, its own `index.html`) + `.pdf` (5.5 MB) +
+  `.epub` (9.5 MB). The first run also built the shared TeX Live image (~65 min, once). Nested gotcha:
+  the image build had to be run by hand with `podman build --network=host` (nested `RUN dnf` dies with
+  `pasta failed`); later `make image` steps cache-hit it.
+- **Not verified here:** the full 17-folder `make books` (hours; the 15 untested folders use the same
+  OpenStax path as the one that passed), and `release.yml` on GitHub (disk, podman on `ubuntu-latest`,
+  timing). **Maintainer step:** push a test tag (`git tag v0.0.1 && git push github v0.0.1`) and check
+  the Actions run and the Release; then this task can be archived.
+
+## Deferred (not in this task's scope)
+
+- **`make publish-pages`** (manual ghp-import to GitHub Pages). When it is picked up, the first
+  question is where the website's files live: (a) a new repo used only for the website (e.g.
+  `billsix/openstax-books`, served at `billsix.github.io/openstax-books/`), or (b) a `gh-pages`
+  branch inside impo (served at `billsix.github.io/impo/`, but every clone of impo then also
+  downloads the website). The recommendation was (a), to keep impo small.
