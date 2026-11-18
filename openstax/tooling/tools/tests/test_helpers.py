@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import convert as c
 import preprocess as p
-from lxml import etree  # ty: ignore[unresolved-import]
+from lxml import etree  # ty: ignore[import-not-found]
 
 
 # -- depth-0 scanning: only top-level relations/separators count ------------

@@ -30,7 +30,7 @@ from collections.abc import Callable, Iterable
 from html.parser import HTMLParser
 from typing import Any, TypeAlias, cast
 
-from lxml import etree  # ty: ignore[unresolved-import]  # ty's lxml stub lacks etree
+from lxml import etree  # ty: ignore[import-not-found]  # ty's lxml stub lacks etree
 
 _Element: TypeAlias = etree._Element  # MathML/CNXML node type, for annotations
 _ElementTree: TypeAlias = etree._ElementTree  # parsed-document type, for annotations

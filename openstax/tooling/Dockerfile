@@ -1,13 +1,13 @@
 # Dockerfile -- SHARED build environment for the imps OpenStax LaTeX-port family.
 # Book-agnostic: a per-book Makefile builds this image (context = ../tooling) and
 # bind-mounts the fetched-and-overlaid book checkout at the fixed path /book.
-# Fedora 44 + TeX Live (pdflatex/latexmk) with the font and latex collections
+# Fedora 45 + TeX Live (pdflatex/latexmk) with the font and latex collections
 # the house design needs, plus Python (lxml) for the CNXML->LaTeX converter
 # (tools/cnxml2tex) and pandoc for the HTML/EPUB web editions.
 #
 # Lean by design: no plotting notebooks, so it ships no ePiX / Jupyter / meson.
 
-FROM registry.fedoraproject.org/fedora:44
+FROM registry.fedoraproject.org/fedora:45
 
 # Whether to install TeX Live + the book-output deps (SVG->PDF via rsvg, the
 # Roboto Slab body font, EPUB zip/tidy). Default 1: the book builds

@@ -42,4 +42,7 @@ ignore = []
 extra-paths = ["tools/cnxml2tex", "tools/pandoc"]
 
 [tool.pytest.ini_options]
-testpaths = ["tools/tests"]
+# Collect the unit tests under tools/tests AND every module's doctests. Each converter
+# module is __main__-guarded, so importing it at collection runs nothing.
+testpaths = ["tools"]
+addopts = "--doctest-modules --import-mode=importlib"

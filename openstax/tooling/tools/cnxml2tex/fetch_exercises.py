@@ -32,7 +32,7 @@ import urllib.parse
 import urllib.request
 from typing import Any, cast
 
-from lxml import etree  # ty: ignore[unresolved-import]
+from lxml import etree  # ty: ignore[import-not-found]
 
 ROOT: str = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 MODULES: str = os.path.join(ROOT, "modules")
