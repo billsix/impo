@@ -8,7 +8,7 @@ inline strings, so no modules/ tree is needed (safe as a build gate).
 from __future__ import annotations
 
 import convert as c
-from lxml import etree  # ty: ignore[unresolved-import]
+from lxml import etree  # ty: ignore[import-not-found]
 
 _MML: str = "http://www.w3.org/1998/Math/MathML"
 
