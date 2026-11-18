@@ -13,7 +13,7 @@
 #   2. annotation checker  -- every local AND global carries an explicit type
 #                             (ty/ruff don't enforce this; see the script)
 #   3. ty check            -- static types
-#   4. pytest tools/tests  -- converter unit tests
+#   4. pytest              -- converter unit tests + tools/ doctests (pyproject.toml)
 # Bundle-agnostic: relative paths from the repo root (the image WORKDIR, over
 # which the Makefile bind-mounts the bundle), so this file is IDENTICAL across
 # every osbooks-* bundle -- no hardcoded bundle path.
@@ -28,5 +28,5 @@ status=0
 ruff check tools/ || status=1
 python3 tools/check_local_annotations.py --include-module tools || status=1
 ty check tools/ || status=1
-python3 -m pytest tools/tests -q || status=1
+python3 -m pytest -q || status=1
 exit "$status"

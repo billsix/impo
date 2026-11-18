@@ -95,8 +95,8 @@ fetch-exercises: image ## Download os-embed exercises (network; anatomy has none
 format: image ## (container) ruff --fix + ruff format + ty check over tools/*.py
 	$(RUN) /usr/local/bin/format.sh
 
-test: image ## (container) run the converter unit tests (pytest tools/tests)
-	$(RUN) -c 'cd /book && python3 -m pytest tools/tests -q'
+test: image ## (container) run the converter unit tests + tools/ doctests (pytest)
+	$(RUN) -c 'cd /book && python3 -m pytest -q'
 
 clean: ## Remove build artifacts (checkout/output and the convert stamp)
 	rm -rf $(CHECKOUT)/output/* $(CHECKOUT)/latex/.converted

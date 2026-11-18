@@ -1,25 +1,24 @@
-# Collect the converter doctests in `make test`
+# Collect the converter doctests in `make test` (done)
 
-**Status:** open (asked for 2026-11-18 by William Emerison Six <billsix@gmail.com>)
-**Priority:** 4
-**Difficulty:** 2
-**Started:** 2026-11-18 (William Emerison Six <billsix@gmail.com>)
+**Done:** 2026-11-18 (William Emerison Six <billsix@gmail.com>)
 
-## BLUF
+Every book's `make test` ran `python3 -m pytest tools/tests -q`, which collected no doctests. The
+house rule is that the test gate runs them (the `doctests-by-default.md` reference doc in
+github.com/billsix/runClaudeInContainer, "## Python").
 
-Every book's `make test` runs `python3 -m pytest tools/tests -q`, which collects no doctests.
-The house rule is that the test gate runs them (the `doctests-by-default.md` reference doc in
-github.com/billsix/runClaudeInContainer, "## Python"). Done = pytest collects `--doctest-modules`
-over `openstax/tooling/tools/` from every book's `make test` and from `check-tools.sh` (the image
-build gate), and the gate is green.
+What changed:
+- `openstax/tooling/pyproject.toml` `[tool.pytest.ini_options]` sets `testpaths = ["tools"]` and
+  `addopts = "--doctest-modules --import-mode=importlib"`. Each `apply.sh` copies that file into the
+  checkout, so every book picks it up.
+- The 16 `openstax/osbooks-*/Makefile` `test` recipes and `openstax/tooling/entrypoint/check-tools.sh`
+  (the image-build gate) call bare `python3 -m pytest -q`, since a path argument would override
+  `testpaths`.
 
-## Plan
+All five converter modules were already `__main__`-guarded, so collecting them imports cleanly. No
+`conftest.py` move was needed: the modules' own imports resolve without the `tools/tests`
+`sys.path` setup.
 
-1. `openstax/tooling/pyproject.toml` `[tool.pytest.ini_options]`: `testpaths = ["tools"]`,
-   `addopts = "--doctest-modules --import-mode=importlib"`. All five converter modules are
-   `__main__`-guarded (checked 2026-11-18), so importing them at collection is safe.
-2. The 16 `openstax/osbooks-*/Makefile` `test` recipes and `entrypoint/check-tools.sh`: call bare
-   `python3 -m pytest -q`, since a path argument overrides `testpaths`.
-3. If a converter module needs the `cnxml2tex`/`pandoc` dirs on `sys.path` to import, move the
-   `tools/tests/conftest.py` path setup up to `tools/conftest.py` so it covers the whole collection.
-4. Verify: `make image` (runs `check-tools.sh`) and one book's `apply.sh` + `make test`.
+Verified nested on 2026-11-18 with `osbooks-introduction-python-programming`: `make image` (its
+`check-tools.sh` step: 33 passed), then `./apply.sh` and `make test` (33 passed). The 31 unit tests
+are joined by the two doctests in the vendored `tools/check_local_annotations.py` (`display_path`,
+`iter_py`). The converter modules carry no doctests yet; any added to them now run in `make test`.
