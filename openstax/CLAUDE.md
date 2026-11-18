@@ -116,7 +116,7 @@ Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothi
   `check-tools.sh` in it; `make shell`/`shell-exec` open the toolchain image. CI wraps `make type-check`.
   The `Dockerfile`'s `WITH_TEXLIVE` build-arg (default 1) gates the TeX Live/font/rsvg layer so the gate can
   build without it. Modeled on github.com/billsix/modelviewprojection.
-- `Dockerfile` — Fedora 44 + TeX Live + `python3-lxml` + pandoc + `rsvg-convert` (+ `zip`/`tidy` in a
+- `Dockerfile` — Fedora 45 + TeX Live + `python3-lxml` + pandoc + `rsvg-convert` (+ `zip`/`tidy` in a
   separate layer, used only by the sibling `trench/` family's make4ht/tex4ebook web editions — inert
   for the OpenStax books).
 - `pyproject.toml`, `templates/exercises-COPYRIGHT`.

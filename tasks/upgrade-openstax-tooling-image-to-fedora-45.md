@@ -1,33 +1,31 @@
-# Upgrade the OpenStax tooling image from Fedora 44 to Fedora 45
+# Upgrade the OpenStax tooling image from Fedora 44 to Fedora 45 (done)
 
-**Status:** proposed — needs go-ahead
-**Priority:** 5
-**Difficulty:** 3
-**Started:** 2026-11-18 (William Emerison Six <billsix@gmail.com>)
+**Done:** 2026-11-18 (William Emerison Six <billsix@gmail.com>)
 
-## BLUF
+`openstax/tooling/Dockerfile` (the shared image every `openstax/osbooks-*` port builds) moved from
+`FROM registry.fedoraproject.org/fedora:44` to `fedora:45`. Its header comment and
+`openstax/CLAUDE.md` now say Fedora 45. No book Makefile names a Fedora version, so this one change
+covers every book.
 
-`openstax/tooling/Dockerfile` (the shared build image for every `openstax/osbooks-*` port) is
-`FROM registry.fedoraproject.org/fedora:44`; the container template is on Fedora 45. Move it to
-45. Done = `make image` builds on 45 and at least one book's `make dist` (PDF, HTML and EPUB)
-builds and looks the same as before.
+**A breakage found on the way, which predated the upgrade:** the image no longer built on Fedora 44
+either. ty comes from dnf, and a Fedora 44 update (ty 0.0.99) renamed the rule
+`unresolved-import` to `import-not-found`. The four `# ty: ignore[unresolved-import]` comments
+(`tools/cnxml2tex/convert.py`, `tools/cnxml2tex/fetch_exercises.py`, `tools/tests/test_helpers.py`,
+`tools/tests/test_mathml.py`) then raised `renamed-rule-in-ignore-comment`, and the
+`check-tools.sh` step in the image build failed. They were renamed in their own commit, before the
+upgrade. ty is a dnf package here, so a future rename can break the build the same way.
 
-## Context
+Verified nested on 2026-11-18 with `osbooks-introduction-python-programming` (the smallest
+checkout), building first on Fedora 44 (after the ty fix) and then on 45:
 
-- References to update: `openstax/tooling/Dockerfile` (the `FROM`, and the header comment
-  "Fedora 44 + TeX Live …") and `openstax/CLAUDE.md` ("`Dockerfile` — Fedora 44 + TeX Live …").
-- Risk is mostly in TeX Live and the fonts: a Fedora release can rename or split `texlive-*`
-  packages, and a newer TeX Live can change layout. Compare one book's PDF page count and spot-check a
-  few pages before and after. Also check `python3-lxml`, `pandoc` and `rsvg-convert`
-  resolve on 45. (runClaudeInContainer found `shfmt` and `procs` dropped from Fedora 45, which
-  is the kind of break to watch for.)
-- Every `openstax/osbooks-*/Makefile` builds this one image (context `../tooling`), so a single
-  change covers all books. None of them names a Fedora version itself (checked 2026-11-18).
+| | Fedora 44 | Fedora 45 |
+| --- | --- | --- |
+| `make image` / `make test` / `make dist` | pass | pass |
+| ty, TeX Live | 0.0.99, 20260301-111 | 0.0.99, 20260301-113 |
+| PDF | 268 pages, 6,685,662 bytes | 268 pages, 6,685,662 bytes |
 
-## Plan
-
-1. Before: build one book's `make dist` on the current image and record the PDF page count.
-2. Change the `FROM` to `fedora:45`; `make image`; fix any package that no longer resolves.
-3. After: rebuild the same book, compare, and build the lean `WITH_TEXLIVE=0` image too (the
-   Dockerfile's "Whether to install TeX Live" flag).
-4. Update the two doc mentions.
+The PDF text (`pdftotext`) and the multipage HTML were identical. The EPUB differed only in its
+per-build `dc:identifier` UUID and timestamps. Both runs used the checkout's existing converted
+LaTeX and its existing `tools/` copy (from an earlier `apply.sh`), so the comparison isolates the
+base image. The lean `WITH_TEXLIVE=0` image was not built separately; its packages are a subset of
+the full image's base layer, which resolved.
