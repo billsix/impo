@@ -53,8 +53,8 @@ different mechanism: `tasks/reference/tooling/cross-references.md`.
 - **Explicit references in the CNXML (scan of all 16 folders, 2026-11-21):** 161 `(IA x.y.z)` tags,
   all in `osbooks-college-algebra-bundle`: 81 distinct (module, tag) pairs in 47 modules, 67 distinct
   tags, every one resolving to an indexed IA section; 17 "Calculus Volume N" mentions, all in each calculus volume's own preface (self-
-  references, not linked); no other book named another. The discovery command was
-  `tasks/adhoc/openstax-cross-book-references/discover.sh`.
+  references, not linked); no other book named another. The scan was a `grep -rEo` over every checkout's `modules/*/index.cnxml` for these patterns
+  (one-shot script, removed with the task's archive).
 - **The draft map (303 entries, 294 modules)** covers the math ladder: Elementary Algebra ←
   Prealgebra, Intermediate ← Elementary, College Algebra ← Intermediate, Calculus 1 ← College
   Algebra and Precalculus (trigonometry, limits), Calculus 2 ← 1, Calculus 3 ← 1–2. It was drafted

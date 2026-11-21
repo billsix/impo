@@ -1,0 +1,836 @@
+{
+ "subject": "prealgebra",
+ "title": "Prealgebra Literacy Test",
+ "minutes": 45,
+ "time_limits": {
+  "1": 60,
+  "2": 90,
+  "3": 150
+ },
+ "strands": [
+  {
+   "id": "whole",
+   "name": "Whole numbers and order of operations",
+   "review": [
+    "PA 1.2",
+    "PA 1.4",
+    "PA 1.5",
+    "PA 2.2"
+   ]
+  },
+  {
+   "id": "integers",
+   "name": "Integers",
+   "review": [
+    "PA 3.2",
+    "PA 3.3",
+    "PA 3.4"
+   ]
+  },
+  {
+   "id": "fractions",
+   "name": "Fractions and mixed numbers",
+   "review": [
+    "PA 4.2",
+    "PA 4.3",
+    "PA 4.5",
+    "PA 4.6"
+   ]
+  },
+  {
+   "id": "decimals",
+   "name": "Decimals, percents, ratios and proportions",
+   "review": [
+    "PA 5.2",
+    "PA 5.6",
+    "PA 6.2",
+    "PA 6.5"
+   ]
+  },
+  {
+   "id": "equations",
+   "name": "Expressions and equations",
+   "review": [
+    "PA 2.2",
+    "PA 7.3",
+    "PA 8.3",
+    "PA 8.4"
+   ]
+  },
+  {
+   "id": "geometry",
+   "name": "Geometry, measurement and square roots",
+   "review": [
+    "PA 5.7",
+    "PA 9.3",
+    "PA 9.4",
+    "PA 9.5"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "pa-whole-1",
+   "part": "A",
+   "strand": "whole",
+   "difficulty": 1,
+   "stem_tex": "Evaluate $18 - 2 \\cdot (3 + 4)$.",
+   "stem_html": "<p>Evaluate <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>18</mn><mo>−</mo><mn>2</mn><mo>⋅</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo>+</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">18 - 2 \\cdot (3 + 4)</annotation></semantics></math>.</p>",
+   "solution_tex": "Parentheses first: $3 + 4 = 7$. Then multiply: $2 \\cdot 7 = 14$. Then subtract: $18 - 14 = 4$.",
+   "solution_html": "<p>Parentheses first: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>7</mn></mrow><annotation encoding=\"application/x-tex\">3 + 4 = 7</annotation></semantics></math>. Then multiply: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mn>7</mn><mo>=</mo><mn>14</mn></mrow><annotation encoding=\"application/x-tex\">2 \\cdot 7 = 14</annotation></semantics></math>. Then subtract: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>18</mn><mo>−</mo><mn>14</mn><mo>=</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">18 - 14 = 4</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "32",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>32</mn><annotation encoding=\"application/x-tex\">32</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "-10",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>10</mn></mrow><annotation encoding=\"application/x-tex\">-10</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "112",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>112</mn><annotation encoding=\"application/x-tex\">112</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "4",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn><annotation encoding=\"application/x-tex\">4</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "pa-whole-2",
+   "part": "A",
+   "strand": "whole",
+   "difficulty": 1,
+   "stem_tex": "Evaluate $5^2 - 3 \\cdot 4$.",
+   "stem_html": "<p>Evaluate <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>5</mn><mn>2</mn></msup><mo>−</mo><mn>3</mn><mo>⋅</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">5^2 - 3 \\cdot 4</annotation></semantics></math>.</p>",
+   "solution_tex": "Exponent first: $5^2 = 25$. Multiply: $3 \\cdot 4 = 12$. Subtract: $25 - 12 = 13$.",
+   "solution_html": "<p>Exponent first: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>5</mn><mn>2</mn></msup><mo>=</mo><mn>25</mn></mrow><annotation encoding=\"application/x-tex\">5^2 = 25</annotation></semantics></math>. Multiply: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>12</mn></mrow><annotation encoding=\"application/x-tex\">3 \\cdot 4 = 12</annotation></semantics></math>. Subtract: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>25</mn><mo>−</mo><mn>12</mn><mo>=</mo><mn>13</mn></mrow><annotation encoding=\"application/x-tex\">25 - 12 = 13</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "-2",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">-2</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "88",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>88</mn><annotation encoding=\"application/x-tex\">88</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "28",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>28</mn><annotation encoding=\"application/x-tex\">28</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "13",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>13</mn><annotation encoding=\"application/x-tex\">13</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "pa-whole-3",
+   "part": "A",
+   "strand": "whole",
+   "difficulty": 2,
+   "stem_tex": "A school orders 14 boxes of pencils with 36 pencils in each box. How many pencils is that?",
+   "stem_html": "<p>A school orders 14 boxes of pencils with 36 pencils in each box. How many pencils is that?</p>",
+   "solution_tex": "Multiply: $14 \\cdot 36 = 14 \\cdot 30 + 14 \\cdot 6 = 420 + 84 = 504$ pencils.",
+   "solution_html": "<p>Multiply: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>14</mn><mo>⋅</mo><mn>36</mn><mo>=</mo><mn>14</mn><mo>⋅</mo><mn>30</mn><mo>+</mo><mn>14</mn><mo>⋅</mo><mn>6</mn><mo>=</mo><mn>420</mn><mo>+</mo><mn>84</mn><mo>=</mo><mn>504</mn></mrow><annotation encoding=\"application/x-tex\">14 \\cdot 36 = 14 \\cdot 30 + 14 \\cdot 6 = 420 + 84 = 504</annotation></semantics></math> pencils.</p>",
+   "choices": [
+    {
+     "tex": "50",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn><annotation encoding=\"application/x-tex\">50</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "464",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>464</mn><annotation encoding=\"application/x-tex\">464</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "540",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>540</mn><annotation encoding=\"application/x-tex\">540</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "504",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>504</mn><annotation encoding=\"application/x-tex\">504</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "pa-whole-4",
+   "part": "A",
+   "strand": "whole",
+   "difficulty": 3,
+   "stem_tex": "Evaluate $48 \\div 4 \\cdot 3 - (10 - 6)^2$.",
+   "stem_html": "<p>Evaluate <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>48</mn><mo>÷</mo><mn>4</mn><mo>⋅</mo><mn>3</mn><mo>−</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>10</mn><mo>−</mo><mn>6</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">48 \\div 4 \\cdot 3 - (10 - 6)^2</annotation></semantics></math>.</p>",
+   "solution_tex": "Parentheses: $10 - 6 = 4$, and $4^2 = 16$. Divide and multiply left to right: $48 \\div 4 = 12$, then $12 \\cdot 3 = 36$. Subtract: $36 - 16 = 20$.",
+   "solution_html": "<p>Parentheses: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mo>−</mo><mn>6</mn><mo>=</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">10 - 6 = 4</annotation></semantics></math>, and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>4</mn><mn>2</mn></msup><mo>=</mo><mn>16</mn></mrow><annotation encoding=\"application/x-tex\">4^2 = 16</annotation></semantics></math>. Divide and multiply left to right: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>48</mn><mo>÷</mo><mn>4</mn><mo>=</mo><mn>12</mn></mrow><annotation encoding=\"application/x-tex\">48 \\div 4 = 12</annotation></semantics></math>, then <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>12</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>36</mn></mrow><annotation encoding=\"application/x-tex\">12 \\cdot 3 = 36</annotation></semantics></math>. Subtract: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>36</mn><mo>−</mo><mn>16</mn><mo>=</mo><mn>20</mn></mrow><annotation encoding=\"application/x-tex\">36 - 16 = 20</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "20",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn><annotation encoding=\"application/x-tex\">20</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "-12",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>12</mn></mrow><annotation encoding=\"application/x-tex\">-12</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "4",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn><annotation encoding=\"application/x-tex\">4</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "0",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn><annotation encoding=\"application/x-tex\">0</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "pa-int-1",
+   "part": "A",
+   "strand": "integers",
+   "difficulty": 1,
+   "stem_tex": "Find $-7 + 12$.",
+   "stem_html": "<p>Find <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>7</mn><mo>+</mo><mn>12</mn></mrow><annotation encoding=\"application/x-tex\">-7 + 12</annotation></semantics></math>.</p>",
+   "solution_tex": "The signs differ, so subtract the absolute values, $12 - 7 = 5$, and keep the sign of the larger one, $+12$: the sum is $5$.",
+   "solution_html": "<p>The signs differ, so subtract the absolute values, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>12</mn><mo>−</mo><mn>7</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">12 - 7 = 5</annotation></semantics></math>, and keep the sign of the larger one, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>+</mi><mn>12</mn></mrow><annotation encoding=\"application/x-tex\">+12</annotation></semantics></math>: the sum is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn><annotation encoding=\"application/x-tex\">5</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "-5",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">-5</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "5",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn><annotation encoding=\"application/x-tex\">5</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "-19",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>19</mn></mrow><annotation encoding=\"application/x-tex\">-19</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "19",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>19</mn><annotation encoding=\"application/x-tex\">19</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "pa-int-2",
+   "part": "A",
+   "strand": "integers",
+   "difficulty": 1,
+   "stem_tex": "Find $-4 - (-9)$.",
+   "stem_html": "<p>Find <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>4</mn><mo>−</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>9</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">-4 - (-9)</annotation></semantics></math>.</p>",
+   "solution_tex": "Subtracting a negative is adding its opposite: $-4 - (-9) = -4 + 9 = 5$.",
+   "solution_html": "<p>Subtracting a negative is adding its opposite: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>4</mn><mo>−</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>9</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mi>−</mi><mn>4</mn><mo>+</mo><mn>9</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">-4 - (-9) = -4 + 9 = 5</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "5",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn><annotation encoding=\"application/x-tex\">5</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "-13",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>13</mn></mrow><annotation encoding=\"application/x-tex\">-13</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "13",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>13</mn><annotation encoding=\"application/x-tex\">13</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "-5",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">-5</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "pa-int-3",
+   "part": "A",
+   "strand": "integers",
+   "difficulty": 2,
+   "stem_tex": "Find $(-6)(-3) + (-20) \\div 5$.",
+   "stem_html": "<p>Find <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>+</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>20</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>÷</mo><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">(-6)(-3) + (-20) \\div 5</annotation></semantics></math>.</p>",
+   "solution_tex": "Multiply and divide first: $(-6)(-3) = 18$ (two negatives give a positive) and $-20 \\div 5 = -4$. Then $18 + (-4) = 14$.",
+   "solution_html": "<p>Multiply and divide first: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>18</mn></mrow><annotation encoding=\"application/x-tex\">(-6)(-3) = 18</annotation></semantics></math> (two negatives give a positive) and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>20</mn><mo>÷</mo><mn>5</mn><mo>=</mo><mi>−</mi><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">-20 \\div 5 = -4</annotation></semantics></math>. Then <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>18</mn><mo>+</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>14</mn></mrow><annotation encoding=\"application/x-tex\">18 + (-4) = 14</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "22",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>22</mn><annotation encoding=\"application/x-tex\">22</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "14",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn><annotation encoding=\"application/x-tex\">14</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "-22",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>22</mn></mrow><annotation encoding=\"application/x-tex\">-22</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "-14",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>14</mn></mrow><annotation encoding=\"application/x-tex\">-14</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "pa-int-4",
+   "part": "A",
+   "strand": "integers",
+   "difficulty": 3,
+   "stem_tex": "At 6 a.m. the temperature was $-8$ degrees. By noon it had risen 15 degrees, and by midnight it had fallen 11 degrees from the noon temperature. What was the temperature at midnight?",
+   "stem_html": "<p>At 6 a.m. the temperature was <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>8</mn></mrow><annotation encoding=\"application/x-tex\">-8</annotation></semantics></math> degrees. By noon it had risen 15 degrees, and by midnight it had fallen 11 degrees from the noon temperature. What was the temperature at midnight?</p>",
+   "solution_tex": "Noon: $-8 + 15 = 7$ degrees. Midnight: $7 - 11 = -4$ degrees.",
+   "solution_html": "<p>Noon: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>8</mn><mo>+</mo><mn>15</mn><mo>=</mo><mn>7</mn></mrow><annotation encoding=\"application/x-tex\">-8 + 15 = 7</annotation></semantics></math> degrees. Midnight: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mo>−</mo><mn>11</mn><mo>=</mo><mi>−</mi><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">7 - 11 = -4</annotation></semantics></math> degrees.</p>",
+   "choices": [
+    {
+     "tex": "-34",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>34</mn></mrow><annotation encoding=\"application/x-tex\">-34</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "18",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>18</mn><annotation encoding=\"application/x-tex\">18</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "4",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn><annotation encoding=\"application/x-tex\">4</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "-4",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">-4</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "pa-frac-1",
+   "part": "A",
+   "strand": "fractions",
+   "difficulty": 1,
+   "stem_tex": "Simplify $\\frac{18}{24}$.",
+   "stem_html": "<p>Simplify <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>18</mn><mn>24</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{18}{24}</annotation></semantics></math>.</p>",
+   "solution_tex": "The greatest common factor of 18 and 24 is 6: $\\frac{18}{24} = \\frac{18 \\div 6}{24 \\div 6} = \\frac{3}{4}$.",
+   "solution_html": "<p>The greatest common factor of 18 and 24 is 6: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>18</mn><mn>24</mn></mfrac><mo>=</mo><mfrac><mrow><mn>18</mn><mo>÷</mo><mn>6</mn></mrow><mrow><mn>24</mn><mo>÷</mo><mn>6</mn></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{18}{24} = \\frac{18 \\div 6}{24 \\div 6} = \\frac{3}{4}</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\frac{2}{3}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>2</mn><mn>3</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{2}{3}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{6}{7}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>6</mn><mn>7</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{6}{7}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{3}{4}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>3</mn><mn>4</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{3}{4}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{9}{16}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>9</mn><mn>16</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{9}{16}</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "pa-frac-2",
+   "part": "A",
+   "strand": "fractions",
+   "difficulty": 2,
+   "stem_tex": "Add $\\frac{3}{4} + \\frac{1}{6}$.",
+   "stem_html": "<p>Add <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{3}{4} + \\frac{1}{6}</annotation></semantics></math>.</p>",
+   "solution_tex": "The least common denominator is 12: $\\frac{3}{4} = \\frac{9}{12}$ and $\\frac{1}{6} = \\frac{2}{12}$, so the sum is $\\frac{9 + 2}{12} = \\frac{11}{12}$.",
+   "solution_html": "<p>The least common denominator is 12: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>9</mn><mn>12</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{3}{4} = \\frac{9}{12}</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>12</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{6} = \\frac{2}{12}</annotation></semantics></math>, so the sum is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mrow><mn>9</mn><mo>+</mo><mn>2</mn></mrow><mn>12</mn></mfrac><mo>=</mo><mfrac><mn>11</mn><mn>12</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{9 + 2}{12} = \\frac{11}{12}</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\frac{2}{5}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>2</mn><mn>5</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{2}{5}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{1}{8}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>1</mn><mn>8</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{1}{8}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{11}{12}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>11</mn><mn>12</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{11}{12}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{2}{5}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>2</mn><mn>5</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{2}{5}</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "pa-frac-3",
+   "part": "A",
+   "strand": "fractions",
+   "difficulty": 2,
+   "stem_tex": "Divide $\\frac{5}{8} \\div \\frac{15}{4}$.",
+   "stem_html": "<p>Divide <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>5</mn><mn>8</mn></mfrac><mo>÷</mo><mfrac><mn>15</mn><mn>4</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{5}{8} \\div \\frac{15}{4}</annotation></semantics></math>.</p>",
+   "solution_tex": "Multiply by the reciprocal: $\\frac{5}{8} \\cdot \\frac{4}{15} = \\frac{20}{120} = \\frac{1}{6}$.",
+   "solution_html": "<p>Multiply by the reciprocal: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>5</mn><mn>8</mn></mfrac><mo>⋅</mo><mfrac><mn>4</mn><mn>15</mn></mfrac><mo>=</mo><mfrac><mn>20</mn><mn>120</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{5}{8} \\cdot \\frac{4}{15} = \\frac{20}{120} = \\frac{1}{6}</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\frac{3}{2}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>3</mn><mn>2</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{3}{2}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{75}{32}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>75</mn><mn>32</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{75}{32}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{1}{3}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>1</mn><mn>3</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{1}{3}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{1}{6}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>1</mn><mn>6</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{1}{6}</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "pa-frac-4",
+   "part": "A",
+   "strand": "fractions",
+   "difficulty": 3,
+   "stem_tex": "A recipe uses $2\\frac{1}{3}$ cups of flour. How much flour is needed for $1\\frac{1}{2}$ batches?",
+   "stem_html": "<p>A recipe uses <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">2\\frac{1}{3}</annotation></semantics></math> cups of flour. How much flour is needed for <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">1\\frac{1}{2}</annotation></semantics></math> batches?</p>",
+   "solution_tex": "Write the mixed numbers as improper fractions: $2\\frac{1}{3} = \\frac{7}{3}$ and $1\\frac{1}{2} = \\frac{3}{2}$. Multiply: $\\frac{7}{3} \\cdot \\frac{3}{2} = \\frac{7}{2} = 3\\frac{1}{2}$ cups.",
+   "solution_html": "<p>Write the mixed numbers as improper fractions: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>=</mo><mfrac><mn>7</mn><mn>3</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">2\\frac{1}{3} = \\frac{7}{3}</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">1\\frac{1}{2} = \\frac{3}{2}</annotation></semantics></math>. Multiply: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>7</mn><mn>3</mn></mfrac><mo>⋅</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>7</mn><mn>2</mn></mfrac><mo>=</mo><mn>3</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{7}{3} \\cdot \\frac{3}{2} = \\frac{7}{2} = 3\\frac{1}{2}</annotation></semantics></math> cups.</p>",
+   "choices": [
+    {
+     "tex": "3\\frac{5}{6}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">3\\frac{5}{6}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "2\\frac{5}{6}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">2\\frac{5}{6}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "2",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn><annotation encoding=\"application/x-tex\">2</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "3\\frac{1}{2}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">3\\frac{1}{2}</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "pa-dec-1",
+   "part": "A",
+   "strand": "decimals",
+   "difficulty": 1,
+   "stem_tex": "Find $4.5 \\times 0.2$.",
+   "stem_html": "<p>Find <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4.5</mn><mo>×</mo><mn>0.2</mn></mrow><annotation encoding=\"application/x-tex\">4.5 \\times 0.2</annotation></semantics></math>.</p>",
+   "solution_tex": "$45 \\times 2 = 90$, and the factors have $1 + 1 = 2$ decimal places, so $4.5 \\times 0.2 = 0.90 = 0.9$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>45</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>90</mn></mrow><annotation encoding=\"application/x-tex\">45 \\times 2 = 90</annotation></semantics></math>, and the factors have <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">1 + 1 = 2</annotation></semantics></math> decimal places, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4.5</mn><mo>×</mo><mn>0.2</mn><mo>=</mo><mn>0.90</mn><mo>=</mo><mn>0.9</mn></mrow><annotation encoding=\"application/x-tex\">4.5 \\times 0.2 = 0.90 = 0.9</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "0.9",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0.9</mn><annotation encoding=\"application/x-tex\">0.9</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "4.7",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4.7</mn><annotation encoding=\"application/x-tex\">4.7</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "9",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn><annotation encoding=\"application/x-tex\">9</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "0.09",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0.09</mn><annotation encoding=\"application/x-tex\">0.09</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "pa-dec-2",
+   "part": "A",
+   "strand": "decimals",
+   "difficulty": 2,
+   "stem_tex": "What is 35\\% of 80?",
+   "stem_html": "<p>What is 35% of 80?</p>",
+   "solution_tex": "$35\\% = 0.35$, and $0.35 \\times 80 = 28$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>35</mn><mi>%</mi><mo>=</mo><mn>0.35</mn></mrow><annotation encoding=\"application/x-tex\">35\\% = 0.35</annotation></semantics></math>, and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0.35</mn><mo>×</mo><mn>80</mn><mo>=</mo><mn>28</mn></mrow><annotation encoding=\"application/x-tex\">0.35 \\times 80 = 28</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "28",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>28</mn><annotation encoding=\"application/x-tex\">28</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "2800",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2800</mn><annotation encoding=\"application/x-tex\">2800</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "2.8",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2.8</mn><annotation encoding=\"application/x-tex\">2.8</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "45",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>45</mn><annotation encoding=\"application/x-tex\">45</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "pa-dec-3",
+   "part": "A",
+   "strand": "decimals",
+   "difficulty": 2,
+   "stem_tex": "A car travels 186 miles in 3 hours at a steady speed. How many miles does it travel in 5 hours?",
+   "stem_html": "<p>A car travels 186 miles in 3 hours at a steady speed. How many miles does it travel in 5 hours?</p>",
+   "solution_tex": "The unit rate is $186 \\div 3 = 62$ miles per hour, so in 5 hours it travels $62 \\times 5 = 310$ miles.",
+   "solution_html": "<p>The unit rate is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>186</mn><mo>÷</mo><mn>3</mn><mo>=</mo><mn>62</mn></mrow><annotation encoding=\"application/x-tex\">186 \\div 3 = 62</annotation></semantics></math> miles per hour, so in 5 hours it travels <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>62</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>310</mn></mrow><annotation encoding=\"application/x-tex\">62 \\times 5 = 310</annotation></semantics></math> miles.</p>",
+   "choices": [
+    {
+     "tex": "62",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>62</mn><annotation encoding=\"application/x-tex\">62</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "930",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>930</mn><annotation encoding=\"application/x-tex\">930</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "310",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>310</mn><annotation encoding=\"application/x-tex\">310</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "558",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>558</mn><annotation encoding=\"application/x-tex\">558</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "pa-dec-4",
+   "part": "A",
+   "strand": "decimals",
+   "difficulty": 3,
+   "stem_tex": "A \\$60 jacket is on sale for 25\\% off, and then 8\\% sales tax is added to the sale price. What is the total cost, in dollars?",
+   "stem_html": "<p>A $60 jacket is on sale for 25% off, and then 8% sales tax is added to the sale price. What is the total cost, in dollars?</p>",
+   "solution_tex": "The discount is $0.25 \\times 60 = 15$, so the sale price is $60 - 15 = 45$ dollars. The tax is $0.08 \\times 45 = 3.60$, so the total is $45 + 3.60 = 48.60$ dollars.",
+   "solution_html": "<p>The discount is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0.25</mn><mo>×</mo><mn>60</mn><mo>=</mo><mn>15</mn></mrow><annotation encoding=\"application/x-tex\">0.25 \\times 60 = 15</annotation></semantics></math>, so the sale price is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>60</mn><mo>−</mo><mn>15</mn><mo>=</mo><mn>45</mn></mrow><annotation encoding=\"application/x-tex\">60 - 15 = 45</annotation></semantics></math> dollars. The tax is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0.08</mn><mo>×</mo><mn>45</mn><mo>=</mo><mn>3.60</mn></mrow><annotation encoding=\"application/x-tex\">0.08 \\times 45 = 3.60</annotation></semantics></math>, so the total is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>45</mn><mo>+</mo><mn>3.60</mn><mo>=</mo><mn>48.60</mn></mrow><annotation encoding=\"application/x-tex\">45 + 3.60 = 48.60</annotation></semantics></math> dollars.</p>",
+   "choices": [
+    {
+     "tex": "48.60",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>48.60</mn><annotation encoding=\"application/x-tex\">48.60</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "45.00",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>45.00</mn><annotation encoding=\"application/x-tex\">45.00</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "49.80",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>49.80</mn><annotation encoding=\"application/x-tex\">49.80</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "50.40",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50.40</mn><annotation encoding=\"application/x-tex\">50.40</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "pa-eq-1",
+   "part": "A",
+   "strand": "equations",
+   "difficulty": 1,
+   "stem_tex": "Solve $x + 9 = 23$.",
+   "stem_html": "<p>Solve <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>9</mn><mo>=</mo><mn>23</mn></mrow><annotation encoding=\"application/x-tex\">x + 9 = 23</annotation></semantics></math>.</p>",
+   "solution_tex": "Subtract 9 from both sides: $x = 23 - 9 = 14$. Check: $14 + 9 = 23$.",
+   "solution_html": "<p>Subtract 9 from both sides: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>23</mn><mo>−</mo><mn>9</mn><mo>=</mo><mn>14</mn></mrow><annotation encoding=\"application/x-tex\">x = 23 - 9 = 14</annotation></semantics></math>. Check: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>14</mn><mo>+</mo><mn>9</mn><mo>=</mo><mn>23</mn></mrow><annotation encoding=\"application/x-tex\">14 + 9 = 23</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "x = 207",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>207</mn></mrow><annotation encoding=\"application/x-tex\">x = 207</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = -14",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>14</mn></mrow><annotation encoding=\"application/x-tex\">x = -14</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 32",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>32</mn></mrow><annotation encoding=\"application/x-tex\">x = 32</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 14",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>14</mn></mrow><annotation encoding=\"application/x-tex\">x = 14</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "pa-eq-2",
+   "part": "A",
+   "strand": "equations",
+   "difficulty": 1,
+   "stem_tex": "Evaluate $3a + 2b$ when $a = 4$ and $b = -5$.",
+   "stem_html": "<p>Evaluate <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>a</mi><mo>+</mo><mn>2</mn><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">3a + 2b</annotation></semantics></math> when <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">a = 4</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>=</mo><mi>−</mi><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">b = -5</annotation></semantics></math>.</p>",
+   "solution_tex": "Substitute: $3(4) + 2(-5) = 12 - 10 = 2$.",
+   "solution_html": "<p>Substitute: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>+</mo><mn>2</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>12</mn><mo>−</mo><mn>10</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">3(4) + 2(-5) = 12 - 10 = 2</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "22",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>22</mn><annotation encoding=\"application/x-tex\">22</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "-2",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">-2</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "17",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>17</mn><annotation encoding=\"application/x-tex\">17</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "2",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn><annotation encoding=\"application/x-tex\">2</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "pa-eq-3",
+   "part": "A",
+   "strand": "equations",
+   "difficulty": 2,
+   "stem_tex": "Simplify $4(2y - 3) - 5y$.",
+   "stem_html": "<p>Simplify <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mi>y</mi><mo>−</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>−</mo><mn>5</mn><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">4(2y - 3) - 5y</annotation></semantics></math>.</p>",
+   "solution_tex": "Distribute: $4(2y - 3) = 8y - 12$. Combine like terms: $8y - 5y - 12 = 3y - 12$.",
+   "solution_html": "<p>Distribute: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mi>y</mi><mo>−</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>8</mn><mi>y</mi><mo>−</mo><mn>12</mn></mrow><annotation encoding=\"application/x-tex\">4(2y - 3) = 8y - 12</annotation></semantics></math>. Combine like terms: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mi>y</mi><mo>−</mo><mn>5</mn><mi>y</mi><mo>−</mo><mn>12</mn><mo>=</mo><mn>3</mn><mi>y</mi><mo>−</mo><mn>12</mn></mrow><annotation encoding=\"application/x-tex\">8y - 5y - 12 = 3y - 12</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "3y - 12",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>y</mi><mo>−</mo><mn>12</mn></mrow><annotation encoding=\"application/x-tex\">3y - 12</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "-3y - 12",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>3</mn><mi>y</mi><mo>−</mo><mn>12</mn></mrow><annotation encoding=\"application/x-tex\">-3y - 12</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "3y - 3",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>y</mi><mo>−</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">3y - 3</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "13y - 12",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>13</mn><mi>y</mi><mo>−</mo><mn>12</mn></mrow><annotation encoding=\"application/x-tex\">13y - 12</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "pa-eq-4",
+   "part": "A",
+   "strand": "equations",
+   "difficulty": 3,
+   "stem_tex": "Solve $5n - 8 = 2n + 13$.",
+   "stem_html": "<p>Solve <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>n</mi><mo>−</mo><mn>8</mn><mo>=</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>13</mn></mrow><annotation encoding=\"application/x-tex\">5n - 8 = 2n + 13</annotation></semantics></math>.</p>",
+   "solution_tex": "Subtract $2n$ from both sides: $3n - 8 = 13$. Add 8: $3n = 21$. Divide by 3: $n = 7$. Check: $5(7) - 8 = 27 = 2(7) + 13$.",
+   "solution_html": "<p>Subtract <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">2n</annotation></semantics></math> from both sides: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>n</mi><mo>−</mo><mn>8</mn><mo>=</mo><mn>13</mn></mrow><annotation encoding=\"application/x-tex\">3n - 8 = 13</annotation></semantics></math>. Add 8: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>n</mi><mo>=</mo><mn>21</mn></mrow><annotation encoding=\"application/x-tex\">3n = 21</annotation></semantics></math>. Divide by 3: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>7</mn></mrow><annotation encoding=\"application/x-tex\">n = 7</annotation></semantics></math>. Check: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>−</mo><mn>8</mn><mo>=</mo><mn>27</mn><mo>=</mo><mn>2</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>+</mo><mn>13</mn></mrow><annotation encoding=\"application/x-tex\">5(7) - 8 = 27 = 2(7) + 13</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "n = \\frac{21}{5}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mn>21</mn><mn>5</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">n = \\frac{21}{5}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "n = \\frac{5}{7}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mn>5</mn><mn>7</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">n = \\frac{5}{7}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "n = 7",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>7</mn></mrow><annotation encoding=\"application/x-tex\">n = 7</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "n = 3",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">n = 3</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "pa-geo-1",
+   "part": "A",
+   "strand": "geometry",
+   "difficulty": 1,
+   "stem_tex": "A rectangle is 12 cm long and 7 cm wide. What is its perimeter, in centimeters?",
+   "stem_html": "<p>A rectangle is 12 cm long and 7 cm wide. What is its perimeter, in centimeters?</p>",
+   "solution_tex": "$P = 2L + 2W = 2(12) + 2(7) = 24 + 14 = 38$ cm.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mn>2</mn><mi>L</mi><mo>+</mo><mn>2</mn><mi>W</mi><mo>=</mo><mn>2</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>12</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>+</mo><mn>2</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>24</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>38</mn></mrow><annotation encoding=\"application/x-tex\">P = 2L + 2W = 2(12) + 2(7) = 24 + 14 = 38</annotation></semantics></math> cm.</p>",
+   "choices": [
+    {
+     "tex": "84",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>84</mn><annotation encoding=\"application/x-tex\">84</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "26",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>26</mn><annotation encoding=\"application/x-tex\">26</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "38",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>38</mn><annotation encoding=\"application/x-tex\">38</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "19",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>19</mn><annotation encoding=\"application/x-tex\">19</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "pa-geo-2",
+   "part": "A",
+   "strand": "geometry",
+   "difficulty": 1,
+   "stem_tex": "Simplify $\\sqrt{81} + \\sqrt{16}$.",
+   "stem_html": "<p>Simplify <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mn>81</mn></msqrt><mo>+</mo><msqrt><mn>16</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">\\sqrt{81} + \\sqrt{16}</annotation></semantics></math>.</p>",
+   "solution_tex": "$\\sqrt{81} = 9$ because $9^2 = 81$, and $\\sqrt{16} = 4$. The sum is $9 + 4 = 13$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mn>81</mn></msqrt><mo>=</mo><mn>9</mn></mrow><annotation encoding=\"application/x-tex\">\\sqrt{81} = 9</annotation></semantics></math> because <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>9</mn><mn>2</mn></msup><mo>=</mo><mn>81</mn></mrow><annotation encoding=\"application/x-tex\">9^2 = 81</annotation></semantics></math>, and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mn>16</mn></msqrt><mo>=</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">\\sqrt{16} = 4</annotation></semantics></math>. The sum is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>9</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>13</mn></mrow><annotation encoding=\"application/x-tex\">9 + 4 = 13</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\sqrt{97}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msqrt><mn>97</mn></msqrt><annotation encoding=\"application/x-tex\">\\sqrt{97}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "97",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>97</mn><annotation encoding=\"application/x-tex\">97</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "13",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>13</mn><annotation encoding=\"application/x-tex\">13</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "25",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>25</mn><annotation encoding=\"application/x-tex\">25</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "pa-geo-3",
+   "part": "A",
+   "strand": "geometry",
+   "difficulty": 2,
+   "stem_tex": "Two angles of a triangle measure $48^\\circ$ and $67^\\circ$. What is the measure of the third angle, in degrees?",
+   "stem_html": "<p>Two angles of a triangle measure <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>48</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">48^\\circ</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>67</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">67^\\circ</annotation></semantics></math>. What is the measure of the third angle, in degrees?</p>",
+   "solution_tex": "The angles of a triangle add to $180^\\circ$: $180 - 48 - 67 = 65^\\circ$.",
+   "solution_html": "<p>The angles of a triangle add to <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>180</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">180^\\circ</annotation></semantics></math>: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>180</mn><mo>−</mo><mn>48</mn><mo>−</mo><mn>67</mn><mo>=</mo><msup><mn>65</mn><mo>∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">180 - 48 - 67 = 65^\\circ</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "115",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>115</mn><annotation encoding=\"application/x-tex\">115</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "65",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>65</mn><annotation encoding=\"application/x-tex\">65</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "245",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>245</mn><annotation encoding=\"application/x-tex\">245</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "75",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>75</mn><annotation encoding=\"application/x-tex\">75</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "pa-geo-4",
+   "part": "A",
+   "strand": "geometry",
+   "difficulty": 3,
+   "stem_tex": "A right triangle has legs of length 9 ft and 12 ft. How long is the hypotenuse, in feet?",
+   "stem_html": "<p>A right triangle has legs of length 9 ft and 12 ft. How long is the hypotenuse, in feet?</p>",
+   "solution_tex": "By the Pythagorean Theorem, $c^2 = 9^2 + 12^2 = 81 + 144 = 225$, so $c = \\sqrt{225} = 15$ ft.",
+   "solution_html": "<p>By the Pythagorean Theorem, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mn>9</mn><mn>2</mn></msup><mo>+</mo><msup><mn>12</mn><mn>2</mn></msup><mo>=</mo><mn>81</mn><mo>+</mo><mn>144</mn><mo>=</mo><mn>225</mn></mrow><annotation encoding=\"application/x-tex\">c^2 = 9^2 + 12^2 = 81 + 144 = 225</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo>=</mo><msqrt><mn>225</mn></msqrt><mo>=</mo><mn>15</mn></mrow><annotation encoding=\"application/x-tex\">c = \\sqrt{225} = 15</annotation></semantics></math> ft.</p>",
+   "choices": [
+    {
+     "tex": "225",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>225</mn><annotation encoding=\"application/x-tex\">225</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\sqrt{21}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msqrt><mn>21</mn></msqrt><annotation encoding=\"application/x-tex\">\\sqrt{21}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "21",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>21</mn><annotation encoding=\"application/x-tex\">21</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "15",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn><annotation encoding=\"application/x-tex\">15</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "pa-whole-b",
+   "part": "B",
+   "strand": "whole",
+   "difficulty": 2,
+   "stem_tex": "A theater has 28 rows of 32 seats. For one show, 715 seats were sold. How many seats were empty? Show your work.",
+   "stem_html": "<p>A theater has 28 rows of 32 seats. For one show, 715 seats were sold. How many seats were empty? Show your work.</p>",
+   "solution_tex": "Total seats: $28 \\times 32 = 896$. Empty seats: $896 - 715 = 181$.",
+   "solution_html": "<p>Total seats: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>28</mn><mo>×</mo><mn>32</mn><mo>=</mo><mn>896</mn></mrow><annotation encoding=\"application/x-tex\">28 \\times 32 = 896</annotation></semantics></math>. Empty seats: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>896</mn><mo>−</mo><mn>715</mn><mo>=</mo><mn>181</mn></mrow><annotation encoding=\"application/x-tex\">896 - 715 = 181</annotation></semantics></math>.</p>",
+   "answer_tex": "181"
+  },
+  {
+   "id": "pa-int-b",
+   "part": "B",
+   "strand": "integers",
+   "difficulty": 2,
+   "stem_tex": "Evaluate $-3(4 - 9) + (-2)^3$. Show each step.",
+   "stem_html": "<p>Evaluate <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>3</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mo>−</mo><mn>9</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>+</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>2</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">-3(4 - 9) + (-2)^3</annotation></semantics></math>. Show each step.</p>",
+   "solution_tex": "Parentheses: $4 - 9 = -5$. Exponent: $(-2)^3 = -8$. Multiply: $-3(-5) = 15$. Add: $15 + (-8) = 7$.",
+   "solution_html": "<p>Parentheses: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo>−</mo><mn>9</mn><mo>=</mo><mi>−</mi><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">4 - 9 = -5</annotation></semantics></math>. Exponent: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>2</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>3</mn></msup><mo>=</mo><mi>−</mi><mn>8</mn></mrow><annotation encoding=\"application/x-tex\">(-2)^3 = -8</annotation></semantics></math>. Multiply: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>3</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>15</mn></mrow><annotation encoding=\"application/x-tex\">-3(-5) = 15</annotation></semantics></math>. Add: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15</mn><mo>+</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>8</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>7</mn></mrow><annotation encoding=\"application/x-tex\">15 + (-8) = 7</annotation></semantics></math>.</p>",
+   "answer_tex": "7"
+  },
+  {
+   "id": "pa-frac-b",
+   "part": "B",
+   "strand": "fractions",
+   "difficulty": 3,
+   "stem_tex": "Maria walked $1\\frac{3}{4}$ miles on Monday and $2\\frac{2}{3}$ miles on Tuesday. How far did she walk in all? Write the answer as a mixed number.",
+   "stem_html": "<p>Maria walked <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">1\\frac{3}{4}</annotation></semantics></math> miles on Monday and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">2\\frac{2}{3}</annotation></semantics></math> miles on Tuesday. How far did she walk in all? Write the answer as a mixed number.</p>",
+   "solution_tex": "With denominator 12: $1\\frac{3}{4} = 1\\frac{9}{12}$ and $2\\frac{2}{3} = 2\\frac{8}{12}$. Add: $3\\frac{17}{12} = 4\\frac{5}{12}$ miles.",
+   "solution_html": "<p>With denominator 12: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mn>1</mn><mfrac><mn>9</mn><mn>12</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">1\\frac{3}{4} = 1\\frac{9}{12}</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>=</mo><mn>2</mn><mfrac><mn>8</mn><mn>12</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">2\\frac{2}{3} = 2\\frac{8}{12}</annotation></semantics></math>. Add: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mfrac><mn>17</mn><mn>12</mn></mfrac><mo>=</mo><mn>4</mn><mfrac><mn>5</mn><mn>12</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">3\\frac{17}{12} = 4\\frac{5}{12}</annotation></semantics></math> miles.</p>",
+   "answer_tex": "4\\frac{5}{12}\\text{ miles}"
+  },
+  {
+   "id": "pa-dec-b",
+   "part": "B",
+   "strand": "decimals",
+   "difficulty": 2,
+   "stem_tex": "On a map, 2 inches represent 15 miles. Two towns are 7 inches apart on the map. Set up and solve a proportion for the real distance in miles.",
+   "stem_html": "<p>On a map, 2 inches represent 15 miles. Two towns are 7 inches apart on the map. Set up and solve a proportion for the real distance in miles.</p>",
+   "solution_tex": "$\\frac{2}{15} = \\frac{7}{d}$. Cross-multiply: $2d = 105$, so $d = 52.5$ miles.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>2</mn><mn>15</mn></mfrac><mo>=</mo><mfrac><mn>7</mn><mi>d</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{2}{15} = \\frac{7}{d}</annotation></semantics></math>. Cross-multiply: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>d</mi><mo>=</mo><mn>105</mn></mrow><annotation encoding=\"application/x-tex\">2d = 105</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>52.5</mn></mrow><annotation encoding=\"application/x-tex\">d = 52.5</annotation></semantics></math> miles.</p>",
+   "answer_tex": "d = 52.5\\text{ miles}"
+  },
+  {
+   "id": "pa-eq-b",
+   "part": "B",
+   "strand": "equations",
+   "difficulty": 3,
+   "stem_tex": "Solve $\\frac{2}{3}x - 4 = 6$ and check your answer.",
+   "stem_html": "<p>Solve <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>x</mi><mo>−</mo><mn>4</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{2}{3}x - 4 = 6</annotation></semantics></math> and check your answer.</p>",
+   "solution_tex": "Add 4: $\\frac{2}{3}x = 10$. Multiply both sides by $\\frac{3}{2}$: $x = 15$. Check: $\\frac{2}{3}(15) - 4 = 10 - 4 = 6$.",
+   "solution_html": "<p>Add 4: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>x</mi><mo>=</mo><mn>10</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{2}{3}x = 10</annotation></semantics></math>. Multiply both sides by <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>3</mn><mn>2</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{3}{2}</annotation></semantics></math>: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>15</mn></mrow><annotation encoding=\"application/x-tex\">x = 15</annotation></semantics></math>. Check: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>15</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>−</mo><mn>4</mn><mo>=</mo><mn>10</mn><mo>−</mo><mn>4</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{2}{3}(15) - 4 = 10 - 4 = 6</annotation></semantics></math>.</p>",
+   "answer_tex": "x = 15"
+  },
+  {
+   "id": "pa-geo-b",
+   "part": "B",
+   "strand": "geometry",
+   "difficulty": 3,
+   "stem_tex": "A circular garden has a diameter of 10 m. Find its area, in square meters, in terms of $\\pi$ and then rounded to the nearest tenth (use $\\pi \\approx 3.14$).",
+   "stem_html": "<p>A circular garden has a diameter of 10 m. Find its area, in square meters, in terms of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>π</mi><annotation encoding=\"application/x-tex\">\\pi</annotation></semantics></math> and then rounded to the nearest tenth (use <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>π</mi><mo>≈</mo><mn>3.14</mn></mrow><annotation encoding=\"application/x-tex\">\\pi \\approx 3.14</annotation></semantics></math>).</p>",
+   "solution_tex": "The radius is half the diameter, $r = 5$ m. $A = \\pi r^2 = 25\\pi \\approx 3.14 \\times 25 = 78.5$ m$^2$.",
+   "solution_html": "<p>The radius is half the diameter, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">r = 5</annotation></semantics></math> m. <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>=</mo><mn>25</mn><mi>π</mi><mo>≈</mo><mn>3.14</mn><mo>×</mo><mn>25</mn><mo>=</mo><mn>78.5</mn></mrow><annotation encoding=\"application/x-tex\">A = \\pi r^2 = 25\\pi \\approx 3.14 \\times 25 = 78.5</annotation></semantics></math> m<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi></mi><mn>2</mn></msup><annotation encoding=\"application/x-tex\">^2</annotation></semantics></math>.</p>",
+   "answer_tex": "25\\pi \\approx 78.5\\text{ m}^2"
+  }
+ ],
+ "license": "Questions written for impo (github.com/billsix/impo), MIT license."
+}

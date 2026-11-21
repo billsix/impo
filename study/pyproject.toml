@@ -1,0 +1,22 @@
+# Tooling config for the study/ generators (tools/*.py, tests/*.py): ruff, ty
+# and pytest. Not a package. Mirrors openstax/tooling/pyproject.toml.
+
+[tool.ruff]
+extend-exclude = ["output", "bank", "cliffnotes", "quiz"]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["F401", "F811", "F841", "E402", "I001", "TID252", "UP007", "UP035",
+          "B006", "B007", "B008"]
+
+[tool.ty.environment]
+extra-paths = ["tools", "../openstax/tooling/tools/cnxml2tex"]
+
+[tool.pytest.ini_options]
+testpaths = ["tools", "tests"]
+addopts = "--doctest-modules --import-mode=importlib"
+pythonpath = ["tools"]
+
+[tool.ruff.lint.isort]
+# tools/ is on sys.path (pytest pythonpath, and scripts run from tools/).
+known-first-party = ["bank", "cliffnotes", "literacy", "studytex", "crossbook", "problems", "notebooks", "solver", "nbplot"]

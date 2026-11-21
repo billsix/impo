@@ -34,6 +34,10 @@ make publish-pages BOOKS="prealgebra-2e algebra-1"  # [HOST] push those books' s
 > The full set (~4.5 GB) is over Pages' 1 GB limit, so `make publish-pages` refuses it; publish a
 > subset with `BOOKS=`. Details: `tasks/reference/openstax/publishing.md`.
 
+## Study material (`study/`)
+
+Literacy tests, cliff notes, problem notebooks and a timed quiz server: see `study/README.md`.
+
 ## Build a book
 
 ```sh

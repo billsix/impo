@@ -1,0 +1,367 @@
+# Geometry literacy test -- question bank (source).
+# Questions written for impo (github.com/billsix/impo), MIT license. OpenStax has
+# no geometry book, so the strands follow the Common Core State Standards for
+# high-school geometry (CCSS G-CO, G-SRT, G-C, G-GPE, G-GMD, G-MG); review
+# pointers name the standards and the nearest OpenStax sections (CC BY 4.0).
+# Schema and checking: study/tools/bank.py.
+
+subject = "geometry"
+title = "Geometry Literacy Test"
+minutes = 50
+standards = "Strands follow the Common Core State Standards for high-school geometry."
+
+[time_limits]
+1 = 60
+2 = 105
+3 = 180
+
+[[strands]]
+id = "transformations"
+name = "Transformations and congruence (G-CO.2-5)"
+review = ["CCSS G-CO.2-5", "CA 3.5"]
+
+[[strands]]
+id = "angles"
+name = "Lines, angles and triangle facts (G-CO.9-11)"
+review = ["CCSS G-CO.9-11", "PA 9.3"]
+
+[[strands]]
+id = "similarity"
+name = "Similarity and right-triangle trigonometry (G-SRT)"
+review = ["CCSS G-SRT.1-8", "EA 8.7", "PC 5.4"]
+
+[[strands]]
+id = "circles"
+name = "Circles (G-C, G-GPE.1)"
+review = ["CCSS G-C.1-5, G-GPE.1", "PA 9.5", "PC 5.1", "IA 11.1"]
+
+[[strands]]
+id = "coordinates"
+name = "Coordinate geometry (G-GPE.4-7)"
+review = ["CCSS G-GPE.4-7", "IA 11.1", "EA 4.6"]
+
+[[strands]]
+id = "volume"
+name = "Volume and modeling (G-GMD, G-MG)"
+review = ["CCSS G-GMD.1-4, G-MG.1-3", "PA 9.6"]
+
+# ---------------- Part A: multiple choice ----------------
+
+[[questions]]
+id = "ge-tr-1"
+part = "A"
+strand = "transformations"
+difficulty = 1
+stem = '''The point $(3, -2)$ is reflected across the $y$-axis. Where does it land?'''
+compute = "(-3, -2)"
+choices = ["(-3, -2)", "(3, 2)", "(-3, 2)", "(-2, 3)"]
+solution = '''Reflecting across the $y$-axis changes the sign of $x$ only: $(x, y) \mapsto (-x, y)$, so $(3, -2) \mapsto (-3, -2)$.'''
+
+[[questions]]
+id = "ge-tr-2"
+part = "A"
+strand = "transformations"
+difficulty = 2
+stem = '''The point $(4, 1)$ is rotated $90^\circ$ counterclockwise about the origin. Where does it land?'''
+compute = "tuple(Matrix([[0, -1], [1, 0]]) * Matrix([4, 1]))"
+choices = ["(-1, 4)", "(1, -4)", "(-4, -1)", "(4, -1)"]
+solution = '''A $90^\circ$ counterclockwise rotation maps $(x, y) \mapsto (-y, x)$, so $(4, 1) \mapsto (-1, 4)$.'''
+
+[[questions]]
+id = "ge-tr-3"
+part = "A"
+strand = "transformations"
+difficulty = 2
+stem = '''A translation maps $A(1, 5)$ to $A'(-2, 7)$. Where does it map $B(4, -3)$?'''
+compute = "(4 + (-2 - 1), -3 + (7 - 5))"
+choices = ["(1, -1)", "(7, -5)", "(1, -5)", "(2, -6)"]
+solution = '''The translation vector is $\langle -2 - 1, 7 - 5 \rangle = \langle -3, 2 \rangle$, so $B(4, -3) \mapsto (4 - 3, -3 + 2) = (1, -1)$.'''
+
+[[questions]]
+id = "ge-tr-4"
+part = "A"
+strand = "transformations"
+difficulty = 3
+stem = '''A triangle has vertices $(0, 0)$, $(4, 0)$, $(0, 3)$. It is dilated by a factor of 2 about the origin and then reflected across the $x$-axis. What is the area of the image?'''
+compute = "Rational(1, 2) * (2*4) * (2*3)"
+choices = ["24", "12", "6", "48"]
+solution = '''Reflection does not change area. A dilation by 2 doubles each length, so the legs become 8 and 6 and the area is $\frac{1}{2}(8)(6) = 24$ (four times the original area of 6).'''
+
+[[questions]]
+id = "ge-ang-1"
+part = "A"
+strand = "angles"
+difficulty = 1
+stem = '''Two lines cross. One of the four angles measures $35^\circ$. What is the measure of the angle vertical to it, in degrees?'''
+compute = "35"
+choices = ["35", "145", "55", "325"]
+solution = '''Vertical angles are congruent, so it also measures $35^\circ$.'''
+
+[[questions]]
+id = "ge-ang-2"
+part = "A"
+strand = "angles"
+difficulty = 2
+stem = '''Parallel lines are cut by a transversal. One interior angle on one side of the transversal measures $(3x + 10)^\circ$ and the other interior angle on the same side measures $(2x + 20)^\circ$. Find $x$.'''
+compute = "solve(Eq(3*x + 10 + 2*x + 20, 180), x)"
+choices = ["[30]", "[10]", "[34]", "[38]"]
+choices_tex = ['x = 30', 'x = 10', 'x = 34', 'x = 38']
+solution = '''Same-side interior angles are supplementary: $(3x + 10) + (2x + 20) = 180$, so $5x + 30 = 180$ and $x = 30$.'''
+
+[[questions]]
+id = "ge-ang-3"
+part = "A"
+strand = "angles"
+difficulty = 2
+stem = '''An isosceles triangle has a vertex angle of $40^\circ$. What is the measure of each base angle, in degrees?'''
+compute = "Rational(180 - 40, 2)"
+choices = ["70", "140", "40", "50"]
+solution = '''The base angles of an isosceles triangle are congruent and the angles add to $180^\circ$: each base angle is $\frac{180 - 40}{2} = 70^\circ$.'''
+
+[[questions]]
+id = "ge-ang-4"
+part = "A"
+strand = "angles"
+difficulty = 3
+stem = '''An exterior angle of a triangle measures $118^\circ$. One of the two remote interior angles measures $47^\circ$. What is the other remote interior angle, in degrees?'''
+compute = "118 - 47"
+choices = ["71", "62", "15", "165"]
+solution = '''An exterior angle equals the sum of the two remote interior angles: $118 = 47 + x$, so $x = 71^\circ$.'''
+
+[[questions]]
+id = "ge-sim-1"
+part = "A"
+strand = "similarity"
+difficulty = 1
+stem = '''Triangle $ABC$ is similar to triangle $DEF$ with $AB = 6$, $DE = 9$ and $BC = 8$. Find $EF$.'''
+compute = "8 * Rational(9, 6)"
+choices = ["12", "11", "Rational(16, 3)", "27"]
+solution = '''The scale factor from $ABC$ to $DEF$ is $\frac{9}{6} = \frac{3}{2}$, so $EF = 8 \cdot \frac{3}{2} = 12$.'''
+
+[[questions]]
+id = "ge-sim-2"
+part = "A"
+strand = "similarity"
+difficulty = 2
+stem = '''In a right triangle the side opposite angle $\theta$ is 5 and the hypotenuse is 13. What is $\cos\theta$?'''
+compute = "sqrt(13**2 - 5**2) / 13"
+choices = ["Rational(12, 13)", "Rational(5, 13)", "Rational(5, 12)", "Rational(13, 12)"]
+solution = '''The adjacent side is $\sqrt{13^2 - 5^2} = \sqrt{144} = 12$, so $\cos\theta = \frac{\text{adjacent}}{\text{hypotenuse}} = \frac{12}{13}$.'''
+
+[[questions]]
+id = "ge-sim-3"
+part = "A"
+strand = "similarity"
+difficulty = 2
+stem = '''A $30^\circ$-$60^\circ$-$90^\circ$ triangle has a hypotenuse of 10. How long is the side opposite the $60^\circ$ angle?'''
+compute = "10 * sin(pi/3)"
+choices = ["5*sqrt(3)", "5", "10*sqrt(3)", "5*sqrt(2)"]
+choices_tex = ['5\sqrt{3}', '5', '10\sqrt{3}', '5\sqrt{2}']
+solution = '''The sides are in the ratio $1 : \sqrt{3} : 2$. The short leg is $10 / 2 = 5$, and the side opposite $60^\circ$ is $5\sqrt{3}$.'''
+
+[[questions]]
+id = "ge-sim-4"
+part = "A"
+strand = "similarity"
+difficulty = 3
+stem = '''A 6 ft person casts a 4 ft shadow at the same time a tree casts a 30 ft shadow. How tall is the tree, in feet?'''
+compute = "solve(Eq(Rational(6, 4), h/30), h)[0]"
+choices = ["45", "20", "Rational(36, 5)", "180"]
+choices_tex = ['45', '20', '7.2', '180']
+solution = '''The sun makes similar triangles: $\frac{6}{4} = \frac{h}{30}$, so $h = 30 \cdot \frac{3}{2} = 45$ ft.'''
+
+[[questions]]
+id = "ge-cir-1"
+part = "A"
+strand = "circles"
+difficulty = 1
+stem = '''What is the center and radius of the circle $(x - 2)^2 + (y + 5)^2 = 49$?'''
+compute = "(2, -5, 7)"
+choices = ["(2, -5, 7)", "(-2, 5, 7)", "(2, -5, 49)", "(-2, 5, 49)"]
+choices_tex = ['\text{center } (2, -5),\ r = 7', '\text{center } (-2, 5),\ r = 7', '\text{center } (2, -5),\ r = 49', '\text{center } (-2, 5),\ r = 49']
+solution = '''The form $(x - h)^2 + (y - k)^2 = r^2$ has center $(h, k) = (2, -5)$ and $r = \sqrt{49} = 7$.'''
+
+[[questions]]
+id = "ge-cir-2"
+part = "A"
+strand = "circles"
+difficulty = 2
+stem = '''An inscribed angle intercepts an arc of $110^\circ$. What is the measure of the inscribed angle, in degrees?'''
+compute = "Rational(110, 2)"
+choices = ["55", "110", "220", "70"]
+solution = '''An inscribed angle measures half its intercepted arc: $\frac{110}{2} = 55^\circ$.'''
+
+[[questions]]
+id = "ge-cir-3"
+part = "A"
+strand = "circles"
+difficulty = 2
+stem = '''A circle has radius 6 cm. How long is the arc cut off by a central angle of $120^\circ$?'''
+compute = "Rational(120, 360) * 2 * pi * 6"
+choices = ["4*pi", "12*pi", "2*pi", "720"]
+choices_tex = ['4\pi\text{ cm}', '12\pi\text{ cm}', '2\pi\text{ cm}', '720\text{ cm}']
+solution = '''The arc is $\frac{120}{360} = \frac{1}{3}$ of the circumference $2\pi(6) = 12\pi$, so it is $4\pi$ cm.'''
+
+[[questions]]
+id = "ge-cir-4"
+part = "A"
+strand = "circles"
+difficulty = 3
+stem = '''What is the area of a sector of a circle of radius 9 with a central angle of $\frac{2\pi}{3}$ radians?'''
+compute = "Rational(1, 2) * 9**2 * 2*pi/3"
+choices = ["27*pi", "54*pi", "6*pi", "81*pi"]
+choices_tex = ['27\pi', '54\pi', '6\pi', '81\pi']
+solution = '''With the angle in radians, $A = \frac{1}{2}r^2\theta = \frac{1}{2}(81)\left(\frac{2\pi}{3}\right) = 27\pi$.'''
+
+[[questions]]
+id = "ge-co-1"
+part = "A"
+strand = "coordinates"
+difficulty = 1
+stem = '''What is the midpoint of the segment from $(-4, 3)$ to $(6, -1)$?'''
+compute = "(Rational(-4 + 6, 2), Rational(3 + (-1), 2))"
+choices = ["(1, 1)", "(5, -2)", "(2, 2)", "(1, 2)"]
+solution = '''Average the coordinates: $\left(\frac{-4 + 6}{2}, \frac{3 - 1}{2}\right) = (1, 1)$.'''
+
+[[questions]]
+id = "ge-co-2"
+part = "A"
+strand = "coordinates"
+difficulty = 2
+stem = '''What is the distance between $(1, 2)$ and $(7, 10)$?'''
+compute = "sqrt((7 - 1)**2 + (10 - 2)**2)"
+choices = ["10", "14", "sqrt(28)", "100"]
+choices_tex = ['10', '14', '2\sqrt{7}', '100']
+solution = '''$d = \sqrt{(7 - 1)^2 + (10 - 2)^2} = \sqrt{36 + 64} = \sqrt{100} = 10$.'''
+
+[[questions]]
+id = "ge-co-3"
+part = "A"
+strand = "coordinates"
+difficulty = 2
+stem = '''Which line is parallel to $y = \frac{1}{2}x - 3$ and passes through $(4, 1)$?'''
+compute = "expand(Rational(1, 2)*(x - 4) + 1)"
+choices = ["Rational(1, 2)*x - 1", "-2*x + 9", "Rational(1, 2)*x + 1", "Rational(1, 2)*x - 3"]
+choices_tex = ['y = \frac{1}{2}x - 1', 'y = -2x + 9', 'y = \frac{1}{2}x + 1', 'y = \frac{1}{2}x - 3']
+solution = '''Parallel lines have the same slope $\frac{1}{2}$: $y - 1 = \frac{1}{2}(x - 4)$, so $y = \frac{1}{2}x - 1$.'''
+
+[[questions]]
+id = "ge-co-4"
+part = "A"
+strand = "coordinates"
+difficulty = 3
+stem = '''Point $P$ lies on the segment from $A(0, 0)$ to $B(9, 12)$ and divides it in the ratio $AP : PB = 1 : 2$. Find $P$.'''
+compute = "(Rational(1, 3)*9, Rational(1, 3)*12)"
+choices = ["(3, 4)", "(6, 8)", "(Rational(9, 2), 6)", "(4, 3)"]
+solution = '''$P$ is $\frac{1}{1 + 2} = \frac{1}{3}$ of the way from $A$ to $B$: $P = \left(\frac{9}{3}, \frac{12}{3}\right) = (3, 4)$.'''
+
+[[questions]]
+id = "ge-vol-1"
+part = "A"
+strand = "volume"
+difficulty = 1
+stem = '''A cylinder has radius 3 and height 10. What is its volume?'''
+compute = "pi * 3**2 * 10"
+choices = ["90*pi", "30*pi", "60*pi", "300*pi"]
+choices_tex = ['90\pi', '30\pi', '60\pi', '300\pi']
+solution = '''$V = \pi r^2 h = \pi(9)(10) = 90\pi$.'''
+
+[[questions]]
+id = "ge-vol-2"
+part = "A"
+strand = "volume"
+difficulty = 2
+stem = '''A cone has radius 4 and height 9. What is its volume?'''
+compute = "Rational(1, 3) * pi * 4**2 * 9"
+choices = ["48*pi", "144*pi", "12*pi", "36*pi"]
+choices_tex = ['48\pi', '144\pi', '12\pi', '36\pi']
+solution = '''$V = \frac{1}{3}\pi r^2 h = \frac{1}{3}\pi(16)(9) = 48\pi$.'''
+
+[[questions]]
+id = "ge-vol-3"
+part = "A"
+strand = "volume"
+difficulty = 2
+stem = '''What is the volume of a sphere of radius 3?'''
+compute = "Rational(4, 3) * pi * 3**3"
+choices = ["36*pi", "12*pi", "108*pi", "9*pi"]
+choices_tex = ['36\pi', '12\pi', '108\pi', '9\pi']
+solution = '''$V = \frac{4}{3}\pi r^3 = \frac{4}{3}\pi(27) = 36\pi$.'''
+
+[[questions]]
+id = "ge-vol-4"
+part = "A"
+strand = "volume"
+difficulty = 3
+stem = '''A square pyramid has a base 6 m on a side and a volume of 96 m$^3$. How tall is it, in meters?'''
+compute = "solve(Eq(Rational(1, 3) * 6**2 * h, 96), h)[0]"
+choices = ["8", "Rational(8, 3)", "16", "24"]
+solution = '''$V = \frac{1}{3}Bh$ with $B = 36$: $96 = 12h$, so $h = 8$ m.'''
+
+# ---------------- Part B: free response ----------------
+
+[[questions]]
+id = "ge-tr-b"
+part = "B"
+strand = "transformations"
+difficulty = 2
+stem = '''Triangle $ABC$ has vertices $A(1, 2)$, $B(4, 2)$, $C(1, 6)$. Give the vertices of its image after a reflection across the line $y = x$, and explain why the image is congruent to $ABC$.'''
+compute = "tuple((p[1], p[0]) for p in [(1, 2), (4, 2), (1, 6)])"
+answer = "((2, 1), (2, 4), (6, 1))"
+answer_tex = '''A'(2, 1),\ B'(2, 4),\ C'(6, 1)'''
+solution = '''Reflection across $y = x$ swaps the coordinates: $A'(2, 1)$, $B'(2, 4)$, $C'(6, 1)$. A reflection is a rigid motion (it preserves lengths and angles), so the image is congruent.'''
+
+[[questions]]
+id = "ge-ang-b"
+part = "B"
+strand = "angles"
+difficulty = 3
+stem = '''The angles of a triangle measure $x^\circ$, $(2x)^\circ$ and $(3x - 12)^\circ$. Find $x$ and all three angles.'''
+compute = "tuple(e.subs(x, solve(Eq(x + 2*x + 3*x - 12, 180), x)[0]) for e in (x, 2*x, 3*x - 12))"
+answer = "(32, 64, 84)"
+answer_tex = 'x = 32;\ 32^\circ,\ 64^\circ,\ 84^\circ'
+solution = '''The angles add to $180^\circ$: $6x - 12 = 180$, so $x = 32$. The angles are $32^\circ$, $64^\circ$ and $84^\circ$ (they add to 180).'''
+
+[[questions]]
+id = "ge-sim-b"
+part = "B"
+strand = "similarity"
+difficulty = 3
+stem = '''A ladder 20 ft long leans against a wall and makes a $70^\circ$ angle with the ground. How high up the wall does it reach? Give the exact form and a decimal to the nearest tenth.'''
+compute = "20 * sin(70 * pi / 180)"
+answer = "20*sin(7*pi/18)"
+answer_tex = '20\sin 70^\circ \approx 18.8\text{ ft}'
+solution = '''The wall height is opposite the $70^\circ$ angle and the ladder is the hypotenuse: $h = 20\sin 70^\circ \approx 20(0.9397) \approx 18.8$ ft.'''
+
+[[questions]]
+id = "ge-cir-b"
+part = "B"
+strand = "circles"
+difficulty = 2
+stem = '''Write the equation of the circle with center $(-1, 4)$ that passes through $(2, 8)$.'''
+compute = "expand((x + 1)**2 + (y - 4)**2 - ((2 + 1)**2 + (8 - 4)**2))"
+answer = "expand((x + 1)**2 + (y - 4)**2 - 25)"
+answer_tex = '(x + 1)^2 + (y - 4)^2 = 25'
+solution = '''The radius is the distance from the center to the point: $r = \sqrt{3^2 + 4^2} = 5$. So $(x + 1)^2 + (y - 4)^2 = 25$.'''
+
+[[questions]]
+id = "ge-co-b"
+part = "B"
+strand = "coordinates"
+difficulty = 3
+stem = '''Show that the quadrilateral with vertices $(0, 0)$, $(4, 1)$, $(5, 5)$, $(1, 4)$ is a rhombus by computing its four side lengths.'''
+compute = "tuple(sqrt((q[0] - p[0])**2 + (q[1] - p[1])**2) for p, q in [((0, 0), (4, 1)), ((4, 1), (5, 5)), ((5, 5), (1, 4)), ((1, 4), (0, 0))])"
+answer = "(sqrt(17), sqrt(17), sqrt(17), sqrt(17))"
+answer_tex = '\text{every side is } \sqrt{17}'
+solution = '''Each side has $\Delta x, \Delta y$ of $4, 1$ or $1, 4$ in some order, so every side is $\sqrt{16 + 1} = \sqrt{17}$. Four congruent sides make a rhombus.'''
+
+[[questions]]
+id = "ge-vol-b"
+part = "B"
+strand = "volume"
+difficulty = 3
+stem = '''A water tank is a cylinder of radius 2 m and height 5 m. Water costs \$0.003 per liter (1 m$^3$ = 1000 L). What does it cost to fill the tank? Give the exact cost and the cost to the nearest cent.'''
+compute = "pi * 2**2 * 5 * 1000 * Rational(3, 1000)"
+answer = "60*pi"
+answer_tex = '60\pi \approx \$188.50'
+solution = '''$V = \pi(2^2)(5) = 20\pi$ m$^3$ $= 20000\pi$ L. Cost: $20000\pi \times 0.003 = 60\pi \approx 188.50$ dollars.'''

@@ -1,0 +1,836 @@
+{
+ "subject": "algebra-2",
+ "title": "Algebra 2 Literacy Test",
+ "minutes": 50,
+ "time_limits": {
+  "1": 75,
+  "2": 120,
+  "3": 180
+ },
+ "strands": [
+  {
+   "id": "functions",
+   "name": "Functions, composition and inverses",
+   "review": [
+    "IA 3.5",
+    "IA 3.6",
+    "IA 10.1"
+   ]
+  },
+  {
+   "id": "radicals",
+   "name": "Radicals, rational exponents and complex numbers",
+   "review": [
+    "IA 8.2",
+    "IA 8.3",
+    "IA 8.6",
+    "IA 8.8"
+   ]
+  },
+  {
+   "id": "quadratics",
+   "name": "Quadratic equations and functions",
+   "review": [
+    "IA 9.2",
+    "IA 9.3",
+    "IA 9.6",
+    "IA 9.8"
+   ]
+  },
+  {
+   "id": "rational",
+   "name": "Polynomials and rational expressions",
+   "review": [
+    "IA 5.4",
+    "IA 7.1",
+    "IA 7.2",
+    "IA 7.4"
+   ]
+  },
+  {
+   "id": "explog",
+   "name": "Exponential and logarithmic functions",
+   "review": [
+    "IA 10.2",
+    "IA 10.3",
+    "IA 10.4",
+    "IA 10.5"
+   ]
+  },
+  {
+   "id": "sequences",
+   "name": "Sequences, series and the binomial theorem",
+   "review": [
+    "IA 12.1",
+    "IA 12.2",
+    "IA 12.3",
+    "IA 12.4"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "a2-fun-1",
+   "part": "A",
+   "strand": "functions",
+   "difficulty": 1,
+   "stem_tex": "If $f(x) = 2x + 1$ and $g(x) = x^2$, find $(f \\circ g)(3)$.",
+   "stem_html": "<p>If <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">f(x) = 2x + 1</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">g(x) = x^2</annotation></semantics></math>, find <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>f</mi><mo>∘</mo><mi>g</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(f \\circ g)(3)</annotation></semantics></math>.</p>",
+   "solution_tex": "$(f \\circ g)(3) = f(g(3)) = f(9) = 2(9) + 1 = 19$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>f</mi><mo>∘</mo><mi>g</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mi>f</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>g</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mi>f</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>9</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>2</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>9</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>19</mn></mrow><annotation encoding=\"application/x-tex\">(f \\circ g)(3) = f(g(3)) = f(9) = 2(9) + 1 = 19</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "10",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn><annotation encoding=\"application/x-tex\">10</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "19",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>19</mn><annotation encoding=\"application/x-tex\">19</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "16",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn><annotation encoding=\"application/x-tex\">16</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "49",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>49</mn><annotation encoding=\"application/x-tex\">49</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "a2-fun-2",
+   "part": "A",
+   "strand": "functions",
+   "difficulty": 2,
+   "stem_tex": "Find the inverse of $f(x) = \\frac{x - 4}{3}$.",
+   "stem_html": "<p>Find the inverse of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mn>4</mn></mrow><mn>3</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">f(x) = \\frac{x - 4}{3}</annotation></semantics></math>.</p>",
+   "solution_tex": "Swap $x$ and $y$: $x = \\frac{y - 4}{3}$. Solve for $y$: $3x = y - 4$, so $f^{-1}(x) = 3x + 4$.",
+   "solution_html": "<p>Swap <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi><annotation encoding=\"application/x-tex\">x</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi><annotation encoding=\"application/x-tex\">y</annotation></semantics></math>: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mi>y</mi><mo>−</mo><mn>4</mn></mrow><mn>3</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">x = \\frac{y - 4}{3}</annotation></semantics></math>. Solve for <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi><annotation encoding=\"application/x-tex\">y</annotation></semantics></math>: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>=</mo><mi>y</mi><mo>−</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">3x = y - 4</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>f</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">f^{-1}(x) = 3x + 4</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "f^{-1}(x) = \\frac{x + 4}{3}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>f</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>4</mn></mrow><mn>3</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">f^{-1}(x) = \\frac{x + 4}{3}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "f^{-1}(x) = \\frac{x}{3} - 4",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>f</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mfrac><mi>x</mi><mn>3</mn></mfrac><mo>−</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">f^{-1}(x) = \\frac{x}{3} - 4</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "f^{-1}(x) = 3x - 4",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>f</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">f^{-1}(x) = 3x - 4</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "f^{-1}(x) = 3x + 4",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>f</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">f^{-1}(x) = 3x + 4</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "a2-fun-3",
+   "part": "A",
+   "strand": "functions",
+   "difficulty": 2,
+   "stem_tex": "What is the domain of $f(x) = \\sqrt{x - 5}$?",
+   "stem_html": "<p>What is the domain of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><msqrt><mrow><mi>x</mi><mo>−</mo><mn>5</mn></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">f(x) = \\sqrt{x - 5}</annotation></semantics></math>?</p>",
+   "solution_tex": "The radicand must be nonnegative: $x - 5 \\ge 0$, so $x \\ge 5$. The domain is $[5, \\infty)$.",
+   "solution_html": "<p>The radicand must be nonnegative: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>−</mo><mn>5</mn><mo>≥</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">x - 5 \\ge 0</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">x \\ge 5</annotation></semantics></math>. The domain is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>5</mn><mo>,</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">[5, \\infty)</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "[-5, \\infty)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mi>−</mi><mn>5</mn><mo>,</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">[-5, \\infty)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "[0, \\infty)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>0</mn><mo>,</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">[0, \\infty)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "(5, \\infty)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>5</mn><mo>,</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(5, \\infty)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "[5, \\infty)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>5</mn><mo>,</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">[5, \\infty)</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "a2-fun-4",
+   "part": "A",
+   "strand": "functions",
+   "difficulty": 3,
+   "stem_tex": "The graph of $y = |x|$ is shifted 3 units right and 2 units down. Which equation describes the new graph?",
+   "stem_html": "<p>The graph of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>x</mi><mo stretchy=\"false\" form=\"prefix\">|</mo></mrow><annotation encoding=\"application/x-tex\">y = |x|</annotation></semantics></math> is shifted 3 units right and 2 units down. Which equation describes the new graph?</p>",
+   "solution_tex": "A shift right by 3 replaces $x$ with $x - 3$; a shift down by 2 subtracts 2: $y = |x - 3| - 2$.",
+   "solution_html": "<p>A shift right by 3 replaces <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi><annotation encoding=\"application/x-tex\">x</annotation></semantics></math> with <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">x - 3</annotation></semantics></math>; a shift down by 2 subtracts 2: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>−</mi><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">y = |x - 3| - 2</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "y = |x - 3| + 2",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>+</mi><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">y = |x - 3| + 2</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "y = |x - 2| + 3",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>+</mi><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">y = |x - 2| + 3</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "y = |x + 3| - 2",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>−</mi><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">y = |x + 3| - 2</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "y = |x - 3| - 2",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>−</mi><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">y = |x - 3| - 2</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "a2-rad-1",
+   "part": "A",
+   "strand": "radicals",
+   "difficulty": 1,
+   "stem_tex": "Simplify $\\sqrt{72}$.",
+   "stem_html": "<p>Simplify <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msqrt><mn>72</mn></msqrt><annotation encoding=\"application/x-tex\">\\sqrt{72}</annotation></semantics></math>.</p>",
+   "solution_tex": "$72 = 36 \\cdot 2$, so $\\sqrt{72} = \\sqrt{36}\\sqrt{2} = 6\\sqrt{2}$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>72</mn><mo>=</mo><mn>36</mn><mo>⋅</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">72 = 36 \\cdot 2</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mn>72</mn></msqrt><mo>=</mo><msqrt><mn>36</mn></msqrt><msqrt><mn>2</mn></msqrt><mo>=</mo><mn>6</mn><msqrt><mn>2</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">\\sqrt{72} = \\sqrt{36}\\sqrt{2} = 6\\sqrt{2}</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "8\\sqrt{3}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><msqrt><mn>3</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">8\\sqrt{3}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "36\\sqrt{2}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>36</mn><msqrt><mn>2</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">36\\sqrt{2}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "2\\sqrt{6}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><msqrt><mn>6</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">2\\sqrt{6}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "6\\sqrt{2}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><msqrt><mn>2</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">6\\sqrt{2}</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "a2-rad-2",
+   "part": "A",
+   "strand": "radicals",
+   "difficulty": 2,
+   "stem_tex": "Evaluate $27^{2/3}$.",
+   "stem_html": "<p>Evaluate <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>27</mn><mrow><mn>2</mn><mi>/</mi><mn>3</mn></mrow></msup><annotation encoding=\"application/x-tex\">27^{2/3}</annotation></semantics></math>.</p>",
+   "solution_tex": "$27^{2/3} = \\left(\\sqrt[3]{27}\\right)^2 = 3^2 = 9$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>27</mn><mrow><mn>2</mn><mi>/</mi><mn>3</mn></mrow></msup><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mroot><mn>27</mn><mn>3</mn></mroot><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mn>9</mn></mrow><annotation encoding=\"application/x-tex\">27^{2/3} = \\left(\\sqrt[3]{27}\\right)^2 = 3^2 = 9</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "3",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn><annotation encoding=\"application/x-tex\">3</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "9",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn><annotation encoding=\"application/x-tex\">9</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "81",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>81</mn><annotation encoding=\"application/x-tex\">81</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "18",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>18</mn><annotation encoding=\"application/x-tex\">18</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "a2-rad-3",
+   "part": "A",
+   "strand": "radicals",
+   "difficulty": 2,
+   "stem_tex": "Simplify $(3 + 2i)(1 - 4i)$.",
+   "stem_html": "<p>Simplify <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mn>4</mn><mi>i</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(3 + 2i)(1 - 4i)</annotation></semantics></math>.</p>",
+   "solution_tex": "FOIL: $3 - 12i + 2i - 8i^2 = 3 - 10i + 8 = 11 - 10i$, since $i^2 = -1$.",
+   "solution_html": "<p>FOIL: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>−</mo><mn>12</mn><mi>i</mi><mo>+</mo><mn>2</mn><mi>i</mi><mo>−</mo><mn>8</mn><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><mn>3</mn><mo>−</mo><mn>10</mn><mi>i</mi><mo>+</mo><mn>8</mn><mo>=</mo><mn>11</mn><mo>−</mo><mn>10</mn><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">3 - 12i + 2i - 8i^2 = 3 - 10i + 8 = 11 - 10i</annotation></semantics></math>, since <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">i^2 = -1</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "3 - 8i",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>−</mo><mn>8</mn><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">3 - 8i</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "-5 - 10i",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>5</mn><mo>−</mo><mn>10</mn><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">-5 - 10i</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "11 + 14i",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>11</mn><mo>+</mo><mn>14</mn><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">11 + 14i</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "11 - 10i",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>11</mn><mo>−</mo><mn>10</mn><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">11 - 10i</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "a2-rad-4",
+   "part": "A",
+   "strand": "radicals",
+   "difficulty": 3,
+   "stem_tex": "Solve $\\sqrt{2x + 3} = x$.",
+   "stem_html": "<p>Solve <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow></msqrt><mo>=</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\sqrt{2x + 3} = x</annotation></semantics></math>.</p>",
+   "solution_tex": "Square both sides: $2x + 3 = x^2$, so $x^2 - 2x - 3 = 0$ and $x = 3$ or $x = -1$. Check: $x = -1$ gives $\\sqrt{1} = 1 \\ne -1$, so it is extraneous. The solution is $x = 3$.",
+   "solution_html": "<p>Square both sides: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">2x + 3 = x^2</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">x^2 - 2x - 3 = 0</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">x = 3</annotation></semantics></math> or <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">x = -1</annotation></semantics></math>. Check: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">x = -1</annotation></semantics></math> gives <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mn>1</mn></msqrt><mo>=</mo><mn>1</mn><mo>≠</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\sqrt{1} = 1 \\ne -1</annotation></semantics></math>, so it is extraneous. The solution is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">x = 3</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "x = 3",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">x = 3</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 3 \\text{ or } x = -1",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn><mrow><mspace width=\"0.333em\"></mspace><mtext mathvariant=\"normal\"> or </mtext><mspace width=\"0.333em\"></mspace></mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">x = 3 \\text{ or } x = -1</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = -1",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">x = -1</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\text{no solution}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtext mathvariant=\"normal\">no solution</mtext><annotation encoding=\"application/x-tex\">\\text{no solution}</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "a2-quad-1",
+   "part": "A",
+   "strand": "quadratics",
+   "difficulty": 1,
+   "stem_tex": "Solve $(x - 4)^2 = 25$.",
+   "stem_html": "<p>Solve <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>4</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>2</mn></msup><mo>=</mo><mn>25</mn></mrow><annotation encoding=\"application/x-tex\">(x - 4)^2 = 25</annotation></semantics></math>.</p>",
+   "solution_tex": "Square root property: $x - 4 = \\pm 5$, so $x = 9$ or $x = -1$.",
+   "solution_html": "<p>Square root property: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>−</mo><mn>4</mn><mo>=</mo><mi>±</mi><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">x - 4 = \\pm 5</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>9</mn></mrow><annotation encoding=\"application/x-tex\">x = 9</annotation></semantics></math> or <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">x = -1</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "x = 1 \\text{ or } x = -9",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn><mrow><mspace width=\"0.333em\"></mspace><mtext mathvariant=\"normal\"> or </mtext><mspace width=\"0.333em\"></mspace></mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>9</mn></mrow><annotation encoding=\"application/x-tex\">x = 1 \\text{ or } x = -9</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 29 \\text{ or } x = -21",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>29</mn><mrow><mspace width=\"0.333em\"></mspace><mtext mathvariant=\"normal\"> or </mtext><mspace width=\"0.333em\"></mspace></mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>21</mn></mrow><annotation encoding=\"application/x-tex\">x = 29 \\text{ or } x = -21</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 9",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>9</mn></mrow><annotation encoding=\"application/x-tex\">x = 9</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 9 \\text{ or } x = -1",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>9</mn><mrow><mspace width=\"0.333em\"></mspace><mtext mathvariant=\"normal\"> or </mtext><mspace width=\"0.333em\"></mspace></mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">x = 9 \\text{ or } x = -1</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "a2-quad-2",
+   "part": "A",
+   "strand": "quadratics",
+   "difficulty": 2,
+   "stem_tex": "Solve $x^2 + 4x + 13 = 0$.",
+   "stem_html": "<p>Solve <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>13</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">x^2 + 4x + 13 = 0</annotation></semantics></math>.</p>",
+   "solution_tex": "Complete the square: $(x + 2)^2 = -9$, so $x + 2 = \\pm 3i$ and $x = -2 \\pm 3i$.",
+   "solution_html": "<p>Complete the square: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>2</mn></msup><mo>=</mo><mi>−</mi><mn>9</mn></mrow><annotation encoding=\"application/x-tex\">(x + 2)^2 = -9</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mo>=</mo><mi>±</mi><mn>3</mn><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">x + 2 = \\pm 3i</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>2</mn><mo>±</mo><mn>3</mn><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">x = -2 \\pm 3i</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "x = -2 \\pm 9i",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>2</mn><mo>±</mo><mn>9</mn><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">x = -2 \\pm 9i</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 2 \\pm 3i",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn><mo>±</mo><mn>3</mn><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">x = 2 \\pm 3i</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\text{no solution}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtext mathvariant=\"normal\">no solution</mtext><annotation encoding=\"application/x-tex\">\\text{no solution}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = -2 \\pm 3i",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>2</mn><mo>±</mo><mn>3</mn><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">x = -2 \\pm 3i</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "a2-quad-3",
+   "part": "A",
+   "strand": "quadratics",
+   "difficulty": 2,
+   "stem_tex": "What is the maximum value of $f(x) = -2x^2 + 8x - 3$?",
+   "stem_html": "<p>What is the maximum value of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mi>−</mi><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>8</mn><mi>x</mi><mo>−</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">f(x) = -2x^2 + 8x - 3</annotation></semantics></math>?</p>",
+   "solution_tex": "The vertex is at $x = -\\frac{b}{2a} = -\\frac{8}{-4} = 2$, and $f(2) = -8 + 16 - 3 = 5$. The parabola opens down, so 5 is the maximum.",
+   "solution_html": "<p>The vertex is at <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mfrac><mi>b</mi><mrow><mn>2</mn><mi>a</mi></mrow></mfrac><mo>=</mo><mi>−</mi><mfrac><mn>8</mn><mrow><mi>−</mi><mn>4</mn></mrow></mfrac><mo>=</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">x = -\\frac{b}{2a} = -\\frac{8}{-4} = 2</annotation></semantics></math>, and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mi>−</mi><mn>8</mn><mo>+</mo><mn>16</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">f(2) = -8 + 16 - 3 = 5</annotation></semantics></math>. The parabola opens down, so 5 is the maximum.</p>",
+   "choices": [
+    {
+     "tex": "13",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>13</mn><annotation encoding=\"application/x-tex\">13</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "5",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn><annotation encoding=\"application/x-tex\">5</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "2",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn><annotation encoding=\"application/x-tex\">2</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "-3",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">-3</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "a2-quad-4",
+   "part": "A",
+   "strand": "quadratics",
+   "difficulty": 3,
+   "stem_tex": "Solve the inequality $x^2 - x - 6 < 0$.",
+   "stem_html": "<p>Solve the inequality <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>6</mn><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">x^2 - x - 6 &lt; 0</annotation></semantics></math>.</p>",
+   "solution_tex": "Factor: $(x - 3)(x + 2) < 0$. The product is negative between the zeros $-2$ and $3$, so the solution is $(-2, 3)$.",
+   "solution_html": "<p>Factor: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">(x - 3)(x + 2) &lt; 0</annotation></semantics></math>. The product is negative between the zeros <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">-2</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn><annotation encoding=\"application/x-tex\">3</annotation></semantics></math>, so the solution is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(-2, 3)</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "(-2, 3)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(-2, 3)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "(-3, 2)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>3</mn><mo>,</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(-3, 2)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "(-\\infty, -2) \\cup (3, \\infty)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mi>∞</mi><mo>,</mo><mi>−</mi><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>∪</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo>,</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(-\\infty, -2) \\cup (3, \\infty)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "[-2, 3]",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow><annotation encoding=\"application/x-tex\">[-2, 3]</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "a2-rat-1",
+   "part": "A",
+   "strand": "rational",
+   "difficulty": 1,
+   "stem_tex": "Simplify $\\frac{x^2 - 9}{x^2 + 5x + 6}$.",
+   "stem_html": "<p>Simplify <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>9</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></mfrac><annotation encoding=\"application/x-tex\">\\frac{x^2 - 9}{x^2 + 5x + 6}</annotation></semantics></math>.</p>",
+   "solution_tex": "Factor: $\\frac{(x - 3)(x + 3)}{(x + 2)(x + 3)} = \\frac{x - 3}{x + 2}$ for $x \\ne -3, -2$.",
+   "solution_html": "<p>Factor: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{(x - 3)(x + 3)}{(x + 2)(x + 3)} = \\frac{x - 3}{x + 2}</annotation></semantics></math> for <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>≠</mo><mi>−</mi><mn>3</mn><mo>,</mo><mi>−</mi><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">x \\ne -3, -2</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\frac{-9}{5x + 6}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mrow><mi>−</mi><mn>9</mn></mrow><mrow><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></mfrac><annotation encoding=\"application/x-tex\">\\frac{-9}{5x + 6}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{x - 3}{x + 2}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac><annotation encoding=\"application/x-tex\">\\frac{x - 3}{x + 2}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{x - 3}{x + 3}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow></mfrac><annotation encoding=\"application/x-tex\">\\frac{x - 3}{x + 3}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{x + 3}{x + 2}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac><annotation encoding=\"application/x-tex\">\\frac{x + 3}{x + 2}</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "a2-rat-2",
+   "part": "A",
+   "strand": "rational",
+   "difficulty": 2,
+   "stem_tex": "Add $\\frac{2}{x} + \\frac{3}{x + 1}$.",
+   "stem_html": "<p>Add <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>2</mn><mi>x</mi></mfrac><mo>+</mo><mfrac><mn>3</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{2}{x} + \\frac{3}{x + 1}</annotation></semantics></math>.</p>",
+   "solution_tex": "The LCD is $x(x + 1)$: $\\frac{2(x + 1) + 3x}{x(x + 1)} = \\frac{5x + 2}{x(x + 1)}$.",
+   "solution_html": "<p>The LCD is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">x(x + 1)</annotation></semantics></math>: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mrow><mn>2</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>+</mo><mn>3</mn><mi>x</mi></mrow><mrow><mi>x</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>5</mn><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mrow><mi>x</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{2(x + 1) + 3x}{x(x + 1)} = \\frac{5x + 2}{x(x + 1)}</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\frac{5x + 2}{x(x + 1)}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mrow><mn>5</mn><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mrow><mi>x</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></mfrac><annotation encoding=\"application/x-tex\">\\frac{5x + 2}{x(x + 1)}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{5}{2x + 1}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>5</mn><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac><annotation encoding=\"application/x-tex\">\\frac{5}{2x + 1}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{6}{x(x + 1)}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>6</mn><mrow><mi>x</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></mfrac><annotation encoding=\"application/x-tex\">\\frac{6}{x(x + 1)}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{5x + 3}{x(x + 1)}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mrow><mn>5</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mrow><mi>x</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></mfrac><annotation encoding=\"application/x-tex\">\\frac{5x + 3}{x(x + 1)}</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "a2-rat-3",
+   "part": "A",
+   "strand": "rational",
+   "difficulty": 2,
+   "stem_tex": "Divide $(x^3 - 2x^2 - 5x + 6) \\div (x - 1)$.",
+   "stem_html": "<p>Divide <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>÷</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(x^3 - 2x^2 - 5x + 6) \\div (x - 1)</annotation></semantics></math>.</p>",
+   "solution_tex": "Synthetic division by 1 on $1, -2, -5, 6$ gives $1, -1, -6$ with remainder 0, so the quotient is $x^2 - x - 6$.",
+   "solution_html": "<p>Synthetic division by 1 on <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mi>−</mi><mn>2</mn><mo>,</mo><mi>−</mi><mn>5</mn><mo>,</mo><mn>6</mn></mrow><annotation encoding=\"application/x-tex\">1, -2, -5, 6</annotation></semantics></math> gives <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mi>−</mi><mn>1</mn><mo>,</mo><mi>−</mi><mn>6</mn></mrow><annotation encoding=\"application/x-tex\">1, -1, -6</annotation></semantics></math> with remainder 0, so the quotient is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>6</mn></mrow><annotation encoding=\"application/x-tex\">x^2 - x - 6</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "x^2 - x - 6",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>6</mn></mrow><annotation encoding=\"application/x-tex\">x^2 - x - 6</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x^2 - 3x - 2",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">x^2 - 3x - 2</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x^2 + x - 6",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>−</mo><mn>6</mn></mrow><annotation encoding=\"application/x-tex\">x^2 + x - 6</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x^2 - x - 4",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">x^2 - x - 4</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "a2-rat-4",
+   "part": "A",
+   "strand": "rational",
+   "difficulty": 3,
+   "stem_tex": "Solve $\\frac{x}{x - 2} = \\frac{2}{x - 2} + 3$.",
+   "stem_html": "<p>Solve <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mi>x</mi><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac><mo>+</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{x}{x - 2} = \\frac{2}{x - 2} + 3</annotation></semantics></math>.</p>",
+   "solution_tex": "Multiply by $x - 2$: $x = 2 + 3(x - 2)$, so $x = 3x - 4$ and $x = 2$. But $x = 2$ makes a denominator zero, so it is extraneous: there is no solution.",
+   "solution_html": "<p>Multiply by <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">x - 2</annotation></semantics></math>: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">x = 2 + 3(x - 2)</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">x = 3x - 4</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">x = 2</annotation></semantics></math>. But <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">x = 2</annotation></semantics></math> makes a denominator zero, so it is extraneous: there is no solution.</p>",
+   "choices": [
+    {
+     "tex": "x = 4",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">x = 4</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 3",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">x = 3</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 2",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">x = 2</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\text{no solution}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtext mathvariant=\"normal\">no solution</mtext><annotation encoding=\"application/x-tex\">\\text{no solution}</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "a2-exp-1",
+   "part": "A",
+   "strand": "explog",
+   "difficulty": 1,
+   "stem_tex": "Evaluate $\\log_2 32$.",
+   "stem_html": "<p>Evaluate <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mn>2</mn></msub><mn>32</mn></mrow><annotation encoding=\"application/x-tex\">\\log_2 32</annotation></semantics></math>.</p>",
+   "solution_tex": "$2^5 = 32$, so $\\log_2 32 = 5$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>=</mo><mn>32</mn></mrow><annotation encoding=\"application/x-tex\">2^5 = 32</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mn>2</mn></msub><mn>32</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">\\log_2 32 = 5</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\frac{1}{5}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>1</mn><mn>5</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{1}{5}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "16",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn><annotation encoding=\"application/x-tex\">16</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "6",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn><annotation encoding=\"application/x-tex\">6</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "5",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn><annotation encoding=\"application/x-tex\">5</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "a2-exp-2",
+   "part": "A",
+   "strand": "explog",
+   "difficulty": 2,
+   "stem_tex": "Solve $3^{x + 1} = 81$.",
+   "stem_html": "<p>Solve <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>3</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>81</mn></mrow><annotation encoding=\"application/x-tex\">3^{x + 1} = 81</annotation></semantics></math>.</p>",
+   "solution_tex": "$81 = 3^4$, so $x + 1 = 4$ and $x = 3$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>81</mn><mo>=</mo><msup><mn>3</mn><mn>4</mn></msup></mrow><annotation encoding=\"application/x-tex\">81 = 3^4</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>1</mn><mo>=</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">x + 1 = 4</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">x = 3</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "x = 27",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>27</mn></mrow><annotation encoding=\"application/x-tex\">x = 27</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 3",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">x = 3</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 4",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">x = 4</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 26",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>26</mn></mrow><annotation encoding=\"application/x-tex\">x = 26</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "a2-exp-3",
+   "part": "A",
+   "strand": "explog",
+   "difficulty": 2,
+   "stem_tex": "Write $\\log_b 8 + \\log_b x - \\log_b 2$ as a single logarithm.",
+   "stem_html": "<p>Write <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mi>b</mi></msub><mn>8</mn><mo>+</mo><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mi>b</mi></msub><mi>x</mi><mo>−</mo><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mi>b</mi></msub><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">\\log_b 8 + \\log_b x - \\log_b 2</annotation></semantics></math> as a single logarithm.</p>",
+   "solution_tex": "Product and quotient rules: $\\log_b\\frac{8x}{2} = \\log_b(4x)$. (The check uses natural logs; the rules are the same for every base.)",
+   "solution_html": "<p>Product and quotient rules: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mi>b</mi></msub><mfrac><mrow><mn>8</mn><mi>x</mi></mrow><mn>2</mn></mfrac><mo>=</mo><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mi>b</mi></msub><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\log_b\\frac{8x}{2} = \\log_b(4x)</annotation></semantics></math>. (The check uses natural logs; the rules are the same for every base.)</p>",
+   "choices": [
+    {
+     "tex": "\\log_b(16x)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mi>b</mi></msub><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>16</mn><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\log_b(16x)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\log_b(6 + x)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mi>b</mi></msub><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>6</mn><mo>+</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\log_b(6 + x)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\log_b(8x - 2)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mi>b</mi></msub><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>8</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\log_b(8x - 2)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\log_b(4x)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mi>b</mi></msub><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\log_b(4x)</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "a2-exp-4",
+   "part": "A",
+   "strand": "explog",
+   "difficulty": 3,
+   "stem_tex": "\\$1000 is invested at 6\\% interest compounded continuously. How many years until it doubles? (Use $A = Pe^{rt}$.)",
+   "stem_html": "<p>$1000 is invested at 6% interest compounded continuously. How many years until it doubles? (Use <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mi>e</mi><mrow><mi>r</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">A = Pe^{rt}</annotation></semantics></math>.)</p>",
+   "solution_tex": "$2000 = 1000e^{0.06t}$, so $e^{0.06t} = 2$, $0.06t = \\ln 2$ and $t = \\frac{\\ln 2}{0.06} \\approx 11.55$ years.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2000</mn><mo>=</mo><mn>1000</mn><msup><mi>e</mi><mrow><mn>0.06</mn><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">2000 = 1000e^{0.06t}</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>e</mi><mrow><mn>0.06</mn><mi>t</mi></mrow></msup><mo>=</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">e^{0.06t} = 2</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0.06</mn><mi>t</mi><mo>=</mo><mrow><mi>ln</mi><mo>&#8289;</mo></mrow><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">0.06t = \\ln 2</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mrow><mi>ln</mi><mo>&#8289;</mo></mrow><mn>2</mn></mrow><mn>0.06</mn></mfrac><mo>≈</mo><mn>11.55</mn></mrow><annotation encoding=\"application/x-tex\">t = \\frac{\\ln 2}{0.06} \\approx 11.55</annotation></semantics></math> years.</p>",
+   "choices": [
+    {
+     "tex": "\\frac{2}{0.06} \\approx 33.33",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>2</mn><mn>0.06</mn></mfrac><mo>≈</mo><mn>33.33</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{2}{0.06} \\approx 33.33</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{100}{6} \\approx 16.67",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>100</mn><mn>6</mn></mfrac><mo>≈</mo><mn>16.67</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{100}{6} \\approx 16.67</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{\\ln 6}{2} \\approx 0.90",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mrow><mrow><mi>ln</mi><mo>&#8289;</mo></mrow><mn>6</mn></mrow><mn>2</mn></mfrac><mo>≈</mo><mn>0.90</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{\\ln 6}{2} \\approx 0.90</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{\\ln 2}{0.06} \\approx 11.55",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mrow><mrow><mi>ln</mi><mo>&#8289;</mo></mrow><mn>2</mn></mrow><mn>0.06</mn></mfrac><mo>≈</mo><mn>11.55</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{\\ln 2}{0.06} \\approx 11.55</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "a2-seq-1",
+   "part": "A",
+   "strand": "sequences",
+   "difficulty": 1,
+   "stem_tex": "Find the 20th term of the arithmetic sequence $5, 9, 13, 17, \\ldots$",
+   "stem_html": "<p>Find the 20th term of the arithmetic sequence <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>13</mn><mo>,</mo><mn>17</mn><mo>,</mo><mi>…</mi></mrow><annotation encoding=\"application/x-tex\">5, 9, 13, 17, \\ldots</annotation></semantics></math></p>",
+   "solution_tex": "$a_n = a_1 + (n - 1)d = 5 + 19 \\cdot 4 = 81$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mi>d</mi><mo>=</mo><mn>5</mn><mo>+</mo><mn>19</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>81</mn></mrow><annotation encoding=\"application/x-tex\">a_n = a_1 + (n - 1)d = 5 + 19 \\cdot 4 = 81</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "85",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>85</mn><annotation encoding=\"application/x-tex\">85</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "81",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>81</mn><annotation encoding=\"application/x-tex\">81</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "80",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>80</mn><annotation encoding=\"application/x-tex\">80</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "100",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn><annotation encoding=\"application/x-tex\">100</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "a2-seq-2",
+   "part": "A",
+   "strand": "sequences",
+   "difficulty": 2,
+   "stem_tex": "Find the sum of the first 6 terms of the geometric sequence $3, 6, 12, \\ldots$",
+   "stem_html": "<p>Find the sum of the first 6 terms of the geometric sequence <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>12</mn><mo>,</mo><mi>…</mi></mrow><annotation encoding=\"application/x-tex\">3, 6, 12, \\ldots</annotation></semantics></math></p>",
+   "solution_tex": "$S_n = \\frac{a_1(1 - r^n)}{1 - r} = \\frac{3(1 - 2^6)}{1 - 2} = 3 \\cdot 63 = 189$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>a</mi><mn>1</mn></msub><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><msup><mi>r</mi><mi>n</mi></msup><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><msup><mn>2</mn><mn>6</mn></msup><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><mrow><mn>1</mn><mo>−</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mn>3</mn><mo>⋅</mo><mn>63</mn><mo>=</mo><mn>189</mn></mrow><annotation encoding=\"application/x-tex\">S_n = \\frac{a_1(1 - r^n)}{1 - r} = \\frac{3(1 - 2^6)}{1 - 2} = 3 \\cdot 63 = 189</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "192",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>192</mn><annotation encoding=\"application/x-tex\">192</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "63",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>63</mn><annotation encoding=\"application/x-tex\">63</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "96",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>96</mn><annotation encoding=\"application/x-tex\">96</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "189",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>189</mn><annotation encoding=\"application/x-tex\">189</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "a2-seq-3",
+   "part": "A",
+   "strand": "sequences",
+   "difficulty": 2,
+   "stem_tex": "Find the sum of the infinite geometric series $8 + 4 + 2 + 1 + \\cdots$",
+   "stem_html": "<p>Find the sum of the infinite geometric series <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>+</mo><mi>⋯</mi></mrow><annotation encoding=\"application/x-tex\">8 + 4 + 2 + 1 + \\cdots</annotation></semantics></math></p>",
+   "solution_tex": "$|r| = \\frac{1}{2} < 1$, so $S = \\frac{a_1}{1 - r} = \\frac{8}{1/2} = 16$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>r</mi><mo stretchy=\"false\" form=\"prefix\">|</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">|r| = \\frac{1}{2} &lt; 1</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac><msub><mi>a</mi><mn>1</mn></msub><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac><mo>=</mo><mfrac><mn>8</mn><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></mfrac><mo>=</mo><mn>16</mn></mrow><annotation encoding=\"application/x-tex\">S = \\frac{a_1}{1 - r} = \\frac{8}{1/2} = 16</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "16",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn><annotation encoding=\"application/x-tex\">16</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\text{no sum (diverges)}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtext mathvariant=\"normal\">no sum (diverges)</mtext><annotation encoding=\"application/x-tex\">\\text{no sum (diverges)}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "12",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn><annotation encoding=\"application/x-tex\">12</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "15",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn><annotation encoding=\"application/x-tex\">15</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "a2-seq-4",
+   "part": "A",
+   "strand": "sequences",
+   "difficulty": 3,
+   "stem_tex": "What is the coefficient of $x^3$ in the expansion of $(x + 2)^5$?",
+   "stem_html": "<p>What is the coefficient of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mn>3</mn></msup><annotation encoding=\"application/x-tex\">x^3</annotation></semantics></math> in the expansion of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>5</mn></msup></mrow><annotation encoding=\"application/x-tex\">(x + 2)^5</annotation></semantics></math>?</p>",
+   "solution_tex": "The $x^3$ term is $\\binom{5}{3}x^3 \\cdot 2^2 = 10 \\cdot 4\\,x^3 = 40x^3$.",
+   "solution_html": "<p>The <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mn>3</mn></msup><annotation encoding=\"application/x-tex\">x^3</annotation></semantics></math> term is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac linethickness=\"0\"><mn>5</mn><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msup><mi>x</mi><mn>3</mn></msup><mo>⋅</mo><msup><mn>2</mn><mn>2</mn></msup><mo>=</mo><mn>10</mn><mo>⋅</mo><mn>4</mn><mspace width=\"0.167em\"></mspace><msup><mi>x</mi><mn>3</mn></msup><mo>=</mo><mn>40</mn><msup><mi>x</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\binom{5}{3}x^3 \\cdot 2^2 = 10 \\cdot 4\\,x^3 = 40x^3</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "20",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn><annotation encoding=\"application/x-tex\">20</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "10",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn><annotation encoding=\"application/x-tex\">10</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "40",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>40</mn><annotation encoding=\"application/x-tex\">40</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "80",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>80</mn><annotation encoding=\"application/x-tex\">80</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "a2-fun-b",
+   "part": "B",
+   "strand": "functions",
+   "difficulty": 2,
+   "stem_tex": "For $f(x) = x^2 + 1$ and $g(x) = x - 3$, find $(f \\circ g)(x)$ and $(g \\circ f)(x)$. Are they equal?",
+   "stem_html": "<p>For <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">f(x) = x^2 + 1</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mi>x</mi><mo>−</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">g(x) = x - 3</annotation></semantics></math>, find <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>f</mi><mo>∘</mo><mi>g</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(f \\circ g)(x)</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>g</mi><mo>∘</mo><mi>f</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(g \\circ f)(x)</annotation></semantics></math>. Are they equal?</p>",
+   "solution_tex": "$(f \\circ g)(x) = (x - 3)^2 + 1 = x^2 - 6x + 10$ and $(g \\circ f)(x) = x^2 + 1 - 3 = x^2 - 2$. They are different functions.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>f</mi><mo>∘</mo><mi>g</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>10</mn></mrow><annotation encoding=\"application/x-tex\">(f \\circ g)(x) = (x - 3)^2 + 1 = x^2 - 6x + 10</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>g</mi><mo>∘</mo><mi>f</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>−</mo><mn>3</mn><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">(g \\circ f)(x) = x^2 + 1 - 3 = x^2 - 2</annotation></semantics></math>. They are different functions.</p>",
+   "answer_tex": "(f \\circ g)(x) = x^2 - 6x + 10;\\ (g \\circ f)(x) = x^2 - 2;\\ \\text{not equal}"
+  },
+  {
+   "id": "a2-rad-b",
+   "part": "B",
+   "strand": "radicals",
+   "difficulty": 2,
+   "stem_tex": "Simplify $\\frac{6}{\\sqrt{3}}$ by rationalizing the denominator, and simplify $\\sqrt{18} + \\sqrt{50}$.",
+   "stem_html": "<p>Simplify <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>6</mn><msqrt><mn>3</mn></msqrt></mfrac><annotation encoding=\"application/x-tex\">\\frac{6}{\\sqrt{3}}</annotation></semantics></math> by rationalizing the denominator, and simplify <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mn>18</mn></msqrt><mo>+</mo><msqrt><mn>50</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">\\sqrt{18} + \\sqrt{50}</annotation></semantics></math>.</p>",
+   "solution_tex": "$\\frac{6}{\\sqrt{3}} \\cdot \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{6\\sqrt{3}}{3} = 2\\sqrt{3}$. And $\\sqrt{18} + \\sqrt{50} = 3\\sqrt{2} + 5\\sqrt{2} = 8\\sqrt{2}$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>6</mn><msqrt><mn>3</mn></msqrt></mfrac><mo>⋅</mo><mfrac><msqrt><mn>3</mn></msqrt><msqrt><mn>3</mn></msqrt></mfrac><mo>=</mo><mfrac><mrow><mn>6</mn><msqrt><mn>3</mn></msqrt></mrow><mn>3</mn></mfrac><mo>=</mo><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">\\frac{6}{\\sqrt{3}} \\cdot \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{6\\sqrt{3}}{3} = 2\\sqrt{3}</annotation></semantics></math>. And <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mn>18</mn></msqrt><mo>+</mo><msqrt><mn>50</mn></msqrt><mo>=</mo><mn>3</mn><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>5</mn><msqrt><mn>2</mn></msqrt><mo>=</mo><mn>8</mn><msqrt><mn>2</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">\\sqrt{18} + \\sqrt{50} = 3\\sqrt{2} + 5\\sqrt{2} = 8\\sqrt{2}</annotation></semantics></math>.</p>",
+   "answer_tex": "2\\sqrt{3};\\quad 8\\sqrt{2}"
+  },
+  {
+   "id": "a2-quad-b",
+   "part": "B",
+   "strand": "quadratics",
+   "difficulty": 3,
+   "stem_tex": "A ball is thrown upward; its height is $h(t) = -16t^2 + 48t + 6$ feet. Find the maximum height and when the ball reaches it.",
+   "stem_html": "<p>A ball is thrown upward; its height is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mi>−</mi><mn>16</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>48</mn><mi>t</mi><mo>+</mo><mn>6</mn></mrow><annotation encoding=\"application/x-tex\">h(t) = -16t^2 + 48t + 6</annotation></semantics></math> feet. Find the maximum height and when the ball reaches it.</p>",
+   "solution_tex": "The vertex is at $t = -\\frac{b}{2a} = \\frac{48}{32} = 1.5$ s, and $h(1.5) = -36 + 72 + 6 = 42$ ft.",
+   "solution_html": "<p>The vertex is at <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mi>−</mi><mfrac><mi>b</mi><mrow><mn>2</mn><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mn>48</mn><mn>32</mn></mfrac><mo>=</mo><mn>1.5</mn></mrow><annotation encoding=\"application/x-tex\">t = -\\frac{b}{2a} = \\frac{48}{32} = 1.5</annotation></semantics></math> s, and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1.5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mi>−</mi><mn>36</mn><mo>+</mo><mn>72</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>42</mn></mrow><annotation encoding=\"application/x-tex\">h(1.5) = -36 + 72 + 6 = 42</annotation></semantics></math> ft.</p>",
+   "answer_tex": "t = 1.5\\text{ s},\\ h = 42\\text{ ft}"
+  },
+  {
+   "id": "a2-rat-b",
+   "part": "B",
+   "strand": "rational",
+   "difficulty": 3,
+   "stem_tex": "Solve $\\frac{1}{x} + \\frac{1}{x + 2} = \\frac{3}{4}$ and check for extraneous solutions.",
+   "stem_html": "<p>Solve <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{x} + \\frac{1}{x + 2} = \\frac{3}{4}</annotation></semantics></math> and check for extraneous solutions.</p>",
+   "solution_tex": "Multiply by $4x(x + 2)$: $4(x + 2) + 4x = 3x(x + 2)$, so $8x + 8 = 3x^2 + 6x$ and $3x^2 - 2x - 8 = 0$, i.e. $(3x + 4)(x - 2) = 0$. Both $x = 2$ and $x = -\\frac{4}{3}$ keep the denominators nonzero, so both are solutions.",
+   "solution_html": "<p>Multiply by <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mi>x</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">4x(x + 2)</annotation></semantics></math>: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>+</mo><mn>4</mn><mi>x</mi><mo>=</mo><mn>3</mn><mi>x</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">4(x + 2) + 4x = 3x(x + 2)</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mi>x</mi><mo>+</mo><mn>8</mn><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">8x + 8 = 3x^2 + 6x</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>8</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">3x^2 - 2x - 8 = 0</annotation></semantics></math>, i.e. <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">(3x + 4)(x - 2) = 0</annotation></semantics></math>. Both <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">x = 2</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mfrac><mn>4</mn><mn>3</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">x = -\\frac{4}{3}</annotation></semantics></math> keep the denominators nonzero, so both are solutions.</p>",
+   "answer_tex": "x = 2 \\text{ or } x = -\\frac{4}{3}"
+  },
+  {
+   "id": "a2-exp-b",
+   "part": "B",
+   "strand": "explog",
+   "difficulty": 3,
+   "stem_tex": "Solve $\\log_3(x + 6) + \\log_3 x = 3$.",
+   "stem_html": "<p>Solve <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mn>3</mn></msub><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>+</mo><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mn>3</mn></msub><mi>x</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">\\log_3(x + 6) + \\log_3 x = 3</annotation></semantics></math>.</p>",
+   "solution_tex": "Combine: $\\log_3[x(x + 6)] = 3$, so $x^2 + 6x = 27$ and $(x + 9)(x - 3) = 0$. The logarithm needs $x > 0$, so $x = -9$ is extraneous and $x = 3$.",
+   "solution_html": "<p>Combine: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi>log</mi><mo>&#8289;</mo></mrow><mn>3</mn></msub><mo stretchy=\"false\" form=\"prefix\">[</mo><mi>x</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"postfix\">]</mo><mo>=</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">\\log_3[x(x + 6)] = 3</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><mi>x</mi><mo>=</mo><mn>27</mn></mrow><annotation encoding=\"application/x-tex\">x^2 + 6x = 27</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>9</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">(x + 9)(x - 3) = 0</annotation></semantics></math>. The logarithm needs <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">x &gt; 0</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>9</mn></mrow><annotation encoding=\"application/x-tex\">x = -9</annotation></semantics></math> is extraneous and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">x = 3</annotation></semantics></math>.</p>",
+   "answer_tex": "x = 3"
+  },
+  {
+   "id": "a2-seq-b",
+   "part": "B",
+   "strand": "sequences",
+   "difficulty": 2,
+   "stem_tex": "An arithmetic sequence has $a_1 = 7$ and $a_{10} = 52$. Find the common difference and the sum of the first 10 terms.",
+   "stem_html": "<p>An arithmetic sequence has <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>7</mn></mrow><annotation encoding=\"application/x-tex\">a_1 = 7</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>a</mi><mn>10</mn></msub><mo>=</mo><mn>52</mn></mrow><annotation encoding=\"application/x-tex\">a_{10} = 52</annotation></semantics></math>. Find the common difference and the sum of the first 10 terms.</p>",
+   "solution_tex": "$a_{10} = a_1 + 9d$, so $52 = 7 + 9d$ and $d = 5$. $S_{10} = \\frac{10}{2}(a_1 + a_{10}) = 5 \\cdot 59 = 295$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>a</mi><mn>10</mn></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mn>9</mn><mi>d</mi></mrow><annotation encoding=\"application/x-tex\">a_{10} = a_1 + 9d</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>52</mn><mo>=</mo><mn>7</mn><mo>+</mo><mn>9</mn><mi>d</mi></mrow><annotation encoding=\"application/x-tex\">52 = 7 + 9d</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">d = 5</annotation></semantics></math>. <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>10</mn></msub><mo>=</mo><mfrac><mn>10</mn><mn>2</mn></mfrac><mo stretchy=\"false\" form=\"prefix\">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mn>10</mn></msub><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>5</mn><mo>⋅</mo><mn>59</mn><mo>=</mo><mn>295</mn></mrow><annotation encoding=\"application/x-tex\">S_{10} = \\frac{10}{2}(a_1 + a_{10}) = 5 \\cdot 59 = 295</annotation></semantics></math>.</p>",
+   "answer_tex": "d = 5;\\ S_{10} = 295"
+  }
+ ],
+ "license": "Questions written for impo (github.com/billsix/impo), MIT license."
+}

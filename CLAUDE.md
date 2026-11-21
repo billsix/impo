@@ -14,7 +14,7 @@ in an ephemeral podman container. One folder per book; the family is self-contai
 ## Structure — families under the repo root
 
 impo groups books into **families** (a family = books of the same source/kind), each a top-level
-folder. Two families exist:
+folder. Two book families exist, plus the `study/` family of material built from the books:
 
 - **`openstax/`** — LaTeX ports of OpenStax open textbooks (16 books) that convert **CNXML→LaTeX**
   with a shared python converter. **The pilot family; read `openstax/CLAUDE.md` first.** Layout:
@@ -33,6 +33,10 @@ folder. Two families exist:
   layer + the Fedora/TeXLive/pandoc image) rather than a converter. Read `trench/CLAUDE.md`. First
   book: `trench/elementary-differential-equations/` (William F. Trench, CC BY-NC-SA 3.0). Added
   2026-09-19; tracked in `tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md`.
+- **`study/`** — not books: literacy tests, cliff-notes study guides, problem notebooks and a Go
+  quiz server (`study/quiz/`), built in the OpenStax toolchain image (plus sympy; the notebooks add
+  Jupyter + ePiX) and generated from data (`study/bank/*.toml`, `study/cliffnotes/*.toml`, the
+  converter's section LaTeX) with every answer sympy-checked. Read `study/CLAUDE.md`. Added 2026-11-21.
 
 ## Contracts (the parts that aren't in `openstax/CLAUDE.md`)
 
