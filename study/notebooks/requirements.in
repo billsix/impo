@@ -1,0 +1,12 @@
+# The problem-notebook image's Python packages (installed into /venv by uv,
+# pinned by constraints.txt; regenerate with `make update-pins`).
+sympy==1.14.0
+antlr4-python3-runtime==4.11.1
+lark
+nbconvert
+nbclient
+ipykernel
+jupytext
+nanobind
+setuptools
+wheel

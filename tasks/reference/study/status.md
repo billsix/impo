@@ -25,7 +25,13 @@ what exists, how it was verified, and where the remaining work is tracked. Built
 
 ## Problem notebooks (`make problem-notebooks BOOK=…`)
 
-See the problem-notebook record and `tasks/openstax-problem-notebooks-remaining-books.md`.
+- Pipeline: `tools/problems.py` (exercises from the converter's section LaTeX) → `tools/solver.py`
+  (sympy solves the mechanical ones and checks them against the answer key) → `tools/notebooks.py`
+  (one jupytext notebook per section, executed by nbconvert) + `tools/nbplot.py` (ePiX graphs).
+- **Prealgebra 2e: complete** — 60 section notebooks, 7368 exercises: 1188 checked against the book,
+  15 mismatch (flagged; some are OpenStax errata), 1235 computed without a book answer, 4930 manual
+  (restated only), 147 ePiX graphs, 0 cell errors (2026-11-21).
+- Every other ladder book: not generated — `tasks/openstax-problem-notebooks-remaining-books.md`.
 
 ## Quiz server (`study/quiz/`)
 
