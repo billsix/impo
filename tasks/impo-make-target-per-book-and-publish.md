@@ -35,8 +35,8 @@ PDF/EPUB attached (needs a real tag push).
 ## Context
 
 - Read first: `CLAUDE.md`, `openstax/CLAUDE.md`, `trench/CLAUDE.md`,
-  `tasks/openstax-publish-books.md` (the older publish task; this task answers its open questions
-  and narrows it to the cross-book-link work), `tasks/openstax-ia-crossref-links.md` (parked until
+  `tasks/archive/impo/2026/11/21/openstax-publish-books.md` (the older publish task, done 2026-11-21; this task answers its open questions
+  and narrows it to the cross-book-link work), `tasks/archive/impo/2026/11/21/openstax-ia-crossref-links.md` (done 2026-11-21; was parked until
   stable URLs exist).
 - **Today:** each book folder has its own Makefile. OpenStax books have `pdf`/`html`/`epub`/`dist`.
   **Trench has `pdf`/`html`/`epub` but no `dist`.** There is no root `Makefile`.
@@ -107,7 +107,8 @@ later would be one extra step, if the maintainer ever wants that.
 4. Maintainer pushes a test tag (e.g. `v0.0.1`) and checks the Release. Fix whatever only GitHub
    reveals (disk, podman, timing).
 5. `make publish-pages` once open question 2 is answered; then narrow
-   `tasks/openstax-publish-books.md` to the cross-book links and un-park the IA-link task.
+   `tasks/openstax-publish-books.md` to the cross-book links and un-park the IA-link task (both done
+   2026-11-21, archived under `tasks/archive/impo/2026/11/21/`).
 
 ## Progress (2026-11-07)
 
