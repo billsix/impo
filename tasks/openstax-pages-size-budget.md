@@ -40,5 +40,4 @@ Recommendation: 1 now (it needs nothing), then measure 2+3 together if all books
 ## Also noted here
 
 - Page file names contain `:` (`059-mod:m81444.html`), which Windows cannot unpack from
-  `<book>-html.zip`. Renaming means changing html.sh's `--chunk-template` and regenerating every
-  `crossbook/index/*.json`; decide with the above whether it matters.
+  `<book>-html.zip`: its own task now, `tasks/openstax-html-filenames-without-colons.md`.
