@@ -1,7 +1,6 @@
 # Publish the OpenStax books (PDF / HTML / EPUB) — decide where, then wire cross-book links
 
-**Status:** proposed — needs go-ahead (open questions below; updated 2026-11-21 with the maintainer's
-billsix.github.io request)
+**Status:** proposed — needs go-ahead (decisions recorded 2026-11-21; no open questions)
 **Priority:** 5
 **Difficulty:** 5
 
@@ -65,15 +64,9 @@ needs.
 4. **Downloads at the top of each book** — the landing page gets links to the PDF, EPUB and zipped
    HTML (`<book>-html.zip`, a new `dist` output) on the GitHub Release.
 
-## Open questions
+## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-21: "go with your recommendations")
 
-1. **Which Pages site:** (a) the user site `billsix.github.io` itself (books at
-   `billsix.github.io/<book>/`, shared with anything else already there), or (b) a project site from
-   a new repo, e.g. `billsix.github.io/openstax/<book>/`, or (c) a `gh-pages` branch of impo
-   (`billsix.github.io/impo/<book>/`)? *Recommend (b): one combined site keeps cross-book links
-   relative and stable, and it doesn't fill the user site's 1 GB budget.*
-2. **Downloads as Release assets:** OK for the PDF, EPUB and zipped HTML to live on the GitHub
-   Release (linked from each book's landing page), since all of them together won't fit under the
-   1 GB Pages cap? *Recommend yes.*
-3. **Download links' place:** a box at the top of the book's first page only, or a bar on every
-   page? *Recommend the first page (what you asked for), plus one "Downloads" item in the side nav.*
+- **No new repo: a `gh-pages` branch of impo,** served at `billsix.github.io/impo/<book>/` (William Emerison Six <billsix@gmail.com>, 2026-11-21: no new repo; it goes in the repo that has the task). This replaces the earlier "project site from a new repo" choice. One combined site, so cross-book links stay relative, and it doesn't use the user site's 1 GB budget. Gotcha: a plain `git clone` of impo also fetches `gh-pages`, so clones grow by the site's size (~0.3 GB of HTML); `ghp-import` should push the site as a single commit with no history (`--no-history`), so the branch doesn't grow on every publish.
+- **Downloads are GitHub Release assets** (PDF, EPUB, zipped HTML), linked from each book's first page.
+- **Download links** in a box at the top of the book's first page, plus one "Downloads" item in the side nav.
+

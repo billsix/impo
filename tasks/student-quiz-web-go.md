@@ -1,6 +1,6 @@
 # A Go quiz web page: timed multiple-choice questions to test students
 
-**Status:** proposed — needs go-ahead (open questions below)
+**Status:** proposed — needs go-ahead (decisions recorded 2026-11-21; no open questions)
 **Priority:** 5
 **Difficulty:** 5 (a small Go server; the question bank comes from the literacy-test task)
 **Created:** 2026-11-21 (William Emerison Six <billsix@gmail.com>)
@@ -28,10 +28,9 @@ and shows the maintainer each student's results.
   - One question per page; choices shuffled; no going back.
   - Results: correct/incorrect + seconds per question, summarized per strand ("solid / shaky / not
     yet", with speed). Stored per student (a JSON file per attempt, or SQLite).
-  - Students identified by a name typed at the start (no passwords) unless Open question 2 says
-    otherwise.
+  - Students identified by a name typed at the start (no passwords), with one admin password (Decisions).
 - **Hosting:** a Go server cannot run on GitHub Pages (static only). It runs on a machine on the home
-  network (the maintainer's Pi or a desktop) or in a container. Open question 1.
+  network (the maintainer's Pi or a desktop) or in a container: home network only (Decisions).
 - Go is not yet in this repo's images. It needs a Go toolchain image (Fedora `golang`) and the
   usual `make` targets (`image`, `run`, `test`, `format` with `gofmt`, `vet`).
 
@@ -41,14 +40,10 @@ and shows the maintainer each student's results.
 2. Server + templates + per-question timer + results; `go test` for the timer rule and scoring.
 3. Container + `make run` / `make test`; try it with the prealgebra bank.
 
-## Open questions
+## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-21: "go with your recommendations")
 
-1. **Where does it run?** (a) on the home network only (the Pi or a desktop), or (b) on the public
-   internet (needs logins, HTTPS, abuse limits)? *Recommend (a).*
-2. **Student identity:** a typed name is enough, or does each child need a password so they can't
-   see each other's results? *Recommend a typed name plus an admin page for you behind one password.*
-3. **Time limit:** one fixed limit per question (e.g. 60 s), or a limit per difficulty set in the
-   question bank? *Recommend per difficulty, stored in the bank.*
-4. **Where in the repo:** inside impo's proposed `study/` folder, or its own repository (a Go web app
-   is a different kind of project from the book ports)? *Recommend its own repo, reading the bank
-   from impo; you'd create it and add its `github` remote.*
+- **Home network only** (the Pi or a desktop); no public hosting.
+- **Students type a name;** an admin results page sits behind one password.
+- **Time limit per difficulty,** stored in the question bank.
+- **In impo, at `study/quiz/`** (William Emerison Six <billsix@gmail.com>, 2026-11-21: no new repo; it goes in the repo that has the task). This replaces the earlier "its own repository" choice. It reads the question bank from `study/` directly and has its own Go image, `Makefile` and gates there, like a book folder.
+

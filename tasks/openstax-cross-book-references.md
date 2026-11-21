@@ -1,6 +1,6 @@
 # Find the references between books by scanning their content, and make them relative links
 
-**Status:** proposed — needs go-ahead (open questions below)
+**Status:** proposed — needs go-ahead (decisions recorded 2026-11-21; no open questions)
 **Priority:** 6
 **Difficulty:** 8 (a survey across 16 book folders, then a build-order dependency and a link pass)
 **Created:** 2026-11-21 (William Emerison Six <billsix@gmail.com>)
@@ -42,7 +42,7 @@ ones shown as "Review: <book> §x.y" links where the maintainer approves them, a
      earlier book (e.g. Calculus 1 §1.1 functions → College Algebra ch. 3). Needs judgment (by hand
      or AI-assisted), so the result is a reviewed mapping file, not a regex.
 - PDF and EPUB: a cross-book link there can only be an absolute URL (`\href`), since no shared PDF
-  exists (the IA task's note). Open question 3.
+  exists (the IA task's note). Decisions: absolute URLs.
 
 ## Plan
 
@@ -55,14 +55,8 @@ ones shown as "Review: <book> §x.y" links where the maintainer approves them, a
 4. Build-order in `tools/build-books.sh`: target books first.
 5. Link-check the built combined site; then the PDF/EPUB decision.
 
-## Open questions
+## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-21: "go with your recommendations")
 
-1. **Implicit prerequisites at all?** (a) Link only the explicit references the books already
-   contain, or (b) also add new "Review: <book> §x.y" links for the implicit prerequisites (this is
-   new content on top of the OpenStax text)? *Recommend (b), but one chain (the math ladder) first,
-   reviewed by you before the rest.*
-2. **Where the added links appear:** in a "Prerequisites" box at the top of each section, or inline
-   where the topic is used? *Recommend a box at the top of the section; it doesn't change the
-   OpenStax prose.*
-3. **PDF/EPUB:** absolute `\href` URLs to the published site, or leave the references plain text
-   there? *Recommend absolute URLs, once the site URL is fixed by `tasks/openstax-publish-books.md`.*
+- **Implicit prerequisites too:** new "Review: <book> §x.y" links, starting with the math ladder (prealgebra → algebra → college algebra → calculus 1–3), reviewed by the maintainer before physics and the sciences.
+- **Added links go in a "Prerequisites" box** at the top of each section; the OpenStax prose is unchanged.
+- **PDF/EPUB:** absolute `\href` URLs to the published site, once `tasks/openstax-publish-books.md` fixes its URL.

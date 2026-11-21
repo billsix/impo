@@ -1,6 +1,6 @@
 # AI-written LaTeX literacy tests: prealgebra, algebra 1, geometry, algebra 2
 
-**Status:** proposed — needs go-ahead (open questions below)
+**Status:** proposed — needs go-ahead (decisions recorded 2026-11-21; no open questions)
 **Priority:** 4
 **Difficulty:** 6 (writing and checking four tests with answer keys; geometry has no source book here)
 **Created:** 2026-11-21 (William Emerison Six <billsix@gmail.com>)
@@ -24,8 +24,8 @@ target in the house osbook style.
   - prealgebra → Prealgebra 2e (`osbooks-prealgebra-bundle`);
   - algebra 1 → Algebra 1 (`osbooks-algebra-1`) and Elementary Algebra 2e (prealgebra bundle);
   - algebra 2 → Intermediate Algebra 2e (prealgebra bundle) and/or College Algebra
-    (`osbooks-college-algebra-bundle`); OpenStax has no book titled "Algebra 2" (Open question 2);
-  - geometry → **no geometry book in impo** (OpenStax has none). Open question 1.
+    (`osbooks-college-algebra-bundle`); OpenStax has no book titled "Algebra 2" (Decisions: Intermediate Algebra 2e);
+  - geometry → **no geometry book in impo** (OpenStax has none); Decisions: Common Core standards.
 - Licensing: the questions are newly written, not copied from OpenStax, so they are the
   maintainer's (MIT, like the toolchain). The review pointers cite the CC BY books by name and
   section. If any question is adapted from an OpenStax exercise, it carries the CC BY attribution.
@@ -38,25 +38,16 @@ target in the house osbook style.
 ## Plan
 
 1. Strand list per subject (from the books' tables of contents; Common Core high-school standards
-   for geometry and algebra 2 if Open question 1/2 say so).
+   for geometry and algebra 2 per Decisions).
 2. Question-bank schema + a generator (data → LaTeX test + key + scoring sheet); one subject end to
    end (prealgebra) for the maintainer to try on one child.
 3. The other three subjects; every answer verified by a sympy check in the generator's test step.
 4. `make literacy-tests` (in the osbook TeX image) → `output/literacy/<subject>{,-key}.pdf`.
 
-## Open questions
+## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-21: "go with your recommendations")
 
-1. **Geometry source:** impo has no geometry book. Base the strands on (a) the Common Core
-   high-school geometry standards, (b) a specific textbook you name (possibly the same high-school
-   geometry book as geometricalgebra's `tasks/book-opening-vectors-supersede-geometry-types.md`), or
-   (c) skip geometry for now? *Recommend (a); it is public and standard.*
-2. **"Algebra 2" = which book:** Intermediate Algebra 2e, College Algebra, or the Common Core
-   Algebra II standards? *Recommend Intermediate Algebra 2e for strands, with review pointers into it.*
-3. **Format:** (a) multiple choice only (fast to mark, matches the quiz site), (b) show-your-work
-   free response, or (c) both, in two parts? *Recommend (c): multiple choice measures recall and
-   speed, free response shows understanding.*
-4. **Length and time:** about how long should one test take a child? *Recommend 40–50 minutes,
-   about 30 questions.*
-5. **Where in the repo:** a new top-level family folder (e.g. `study/` beside `openstax/` and
-   `trench/`) for the tests, cliff notes, notebooks and quiz site, or a separate repo? *Recommend a
-   `study/` folder in impo, reusing `openstax/tooling/`'s image and class.*
+- **Geometry strands from the Common Core high-school geometry standards.**
+- **"Algebra 2" = Intermediate Algebra 2e** for strands and review pointers.
+- **Both formats:** part A multiple choice (recall and speed; the quiz site reuses it), part B show-your-work free response.
+- **About 40–50 minutes, about 30 questions** per test.
+- **Location: a new `study/` family folder in impo** (beside `openstax/` and `trench/`), reusing `openstax/tooling/`'s image and class; shared with the cliff notes and problem notebooks.

@@ -1,6 +1,6 @@
 # A Jupyter notebook for every problem in the main books: restate, solve, plot with ePiX
 
-**Status:** proposed — needs go-ahead (open questions below)
+**Status:** proposed — needs go-ahead (decisions recorded 2026-11-21; no open questions)
 **Priority:** 6
 **Difficulty:** 9 (thousands of problems; every solution must be checked)
 **Created:** 2026-11-21 (William Emerison Six <billsix@gmail.com>)
@@ -21,7 +21,7 @@ rendered.
   Contemporary Mathematics 3073, Organic Chemistry 1959, Biology 2337, Physics 846, Python 613. The
   end-of-section exercises written in the CNXML itself (prealgebra bundle, college algebra, calculus)
   are not in a cache and are not counted yet; the first step counts them. The total is likely in
-  the tens of thousands across all books, so the scope must be narrowed (Open question 1).
+  the tens of thousands across all books, so the scope must be narrowed (Decisions: the math ladder first).
 - **Problem source:** the converter already parses every exercise (CNXML `<exercise>` and the
   os-embed caches) for the LaTeX build (`openstax/tooling/`), so the notebook generator reads the
   same parsed problems rather than scraping. OpenStax books give answers for odd-numbered exercises
@@ -49,15 +49,9 @@ rendered.
    plots, answer-key check, `make problem-notebooks BOOK=…` executing them clean.
 4. Fan out over the chosen books, one book at a time, each with its answer-key match rate recorded.
 
-## Open questions
+## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-21: "go with your recommendations")
 
-1. **Which books are "the main books"?** (a) the math ladder (prealgebra bundle, Algebra 1, College
-   Algebra, Calculus 1–3), (b) the math ladder plus the physics books, or (c) every book? *Recommend
-   (a) first; the plots and sympy solutions fit math best.*
-2. **Every problem, or the odd ones that have answers?** Solving only the odd-numbered problems means
-   every solution can be checked against the book's key. *Recommend all problems, with the even ones
-   marked "unchecked" until reviewed.*
-3. **One notebook per section, or per problem?** *Recommend per section (a few dozen problems each);
-   per-problem gives tens of thousands of files.*
-4. **Where:** the same `study/` folder proposed in `tasks/math-literacy-tests-latex.md` (its Open
-   question 5)? *Recommend yes.*
+- **Main books = the math ladder first:** prealgebra bundle, Algebra 1, College Algebra, Calculus 1–3.
+- **Every problem;** even-numbered ones (no book answer) are marked "unchecked" until reviewed.
+- **One notebook per section.**
+- **Lives in `study/`** (as the literacy tests decided).
