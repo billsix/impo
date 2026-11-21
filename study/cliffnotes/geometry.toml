@@ -1,0 +1,234 @@
+# Geometry cliff notes (source). OpenStax has no geometry book, so the chapters
+# follow the Common Core State Standards for high-school geometry (one chapter
+# per group of standards). Written for impo (MIT); the "full book" pointers name
+# the nearest OpenStax sections (CC BY 4.0). Checked by study/tools/cliffnotes.py.
+
+subject = "geometry"
+title = "Geometry Cliff Notes"
+based_on = ""
+
+[[chapters]]
+title = "Transformations and Congruence (G-CO.1-8)"
+review = ["CCSS G-CO.1-8", "CA 3.5"]
+rules = [
+  '''Rigid motions keep lengths and angles: translation $(x, y) \mapsto (x + a, y + b)$, reflection across the $x$-axis $(x, -y)$, across the $y$-axis $(-x, y)$, across $y = x$ $(y, x)$, rotation $90^\circ$ counterclockwise $(-y, x)$, $180^\circ$ $(-x, -y)$.''',
+  '''Two figures are congruent when a sequence of rigid motions maps one onto the other. Triangle tests: SSS, SAS, ASA, AAS (not SSA).''',
+]
+[[chapters.examples]]
+problem = '''Rotate $(5, -2)$ by $180^\circ$ about the origin, then translate by $\langle 1, 3 \rangle$.'''
+steps = '''$180^\circ$: $(-5, 2)$. Translate: $(-5 + 1, 2 + 3) = (-4, 5)$.'''
+compute = "(-5 + 1, 2 + 3)"
+answer = "(-4, 5)"
+[[chapters.examples]]
+problem = '''A dilation centered at the origin with factor 3 maps $(2, -1)$ where? Is it a rigid motion?'''
+steps = '''$(3 \cdot 2, 3 \cdot (-1)) = (6, -3)$. No: it triples lengths, so the image is similar, not congruent.'''
+compute = "(3*2, 3*(-1))"
+answer = "(6, -3)"
+[[chapters.practice]]
+problem = '''Reflect $(-3, 7)$ across the $x$-axis.'''
+compute = "(-3, -7)"
+answer = "(-3, -7)"
+[[chapters.practice]]
+problem = '''Rotate $(2, 6)$ by $90^\circ$ counterclockwise.'''
+compute = "(-6, 2)"
+answer = "(-6, 2)"
+[[chapters.practice]]
+problem = '''Translate $(0, -4)$ by $\langle -5, 2 \rangle$.'''
+compute = "(0 - 5, -4 + 2)"
+answer = "(-5, -2)"
+
+[[chapters]]
+title = "Lines, Angles and Triangles (G-CO.9-11)"
+review = ["CCSS G-CO.9-11", "PA 9.3"]
+rules = [
+  '''Vertical angles are equal; a linear pair adds to $180^\circ$. With parallel lines and a transversal, corresponding and alternate interior angles are equal and same-side interior angles add to $180^\circ$.''',
+  '''A triangle's angles add to $180^\circ$; an exterior angle equals the sum of the two remote interior angles; base angles of an isosceles triangle are equal.''',
+]
+[[chapters.examples]]
+problem = '''Alternate interior angles measure $(4x - 10)^\circ$ and $(2x + 30)^\circ$. Find $x$ and the angle.'''
+steps = '''They are equal: $4x - 10 = 2x + 30$, so $x = 20$ and the angle is $70^\circ$.'''
+compute = "(solve(Eq(4*x - 10, 2*x + 30), x)[0], (4*x - 10).subs(x, 20))"
+answer = "(20, 70)"
+answer_tex = 'x = 20,\ 70^\circ'
+[[chapters.examples]]
+problem = '''Each interior angle of a regular hexagon?'''
+steps = '''Angle sum $(n - 2)180 = 720$; divide by 6: $120^\circ$.'''
+compute = "Rational((6 - 2)*180, 6)"
+answer = "120"
+answer_tex = '120^\circ'
+[[chapters.practice]]
+problem = '''Supplement of $63^\circ$.'''
+compute = "180 - 63"
+answer = "117"
+answer_tex = '117^\circ'
+[[chapters.practice]]
+problem = '''A triangle has angles $50^\circ$ and $75^\circ$. Third angle?'''
+compute = "180 - 50 - 75"
+answer = "55"
+answer_tex = '55^\circ'
+[[chapters.practice]]
+problem = '''Interior angle sum of an octagon.'''
+compute = "(8 - 2)*180"
+answer = "1080"
+answer_tex = '1080^\circ'
+
+[[chapters]]
+title = "Similarity (G-SRT.1-5)"
+review = ["CCSS G-SRT.1-5", "EA 8.7"]
+rules = [
+  '''Similar figures have equal angles and proportional sides; the ratio of lengths is the scale factor $k$, areas scale by $k^2$ and volumes by $k^3$.''',
+  '''Triangle similarity tests: AA, SAS$\sim$, SSS$\sim$. A line parallel to one side of a triangle divides the other two sides proportionally.''',
+]
+[[chapters.examples]]
+problem = '''Two similar triangles have corresponding sides 4 and 10. The small one has area 12. Area of the large one?'''
+steps = '''$k = \frac{10}{4} = \frac{5}{2}$, so the area scales by $k^2 = \frac{25}{4}$: $12 \cdot \frac{25}{4} = 75$.'''
+compute = "12 * Rational(10, 4)**2"
+answer = "75"
+[[chapters.examples]]
+problem = '''In triangle $ABC$, $DE \parallel BC$ with $AD = 3$, $DB = 6$, $AE = 4$. Find $EC$.'''
+steps = '''$\frac{AD}{DB} = \frac{AE}{EC}$: $\frac{3}{6} = \frac{4}{EC}$, so $EC = 8$.'''
+compute = "solve(Eq(Rational(3, 6), 4/c), c)[0]"
+answer = "8"
+[[chapters.practice]]
+problem = '''Scale factor 3; a side of the original is 7. Image side?'''
+compute = "3*7"
+answer = "21"
+[[chapters.practice]]
+problem = '''Similar solids with scale factor 2; small volume 5. Large volume?'''
+compute = "5 * 2**3"
+answer = "40"
+[[chapters.practice]]
+problem = '''Triangles with sides 6, 8, 10 and 9, 12, $x$ are similar. Find $x$.'''
+compute = "10 * Rational(9, 6)"
+answer = "15"
+
+[[chapters]]
+title = "Right Triangles and Trigonometry (G-SRT.6-8)"
+review = ["CCSS G-SRT.6-8", "PC 5.4", "PA 9.3"]
+rules = [
+  '''SOH-CAH-TOA: $\sin\theta = \frac{\text{opp}}{\text{hyp}}$, $\cos\theta = \frac{\text{adj}}{\text{hyp}}$, $\tan\theta = \frac{\text{opp}}{\text{adj}}$; and $a^2 + b^2 = c^2$.''',
+  '''Special triangles: $45$-$45$-$90$ sides $1 : 1 : \sqrt{2}$; $30$-$60$-$90$ sides $1 : \sqrt{3} : 2$. $\sin\theta = \cos(90^\circ - \theta)$.''',
+]
+[[chapters.examples]]
+problem = '''A ramp rises 3 ft over a horizontal run of 12 ft. Find its length.'''
+steps = '''$\sqrt{3^2 + 12^2} = \sqrt{153} = 3\sqrt{17} \approx 12.37$ ft.'''
+compute = "sqrt(3**2 + 12**2)"
+answer = "3*sqrt(17)"
+answer_tex = '3\sqrt{17} \approx 12.37\text{ ft}'
+[[chapters.examples]]
+problem = '''A $45$-$45$-$90$ triangle has legs of 7. Hypotenuse?'''
+steps = '''$7\sqrt{2}$.'''
+compute = "sqrt(7**2 + 7**2)"
+answer = "7*sqrt(2)"
+answer_tex = '7\sqrt{2}'
+[[chapters.practice]]
+problem = '''$\sin 30^\circ$'''
+compute = "sin(pi/6)"
+answer = "Rational(1, 2)"
+[[chapters.practice]]
+problem = '''$\tan\theta$ when opposite is 8 and adjacent is 15.'''
+compute = "Rational(8, 15)"
+answer = "Rational(8, 15)"
+[[chapters.practice]]
+problem = '''Leg of a right triangle with hypotenuse 25 and other leg 7.'''
+compute = "sqrt(25**2 - 7**2)"
+answer = "24"
+
+[[chapters]]
+title = "Circles (G-C.1-5, G-GPE.1)"
+review = ["CCSS G-C.1-5, G-GPE.1", "PA 9.5", "PC 5.1", "IA 11.1"]
+rules = [
+  '''$C = 2\pi r$, $A = \pi r^2$. With a central angle $\theta$ in radians: arc length $s = r\theta$ and sector area $\frac{1}{2}r^2\theta$ (in degrees, take $\frac{\theta}{360}$ of $C$ or $A$).''',
+  '''An inscribed angle is half its intercepted arc; a tangent is perpendicular to the radius at the point of tangency. Circle: $(x - h)^2 + (y - k)^2 = r^2$.''',
+]
+[[chapters.examples]]
+problem = '''Complete the square to find the center and radius of $x^2 + y^2 - 6x + 4y - 3 = 0$.'''
+steps = '''$(x^2 - 6x + 9) + (y^2 + 4y + 4) = 3 + 9 + 4$, so $(x - 3)^2 + (y + 2)^2 = 16$: center $(3, -2)$, $r = 4$.'''
+compute = "expand((x - 3)**2 + (y + 2)**2 - 16)"
+answer = "x**2 + y**2 - 6*x + 4*y - 3"
+answer_tex = '(3, -2),\ r = 4'
+[[chapters.examples]]
+problem = '''Convert $150^\circ$ to radians.'''
+steps = '''$150 \cdot \frac{\pi}{180} = \frac{5\pi}{6}$.'''
+compute = "150*pi/180"
+answer = "5*pi/6"
+answer_tex = '\frac{5\pi}{6}'
+[[chapters.practice]]
+problem = '''Arc length, radius 10, central angle $\frac{\pi}{5}$.'''
+compute = "10*pi/5"
+answer = "2*pi"
+answer_tex = '2\pi'
+[[chapters.practice]]
+problem = '''Area of a circle with circumference $12\pi$.'''
+compute = "pi*(12*pi/(2*pi))**2"
+answer = "36*pi"
+answer_tex = '36\pi'
+[[chapters.practice]]
+problem = '''Inscribed angle on an arc of $84^\circ$.'''
+compute = "Rational(84, 2)"
+answer = "42"
+answer_tex = '42^\circ'
+
+[[chapters]]
+title = "Coordinate Geometry (G-GPE.4-7)"
+review = ["CCSS G-GPE.4-7", "IA 11.1", "EA 4.6"]
+rules = [
+  '''Distance $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$; midpoint $\left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)$; the point a fraction $t$ of the way from $A$ to $B$ is $A + t(B - A)$.''',
+  '''Use slopes to prove parallel (equal) or perpendicular (product $-1$) sides, and distances to prove equal sides.''',
+]
+[[chapters.examples]]
+problem = '''Perimeter of the triangle with vertices $(0, 0)$, $(6, 0)$, $(0, 8)$.'''
+steps = '''Sides 6, 8 and $\sqrt{36 + 64} = 10$; perimeter $24$.'''
+compute = "6 + 8 + sqrt(6**2 + 8**2)"
+answer = "24"
+[[chapters.examples]]
+problem = '''Is the triangle $(1, 1)$, $(4, 5)$, $(8, 2)$ a right triangle?'''
+steps = '''Slopes $\frac{4}{3}$ (first to second) and $-\frac{3}{4}$ (second to third) multiply to $-1$: yes, the right angle is at $(4, 5)$.'''
+compute = "Rational(5 - 1, 4 - 1) * Rational(2 - 5, 8 - 4)"
+answer = "-1"
+answer_tex = '\text{yes: } \tfrac{4}{3} \cdot (-\tfrac{3}{4}) = -1'
+[[chapters.practice]]
+problem = '''Distance from $(-2, 3)$ to $(4, -5)$.'''
+compute = "sqrt((4 + 2)**2 + (-5 - 3)**2)"
+answer = "10"
+[[chapters.practice]]
+problem = '''Midpoint of $(3, 9)$ and $(7, -1)$.'''
+compute = "(Rational(3 + 7, 2), Rational(9 - 1, 2))"
+answer = "(5, 4)"
+[[chapters.practice]]
+problem = '''Point $\frac{1}{4}$ of the way from $(0, 0)$ to $(8, 12)$.'''
+compute = "(Rational(8, 4), Rational(12, 4))"
+answer = "(2, 3)"
+
+[[chapters]]
+title = "Volume and Modeling (G-GMD, G-MG)"
+review = ["CCSS G-GMD.1-4, G-MG.1-3", "PA 9.6"]
+rules = [
+  '''Prism and cylinder $V = Bh$ ($\pi r^2 h$); pyramid and cone $V = \frac{1}{3}Bh$; sphere $V = \frac{4}{3}\pi r^3$.''',
+  '''Modeling: density $=$ mass $\div$ volume; convert units before computing ($1\text{ m}^3 = 1000$ L, $1\text{ ft}^3 \approx 7.48$ gal).''',
+]
+[[chapters.examples]]
+problem = '''A cone-shaped cup has radius 3 cm and height 8 cm. Volume?'''
+steps = '''$\frac{1}{3}\pi(9)(8) = 24\pi \approx 75.4$ cm$^3$.'''
+compute = "Rational(1, 3)*pi*3**2*8"
+answer = "24*pi"
+answer_tex = '24\pi \approx 75.4\text{ cm}^3'
+[[chapters.examples]]
+problem = '''A steel ball of radius 2 cm has density 7.8 g/cm$^3$. Mass?'''
+steps = '''$V = \frac{4}{3}\pi(8) = \frac{32\pi}{3}$; mass $= 7.8 \cdot \frac{32\pi}{3} = 83.2\pi \approx 261.4$ g.'''
+compute = "Rational(78, 10) * Rational(4, 3)*pi*2**3"
+answer = "Rational(832, 10)*pi"
+answer_tex = '83.2\pi \approx 261.4\text{ g}'
+[[chapters.practice]]
+problem = '''Volume of a rectangular prism 4 by 5 by 6.'''
+compute = "4*5*6"
+answer = "120"
+[[chapters.practice]]
+problem = '''Volume of a cylinder with radius 5 and height 4.'''
+compute = "pi*5**2*4"
+answer = "100*pi"
+answer_tex = '100\pi'
+[[chapters.practice]]
+problem = '''Volume of a pyramid with a 9 by 9 base and height 10.'''
+compute = "Rational(1, 3)*9*9*10"
+answer = "270"

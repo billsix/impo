@@ -1,0 +1,412 @@
+# Algebra 2 cliff notes (source). One [[chapters]] entry per chapter of
+# OpenStax Intermediate Algebra 2e (the maintainer's "Algebra 2"), whose
+# structure this follows (CC BY 4.0, attribution in the generated PDF). Rules
+# are summaries; examples and practice problems are written for impo (MIT).
+# Checked by study/tools/cliffnotes.py.
+
+subject = "algebra-2"
+title = "Algebra 2 Cliff Notes"
+based_on = "OpenStax \\emph{Intermediate Algebra 2e} (Marecek, Anthony-Smith and Honeycutt Mathis), \\url{https://openstax.org/details/books/intermediate-algebra-2e}"
+
+[[chapters]]
+title = "Foundations"
+review = ["IA 1.1", "IA 1.3", "IA 1.5"]
+rules = [
+  '''Order of operations and the properties of real numbers (commutative, associative, distributive, identity, inverse) are the toolkit for every later chapter.''',
+  '''Evaluate an expression by substituting, with parentheses around negative values: $x^2$ at $x = -3$ is $(-3)^2 = 9$.''',
+]
+[[chapters.examples]]
+problem = '''Evaluate $2x^2 - 3x + 1$ at $x = -2$.'''
+steps = '''$2(4) - 3(-2) + 1 = 8 + 6 + 1 = 15$.'''
+compute = "(2*x**2 - 3*x + 1).subs(x, -2)"
+answer = "15"
+[[chapters.examples]]
+problem = '''Simplify $\frac{2}{3}\left(\frac{9}{4} - \frac{3}{2}\right)$.'''
+steps = '''Inside: $\frac{9}{4} - \frac{6}{4} = \frac{3}{4}$. Then $\frac{2}{3} \cdot \frac{3}{4} = \frac{1}{2}$.'''
+compute = "Rational(2, 3)*(Rational(9, 4) - Rational(3, 2))"
+answer = "Rational(1, 2)"
+[[chapters.practice]]
+problem = '''$-3^2 + (-3)^2$'''
+compute = "-3**2 + (-3)**2"
+answer = "0"
+[[chapters.practice]]
+problem = '''$4(2a - 1) - 3(a + 5)$'''
+compute = "expand(4*(2*a - 1) - 3*(a + 5))"
+answer = "5*a - 19"
+answer_tex = '5a - 19'
+[[chapters.practice]]
+problem = '''$1.25 \div 0.05$'''
+compute = "Rational(125, 100) / Rational(5, 100)"
+answer = "25"
+
+[[chapters]]
+title = "Solving Linear Equations"
+review = ["IA 2.1", "IA 2.5", "IA 2.6", "IA 2.7"]
+rules = [
+  '''A compound inequality "and" is an intersection, "or" a union. $|u| < a$ means $-a < u < a$; $|u| > a$ means $u < -a$ or $u > a$.''',
+  '''An identity is true for all $x$ (solution set $\mathbb{R}$); a contradiction for none ($\varnothing$).''',
+]
+[[chapters.examples]]
+problem = '''Solve $|2x - 3| \le 7$.'''
+steps = '''$-7 \le 2x - 3 \le 7$, so $-4 \le 2x \le 10$ and $-2 \le x \le 5$: $[-2, 5]$.'''
+compute = "solveset(Abs(2*x - 3) <= 7, x, S.Reals)"
+answer = "Interval(-2, 5)"
+answer_tex = '[-2, 5]'
+[[chapters.examples]]
+problem = '''Solve $-1 < 3x + 2 < 11$.'''
+steps = '''Subtract 2: $-3 < 3x < 9$; divide: $-1 < x < 3$.'''
+compute = "Intersection(solveset(3*x + 2 > -1, x, S.Reals), solveset(3*x + 2 < 11, x, S.Reals))"
+answer = "Interval.open(-1, 3)"
+answer_tex = '(-1, 3)'
+[[chapters.practice]]
+problem = '''$|x + 4| = 9$'''
+compute = "solve(Eq(Abs(Symbol('x', real=True) + 4), 9), Symbol('x', real=True))"
+answer = "[5, -13]"
+answer_tex = 'x = 5 \text{ or } x = -13'
+[[chapters.practice]]
+problem = '''$5(x - 1) = 5x - 5$'''
+compute = "simplify(5*(x - 1) - (5*x - 5))"
+answer = "0"
+answer_tex = '\text{identity: every real } x'
+[[chapters.practice]]
+problem = '''$|x - 1| > 4$'''
+compute = "solveset(Abs(x - 1) > 4, x, S.Reals)"
+answer = "Union(Interval.open(-oo, -3), Interval.open(5, oo))"
+answer_tex = '(-\infty, -3) \cup (5, \infty)'
+
+[[chapters]]
+title = "Graphs and Functions"
+review = ["IA 3.2", "IA 3.3", "IA 3.5", "IA 3.6"]
+rules = [
+  '''A function assigns each input exactly one output (vertical line test). $f(a)$ means substitute $a$ for $x$.''',
+  '''The domain is every input that makes sense: no zero denominators, no negative even roots.''',
+]
+[[chapters.examples]]
+problem = '''Domain of $f(x) = \frac{1}{x - 4}$.'''
+steps = '''Exclude $x = 4$: $(-\infty, 4) \cup (4, \infty)$.'''
+compute = "Complement(S.Reals, solveset(x - 4, x, S.Reals))"
+answer = "Union(Interval.open(-oo, 4), Interval.open(4, oo))"
+answer_tex = '(-\infty, 4) \cup (4, \infty)'
+[[chapters.examples]]
+problem = '''For $f(x) = 3x^2 - x$, find $f(a + 1)$.'''
+steps = '''$3(a + 1)^2 - (a + 1) = 3a^2 + 6a + 3 - a - 1 = 3a^2 + 5a + 2$.'''
+compute = "expand((3*x**2 - x).subs(x, a + 1))"
+answer = "3*a**2 + 5*a + 2"
+answer_tex = '3a^2 + 5a + 2'
+[[chapters.practice]]
+problem = '''Line through $(0, -2)$ perpendicular to $y = 4x + 1$.'''
+compute = "-Rational(1, 4)*x - 2"
+answer = "-x/4 - 2"
+answer_tex = 'y = -\frac{1}{4}x - 2'
+[[chapters.practice]]
+problem = '''$g(x) = |x| - 5$; find $g(-8)$.'''
+compute = "(Abs(x) - 5).subs(x, -8)"
+answer = "3"
+[[chapters.practice]]
+problem = '''Domain of $h(x) = \sqrt{6 - 2x}$.'''
+compute = "solve_univariate_inequality(6 - 2*x >= 0, x, relational=False)"
+answer = "Interval(-oo, 3)"
+answer_tex = '(-\infty, 3]'
+
+[[chapters]]
+title = "Systems of Linear Equations"
+review = ["IA 4.1", "IA 4.4", "IA 4.5", "IA 4.6"]
+rules = [
+  '''Three variables: eliminate the same variable from two pairs of equations to get a two-variable system, solve it, then back-substitute.''',
+  '''Cramer's rule for $ax + by = e$, $cx + dy = f$: $D = ad - bc$, $x = \frac{ed - bf}{D}$, $y = \frac{af - ec}{D}$ (when $D \ne 0$).''',
+]
+[[chapters.examples]]
+problem = '''Solve $x + y + z = 6$, $x - y + z = 2$, $2x + y - z = 1$.'''
+steps = '''Subtract the first two: $2y = 4$, $y = 2$. Then $x + z = 4$ and $2x - z = -1$; add: $3x = 3$, $x = 1$, $z = 3$.'''
+compute = "tuple(solve([Eq(x + y + z, 6), Eq(x - y + z, 2), Eq(2*x + y - z, 1)], [x, y, z], dict=True)[0][v] for v in (x, y, z))"
+answer = "(1, 2, 3)"
+[[chapters.examples]]
+problem = '''Use Cramer's rule on $2x + 3y = 8$, $x - y = -1$.'''
+steps = '''$D = 2(-1) - 3(1) = -5$; $x = \frac{8(-1) - 3(-1)}{-5} = 1$; $y = \frac{2(-1) - 8(1)}{-5} = 2$.'''
+compute = "(Rational(8*(-1) - 3*(-1), -5), Rational(2*(-1) - 8*1, -5))"
+answer = "(1, 2)"
+[[chapters.practice]]
+problem = '''Determinant of $\begin{bmatrix} 3 & 4 \\ 2 & 5 \end{bmatrix}$.'''
+compute = "Matrix([[3, 4], [2, 5]]).det()"
+answer = "7"
+[[chapters.practice]]
+problem = '''$x + 2y = 7$, $3x - y = 7$'''
+compute = "tuple(solve([Eq(x + 2*y, 7), Eq(3*x - y, 7)], [x, y], dict=True)[0][v] for v in (x, y))"
+answer = "(3, 2)"
+[[chapters.practice]]
+problem = '''$x + y = 5$, $y + z = 7$, $x + z = 6$'''
+compute = "tuple(solve([Eq(x + y, 5), Eq(y + z, 7), Eq(x + z, 6)], [x, y, z], dict=True)[0][v] for v in (x, y, z))"
+answer = "(2, 3, 4)"
+
+[[chapters]]
+title = "Polynomials and Polynomial Functions"
+review = ["IA 5.1", "IA 5.2", "IA 5.3", "IA 5.4"]
+rules = [
+  '''Remainder theorem: dividing $p(x)$ by $x - c$ leaves remainder $p(c)$; so $x - c$ is a factor exactly when $p(c) = 0$.''',
+  '''Synthetic division divides by $x - c$ using only the coefficients (write 0 for any missing power).''',
+]
+[[chapters.examples]]
+problem = '''Divide $x^3 + 2x^2 - 5x - 6$ by $x + 3$.'''
+steps = '''Synthetic division by $-3$: $1, -1, -2$, remainder 0. Quotient $x^2 - x - 2$.'''
+compute = "quo(x**3 + 2*x**2 - 5*x - 6, x + 3, x)"
+answer = "x**2 - x - 2"
+answer_tex = 'x^2 - x - 2'
+[[chapters.examples]]
+problem = '''Find the remainder of $p(x) = 2x^4 - x + 7$ divided by $x - 2$.'''
+steps = '''$p(2) = 32 - 2 + 7 = 37$.'''
+compute = "rem(2*x**4 - x + 7, x - 2, x)"
+answer = "37"
+[[chapters.practice]]
+problem = '''$(2x - 1)(x^2 + 3x - 4)$'''
+compute = "expand((2*x - 1)*(x**2 + 3*x - 4))"
+answer = "2*x**3 + 5*x**2 - 11*x + 4"
+answer_tex = '2x^3 + 5x^2 - 11x + 4'
+[[chapters.practice]]
+problem = '''$(4 \times 10^{6})(3 \times 10^{-2})$'''
+compute = "4*10**6 * 3 * Rational(1, 100)"
+answer = "120000"
+answer_tex = '1.2 \times 10^{5}'
+[[chapters.practice]]
+problem = '''Is $x - 1$ a factor of $x^3 - 4x^2 + x + 2$?'''
+compute = "(x**3 - 4*x**2 + x + 2).subs(x, 1)"
+answer = "0"
+answer_tex = '\text{yes: } p(1) = 0'
+
+[[chapters]]
+title = "Factoring"
+review = ["IA 6.2", "IA 6.3", "IA 6.4", "IA 6.5"]
+rules = [
+  '''Sum and difference of cubes: $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$, $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$.''',
+  '''Strategy: GCF; then by number of terms --- two (squares/cubes), three (trinomial, perfect square), four (grouping); then check each factor is prime.''',
+]
+[[chapters.examples]]
+problem = '''Factor $8x^3 - 27$.'''
+steps = '''$(2x)^3 - 3^3 = (2x - 3)(4x^2 + 6x + 9)$.'''
+compute = "factor(8*x**3 - 27)"
+answer = "(2*x - 3)*(4*x**2 + 6*x + 9)"
+compare = "form"
+answer_tex = '(2x - 3)(4x^2 + 6x + 9)'
+[[chapters.examples]]
+problem = '''Solve $x^3 - x^2 - 12x = 0$.'''
+steps = '''$x(x^2 - x - 12) = x(x - 4)(x + 3) = 0$: $x = 0, 4, -3$.'''
+compute = "solve(x**3 - x**2 - 12*x, x)"
+answer = "[0, 4, -3]"
+answer_tex = 'x = 0,\ 4,\ -3'
+[[chapters.practice]]
+problem = '''Factor $x^3 + 3x^2 + 2x + 6$ by grouping.'''
+compute = "factor(x**3 + 3*x**2 + 2*x + 6)"
+answer = "(x + 3)*(x**2 + 2)"
+compare = "form"
+answer_tex = '(x + 3)(x^2 + 2)'
+[[chapters.practice]]
+problem = '''Factor $9x^2 - 12x + 4$.'''
+compute = "factor(9*x**2 - 12*x + 4)"
+answer = "(3*x - 2)**2"
+compare = "form"
+answer_tex = '(3x - 2)^2'
+[[chapters.practice]]
+problem = '''Solve $2x^2 + x = 15$.'''
+compute = "solve(Eq(2*x**2 + x, 15), x)"
+answer = "[Rational(5, 2), -3]"
+answer_tex = 'x = \frac{5}{2} \text{ or } x = -3'
+
+[[chapters]]
+title = "Rational Expressions and Functions"
+review = ["IA 7.2", "IA 7.3", "IA 7.4", "IA 7.6"]
+rules = [
+  '''A complex fraction simplifies by multiplying its top and bottom by the LCD of all the small fractions.''',
+  '''Rational inequality: move everything to one side, find the zeros of the numerator and denominator, and test the intervals between them (denominator zeros are never included).''',
+]
+[[chapters.examples]]
+problem = '''Simplify $\dfrac{\frac{1}{x} + 1}{\frac{1}{x} - 1}$.'''
+steps = '''Multiply top and bottom by $x$: $\frac{1 + x}{1 - x}$.'''
+compute = "cancel((1/x + 1)/(1/x - 1))"
+answer = "(1 + x)/(1 - x)"
+answer_tex = '\frac{1 + x}{1 - x}'
+[[chapters.examples]]
+problem = '''Solve $\frac{x - 2}{x + 1} \ge 0$.'''
+steps = '''Zeros 2 and $-1$; testing gives $(-\infty, -1) \cup [2, \infty)$ ($-1$ excluded).'''
+compute = "solve_univariate_inequality((x - 2)/(x + 1) >= 0, x, relational=False)"
+answer = "Union(Interval.open(-oo, -1), Interval(2, oo))"
+answer_tex = '(-\infty, -1) \cup [2, \infty)'
+[[chapters.practice]]
+problem = '''$\frac{x}{x^2 - 9} - \frac{3}{x^2 - 9}$'''
+compute = "cancel(x/(x**2 - 9) - 3/(x**2 - 9))"
+answer = "1/(x + 3)"
+answer_tex = '\frac{1}{x + 3}'
+[[chapters.practice]]
+problem = '''A pipe fills a tank in 3 h, another in 6 h. Together?'''
+compute = "solve(Eq(t/3 + t/6, 1), t)"
+answer = "[2]"
+answer_tex = '2\text{ h}'
+[[chapters.practice]]
+problem = '''$\frac{2}{x - 1} = \frac{5}{x + 2}$'''
+compute = "solve(Eq(2/(x - 1), 5/(x + 2)), x)"
+answer = "[3]"
+answer_tex = 'x = 3'
+
+[[chapters]]
+title = "Roots and Radicals"
+review = ["IA 8.2", "IA 8.4", "IA 8.6", "IA 8.8"]
+rules = [
+  '''$a^{m/n} = \left(\sqrt[n]{a}\right)^m$. Multiply radicals with the same index: $\sqrt[n]{a}\sqrt[n]{b} = \sqrt[n]{ab}$; conjugates: $(\sqrt{a} + b)(\sqrt{a} - b) = a - b^2$.''',
+  '''$i = \sqrt{-1}$, $i^2 = -1$; $\sqrt{-b} = i\sqrt{b}$ for $b > 0$. Squaring both sides can add extraneous solutions --- always check.''',
+]
+[[chapters.examples]]
+problem = '''Rationalize $\frac{4}{3 - \sqrt{5}}$.'''
+steps = '''Multiply by $\frac{3 + \sqrt{5}}{3 + \sqrt{5}}$: $\frac{4(3 + \sqrt{5})}{9 - 5} = 3 + \sqrt{5}$.'''
+compute = "radsimp(4/(3 - sqrt(5)))"
+answer = "3 + sqrt(5)"
+answer_tex = '3 + \sqrt{5}'
+[[chapters.examples]]
+problem = '''Simplify $\frac{2 + 3i}{1 - i}$.'''
+steps = '''Multiply by $\frac{1 + i}{1 + i}$: $\frac{2 + 2i + 3i + 3i^2}{2} = \frac{-1 + 5i}{2}$.'''
+compute = "simplify((2 + 3*I)/(1 - I))"
+answer = "Rational(-1, 2) + Rational(5, 2)*I"
+answer_tex = '-\frac{1}{2} + \frac{5}{2}i'
+[[chapters.practice]]
+problem = '''$\sqrt[3]{-54}$ (real)'''
+compute = "real_root(-54, 3)"
+answer = "-3*real_root(2, 3)"
+answer_tex = '-3\sqrt[3]{2}'
+[[chapters.practice]]
+problem = '''$(\sqrt{3} + 2)(\sqrt{3} - 2)$'''
+compute = "expand((sqrt(3) + 2)*(sqrt(3) - 2))"
+answer = "-1"
+[[chapters.practice]]
+problem = '''$i^{7}$'''
+compute = "I**7"
+answer = "-I"
+answer_tex = '-i'
+
+[[chapters]]
+title = "Quadratic Equations and Functions"
+review = ["IA 9.3", "IA 9.4", "IA 9.7", "IA 9.8"]
+rules = [
+  '''Vertex form $f(x) = a(x - h)^2 + k$: vertex $(h, k)$, axis $x = h$; from standard form, $h = -\frac{b}{2a}$ and $k = f(h)$.''',
+  '''Equations in quadratic form: substitute $u$ (e.g. $u = x^2$) to get a quadratic, solve for $u$, then for $x$.''',
+]
+[[chapters.examples]]
+problem = '''Solve $x^4 - 5x^2 + 4 = 0$.'''
+steps = '''$u = x^2$: $u^2 - 5u + 4 = (u - 1)(u - 4) = 0$, so $x^2 = 1$ or $4$: $x = \pm 1, \pm 2$.'''
+compute = "solve(x**4 - 5*x**2 + 4, x)"
+answer = "[1, -1, 2, -2]"
+answer_tex = 'x = \pm 1,\ \pm 2'
+[[chapters.examples]]
+problem = '''Write $f(x) = x^2 - 4x + 7$ in vertex form.'''
+steps = '''Complete the square: $(x^2 - 4x + 4) + 3 = (x - 2)^2 + 3$; vertex $(2, 3)$.'''
+compute = "expand((x - 2)**2 + 3)"
+answer = "x**2 - 4*x + 7"
+answer_tex = 'f(x) = (x - 2)^2 + 3'
+[[chapters.practice]]
+problem = '''Solve $3x^2 + 2x - 4 = 0$.'''
+compute = "solve(3*x**2 + 2*x - 4, x)"
+answer = "[(-1 + sqrt(13))/3, (-1 - sqrt(13))/3]"
+answer_tex = 'x = \frac{-1 \pm \sqrt{13}}{3}'
+[[chapters.practice]]
+problem = '''Vertex of $f(x) = -3(x + 1)^2 + 5$.'''
+compute = "(-1, 5)"
+answer = "(-1, 5)"
+[[chapters.practice]]
+problem = '''Solve $x^2 - 4x > 0$.'''
+compute = "solve_univariate_inequality(x**2 - 4*x > 0, x, relational=False)"
+answer = "Union(Interval.open(-oo, 0), Interval.open(4, oo))"
+answer_tex = '(-\infty, 0) \cup (4, \infty)'
+
+[[chapters]]
+title = "Exponential and Logarithmic Functions"
+review = ["IA 10.1", "IA 10.3", "IA 10.4", "IA 10.5"]
+rules = [
+  '''$y = \log_b x$ means $b^y = x$. Rules: $\log_b(MN) = \log_b M + \log_b N$, $\log_b\frac{M}{N} = \log_b M - \log_b N$, $\log_b M^p = p\log_b M$, change of base $\log_b M = \frac{\ln M}{\ln b}$.''',
+  '''Inverse of $f$: swap $x$ and $y$ and solve for $y$; $f(f^{-1}(x)) = x$. Growth/decay: $A = A_0e^{kt}$.''',
+]
+[[chapters.examples]]
+problem = '''Solve $5^{2x} = 30$.'''
+steps = '''Take logs: $2x\ln 5 = \ln 30$, so $x = \frac{\ln 30}{2\ln 5} \approx 1.057$.'''
+compute = "solve(Eq(5**(2*Symbol('x', real=True)), 30), Symbol('x', real=True))[0]"
+answer = "log(30)/(2*log(5))"
+answer_tex = 'x = \frac{\ln 30}{2\ln 5} \approx 1.057'
+[[chapters.examples]]
+problem = '''Find $f^{-1}$ for $f(x) = 2^x + 3$.'''
+steps = '''$x = 2^y + 3$, so $2^y = x - 3$ and $y = \log_2(x - 3)$.'''
+compute = "solve(Eq(x, 2**y + 3), y)[0]"
+answer = "log(x - 3)/log(2)"
+answer_tex = 'f^{-1}(x) = \log_2(x - 3)'
+[[chapters.practice]]
+problem = '''$\log_3 \frac{1}{9}$'''
+compute = "log(Rational(1, 9), 3)"
+answer = "-2"
+[[chapters.practice]]
+problem = '''Expand $\log(x^2y)$ (natural log).'''
+compute = "expand_log(log(Symbol('x', positive=True)**2 * Symbol('y', positive=True)))"
+answer = "2*log(Symbol('x', positive=True)) + log(Symbol('y', positive=True))"
+answer_tex = '2\log x + \log y'
+[[chapters.practice]]
+problem = '''Solve $\ln(x - 1) = 2$.'''
+compute = "solve(Eq(log(x - 1), 2), x)"
+answer = "[1 + exp(2)]"
+answer_tex = 'x = 1 + e^2'
+
+[[chapters]]
+title = "Conics"
+review = ["IA 11.1", "IA 11.2", "IA 11.3", "IA 11.4"]
+rules = [
+  '''Parabola $y = a(x - h)^2 + k$; circle $(x - h)^2 + (y - k)^2 = r^2$; ellipse $\frac{(x - h)^2}{a^2} + \frac{(y - k)^2}{b^2} = 1$; hyperbola $\frac{(x - h)^2}{a^2} - \frac{(y - k)^2}{b^2} = 1$.''',
+  '''A nonlinear system is solved by substitution or elimination; the solutions are the intersection points of the graphs.''',
+]
+[[chapters.examples]]
+problem = '''Solve $x^2 + y^2 = 25$, $y = x + 1$.'''
+steps = '''$x^2 + (x + 1)^2 = 25$, $2x^2 + 2x - 24 = 0$, $(x + 4)(x - 3) = 0$: points $(3, 4)$ and $(-4, -3)$.'''
+compute = "FiniteSet(*[(s[x], s[y]) for s in solve([Eq(x**2 + y**2, 25), Eq(y, x + 1)], [x, y], dict=True)])"
+answer = "FiniteSet((3, 4), (-4, -3))"
+answer_tex = '(3, 4),\ (-4, -3)'
+[[chapters.examples]]
+problem = '''Vertices of $\frac{x^2}{16} + \frac{y^2}{9} = 1$ on the $x$-axis.'''
+steps = '''$a = 4$: $(\pm 4, 0)$.'''
+compute = "solve(Eq(x**2/16, 1), x)"
+answer = "[4, -4]"
+answer_tex = '(\pm 4, 0)'
+[[chapters.practice]]
+problem = '''Radius of $x^2 + y^2 + 2x - 8 = 0$.'''
+compute = "sqrt(8 + 1)"
+answer = "3"
+[[chapters.practice]]
+problem = '''Vertex of $y = 2(x - 3)^2 - 1$.'''
+compute = "(3, -1)"
+answer = "(3, -1)"
+[[chapters.practice]]
+problem = '''$x$-intercepts of $\frac{x^2}{4} - \frac{y^2}{9} = 1$.'''
+compute = "solve(Eq(x**2/4, 1), x)"
+answer = "[2, -2]"
+answer_tex = '(\pm 2, 0)'
+
+[[chapters]]
+title = "Sequences, Series and the Binomial Theorem"
+review = ["IA 12.1", "IA 12.2", "IA 12.3", "IA 12.4"]
+rules = [
+  '''Arithmetic: $a_n = a_1 + (n - 1)d$, $S_n = \frac{n}{2}(a_1 + a_n)$. Geometric: $a_n = a_1r^{n - 1}$, $S_n = \frac{a_1(1 - r^n)}{1 - r}$, and $S = \frac{a_1}{1 - r}$ when $|r| < 1$.''',
+  '''Binomial theorem: $(a + b)^n = \sum_{k=0}^{n} \binom{n}{k}a^{n - k}b^k$, with $\binom{n}{k} = \frac{n!}{k!(n - k)!}$.''',
+]
+[[chapters.examples]]
+problem = '''Evaluate $\sum_{k=1}^{5}(2k + 1)$.'''
+steps = '''$3 + 5 + 7 + 9 + 11 = 35$.'''
+compute = "summation(2*k + 1, (k, 1, 5))"
+answer = "35"
+[[chapters.examples]]
+problem = '''Expand $(x - 2)^4$.'''
+steps = '''Coefficients 1, 4, 6, 4, 1 with powers of $-2$: $x^4 - 8x^3 + 24x^2 - 32x + 16$.'''
+compute = "expand((x - 2)**4)"
+answer = "x**4 - 8*x**3 + 24*x**2 - 32*x + 16"
+answer_tex = 'x^4 - 8x^3 + 24x^2 - 32x + 16'
+[[chapters.practice]]
+problem = '''10th term of $2, 6, 18, \ldots$'''
+compute = "2*3**9"
+answer = "39366"
+[[chapters.practice]]
+problem = '''Sum of the first 50 positive integers.'''
+compute = "summation(k, (k, 1, 50))"
+answer = "1275"
+[[chapters.practice]]
+problem = '''$\binom{7}{3}$'''
+compute = "binomial(7, 3)"
+answer = "35"

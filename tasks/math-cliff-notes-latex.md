@@ -1,41 +1,38 @@
-# Cliff-notes LaTeX study guide per book: worked examples and solutions first
+# Cliff-notes LaTeX study guides: worked examples and solutions first
 
-**Status:** proposed — needs go-ahead (decisions recorded 2026-11-21; no open questions)
-**Priority:** 5
-**Difficulty:** 7 (one condensed guide per book; scale depends on which books)
-**Created:** 2026-11-21 (William Emerison Six <billsix@gmail.com>)
-
-## BLUF
-
-For each book, write a short LaTeX **study guide** in the style of Cliff Notes: per section, the one
-or two rules that matter, then **worked examples with full solutions**, step by step, then a few
-practice problems with answers. The guides are led by examples and solutions, not by prose. Done =
-one PDF per book in scope, built by a `make` target in the osbook house style, each section linking
-back to the full book's section.
-
-## Context
-
-- Read first: `CLAUDE.md`, `openstax/CLAUDE.md` (house class `osbook.cls`, licensing),
-  `tasks/reference/openstax/book-inventory.md`, and the sibling
-  `tasks/math-literacy-tests-latex.md` (same subjects, same "where in the repo" question, its Open
-  question 5).
-- "Each one" is read as each subject of the literacy tests (prealgebra, algebra 1, geometry,
-  algebra 2), i.e. the same scope as that task. Confirmed in Decisions.
-- Licensing: a condensed guide that follows an OpenStax book's structure and adapts its examples is
-  a derivative of CC BY content and must carry the attribution ("based on OpenStax *<title>*, CC BY
-  4.0", with a link). New examples are the maintainer's.
-- Every worked solution's answer is checked by sympy before it ships (same mechanism as the tests'
-  question bank), so a wrong solution never reaches a child.
-
-## Plan
-
-1. One section of one book (e.g. Prealgebra 2e ch. 1) as a sample for the maintainer to approve the
-   format (length, density, example count).
-2. That whole book, then the rest of the scope.
-3. `make cliff-notes` → `output/cliff-notes/<book>.pdf`.
+**Done 2026-11-21** (branch `study-and-publishing`) for the four literacy-test subjects. Not yet
+read by the maintainer. State: `tasks/reference/study/status.md`; contracts: `study/CLAUDE.md`.
 
 ## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-21: "go with your recommendations")
 
-- **Scope: the four literacy-test subjects** (prealgebra, algebra 1, geometry, algebra 2 = Intermediate Algebra 2e).
-- **1–2 pages per chapter.**
-- **Geometry follows the Common Core high-school geometry standards** (as the literacy tests). Lives in `study/`.
+- Scope: prealgebra, algebra 1, geometry, algebra 2 (= Intermediate Algebra 2e); 1–2 pages per
+  chapter; geometry follows the Common Core high-school geometry standards; lives in `study/`.
+
+## Choices made while building
+
+- Source per subject `study/cliffnotes/<subject>.toml`, one entry per chapter of the book it follows
+  (Prealgebra 2e 11, Elementary Algebra 2e 10, Intermediate Algebra 2e 12; geometry 7 chapters by
+  Common Core standard groups). Per chapter: a key-rules box (the house `keyconcepts` environment),
+  2 worked examples with step-by-step solutions, 3 practice problems with answers at the chapter's
+  end, and links to the full book's sections. Examples and practice are newly written (MIT); the
+  rules summarize the book, and each PDF carries the OpenStax CC BY 4.0 attribution (geometry's has
+  none to carry).
+- The format sample-then-approve step of the plan was skipped (the maintainer was away); all four
+  guides were written in the same format, so a format change is one generator edit.
+- The checks reuse the bank's evaluator (`study/tools/bank.py`): every example's and practice
+  problem's `compute` must equal its `answer`.
+
+## What was built
+
+- `study/tools/cliffnotes.py` (check, generate), `study/cliffnotes/*.toml` (40 chapters, 200 checked
+  answers), `make -C study cliff-notes` → `study/output/cliff-notes/<subject>.pdf`; tests in
+  `study/tests/test_study.py`.
+
+## Verification
+
+- `tools/cliffnotes.py check`: 40 chapters, 0 problems (it caught absolute-value inequalities that
+  sympy only solves over the reals, fixed with `solveset(..., S.Reals)`).
+- `make -C study test`: exit 0. `make -C study cliff-notes` (container): exit 0; page
+  counts prealgebra 12, algebra-1 11, geometry 8, algebra-2 13 (with a contents page) — about one
+  page per chapter.
+- Read by eye: one Algebra 2 chapter page; the rest only through the build and the checks.
