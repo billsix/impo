@@ -1,0 +1,27 @@
+{{template "head" .Bank.Title}}
+<p class="meta">{{.Attempt.Student}} &middot; {{.Bank.Title}} &middot; question {{.Number}} of {{.Count}} &middot; {{.Strand}}</p>
+<p class="timer" id="timer" data-remaining="{{.Remaining}}">{{.Remaining}} s</p>
+<form method="post" action="/a/{{.Attempt.ID}}" id="answer">
+<input type="hidden" name="index" value="{{.Attempt.Current}}">
+<div class="box">{{trusted .Question.StemHTML}}</div>
+{{range $slot, $c := .Choices}}<label class="choice"><input type="radio" name="choice" value="{{$slot}}"> <strong>({{letter $slot}})</strong> {{trusted $c.HTML}}</label>
+{{end}}
+<p><button type="submit">Answer</button></p>
+</form>
+<script>
+// Countdown only; the server measures the time and decides what counts.
+(function () {
+  var el = document.getElementById("timer");
+  var left = parseInt(el.getAttribute("data-remaining"), 10);
+  var form = document.getElementById("answer");
+  var tick = function () {
+    el.textContent = left + " s";
+    if (left <= 10) { el.className = "timer low"; }
+    if (left <= 0) { form.submit(); return; }
+    left -= 1;
+    setTimeout(tick, 1000);
+  };
+  tick();
+})();
+</script>
+{{template "foot"}}

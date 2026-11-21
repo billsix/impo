@@ -1,0 +1,12 @@
+{{template "head" "Math quiz"}}
+<h1>Math quiz</h1>
+<p>Each question has its own time limit. Answer before the clock runs out; you
+cannot go back to a question once you move on.</p>
+<form method="post" action="/start" class="box">
+<p><label>Your name: <input name="name" maxlength="40" required autofocus></label></p>
+<p><label>Subject: <select name="subject">
+{{range .Banks}}<option value="{{.Subject}}">{{.Title}}</option>{{end}}
+</select></label></p>
+<p><button type="submit">Start</button></p>
+</form>
+{{template "foot"}}

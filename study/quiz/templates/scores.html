@@ -1,0 +1,15 @@
+{{define "scores"}}
+<h1>{{.Attempt.Student}}: {{.Bank.Title}}</h1>
+<p class="meta">Started {{.Attempt.Started.Format "2006-01-02 15:04"}}{{if not .Done}} (not finished){{end}} &middot; {{.Right}} of {{.Count}} right in time</p>
+<h2>By strand</h2>
+<table><tr><th>Strand</th><th>Right</th><th>Timed out</th><th>Mean time</th><th>Result</th></tr>
+{{range .Scores}}<tr><td>{{.Name}}</td><td>{{.Right}} / {{.Total}}</td><td>{{.TimedOut}}</td><td>{{seconds .MeanSeconds}} s</td>
+<td class="{{if eq .Band "solid"}}solid{{else if eq .Band "shaky"}}shaky{{else}}notyet{{end}}">{{.Band}}</td></tr>
+{{end}}</table>
+<h2>By question</h2>
+<table><tr><th>#</th><th>Strand</th><th>Result</th><th>Time</th></tr>
+{{range .Rows}}<tr><td>{{.Number}}</td><td>{{.Strand}}</td>
+<td>{{if .Answer.TimedOut}}timed out{{else if .Answer.Correct}}right{{else if lt .Answer.Chosen 0}}no answer{{else}}wrong{{end}}</td>
+<td>{{seconds .Answer.Seconds}} s of {{.Answer.Limit}} s</td></tr>
+{{end}}</table>
+{{end}}

@@ -1,0 +1,6 @@
+{{template "head" "Quiz results (admin)"}}
+<h1>All attempts</h1>
+{{if not .Attempts}}<p>No attempts yet.</p>{{end}}
+{{range .Attempts}}<section class="box">{{template "scores" .}}<p><a href="/r/{{.Attempt.ID}}">permalink</a></p></section>
+{{end}}
+{{template "foot"}}

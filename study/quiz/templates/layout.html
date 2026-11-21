@@ -1,0 +1,25 @@
+{{define "head"}}<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{.}}</title>
+<style>
+:root { --os: #00507d; --os-lt: #eef4f8; }
+body { font-family: Georgia, serif; max-width: 44rem; margin: 1.5rem auto; padding: 0 1rem;
+  line-height: 1.5; color: #1a1a1a; background: #fff; }
+h1, h2 { color: var(--os); font-family: sans-serif; }
+.box { background: var(--os-lt); border-left: 4px solid var(--os); padding: .6rem 1rem; }
+label.choice { display: block; margin: .5rem 0; padding: .5rem .8rem; border: 1px solid #ccd;
+  border-radius: 4px; cursor: pointer; }
+label.choice p { display: inline; margin: 0; }
+button { font-size: 1.1rem; padding: .5rem 1.4rem; background: var(--os); color: #fff;
+  border: none; border-radius: 4px; cursor: pointer; }
+table { border-collapse: collapse; width: 100%; } td, th { border-bottom: 1px solid #ddd;
+  padding: .3rem .5rem; text-align: left; }
+.timer { font-family: sans-serif; font-size: 1.3rem; font-weight: bold; color: var(--os); }
+.timer.low { color: #b00; } .solid { color: #070; } .shaky { color: #a60; } .notyet { color: #b00; }
+.meta { color: #555; font-size: .9rem; font-family: sans-serif; }
+</style></head><body>
+{{end}}
+{{define "foot"}}<p class="meta">Questions written for impo (github.com/billsix/impo), MIT license.</p>
+</body></html>
+{{end}}
