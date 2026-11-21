@@ -21,14 +21,14 @@ No OpenStax content and no toolchain are committed — both are pulled in on dem
 `fetch.sh` pins **`a33cac5de6e771b213debf92265a1b14365ba46a`** — the merge-base where the
 maintainer's `latex` port branch diverged from OpenStax's `main` (the pristine
 content the port was made against), from the survey table in
-`tasks/openstax-populate-books.md`. Canonical upstream:
+`tasks/archive/impo/2026/09/03/openstax-populate-books.md`. Canonical upstream:
 `https://github.com/openstax/osbooks-university-physics-bundle`. Fallback mirror if GitHub is
 unreachable: `pi@192.168.0.186:/mnt/usbdrive2/gitRepos/openstax/**/osbooks-university-physics-bundle.git`.
 
 ## This book (from the survey; build-time facts pending)
 
 - **Delta size:** 27 port-branch files; **no downloads (toolchain-only)**
-  (per the `tasks/openstax-populate-books.md` survey table).
+  (per the `tasks/archive/impo/2026/09/03/openstax-populate-books.md` survey table).
 - **Book specifics — single- vs multi-collection, subcollection nesting depth,
   whether `os-embed` exercises are actually present, and SVG vs raster figures —
   are verified on the first build**, not asserted here. The converter auto-detects

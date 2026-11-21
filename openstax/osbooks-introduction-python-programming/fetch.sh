@@ -11,7 +11,7 @@ cd "$(dirname "$0")"
 # --- the pin -----------------------------------------------------------------
 # The merge-base where the maintainer's `latex` port branch diverged from
 # OpenStax's `main`, i.e. the pristine content the port was made against.
-# Resolved from the short pin in tasks/openstax-populate-books.md (2026-09-02).
+# Resolved from the short pin in tasks/archive/impo/2026/09/03/openstax-populate-books.md (2026-09-02).
 PIN_SHA=d215dd3b99c33db855c49315152ebd5fbadc8534
 
 # Canonical upstream; the pin is a commit on OpenStax's main history and is
