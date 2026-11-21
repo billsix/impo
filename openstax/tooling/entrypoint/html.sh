@@ -69,6 +69,11 @@ for slug in $(cd "$ROOT/collections" && ls *.collection.xml | sed 's/\.collectio
     # inject the whole-book TOC into each page's left sidebar (from sitemap.json,
     # at build time so it works offline/file://; see build_nav.py)
     python3 "$ROOT/tools/pandoc/build_nav.py" "$outdir"
+    # Cross-book links (tools/cnxml2tex/crossbook.py) are absolute URLs on the
+    # published site; on the site itself make them relative (../<book>/<page>),
+    # so they resolve between books wherever the site is served.
+    site_base="${OSBOOK_SITE_BASE:-https://billsix.github.io/impo/}"
+    sed -i "s#href=\"${site_base}#href=\"../#g" "$outdir"/*.html
     # pandoc COPIED media/ + exercises/ in to be self-contained; swap those for
     # symlinks to the repo dirs (identical files) to avoid ~100 MB of duplication.
     for res in media exercises; do

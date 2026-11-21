@@ -87,6 +87,11 @@ Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothi
   book Makefile's `IMPO_PROVENANCE`) + the CC BY 4.0 / MIT licensing split; it flows to all three editions
   via the shared master.
 - `tools/cnxml2tex/fetch_exercises.py` — the redownload script (the one networked step); fetches by nickname or tag.
+- `tools/cnxml2tex/crossbook.py` — links between books, emitted into the LaTeX by `convert.py`: "(IA x.y.z)"
+  references become `\href`s, and math-ladder sections open with a reviewed "Prerequisites" box
+  (`crossbook/prerequisites.txt`); targets resolve through the committed page index `crossbook/index/<book>.json`
+  (written by `crossbook_index.py` from built sitemaps, OpenStax's own section numbers). Absolute URLs on the
+  published site; `html.sh` makes them relative. Read `tasks/reference/tooling/cross-book-links.md` first.
 - `tools/pandoc/` — the HTML/EPUB leg: `xref.lua` (cross-ref → numbered link rewrite), `preprocess.py`,
   `chunked-template.html` + `osbook-web.css` (the Furo-style layout), plus the web-edition nav — `build_nav.py`
   (injects the collapsible book TOC into each page at build time, from `sitemap.json`) and `osbook-web.js`
@@ -131,7 +136,8 @@ the whole reason it's shared — one place to maintain the converter and the hou
 **Reference docs** (`tasks/reference/tooling/`, read before touching the toolchain): **`converters.md`** — the
 converter landscape (the 5 historical per-book converter versions merged into one, gap analysis);
 **`cross-references.md`** — how cross-refs become links (PDF cleveref / HTML xref.lua), and why literal-text
-internal references can't be reliably auto-linked; and **`web-editions-mobile.md`** — the web theme's
+internal references can't be reliably auto-linked; **`cross-book-links.md`** — links between books (the IA
+references, the Prerequisites boxes, the page index and its official-numbering rule); and **`web-editions-mobile.md`** — the web theme's
 mobile/responsive layer (osbook-web.css/.js): the apply.sh-before-build propagation trap, the MathML
 horizontal-overflow root cause + fix, the drawer/on-this-page behaviour, and how to verify with a real
 headless browser (read before touching osbook-web.css/.js).

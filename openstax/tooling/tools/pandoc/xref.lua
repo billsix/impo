@@ -19,6 +19,7 @@ local NAMED = {            -- numbered, sharing the per-chapter item counter
 local TITLED = {           -- titled, not numbered
   objectives = "Learning Objectives", keyconcepts = "Key Concepts",
   keyequations = "Key Equations", project = "Student Project",
+  prerequisites = "Prerequisites",
 }
 
 local chapter, item, fig, eq = 0, 0, 0, 0

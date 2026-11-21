@@ -1,62 +1,56 @@
-# Find the references between books by scanning their content, and make them relative links
+# Links between books: "(IA x.y.z)" references and math-ladder "Prerequisites" boxes
 
-**Status:** proposed — needs go-ahead (decisions recorded 2026-11-21; no open questions)
-**Priority:** 6
-**Difficulty:** 8 (a survey across 16 book folders, then a build-order dependency and a link pass)
-**Created:** 2026-11-21 (William Emerison Six <billsix@gmail.com>)
-
-## BLUF
-
-The books build on each other: Calculus 1 assumes algebra and prealgebra, the physics books build on
-earlier physics, Calculus 3 assumes Calculus 1 and 2. Scan the books' content to find those
-references, both the **explicit** ones (text that names another book or section, like the corequisite
-books' `(IA x.y.z)`) and the **implicit** prerequisites (a section that uses a topic another book
-teaches), and turn them into **relative links that resolve** on the published site. Done = a
-reference map per book pair, the explicit references linked in the HTML web edition, the implicit
-ones shown as "Review: <book> §x.y" links where the maintainer approves them, and no broken link
-(checked by a link checker over the built site).
-
-## Context
-
-- Read first: `CLAUDE.md`, `openstax/CLAUDE.md`, `tasks/openstax-publish-books.md` (fixes the site
-  layout `/<book>/<page>.html` these links rely on), `tasks/openstax-ia-crossref-links.md` (parked:
-  the `(IA x.y.z)` case, already designed: the CNXML pattern, the IA `sitemap.json` lookup from
-  section number to page, and the PDF/EPUB note). This task takes that one up and generalizes it.
-  Archive it into this one (or close it as covered) when this task starts.
-- Books (`tasks/reference/openstax/book-inventory.md`): the math ladder in `osbooks-prealgebra-bundle`
-  (prealgebra, elementary algebra, intermediate algebra), `osbooks-algebra-1`,
-  `osbooks-college-algebra-bundle`, `osbooks-calculus-bundle` (Calculus vol 1–3),
-  `osbooks-contemporary-mathematics`; physics in `osbooks-physics` and
-  `osbooks-university-physics-bundle` (vol 1–3); and the science books (chemistry, biology,
-  microbiology, anatomy-physiology, organic-chemistry) whose prerequisites run across each other.
-- **Relative links:** with every book on one site, a link from one book to another is
-  `../<other-book>/<page>.html`, built from the target book's `sitemap.json` (section number →
-  page). So the target book must be built first, a new build-order dependency between book folders.
-  With no target configured or built, leave plain text, as the IA task decided.
-- The scan has two parts that need different methods:
-  1. **Explicit references** — grep the CNXML for named book/section patterns (`(IA x.y.z)`, "see
-     Calculus Volume 1", "Prerequisite", "Be Prepared" boxes that cite another book). Mechanical;
-     a discovery script under `tasks/adhoc/openstax-cross-book-references/` with a committed
-     worklog (`data/`).
-  2. **Implicit prerequisites** — match each section's topics to the section that teaches them in an
-     earlier book (e.g. Calculus 1 §1.1 functions → College Algebra ch. 3). Needs judgment (by hand
-     or AI-assisted), so the result is a reviewed mapping file, not a regex.
-- PDF and EPUB: a cross-book link there can only be an absolute URL (`\href`), since no shared PDF
-  exists (the IA task's note). Decisions: absolute URLs.
-
-## Plan
-
-1. Explicit references: discovery script + worklog; count per book pair.
-2. Implicit prerequisites: draft the map for one chain first (prealgebra → algebra → college
-   algebra → calculus 1–3), for review, before doing physics and the sciences.
-3. Write the mappings as data (per book, `section → [(target book, section)]`) in the toolchain,
-   and a pass in the HTML leg (pandoc lua filter or a post-process like `build_nav.py`) that emits
-   the links.
-4. Build-order in `tools/build-books.sh`: target books first.
-5. Link-check the built combined site; then the PDF/EPUB decision.
+**Done 2026-11-21** for the explicit references and the math ladder (prealgebra → algebra →
+college algebra → calculus 1–3). The map awaits the maintainer's review, and physics and the
+sciences were explicitly later: follow-on `tasks/openstax-cross-book-prerequisites-review.md`.
+Absorbed and closed `tasks/archive/impo/2026/11/21/openstax-ia-crossref-links.md`. Mechanism, data
+and findings: `tasks/reference/tooling/cross-book-links.md`.
 
 ## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-21: "go with your recommendations")
 
-- **Implicit prerequisites too:** new "Review: <book> §x.y" links, starting with the math ladder (prealgebra → algebra → college algebra → calculus 1–3), reviewed by the maintainer before physics and the sciences.
-- **Added links go in a "Prerequisites" box** at the top of each section; the OpenStax prose is unchanged.
-- **PDF/EPUB:** absolute `\href` URLs to the published site, once `tasks/openstax-publish-books.md` fixes its URL.
+- Implicit prerequisites too, as "Review: <book> §x.y" links in a **Prerequisites box** at the top of
+  each section (OpenStax prose unchanged), math ladder first, reviewed before physics and sciences.
+- PDF/EPUB: absolute `\href` URLs to the published site (`billsix.github.io/impo/`, fixed by
+  `tasks/archive/impo/2026/11/21/openstax-publish-books.md`).
+
+## Choices made while building (recorded here; the maintainer was away)
+
+- **Emit the links in the converter's LaTeX**, not only in an HTML post-pass, so one mechanism serves
+  all three editions; `html.sh` rewrites the site prefix to `../` for the web edition.
+- **A committed page index per book instead of a build-order dependency.** Each book folder's container
+  mounts only its own checkout, so a target book's `sitemap.json` cannot be read at convert time; the
+  index (`crossbook/index/<book>.json`, from `crossbook_index.py`) is generated from built sites and
+  committed. The plan's "target books first" ordering in `build-books.sh` was therefore not added.
+- **Official OpenStax section numbers** in the index and the map (the web edition's numbering is one
+  higher in chapters that open with an Introduction module; see the reference doc).
+- **The map is keyed by book section, applied per module** (modules are shared between editions and
+  volumes), as plain text `prerequisites.txt` for easy review.
+
+## What was built
+
+- `openstax/tooling/tools/cnxml2tex/crossbook.py` (+ `crossbook/prerequisites.txt`, 303 entries;
+  `crossbook/index/*.json` for prealgebra-2e, elementary-algebra-2e, intermediate-algebra-2e,
+  college-algebra-2e, college-algebra-corequisite-support-2e, algebra-and-trigonometry-2e,
+  precalculus-2e, calculus-volume-1..3), `crossbook_index.py`; hooked into `convert.py`
+  (`convert_module`); `prerequisites` environment in `osbook-envs.sty`, titled in `xref.lua`, styled in
+  `osbook-web.css`; `html.sh` relativizes; `tools/tests/test_crossbook.py`.
+- Discovery: `tasks/adhoc/openstax-cross-book-references/discover.sh` (the scan of all 16 folders;
+  one-shot, removed at archive).
+
+## Verification
+
+- Rebuilt (nested podman, the fresh Fedora-45 image) `osbooks-prealgebra-bundle`,
+  `osbooks-college-algebra-bundle` and `osbooks-calculus-bundle`: `apply.sh` → `make convert` →
+  `make html`, all exit 0 (10 web editions). The boxes render (e.g. Calculus Volume 1 §1.1 lists
+  College Algebra 2e §3.1, §3.2, §3.4) with relative links.
+- Link check over those 10 sites side by side (`check_links.py`): 0 broken links, among them 1185
+  cross-book links (833 to intermediate-algebra-2e — the IA tags and the College Algebra boxes — 97 to
+  prealgebra-2e, 87 to elementary-algebra-2e, 65 to college-algebra-2e, 62 to calculus-volume-1, 28
+  to precalculus-2e, 13 to calculus-volume-2).
+- PDF: `pdf.sh calculus-volume-1` exit 0 (958 pages); its text has the Prerequisites boxes and
+  `pdfinfo -url` lists 65 absolute `https://billsix.github.io/impo/...` link annotations.
+- `make -C openstax/tooling type-check` exit 0 (with `test_crossbook.py`: every entry resolves, no box
+  points at its own module, the official-numbering case).
+- **Not verified:** EPUBs of these books (same LaTeX through pandoc as the HTML; not rebuilt), the PDFs
+  of the other nine books, and whether the published-site links resolve on GitHub (nothing is
+  published yet).
