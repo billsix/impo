@@ -1,0 +1,15 @@
+{
+ "subject": "mini",
+ "title": "Mini Test",
+ "minutes": 5,
+ "time_limits": {"1": 60, "2": 90},
+ "strands": [{"id": "s1", "name": "Strand one", "review": []}, {"id": "s2", "name": "Strand two", "review": []}],
+ "questions": [
+  {"id": "q1", "part": "A", "strand": "s1", "difficulty": 1, "stem_html": "<p>1+1</p>", "solution_html": "",
+   "choices": [{"tex": "2", "html": "2"}, {"tex": "3", "html": "3"}], "answer": 0},
+  {"id": "q2", "part": "A", "strand": "s2", "difficulty": 2, "stem_html": "<p>2+2</p>", "solution_html": "",
+   "choices": [{"tex": "5", "html": "5"}, {"tex": "4", "html": "4"}], "answer": 1},
+  {"id": "q3", "part": "B", "strand": "s1", "difficulty": 1, "stem_html": "<p>free</p>", "solution_html": "",
+   "answer_tex": "1"}
+ ]
+}

@@ -1,0 +1,366 @@
+# Prealgebra cliff notes (source). One [[chapters]] entry per chapter of
+# OpenStax Prealgebra 2e, whose structure this follows (CC BY 4.0, attribution in
+# the generated PDF). Rules are summaries; examples and practice problems are
+# written for impo (MIT). Every `compute` must equal its `answer` (sympy),
+# checked by study/tools/cliffnotes.py.
+
+subject = "prealgebra"
+title = "Prealgebra Cliff Notes"
+based_on = "OpenStax \\emph{Prealgebra 2e} (Marecek, Anthony-Smith and Honeycutt Mathis), \\url{https://openstax.org/details/books/prealgebra-2e}"
+
+[[chapters]]
+title = "Whole Numbers"
+review = ["PA 1.1", "PA 1.2", "PA 1.4", "PA 1.5"]
+rules = [
+  '''Place value: in $5{,}280$ the 5 is in the thousands place, so it means $5000$.''',
+  '''Multiplication is repeated addition; division undoes it. Check $a \div b = q$ by $q \cdot b = a$. Division by zero is undefined.''',
+]
+[[chapters.examples]]
+problem = '''Round $47{,}862$ to the nearest thousand.'''
+steps = '''The thousands digit is 7; the digit to its right is 8, which is 5 or more, so round up: $48{,}000$.'''
+compute = "48000"
+answer = "48000"
+[[chapters.examples]]
+problem = '''A van holds 8 students. How many vans carry 156 students?'''
+steps = '''$156 \div 8 = 19$ remainder 4. The 4 leftover students need another van: $20$ vans.'''
+compute = "ceiling(Rational(156, 8))"
+answer = "20"
+[[chapters.practice]]
+problem = '''$406 - 178$'''
+compute = "406 - 178"
+answer = "228"
+[[chapters.practice]]
+problem = '''$37 \times 24$'''
+compute = "37*24"
+answer = "888"
+[[chapters.practice]]
+problem = '''$1{,}512 \div 36$'''
+compute = "Rational(1512, 36)"
+answer = "42"
+
+[[chapters]]
+title = "The Language of Algebra"
+review = ["PA 2.1", "PA 2.2", "PA 2.4", "PA 2.5"]
+rules = [
+  '''Order of operations: Parentheses, Exponents, Multiplication and Division (left to right), Addition and Subtraction (left to right).''',
+  '''Prime factorization writes a number as a product of primes; the LCM uses each prime the greatest number of times it appears.''',
+]
+[[chapters.examples]]
+problem = '''Evaluate $2^3 + 4(6 - 1)$.'''
+steps = '''Parentheses: $6 - 1 = 5$. Exponent: $2^3 = 8$. Multiply: $4 \cdot 5 = 20$. Add: $8 + 20 = 28$.'''
+compute = "2**3 + 4*(6 - 1)"
+answer = "28"
+[[chapters.examples]]
+problem = '''Find the least common multiple of 12 and 18.'''
+steps = '''$12 = 2^2 \cdot 3$ and $18 = 2 \cdot 3^2$. Take each prime to its highest power: $2^2 \cdot 3^2 = 36$.'''
+compute = "lcm(12, 18)"
+answer = "36"
+[[chapters.practice]]
+problem = '''Evaluate $x^2 + 3x$ when $x = 5$.'''
+compute = "(x**2 + 3*x).subs(x, 5)"
+answer = "40"
+[[chapters.practice]]
+problem = '''Prime factorization of 84.'''
+compute = "factorint(84)"
+answer = "{2: 2, 3: 1, 7: 1}"
+answer_tex = '2^2 \cdot 3 \cdot 7'
+[[chapters.practice]]
+problem = '''Solve $y + 17 = 40$.'''
+compute = "solve(Eq(y + 17, 40), y)"
+answer = "[23]"
+answer_tex = 'y = 23'
+
+[[chapters]]
+title = "Integers"
+review = ["PA 3.1", "PA 3.2", "PA 3.3", "PA 3.4"]
+rules = [
+  '''Adding: same signs, add the absolute values and keep the sign; different signs, subtract the absolute values and keep the sign of the larger.''',
+  '''Subtracting is adding the opposite: $a - b = a + (-b)$. Multiplying or dividing: same signs give a positive result, different signs a negative one.''',
+]
+[[chapters.examples]]
+problem = '''Simplify $-12 + 5 - (-3)$.'''
+steps = '''$-12 + 5 = -7$. Then $-7 - (-3) = -7 + 3 = -4$.'''
+compute = "-12 + 5 - (-3)"
+answer = "-4"
+[[chapters.examples]]
+problem = '''Solve $-4x = 28$.'''
+steps = '''Divide both sides by $-4$: $x = \frac{28}{-4} = -7$. Check: $-4(-7) = 28$.'''
+compute = "solve(Eq(-4*x, 28), x)"
+answer = "[-7]"
+answer_tex = 'x = -7'
+[[chapters.practice]]
+problem = '''$(-8)(-6)$'''
+compute = "(-8)*(-6)"
+answer = "48"
+[[chapters.practice]]
+problem = '''$-45 \div 9$'''
+compute = "Rational(-45, 9)"
+answer = "-5"
+[[chapters.practice]]
+problem = '''$|-15| - |7|$'''
+compute = "Abs(-15) - Abs(7)"
+answer = "8"
+
+[[chapters]]
+title = "Fractions"
+review = ["PA 4.1", "PA 4.2", "PA 4.5", "PA 4.6"]
+rules = [
+  '''Multiply straight across: $\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}$. Divide by multiplying by the reciprocal: $\frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c}$.''',
+  '''Add or subtract only with a common denominator: rewrite each fraction over the LCD, then combine the numerators. Simplify by dividing out common factors.''',
+]
+[[chapters.examples]]
+problem = '''Subtract $\frac{5}{6} - \frac{3}{8}$.'''
+steps = '''LCD 24: $\frac{20}{24} - \frac{9}{24} = \frac{11}{24}$.'''
+compute = "Rational(5, 6) - Rational(3, 8)"
+answer = "Rational(11, 24)"
+[[chapters.examples]]
+problem = '''Multiply $3\frac{1}{2} \cdot \frac{4}{7}$.'''
+steps = '''Write $3\frac{1}{2} = \frac{7}{2}$. Then $\frac{7}{2} \cdot \frac{4}{7} = \frac{28}{14} = 2$.'''
+compute = "Rational(7, 2) * Rational(4, 7)"
+answer = "2"
+[[chapters.practice]]
+problem = '''$\frac{2}{3} + \frac{1}{4}$'''
+compute = "Rational(2, 3) + Rational(1, 4)"
+answer = "Rational(11, 12)"
+[[chapters.practice]]
+problem = '''$\frac{9}{10} \div \frac{3}{5}$'''
+compute = "Rational(9, 10) / Rational(3, 5)"
+answer = "Rational(3, 2)"
+[[chapters.practice]]
+problem = '''Solve $\frac{x}{3} = \frac{5}{6}$.'''
+compute = "solve(Eq(x/3, Rational(5, 6)), x)"
+answer = "[Rational(5, 2)]"
+answer_tex = 'x = \frac{5}{2}'
+
+[[chapters]]
+title = "Decimals"
+review = ["PA 5.1", "PA 5.2", "PA 5.3", "PA 5.6"]
+rules = [
+  '''Add or subtract decimals by lining up the decimal points. Multiply as whole numbers, then give the product as many decimal places as the factors have together.''',
+  '''A fraction becomes a decimal by dividing numerator by denominator; a unit rate is a ratio with denominator 1 (miles per 1 hour).''',
+]
+[[chapters.examples]]
+problem = '''Write $\frac{3}{8}$ as a decimal.'''
+steps = '''$3 \div 8 = 0.375$.'''
+compute = "Rational(3, 8)"
+answer = "Rational(375, 1000)"
+answer_tex = '0.375'
+[[chapters.examples]]
+problem = '''Find the mean of 82, 90, 77 and 95.'''
+steps = '''Add, then divide by the count: $\frac{82 + 90 + 77 + 95}{4} = \frac{344}{4} = 86$.'''
+compute = "Rational(82 + 90 + 77 + 95, 4)"
+answer = "86"
+[[chapters.practice]]
+problem = '''$6.25 + 3.8$'''
+compute = "Rational(625, 100) + Rational(38, 10)"
+answer = "Rational(1005, 100)"
+answer_tex = '10.05'
+[[chapters.practice]]
+problem = '''$1.2 \times 0.35$'''
+compute = "Rational(12, 10) * Rational(35, 100)"
+answer = "Rational(42, 100)"
+answer_tex = '0.42'
+[[chapters.practice]]
+problem = '''Unit price of 12 ounces for \$3.00, in dollars per ounce.'''
+compute = "Rational(300, 100) / 12"
+answer = "Rational(25, 100)"
+answer_tex = '0.25'
+
+[[chapters]]
+title = "Percents"
+review = ["PA 6.1", "PA 6.2", "PA 6.3", "PA 6.5"]
+rules = [
+  '''Percent means "per hundred": $p\% = \frac{p}{100}$. Translate "what is $p\%$ of $n$" as $x = \frac{p}{100} \cdot n$.''',
+  '''Sale price = original $-$ discount; total = price $+$ tax. A proportion $\frac{a}{b} = \frac{c}{d}$ is solved by cross-multiplying: $ad = bc$.''',
+]
+[[chapters.examples]]
+problem = '''18 is what percent of 72?'''
+steps = '''$18 = \frac{p}{100} \cdot 72$, so $p = \frac{1800}{72} = 25$: it is $25\%$.'''
+compute = "solve(Eq(18, p/100*72), p)"
+answer = "[25]"
+answer_tex = '25\%'
+[[chapters.examples]]
+problem = '''Simple interest on \$2{,}000 at 4\% for 3 years.'''
+steps = '''$I = Prt = 2000 \cdot 0.04 \cdot 3 = 240$ dollars.'''
+compute = "2000 * Rational(4, 100) * 3"
+answer = "240"
+[[chapters.practice]]
+problem = '''$15\%$ of $60$'''
+compute = "Rational(15, 100) * 60"
+answer = "9"
+[[chapters.practice]]
+problem = '''Solve $\frac{4}{9} = \frac{x}{27}$.'''
+compute = "solve(Eq(Rational(4, 9), x/27), x)"
+answer = "[12]"
+answer_tex = 'x = 12'
+[[chapters.practice]]
+problem = '''A \$40 shirt is 30\% off. Sale price, in dollars?'''
+compute = "40 - Rational(30, 100)*40"
+answer = "28"
+
+[[chapters]]
+title = "The Properties of Real Numbers"
+review = ["PA 7.1", "PA 7.2", "PA 7.3", "PA 7.5"]
+rules = [
+  '''Commutative ($a + b = b + a$), associative ($(a + b) + c = a + (b + c)$) and distributive ($a(b + c) = ab + ac$) properties let you reorder and regroup.''',
+  '''A rational number is a ratio of integers (its decimal stops or repeats); $\sqrt{2}$ and $\pi$ are irrational.''',
+]
+[[chapters.examples]]
+problem = '''Simplify $5(2x - 3) + 4x$.'''
+steps = '''Distribute: $10x - 15 + 4x$. Combine like terms: $14x - 15$.'''
+compute = "expand(5*(2*x - 3) + 4*x)"
+answer = "14*x - 15"
+answer_tex = '14x - 15'
+[[chapters.examples]]
+problem = '''Convert 3.5 feet to inches.'''
+steps = '''$1$ ft $= 12$ in, so $3.5 \cdot 12 = 42$ in.'''
+compute = "Rational(35, 10) * 12"
+answer = "42"
+[[chapters.practice]]
+problem = '''$-3(x - 4)$'''
+compute = "expand(-3*(x - 4))"
+answer = "-3*x + 12"
+answer_tex = '-3x + 12'
+[[chapters.practice]]
+problem = '''$\frac{7}{8} \cdot 13 \cdot \frac{8}{7}$ (use the commutative property)'''
+compute = "Rational(7, 8) * 13 * Rational(8, 7)"
+answer = "13"
+[[chapters.practice]]
+problem = '''2.5 kilograms in grams'''
+compute = "Rational(25, 10) * 1000"
+answer = "2500"
+
+[[chapters]]
+title = "Solving Linear Equations"
+review = ["PA 8.1", "PA 8.2", "PA 8.3", "PA 8.4"]
+rules = [
+  '''Whatever you do to one side, do to the other. Undo addition with subtraction and multiplication with division.''',
+  '''With variables on both sides, collect the variable terms on one side and the constants on the other; clear fractions by multiplying by the LCD.''',
+]
+[[chapters.examples]]
+problem = '''Solve $7x + 4 = 3x - 12$.'''
+steps = '''Subtract $3x$: $4x + 4 = -12$. Subtract 4: $4x = -16$. Divide: $x = -4$.'''
+compute = "solve(Eq(7*x + 4, 3*x - 12), x)"
+answer = "[-4]"
+answer_tex = 'x = -4'
+[[chapters.examples]]
+problem = '''Solve $0.4y + 1.2 = 2$.'''
+steps = '''Multiply by 10: $4y + 12 = 20$, so $4y = 8$ and $y = 2$.'''
+compute = "solve(Eq(Rational(4, 10)*y + Rational(12, 10), 2), y)"
+answer = "[2]"
+answer_tex = 'y = 2'
+[[chapters.practice]]
+problem = '''$6n - 5 = 31$'''
+compute = "solve(Eq(6*n - 5, 31), n)"
+answer = "[6]"
+answer_tex = 'n = 6'
+[[chapters.practice]]
+problem = '''$\frac{1}{2}x + \frac{1}{3} = \frac{5}{6}$'''
+compute = "solve(Eq(x/2 + Rational(1, 3), Rational(5, 6)), x)"
+answer = "[1]"
+answer_tex = 'x = 1'
+[[chapters.practice]]
+problem = '''$2(a + 3) = 5a - 9$'''
+compute = "solve(Eq(2*(a + 3), 5*a - 9), a)"
+answer = "[5]"
+answer_tex = 'a = 5'
+
+[[chapters]]
+title = "Math Models and Geometry"
+review = ["PA 9.1", "PA 9.3", "PA 9.4", "PA 9.6"]
+rules = [
+  '''Problem-solving strategy: read, identify what you want, name it with a variable, translate to an equation, solve, check, answer in a sentence.''',
+  '''Rectangle $A = LW$, $P = 2L + 2W$; triangle $A = \frac{1}{2}bh$; circle $C = 2\pi r$, $A = \pi r^2$; box $V = LWH$; right triangle $a^2 + b^2 = c^2$.''',
+]
+[[chapters.examples]]
+problem = '''A rectangle's length is 4 more than its width and its perimeter is 32. Find the width.'''
+steps = '''$2w + 2(w + 4) = 32$, so $4w + 8 = 32$ and $w = 6$.'''
+compute = "solve(Eq(2*w + 2*(w + 4), 32), w)"
+answer = "[6]"
+answer_tex = 'w = 6'
+[[chapters.examples]]
+problem = '''Volume of a box 5 by 3 by 2 cm.'''
+steps = '''$V = LWH = 5 \cdot 3 \cdot 2 = 30$ cm$^3$.'''
+compute = "5*3*2"
+answer = "30"
+[[chapters.practice]]
+problem = '''Area of a triangle with base 10 and height 7.'''
+compute = "Rational(1, 2)*10*7"
+answer = "35"
+[[chapters.practice]]
+problem = '''Hypotenuse of a right triangle with legs 6 and 8.'''
+compute = "sqrt(6**2 + 8**2)"
+answer = "10"
+[[chapters.practice]]
+problem = '''Solve $A = \frac{1}{2}bh$ for $h$.'''
+compute = "solve(Eq(A, b*h/2), h)"
+answer = "[2*A/b]"
+answer_tex = 'h = \frac{2A}{b}'
+
+[[chapters]]
+title = "Polynomials"
+review = ["PA 10.1", "PA 10.2", "PA 10.3", "PA 10.5"]
+rules = [
+  '''Add polynomials by combining like terms. Product rule $a^m a^n = a^{m + n}$, power rule $(a^m)^n = a^{mn}$, quotient rule $\frac{a^m}{a^n} = a^{m - n}$.''',
+  '''$a^{-n} = \frac{1}{a^n}$ and $a^0 = 1$. Scientific notation: $a \times 10^n$ with $1 \le a < 10$.''',
+]
+[[chapters.examples]]
+problem = '''Multiply $(x + 4)(x - 2)$.'''
+steps = '''FOIL: $x^2 - 2x + 4x - 8 = x^2 + 2x - 8$.'''
+compute = "expand((x + 4)*(x - 2))"
+answer = "x**2 + 2*x - 8"
+answer_tex = 'x^2 + 2x - 8'
+[[chapters.examples]]
+problem = '''Simplify $(2a^3)^2 \cdot a^{-4}$.'''
+steps = '''$(2a^3)^2 = 4a^6$; then $4a^6 \cdot a^{-4} = 4a^2$.'''
+compute = "(2*a**3)**2 * a**(-4)"
+answer = "4*a**2"
+answer_tex = '4a^2'
+[[chapters.practice]]
+problem = '''$(3y^2 + 2y) + (y^2 - 5y)$'''
+compute = "expand((3*y**2 + 2*y) + (y**2 - 5*y))"
+answer = "4*y**2 - 3*y"
+answer_tex = '4y^2 - 3y'
+[[chapters.practice]]
+problem = '''$\frac{x^9}{x^3}$'''
+compute = "x**9 / x**3"
+answer = "x**6"
+answer_tex = 'x^6'
+[[chapters.practice]]
+problem = '''Write $0.00042$ in scientific notation.'''
+compute = "Rational(42, 100000)"
+answer = "Rational(42, 10) * Rational(1, 10**4)"
+answer_tex = '4.2 \times 10^{-4}'
+
+[[chapters]]
+title = "Graphs"
+review = ["PA 11.2", "PA 11.3", "PA 11.4", "PA 11.5"]
+rules = [
+  '''A point $(x, y)$ is a solution of an equation in $x$ and $y$ when substituting makes it true; the solutions of a linear equation form a line.''',
+  '''Intercepts: set $y = 0$ for the $x$-intercept and $x = 0$ for the $y$-intercept. Slope $m = \frac{\text{rise}}{\text{run}} = \frac{y_2 - y_1}{x_2 - x_1}$.''',
+]
+[[chapters.examples]]
+problem = '''Find the intercepts of $2x + 3y = 12$.'''
+steps = '''$y = 0$: $2x = 12$, $x = 6$, so $(6, 0)$. $x = 0$: $3y = 12$, $y = 4$, so $(0, 4)$.'''
+compute = "(solve(Eq(2*x, 12), x)[0], solve(Eq(3*y, 12), y)[0])"
+answer = "(6, 4)"
+answer_tex = '(6, 0) \text{ and } (0, 4)'
+[[chapters.examples]]
+problem = '''Slope through $(-1, 5)$ and $(3, -3)$.'''
+steps = '''$m = \frac{-3 - 5}{3 - (-1)} = \frac{-8}{4} = -2$.'''
+compute = "Rational(-3 - 5, 3 - (-1))"
+answer = "-2"
+[[chapters.practice]]
+problem = '''Is $(2, 1)$ a solution of $y = 3x - 5$?'''
+compute = "Eq(1, 3*2 - 5)"
+answer = "true"
+answer_tex = '\text{yes: } 3(2) - 5 = 1'
+[[chapters.practice]]
+problem = '''$y$-intercept of $y = 4x - 7$'''
+compute = "(4*x - 7).subs(x, 0)"
+answer = "-7"
+answer_tex = '(0, -7)'
+[[chapters.practice]]
+problem = '''Slope through $(0, 0)$ and $(6, 2)$'''
+compute = "Rational(2, 6)"
+answer = "Rational(1, 3)"

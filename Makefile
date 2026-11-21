@@ -7,6 +7,7 @@
 #   make books                  every book folder -> output/
 #   make anatomy-physiology     one folder (any name from `make list-books`)
 #   make list-books             the folder names this accepts
+#   make publish-pages          [HOST] push the built HTML to the gh-pages branch
 
 .DEFAULT_GOAL := help
 
@@ -16,7 +17,7 @@ OPENSTAX_BOOKS := $(patsubst openstax/osbooks-%/Makefile,%,$(wildcard openstax/o
 TRENCH_BOOKS   := $(patsubst trench/%/Makefile,%,$(wildcard trench/*/Makefile))
 BOOKS          := $(OPENSTAX_BOOKS) $(TRENCH_BOOKS)
 
-.PHONY: help books list-books clean-output $(BOOKS)
+.PHONY: help books list-books clean-output publish-pages $(BOOKS)
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -31,6 +32,9 @@ $(BOOKS):
 
 list-books: ## List the book folder names `make <book>` accepts
 	@printf '%s\n' $(BOOKS)
+
+publish-pages: ## [HOST] Publish output/<book>/ sites to gh-pages (BOOKS="a b" subset, DRY_RUN=1 stage only)
+	bash tools/publish-pages.sh
 
 clean-output: ## Remove the collected output/ tree (book folders' own outputs are kept)
 	rm -rf output

@@ -1,17 +1,19 @@
 # Release workflow: on a version-tag push, build every book and attach each
-# book's PDF and EPUB to a GitHub Release.
+# book's PDF, EPUB and zipped HTML to a GitHub Release.
 #
 # CI is a thin wrapper over make (the modelviewprojection pattern): the book list
 # comes from `make list-books`, and each book is built by `make <book>` — the same
-# command you run locally, which writes output/<book>.pdf and output/<book>.epub.
+# command you run locally, which writes output/<book>.pdf, output/<book>.epub and
+# output/<book>-html.zip (the zipped web edition).
 # Only the GitHub-specific parts live here: the per-book matrix, passing files
 # between jobs, and creating the Release.
 #
 # One job per book folder, so each gets its own 6-hour job limit and its own disk
 # (the TeX Live image plus one bundle's output), and they run in parallel.
 # A Release asset must be < 2 GiB; the largest book file (biology-2e.epub) is
-# ~400 MB. HTML is not attached here (GitHub Pages publishing is a separate,
-# deferred task).
+# ~400 MB. The browsable HTML site is not deployed here: `make publish-pages`
+# (run by hand on the host) pushes it to the gh-pages branch; each book's first
+# page links the assets this workflow attaches (releases/latest/download/...).
 #
 # Cut a release:  git tag v2026.11.0 && git push github v2026.11.0
 name: release
@@ -61,6 +63,7 @@ jobs:
           path: |
             output/*.pdf
             output/*.epub
+            output/*-html.zip
           if-no-files-found: error
           retention-days: 1   # only a handoff to the release job; the Release keeps the files
 
@@ -85,3 +88,4 @@ jobs:
           files: |
             dist/*.pdf
             dist/*.epub
+            dist/*-html.zip

@@ -43,8 +43,8 @@ auto-linked. Findings (all 16 books' built HTML):
   - **Figures have no `id` anchor in the HTML.** `<div class="calcfig">` carries no id, so a "Figure 10.6" prose
     ref has nothing to point at — the figure→anchor map came back empty on contemporary-mathematics.
 - **Decision: not shipped.** A build step that links 1–4 refs per book isn't worth its cost, and the
-  properly-referenced links already work. The `(IA x.y.z)` *cross-book* refs are a separate, deliberately-parked
-  case (`tasks/openstax-ia-crossref-links.md`).
+  properly-referenced links already work. The `(IA x.y.z)` *cross-book* refs are a separate case, linked by
+  `crossbook.py` since 2026-11-21 (`tasks/reference/tooling/cross-book-links.md`).
 
 ## The prototype, and what a revival would need
 
@@ -67,5 +67,5 @@ Both are non-trivial for a ~335-ref payoff; revisit only if the converter grows 
   numbering/anchor mismatches make that unreliable (above).
 - When touching `xref.lua`, keep the two-pass shape: you can only rewrite a `\cref` after the label→number map is
   built from the whole collection.
-- Cross-*book* references (a different book entirely, e.g. `(IA x.y.z)` = Intermediate Algebra) can't be links
-  until the books are published at known URLs — see `tasks/openstax-publish-books.md`.
+- Cross-*book* references (a different book entirely, e.g. `(IA x.y.z)` = Intermediate Algebra) are a separate
+  mechanism: `tasks/reference/tooling/cross-book-links.md`.

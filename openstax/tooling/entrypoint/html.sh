@@ -2,7 +2,7 @@
 # Build the web edition as a MULTIPAGE (chunked) site via `pandoc -t chunkedhtml`:
 # each collection is split into one page per section (output/<slug>/), with a TOC
 # index page and top+bottom Up/Top/Prev/Next navigation (custom template). Entry
-# point is  output/<slug>/index.html .
+# point is  output/<slug>/index.html ; the zipped site is output/<slug>-html.zip.
 #
 # The generated .tex are NOT modified: copied to a temp tree and run through the
 # HTML-only preprocessor (same as before). Media/exercise images are SYMLINKED
@@ -69,6 +69,11 @@ for slug in $(cd "$ROOT/collections" && ls *.collection.xml | sed 's/\.collectio
     # inject the whole-book TOC into each page's left sidebar (from sitemap.json,
     # at build time so it works offline/file://; see build_nav.py)
     python3 "$ROOT/tools/pandoc/build_nav.py" "$outdir"
+    # Cross-book links (tools/cnxml2tex/crossbook.py) are absolute URLs on the
+    # published site; on the site itself make them relative (../<book>/<page>),
+    # so they resolve between books wherever the site is served.
+    site_base="${OSBOOK_SITE_BASE:-https://billsix.github.io/impo/}"
+    sed -i "s#href=\"${site_base}#href=\"../#g" "$outdir"/*.html
     # pandoc COPIED media/ + exercises/ in to be self-contained; swap those for
     # symlinks to the repo dirs (identical files) to avoid ~100 MB of duplication.
     for res in media exercises; do
@@ -76,7 +81,14 @@ for slug in $(cd "$ROOT/collections" && ls *.collection.xml | sed 's/\.collectio
         [ -e "$outdir/$res" ] && rm -rf "$outdir/$res"
         ln -sfn "../../$res" "$outdir/$res"
     done
-    echo "  pages: $(ls "$outdir"/*.html 2>/dev/null | wc -l)  (entry: output/${slug}/index.html)"
+    # The zipped-HTML download (<slug>-html.zip, a Release asset like the PDF and
+    # EPUB): only the files the pages use (site_files.py), so a volume's zip does
+    # not carry the whole bundle's media/. zip follows the media/ symlink and
+    # stores the real files, so the unpacked site works offline.
+    (cd "$ROOT/output" && rm -f "${slug}-html.zip" &&
+        python3 "$ROOT/tools/pandoc/site_files.py" "$slug" | sed "s#^#${slug}/#" |
+        zip -q "${slug}-html.zip" -@)
+    echo "  pages: $(ls "$outdir"/*.html 2>/dev/null | wc -l)  (entry: output/${slug}/index.html; download: output/${slug}-html.zip)"
 done
 
 echo "Web edition (multipage):"

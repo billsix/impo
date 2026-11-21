@@ -14,7 +14,7 @@ in an ephemeral podman container. One folder per book; the family is self-contai
 ## Structure — families under the repo root
 
 impo groups books into **families** (a family = books of the same source/kind), each a top-level
-folder. Two families exist:
+folder. Two book families exist, plus the `study/` family of material built from the books:
 
 - **`openstax/`** — LaTeX ports of OpenStax open textbooks (16 books) that convert **CNXML→LaTeX**
   with a shared python converter. **The pilot family; read `openstax/CLAUDE.md` first.** Layout:
@@ -33,6 +33,10 @@ folder. Two families exist:
   layer + the Fedora/TeXLive/pandoc image) rather than a converter. Read `trench/CLAUDE.md`. First
   book: `trench/elementary-differential-equations/` (William F. Trench, CC BY-NC-SA 3.0). Added
   2026-09-19; tracked in `tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md`.
+- **`study/`** — not books: literacy tests, cliff-notes study guides, problem notebooks and a Go
+  quiz server (`study/quiz/`), built in the OpenStax toolchain image (plus sympy; the notebooks add
+  Jupyter + ePiX) and generated from data (`study/bank/*.toml`, `study/cliffnotes/*.toml`, the
+  converter's section LaTeX) with every answer sympy-checked. Read `study/CLAUDE.md`. Added 2026-11-21.
 
 ## Contracts (the parts that aren't in `openstax/CLAUDE.md`)
 
@@ -51,9 +55,16 @@ folder. Two families exist:
   `openstax/tooling/tools/`):
   - **`build-books.sh`** (behind the root `Makefile`: `make books`, `make <book>`, `make list-books`) —
     the one-call build: per book folder, fetch (if no checkout) → `apply.sh` → `make dist` → collect into
-    the root `output/` (`<book>/` HTML with `media/` copied in, `<book>.pdf`, `<book>.epub`). Non-fatal per
+    the root `output/` (`<book>/` HTML with the media its pages use copied in, `<book>.pdf`,
+    `<book>.epub`, `<book>-html.zip`). Non-fatal per
     folder, exit 1 if any failed. `.github/workflows/release.yml` runs `make <book>` per folder on a `v*`
-    tag push and attaches the PDFs/EPUBs to a GitHub Release.
+    tag push and attaches the PDFs/EPUBs/HTML zips to a GitHub Release.
+  - **`publish-pages.sh`** (behind `make publish-pages`, run by the maintainer on the host) — stages
+    the collected `output/<book>/` sites plus a landing page into `output/pages/` and pushes them with
+    `ghp-import --no-history` to impo's `gh-pages` branch (billsix.github.io/impo/<book>/); refuses to
+    push over the 1 GB Pages limit (`BOOKS="..."` publishes a subset, `DRY_RUN=1` only stages). Each
+    book's first page links its PDF/EPUB/`<book>-html.zip` on the latest GitHub Release. Design and the
+    size problem: `tasks/reference/openstax/publishing.md`.
   - `build-web-editions.sh` — a fan-out that re-applies the toolchain overlay and runs `make html &&
     make epub` across all 16 OpenStax books, logging PASS/FAIL per book (`bash tools/build-web-editions.sh
     [book-slug]`).

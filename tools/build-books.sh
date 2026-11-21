@@ -9,9 +9,11 @@
 #
 # Per folder: fetch.sh when there is no checkout/ yet (network), apply.sh (re-overlay
 # the current toolchain), `make dist` in the folder, then collect into output/:
-#   output/<book>/        the HTML site (media/ copied in, so the dir is self-contained)
-#   output/<book>.pdf     the PDF
-#   output/<book>.epub    the EPUB
+#   output/<book>/           the HTML site (the media it uses copied in, so the dir
+#                            is self-contained)
+#   output/<book>.pdf        the PDF
+#   output/<book>.epub       the EPUB
+#   output/<book>-html.zip   the zipped HTML site (a Release asset)
 # where <book> is each book the folder produces (a bundle folder produces several).
 #
 # Non-fatal per folder (one broken book doesn't stop the run), but the exit status
@@ -47,8 +49,8 @@ fi
 
 # Copy a folder's built products into output/. OpenStax: checkout/output/<book>/
 # (html, its media/ is a symlink into the checkout, so copy with -L to make the site
-# self-contained), <book>.pdf, <book>.epub. Trench: fixed file names, renamed to the
-# folder name.
+# self-contained), <book>.pdf, <book>.epub, <book>-html.zip. Trench: fixed file
+# names, renamed to the folder name, and the zip made here.
 collect() {
     local dir=$1 co="$1/checkout/output"
     case "$dir" in
@@ -57,10 +59,15 @@ collect() {
                 [ -f "$site/index.html" ] || continue
                 local book; book=$(basename "$site")
                 rm -rf "${OUT:?}/$book"
-                cp -rL "$site" "$OUT/$book"
+                mkdir -p "$OUT/$book"
+                # Only the files the pages use: media/ holds the whole bundle's
+                # figures (shared by its volumes), several times what one site needs.
+                (cd "$site" && python3 "$ROOT/openstax/tooling/tools/pandoc/site_files.py" . |
+                    xargs -d '\n' cp -L --parents -t "$OUT/$book")
                 for ext in pdf epub; do
                     [ -f "$co/$book.$ext" ] && cp "$co/$book.$ext" "$OUT/$book.$ext"
                 done
+                [ -f "$co/$book-html.zip" ] && cp "$co/$book-html.zip" "$OUT/$book-html.zip"
             done ;;
         trench/*)
             local book; book=$(basename "$dir")
@@ -69,7 +76,9 @@ collect() {
             # The web edition's entry page is bookW.html; give the site an index.html.
             [ -f "$OUT/$book/index.html" ] || ln -s bookW.html "$OUT/$book/index.html"
             cp "$co/TRENCH_DIFFEQ-osbook.pdf" "$OUT/$book.pdf"
-            cp "$co/epub/bookW.epub" "$OUT/$book.epub" ;;
+            cp "$co/epub/bookW.epub" "$OUT/$book.epub"
+            rm -f "$OUT/$book-html.zip"
+            (cd "$OUT" && python3 -m zipfile -c "$book-html.zip" "$book") ;;
         *)
             echo "collect: no rule for $dir" >&2; return 1 ;;
     esac

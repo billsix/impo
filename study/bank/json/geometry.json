@@ -1,0 +1,829 @@
+{
+ "subject": "geometry",
+ "title": "Geometry Literacy Test",
+ "minutes": 50,
+ "time_limits": {
+  "1": 60,
+  "2": 105,
+  "3": 180
+ },
+ "strands": [
+  {
+   "id": "transformations",
+   "name": "Transformations and congruence (G-CO.2-5)",
+   "review": [
+    "CCSS G-CO.2-5",
+    "CA 3.5"
+   ]
+  },
+  {
+   "id": "angles",
+   "name": "Lines, angles and triangle facts (G-CO.9-11)",
+   "review": [
+    "CCSS G-CO.9-11",
+    "PA 9.3"
+   ]
+  },
+  {
+   "id": "similarity",
+   "name": "Similarity and right-triangle trigonometry (G-SRT)",
+   "review": [
+    "CCSS G-SRT.1-8",
+    "EA 8.7",
+    "PC 5.4"
+   ]
+  },
+  {
+   "id": "circles",
+   "name": "Circles (G-C, G-GPE.1)",
+   "review": [
+    "CCSS G-C.1-5, G-GPE.1",
+    "PA 9.5",
+    "PC 5.1",
+    "IA 11.1"
+   ]
+  },
+  {
+   "id": "coordinates",
+   "name": "Coordinate geometry (G-GPE.4-7)",
+   "review": [
+    "CCSS G-GPE.4-7",
+    "IA 11.1",
+    "EA 4.6"
+   ]
+  },
+  {
+   "id": "volume",
+   "name": "Volume and modeling (G-GMD, G-MG)",
+   "review": [
+    "CCSS G-GMD.1-4, G-MG.1-3",
+    "PA 9.6"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "ge-tr-1",
+   "part": "A",
+   "strand": "transformations",
+   "difficulty": 1,
+   "stem_tex": "The point $(3, -2)$ is reflected across the $y$-axis. Where does it land?",
+   "stem_html": "<p>The point <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo>,</mo><mi>−</mi><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(3, -2)</annotation></semantics></math> is reflected across the <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi><annotation encoding=\"application/x-tex\">y</annotation></semantics></math>-axis. Where does it land?</p>",
+   "solution_tex": "Reflecting across the $y$-axis changes the sign of $x$ only: $(x, y) \\mapsto (-x, y)$, so $(3, -2) \\mapsto (-3, -2)$.",
+   "solution_html": "<p>Reflecting across the <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi><annotation encoding=\"application/x-tex\">y</annotation></semantics></math>-axis changes the sign of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi><annotation encoding=\"application/x-tex\">x</annotation></semantics></math> only: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>↦</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(x, y) \\mapsto (-x, y)</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo>,</mo><mi>−</mi><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>↦</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>3</mn><mo>,</mo><mi>−</mi><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(3, -2) \\mapsto (-3, -2)</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\left( -3, \\  2\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>−</mi><mn>3</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( -3, \\  2\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( -2, \\  3\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>−</mi><mn>2</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( -2, \\  3\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( -3, \\  -2\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>−</mi><mn>3</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( -3, \\  -2\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( 3, \\  2\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 3, \\  2\\right)</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "ge-tr-2",
+   "part": "A",
+   "strand": "transformations",
+   "difficulty": 2,
+   "stem_tex": "The point $(4, 1)$ is rotated $90^\\circ$ counterclockwise about the origin. Where does it land?",
+   "stem_html": "<p>The point <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(4, 1)</annotation></semantics></math> is rotated <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>90</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">90^\\circ</annotation></semantics></math> counterclockwise about the origin. Where does it land?</p>",
+   "solution_tex": "A $90^\\circ$ counterclockwise rotation maps $(x, y) \\mapsto (-y, x)$, so $(4, 1) \\mapsto (-1, 4)$.",
+   "solution_html": "<p>A <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>90</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">90^\\circ</annotation></semantics></math> counterclockwise rotation maps <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>↦</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(x, y) \\mapsto (-y, x)</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>↦</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(4, 1) \\mapsto (-1, 4)</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\left( 4, \\  -1\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 4, \\  -1\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( 1, \\  -4\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 1, \\  -4\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( -1, \\  4\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>−</mi><mn>1</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( -1, \\  4\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( -4, \\  -1\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>−</mi><mn>4</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( -4, \\  -1\\right)</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "ge-tr-3",
+   "part": "A",
+   "strand": "transformations",
+   "difficulty": 2,
+   "stem_tex": "A translation maps $A(1, 5)$ to $A'(-2, 7)$. Where does it map $B(4, -3)$?",
+   "stem_html": "<p>A translation maps <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">A(1, 5)</annotation></semantics></math> to <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>A</mi><mo>′</mo></msup><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">A&#39;(-2, 7)</annotation></semantics></math>. Where does it map <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mo>,</mo><mi>−</mi><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">B(4, -3)</annotation></semantics></math>?</p>",
+   "solution_tex": "The translation vector is $\\langle -2 - 1, 7 - 5 \\rangle = \\langle -3, 2 \\rangle$, so $B(4, -3) \\mapsto (4 - 3, -3 + 2) = (1, -1)$.",
+   "solution_html": "<p>The translation vector is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">⟨</mo><mi>−</mi><mn>2</mn><mo>−</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>−</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">⟩</mo><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">⟨</mo><mi>−</mi><mn>3</mn><mo>,</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">⟩</mo></mrow><annotation encoding=\"application/x-tex\">\\langle -2 - 1, 7 - 5 \\rangle = \\langle -3, 2 \\rangle</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mo>,</mo><mi>−</mi><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>↦</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mo>−</mo><mn>3</mn><mo>,</mo><mi>−</mi><mn>3</mn><mo>+</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mi>−</mi><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">B(4, -3) \\mapsto (4 - 3, -3 + 2) = (1, -1)</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\left( 7, \\  -5\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>7</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mo>−</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 7, \\  -5\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( 1, \\  -1\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 1, \\  -1\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( 1, \\  -5\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mo>−</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 1, \\  -5\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( 2, \\  -6\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mo>−</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 2, \\  -6\\right)</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "ge-tr-4",
+   "part": "A",
+   "strand": "transformations",
+   "difficulty": 3,
+   "stem_tex": "A triangle has vertices $(0, 0)$, $(4, 0)$, $(0, 3)$. It is dilated by a factor of 2 about the origin and then reflected across the $x$-axis. What is the area of the image?",
+   "stem_html": "<p>A triangle has vertices <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(0, 0)</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mo>,</mo><mn>0</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(4, 0)</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(0, 3)</annotation></semantics></math>. It is dilated by a factor of 2 about the origin and then reflected across the <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi><annotation encoding=\"application/x-tex\">x</annotation></semantics></math>-axis. What is the area of the image?</p>",
+   "solution_tex": "Reflection does not change area. A dilation by 2 doubles each length, so the legs become 8 and 6 and the area is $\\frac{1}{2}(8)(6) = 24$ (four times the original area of 6).",
+   "solution_html": "<p>Reflection does not change area. A dilation by 2 doubles each length, so the legs become 8 and 6 and the area is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>8</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>24</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{2}(8)(6) = 24</annotation></semantics></math> (four times the original area of 6).</p>",
+   "choices": [
+    {
+     "tex": "6",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn><annotation encoding=\"application/x-tex\">6</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "48",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>48</mn><annotation encoding=\"application/x-tex\">48</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "24",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>24</mn><annotation encoding=\"application/x-tex\">24</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "12",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn><annotation encoding=\"application/x-tex\">12</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "ge-ang-1",
+   "part": "A",
+   "strand": "angles",
+   "difficulty": 1,
+   "stem_tex": "Two lines cross. One of the four angles measures $35^\\circ$. What is the measure of the angle vertical to it, in degrees?",
+   "stem_html": "<p>Two lines cross. One of the four angles measures <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>35</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">35^\\circ</annotation></semantics></math>. What is the measure of the angle vertical to it, in degrees?</p>",
+   "solution_tex": "Vertical angles are congruent, so it also measures $35^\\circ$.",
+   "solution_html": "<p>Vertical angles are congruent, so it also measures <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>35</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">35^\\circ</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "55",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>55</mn><annotation encoding=\"application/x-tex\">55</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "145",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>145</mn><annotation encoding=\"application/x-tex\">145</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "325",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>325</mn><annotation encoding=\"application/x-tex\">325</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "35",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>35</mn><annotation encoding=\"application/x-tex\">35</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "ge-ang-2",
+   "part": "A",
+   "strand": "angles",
+   "difficulty": 2,
+   "stem_tex": "Parallel lines are cut by a transversal. One interior angle on one side of the transversal measures $(3x + 10)^\\circ$ and the other interior angle on the same side measures $(2x + 20)^\\circ$. Find $x$.",
+   "stem_html": "<p>Parallel lines are cut by a transversal. One interior angle on one side of the transversal measures <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>10</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">(3x + 10)^\\circ</annotation></semantics></math> and the other interior angle on the same side measures <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>20</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">(2x + 20)^\\circ</annotation></semantics></math>. Find <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi><annotation encoding=\"application/x-tex\">x</annotation></semantics></math>.</p>",
+   "solution_tex": "Same-side interior angles are supplementary: $(3x + 10) + (2x + 20) = 180$, so $5x + 30 = 180$ and $x = 30$.",
+   "solution_html": "<p>Same-side interior angles are supplementary: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>10</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>+</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>20</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>180</mn></mrow><annotation encoding=\"application/x-tex\">(3x + 10) + (2x + 20) = 180</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>x</mi><mo>+</mo><mn>30</mn><mo>=</mo><mn>180</mn></mrow><annotation encoding=\"application/x-tex\">5x + 30 = 180</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>30</mn></mrow><annotation encoding=\"application/x-tex\">x = 30</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "x = 30",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>30</mn></mrow><annotation encoding=\"application/x-tex\">x = 30</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 38",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>38</mn></mrow><annotation encoding=\"application/x-tex\">x = 38</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 10",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>10</mn></mrow><annotation encoding=\"application/x-tex\">x = 10</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "x = 34",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>34</mn></mrow><annotation encoding=\"application/x-tex\">x = 34</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "ge-ang-3",
+   "part": "A",
+   "strand": "angles",
+   "difficulty": 2,
+   "stem_tex": "An isosceles triangle has a vertex angle of $40^\\circ$. What is the measure of each base angle, in degrees?",
+   "stem_html": "<p>An isosceles triangle has a vertex angle of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>40</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">40^\\circ</annotation></semantics></math>. What is the measure of each base angle, in degrees?</p>",
+   "solution_tex": "The base angles of an isosceles triangle are congruent and the angles add to $180^\\circ$: each base angle is $\\frac{180 - 40}{2} = 70^\\circ$.",
+   "solution_html": "<p>The base angles of an isosceles triangle are congruent and the angles add to <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>180</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">180^\\circ</annotation></semantics></math>: each base angle is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mrow><mn>180</mn><mo>−</mo><mn>40</mn></mrow><mn>2</mn></mfrac><mo>=</mo><msup><mn>70</mn><mo>∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">\\frac{180 - 40}{2} = 70^\\circ</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "140",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>140</mn><annotation encoding=\"application/x-tex\">140</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "70",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>70</mn><annotation encoding=\"application/x-tex\">70</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "50",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn><annotation encoding=\"application/x-tex\">50</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "40",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>40</mn><annotation encoding=\"application/x-tex\">40</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "ge-ang-4",
+   "part": "A",
+   "strand": "angles",
+   "difficulty": 3,
+   "stem_tex": "An exterior angle of a triangle measures $118^\\circ$. One of the two remote interior angles measures $47^\\circ$. What is the other remote interior angle, in degrees?",
+   "stem_html": "<p>An exterior angle of a triangle measures <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>118</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">118^\\circ</annotation></semantics></math>. One of the two remote interior angles measures <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>47</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">47^\\circ</annotation></semantics></math>. What is the other remote interior angle, in degrees?</p>",
+   "solution_tex": "An exterior angle equals the sum of the two remote interior angles: $118 = 47 + x$, so $x = 71^\\circ$.",
+   "solution_html": "<p>An exterior angle equals the sum of the two remote interior angles: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>118</mn><mo>=</mo><mn>47</mn><mo>+</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">118 = 47 + x</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mn>71</mn><mo>∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">x = 71^\\circ</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "15",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn><annotation encoding=\"application/x-tex\">15</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "165",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>165</mn><annotation encoding=\"application/x-tex\">165</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "71",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>71</mn><annotation encoding=\"application/x-tex\">71</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "62",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>62</mn><annotation encoding=\"application/x-tex\">62</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "ge-sim-1",
+   "part": "A",
+   "strand": "similarity",
+   "difficulty": 1,
+   "stem_tex": "Triangle $ABC$ is similar to triangle $DEF$ with $AB = 6$, $DE = 9$ and $BC = 8$. Find $EF$.",
+   "stem_html": "<p>Triangle <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">ABC</annotation></semantics></math> is similar to triangle <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi><mi>E</mi><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">DEF</annotation></semantics></math> with <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>6</mn></mrow><annotation encoding=\"application/x-tex\">AB = 6</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi><mi>E</mi><mo>=</mo><mn>9</mn></mrow><annotation encoding=\"application/x-tex\">DE = 9</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><mn>8</mn></mrow><annotation encoding=\"application/x-tex\">BC = 8</annotation></semantics></math>. Find <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">EF</annotation></semantics></math>.</p>",
+   "solution_tex": "The scale factor from $ABC$ to $DEF$ is $\\frac{9}{6} = \\frac{3}{2}$, so $EF = 8 \\cdot \\frac{3}{2} = 12$.",
+   "solution_html": "<p>The scale factor from <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">ABC</annotation></semantics></math> to <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi><mi>E</mi><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">DEF</annotation></semantics></math> is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>9</mn><mn>6</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{9}{6} = \\frac{3}{2}</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi><mi>F</mi><mo>=</mo><mn>8</mn><mo>⋅</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>=</mo><mn>12</mn></mrow><annotation encoding=\"application/x-tex\">EF = 8 \\cdot \\frac{3}{2} = 12</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "11",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn><annotation encoding=\"application/x-tex\">11</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "12",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn><annotation encoding=\"application/x-tex\">12</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{16}{3}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>16</mn><mn>3</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{16}{3}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "27",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>27</mn><annotation encoding=\"application/x-tex\">27</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "ge-sim-2",
+   "part": "A",
+   "strand": "similarity",
+   "difficulty": 2,
+   "stem_tex": "In a right triangle the side opposite angle $\\theta$ is 5 and the hypotenuse is 13. What is $\\cos\\theta$?",
+   "stem_html": "<p>In a right triangle the side opposite angle <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>θ</mi><annotation encoding=\"application/x-tex\">\\theta</annotation></semantics></math> is 5 and the hypotenuse is 13. What is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi>cos</mi><mo>&#8289;</mo></mrow><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\cos\\theta</annotation></semantics></math>?</p>",
+   "solution_tex": "The adjacent side is $\\sqrt{13^2 - 5^2} = \\sqrt{144} = 12$, so $\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{12}{13}$.",
+   "solution_html": "<p>The adjacent side is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><msup><mn>13</mn><mn>2</mn></msup><mo>−</mo><msup><mn>5</mn><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mn>144</mn></msqrt><mo>=</mo><mn>12</mn></mrow><annotation encoding=\"application/x-tex\">\\sqrt{13^2 - 5^2} = \\sqrt{144} = 12</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi>cos</mi><mo>&#8289;</mo></mrow><mi>θ</mi><mo>=</mo><mfrac><mtext mathvariant=\"normal\">adjacent</mtext><mtext mathvariant=\"normal\">hypotenuse</mtext></mfrac><mo>=</mo><mfrac><mn>12</mn><mn>13</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{12}{13}</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\frac{13}{12}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>13</mn><mn>12</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{13}{12}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{5}{13}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>5</mn><mn>13</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{5}{13}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{5}{12}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>5</mn><mn>12</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{5}{12}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{12}{13}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>12</mn><mn>13</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{12}{13}</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "ge-sim-3",
+   "part": "A",
+   "strand": "similarity",
+   "difficulty": 2,
+   "stem_tex": "A $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle has a hypotenuse of 10. How long is the side opposite the $60^\\circ$ angle?",
+   "stem_html": "<p>A <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>30</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">30^\\circ</annotation></semantics></math>-<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>60</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">60^\\circ</annotation></semantics></math>-<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>90</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">90^\\circ</annotation></semantics></math> triangle has a hypotenuse of 10. How long is the side opposite the <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>60</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">60^\\circ</annotation></semantics></math> angle?</p>",
+   "solution_tex": "The sides are in the ratio $1 : \\sqrt{3} : 2$. The short leg is $10 / 2 = 5$, and the side opposite $60^\\circ$ is $5\\sqrt{3}$.",
+   "solution_html": "<p>The sides are in the ratio <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>:</mo><msqrt><mn>3</mn></msqrt><mo>:</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">1 : \\sqrt{3} : 2</annotation></semantics></math>. The short leg is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mi>/</mi><mn>2</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">10 / 2 = 5</annotation></semantics></math>, and the side opposite <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>60</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">60^\\circ</annotation></semantics></math> is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><msqrt><mn>3</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">5\\sqrt{3}</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "5\\sqrt{2}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><msqrt><mn>2</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">5\\sqrt{2}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "10\\sqrt{3}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><msqrt><mn>3</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">10\\sqrt{3}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "5\\sqrt{3}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><msqrt><mn>3</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">5\\sqrt{3}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "5",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn><annotation encoding=\"application/x-tex\">5</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "ge-sim-4",
+   "part": "A",
+   "strand": "similarity",
+   "difficulty": 3,
+   "stem_tex": "A 6 ft person casts a 4 ft shadow at the same time a tree casts a 30 ft shadow. How tall is the tree, in feet?",
+   "stem_html": "<p>A 6 ft person casts a 4 ft shadow at the same time a tree casts a 30 ft shadow. How tall is the tree, in feet?</p>",
+   "solution_tex": "The sun makes similar triangles: $\\frac{6}{4} = \\frac{h}{30}$, so $h = 30 \\cdot \\frac{3}{2} = 45$ ft.",
+   "solution_html": "<p>The sun makes similar triangles: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>6</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mi>h</mi><mn>30</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{6}{4} = \\frac{h}{30}</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mo>=</mo><mn>30</mn><mo>⋅</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>=</mo><mn>45</mn></mrow><annotation encoding=\"application/x-tex\">h = 30 \\cdot \\frac{3}{2} = 45</annotation></semantics></math> ft.</p>",
+   "choices": [
+    {
+     "tex": "180",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>180</mn><annotation encoding=\"application/x-tex\">180</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "7.2",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7.2</mn><annotation encoding=\"application/x-tex\">7.2</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "45",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>45</mn><annotation encoding=\"application/x-tex\">45</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "20",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn><annotation encoding=\"application/x-tex\">20</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "ge-cir-1",
+   "part": "A",
+   "strand": "circles",
+   "difficulty": 1,
+   "stem_tex": "What is the center and radius of the circle $(x - 2)^2 + (y + 5)^2 = 49$?",
+   "stem_html": "<p>What is the center and radius of the circle <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>y</mi><mo>+</mo><mn>5</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>2</mn></msup><mo>=</mo><mn>49</mn></mrow><annotation encoding=\"application/x-tex\">(x - 2)^2 + (y + 5)^2 = 49</annotation></semantics></math>?</p>",
+   "solution_tex": "The form $(x - h)^2 + (y - k)^2 = r^2$ has center $(h, k) = (2, -5)$ and $r = \\sqrt{49} = 7$.",
+   "solution_html": "<p>The form <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mi>h</mi><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>y</mi><mo>−</mo><mi>k</mi><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">(x - h)^2 + (y - k)^2 = r^2</annotation></semantics></math> has center <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>h</mi><mo>,</mo><mi>k</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mo>,</mo><mi>−</mi><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(h, k) = (2, -5)</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r</mi><mo>=</mo><msqrt><mn>49</mn></msqrt><mo>=</mo><mn>7</mn></mrow><annotation encoding=\"application/x-tex\">r = \\sqrt{49} = 7</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\text{center } (-2, 5),\\ r = 7",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mtext mathvariant=\"normal\">center </mtext><mspace width=\"0.333em\"></mspace></mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>,</mo><mspace width=\"0.222em\"></mspace><mi>r</mi><mo>=</mo><mn>7</mn></mrow><annotation encoding=\"application/x-tex\">\\text{center } (-2, 5),\\ r = 7</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\text{center } (2, -5),\\ r = 7",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mtext mathvariant=\"normal\">center </mtext><mspace width=\"0.333em\"></mspace></mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mo>,</mo><mi>−</mi><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>,</mo><mspace width=\"0.222em\"></mspace><mi>r</mi><mo>=</mo><mn>7</mn></mrow><annotation encoding=\"application/x-tex\">\\text{center } (2, -5),\\ r = 7</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\text{center } (2, -5),\\ r = 49",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mtext mathvariant=\"normal\">center </mtext><mspace width=\"0.333em\"></mspace></mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mo>,</mo><mi>−</mi><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>,</mo><mspace width=\"0.222em\"></mspace><mi>r</mi><mo>=</mo><mn>49</mn></mrow><annotation encoding=\"application/x-tex\">\\text{center } (2, -5),\\ r = 49</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\text{center } (-2, 5),\\ r = 49",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mtext mathvariant=\"normal\">center </mtext><mspace width=\"0.333em\"></mspace></mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>,</mo><mspace width=\"0.222em\"></mspace><mi>r</mi><mo>=</mo><mn>49</mn></mrow><annotation encoding=\"application/x-tex\">\\text{center } (-2, 5),\\ r = 49</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "ge-cir-2",
+   "part": "A",
+   "strand": "circles",
+   "difficulty": 2,
+   "stem_tex": "An inscribed angle intercepts an arc of $110^\\circ$. What is the measure of the inscribed angle, in degrees?",
+   "stem_html": "<p>An inscribed angle intercepts an arc of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>110</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">110^\\circ</annotation></semantics></math>. What is the measure of the inscribed angle, in degrees?</p>",
+   "solution_tex": "An inscribed angle measures half its intercepted arc: $\\frac{110}{2} = 55^\\circ$.",
+   "solution_html": "<p>An inscribed angle measures half its intercepted arc: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>110</mn><mn>2</mn></mfrac><mo>=</mo><msup><mn>55</mn><mo>∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">\\frac{110}{2} = 55^\\circ</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "55",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>55</mn><annotation encoding=\"application/x-tex\">55</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "220",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>220</mn><annotation encoding=\"application/x-tex\">220</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "70",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>70</mn><annotation encoding=\"application/x-tex\">70</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "110",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>110</mn><annotation encoding=\"application/x-tex\">110</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "ge-cir-3",
+   "part": "A",
+   "strand": "circles",
+   "difficulty": 2,
+   "stem_tex": "A circle has radius 6 cm. How long is the arc cut off by a central angle of $120^\\circ$?",
+   "stem_html": "<p>A circle has radius 6 cm. How long is the arc cut off by a central angle of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>120</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">120^\\circ</annotation></semantics></math>?</p>",
+   "solution_tex": "The arc is $\\frac{120}{360} = \\frac{1}{3}$ of the circumference $2\\pi(6) = 12\\pi$, so it is $4\\pi$ cm.",
+   "solution_html": "<p>The arc is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>120</mn><mn>360</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{120}{360} = \\frac{1}{3}</annotation></semantics></math> of the circumference <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>π</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>12</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">2\\pi(6) = 12\\pi</annotation></semantics></math>, so it is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">4\\pi</annotation></semantics></math> cm.</p>",
+   "choices": [
+    {
+     "tex": "2\\pi\\text{ cm}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>π</mi><mrow><mspace width=\"0.333em\"></mspace><mtext mathvariant=\"normal\"> cm</mtext></mrow></mrow><annotation encoding=\"application/x-tex\">2\\pi\\text{ cm}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "720\\text{ cm}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>720</mn><mrow><mspace width=\"0.333em\"></mspace><mtext mathvariant=\"normal\"> cm</mtext></mrow></mrow><annotation encoding=\"application/x-tex\">720\\text{ cm}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "12\\pi\\text{ cm}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>12</mn><mi>π</mi><mrow><mspace width=\"0.333em\"></mspace><mtext mathvariant=\"normal\"> cm</mtext></mrow></mrow><annotation encoding=\"application/x-tex\">12\\pi\\text{ cm}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "4\\pi\\text{ cm}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mi>π</mi><mrow><mspace width=\"0.333em\"></mspace><mtext mathvariant=\"normal\"> cm</mtext></mrow></mrow><annotation encoding=\"application/x-tex\">4\\pi\\text{ cm}</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "ge-cir-4",
+   "part": "A",
+   "strand": "circles",
+   "difficulty": 3,
+   "stem_tex": "What is the area of a sector of a circle of radius 9 with a central angle of $\\frac{2\\pi}{3}$ radians?",
+   "stem_html": "<p>What is the area of a sector of a circle of radius 9 with a central angle of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mn>3</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{2\\pi}{3}</annotation></semantics></math> radians?</p>",
+   "solution_tex": "With the angle in radians, $A = \\frac{1}{2}r^2\\theta = \\frac{1}{2}(81)\\left(\\frac{2\\pi}{3}\\right) = 27\\pi$.",
+   "solution_html": "<p>With the angle in radians, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mi>r</mi><mn>2</mn></msup><mi>θ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>81</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>27</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">A = \\frac{1}{2}r^2\\theta = \\frac{1}{2}(81)\\left(\\frac{2\\pi}{3}\\right) = 27\\pi</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "27\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>27</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">27\\pi</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "54\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>54</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">54\\pi</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "6\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">6\\pi</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "81\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>81</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">81\\pi</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "ge-co-1",
+   "part": "A",
+   "strand": "coordinates",
+   "difficulty": 1,
+   "stem_tex": "What is the midpoint of the segment from $(-4, 3)$ to $(6, -1)$?",
+   "stem_html": "<p>What is the midpoint of the segment from <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>4</mn><mo>,</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(-4, 3)</annotation></semantics></math> to <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>6</mn><mo>,</mo><mi>−</mi><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(6, -1)</annotation></semantics></math>?</p>",
+   "solution_tex": "Average the coordinates: $\\left(\\frac{-4 + 6}{2}, \\frac{3 - 1}{2}\\right) = (1, 1)$.",
+   "solution_html": "<p>Average the coordinates: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac><mrow><mi>−</mi><mn>4</mn><mo>+</mo><mn>6</mn></mrow><mn>2</mn></mfrac><mo>,</mo><mfrac><mrow><mn>3</mn><mo>−</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left(\\frac{-4 + 6}{2}, \\frac{3 - 1}{2}\\right) = (1, 1)</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\left( 2, \\  2\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 2, \\  2\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( 1, \\  1\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 1, \\  1\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( 5, \\  -2\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 5, \\  -2\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( 1, \\  2\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 1, \\  2\\right)</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "ge-co-2",
+   "part": "A",
+   "strand": "coordinates",
+   "difficulty": 2,
+   "stem_tex": "What is the distance between $(1, 2)$ and $(7, 10)$?",
+   "stem_html": "<p>What is the distance between <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(1, 2)</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>7</mn><mo>,</mo><mn>10</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(7, 10)</annotation></semantics></math>?</p>",
+   "solution_tex": "$d = \\sqrt{(7 - 1)^2 + (10 - 2)^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>7</mn><mo>−</mo><mn>1</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>10</mn><mo>−</mo><mn>2</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>36</mn><mo>+</mo><mn>64</mn></mrow></msqrt><mo>=</mo><msqrt><mn>100</mn></msqrt><mo>=</mo><mn>10</mn></mrow><annotation encoding=\"application/x-tex\">d = \\sqrt{(7 - 1)^2 + (10 - 2)^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "10",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn><annotation encoding=\"application/x-tex\">10</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "2\\sqrt{7}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><msqrt><mn>7</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">2\\sqrt{7}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "100",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn><annotation encoding=\"application/x-tex\">100</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "14",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn><annotation encoding=\"application/x-tex\">14</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "ge-co-3",
+   "part": "A",
+   "strand": "coordinates",
+   "difficulty": 2,
+   "stem_tex": "Which line is parallel to $y = \\frac{1}{2}x - 3$ and passes through $(4, 1)$?",
+   "stem_html": "<p>Which line is parallel to <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>−</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">y = \\frac{1}{2}x - 3</annotation></semantics></math> and passes through <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(4, 1)</annotation></semantics></math>?</p>",
+   "solution_tex": "Parallel lines have the same slope $\\frac{1}{2}$: $y - 1 = \\frac{1}{2}(x - 4)$, so $y = \\frac{1}{2}x - 1$.",
+   "solution_html": "<p>Parallel lines have the same slope <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{1}{2}</annotation></semantics></math>: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>−</mo><mn>1</mn><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">y - 1 = \\frac{1}{2}(x - 4)</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">y = \\frac{1}{2}x - 1</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "y = \\frac{1}{2}x - 3",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>−</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">y = \\frac{1}{2}x - 3</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "y = \\frac{1}{2}x + 1",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">y = \\frac{1}{2}x + 1</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "y = \\frac{1}{2}x - 1",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">y = \\frac{1}{2}x - 1</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "y = -2x + 9",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>−</mi><mn>2</mn><mi>x</mi><mo>+</mo><mn>9</mn></mrow><annotation encoding=\"application/x-tex\">y = -2x + 9</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 2
+  },
+  {
+   "id": "ge-co-4",
+   "part": "A",
+   "strand": "coordinates",
+   "difficulty": 3,
+   "stem_tex": "Point $P$ lies on the segment from $A(0, 0)$ to $B(9, 12)$ and divides it in the ratio $AP : PB = 1 : 2$. Find $P$.",
+   "stem_html": "<p>Point <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi><annotation encoding=\"application/x-tex\">P</annotation></semantics></math> lies on the segment from <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">A(0, 0)</annotation></semantics></math> to <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>9</mn><mo>,</mo><mn>12</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">B(9, 12)</annotation></semantics></math> and divides it in the ratio <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>P</mi><mo>:</mo><mi>P</mi><mi>B</mi><mo>=</mo><mn>1</mn><mo>:</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">AP : PB = 1 : 2</annotation></semantics></math>. Find <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi><annotation encoding=\"application/x-tex\">P</annotation></semantics></math>.</p>",
+   "solution_tex": "$P$ is $\\frac{1}{1 + 2} = \\frac{1}{3}$ of the way from $A$ to $B$: $P = \\left(\\frac{9}{3}, \\frac{12}{3}\\right) = (3, 4)$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi><annotation encoding=\"application/x-tex\">P</annotation></semantics></math> is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{1 + 2} = \\frac{1}{3}</annotation></semantics></math> of the way from <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi><annotation encoding=\"application/x-tex\">A</annotation></semantics></math> to <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi><annotation encoding=\"application/x-tex\">B</annotation></semantics></math>: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac><mn>9</mn><mn>3</mn></mfrac><mo>,</mo><mfrac><mn>12</mn><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">P = \\left(\\frac{9}{3}, \\frac{12}{3}\\right) = (3, 4)</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "\\left( 6, \\  8\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 6, \\  8\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( 4, \\  3\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 4, \\  3\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( \\frac{9}{2}, \\  6\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac><mn>9</mn><mn>2</mn></mfrac><mo>,</mo><mspace width=\"0.222em\"></mspace><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( \\frac{9}{2}, \\  6\\right)</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\left( 3, \\  4\\right)",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>,</mo><mspace width=\"0.222em\"></mspace><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\left( 3, \\  4\\right)</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "ge-vol-1",
+   "part": "A",
+   "strand": "volume",
+   "difficulty": 1,
+   "stem_tex": "A cylinder has radius 3 and height 10. What is its volume?",
+   "stem_html": "<p>A cylinder has radius 3 and height 10. What is its volume?</p>",
+   "solution_tex": "$V = \\pi r^2 h = \\pi(9)(10) = 90\\pi$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi><mo>=</mo><mi>π</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>9</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>10</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>90</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">V = \\pi r^2 h = \\pi(9)(10) = 90\\pi</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "30\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>30</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">30\\pi</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "300\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>300</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">300\\pi</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "60\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>60</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">60\\pi</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "90\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>90</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">90\\pi</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "ge-vol-2",
+   "part": "A",
+   "strand": "volume",
+   "difficulty": 2,
+   "stem_tex": "A cone has radius 4 and height 9. What is its volume?",
+   "stem_html": "<p>A cone has radius 4 and height 9. What is its volume?</p>",
+   "solution_tex": "$V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi(16)(9) = 48\\pi$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>π</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>16</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>9</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>48</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi(16)(9) = 48\\pi</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "36\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>36</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">36\\pi</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "48\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>48</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">48\\pi</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "144\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>144</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">144\\pi</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "12\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>12</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">12\\pi</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 1
+  },
+  {
+   "id": "ge-vol-3",
+   "part": "A",
+   "strand": "volume",
+   "difficulty": 2,
+   "stem_tex": "What is the volume of a sphere of radius 3?",
+   "stem_html": "<p>What is the volume of a sphere of radius 3?</p>",
+   "solution_tex": "$V = \\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi(27) = 36\\pi$.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>27</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>36</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">V = \\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi(27) = 36\\pi</annotation></semantics></math>.</p>",
+   "choices": [
+    {
+     "tex": "9\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>9</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">9\\pi</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "12\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>12</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">12\\pi</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "108\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>108</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">108\\pi</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "36\\pi",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>36</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">36\\pi</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 3
+  },
+  {
+   "id": "ge-vol-4",
+   "part": "A",
+   "strand": "volume",
+   "difficulty": 3,
+   "stem_tex": "A square pyramid has a base 6 m on a side and a volume of 96 m$^3$. How tall is it, in meters?",
+   "stem_html": "<p>A square pyramid has a base 6 m on a side and a volume of 96 m<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi></mi><mn>3</mn></msup><annotation encoding=\"application/x-tex\">^3</annotation></semantics></math>. How tall is it, in meters?</p>",
+   "solution_tex": "$V = \\frac{1}{3}Bh$ with $B = 36$: $96 = 12h$, so $h = 8$ m.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>B</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = \\frac{1}{3}Bh</annotation></semantics></math> with <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>=</mo><mn>36</mn></mrow><annotation encoding=\"application/x-tex\">B = 36</annotation></semantics></math>: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>96</mn><mo>=</mo><mn>12</mn><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">96 = 12h</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mo>=</mo><mn>8</mn></mrow><annotation encoding=\"application/x-tex\">h = 8</annotation></semantics></math> m.</p>",
+   "choices": [
+    {
+     "tex": "8",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn><annotation encoding=\"application/x-tex\">8</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "24",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>24</mn><annotation encoding=\"application/x-tex\">24</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "\\frac{8}{3}",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac><mn>8</mn><mn>3</mn></mfrac><annotation encoding=\"application/x-tex\">\\frac{8}{3}</annotation></semantics></math></p>"
+    },
+    {
+     "tex": "16",
+     "html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn><annotation encoding=\"application/x-tex\">16</annotation></semantics></math></p>"
+    }
+   ],
+   "answer": 0
+  },
+  {
+   "id": "ge-tr-b",
+   "part": "B",
+   "strand": "transformations",
+   "difficulty": 2,
+   "stem_tex": "Triangle $ABC$ has vertices $A(1, 2)$, $B(4, 2)$, $C(1, 6)$. Give the vertices of its image after a reflection across the line $y = x$, and explain why the image is congruent to $ABC$.",
+   "stem_html": "<p>Triangle <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">ABC</annotation></semantics></math> has vertices <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">A(1, 2)</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mo>,</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">B(4, 2)</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">C(1, 6)</annotation></semantics></math>. Give the vertices of its image after a reflection across the line <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">y = x</annotation></semantics></math>, and explain why the image is congruent to <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">ABC</annotation></semantics></math>.</p>",
+   "solution_tex": "Reflection across $y = x$ swaps the coordinates: $A'(2, 1)$, $B'(2, 4)$, $C'(6, 1)$. A reflection is a rigid motion (it preserves lengths and angles), so the image is congruent.",
+   "solution_html": "<p>Reflection across <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">y = x</annotation></semantics></math> swaps the coordinates: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>A</mi><mo>′</mo></msup><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">A&#39;(2, 1)</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>B</mi><mo>′</mo></msup><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">B&#39;(2, 4)</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>C</mi><mo>′</mo></msup><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>6</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">C&#39;(6, 1)</annotation></semantics></math>. A reflection is a rigid motion (it preserves lengths and angles), so the image is congruent.</p>",
+   "answer_tex": "A'(2, 1),\\ B'(2, 4),\\ C'(6, 1)"
+  },
+  {
+   "id": "ge-ang-b",
+   "part": "B",
+   "strand": "angles",
+   "difficulty": 3,
+   "stem_tex": "The angles of a triangle measure $x^\\circ$, $(2x)^\\circ$ and $(3x - 12)^\\circ$. Find $x$ and all three angles.",
+   "stem_html": "<p>The angles of a triangle measure <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">x^\\circ</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">(2x)^\\circ</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>12</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">(3x - 12)^\\circ</annotation></semantics></math>. Find <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi><annotation encoding=\"application/x-tex\">x</annotation></semantics></math> and all three angles.</p>",
+   "solution_tex": "The angles add to $180^\\circ$: $6x - 12 = 180$, so $x = 32$. The angles are $32^\\circ$, $64^\\circ$ and $84^\\circ$ (they add to 180).",
+   "solution_html": "<p>The angles add to <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>180</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">180^\\circ</annotation></semantics></math>: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mi>x</mi><mo>−</mo><mn>12</mn><mo>=</mo><mn>180</mn></mrow><annotation encoding=\"application/x-tex\">6x - 12 = 180</annotation></semantics></math>, so <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>32</mn></mrow><annotation encoding=\"application/x-tex\">x = 32</annotation></semantics></math>. The angles are <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>32</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">32^\\circ</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>64</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">64^\\circ</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>84</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">84^\\circ</annotation></semantics></math> (they add to 180).</p>",
+   "answer_tex": "x = 32;\\ 32^\\circ,\\ 64^\\circ,\\ 84^\\circ"
+  },
+  {
+   "id": "ge-sim-b",
+   "part": "B",
+   "strand": "similarity",
+   "difficulty": 3,
+   "stem_tex": "A ladder 20 ft long leans against a wall and makes a $70^\\circ$ angle with the ground. How high up the wall does it reach? Give the exact form and a decimal to the nearest tenth.",
+   "stem_html": "<p>A ladder 20 ft long leans against a wall and makes a <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>70</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">70^\\circ</annotation></semantics></math> angle with the ground. How high up the wall does it reach? Give the exact form and a decimal to the nearest tenth.</p>",
+   "solution_tex": "The wall height is opposite the $70^\\circ$ angle and the ladder is the hypotenuse: $h = 20\\sin 70^\\circ \\approx 20(0.9397) \\approx 18.8$ ft.",
+   "solution_html": "<p>The wall height is opposite the <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>70</mn><mo>∘</mo></msup><annotation encoding=\"application/x-tex\">70^\\circ</annotation></semantics></math> angle and the ladder is the hypotenuse: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mo>=</mo><mn>20</mn><mrow><mi>sin</mi><mo>&#8289;</mo></mrow><msup><mn>70</mn><mo>∘</mo></msup><mo>≈</mo><mn>20</mn><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>0.9397</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>≈</mo><mn>18.8</mn></mrow><annotation encoding=\"application/x-tex\">h = 20\\sin 70^\\circ \\approx 20(0.9397) \\approx 18.8</annotation></semantics></math> ft.</p>",
+   "answer_tex": "20\\sin 70^\\circ \\approx 18.8\\text{ ft}"
+  },
+  {
+   "id": "ge-cir-b",
+   "part": "B",
+   "strand": "circles",
+   "difficulty": 2,
+   "stem_tex": "Write the equation of the circle with center $(-1, 4)$ that passes through $(2, 8)$.",
+   "stem_html": "<p>Write the equation of the circle with center <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(-1, 4)</annotation></semantics></math> that passes through <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mo>,</mo><mn>8</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(2, 8)</annotation></semantics></math>.</p>",
+   "solution_tex": "The radius is the distance from the center to the point: $r = \\sqrt{3^2 + 4^2} = 5$. So $(x + 1)^2 + (y - 4)^2 = 25$.",
+   "solution_html": "<p>The radius is the distance from the center to the point: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r</mi><mo>=</mo><msqrt><mrow><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><msup><mn>4</mn><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">r = \\sqrt{3^2 + 4^2} = 5</annotation></semantics></math>. So <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>y</mi><mo>−</mo><mn>4</mn><msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mn>2</mn></msup><mo>=</mo><mn>25</mn></mrow><annotation encoding=\"application/x-tex\">(x + 1)^2 + (y - 4)^2 = 25</annotation></semantics></math>.</p>",
+   "answer_tex": "(x + 1)^2 + (y - 4)^2 = 25"
+  },
+  {
+   "id": "ge-co-b",
+   "part": "B",
+   "strand": "coordinates",
+   "difficulty": 3,
+   "stem_tex": "Show that the quadrilateral with vertices $(0, 0)$, $(4, 1)$, $(5, 5)$, $(1, 4)$ is a rhombus by computing its four side lengths.",
+   "stem_html": "<p>Show that the quadrilateral with vertices <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(0, 0)</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(4, 1)</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>5</mn><mo>,</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(5, 5)</annotation></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(1, 4)</annotation></semantics></math> is a rhombus by computing its four side lengths.</p>",
+   "solution_tex": "Each side has $\\Delta x, \\Delta y$ of $4, 1$ or $1, 4$ in some order, so every side is $\\sqrt{16 + 1} = \\sqrt{17}$. Four congruent sides make a rhombus.",
+   "solution_html": "<p>Each side has <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>x</mi><mo>,</mo><mi mathvariant=\"normal\">Δ</mi><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta x, \\Delta y</annotation></semantics></math> of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo>,</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">4, 1</annotation></semantics></math> or <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">1, 4</annotation></semantics></math> in some order, so every side is <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><mn>16</mn><mo>+</mo><mn>1</mn></mrow></msqrt><mo>=</mo><msqrt><mn>17</mn></msqrt></mrow><annotation encoding=\"application/x-tex\">\\sqrt{16 + 1} = \\sqrt{17}</annotation></semantics></math>. Four congruent sides make a rhombus.</p>",
+   "answer_tex": "\\text{every side is } \\sqrt{17}"
+  },
+  {
+   "id": "ge-vol-b",
+   "part": "B",
+   "strand": "volume",
+   "difficulty": 3,
+   "stem_tex": "A water tank is a cylinder of radius 2 m and height 5 m. Water costs \\$0.003 per liter (1 m$^3$ = 1000 L). What does it cost to fill the tank? Give the exact cost and the cost to the nearest cent.",
+   "stem_html": "<p>A water tank is a cylinder of radius 2 m and height 5 m. Water costs $0.003 per liter (1 m<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi></mi><mn>3</mn></msup><annotation encoding=\"application/x-tex\">^3</annotation></semantics></math> = 1000 L). What does it cost to fill the tank? Give the exact cost and the cost to the nearest cent.</p>",
+   "solution_tex": "$V = \\pi(2^2)(5) = 20\\pi$ m$^3$ $= 20000\\pi$ L. Cost: $20000\\pi \\times 0.003 = 60\\pi \\approx 188.50$ dollars.",
+   "solution_html": "<p><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><msup><mn>2</mn><mn>2</mn></msup><mo stretchy=\"false\" form=\"postfix\">)</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>=</mo><mn>20</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">V = \\pi(2^2)(5) = 20\\pi</annotation></semantics></math> m<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi></mi><mn>3</mn></msup><annotation encoding=\"application/x-tex\">^3</annotation></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo><mn>20000</mn><mi>π</mi></mrow><annotation encoding=\"application/x-tex\">= 20000\\pi</annotation></semantics></math> L. Cost: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>20000</mn><mi>π</mi><mo>×</mo><mn>0.003</mn><mo>=</mo><mn>60</mn><mi>π</mi><mo>≈</mo><mn>188.50</mn></mrow><annotation encoding=\"application/x-tex\">20000\\pi \\times 0.003 = 60\\pi \\approx 188.50</annotation></semantics></math> dollars.</p>",
+   "answer_tex": "60\\pi \\approx \\$188.50"
+  }
+ ],
+ "license": "Questions written for impo (github.com/billsix/impo), MIT license."
+}

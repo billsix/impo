@@ -1,0 +1,350 @@
+# Algebra 1 cliff notes (source). One [[chapters]] entry per chapter of
+# OpenStax Elementary Algebra 2e, whose structure this follows (CC BY 4.0,
+# attribution in the generated PDF). Rules are summaries; examples and practice
+# problems are written for impo (MIT). Checked by study/tools/cliffnotes.py.
+
+subject = "algebra-1"
+title = "Algebra 1 Cliff Notes"
+based_on = "OpenStax \\emph{Elementary Algebra 2e} (Marecek, Anthony-Smith and Honeycutt Mathis), \\url{https://openstax.org/details/books/elementary-algebra-2e}"
+
+[[chapters]]
+title = "Foundations"
+review = ["EA 1.3", "EA 1.6", "EA 1.8", "EA 1.9"]
+rules = [
+  '''Integers: subtracting is adding the opposite; a product or quotient of two negatives is positive.''',
+  '''Real numbers are rational (fractions, terminating or repeating decimals) or irrational ($\sqrt{3}$, $\pi$). The distributive property: $a(b + c) = ab + ac$.''',
+]
+[[chapters.examples]]
+problem = '''Simplify $\frac{3}{5} - \frac{7}{10} \cdot 2$.'''
+steps = '''Multiply first: $\frac{7}{10} \cdot 2 = \frac{7}{5}$. Then $\frac{3}{5} - \frac{7}{5} = -\frac{4}{5}$.'''
+compute = "Rational(3, 5) - Rational(7, 10)*2"
+answer = "Rational(-4, 5)"
+[[chapters.examples]]
+problem = '''Simplify $-2(3x - 5) - (x + 1)$.'''
+steps = '''Distribute: $-6x + 10 - x - 1$. Combine: $-7x + 9$.'''
+compute = "expand(-2*(3*x - 5) - (x + 1))"
+answer = "-7*x + 9"
+answer_tex = '-7x + 9'
+[[chapters.practice]]
+problem = '''$-9 + (-4) - (-15)$'''
+compute = "-9 + (-4) - (-15)"
+answer = "2"
+[[chapters.practice]]
+problem = '''$\frac{5}{12} + \frac{3}{8}$'''
+compute = "Rational(5, 12) + Rational(3, 8)"
+answer = "Rational(19, 24)"
+[[chapters.practice]]
+problem = '''$0.6(2.5) - 1.3$'''
+compute = "Rational(6, 10)*Rational(25, 10) - Rational(13, 10)"
+answer = "Rational(2, 10)"
+answer_tex = '0.2'
+
+[[chapters]]
+title = "Solving Linear Equations and Inequalities"
+review = ["EA 2.4", "EA 2.5", "EA 2.6", "EA 2.7"]
+rules = [
+  '''General strategy: clear fractions, simplify each side, collect variable terms on one side and constants on the other, divide by the coefficient, check.''',
+  '''Inequalities solve the same way, except multiplying or dividing by a negative number reverses the inequality sign. Write the answer in interval notation.''',
+]
+[[chapters.examples]]
+problem = '''Solve $\frac{2x}{3} - 1 = \frac{x}{2} + 2$.'''
+steps = '''Multiply by 6: $4x - 6 = 3x + 12$. So $x = 18$.'''
+compute = "solve(Eq(2*x/3 - 1, x/2 + 2), x)"
+answer = "[18]"
+answer_tex = 'x = 18'
+[[chapters.examples]]
+problem = '''Solve $5 - 3x \le 17$.'''
+steps = '''Subtract 5: $-3x \le 12$. Divide by $-3$ and reverse: $x \ge -4$, i.e. $[-4, \infty)$.'''
+compute = "solve_univariate_inequality(5 - 3*x <= 17, x, relational=False)"
+answer = "Interval(-4, oo)"
+answer_tex = '[-4, \infty)'
+[[chapters.practice]]
+problem = '''$3(x + 2) = 2x - 5$'''
+compute = "solve(Eq(3*(x + 2), 2*x - 5), x)"
+answer = "[-11]"
+answer_tex = 'x = -11'
+[[chapters.practice]]
+problem = '''Solve $P = 2L + 2W$ for $W$.'''
+compute = "solve(Eq(P, 2*L + 2*W), W)"
+answer = "[(P - 2*L)/2]"
+answer_tex = 'W = \frac{P - 2L}{2}'
+[[chapters.practice]]
+problem = '''$4x + 1 > 2x - 7$'''
+compute = "solve_univariate_inequality(4*x + 1 > 2*x - 7, x, relational=False)"
+answer = "Interval.open(-4, oo)"
+answer_tex = '(-4, \infty)'
+
+[[chapters]]
+title = "Math Models"
+review = ["EA 3.1", "EA 3.2", "EA 3.3", "EA 3.5"]
+rules = [
+  '''Name the unknown, translate the words to an equation, solve, and answer the question asked (with units).''',
+  '''Mixture: (number)(value) adds up; uniform motion: $d = rt$ for each mover; percent: amount $=$ percent $\times$ base.''',
+]
+[[chapters.examples]]
+problem = '''A jar has 30 coins, all dimes and quarters, worth \$4.20. How many quarters?'''
+steps = '''Let $q$ quarters and $30 - q$ dimes: $25q + 10(30 - q) = 420$, so $15q = 120$ and $q = 8$.'''
+compute = "solve(Eq(25*q + 10*(30 - q), 420), q)"
+answer = "[8]"
+answer_tex = '8 \text{ quarters}'
+[[chapters.examples]]
+problem = '''Two cars leave a town in opposite directions at 55 and 65 mph. When are they 300 miles apart?'''
+steps = '''Distances add: $55t + 65t = 300$, so $120t = 300$ and $t = 2.5$ hours.'''
+compute = "solve(Eq(55*t + 65*t, 300), t)"
+answer = "[Rational(5, 2)]"
+answer_tex = 't = 2.5\text{ h}'
+[[chapters.practice]]
+problem = '''After a 20\% raise a salary is \$54{,}000. What was it before?'''
+compute = "solve(Eq(s*Rational(120, 100), 54000), s)"
+answer = "[45000]"
+answer_tex = '\$45{,}000'
+[[chapters.practice]]
+problem = '''The angles of a triangle are $x$, $2x$ and $3x$. Find $x$.'''
+compute = "solve(Eq(x + 2*x + 3*x, 180), x)"
+answer = "[30]"
+answer_tex = 'x = 30^\circ'
+[[chapters.practice]]
+problem = '''Three consecutive integers sum to 72. Find the smallest.'''
+compute = "solve(Eq(n + (n + 1) + (n + 2), 72), n)"
+answer = "[23]"
+answer_tex = '23'
+
+[[chapters]]
+title = "Graphs"
+review = ["EA 4.3", "EA 4.4", "EA 4.5", "EA 4.6"]
+rules = [
+  '''Slope-intercept form $y = mx + b$: slope $m$, $y$-intercept $(0, b)$. Point-slope form: $y - y_1 = m(x - x_1)$.''',
+  '''Parallel lines have equal slopes; perpendicular slopes multiply to $-1$. Horizontal lines $y = b$ have slope 0; vertical lines $x = a$ have no slope.''',
+]
+[[chapters.examples]]
+problem = '''Find the equation of the line through $(2, -1)$ and $(4, 5)$.'''
+steps = '''$m = \frac{5 - (-1)}{4 - 2} = 3$. $y + 1 = 3(x - 2)$, so $y = 3x - 7$.'''
+compute = "expand(Rational(5 - (-1), 4 - 2)*(x - 2) - 1)"
+answer = "3*x - 7"
+answer_tex = 'y = 3x - 7'
+[[chapters.examples]]
+problem = '''Find the slope of a line perpendicular to $y = -\frac{2}{5}x + 1$.'''
+steps = '''Negative reciprocal of $-\frac{2}{5}$ is $\frac{5}{2}$.'''
+compute = "-1/Rational(-2, 5)"
+answer = "Rational(5, 2)"
+[[chapters.practice]]
+problem = '''Slope and $y$-intercept of $3x + 4y = 8$.'''
+compute = "tuple(Poly(solve(3*x + 4*y - 8, y)[0], x).all_coeffs())"
+answer = "(Rational(-3, 4), 2)"
+answer_tex = 'm = -\frac{3}{4},\ (0, 2)'
+[[chapters.practice]]
+problem = '''Line with slope $-2$ through $(1, 3)$.'''
+compute = "expand(-2*(x - 1) + 3)"
+answer = "-2*x + 5"
+answer_tex = 'y = -2x + 5'
+[[chapters.practice]]
+problem = '''$x$-intercept of $y = 2x - 6$.'''
+compute = "solve(2*x - 6, x)[0]"
+answer = "3"
+answer_tex = '(3, 0)'
+
+[[chapters]]
+title = "Systems of Linear Equations"
+review = ["EA 5.1", "EA 5.2", "EA 5.3", "EA 5.4"]
+rules = [
+  '''A solution of a system satisfies every equation: one point (lines cross), none (parallel), or infinitely many (same line).''',
+  '''Substitution: solve one equation for a variable and substitute. Elimination: scale the equations so adding them cancels a variable.''',
+]
+[[chapters.examples]]
+problem = '''Solve $x + y = 10$, $x - y = 4$.'''
+steps = '''Add: $2x = 14$, $x = 7$; then $y = 3$. Solution $(7, 3)$.'''
+compute = "tuple(solve([Eq(x + y, 10), Eq(x - y, 4)], [x, y], dict=True)[0][v] for v in (x, y))"
+answer = "(7, 3)"
+[[chapters.examples]]
+problem = '''Solve $y = 2x - 1$, $3x + 2y = 12$.'''
+steps = '''Substitute: $3x + 2(2x - 1) = 12$, so $7x = 14$, $x = 2$, $y = 3$.'''
+compute = "tuple(solve([Eq(y, 2*x - 1), Eq(3*x + 2*y, 12)], [x, y], dict=True)[0][v] for v in (x, y))"
+answer = "(2, 3)"
+[[chapters.practice]]
+problem = '''$2x + 3y = 13$, $x - y = -1$'''
+compute = "tuple(solve([Eq(2*x + 3*y, 13), Eq(x - y, -1)], [x, y], dict=True)[0][v] for v in (x, y))"
+answer = "(2, 3)"
+[[chapters.practice]]
+problem = '''$4x - y = 5$, $2x + y = 7$'''
+compute = "tuple(solve([Eq(4*x - y, 5), Eq(2*x + y, 7)], [x, y], dict=True)[0][v] for v in (x, y))"
+answer = "(2, 3)"
+[[chapters.practice]]
+problem = '''Two numbers sum to 25 and differ by 7. Find them.'''
+compute = "tuple(solve([Eq(a + b, 25), Eq(a - b, 7)], [a, b], dict=True)[0][v] for v in (a, b))"
+answer = "(16, 9)"
+answer_tex = '16 \text{ and } 9'
+
+[[chapters]]
+title = "Polynomials"
+review = ["EA 6.1", "EA 6.2", "EA 6.3", "EA 6.4"]
+rules = [
+  '''Exponent rules: $a^m a^n = a^{m + n}$, $(a^m)^n = a^{mn}$, $(ab)^n = a^n b^n$, $\frac{a^m}{a^n} = a^{m - n}$, $a^{-n} = \frac{1}{a^n}$.''',
+  '''Special products: $(a + b)^2 = a^2 + 2ab + b^2$, $(a - b)^2 = a^2 - 2ab + b^2$, $(a + b)(a - b) = a^2 - b^2$.''',
+]
+[[chapters.examples]]
+problem = '''Multiply $(3x + 2)^2$.'''
+steps = '''$(3x)^2 + 2(3x)(2) + 2^2 = 9x^2 + 12x + 4$.'''
+compute = "expand((3*x + 2)**2)"
+answer = "9*x**2 + 12*x + 4"
+answer_tex = '9x^2 + 12x + 4'
+[[chapters.examples]]
+problem = '''Divide $(6x^3 - 9x^2 + 3x) \div 3x$.'''
+steps = '''Divide each term: $2x^2 - 3x + 1$.'''
+compute = "expand((6*x**3 - 9*x**2 + 3*x) / (3*x))"
+answer = "2*x**2 - 3*x + 1"
+answer_tex = '2x^2 - 3x + 1'
+[[chapters.practice]]
+problem = '''$(2a^2b)^3$'''
+compute = "(2*a**2*b)**3"
+answer = "8*a**6*b**3"
+answer_tex = '8a^6b^3'
+[[chapters.practice]]
+problem = '''$(x - 5)(x + 5)$'''
+compute = "expand((x - 5)*(x + 5))"
+answer = "x**2 - 25"
+answer_tex = 'x^2 - 25'
+[[chapters.practice]]
+problem = '''$(x^2 + 3x - 4) - (2x^2 - x + 1)$'''
+compute = "expand((x**2 + 3*x - 4) - (2*x**2 - x + 1))"
+answer = "-x**2 + 4*x - 5"
+answer_tex = '-x^2 + 4x - 5'
+
+[[chapters]]
+title = "Factoring"
+review = ["EA 7.1", "EA 7.2", "EA 7.3", "EA 7.6"]
+rules = [
+  '''Always take out the GCF first. For $x^2 + bx + c$, find two numbers with product $c$ and sum $b$; for $ax^2 + bx + c$, use the ac-method (grouping).''',
+  '''Zero product property: if $ab = 0$ then $a = 0$ or $b = 0$; so put a quadratic equation in the form $\ldots = 0$, factor, and set each factor to zero.''',
+]
+[[chapters.examples]]
+problem = '''Factor $2x^2 + 7x + 3$.'''
+steps = '''$ac = 6$; $6 = 6 \cdot 1$ with sum 7: $2x^2 + 6x + x + 3 = 2x(x + 3) + (x + 3) = (2x + 1)(x + 3)$.'''
+compute = "factor(2*x**2 + 7*x + 3)"
+answer = "(2*x + 1)*(x + 3)"
+compare = "form"
+answer_tex = '(2x + 1)(x + 3)'
+[[chapters.examples]]
+problem = '''Solve $x^2 = 5x + 14$.'''
+steps = '''$x^2 - 5x - 14 = 0$, $(x - 7)(x + 2) = 0$, so $x = 7$ or $x = -2$.'''
+compute = "solve(Eq(x**2, 5*x + 14), x)"
+answer = "[7, -2]"
+answer_tex = 'x = 7 \text{ or } x = -2'
+[[chapters.practice]]
+problem = '''Factor $x^2 - 9x + 20$.'''
+compute = "factor(x**2 - 9*x + 20)"
+answer = "(x - 4)*(x - 5)"
+compare = "form"
+answer_tex = '(x - 4)(x - 5)'
+[[chapters.practice]]
+problem = '''Factor $4y^2 - 49$.'''
+compute = "factor(4*y**2 - 49)"
+answer = "(2*y - 7)*(2*y + 7)"
+compare = "form"
+answer_tex = '(2y - 7)(2y + 7)'
+[[chapters.practice]]
+problem = '''Solve $3x^2 - 12x = 0$.'''
+compute = "solve(3*x**2 - 12*x, x)"
+answer = "[0, 4]"
+answer_tex = 'x = 0 \text{ or } x = 4'
+
+[[chapters]]
+title = "Rational Expressions and Equations"
+review = ["EA 8.1", "EA 8.4", "EA 8.6", "EA 8.9"]
+rules = [
+  '''Simplify by factoring and dividing out common factors; note the values that make a denominator zero (they are excluded).''',
+  '''To solve a rational equation, multiply by the LCD, solve, and discard any solution that makes an original denominator zero.''',
+]
+[[chapters.examples]]
+problem = '''Simplify $\frac{x^2 - 4}{x^2 + x - 6}$.'''
+steps = '''$\frac{(x - 2)(x + 2)}{(x + 3)(x - 2)} = \frac{x + 2}{x + 3}$, $x \ne 2, -3$.'''
+compute = "cancel((x**2 - 4)/(x**2 + x - 6))"
+answer = "(x + 2)/(x + 3)"
+answer_tex = '\frac{x + 2}{x + 3}'
+[[chapters.examples]]
+problem = '''Solve $\frac{3}{x} + \frac{1}{2} = \frac{5}{x}$.'''
+steps = '''Multiply by $2x$: $6 + x = 10$, so $x = 4$ (not excluded).'''
+compute = "solve(Eq(3/x + Rational(1, 2), 5/x), x)"
+answer = "[4]"
+answer_tex = 'x = 4'
+[[chapters.practice]]
+problem = '''$\frac{2}{x + 1} + \frac{3}{x + 1}$'''
+compute = "cancel(2/(x + 1) + 3/(x + 1))"
+answer = "5/(x + 1)"
+answer_tex = '\frac{5}{x + 1}'
+[[chapters.practice]]
+problem = '''$y$ varies directly with $x$; $y = 12$ when $x = 4$. Find $y$ when $x = 7$.'''
+compute = "Rational(12, 4) * 7"
+answer = "21"
+[[chapters.practice]]
+problem = '''Solve $\frac{x}{x - 3} = \frac{3}{x - 3} + 2$.'''
+compute = "solve(Eq(x/(x - 3), 3/(x - 3) + 2), x)"
+answer = "[]"
+answer_tex = '\text{no solution } (x = 3 \text{ is excluded})'
+
+[[chapters]]
+title = "Roots and Radicals"
+review = ["EA 9.2", "EA 9.3", "EA 9.5", "EA 9.6"]
+rules = [
+  '''$\sqrt{ab} = \sqrt{a}\sqrt{b}$ and $\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}$ for $a, b \ge 0$; simplify by pulling out perfect-square factors.''',
+  '''Add only like radicals ($3\sqrt{2} + 5\sqrt{2} = 8\sqrt{2}$). Rationalize a denominator by multiplying by $\frac{\sqrt{b}}{\sqrt{b}}$. $a^{1/n} = \sqrt[n]{a}$.''',
+]
+[[chapters.examples]]
+problem = '''Simplify $\sqrt{48} - \sqrt{12}$.'''
+steps = '''$\sqrt{48} = 4\sqrt{3}$ and $\sqrt{12} = 2\sqrt{3}$, so the difference is $2\sqrt{3}$.'''
+compute = "sqrt(48) - sqrt(12)"
+answer = "2*sqrt(3)"
+answer_tex = '2\sqrt{3}'
+[[chapters.examples]]
+problem = '''Solve $\sqrt{x + 5} = 4$.'''
+steps = '''Square: $x + 5 = 16$, so $x = 11$. Check: $\sqrt{16} = 4$.'''
+compute = "solve(Eq(sqrt(x + 5), 4), x)"
+answer = "[11]"
+answer_tex = 'x = 11'
+[[chapters.practice]]
+problem = '''$\sqrt{75}$'''
+compute = "sqrt(75)"
+answer = "5*sqrt(3)"
+answer_tex = '5\sqrt{3}'
+[[chapters.practice]]
+problem = '''$\frac{10}{\sqrt{5}}$'''
+compute = "10/sqrt(5)"
+answer = "2*sqrt(5)"
+answer_tex = '2\sqrt{5}'
+[[chapters.practice]]
+problem = '''$16^{3/4}$'''
+compute = "Integer(16)**Rational(3, 4)"
+answer = "8"
+
+[[chapters]]
+title = "Quadratic Equations"
+review = ["EA 10.1", "EA 10.2", "EA 10.3", "EA 10.5"]
+rules = [
+  '''Quadratic formula: $ax^2 + bx + c = 0$ has $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$. The discriminant $b^2 - 4ac$ tells how many real solutions: $> 0$ two, $= 0$ one, $< 0$ none.''',
+  '''The graph of $y = ax^2 + bx + c$ is a parabola with vertex at $x = -\frac{b}{2a}$; it opens up if $a > 0$, down if $a < 0$.''',
+]
+[[chapters.examples]]
+problem = '''Solve $x^2 + 6x + 2 = 0$ by completing the square.'''
+steps = '''$x^2 + 6x = -2$; add 9: $(x + 3)^2 = 7$, so $x = -3 \pm \sqrt{7}$.'''
+compute = "solve(x**2 + 6*x + 2, x)"
+answer = "[-3 + sqrt(7), -3 - sqrt(7)]"
+answer_tex = 'x = -3 \pm \sqrt{7}'
+[[chapters.examples]]
+problem = '''Find the vertex of $y = 2x^2 - 8x + 1$.'''
+steps = '''$x = -\frac{-8}{4} = 2$, $y = 8 - 16 + 1 = -7$: vertex $(2, -7)$.'''
+compute = "(2, (2*x**2 - 8*x + 1).subs(x, 2))"
+answer = "(2, -7)"
+[[chapters.practice]]
+problem = '''Solve $x^2 = 49$.'''
+compute = "solve(Eq(x**2, 49), x)"
+answer = "[7, -7]"
+answer_tex = 'x = \pm 7'
+[[chapters.practice]]
+problem = '''Number of real solutions of $3x^2 - 2x + 5 = 0$.'''
+compute = "len(solve(3*x**2 - 2*x + 5, Symbol('x', real=True)))"
+answer = "0"
+answer_tex = '0\ (b^2 - 4ac = -56)'
+[[chapters.practice]]
+problem = '''Solve $2x^2 - 3x - 2 = 0$.'''
+compute = "solve(2*x**2 - 3*x - 2, x)"
+answer = "[2, Rational(-1, 2)]"
+answer_tex = 'x = 2 \text{ or } x = -\frac{1}{2}'

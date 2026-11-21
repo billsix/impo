@@ -1,0 +1,374 @@
+# Algebra 1 literacy test -- question bank (source).
+# Questions written for impo (github.com/billsix/impo), MIT license; not copied
+# from OpenStax. Review pointers cite OpenStax Elementary Algebra 2e and
+# Intermediate Algebra 2e (CC BY 4.0) by section (crossbook codes).
+# Schema and checking: study/tools/bank.py.
+
+subject = "algebra-1"
+title = "Algebra 1 Literacy Test"
+minutes = 50
+standards = "Strands follow OpenStax Algebra 1 / Elementary Algebra 2e (linear equations, graphs, systems, polynomials, factoring and quadratics, functions)."
+
+[time_limits]
+1 = 60
+2 = 105
+3 = 180
+
+[[strands]]
+id = "linear"
+name = "Linear equations and inequalities"
+review = ["EA 2.4", "EA 2.5", "EA 2.6", "EA 2.7"]
+
+[[strands]]
+id = "lines"
+name = "Graphs, slope and equations of lines"
+review = ["EA 4.4", "EA 4.5", "EA 4.6"]
+
+[[strands]]
+id = "systems"
+name = "Systems of linear equations"
+review = ["EA 5.2", "EA 5.3", "EA 5.4"]
+
+[[strands]]
+id = "polynomials"
+name = "Exponents and polynomials"
+review = ["EA 6.1", "EA 6.2", "EA 6.3", "EA 6.7"]
+
+[[strands]]
+id = "quadratics"
+name = "Factoring and quadratic equations"
+review = ["EA 7.2", "EA 7.3", "EA 7.6", "EA 10.3"]
+
+[[strands]]
+id = "functions"
+name = "Functions and their graphs"
+review = ["IA 3.5", "IA 3.6", "EA 10.5"]
+
+# ---------------- Part A: multiple choice ----------------
+
+[[questions]]
+id = "a1-lin-1"
+part = "A"
+strand = "linear"
+difficulty = 1
+stem = '''Solve $3x - 7 = 11$.'''
+compute = "solve(Eq(3*x - 7, 11), x)"
+choices = ["[6]", "[Rational(4, 3)]", "[18]", "[Rational(11, 3)]"]
+choices_tex = ['x = 6', 'x = \frac{4}{3}', 'x = 18', 'x = \frac{11}{3}']
+solution = '''Add 7: $3x = 18$. Divide by 3: $x = 6$.'''
+
+[[questions]]
+id = "a1-lin-2"
+part = "A"
+strand = "linear"
+difficulty = 2
+stem = '''Solve $\frac{x}{4} + \frac{1}{2} = \frac{5}{4}$.'''
+compute = "solve(Eq(x/4 + Rational(1, 2), Rational(5, 4)), x)"
+choices = ["[3]", "[7]", "[1]", "[Rational(3, 4)]"]
+choices_tex = ['x = 3', 'x = 7', 'x = 1', 'x = \frac{3}{4}']
+solution = '''Multiply every term by the LCD 4: $x + 2 = 5$, so $x = 3$.'''
+
+[[questions]]
+id = "a1-lin-3"
+part = "A"
+strand = "linear"
+difficulty = 2
+stem = '''Solve the inequality $-2x + 5 > 13$.'''
+compute = "solve_univariate_inequality(-2*x + 5 > 13, x, relational=False)"
+choices = ["Interval.open(-oo, -4)", "Interval.open(-4, oo)", "Interval.open(-oo, 4)", "Interval.open(4, oo)"]
+choices_tex = ['x < -4', 'x > -4', 'x < 4', 'x > 4']
+solution = '''Subtract 5: $-2x > 8$. Dividing by a negative number reverses the inequality: $x < -4$.'''
+
+[[questions]]
+id = "a1-lin-4"
+part = "A"
+strand = "linear"
+difficulty = 3
+stem = '''Solve $A = \frac{1}{2}h(b + c)$ for $c$.'''
+compute = "solve(Eq(A, Rational(1, 2)*h*(b + c)), c)"
+choices = ["[2*A/h - b]", "[A/(2*h) - b]", "[2*A - b*h]", "[2*A/h + b]"]
+choices_tex = ['c = \frac{2A}{h} - b', 'c = \frac{A}{2h} - b', 'c = 2A - bh', 'c = \frac{2A}{h} + b']
+solution = '''Multiply by 2: $2A = h(b + c)$. Divide by $h$: $\frac{2A}{h} = b + c$. Subtract $b$: $c = \frac{2A}{h} - b$.'''
+
+[[questions]]
+id = "a1-line-1"
+part = "A"
+strand = "lines"
+difficulty = 1
+stem = '''What is the slope of the line through $(2, 3)$ and $(6, 11)$?'''
+compute = "Rational(11 - 3, 6 - 2)"
+choices = ["2", "Rational(1, 2)", "8", "-2"]
+solution = '''$m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{11 - 3}{6 - 2} = \frac{8}{4} = 2$.'''
+
+[[questions]]
+id = "a1-line-2"
+part = "A"
+strand = "lines"
+difficulty = 1
+stem = '''What is the $y$-intercept of the line $y = -3x + 7$?'''
+compute = "(-3*x + 7).subs(x, 0)"
+choices = ["7", "-3", "Rational(7, 3)", "0"]
+choices_tex = ['(0, 7)', '(0, -3)', '(0, \frac{7}{3})', '(0, 0)']
+solution = '''In slope-intercept form $y = mx + b$ the $y$-intercept is $(0, b) = (0, 7)$.'''
+
+[[questions]]
+id = "a1-line-3"
+part = "A"
+strand = "lines"
+difficulty = 2
+stem = '''Which equation describes the line with slope $\frac{2}{3}$ through the point $(3, -1)$?'''
+compute = "expand(Rational(2, 3)*(x - 3) - 1)"
+choices = ["Rational(2, 3)*x - 3", "Rational(2, 3)*x - 1", "Rational(2, 3)*x + 1", "Rational(2, 3)*x + 3"]
+choices_tex = ['y = \frac{2}{3}x - 3', 'y = \frac{2}{3}x - 1', 'y = \frac{2}{3}x + 1', 'y = \frac{2}{3}x + 3']
+solution = '''Point-slope form: $y - (-1) = \frac{2}{3}(x - 3)$, so $y + 1 = \frac{2}{3}x - 2$ and $y = \frac{2}{3}x - 3$.'''
+
+[[questions]]
+id = "a1-line-4"
+part = "A"
+strand = "lines"
+difficulty = 3
+stem = '''What is the slope of a line perpendicular to $4x - 2y = 9$?'''
+compute = "-1 / solve(4*x - 2*y - 9, y)[0].coeff(x)"
+choices = ["Rational(-1, 2)", "2", "-2", "Rational(1, 2)"]
+solution = '''Solve for $y$: $y = 2x - \frac{9}{2}$, so the line has slope 2. A perpendicular slope is the negative reciprocal, $-\frac{1}{2}$.'''
+
+[[questions]]
+id = "a1-sys-1"
+part = "A"
+strand = "systems"
+difficulty = 1
+stem = '''Solve the system $y = 2x$ and $x + y = 12$.'''
+compute = "tuple(solve([Eq(y, 2*x), Eq(x + y, 12)], [x, y], dict=True)[0][v] for v in (x, y))"
+choices = ["(4, 8)", "(8, 4)", "(6, 6)", "(3, 9)"]
+solution = '''Substitute $y = 2x$: $x + 2x = 12$, so $x = 4$ and $y = 8$. The solution is $(4, 8)$.'''
+
+[[questions]]
+id = "a1-sys-2"
+part = "A"
+strand = "systems"
+difficulty = 2
+stem = '''Solve the system $3x + 2y = 16$ and $x - 2y = 0$.'''
+compute = "tuple(solve([Eq(3*x + 2*y, 16), Eq(x - 2*y, 0)], [x, y], dict=True)[0][v] for v in (x, y))"
+choices = ["(4, 2)", "(2, 4)", "(2, 5)", "(6, -1)"]
+solution = '''Add the equations to eliminate $y$: $4x = 16$, so $x = 4$. Then $4 - 2y = 0$ gives $y = 2$.'''
+
+[[questions]]
+id = "a1-sys-3"
+part = "A"
+strand = "systems"
+difficulty = 2
+stem = '''How many solutions does the system $y = 3x + 1$ and $6x - 2y = 4$ have?'''
+compute = "len(solve([Eq(y, 3*x + 1), Eq(6*x - 2*y, 4)], [x, y], dict=True))"
+choices = ["0", "1", "2", "oo"]
+choices_tex = ['\text{none}', '\text{exactly one}', '\text{exactly two}', '\text{infinitely many}']
+solution = '''The second equation is $y = 3x - 2$. Both lines have slope 3 but different intercepts, so they are parallel and never meet: no solution.'''
+
+[[questions]]
+id = "a1-sys-4"
+part = "A"
+strand = "systems"
+difficulty = 3
+stem = '''Adult tickets cost \$9 and child tickets \$5. A group bought 12 tickets for \$84. How many adult tickets did they buy?'''
+compute = "solve([Eq(a + c, 12), Eq(9*a + 5*c, 84)], [a, c], dict=True)[0][a]"
+choices = ["6", "4", "8", "3"]
+solution = '''Let $a$ adults and $c$ children: $a + c = 12$ and $9a + 5c = 84$. Substitute $c = 12 - a$: $9a + 60 - 5a = 84$, so $4a = 24$ and $a = 6$.'''
+
+[[questions]]
+id = "a1-poly-1"
+part = "A"
+strand = "polynomials"
+difficulty = 1
+stem = '''Simplify $(x^3)(x^4)$.'''
+compute = "x**3 * x**4"
+choices = ["x**7", "x**12", "2*x**7", "x**1"]
+choices_tex = ['x^7', 'x^{12}', '2x^7', 'x']
+solution = '''Same base, so add exponents: $x^{3 + 4} = x^7$.'''
+
+[[questions]]
+id = "a1-poly-2"
+part = "A"
+strand = "polynomials"
+difficulty = 2
+stem = '''Multiply $(2x - 3)(x + 5)$.'''
+compute = "expand((2*x - 3)*(x + 5))"
+choices = ["2*x**2 + 7*x - 15", "2*x**2 - 15", "2*x**2 + 13*x - 15", "2*x**2 - 7*x - 15"]
+choices_tex = ['2x^2 + 7x - 15', '2x^2 - 15', '2x^2 + 13x - 15', '2x^2 - 7x - 15']
+solution = '''FOIL: $2x \cdot x + 2x \cdot 5 - 3 \cdot x - 3 \cdot 5 = 2x^2 + 10x - 3x - 15 = 2x^2 + 7x - 15$.'''
+
+[[questions]]
+id = "a1-poly-3"
+part = "A"
+strand = "polynomials"
+difficulty = 2
+stem = '''Simplify $\frac{12a^5b^2}{4a^2b^3}$ (write without negative exponents).'''
+compute = "12*a**5*b**2 / (4*a**2*b**3)"
+choices = ["3*a**3/b", "3*a**3*b", "8*a**3/b", "3*a**7*b**5"]
+choices_tex = ['\frac{3a^3}{b}', '3a^3b', '\frac{8a^3}{b}', '3a^7b^5']
+solution = '''Divide the coefficients, $12 \div 4 = 3$, and subtract exponents: $a^{5 - 2} = a^3$ and $b^{2 - 3} = b^{-1} = \frac{1}{b}$. The result is $\frac{3a^3}{b}$.'''
+
+[[questions]]
+id = "a1-poly-4"
+part = "A"
+strand = "polynomials"
+difficulty = 3
+stem = '''Write $(3.2 \times 10^{5})(2.5 \times 10^{-2})$ in scientific notation.'''
+compute = "Rational(32, 10) * 10**5 * Rational(25, 10) * Rational(1, 10**2)"
+choices = ["8000", "80000", "800", "Rational(8, 1000)"]
+choices_tex = ['8 \times 10^{3}', '8 \times 10^{4}', '8 \times 10^{2}', '8 \times 10^{-3}']
+solution = '''Multiply the numbers, $3.2 \times 2.5 = 8$, and add the exponents, $10^{5 + (-2)} = 10^3$: the product is $8 \times 10^3$.'''
+
+[[questions]]
+id = "a1-quad-1"
+part = "A"
+strand = "quadratics"
+difficulty = 1
+stem = '''Factor $x^2 + 7x + 12$.'''
+compute = "factor(x**2 + 7*x + 12)"
+compare = "form"
+choices = ["(x + 3)*(x + 4)", "(x + 2)*(x + 6)", "(x + 1)*(x + 12)", "(x - 3)*(x - 4)"]
+choices_tex = ['(x + 3)(x + 4)', '(x + 2)(x + 6)', '(x + 1)(x + 12)', '(x - 3)(x - 4)']
+solution = '''Find two numbers whose product is 12 and sum is 7: 3 and 4. So $x^2 + 7x + 12 = (x + 3)(x + 4)$.'''
+
+[[questions]]
+id = "a1-quad-2"
+part = "A"
+strand = "quadratics"
+difficulty = 2
+stem = '''Solve $x^2 - 2x - 15 = 0$.'''
+compute = "solve(x**2 - 2*x - 15, x)"
+choices = ["[5, -3]", "[-5, 3]", "[15, -1]", "[5, 3]"]
+choices_tex = ['x = 5 \text{ or } x = -3', 'x = -5 \text{ or } x = 3', 'x = 15 \text{ or } x = -1', 'x = 5 \text{ or } x = 3']
+solution = '''Factor: $(x - 5)(x + 3) = 0$. By the zero product property $x = 5$ or $x = -3$.'''
+
+[[questions]]
+id = "a1-quad-3"
+part = "A"
+strand = "quadratics"
+difficulty = 2
+stem = '''Factor completely: $3x^2 - 27$.'''
+compute = "factor(3*x**2 - 27)"
+compare = "form"
+choices = ["3*(x - 3)*(x + 3)", "3*(x - 3)**2", "(3*x - 9)*(x + 3)", "3*(x**2 - 9)"]
+choices_tex = ['3(x - 3)(x + 3)', '3(x - 3)^2', '(3x - 9)(x + 3)', '3(x^2 - 9)']
+solution = '''Take out the GCF 3: $3(x^2 - 9)$. Then $x^2 - 9$ is a difference of squares: $3(x - 3)(x + 3)$.'''
+
+[[questions]]
+id = "a1-quad-4"
+part = "A"
+strand = "quadratics"
+difficulty = 3
+stem = '''Use the quadratic formula to solve $2x^2 + 3x - 1 = 0$.'''
+compute = "solve(2*x**2 + 3*x - 1, x)"
+choices = ["[(-3 + sqrt(17))/4, (-3 - sqrt(17))/4]", "[(3 + sqrt(17))/4, (3 - sqrt(17))/4]", "[(-3 + sqrt(1))/4, (-3 - sqrt(1))/4]", "[(-3 + sqrt(17))/2, (-3 - sqrt(17))/2]"]
+choices_tex = ['x = \frac{-3 \pm \sqrt{17}}{4}', 'x = \frac{3 \pm \sqrt{17}}{4}', 'x = \frac{-3 \pm 1}{4}', 'x = \frac{-3 \pm \sqrt{17}}{2}']
+solution = '''$a = 2$, $b = 3$, $c = -1$. The discriminant is $b^2 - 4ac = 9 + 8 = 17$, so $x = \frac{-3 \pm \sqrt{17}}{2 \cdot 2} = \frac{-3 \pm \sqrt{17}}{4}$.'''
+
+[[questions]]
+id = "a1-fun-1"
+part = "A"
+strand = "functions"
+difficulty = 1
+stem = '''If $f(x) = x^2 - 4x$, find $f(-2)$.'''
+compute = "(x**2 - 4*x).subs(x, -2)"
+choices = ["12", "-4", "4", "-12"]
+solution = '''$f(-2) = (-2)^2 - 4(-2) = 4 + 8 = 12$.'''
+
+[[questions]]
+id = "a1-fun-2"
+part = "A"
+strand = "functions"
+difficulty = 2
+stem = '''What is the vertex of the parabola $y = x^2 - 6x + 5$?'''
+compute = "(3, (x**2 - 6*x + 5).subs(x, 3))"
+choices = ["(3, -4)", "(-3, 32)", "(6, 5)", "(3, 4)"]
+solution = '''The axis of symmetry is $x = -\frac{b}{2a} = \frac{6}{2} = 3$. Then $y = 9 - 18 + 5 = -4$, so the vertex is $(3, -4)$.'''
+
+[[questions]]
+id = "a1-fun-3"
+part = "A"
+strand = "functions"
+difficulty = 2
+stem = '''A phone plan costs \$20 per month plus \$0.10 per text. Which function gives the monthly cost $C$ for $t$ texts?'''
+compute = "20 + Rational(1, 10)*t"
+choices = ["20 + Rational(1, 10)*t", "Rational(1, 10) + 20*t", "20*Rational(1, 10)*t", "20 - Rational(1, 10)*t"]
+choices_tex = ['C(t) = 20 + 0.10t', 'C(t) = 0.10 + 20t', 'C(t) = 2t', 'C(t) = 20 - 0.10t']
+solution = '''The fixed charge 20 is the intercept and the per-text charge 0.10 is the rate: $C(t) = 20 + 0.10t$.'''
+
+[[questions]]
+id = "a1-fun-4"
+part = "A"
+strand = "functions"
+difficulty = 3
+stem = '''A ball's height is $h(t) = -16t^2 + 64t$ feet after $t$ seconds. At what time does it hit the ground again?'''
+compute = "Max(*solve(-16*t**2 + 64*t, t))"
+choices = ["4", "2", "64", "16"]
+choices_tex = ['t = 4', 't = 2', 't = 64', 't = 16']
+solution = '''Set $h(t) = 0$: $-16t(t - 4) = 0$, so $t = 0$ (launch) or $t = 4$. It lands after 4 seconds.'''
+
+# ---------------- Part B: free response ----------------
+
+[[questions]]
+id = "a1-lin-b"
+part = "B"
+strand = "linear"
+difficulty = 2
+stem = '''Solve $4(x - 2) - 3 = 2x + 5$. Show each step and check your answer.'''
+compute = "solve(Eq(4*(x - 2) - 3, 2*x + 5), x)"
+answer = "[8]"
+answer_tex = 'x = 8'
+solution = '''Distribute: $4x - 8 - 3 = 2x + 5$, so $4x - 11 = 2x + 5$. Subtract $2x$: $2x - 11 = 5$. Add 11: $2x = 16$, $x = 8$. Check: $4(6) - 3 = 21 = 2(8) + 5$.'''
+
+[[questions]]
+id = "a1-line-b"
+part = "B"
+strand = "lines"
+difficulty = 2
+stem = '''Find the equation, in slope-intercept form, of the line through $(-1, 4)$ and $(3, -4)$.'''
+compute = "expand(Rational(-4 - 4, 3 - (-1))*(x - 3) - 4)"
+answer = "-2*x + 2"
+answer_tex = 'y = -2x + 2'
+solution = '''Slope: $m = \frac{-4 - 4}{3 - (-1)} = \frac{-8}{4} = -2$. Using $(3, -4)$: $y + 4 = -2(x - 3)$, so $y = -2x + 2$.'''
+
+[[questions]]
+id = "a1-sys-b"
+part = "B"
+strand = "systems"
+difficulty = 3
+stem = '''Solve by elimination: $2x + 3y = 7$ and $5x - 2y = 8$.'''
+compute = "tuple(solve([Eq(2*x + 3*y, 7), Eq(5*x - 2*y, 8)], [x, y], dict=True)[0][v] for v in (x, y))"
+answer = "(2, 1)"
+answer_tex = '(x, y) = (2, 1)'
+solution = '''Multiply the first equation by 2 and the second by 3: $4x + 6y = 14$ and $15x - 6y = 24$. Add: $19x = 38$, so $x = 2$. Then $2(2) + 3y = 7$ gives $y = 1$.'''
+
+[[questions]]
+id = "a1-poly-b"
+part = "B"
+strand = "polynomials"
+difficulty = 2
+stem = '''Simplify $(3x^2 - 5x + 2) - (x^2 + 4x - 6)$.'''
+compute = "expand((3*x**2 - 5*x + 2) - (x**2 + 4*x - 6))"
+answer = "2*x**2 - 9*x + 8"
+answer_tex = '2x^2 - 9x + 8'
+solution = '''Distribute the minus sign: $3x^2 - 5x + 2 - x^2 - 4x + 6$. Combine like terms: $2x^2 - 9x + 8$.'''
+
+[[questions]]
+id = "a1-quad-b"
+part = "B"
+strand = "quadratics"
+difficulty = 3
+stem = '''A rectangle's length is 3 m more than its width, and its area is 40 m$^2$. Write an equation and find the width.'''
+compute = "Max(*solve(Eq(w*(w + 3), 40), w))"
+answer = "5"
+answer_tex = 'w = 5\text{ m}'
+solution = '''$w(w + 3) = 40$, so $w^2 + 3w - 40 = 0$ and $(w + 8)(w - 5) = 0$. A width cannot be negative, so $w = 5$ m (and the length is 8 m).'''
+
+[[questions]]
+id = "a1-fun-b"
+part = "B"
+strand = "functions"
+difficulty = 2
+stem = '''For $g(x) = 3x - 5$, find $g(4)$ and solve $g(x) = 10$.'''
+compute = "((3*x - 5).subs(x, 4), solve(Eq(3*x - 5, 10), x)[0])"
+answer = "(7, 5)"
+answer_tex = 'g(4) = 7;\quad x = 5'
+solution = '''$g(4) = 12 - 5 = 7$. $3x - 5 = 10$ gives $3x = 15$, $x = 5$.'''

@@ -30,6 +30,7 @@ from collections.abc import Callable, Iterable
 from html.parser import HTMLParser
 from typing import Any, TypeAlias, cast
 
+import crossbook
 from lxml import etree  # ty: ignore[import-not-found]  # ty's lxml stub lacks etree
 
 _Element: TypeAlias = etree._Element  # MathML/CNXML node type, for annotations
@@ -2749,6 +2750,12 @@ def convert_module(mid: str, standalone: bool = True) -> str:
     body_all: str = "\n\n".join(x for x in [obj_tex, body, gloss_tex] if x.strip())
     body_all = cleanup_latex(body_all)
     body_all = wrap_latex(body_all)
+    # Cross-book links (crossbook.py): "(IA x.y.z)" references become links, and
+    # a math-ladder section opens with its reviewed "Prerequisites" box.
+    body_all = crossbook.link_ia_references(body_all)
+    prereq_tex: str = crossbook.prerequisites_box(mid)
+    if prereq_tex:
+        body_all = prereq_tex + "\n" + body_all
     section_block: str = "\\setcounter{exercise}{0}\\%s{%s}\\label{mod:%s}\n\n%s\n" % (
         sec_cmd,
         title,

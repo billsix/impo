@@ -1,0 +1,362 @@
+# Prealgebra literacy test -- question bank (source).
+# Questions written for impo (github.com/billsix/impo), MIT license; not copied
+# from OpenStax. Strand review pointers cite OpenStax Prealgebra 2e (CC BY 4.0)
+# by section (crossbook codes, openstax/tooling/tools/cnxml2tex/crossbook.py).
+# Schema and checking: study/tools/bank.py.
+
+subject = "prealgebra"
+title = "Prealgebra Literacy Test"
+minutes = 45
+standards = "Strands follow the chapters of OpenStax Prealgebra 2e."
+
+[time_limits]   # seconds per multiple-choice question, by difficulty (quiz server)
+1 = 60
+2 = 90
+3 = 150
+
+[[strands]]
+id = "whole"
+name = "Whole numbers and order of operations"
+review = ["PA 1.2", "PA 1.4", "PA 1.5", "PA 2.2"]
+
+[[strands]]
+id = "integers"
+name = "Integers"
+review = ["PA 3.2", "PA 3.3", "PA 3.4"]
+
+[[strands]]
+id = "fractions"
+name = "Fractions and mixed numbers"
+review = ["PA 4.2", "PA 4.3", "PA 4.5", "PA 4.6"]
+
+[[strands]]
+id = "decimals"
+name = "Decimals, percents, ratios and proportions"
+review = ["PA 5.2", "PA 5.6", "PA 6.2", "PA 6.5"]
+
+[[strands]]
+id = "equations"
+name = "Expressions and equations"
+review = ["PA 2.2", "PA 7.3", "PA 8.3", "PA 8.4"]
+
+[[strands]]
+id = "geometry"
+name = "Geometry, measurement and square roots"
+review = ["PA 5.7", "PA 9.3", "PA 9.4", "PA 9.5"]
+
+# ---------------- Part A: multiple choice ----------------
+
+[[questions]]
+id = "pa-whole-1"
+part = "A"
+strand = "whole"
+difficulty = 1
+stem = '''Evaluate $18 - 2 \cdot (3 + 4)$.'''
+compute = "18 - 2*(3 + 4)"
+choices = ["4", "112", "-10", "32"]
+solution = '''Parentheses first: $3 + 4 = 7$. Then multiply: $2 \cdot 7 = 14$. Then subtract: $18 - 14 = 4$.'''
+
+[[questions]]
+id = "pa-whole-2"
+part = "A"
+strand = "whole"
+difficulty = 1
+stem = '''Evaluate $5^2 - 3 \cdot 4$.'''
+compute = "5**2 - 3*4"
+choices = ["13", "88", "-2", "28"]
+solution = '''Exponent first: $5^2 = 25$. Multiply: $3 \cdot 4 = 12$. Subtract: $25 - 12 = 13$.'''
+
+[[questions]]
+id = "pa-whole-3"
+part = "A"
+strand = "whole"
+difficulty = 2
+stem = '''A school orders 14 boxes of pencils with 36 pencils in each box. How many pencils is that?'''
+compute = "14*36"
+choices = ["504", "50", "464", "540"]
+solution = '''Multiply: $14 \cdot 36 = 14 \cdot 30 + 14 \cdot 6 = 420 + 84 = 504$ pencils.'''
+
+[[questions]]
+id = "pa-whole-4"
+part = "A"
+strand = "whole"
+difficulty = 3
+stem = '''Evaluate $48 \div 4 \cdot 3 - (10 - 6)^2$.'''
+compute = "Rational(48, 4)*3 - (10 - 6)**2"
+choices = ["20", "-12", "0", "4"]
+solution = '''Parentheses: $10 - 6 = 4$, and $4^2 = 16$. Divide and multiply left to right: $48 \div 4 = 12$, then $12 \cdot 3 = 36$. Subtract: $36 - 16 = 20$.'''
+
+[[questions]]
+id = "pa-int-1"
+part = "A"
+strand = "integers"
+difficulty = 1
+stem = '''Find $-7 + 12$.'''
+compute = "-7 + 12"
+choices = ["5", "-19", "-5", "19"]
+solution = '''The signs differ, so subtract the absolute values, $12 - 7 = 5$, and keep the sign of the larger one, $+12$: the sum is $5$.'''
+
+[[questions]]
+id = "pa-int-2"
+part = "A"
+strand = "integers"
+difficulty = 1
+stem = '''Find $-4 - (-9)$.'''
+compute = "-4 - (-9)"
+choices = ["5", "-13", "-5", "13"]
+solution = '''Subtracting a negative is adding its opposite: $-4 - (-9) = -4 + 9 = 5$.'''
+
+[[questions]]
+id = "pa-int-3"
+part = "A"
+strand = "integers"
+difficulty = 2
+stem = '''Find $(-6)(-3) + (-20) \div 5$.'''
+compute = "(-6)*(-3) + Rational(-20, 5)"
+choices = ["14", "22", "-22", "-14"]
+solution = '''Multiply and divide first: $(-6)(-3) = 18$ (two negatives give a positive) and $-20 \div 5 = -4$. Then $18 + (-4) = 14$.'''
+
+[[questions]]
+id = "pa-int-4"
+part = "A"
+strand = "integers"
+difficulty = 3
+stem = '''At 6 a.m. the temperature was $-8$ degrees. By noon it had risen 15 degrees, and by midnight it had fallen 11 degrees from the noon temperature. What was the temperature at midnight?'''
+compute = "-8 + 15 - 11"
+choices = ["-4", "4", "-34", "18"]
+solution = '''Noon: $-8 + 15 = 7$ degrees. Midnight: $7 - 11 = -4$ degrees.'''
+
+[[questions]]
+id = "pa-frac-1"
+part = "A"
+strand = "fractions"
+difficulty = 1
+stem = '''Simplify $\frac{18}{24}$.'''
+compute = "Rational(18, 24)"
+choices = ["Rational(3, 4)", "Rational(2, 3)", "Rational(9, 16)", "Rational(6, 7)"]
+solution = '''The greatest common factor of 18 and 24 is 6: $\frac{18}{24} = \frac{18 \div 6}{24 \div 6} = \frac{3}{4}$.'''
+
+[[questions]]
+id = "pa-frac-2"
+part = "A"
+strand = "fractions"
+difficulty = 2
+stem = '''Add $\frac{3}{4} + \frac{1}{6}$.'''
+compute = "Rational(3, 4) + Rational(1, 6)"
+choices = ["Rational(11, 12)", "Rational(2, 5)", "Rational(4, 10)", "Rational(1, 8)"]
+solution = '''The least common denominator is 12: $\frac{3}{4} = \frac{9}{12}$ and $\frac{1}{6} = \frac{2}{12}$, so the sum is $\frac{9 + 2}{12} = \frac{11}{12}$.'''
+
+[[questions]]
+id = "pa-frac-3"
+part = "A"
+strand = "fractions"
+difficulty = 2
+stem = '''Divide $\frac{5}{8} \div \frac{15}{4}$.'''
+compute = "Rational(5, 8) / Rational(15, 4)"
+choices = ["Rational(1, 6)", "Rational(75, 32)", "Rational(3, 2)", "Rational(1, 3)"]
+solution = '''Multiply by the reciprocal: $\frac{5}{8} \cdot \frac{4}{15} = \frac{20}{120} = \frac{1}{6}$.'''
+
+[[questions]]
+id = "pa-frac-4"
+part = "A"
+strand = "fractions"
+difficulty = 3
+stem = '''A recipe uses $2\frac{1}{3}$ cups of flour. How much flour is needed for $1\frac{1}{2}$ batches?'''
+compute = "(2 + Rational(1, 3)) * (1 + Rational(1, 2))"
+choices = ["Rational(7, 2)", "Rational(17, 6)", "Rational(23, 6)", "Rational(2, 1)"]
+choices_tex = ['3\frac{1}{2}', '2\frac{5}{6}', '3\frac{5}{6}', '2']
+solution = '''Write the mixed numbers as improper fractions: $2\frac{1}{3} = \frac{7}{3}$ and $1\frac{1}{2} = \frac{3}{2}$. Multiply: $\frac{7}{3} \cdot \frac{3}{2} = \frac{7}{2} = 3\frac{1}{2}$ cups.'''
+
+[[questions]]
+id = "pa-dec-1"
+part = "A"
+strand = "decimals"
+difficulty = 1
+stem = '''Find $4.5 \times 0.2$.'''
+compute = "Rational(45, 10) * Rational(2, 10)"
+choices = ["Rational(9, 10)", "9", "Rational(9, 100)", "Rational(47, 10)"]
+choices_tex = ['0.9', '9', '0.09', '4.7']
+solution = '''$45 \times 2 = 90$, and the factors have $1 + 1 = 2$ decimal places, so $4.5 \times 0.2 = 0.90 = 0.9$.'''
+
+[[questions]]
+id = "pa-dec-2"
+part = "A"
+strand = "decimals"
+difficulty = 2
+stem = '''What is 35\% of 80?'''
+compute = "Rational(35, 100) * 80"
+choices = ["28", "45", "2800", "Rational(14, 5)"]
+choices_tex = ['28', '45', '2800', '2.8']
+solution = '''$35\% = 0.35$, and $0.35 \times 80 = 28$.'''
+
+[[questions]]
+id = "pa-dec-3"
+part = "A"
+strand = "decimals"
+difficulty = 2
+stem = '''A car travels 186 miles in 3 hours at a steady speed. How many miles does it travel in 5 hours?'''
+compute = "Rational(186, 3) * 5"
+choices = ["310", "62", "558", "930"]
+solution = '''The unit rate is $186 \div 3 = 62$ miles per hour, so in 5 hours it travels $62 \times 5 = 310$ miles.'''
+
+[[questions]]
+id = "pa-dec-4"
+part = "A"
+strand = "decimals"
+difficulty = 3
+stem = '''A \$60 jacket is on sale for 25\% off, and then 8\% sales tax is added to the sale price. What is the total cost, in dollars?'''
+compute = "60 * Rational(75, 100) * Rational(108, 100)"
+choices = ["Rational(486, 10)", "45", "Rational(498, 10)", "Rational(504, 10)"]
+choices_tex = ['48.60', '45.00', '49.80', '50.40']
+solution = '''The discount is $0.25 \times 60 = 15$, so the sale price is $60 - 15 = 45$ dollars. The tax is $0.08 \times 45 = 3.60$, so the total is $45 + 3.60 = 48.60$ dollars.'''
+
+[[questions]]
+id = "pa-eq-1"
+part = "A"
+strand = "equations"
+difficulty = 1
+stem = '''Solve $x + 9 = 23$.'''
+compute = "solve(Eq(x + 9, 23), x)"
+choices = ["[14]", "[32]", "[-14]", "[207]"]
+choices_tex = ['x = 14', 'x = 32', 'x = -14', 'x = 207']
+solution = '''Subtract 9 from both sides: $x = 23 - 9 = 14$. Check: $14 + 9 = 23$.'''
+
+[[questions]]
+id = "pa-eq-2"
+part = "A"
+strand = "equations"
+difficulty = 1
+stem = '''Evaluate $3a + 2b$ when $a = 4$ and $b = -5$.'''
+compute = "(3*a + 2*b).subs({a: 4, b: -5})"
+choices = ["2", "22", "-2", "17"]
+solution = '''Substitute: $3(4) + 2(-5) = 12 - 10 = 2$.'''
+
+[[questions]]
+id = "pa-eq-3"
+part = "A"
+strand = "equations"
+difficulty = 2
+stem = '''Simplify $4(2y - 3) - 5y$.'''
+compute = "expand(4*(2*y - 3) - 5*y)"
+choices = ["3*y - 12", "3*y - 3", "13*y - 12", "-3*y - 12"]
+choices_tex = ['3y - 12', '3y - 3', '13y - 12', '-3y - 12']
+solution = '''Distribute: $4(2y - 3) = 8y - 12$. Combine like terms: $8y - 5y - 12 = 3y - 12$.'''
+
+[[questions]]
+id = "pa-eq-4"
+part = "A"
+strand = "equations"
+difficulty = 3
+stem = '''Solve $5n - 8 = 2n + 13$.'''
+compute = "solve(Eq(5*n - 8, 2*n + 13), n)"
+choices = ["[7]", "[Rational(5, 7)]", "[3]", "[Rational(21, 5)]"]
+choices_tex = ['n = 7', 'n = \frac{5}{7}', 'n = 3', 'n = \frac{21}{5}']
+solution = '''Subtract $2n$ from both sides: $3n - 8 = 13$. Add 8: $3n = 21$. Divide by 3: $n = 7$. Check: $5(7) - 8 = 27 = 2(7) + 13$.'''
+
+[[questions]]
+id = "pa-geo-1"
+part = "A"
+strand = "geometry"
+difficulty = 1
+stem = '''A rectangle is 12 cm long and 7 cm wide. What is its perimeter, in centimeters?'''
+compute = "2*(12 + 7)"
+choices = ["38", "84", "19", "26"]
+solution = '''$P = 2L + 2W = 2(12) + 2(7) = 24 + 14 = 38$ cm.'''
+
+[[questions]]
+id = "pa-geo-2"
+part = "A"
+strand = "geometry"
+difficulty = 1
+stem = '''Simplify $\sqrt{81} + \sqrt{16}$.'''
+compute = "sqrt(81) + sqrt(16)"
+choices = ["13", "sqrt(97)", "97", "25"]
+choices_tex = ['13', '\sqrt{97}', '97', '25']
+solution = '''$\sqrt{81} = 9$ because $9^2 = 81$, and $\sqrt{16} = 4$. The sum is $9 + 4 = 13$.'''
+
+[[questions]]
+id = "pa-geo-3"
+part = "A"
+strand = "geometry"
+difficulty = 2
+stem = '''Two angles of a triangle measure $48^\circ$ and $67^\circ$. What is the measure of the third angle, in degrees?'''
+compute = "180 - 48 - 67"
+choices = ["65", "115", "245", "75"]
+solution = '''The angles of a triangle add to $180^\circ$: $180 - 48 - 67 = 65^\circ$.'''
+
+[[questions]]
+id = "pa-geo-4"
+part = "A"
+strand = "geometry"
+difficulty = 3
+stem = '''A right triangle has legs of length 9 ft and 12 ft. How long is the hypotenuse, in feet?'''
+compute = "sqrt(9**2 + 12**2)"
+choices = ["15", "21", "sqrt(21)", "225"]
+choices_tex = ['15', '21', '\sqrt{21}', '225']
+solution = '''By the Pythagorean Theorem, $c^2 = 9^2 + 12^2 = 81 + 144 = 225$, so $c = \sqrt{225} = 15$ ft.'''
+
+# ---------------- Part B: free response (show your work) ----------------
+
+[[questions]]
+id = "pa-whole-b"
+part = "B"
+strand = "whole"
+difficulty = 2
+stem = '''A theater has 28 rows of 32 seats. For one show, 715 seats were sold. How many seats were empty? Show your work.'''
+compute = "28*32 - 715"
+answer = "181"
+solution = '''Total seats: $28 \times 32 = 896$. Empty seats: $896 - 715 = 181$.'''
+
+[[questions]]
+id = "pa-int-b"
+part = "B"
+strand = "integers"
+difficulty = 2
+stem = '''Evaluate $-3(4 - 9) + (-2)^3$. Show each step.'''
+compute = "-3*(4 - 9) + (-2)**3"
+answer = "7"
+solution = '''Parentheses: $4 - 9 = -5$. Exponent: $(-2)^3 = -8$. Multiply: $-3(-5) = 15$. Add: $15 + (-8) = 7$.'''
+
+[[questions]]
+id = "pa-frac-b"
+part = "B"
+strand = "fractions"
+difficulty = 3
+stem = '''Maria walked $1\frac{3}{4}$ miles on Monday and $2\frac{2}{3}$ miles on Tuesday. How far did she walk in all? Write the answer as a mixed number.'''
+compute = "(1 + Rational(3, 4)) + (2 + Rational(2, 3))"
+answer = "Rational(53, 12)"
+answer_tex = '4\frac{5}{12}\text{ miles}'
+solution = '''With denominator 12: $1\frac{3}{4} = 1\frac{9}{12}$ and $2\frac{2}{3} = 2\frac{8}{12}$. Add: $3\frac{17}{12} = 4\frac{5}{12}$ miles.'''
+
+[[questions]]
+id = "pa-dec-b"
+part = "B"
+strand = "decimals"
+difficulty = 2
+stem = '''On a map, 2 inches represent 15 miles. Two towns are 7 inches apart on the map. Set up and solve a proportion for the real distance in miles.'''
+compute = "solve(Eq(Rational(2, 15), 7/d), d)"
+answer = "[Rational(105, 2)]"
+answer_tex = 'd = 52.5\text{ miles}'
+solution = '''$\frac{2}{15} = \frac{7}{d}$. Cross-multiply: $2d = 105$, so $d = 52.5$ miles.'''
+
+[[questions]]
+id = "pa-eq-b"
+part = "B"
+strand = "equations"
+difficulty = 3
+stem = '''Solve $\frac{2}{3}x - 4 = 6$ and check your answer.'''
+compute = "solve(Eq(Rational(2, 3)*x - 4, 6), x)"
+answer = "[15]"
+answer_tex = 'x = 15'
+solution = '''Add 4: $\frac{2}{3}x = 10$. Multiply both sides by $\frac{3}{2}$: $x = 15$. Check: $\frac{2}{3}(15) - 4 = 10 - 4 = 6$.'''
+
+[[questions]]
+id = "pa-geo-b"
+part = "B"
+strand = "geometry"
+difficulty = 3
+stem = '''A circular garden has a diameter of 10 m. Find its area, in square meters, in terms of $\pi$ and then rounded to the nearest tenth (use $\pi \approx 3.14$).'''
+compute = "pi * 5**2"
+answer = "25*pi"
+answer_tex = '25\pi \approx 78.5\text{ m}^2'
+solution = '''The radius is half the diameter, $r = 5$ m. $A = \pi r^2 = 25\pi \approx 3.14 \times 25 = 78.5$ m$^2$.'''

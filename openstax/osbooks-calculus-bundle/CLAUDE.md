@@ -21,14 +21,14 @@ No OpenStax content and no toolchain are committed — both are pulled in on dem
 `fetch.sh` pins **`9b6c28b21c723a10ac045bad22b34377b3ff3f89`** — the merge-base where the
 maintainer's `latex` port branch diverged from OpenStax's `main` (the pristine
 content the port was made against), from the survey table in
-`tasks/openstax-populate-books.md`. Canonical upstream:
+`tasks/archive/impo/2026/09/03/openstax-populate-books.md`. Canonical upstream:
 `https://github.com/openstax/osbooks-calculus-bundle`. Fallback mirror if GitHub is
 unreachable: `pi@192.168.0.186:/mnt/usbdrive2/gitRepos/openstax/**/osbooks-calculus-bundle.git`.
 
 ## This book (from the survey; build-time facts pending)
 
 - **Delta size:** 53 port-branch files; **small download cache**
-  (per the `tasks/openstax-populate-books.md` survey table).
+  (per the `tasks/archive/impo/2026/09/03/openstax-populate-books.md` survey table).
 - **No `os-embed` exercises** (0 in both schemes — confirmed 2026-09-03); 3 collection masters
   (calculus-volume-1/2/3).
 - **Ships a per-book theme override:** `bookstyle.tex` (PDF: `\setmainfont{TeX Gyre Termes}` + a navy palette)

@@ -1,0 +1,372 @@
+# Algebra 2 literacy test -- question bank (source).
+# Questions written for impo (github.com/billsix/impo), MIT license; not copied
+# from OpenStax. "Algebra 2" is OpenStax Intermediate Algebra 2e (CC BY 4.0); the
+# review pointers cite its sections (crossbook codes).
+# Schema and checking: study/tools/bank.py.
+
+subject = "algebra-2"
+title = "Algebra 2 Literacy Test"
+minutes = 50
+standards = "Strands follow OpenStax Intermediate Algebra 2e (the maintainer's Algebra 2)."
+
+[time_limits]
+1 = 75
+2 = 120
+3 = 180
+
+[[strands]]
+id = "functions"
+name = "Functions, composition and inverses"
+review = ["IA 3.5", "IA 3.6", "IA 10.1"]
+
+[[strands]]
+id = "radicals"
+name = "Radicals, rational exponents and complex numbers"
+review = ["IA 8.2", "IA 8.3", "IA 8.6", "IA 8.8"]
+
+[[strands]]
+id = "quadratics"
+name = "Quadratic equations and functions"
+review = ["IA 9.2", "IA 9.3", "IA 9.6", "IA 9.8"]
+
+[[strands]]
+id = "rational"
+name = "Polynomials and rational expressions"
+review = ["IA 5.4", "IA 7.1", "IA 7.2", "IA 7.4"]
+
+[[strands]]
+id = "explog"
+name = "Exponential and logarithmic functions"
+review = ["IA 10.2", "IA 10.3", "IA 10.4", "IA 10.5"]
+
+[[strands]]
+id = "sequences"
+name = "Sequences, series and the binomial theorem"
+review = ["IA 12.1", "IA 12.2", "IA 12.3", "IA 12.4"]
+
+# ---------------- Part A: multiple choice ----------------
+
+[[questions]]
+id = "a2-fun-1"
+part = "A"
+strand = "functions"
+difficulty = 1
+stem = '''If $f(x) = 2x + 1$ and $g(x) = x^2$, find $(f \circ g)(3)$.'''
+compute = "(2*x + 1).subs(x, 3**2)"
+choices = ["19", "49", "10", "16"]
+solution = '''$(f \circ g)(3) = f(g(3)) = f(9) = 2(9) + 1 = 19$.'''
+
+[[questions]]
+id = "a2-fun-2"
+part = "A"
+strand = "functions"
+difficulty = 2
+stem = '''Find the inverse of $f(x) = \frac{x - 4}{3}$.'''
+compute = "solve(Eq(x, (y - 4)/3), y)[0]"
+choices = ["3*x + 4", "3*x - 4", "(x + 4)/3", "Rational(1, 3)*x - 4"]
+choices_tex = ['f^{-1}(x) = 3x + 4', 'f^{-1}(x) = 3x - 4', 'f^{-1}(x) = \frac{x + 4}{3}', 'f^{-1}(x) = \frac{x}{3} - 4']
+solution = '''Swap $x$ and $y$: $x = \frac{y - 4}{3}$. Solve for $y$: $3x = y - 4$, so $f^{-1}(x) = 3x + 4$.'''
+
+[[questions]]
+id = "a2-fun-3"
+part = "A"
+strand = "functions"
+difficulty = 2
+stem = '''What is the domain of $f(x) = \sqrt{x - 5}$?'''
+compute = "solve_univariate_inequality(x - 5 >= 0, x, relational=False)"
+choices = ["Interval(5, oo)", "Interval.open(5, oo)", "Interval(-5, oo)", "Interval(0, oo)"]
+choices_tex = ['[5, \infty)', '(5, \infty)', '[-5, \infty)', '[0, \infty)']
+solution = '''The radicand must be nonnegative: $x - 5 \ge 0$, so $x \ge 5$. The domain is $[5, \infty)$.'''
+
+[[questions]]
+id = "a2-fun-4"
+part = "A"
+strand = "functions"
+difficulty = 3
+stem = '''The graph of $y = |x|$ is shifted 3 units right and 2 units down. Which equation describes the new graph?'''
+compute = "Abs(x - 3) - 2"
+choices = ["Abs(x - 3) - 2", "Abs(x + 3) - 2", "Abs(x - 2) + 3", "Abs(x - 3) + 2"]
+choices_tex = ['y = |x - 3| - 2', 'y = |x + 3| - 2', 'y = |x - 2| + 3', 'y = |x - 3| + 2']
+solution = '''A shift right by 3 replaces $x$ with $x - 3$; a shift down by 2 subtracts 2: $y = |x - 3| - 2$.'''
+
+[[questions]]
+id = "a2-rad-1"
+part = "A"
+strand = "radicals"
+difficulty = 1
+stem = '''Simplify $\sqrt{72}$.'''
+compute = "sqrt(72)"
+choices = ["6*sqrt(2)", "2*sqrt(6)", "8*sqrt(3)", "36*sqrt(2)"]
+choices_tex = ['6\sqrt{2}', '2\sqrt{6}', '8\sqrt{3}', '36\sqrt{2}']
+solution = '''$72 = 36 \cdot 2$, so $\sqrt{72} = \sqrt{36}\sqrt{2} = 6\sqrt{2}$.'''
+
+[[questions]]
+id = "a2-rad-2"
+part = "A"
+strand = "radicals"
+difficulty = 2
+stem = '''Evaluate $27^{2/3}$.'''
+compute = "Integer(27)**Rational(2, 3)"
+choices = ["9", "18", "3", "Rational(81, 1)"]
+solution = '''$27^{2/3} = \left(\sqrt[3]{27}\right)^2 = 3^2 = 9$.'''
+
+[[questions]]
+id = "a2-rad-3"
+part = "A"
+strand = "radicals"
+difficulty = 2
+stem = '''Simplify $(3 + 2i)(1 - 4i)$.'''
+compute = "expand((3 + 2*I)*(1 - 4*I))"
+choices = ["11 - 10*I", "-5 - 10*I", "3 - 8*I", "11 + 14*I"]
+choices_tex = ['11 - 10i', '-5 - 10i', '3 - 8i', '11 + 14i']
+solution = '''FOIL: $3 - 12i + 2i - 8i^2 = 3 - 10i + 8 = 11 - 10i$, since $i^2 = -1$.'''
+
+[[questions]]
+id = "a2-rad-4"
+part = "A"
+strand = "radicals"
+difficulty = 3
+stem = '''Solve $\sqrt{2x + 3} = x$.'''
+compute = "solve(Eq(sqrt(2*x + 3), x), x)"
+choices = ["[3]", "[3, -1]", "[-1]", "[]"]
+choices_tex = ['x = 3', 'x = 3 \text{ or } x = -1', 'x = -1', '\text{no solution}']
+solution = '''Square both sides: $2x + 3 = x^2$, so $x^2 - 2x - 3 = 0$ and $x = 3$ or $x = -1$. Check: $x = -1$ gives $\sqrt{1} = 1 \ne -1$, so it is extraneous. The solution is $x = 3$.'''
+
+[[questions]]
+id = "a2-quad-1"
+part = "A"
+strand = "quadratics"
+difficulty = 1
+stem = '''Solve $(x - 4)^2 = 25$.'''
+compute = "solve(Eq((x - 4)**2, 25), x)"
+choices = ["[9, -1]", "[29, -21]", "[9]", "[1, -9]"]
+choices_tex = ['x = 9 \text{ or } x = -1', 'x = 29 \text{ or } x = -21', 'x = 9', 'x = 1 \text{ or } x = -9']
+solution = '''Square root property: $x - 4 = \pm 5$, so $x = 9$ or $x = -1$.'''
+
+[[questions]]
+id = "a2-quad-2"
+part = "A"
+strand = "quadratics"
+difficulty = 2
+stem = '''Solve $x^2 + 4x + 13 = 0$.'''
+compute = "solve(x**2 + 4*x + 13, x)"
+choices = ["[-2 + 3*I, -2 - 3*I]", "[2 + 3*I, 2 - 3*I]", "[-2 + 9*I, -2 - 9*I]", "[]"]
+choices_tex = ['x = -2 \pm 3i', 'x = 2 \pm 3i', 'x = -2 \pm 9i', '\text{no solution}']
+solution = '''Complete the square: $(x + 2)^2 = -9$, so $x + 2 = \pm 3i$ and $x = -2 \pm 3i$.'''
+
+[[questions]]
+id = "a2-quad-3"
+part = "A"
+strand = "quadratics"
+difficulty = 2
+stem = '''What is the maximum value of $f(x) = -2x^2 + 8x - 3$?'''
+compute = "maximum(-2*x**2 + 8*x - 3, x)"
+choices = ["5", "2", "-3", "13"]
+solution = '''The vertex is at $x = -\frac{b}{2a} = -\frac{8}{-4} = 2$, and $f(2) = -8 + 16 - 3 = 5$. The parabola opens down, so 5 is the maximum.'''
+
+[[questions]]
+id = "a2-quad-4"
+part = "A"
+strand = "quadratics"
+difficulty = 3
+stem = '''Solve the inequality $x^2 - x - 6 < 0$.'''
+compute = "solve_univariate_inequality(x**2 - x - 6 < 0, x, relational=False)"
+choices = ["Interval.open(-2, 3)", "Union(Interval.open(-oo, -2), Interval.open(3, oo))", "Interval.open(-3, 2)", "Interval(-2, 3)"]
+choices_tex = ['(-2, 3)', '(-\infty, -2) \cup (3, \infty)', '(-3, 2)', '[-2, 3]']
+solution = '''Factor: $(x - 3)(x + 2) < 0$. The product is negative between the zeros $-2$ and $3$, so the solution is $(-2, 3)$.'''
+
+[[questions]]
+id = "a2-rat-1"
+part = "A"
+strand = "rational"
+difficulty = 1
+stem = '''Simplify $\frac{x^2 - 9}{x^2 + 5x + 6}$.'''
+compute = "cancel((x**2 - 9)/(x**2 + 5*x + 6))"
+choices = ["(x - 3)/(x + 2)", "(x + 3)/(x + 2)", "(x - 3)/(x + 3)", "-9/(5*x + 6)"]
+choices_tex = ['\frac{x - 3}{x + 2}', '\frac{x + 3}{x + 2}', '\frac{x - 3}{x + 3}', '\frac{-9}{5x + 6}']
+solution = '''Factor: $\frac{(x - 3)(x + 3)}{(x + 2)(x + 3)} = \frac{x - 3}{x + 2}$ for $x \ne -3, -2$.'''
+
+[[questions]]
+id = "a2-rat-2"
+part = "A"
+strand = "rational"
+difficulty = 2
+stem = '''Add $\frac{2}{x} + \frac{3}{x + 1}$.'''
+compute = "together(2/x + 3/(x + 1))"
+choices = ["(5*x + 2)/(x*(x + 1))", "5/(2*x + 1)", "(5*x + 3)/(x*(x + 1))", "6/(x*(x + 1))"]
+choices_tex = ['\frac{5x + 2}{x(x + 1)}', '\frac{5}{2x + 1}', '\frac{5x + 3}{x(x + 1)}', '\frac{6}{x(x + 1)}']
+solution = '''The LCD is $x(x + 1)$: $\frac{2(x + 1) + 3x}{x(x + 1)} = \frac{5x + 2}{x(x + 1)}$.'''
+
+[[questions]]
+id = "a2-rat-3"
+part = "A"
+strand = "rational"
+difficulty = 2
+stem = '''Divide $(x^3 - 2x^2 - 5x + 6) \div (x - 1)$.'''
+compute = "quo(x**3 - 2*x**2 - 5*x + 6, x - 1, x)"
+choices = ["x**2 - x - 6", "x**2 - 3*x - 2", "x**2 + x - 6", "x**2 - x - 4"]
+choices_tex = ['x^2 - x - 6', 'x^2 - 3x - 2', 'x^2 + x - 6', 'x^2 - x - 4']
+solution = '''Synthetic division by 1 on $1, -2, -5, 6$ gives $1, -1, -6$ with remainder 0, so the quotient is $x^2 - x - 6$.'''
+
+[[questions]]
+id = "a2-rat-4"
+part = "A"
+strand = "rational"
+difficulty = 3
+stem = '''Solve $\frac{x}{x - 2} = \frac{2}{x - 2} + 3$.'''
+compute = "solve(Eq(x/(x - 2), 2/(x - 2) + 3), x)"
+choices = ["[]", "[2]", "[3]", "[4]"]
+choices_tex = ['\text{no solution}', 'x = 2', 'x = 3', 'x = 4']
+solution = '''Multiply by $x - 2$: $x = 2 + 3(x - 2)$, so $x = 3x - 4$ and $x = 2$. But $x = 2$ makes a denominator zero, so it is extraneous: there is no solution.'''
+
+[[questions]]
+id = "a2-exp-1"
+part = "A"
+strand = "explog"
+difficulty = 1
+stem = '''Evaluate $\log_2 32$.'''
+compute = "log(32, 2)"
+choices = ["5", "16", "6", "Rational(1, 5)"]
+solution = '''$2^5 = 32$, so $\log_2 32 = 5$.'''
+
+[[questions]]
+id = "a2-exp-2"
+part = "A"
+strand = "explog"
+difficulty = 2
+stem = '''Solve $3^{x + 1} = 81$.'''
+compute = "solve(Eq(3**(x + 1), 81), x)"
+choices = ["[3]", "[4]", "[26]", "[27]"]
+choices_tex = ['x = 3', 'x = 4', 'x = 26', 'x = 27']
+solution = '''$81 = 3^4$, so $x + 1 = 4$ and $x = 3$.'''
+
+[[questions]]
+id = "a2-exp-3"
+part = "A"
+strand = "explog"
+difficulty = 2
+stem = '''Write $\log_b 8 + \log_b x - \log_b 2$ as a single logarithm.'''
+compute = "log(8*x/2)"
+choices = ["log(4*x)", "log(6*x)", "log(8*x - 2)", "log(16*x)"]
+choices_tex = ['\log_b(4x)', '\log_b(6 + x)', '\log_b(8x - 2)', '\log_b(16x)']
+solution = '''Product and quotient rules: $\log_b\frac{8x}{2} = \log_b(4x)$. (The check uses natural logs; the rules are the same for every base.)'''
+
+[[questions]]
+id = "a2-exp-4"
+part = "A"
+strand = "explog"
+difficulty = 3
+stem = '''\$1000 is invested at 6\% interest compounded continuously. How many years until it doubles? (Use $A = Pe^{rt}$.)'''
+compute = "solve(Eq(2000, 1000*exp(Rational(6, 100)*Symbol(\"t\", real=True))), Symbol(\"t\", real=True))[0]"
+choices = ["log(2)/Rational(6, 100)", "Rational(100, 6)", "log(6)/2", "2/Rational(6, 100)"]
+choices_tex = ['\frac{\ln 2}{0.06} \approx 11.55', '\frac{100}{6} \approx 16.67', '\frac{\ln 6}{2} \approx 0.90', '\frac{2}{0.06} \approx 33.33']
+solution = '''$2000 = 1000e^{0.06t}$, so $e^{0.06t} = 2$, $0.06t = \ln 2$ and $t = \frac{\ln 2}{0.06} \approx 11.55$ years.'''
+
+[[questions]]
+id = "a2-seq-1"
+part = "A"
+strand = "sequences"
+difficulty = 1
+stem = '''Find the 20th term of the arithmetic sequence $5, 9, 13, 17, \ldots$'''
+compute = "5 + (20 - 1)*4"
+choices = ["81", "85", "80", "100"]
+solution = '''$a_n = a_1 + (n - 1)d = 5 + 19 \cdot 4 = 81$.'''
+
+[[questions]]
+id = "a2-seq-2"
+part = "A"
+strand = "sequences"
+difficulty = 2
+stem = '''Find the sum of the first 6 terms of the geometric sequence $3, 6, 12, \ldots$'''
+compute = "summation(3*2**(k - 1), (k, 1, 6))"
+choices = ["189", "96", "192", "63"]
+solution = '''$S_n = \frac{a_1(1 - r^n)}{1 - r} = \frac{3(1 - 2^6)}{1 - 2} = 3 \cdot 63 = 189$.'''
+
+[[questions]]
+id = "a2-seq-3"
+part = "A"
+strand = "sequences"
+difficulty = 2
+stem = '''Find the sum of the infinite geometric series $8 + 4 + 2 + 1 + \cdots$'''
+compute = "summation(8*Rational(1, 2)**k, (k, 0, oo))"
+choices = ["16", "15", "oo", "12"]
+choices_tex = ['16', '15', '\text{no sum (diverges)}', '12']
+solution = '''$|r| = \frac{1}{2} < 1$, so $S = \frac{a_1}{1 - r} = \frac{8}{1/2} = 16$.'''
+
+[[questions]]
+id = "a2-seq-4"
+part = "A"
+strand = "sequences"
+difficulty = 3
+stem = '''What is the coefficient of $x^3$ in the expansion of $(x + 2)^5$?'''
+compute = "Poly(expand((x + 2)**5), x).coeff_monomial(x**3)"
+choices = ["40", "10", "80", "20"]
+solution = '''The $x^3$ term is $\binom{5}{3}x^3 \cdot 2^2 = 10 \cdot 4\,x^3 = 40x^3$.'''
+
+# ---------------- Part B: free response ----------------
+
+[[questions]]
+id = "a2-fun-b"
+part = "B"
+strand = "functions"
+difficulty = 2
+stem = '''For $f(x) = x^2 + 1$ and $g(x) = x - 3$, find $(f \circ g)(x)$ and $(g \circ f)(x)$. Are they equal?'''
+compute = "(expand(((x - 3)**2 + 1)), expand((x**2 + 1) - 3))"
+answer = "(x**2 - 6*x + 10, x**2 - 2)"
+answer_tex = '(f \circ g)(x) = x^2 - 6x + 10;\ (g \circ f)(x) = x^2 - 2;\ \text{not equal}'
+solution = '''$(f \circ g)(x) = (x - 3)^2 + 1 = x^2 - 6x + 10$ and $(g \circ f)(x) = x^2 + 1 - 3 = x^2 - 2$. They are different functions.'''
+
+[[questions]]
+id = "a2-rad-b"
+part = "B"
+strand = "radicals"
+difficulty = 2
+stem = '''Simplify $\frac{6}{\sqrt{3}}$ by rationalizing the denominator, and simplify $\sqrt{18} + \sqrt{50}$.'''
+compute = "(6/sqrt(3), sqrt(18) + sqrt(50))"
+answer = "(2*sqrt(3), 8*sqrt(2))"
+answer_tex = '2\sqrt{3};\quad 8\sqrt{2}'
+solution = '''$\frac{6}{\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}} = \frac{6\sqrt{3}}{3} = 2\sqrt{3}$. And $\sqrt{18} + \sqrt{50} = 3\sqrt{2} + 5\sqrt{2} = 8\sqrt{2}$.'''
+
+[[questions]]
+id = "a2-quad-b"
+part = "B"
+strand = "quadratics"
+difficulty = 3
+stem = '''A ball is thrown upward; its height is $h(t) = -16t^2 + 48t + 6$ feet. Find the maximum height and when the ball reaches it.'''
+compute = "(Rational(48, 32), (-16*t**2 + 48*t + 6).subs(t, Rational(48, 32)))"
+answer = "(Rational(3, 2), 42)"
+answer_tex = 't = 1.5\text{ s},\ h = 42\text{ ft}'
+solution = '''The vertex is at $t = -\frac{b}{2a} = \frac{48}{32} = 1.5$ s, and $h(1.5) = -36 + 72 + 6 = 42$ ft.'''
+
+[[questions]]
+id = "a2-rat-b"
+part = "B"
+strand = "rational"
+difficulty = 3
+stem = '''Solve $\frac{1}{x} + \frac{1}{x + 2} = \frac{3}{4}$ and check for extraneous solutions.'''
+compute = "solve(Eq(1/x + 1/(x + 2), Rational(3, 4)), x)"
+answer = "[2, Rational(-4, 3)]"
+answer_tex = 'x = 2 \text{ or } x = -\frac{4}{3}'
+solution = '''Multiply by $4x(x + 2)$: $4(x + 2) + 4x = 3x(x + 2)$, so $8x + 8 = 3x^2 + 6x$ and $3x^2 - 2x - 8 = 0$, i.e. $(3x + 4)(x - 2) = 0$. Both $x = 2$ and $x = -\frac{4}{3}$ keep the denominators nonzero, so both are solutions.'''
+
+[[questions]]
+id = "a2-exp-b"
+part = "B"
+strand = "explog"
+difficulty = 3
+stem = '''Solve $\log_3(x + 6) + \log_3 x = 3$.'''
+compute = "solve(Eq(log(x + 6, 3) + log(x, 3), 3), x)"
+answer = "[3]"
+answer_tex = 'x = 3'
+solution = '''Combine: $\log_3[x(x + 6)] = 3$, so $x^2 + 6x = 27$ and $(x + 9)(x - 3) = 0$. The logarithm needs $x > 0$, so $x = -9$ is extraneous and $x = 3$.'''
+
+[[questions]]
+id = "a2-seq-b"
+part = "B"
+strand = "sequences"
+difficulty = 2
+stem = '''An arithmetic sequence has $a_1 = 7$ and $a_{10} = 52$. Find the common difference and the sum of the first 10 terms.'''
+compute = "(Rational(52 - 7, 9), Rational(10, 2)*(7 + 52))"
+answer = "(5, 295)"
+answer_tex = 'd = 5;\ S_{10} = 295'
+solution = '''$a_{10} = a_1 + 9d$, so $52 = 7 + 9d$ and $d = 5$. $S_{10} = \frac{10}{2}(a_1 + a_{10}) = 5 \cdot 59 = 295$.'''

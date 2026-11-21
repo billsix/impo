@@ -39,7 +39,7 @@ confirmed on each book's first build.
   SVG figures (convert → `algebra-1.tex`, 976 modules).
 - `osbooks-organic-chemistry/`, `osbooks-contemporary-mathematics/` — **committed exercise caches**
   (organic-chemistry 1959 JSON + 2076 images; contemporary-mathematics 3073 JSON + 578 images), each
-  with its `COPYRIGHT` NOTICE (green-lit + fetched 2026-09-02 — see `tasks/openstax-populate-books.md`).
+  with its `COPYRIGHT` NOTICE (green-lit + fetched 2026-09-02 — see `tasks/archive/impo/2026/09/03/openstax-populate-books.md`).
 - `osbooks-biology-bundle/` — **committed exercise cache** (2337 JSON + 359 images) with `COPYRIGHT`, across
   all 3 volumes. Like physics, it uses the **`#ost/api/ex/<id>`** scheme (fetched by tag), so it too was wrongly
   read as "0 exercises" before the 2026-09-03 converter fix. (Its `\unicode[…]{x…}` Greek in exercise math also

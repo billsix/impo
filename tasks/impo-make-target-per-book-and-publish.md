@@ -21,7 +21,7 @@ PDF/EPUB attached (needs a real tag push).
 
 1. **Pages publishing is manual**: `make publish-pages`, run on the host (ghp-import), like
    geometricalgebra's manual PyPI upload. No CI deploys the website.
-2. **`make publish-pages` is deferred** (now owned by `tasks/openstax-publish-books.md`, which
+2. **`make publish-pages` is deferred** (done in `tasks/archive/impo/2026/11/21/openstax-publish-books.md`, which
    took the maintainer's 2026-11-21 billsix.github.io request) (and with it the question of where the website's files
    live: a separate repo, or a `gh-pages` branch in impo; decided 2026-11-21: the `gh-pages` branch). The mvp-style build target is still
    required: `make books` builds every book's HTML/PDF/EPUB into one output tree, the way
@@ -35,8 +35,8 @@ PDF/EPUB attached (needs a real tag push).
 ## Context
 
 - Read first: `CLAUDE.md`, `openstax/CLAUDE.md`, `trench/CLAUDE.md`,
-  `tasks/openstax-publish-books.md` (the older publish task; this task answers its open questions
-  and narrows it to the cross-book-link work), `tasks/openstax-ia-crossref-links.md` (parked until
+  `tasks/archive/impo/2026/11/21/openstax-publish-books.md` (the older publish task, done 2026-11-21; this task answers its open questions
+  and narrows it to the cross-book-link work), `tasks/archive/impo/2026/11/21/openstax-ia-crossref-links.md` (done 2026-11-21; was parked until
   stable URLs exist).
 - **Today:** each book folder has its own Makefile. OpenStax books have `pdf`/`html`/`epub`/`dist`.
   **Trench has `pdf`/`html`/`epub` but no `dist`.** There is no root `Makefile`.
@@ -107,7 +107,8 @@ later would be one extra step, if the maintainer ever wants that.
 4. Maintainer pushes a test tag (e.g. `v0.0.1`) and checks the Release. Fix whatever only GitHub
    reveals (disk, podman, timing).
 5. `make publish-pages` once open question 2 is answered; then narrow
-   `tasks/openstax-publish-books.md` to the cross-book links and un-park the IA-link task.
+   `tasks/openstax-publish-books.md` to the cross-book links and un-park the IA-link task (both done
+   2026-11-21, archived under `tasks/archive/impo/2026/11/21/`).
 
 ## Progress (2026-11-07)
 
@@ -148,4 +149,4 @@ later would be one extra step, if the maintainer ever wants that.
   question is where the website's files live: (a) a new repo used only for the website (e.g.
   `billsix/openstax-books`, served at `billsix.github.io/openstax-books/`), or (b) a `gh-pages`
   branch inside impo (served at `billsix.github.io/impo/`, but every clone of impo then also
-  downloads the website). The recommendation was (a), to keep impo small. **Decided 2026-11-21: (b), a `gh-pages` branch in impo** (William Emerison Six <billsix@gmail.com>); the work moved to `tasks/openstax-publish-books.md`.
+  downloads the website). The recommendation was (a), to keep impo small. **Decided 2026-11-21: (b), a `gh-pages` branch in impo** (William Emerison Six <billsix@gmail.com>); the work moved to `tasks/openstax-publish-books.md`, done 2026-11-21: `tasks/archive/impo/2026/11/21/openstax-publish-books.md`.
