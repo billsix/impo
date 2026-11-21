@@ -16,12 +16,23 @@ make books                   # [HOST] every book folder: PDF + HTML + EPUB, coll
 make anatomy-physiology      # [HOST] one book folder (names: make list-books)
 ```
 
-- Output: `output/<book>/` (self-contained HTML site), `output/<book>.pdf`, `output/<book>.epub`;
-  per-folder logs in `output/logs/`. A failing book doesn't stop the others; the exit status reports it.
+- Output: `output/<book>/` (self-contained HTML site), `output/<book>.pdf`, `output/<book>.epub`,
+  `output/<book>-html.zip`; per-folder logs in `output/logs/`. A failing book doesn't stop the others; the exit status reports it.
 - First run fetches each book's pinned content (network) and builds the TeX Live image (large, slow once).
 - **Release downloads:** pushing a version tag (`git tag v2026.11.0 && git push github v2026.11.0`) runs
-  `.github/workflows/release.yml`, which builds every book and attaches the PDFs + EPUBs to a GitHub
-  Release.
+  `.github/workflows/release.yml`, which builds every book and attaches the PDFs, EPUBs and HTML zips
+  to a GitHub Release. Each book's first page links them.
+
+## Publish the web editions (GitHub Pages, billsix.github.io/impo/)
+
+```sh
+pip install ghp-import                              # [HOST] once
+DRY_RUN=1 make publish-pages                        # [HOST] stage output/pages/ and print its size
+make publish-pages BOOKS="prealgebra-2e algebra-1"  # [HOST] push those books' sites to gh-pages
+```
+
+> The full set (~4.5 GB) is over Pages' 1 GB limit, so `make publish-pages` refuses it; publish a
+> subset with `BOOKS=`. Details: `tasks/reference/openstax/publishing.md`.
 
 ## Build a book
 

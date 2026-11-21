@@ -90,7 +90,11 @@ Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothi
 - `tools/pandoc/` — the HTML/EPUB leg: `xref.lua` (cross-ref → numbered link rewrite), `preprocess.py`,
   `chunked-template.html` + `osbook-web.css` (the Furo-style layout), plus the web-edition nav — `build_nav.py`
   (injects the collapsible book TOC into each page at build time, from `sitemap.json`) and `osbook-web.js`
-  (right "On this page" TOC + scrollspy + chapter/mobile toggles).
+  (right "On this page" TOC + scrollspy + chapter/mobile toggles). `build_nav.py` also fills the "Downloads"
+  box on each book's first page and the side-nav "Downloads" entry (GitHub Release assets);
+  `site_files.py` lists the files a built site uses (for `<book>-html.zip`, which `html.sh` writes, and for the
+  collected `output/<book>/`); `check_links.py` checks the local links of a directory of built sites.
+  Publishing: `tasks/reference/openstax/publishing.md`.
 - `tools/tests/` — converter unit tests (`make test`).
 - `tools/check_local_annotations.py` — AST checker enforcing the house rule that every LOCAL and
   MODULE-LEVEL variable in `tools/*.py` carries an explicit annotation (`ty`/ruff only cover signatures).

@@ -5,7 +5,10 @@ pandoc's chunkedhtml writer emits a `sitemap.json` (the full section tree) besid
 the pages, but does NOT put a whole-book TOC on each page. This does: it reads
 sitemap.json and writes the nested TOC into every page's `<!--BOOK-TOC-->`
 placeholder (left in place by chunked-template.html), marking the links that live
-on the current page as active.
+on the current page as active. It also fills the `<!--DOWNLOADS-->` placeholder:
+the book's first page (index.html) gets a box linking the PDF, EPUB and zipped
+HTML (GitHub Release assets, see DEFAULT_DOWNLOAD_BASE), and every page's
+sidebar gets a "Downloads" entry pointing at that box.
 
 Done at BUILD time on purpose: a client-side `fetch('sitemap.json')` is blocked
 under `file://` (readers open these locally), so the TOC is baked into each page
@@ -14,6 +17,7 @@ instead. Right-sidebar ("On this page") + scrollspy are the browser's job
 
 Usage:  python3 build_nav.py <output-site-dir>   (the dir holding sitemap.json)
 """
+
 from __future__ import annotations
 
 import glob
@@ -29,6 +33,14 @@ from typing import Any, TypeAlias
 SitemapNode: TypeAlias = dict[str, Any]
 
 PLACEHOLDER: str = "<!--BOOK-TOC-->"
+DOWNLOADS_PLACEHOLDER: str = "<!--DOWNLOADS-->"
+
+# Where the book's PDF / EPUB / zipped-HTML downloads live: the assets of impo's
+# newest GitHub Release, which `.github/workflows/release.yml` attaches on a tag
+# push as <slug>.pdf, <slug>.epub and <slug>-html.zip. `releases/latest/download/`
+# always resolves to the newest release, so the URL stays fixed across releases.
+# OSBOOK_DOWNLOAD_BASE overrides it; set it empty to build without downloads.
+DEFAULT_DOWNLOAD_BASE: str = "https://github.com/billsix/impo/releases/latest/download"
 
 
 def render(node: SitemapNode, current_page: str) -> tuple[str, bool]:
@@ -88,6 +100,39 @@ def render(node: SitemapNode, current_page: str) -> tuple[str, bool]:
     return li, any_active
 
 
+def downloads_box(slug: str, base: str) -> str:
+    """Return the "Downloads" box for the book's first page (empty without a base).
+
+    >>> "https://h/r/b-html.zip" in downloads_box("b", "https://h/r/")
+    True
+    >>> downloads_box("b", "")
+    ''
+    """
+    if not base:
+        return ""
+    root: str = base.rstrip("/")
+    links: str = " ".join(
+        '<a class="download" href="%s/%s%s">%s</a>'
+        % (html.escape(root), html.escape(slug), suffix, label)
+        for suffix, label in (
+            (".pdf", "PDF"),
+            (".epub", "EPUB"),
+            ("-html.zip", "HTML (zip, read offline)"),
+        )
+    )
+    return (
+        '<aside class="downloads" id="downloads" aria-label="Downloads">'
+        "<strong>Download this book:</strong> %s</aside>" % links
+    )
+
+
+def downloads_nav_item(base: str) -> str:
+    """Return the side-nav "Downloads" entry (points at the box on index.html)."""
+    if not base:
+        return ""
+    return '<a class="book-downloads" href="index.html#downloads">Downloads</a>'
+
+
 def main(argv: list[str]) -> int:
     if len(argv) != 1:
         print("usage: build_nav.py <output-site-dir>", file=sys.stderr)
@@ -101,6 +146,8 @@ def main(argv: list[str]) -> int:
         sm: SitemapNode = json.load(f)
     chapters: list[SitemapNode] = sm.get("subsections") or []
     book_title: str = (sm.get("section") or {}).get("title") or "Contents"
+    slug: str = os.path.basename(os.path.normpath(site))
+    base: str = os.environ.get("OSBOOK_DOWNLOAD_BASE", DEFAULT_DOWNLOAD_BASE)
 
     injected: int = 0
     pg: str
@@ -123,12 +170,15 @@ def main(argv: list[str]) -> int:
             if c_page:
                 seen.add(c_page)
             parts.append(render(c, cur)[0])
-        toc: str = (
-            '<a class="book-title" href="index.html">%s</a><ul>%s</ul>'
-            % (html.escape(book_title), "".join(parts))
+        toc: str = '<a class="book-title" href="index.html">%s</a>%s<ul>%s</ul>' % (
+            html.escape(book_title),
+            downloads_nav_item(base),
+            "".join(parts),
         )
+        # The downloads box goes on the book's first page only.
+        box: str = downloads_box(slug, base) if cur == "index.html" else ""
         with open(pg, "w", encoding="utf-8") as f:
-            f.write(doc.replace(PLACEHOLDER, toc))
+            f.write(doc.replace(PLACEHOLDER, toc).replace(DOWNLOADS_PLACEHOLDER, box))
         injected += 1
     print("build_nav: injected book TOC into %d pages in %s" % (injected, site))
     return 0

@@ -51,9 +51,16 @@ folder. Two families exist:
   `openstax/tooling/tools/`):
   - **`build-books.sh`** (behind the root `Makefile`: `make books`, `make <book>`, `make list-books`) —
     the one-call build: per book folder, fetch (if no checkout) → `apply.sh` → `make dist` → collect into
-    the root `output/` (`<book>/` HTML with `media/` copied in, `<book>.pdf`, `<book>.epub`). Non-fatal per
+    the root `output/` (`<book>/` HTML with the media its pages use copied in, `<book>.pdf`,
+    `<book>.epub`, `<book>-html.zip`). Non-fatal per
     folder, exit 1 if any failed. `.github/workflows/release.yml` runs `make <book>` per folder on a `v*`
-    tag push and attaches the PDFs/EPUBs to a GitHub Release.
+    tag push and attaches the PDFs/EPUBs/HTML zips to a GitHub Release.
+  - **`publish-pages.sh`** (behind `make publish-pages`, run by the maintainer on the host) — stages
+    the collected `output/<book>/` sites plus a landing page into `output/pages/` and pushes them with
+    `ghp-import --no-history` to impo's `gh-pages` branch (billsix.github.io/impo/<book>/); refuses to
+    push over the 1 GB Pages limit (`BOOKS="..."` publishes a subset, `DRY_RUN=1` only stages). Each
+    book's first page links its PDF/EPUB/`<book>-html.zip` on the latest GitHub Release. Design and the
+    size problem: `tasks/reference/openstax/publishing.md`.
   - `build-web-editions.sh` — a fan-out that re-applies the toolchain overlay and runs `make html &&
     make epub` across all 16 OpenStax books, logging PASS/FAIL per book (`bash tools/build-web-editions.sh
     [book-slug]`).
