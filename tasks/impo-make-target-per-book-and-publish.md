@@ -21,7 +21,8 @@ PDF/EPUB attached (needs a real tag push).
 
 1. **Pages publishing is manual**: `make publish-pages`, run on the host (ghp-import), like
    geometricalgebra's manual PyPI upload. No CI deploys the website.
-2. **`make publish-pages` is deferred** (and with it the question of where the website's files
+2. **`make publish-pages` is deferred** (now owned by `tasks/openstax-publish-books.md`, which
+   took the maintainer's 2026-11-21 billsix.github.io request) (and with it the question of where the website's files
    live: a separate repo, or a `gh-pages` branch in impo). The mvp-style build target is still
    required: `make books` builds every book's HTML/PDF/EPUB into one output tree, the way
    modelviewprojection's `make docs` does.

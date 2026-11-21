@@ -2,6 +2,8 @@
 
 **Status:** PARKED 2026-09-03 — leave the references as plain text for now (maintainer's call)
 **Priority:** 8
+**Superseded by:** `tasks/openstax-cross-book-references.md` (2026-11-21), which generalizes this to every
+reference between books; close this one into it when that task starts.
 **Difficulty:** 5
 **Parked because:** the reference points to a *different* book, and the OpenStax books aren't published at known
 URLs yet, so there's no stable link target. **Revisit when** the books are hosted at known URLs — then implement

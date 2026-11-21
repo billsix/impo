@@ -1,6 +1,7 @@
 # Publish the OpenStax books (PDF / HTML / EPUB) — decide where, then wire cross-book links
 
-**Status:** proposed — needs go-ahead
+**Status:** proposed — needs go-ahead (open questions below; updated 2026-11-21 with the maintainer's
+billsix.github.io request)
 **Priority:** 5
 **Difficulty:** 5
 
@@ -11,6 +12,29 @@ The 16 OpenStax books build cleanly in all three formats (PDF, chunked HTML web 
 once that's settled — to **wire up the cross-book links** that only make sense with a real publish target,
 starting with the `(IA x.y.z)` Intermediate-Algebra references (see [[openstax-ia-crossref-links]]). "Done" =
 a chosen publishing target + a repeatable publish step, and the cross-book references turned into working links.
+
+## Request (William Emerison Six <billsix@gmail.com>, 2026-11-21)
+
+Consider publishing on **billsix.github.io**. Publish every book as a viewable HTML web edition,
+plus the PDF, the EPUB and a **zipped HTML** download, with links to all three at the **beginning
+of the online HTML** (the book's landing page). Also find the references *between* books by
+scanning their content (calculus → algebra/prealgebra, physics → earlier physics, Calculus 3 →
+Calculus 1 and 2) and make them **relative links that resolve**. That part is big enough to be its
+own task: `tasks/openstax-cross-book-references.md`. This task supplies the stable URL layout it
+needs.
+
+- **What this changes:** the target is now named (GitHub Pages, the user site billsix.github.io,
+  i.e. the `billsix/billsix.github.io` repo, or a project site `billsix.github.io/<repo>/`), the
+  zipped-HTML format is new, and the download links go at the top of each book's first page.
+- **Gotcha: the size cap.** A Pages site is capped at 1 GB, and the outputs are about 4 GB, mostly
+  EPUBs (`tasks/impo-make-target-per-book-and-publish.md`, "Limits that shaped the design"). The
+  HTML (~253 MB, to be re-measured with figures) can go on Pages; the PDFs, EPUBs and HTML zips
+  have to be **GitHub Release assets** (already built by that task's `release.yml` on a tag push)
+  and the landing-page links point at the release download URLs. Putting the zips on Pages would
+  bust the cap.
+- **Relationship to `tasks/impo-make-target-per-book-and-publish.md`:** that task builds the
+  release assets and deferred `make publish-pages`. This task now owns `make publish-pages`
+  (ghp-import or a push to the Pages repo, run by hand on the host, per that task's decision 1).
 
 ## Context
 
@@ -34,18 +58,22 @@ a chosen publishing target + a repeatable publish step, and the cross-book refer
 2. **A repeatable publish step** — a `make publish` / script that builds and pushes each book's HTML (and PDF/EPUB
    downloads) to the chosen target. Decide what's published: HTML site always; PDF + EPUB as downloadable
    artifacts linked from each book's landing page.
-3. **Cross-book links (the payoff)** — once a base-URL scheme exists, implement [[openstax-ia-crossref-links]]
-   option (b): a configurable base URL per target book, and turn `(IA x.y.z)` (and any other inter-book refs
-   found) into `<a href>`s. Then decide the PDF/EPUB behaviour for those refs (a `\href`/URL, or leave plain) per
-   that task's "PDF and EPUB" note.
+3. **Cross-book links** — moved to `tasks/openstax-cross-book-references.md` (2026-11-21), which
+   covers the `(IA x.y.z)` references of `tasks/openstax-ia-crossref-links.md` and every other
+   reference between books. This task only fixes the URL layout (`/<book>/<page>.html` on one
+   site) that its relative links rely on.
+4. **Downloads at the top of each book** — the landing page gets links to the PDF, EPUB and zipped
+   HTML (`<book>-html.zip`, a new `dist` output) on the GitHub Release.
 
 ## Open questions
 
-1. **Publishing target** — GitHub Pages, the self-hosted Pi, or another static host? And **one combined site**
-   (all 16 books under one domain — simplest for cross-book links) or **one site per book**? *Recommend a single
-   combined site (one domain, `/<book>/…` per book) — it makes the cross-book URLs trivial and stable.*
-2. **What formats to publish** — HTML web edition always; also offer the PDF + EPUB as downloads from each book's
-   landing page? *Recommend yes — build once, link the artifacts.*
-3. **Scope of cross-book linking** — just the `(IA x.y.z)` corequisite references, or sweep for other inter-book
-   references too once a base URL exists? *Recommend start with IA (known, verified), then grep for other
-   patterns.*
+1. **Which Pages site:** (a) the user site `billsix.github.io` itself (books at
+   `billsix.github.io/<book>/`, shared with anything else already there), or (b) a project site from
+   a new repo, e.g. `billsix.github.io/openstax/<book>/`, or (c) a `gh-pages` branch of impo
+   (`billsix.github.io/impo/<book>/`)? *Recommend (b): one combined site keeps cross-book links
+   relative and stable, and it doesn't fill the user site's 1 GB budget.*
+2. **Downloads as Release assets:** OK for the PDF, EPUB and zipped HTML to live on the GitHub
+   Release (linked from each book's landing page), since all of them together won't fit under the
+   1 GB Pages cap? *Recommend yes.*
+3. **Download links' place:** a box at the top of the book's first page only, or a bar on every
+   page? *Recommend the first page (what you asked for), plus one "Downloads" item in the side nav.*
