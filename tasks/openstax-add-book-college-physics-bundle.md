@@ -1,47 +1,34 @@
-# Add `osbooks-college-physics-bundle` to impo (2 books)
+# Added `osbooks-college-physics-bundle` to impo (2 books)
 
-**Status:** ready — approved 2026-11-26 as part of the umbrella; not started
-**Part of:** `tasks/openstax-add-remaining-english-books.md`
-**Depends on:** `tasks/archive/impo/2026/11/26/openstax-add-book-step-0-scaffold-tool.md` (the scaffold tool, so every new folder is made the same way)
-**Priority:** 4
-**Difficulty:** 4
-**Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said … make a task per book"; he then chose all 29 real repositories, one task per repository).
+**Done 2026-11-26** (agent; part of `tasks/openstax-add-remaining-english-books.md`, in the mathematics and physics group the maintainer asked for first).
 
-## BLUF
+## What was added
 
-impo does not yet build OpenStax's `osbooks-college-physics-bundle`. This task adds it as a book folder on the shared-toolchain contract, so that `college-physics-2e`, `college-physics-ap-courses-2e` build as PDF, EPUB and HTML like the books impo already carries. Done means the folder exists, every book in it converts and builds in all three formats, its exercises (if it embeds any) are cached, and impo's docs and the survey list it as built.
+`openstax/osbooks-college-physics-bundle/`, created with `tools/add-book.sh college-physics-bundle "College Physics"` and pinned at the upstream head `66fcef29596e3a32818162b837dd0c85b754cbad`. It builds two books of 283 modules each, 34 chapters, sharing 248 modules (318 distinct):
 
-## Context
+| Book | Collection | PDF |
+|---|---|---|
+| *College Physics 2e* | `college-physics-2e` | 2,552 pages |
+| *College Physics for AP® Courses 2e* | `college-physics-ap-courses-2e` | 2,595 pages |
 
-**Read first:** the umbrella (`tasks/openstax-add-remaining-english-books.md`) for the method every one of these tasks follows, and `openstax/CLAUDE.md` ("Per-book folder contract", "Copyright / licensing").
+- **Licence:** CC BY-NC-SA 4.0 (both collection XML files and the upstream `LICENSE`); the built PDF states it.
+- **Exercises:** none embedded in either book, counted in the CNXML in both link schemes; no `exercises/` cache, so nothing for the maintainer to fetch. (The high-school `osbooks-physics` does embed exercises; this bundle does not.)
+- **Figures:** raster only, 472 MB of media.
+- **Result:** both books built as PDF, EPUB and HTML (319 web pages each) on 2026-11-26, in one pass with no converter change.
 
-| | |
-|---|---|
-| Upstream | `https://github.com/openstax/osbooks-college-physics-bundle` |
-| Group | Mathematics, statistics and physics (closest to what impo builds) |
-| Books (collection slugs) | `college-physics-2e`, `college-physics-ap-courses-2e` |
-| Language | English |
-| Licence its `LICENSE` file names | CC BY-NC-SA 4.0 |
-| Size (GitHub, with history) | 394 MB |
-| Last push upstream | 2026-10-23 |
-| Default-branch head on 2026-11-26 | `66fcef29596e3a32818162b837dd0c85b754cbad` (re-read it when the work starts; the pin is the head at that time) |
-| Maintainer's public backup | none yet (`tasks/openstax-books-buildable-forever-source-backup-and-licences.md`) |
+It is the algebra-based college text, between `osbooks-physics` (high school) and `osbooks-university-physics-bundle` (calculus-based), both of which impo already built.
 
-Algebra-based physics, the step between `osbooks-physics` and `osbooks-university-physics-bundle`, which impo already builds; the same exercise scheme as `osbooks-physics` is likely.
+## Defects found in the output, each with its own task
 
-**Not known until the source is fetched:** whether it embeds exercises and in which of the two schemes, whether its figures are raster or SVG, how deeply its collections nest, and whether it uses markup the converter has not met (the converter reports those as "Unknown/fallback elements").
+- **Twelve formulas with a degree sign** come out with literal braces in the PDF and as raw TeX in the HTML and EPUB (72 pandoc warnings): `tasks/openstax-degree-sign-inside-math-text-is-escaped.md`.
+- **Eighteen embedded simulation links are missing** (frames pointing at openstax.org). The converter drops such frames in every book that has them: `tasks/openstax-embedded-frame-links-are-dropped.md`.
 
-## Plan
+Neither stopped the build. The converter's report listed only inline fallbacks (`inline:label` 806, `inline:space` 90, `inline:span` 6).
 
-- [ ] `bash tools/add-book.sh college-physics-bundle` to create `openstax/osbooks-college-physics-bundle/` with `fetch.sh` (upstream, mirror fallback, the pin), `apply.sh`, `Makefile`, `README.md`, `CLAUDE.md` and `.gitignore`.
-- [ ] `./fetch.sh && ./apply.sh`, then `make convert`. Read the converter's report; a licence it does not know stops the conversion, which is intended.
-- [ ] If it embeds exercises: the maintainer runs `make fetch-exercises` in the folder (the fetch identifies itself with his contact address, so it is his to run), then the cache is committed with its `COPYRIGHT` notice.
-- [ ] `make dist`; open the PDF and one HTML page of each book and note anything that rendered badly.
-- [ ] Converter gaps: fix in `openstax/tooling/` what is small and general; anything larger gets its own task, named here.
-- [ ] Record the book: `openstax/osbooks-college-physics-bundle/CLAUDE.md` (collections, module counts, nesting, exercises, figure format), the list in `openstax/CLAUDE.md`, and `tasks/reference/openstax/book-inventory.md` including its licence row.
-- [ ] `python3 tools/survey-upstream-books.py` and refresh `tasks/reference/openstax/upstream-book-repositories.md`; tick this book in the umbrella.
-- [ ] Tell the maintainer the book needs its public backup (`tools/mirror-upstreams.sh push college-physics-bundle`).
+## Not done
 
-## Open questions
+The PDFs and HTML were not read page by page; that review is the maintainer's. The book needs his public backup: `bash tools/mirror-upstreams.sh push college-physics-bundle`.
 
-None.
+## Recorded
+
+`openstax/osbooks-college-physics-bundle/CLAUDE.md`, the list in `openstax/CLAUDE.md`, the inventory and its licence table, the survey table, and the umbrella's checklist.

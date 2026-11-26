@@ -54,6 +54,8 @@ confirmed on each book's first build.
   PDF. It needed two converter fixes (an empty table `cols` attribute; Content MathML).
 - `osbooks-introductory-statistics-bundle/` — two books added 2026-11-26: *Introductory Statistics 2e*
   (102 modules) and *Introductory Business Statistics 2e* (77 modules); no embedded exercises, raster figures.
+- `osbooks-college-physics-bundle/` — two books added 2026-11-26: *College Physics 2e* and *College Physics
+  for AP® Courses 2e*, 283 modules each (248 shared); no embedded exercises, raster figures.
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -79,6 +81,7 @@ whose licence it does not know.
 | osbooks-psychology | CC BY-NC-SA 4.0 | yes |
 | osbooks-statistics | CC BY 4.0 | yes |
 | osbooks-introductory-statistics-bundle (2 books) | CC BY-NC-SA 4.0 | yes |
+| osbooks-college-physics-bundle (2 books) | CC BY-NC-SA 4.0 | yes |
 | osbooks-university-physics-bundle (3 books) | CC BY-NC-SA 4.0 | yes |
 | osbooks-writing-guide | CC BY-NC-SA 4.0 | none |
 
