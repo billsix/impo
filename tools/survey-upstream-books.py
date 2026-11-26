@@ -4,7 +4,7 @@
 Lists every public repository of the `openstax` organisation whose name starts with `osbooks`, and
 for each one: the books it holds (the slugs in its `META-INF/books.xml`), the language its books
 declare, the licence named on the first line of its `LICENSE` file, its size and last push, whether
-impo builds it (a folder `openstax/<name>/` with a `fetch.sh`), whether impo could build it and does
+impo builds it (a committed folder `openstax/<name>/` with a `fetch.sh`), whether impo could build it and does
 not yet, and whether the maintainer's public backup exists (`https://github.com/billsix/<name>`
 answers `git ls-remote`).
 
@@ -154,6 +154,26 @@ def answers(url: str) -> bool:
     return listed.returncode == 0 and bool(listed.stdout.strip())
 
 
+def tracked(name: str) -> bool:
+    """True when impo has committed a folder for the book (its fetch.sh is tracked by git).
+
+    A folder that was scaffolded and is still being worked on does not count as built.
+    """
+    listed: subprocess.CompletedProcess[str] = subprocess.run(
+        [
+            "git",
+            "-C",
+            str(ROOT),
+            "ls-files",
+            "--error-unmatch",
+            f"openstax/{name}/fetch.sh",
+        ],
+        capture_output=True,
+        check=False,
+    )
+    return listed.returncode == 0
+
+
 def rejections() -> dict[str, str]:
     """The repositories the maintainer decided not to build, with the reason for each."""
     reasons: dict[str, str] = {}
@@ -198,7 +218,7 @@ def survey(entry: dict[str, object], rejected: dict[str, str]) -> Book:
         licence=SHORT_LICENCE.get(first_line, first_line or "no LICENSE file"),
         size=f"{round(int(str(entry['size'])) / 1024)} MB",
         pushed=str(entry["pushed_at"])[:10],
-        built_here=(ROOT / "openstax" / name / "fetch.sh").exists(),
+        built_here=tracked(name),
         mirrored=answers(f"https://github.com/{MIRROR_OWNER}/{name}"),
         rejected_reason=rejected.get(name, ""),
         source_held="",
@@ -281,7 +301,7 @@ def main() -> int:
     gone: list[Book] = [
         gone_book(folder, records.get(folder.name, {}))
         for folder in sorted((ROOT / "openstax").glob("osbooks-*"))
-        if folder.name not in upstream_names and (folder / "fetch.sh").exists()
+        if folder.name not in upstream_names and tracked(folder.name)
     ]
     print("| " + " | ".join(COLUMNS) + " |")
     print("|" + "---|" * len(COLUMNS))
