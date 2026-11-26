@@ -1,34 +1,36 @@
-# Follow up two upstream changes: Biology for AP Courses renamed, Healthcare Foundations added
+# Followed up two upstream changes: Biology for AP Courses renamed, Healthcare Foundations added
 
-**Status:** ready — decisions recorded 2026-11-26; step 1 done
-**Priority:** 5
-**Difficulty:** 2
-**Created:** 2026-11-26 (agent, from the pin sync recorded in `tasks/archive/impo/2026/11/26/openstax-sync-upstream-pins-2026-11.md`; a sync item that does not resolve gets a task: `CLAUDE.md`, "Contracts").
+**Done 2026-11-26** (agent; William Emerison Six <billsix@gmail.com>, 2026-11-26: "do the impo biology task"). Filed the same day from the pin sync recorded in `tasks/archive/impo/2026/11/26/openstax-sync-upstream-pins-2026-11.md`.
 
-## BLUF
+## What it was about
 
-The 2026-11-26 pin sync built every book, and two upstream changes came with it that impo's outputs and docs do not account for yet: one book changed its name and one new book appeared. Done means the stale old-named outputs are gone, the published site and release assets carry the names the maintainer wants, and the docs list the books each bundle now produces.
+The 2026-11-26 pin sync built every book, and two upstream changes came with it that impo's outputs and docs did not account for:
 
-## Context
-
-**Read first:** `tasks/archive/impo/2026/11/26/openstax-sync-upstream-pins-2026-11.md` ("What upstream changed that matters"), `tools/build-books.sh` (its `collect` function copies every `checkout/output/<book>/` that has an `index.html`), and `tasks/reference/openstax/publishing.md`.
-
-- **Renamed.** In `osbooks-biology-bundle` the collection `biology-ap-courses` is now `biology-ap-courses-2e`. The book builds under the new name. Because the checkout was updated in place, the October outputs under the old name were left behind (`checkout/latex/biology-ap-courses.tex`, `checkout/output/biology-ap-courses/`, `checkout/output/biology-ap-courses.epub`), where `collect` would have copied the stale site into the root `output/`. They were deleted on 2026-11-26 with the maintainer's approval. The published address changes too: `billsix.github.io/impo/biology-ap-courses/` becomes `…/biology-ap-courses-2e/`. The committed exercise cache is keyed by exercise nickname and still carries `book-slug:biology-ap-courses` tags; the new EPUB is larger than the old one (290 MB against 264 MB), so no content loss shows, but exercise injection was not compared exercise by exercise.
-- **Added.** `osbooks-prealgebra-bundle` now has a fourth collection, `healthcare-foundations` (30 modules). It built in all three formats with no change to impo, so `make prealgebra-bundle`, the release workflow and `make publish-pages` will now produce and publish a fourth book from that folder.
-
-## Plan
-
-1. Done 2026-11-26: the three stale old-named outputs were removed from the biology checkout.
-2. Check AP Biology's exercises at the new name: count injected exercises in the new build against the cache.
-3. Healthcare Foundations stays in the build; the old AP Biology address is left to disappear (see Decisions). Nothing to implement beyond the docs in step 4.
-4. Update the docs that list each bundle's books: `openstax/CLAUDE.md` (the book list), `openstax/osbooks-biology-bundle/CLAUDE.md`, `openstax/osbooks-prealgebra-bundle/CLAUDE.md`, `tasks/reference/openstax/book-inventory.md`.
+- **A rename.** In `osbooks-biology-bundle` the collection `biology-ap-courses` became `biology-ap-courses-2e`. The book built under the new name, the October outputs under the old name were left in the checkout, and the published address changes from `billsix.github.io/impo/biology-ap-courses/` to `…/biology-ap-courses-2e/`.
+- **A new book.** `osbooks-prealgebra-bundle` gained a fourth collection, `healthcare-foundations` (30 modules), which built in all three formats with no change to impo.
 
 ## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-26)
 
-- **Healthcare Foundations is kept**: built and published with the other three books of the prealgebra bundle.
-- **The old AP Biology address is left to disappear** at the next `make publish-pages`; no redirect page (the agent's recommendation, accepted with "whatever you recommend").
-- **The stale October outputs may be deleted** ("sure"); done the same day.
+1. **Healthcare Foundations is kept**, built and published with the other three books of its bundle.
+2. **The old AP Biology address is left to disappear** at the next `make publish-pages`; no redirect page.
+3. **The stale October outputs could be deleted**, and were, the same day: `checkout/latex/biology-ap-courses.tex`, `checkout/output/biology-ap-courses/` and `checkout/output/biology-ap-courses.epub` in the biology folder. `tools/build-books.sh` would otherwise have collected the stale site beside the new one.
 
-## Open questions
+## The exercise check
 
-None.
+The question was whether the rename broke AP Biology's embedded exercises, since the committed cache files carry `book-slug:biology-ap-courses` tags.
+
+- **It did not.** The converter finds an exercise by its nickname (`exercises/<nickname>.json`, from the `#ost/api/ex/<nickname>` link); it never reads the book-slug tag. The exercise references are identical at the old pin (`89c14e6d`) and the new one (`bc1be223`).
+- **Counts at the new pin** (read from the CNXML of the 209 AP modules): 2350 exercises are referenced by live markup, the cache holds 2337, and all 2337 are still referenced.
+- **13 referenced exercises are not in the cache**, at both pins, so this predates the sync: `apbio-ch06-ex039`, `-ex040`, `-ex064`, `-ex065`, and `apbio-ch10-ex005`, `-ex006`, `-ex015` to `-ex018`, `-ex027`, `-ex028`, `-ex033`. The built book prints "Practice exercise available in the online edition" for four of them (in `m62925` and `m62926`); the converter prints nothing for a missing exercise that sits inside a numbered exercise, which accounts for the rest. Whether these 13 can be fetched now was not tried.
+- **A counting trap:** a plain text search finds 2451 distinct references, 114 of them uncached. 101 of those exist only inside XML comments in the CNXML and are not part of the book.
+
+## Docs updated
+
+- `openstax/CLAUDE.md`: the book list names the three biology books and the four prealgebra-bundle books.
+- `openstax/osbooks-biology-bundle/CLAUDE.md` and `openstax/osbooks-prealgebra-bundle/CLAUDE.md`: a new section each, "The books this folder builds", with module counts, the rename, the exercise facts above, and the Healthcare Foundations decision.
+- `tasks/reference/openstax/book-inventory.md`: the same facts in short; two stray markup lines at the end of the file (`</content>`, `</invoke>`, committed by mistake in an earlier session) were removed.
+
+## Not done
+
+- The 13 uncached AP Biology exercises were recorded, not fetched. Fetching is `make fetch-exercises` in the book folder and adds CC BY content to the committed cache, which is the maintainer's call.
+- Nothing was republished; `make publish-pages` is the maintainer's, on the host.

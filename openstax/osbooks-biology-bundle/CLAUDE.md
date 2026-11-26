@@ -27,6 +27,22 @@ content the port was made against), from the survey table in
 `https://github.com/openstax/osbooks-biology-bundle`. Fallback mirror if GitHub is
 unreachable: `pi@192.168.0.186:/mnt/usbdrive2/gitRepos/openstax/**/osbooks-biology-bundle.git`.
 
+## The books this folder builds (verified by the 2026-11-26 build)
+
+Three collections, each built as PDF, EPUB and HTML: `biology-2e` (259 modules),
+`biology-ap-courses-2e` (209) and `concepts-biology` (107). Upstream renamed
+`biology-ap-courses` to `biology-ap-courses-2e` between the 2026-10 and 2026-11
+pins, so the output files and the published address carry the new name.
+
+Only Biology for AP Courses has embedded exercises. The rename did not touch them:
+the same 2350 exercises are referenced at both pins. The committed cache holds 2337;
+13 are not in it (`apbio-ch06-ex039`, `-ex040`, `-ex064`, `-ex065` and nine in
+`apbio-ch10`), so those print "Practice exercise available in the online edition"
+or nothing. Another 101 references exist only inside XML comments in the CNXML and
+are not part of the book. The cache files carry `book-slug:biology-ap-courses` tags
+from when they were fetched; the converter looks an exercise up by its nickname
+(`exercises/<nickname>.json`), so the tags do not matter to the build.
+
 ## This book (from the survey; build-time facts pending)
 
 - **Delta size:** 2723 port-branch files; **has os-embed exercises (large cache)**
