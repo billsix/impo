@@ -2,7 +2,7 @@
 
 **Reference doc — living, updated in place as books get built.** The per-book status inventory
 (build-verified dates, exercise/image counts, os-embed scheme post-mortems, structural facts) for
-the 16 books under `openstax/osbooks-<subject>/`. Moved out of `openstax/CLAUDE.md` (2026-09-13) so
+the books under `openstax/osbooks-<subject>/` (the original sixteen, and those added since 2026-11-26). Moved out of `openstax/CLAUDE.md` (2026-09-13) so
 the family contract stays lean; this is the durable detail behind the lean book list there. Each
 book also has its own `osbooks-<subject>/CLAUDE.md` with its pin and book-specific facts. The
 converter-side per-book quick reference (figure format, os-embed scheme, exercise counts) lives in

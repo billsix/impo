@@ -28,7 +28,7 @@ at `openstax/tooling/` (see below).
 
 - **Pinned upstream = the OpenStax content** — a book's `collections/`, `modules/`, `media/` (the
   CNXML source + original figures). Fetched at a pinned commit by `fetch.sh`; **gitignored** in impo
-  (never committed — it's OpenStax's, and the sixteen books' figures alone are about 4.4 GB). It is
+  (never committed — it's OpenStax's, and the first sixteen books' figures alone were about 4.4 GB). It is
   **not** safe to say "it regenerates from the pin": `osbooks-algebra-1`'s upstream disappeared in
   2026-11. What keeps the source available is a **public mirror of each upstream repository under the
   maintainer's GitHub account** (`https://github.com/billsix/<name>`: unmodified, full history, upstream's
@@ -54,8 +54,8 @@ The two layers have two different owners, and imps must not blur them:
 - **The toolchain is the maintainer's** — MIT, like the rest of impo (see `../LICENSE`).
 - **The OpenStax content is NOT the maintainer's**, and its licence is per book: whatever the book's own
   source declares, in each collection XML (`<md:license url="…">`) and in the upstream repository's
-  `LICENSE` file. Read on 2026-11-26: **CC BY-NC-SA 4.0 for fifteen of the sixteen book folders; CC BY 4.0
-  for `osbooks-physics`** (table: `tasks/reference/openstax/book-inventory.md`). Until that date impo's
+  `LICENSE` file. Read on 2026-11-26: **CC BY 4.0 for `osbooks-physics` and `osbooks-statistics`; CC BY-NC-SA
+  4.0 for every other book folder** (table: `tasks/reference/openstax/book-inventory.md`). Until that date impo's
   docs said "CC BY 4.0" for all of it, which was wrong. The module files carry no licence metadata of their
   own, so a copy of the XML without its collection file and `LICENSE` is unmarked.
 - **A built book is an adaptation and carries its source's licence.** The converter reads the licence from
@@ -75,9 +75,10 @@ The two layers have two different owners, and imps must not blur them:
 
 `openstax/osbooks-<subject>/` holds only what is book-specific:
 
-- `fetch.sh` — clone the pinned OpenStax content into `checkout/` (gitignored); the upstream URL +
-  `PIN_SHA` (the commit the maintainer's port was made against) live here, SHA commented with its
-  date. Sets `commit.gpgsign false` in the checkout (sandbox signing fails). Idempotent.
+- `fetch.sh` — fetch the pinned OpenStax content into `checkout/` (gitignored). `UPSTREAM_URL`,
+  `MIRROR_URL` (the maintainer's public backup, tried when the upstream does not provide the pin) and
+  `PIN_SHA` live here; the pin is the upstream default-branch head at the last sync, or at the day the
+  book was added. Sets `commit.gpgsign false` in the checkout (sandbox signing fails). Idempotent.
 - `apply.sh` — overlay `../tooling/` onto `checkout/` (the "apply" step; see above). Guarded/idempotent.
 - `build.sh` / `Makefile` — the container build: `make image` (from `../tooling/Dockerfile`), then
   `make convert`/`pdf`/`html`/`epub`/`dist` running the toolchain against `checkout/` mounted at the
