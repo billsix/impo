@@ -48,8 +48,10 @@ folder. Two book families exist, plus the `study/` family of material built from
 - **"Sync with upstream" (or "rebase my patches") means: move each pin to current upstream and prove the
   project still works** (William Emerison Six <billsix@gmail.com>, 2026-11-26). impo carries no patch
   series, so there is nothing to rebase: set each book's `PIN_SHA` in `fetch.sh` to the upstream
-  default-branch head, refetch, re-apply the overlay, and run at least `make convert` (the step that
-  breaks when upstream's markup changes). Recon is read-only; the method and the last run are in
+  default-branch head, refetch, re-apply the overlay, then convert and **build every moved book in all
+  formats** (`make convert`, `make dist`; `tools/build-after-sync.sh` does both). The agent makes that build
+  itself as part of the sync (the maintainer, 2026-11-26: a sync or rebase ends with a clean build);
+  `make convert` alone is the step that breaks when upstream's markup changes, but it is not enough. Recon is read-only; the method and the last run are in
   `tasks/archive/impo/2026/10/20/openstax-resync-upstream-pins.md`; the 2026-11-26 run, which also built every
   moved book, is `tasks/archive/impo/2026/11/26/openstax-sync-upstream-pins-2026-11.md`.
 - **Every pin must stay fetchable without the upstream** (William Emerison Six <billsix@gmail.com>, 2026-11-26; OpenStax's `osbooks-algebra-1`
