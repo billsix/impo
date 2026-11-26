@@ -50,7 +50,8 @@ folder. Two book families exist, plus the `study/` family of material built from
   series, so there is nothing to rebase: set each book's `PIN_SHA` in `fetch.sh` to the upstream
   default-branch head, refetch, re-apply the overlay, and run at least `make convert` (the step that
   breaks when upstream's markup changes). Recon is read-only; the method and the last run are in
-  `tasks/archive/impo/2026/10/20/openstax-resync-upstream-pins.md`.
+  `tasks/archive/impo/2026/10/20/openstax-resync-upstream-pins.md`; the 2026-11-26 run, which also built every
+  moved book, is `tasks/openstax-sync-upstream-pins-2026-11.md`.
 - **Every pin must stay fetchable without the upstream** (William Emerison Six <billsix@gmail.com>, 2026-11-26; OpenStax's `osbooks-algebra-1`
   disappeared from GitHub and no copy was reachable). The backup for each book is a public mirror on the
   maintainer's GitHub account (`github.com/billsix/<book>`), pushed from his private clones. A sync is
