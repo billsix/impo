@@ -2,7 +2,7 @@
 
 **Status:** ready — approved 2026-11-26 as part of the umbrella; not started
 **Part of:** `tasks/openstax-add-remaining-english-books.md`
-**Depends on:** `tasks/openstax-add-book-step-0-scaffold-tool.md` (the scaffold tool, so every new folder is made the same way)
+**Depends on:** `tasks/archive/impo/2026/11/26/openstax-add-book-step-0-scaffold-tool.md` (the scaffold tool, so every new folder is made the same way)
 **Priority:** 5
 **Difficulty:** 4
 **Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said … make a task per book"; he then chose all 29 real repositories, one task per repository).
