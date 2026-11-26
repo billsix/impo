@@ -22,7 +22,9 @@ The whole build product regenerates from the pin + the shared toolchain, so noth
 
 ## The pin
 
-`fetch.sh` pins **`716383a4c6c16037b14d75a156c65145e75e895e`** — the merge-base where the
+`fetch.sh` pins **`f273762340768a5f50e833c876e40b5a9c565da1`**, the head of OpenStax's default branch
+at the last sync (the pin moves at every sync; `fetch.sh` is the source of truth).
+The port was first made against `716383a4c6c16037b14d75a156c65145e75e895e` — the merge-base where the
 maintainer's `latex` port branch diverged from OpenStax's `main`, i.e. the pristine content
 the port was made against. It is `main`/`HEAD` of the canonical repo
 `https://github.com/openstax/osbooks-anatomy-physiology`, verified fetchable there

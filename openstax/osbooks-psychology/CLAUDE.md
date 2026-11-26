@@ -18,7 +18,9 @@ No OpenStax content and no toolchain are committed — both are pulled in on dem
 
 ## The pin
 
-`fetch.sh` pins **`398f50856ca1df97b58cb778659212a1df572bbd`** — the merge-base where the
+`fetch.sh` pins **`43035bcc5dd238f2e236ef532a01f11d6a59fc9d`**, the head of OpenStax's default branch
+at the last sync (the pin moves at every sync; `fetch.sh` is the source of truth).
+The port was first made against `398f50856ca1df97b58cb778659212a1df572bbd` — the merge-base where the
 maintainer's `latex` port branch diverged from OpenStax's `main` (the pristine
 content the port was made against), from the survey table in
 `tasks/archive/impo/2026/09/03/openstax-populate-books.md`. Canonical upstream:
