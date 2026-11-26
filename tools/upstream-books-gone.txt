@@ -1,0 +1,12 @@
+# Books impo builds whose upstream repository is no longer in OpenStax's public list, and what
+# only the maintainer can know about them. tools/survey-upstream-books.py detects that a
+# repository is gone; this file records the rest, so it survives a refresh of the table in
+# tasks/reference/openstax/upstream-book-repositories.md.
+#
+# One book per line, fields separated by " | ":
+#   <repository name> | found-gone: <date> | private-clone: <what is known, with the date> | action: <next step>
+#
+# "private-clone" is the maintainer's own full-history clone (the Pi machine, 192.168.0.186),
+# which the survey cannot reach. Update it, with the date, when it has been checked.
+# Lines starting with # are ignored.
+osbooks-algebra-1 | found-gone: 2026-11-26 | private-clone: on the Pi, not verified (as of 2026-11-26) | action: confirm the Pi clone holds pin 332f7864, then push it as the public backup (tasks/openstax-algebra-1-upstream-gone-backup-plan.md; background: tasks/reference/openstax/algebra-1-upstream-removal.md)
