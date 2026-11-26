@@ -1,47 +1,31 @@
-# Add `osbooks-introductory-statistics-bundle` to impo (2 books)
+# Added `osbooks-introductory-statistics-bundle` to impo (2 books)
 
-**Status:** ready — approved 2026-11-26 as part of the umbrella; not started
-**Part of:** `tasks/openstax-add-remaining-english-books.md`
-**Depends on:** `tasks/archive/impo/2026/11/26/openstax-add-book-step-0-scaffold-tool.md` (the scaffold tool, so every new folder is made the same way)
-**Priority:** 4
-**Difficulty:** 4
-**Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said … make a task per book"; he then chose all 29 real repositories, one task per repository).
+**Done 2026-11-26** (agent; part of `tasks/openstax-add-remaining-english-books.md`, in the mathematics and physics group the maintainer asked for first).
 
-## BLUF
+## What was added
 
-impo does not yet build OpenStax's `osbooks-introductory-statistics-bundle`. This task adds it as a book folder on the shared-toolchain contract, so that `introductory-statistics-2e`, `introductory-business-statistics-2e` build as PDF, EPUB and HTML like the books impo already carries. Done means the folder exists, every book in it converts and builds in all three formats, its exercises (if it embeds any) are cached, and impo's docs and the survey list it as built.
+`openstax/osbooks-introductory-statistics-bundle/`, created with `tools/add-book.sh introductory-statistics-bundle "Introductory Statistics"` and pinned at the upstream head `24e9884724b13baba2b8879d03103cccafc7e25d`. It builds two books that share none of their 179 modules:
 
-## Context
+| Book | Collection | Modules | PDF |
+|---|---|---|---|
+| *Introductory Statistics 2e* | `introductory-statistics-2e` | 102, in 13 chapters | 1,009 pages |
+| *Introductory Business Statistics 2e* | `introductory-business-statistics-2e` | 77, in 13 chapters | 759 pages |
 
-**Read first:** the umbrella (`tasks/openstax-add-remaining-english-books.md`) for the method every one of these tasks follows, and `openstax/CLAUDE.md` ("Per-book folder contract", "Copyright / licensing").
+- **Licence:** CC BY-NC-SA 4.0 (both collection XML files and the upstream `LICENSE`); the built PDF states it.
+- **Exercises:** none embedded in either book, counted in the CNXML in both link schemes; no `exercises/` cache, so nothing for the maintainer to fetch.
+- **Figures:** raster only (91 MB).
+- **Result:** both books built as PDF, EPUB and HTML on 2026-11-26, in one pass.
 
-| | |
-|---|---|
-| Upstream | `https://github.com/openstax/osbooks-introductory-statistics-bundle` |
-| Group | Mathematics, statistics and physics (closest to what impo builds) |
-| Books (collection slugs) | `introductory-statistics-2e`, `introductory-business-statistics-2e` |
-| Language | English |
-| Licence its `LICENSE` file names | CC BY-NC-SA 4.0 |
-| Size (GitHub, with history) | 104 MB |
-| Last push upstream | 2026-10-29 |
-| Default-branch head on 2026-11-26 | `24e9884724b13baba2b8879d03103cccafc7e25d` (re-read it when the work starts; the pin is the head at that time) |
-| Maintainer's public backup | none yet (`tasks/openstax-books-buildable-forever-source-backup-and-licences.md`) |
+## What it needed
 
-Two college statistics books sharing most modules; formula- and table-heavy.
+Nothing from the converter. The fixes made for Statistics the same day covered it: this bundle has one Content MathML formula, which converted. The converter's report listed only the usual inline fallbacks (`inline:label` 745, `inline:cite-title` 17, `inline:item` 15, `inline:cite` 13, `inline:div` and `inline:list` 1 each).
 
-**Not known until the source is fetched:** whether it embeds exercises and in which of the two schemes, whether its figures are raster or SVG, how deeply its collections nest, and whether it uses markup the converter has not met (the converter reports those as "Unknown/fallback elements").
+One fix to the scaffold tool: the upstream `LICENSE` file has Windows line endings, so `tools/add-book.sh` did not recognise its first line and wrote a generic phrase into the README. The tool now strips carriage returns and takes the first non-blank line; the README was corrected. (That fix was committed with the Statistics book.)
 
-## Plan
+## Not done
 
-- [ ] `bash tools/add-book.sh introductory-statistics-bundle` to create `openstax/osbooks-introductory-statistics-bundle/` with `fetch.sh` (upstream, mirror fallback, the pin), `apply.sh`, `Makefile`, `README.md`, `CLAUDE.md` and `.gitignore`.
-- [ ] `./fetch.sh && ./apply.sh`, then `make convert`. Read the converter's report; a licence it does not know stops the conversion, which is intended.
-- [ ] If it embeds exercises: the maintainer runs `make fetch-exercises` in the folder (the fetch identifies itself with his contact address, so it is his to run), then the cache is committed with its `COPYRIGHT` notice.
-- [ ] `make dist`; open the PDF and one HTML page of each book and note anything that rendered badly.
-- [ ] Converter gaps: fix in `openstax/tooling/` what is small and general; anything larger gets its own task, named here.
-- [ ] Record the book: `openstax/osbooks-introductory-statistics-bundle/CLAUDE.md` (collections, module counts, nesting, exercises, figure format), the list in `openstax/CLAUDE.md`, and `tasks/reference/openstax/book-inventory.md` including its licence row.
-- [ ] `python3 tools/survey-upstream-books.py` and refresh `tasks/reference/openstax/upstream-book-repositories.md`; tick this book in the umbrella.
-- [ ] Tell the maintainer the book needs its public backup (`tools/mirror-upstreams.sh push introductory-statistics-bundle`).
+The PDFs and HTML were not read page by page; that review is the maintainer's. The book needs his public backup: `bash tools/mirror-upstreams.sh push introductory-statistics-bundle`.
 
-## Open questions
+## Recorded
 
-None.
+`openstax/osbooks-introductory-statistics-bundle/CLAUDE.md`, the list in `openstax/CLAUDE.md`, the inventory and its licence table, the survey table, and the umbrella's checklist.

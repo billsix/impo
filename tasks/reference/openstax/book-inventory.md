@@ -52,6 +52,8 @@ confirmed on each book's first build.
 - `osbooks-statistics/` — *Statistics*, added 2026-11-26 with `tools/add-book.sh` (the first book added
   after the original sixteen): 101 modules, 13 chapters, no embedded exercises, raster figures; 1,042-page
   PDF. It needed two converter fixes (an empty table `cols` attribute; Content MathML).
+- `osbooks-introductory-statistics-bundle/` — two books added 2026-11-26: *Introductory Statistics 2e*
+  (102 modules) and *Introductory Business Statistics 2e* (77 modules); no embedded exercises, raster figures.
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -76,6 +78,7 @@ whose licence it does not know.
 | osbooks-prealgebra-bundle (4 books) | CC BY-NC-SA 4.0 | yes |
 | osbooks-psychology | CC BY-NC-SA 4.0 | yes |
 | osbooks-statistics | CC BY 4.0 | yes |
+| osbooks-introductory-statistics-bundle (2 books) | CC BY-NC-SA 4.0 | yes |
 | osbooks-university-physics-bundle (3 books) | CC BY-NC-SA 4.0 | yes |
 | osbooks-writing-guide | CC BY-NC-SA 4.0 | none |
 

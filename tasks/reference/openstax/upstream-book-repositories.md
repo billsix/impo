@@ -50,12 +50,12 @@ numbers with its output and change the date.
 - **Languages:** 45 English, 5 Spanish, 4 Polish.
 - **Licences:** 40 repositories are CC BY-NC-SA 4.0, 13 are CC BY 4.0, and 1 has no
   `LICENSE` file (`osbooks-mikroekonomia`).
-- **Built in impo: 16** of the 54.
+- **Built in impo: 19** of the 54.
 - **Rejected: 10** (William Emerison Six <billsix@gmail.com>, 2026-11-26). Nine because
   they are not English ("for non english books, I don't want to add them to our build"), and
   `osbooks-playground` because it is OpenStax's editing-tool playground, not a book:
   `osbooks-calculo-bundle` (not English (Spanish)), `osbooks-fisica-universitaria-bundle` (not English (Spanish)), `osbooks-fizyka-bundle` (not English (Polish)), `osbooks-introduccion-estadistica-bundle` (not English (Spanish)), `osbooks-makroekonomia` (not English (Polish)), `osbooks-mikroekonomia` (not English (Polish)), `osbooks-playground` (not a book (its README calls it "a playground to try out the OpenStax's POET editing plugin")), `osbooks-precalculo` (not English (Spanish)), `osbooks-psychologia` (not English (Polish)), `osbooks-quimica-bundle` (not English (Spanish)).
-- **Not yet in impo: 28** English-language repositories. Each has a task; the list and the shared
+- **Not yet in impo: 25** English-language repositories. Each has a task; the list and the shared
   method are in `tasks/openstax-add-remaining-english-books.md`.
 - **Upstream gone: 1** book that impo builds and OpenStax no longer lists:
   - `osbooks-algebra-1`: gone (found 2026-11-26). Source held: private clone: on the Pi, not verified (as of 2026-11-26); files in the checkout (976 modules, no git history). Action needed: confirm the Pi clone holds pin 332f7864, then push it as the public backup (tasks/openstax-algebra-1-upstream-gone-backup-plan.md; background: tasks/reference/openstax/algebra-1-upstream-removal.md).
@@ -80,7 +80,7 @@ numbers with its output and change the date.
 | osbooks-calculus-bundle | present | calculus-volume-1, calculus-volume-2, calculus-volume-3 | en | CC BY-NC-SA 4.0 | 141 MB | 2026-10-20 | yes |  | no |  |  |  |  |
 | osbooks-chemistry-bundle | present | chemistry-2e, chemistry-atoms-first-2e | en | CC BY-NC-SA 4.0 | 306 MB | 2026-11-12 | yes |  | no |  |  |  |  |
 | osbooks-college-algebra-bundle | present | college-algebra-2e, precalculus-2e, algebra-and-trigonometry-2e, college-algebra-corequisite-support-2e | en | CC BY-NC-SA 4.0 | 193 MB | 2026-11-13 | yes |  | no |  |  |  |  |
-| osbooks-college-physics-bundle | present | college-physics-2e, college-physics-ap-courses-2e | en | CC BY-NC-SA 4.0 | 394 MB | 2026-10-23 | no | yes | no |  |  |  |  |
+| osbooks-college-physics-bundle | present | college-physics-2e, college-physics-ap-courses-2e | en | CC BY-NC-SA 4.0 | 394 MB | 2026-10-23 | yes |  | no |  |  |  |  |
 | osbooks-college-success-bundle | present | college-success-2e, college-success-concise, preparing-for-college-success | en | CC BY-NC-SA 4.0 | 50 MB | 2026-05-05 | no | yes | no |  |  |  |  |
 | osbooks-contemporary-mathematics | present | contemporary-mathematics | en | CC BY-NC-SA 4.0 | 390 MB | 2026-05-05 | yes |  | no |  |  |  |  |
 | osbooks-entrepreneurship | present | entrepreneurship | en | CC BY-NC-SA 4.0 | 123 MB | 2026-11-04 | no | yes | no |  |  |  |  |
@@ -95,7 +95,7 @@ numbers with its output and change the date.
 | osbooks-introduction-political-science | present | introduction-political-science | en | CC BY-NC-SA 4.0 | 97 MB | 2026-05-05 | no | yes | no |  |  |  |  |
 | osbooks-introduction-python-programming | present | introduction-python-programming | en | CC BY-NC-SA 4.0 | 44 MB | 2026-05-05 | yes |  | no |  |  |  |  |
 | osbooks-introduction-sociology | present | introduction-sociology-3e | en | CC BY-NC-SA 4.0 | 160 MB | 2026-07-20 | no | yes | no |  |  |  |  |
-| osbooks-introductory-statistics-bundle | present | introductory-statistics-2e, introductory-business-statistics-2e | en | CC BY-NC-SA 4.0 | 104 MB | 2026-10-29 | no | yes | no |  |  |  |  |
+| osbooks-introductory-statistics-bundle | present | introductory-statistics-2e, introductory-business-statistics-2e | en | CC BY-NC-SA 4.0 | 104 MB | 2026-10-29 | yes |  | no |  |  |  |  |
 | osbooks-life-liberty-and-pursuit-happiness | present | life-liberty-and-pursuit-happiness | en | CC BY 4.0 | 314 MB | 2025-12-04 | no | yes | no |  |  |  |  |
 | osbooks-lifespan-development | present | lifespan-development | en | CC BY-NC-SA 4.0 | 102 MB | 2026-10-20 | no | yes | no |  |  |  |  |
 | osbooks-makroekonomia | present | makroekonomia-podstawy | pl | CC BY 4.0 | 26 MB | 2026-10-05 | no |  | no | yes | not English (Polish) |  |  |
@@ -109,7 +109,7 @@ numbers with its output and change the date.
 | osbooks-prealgebra-bundle | present | healthcare-foundations, prealgebra-2e, elementary-algebra-2e, intermediate-algebra-2e | en | CC BY-NC-SA 4.0 | 333 MB | 2026-11-05 | yes |  | no |  |  |  |  |
 | osbooks-precalculo | present | precálculo-2ed | es | CC BY 4.0 | 134 MB | 2026-01-14 | no |  | no | yes | not English (Spanish) |  |  |
 | osbooks-principles-accounting-bundle | present | principles-financial-accounting, principles-managerial-accounting | en | CC BY-NC-SA 4.0 | 258 MB | 2026-04-23 | no | yes | no |  |  |  |  |
-| osbooks-principles-data-science | present | principles-data-science | en | CC BY-NC-SA 4.0 | 38 MB | 2026-05-05 | no | yes | no |  |  |  |  |
+| osbooks-principles-data-science | present | principles-data-science | en | CC BY-NC-SA 4.0 | 38 MB | 2026-05-05 | yes |  | no |  |  |  |  |
 | osbooks-principles-economics-bundle | present | principles-economics-3e, principles-macroeconomics-3e, principles-microeconomics-3e, principles-macroeconomics-ap-courses-2e, principles-microeconomics-ap-courses-2e | en | CC BY-NC-SA 4.0 | 84 MB | 2026-10-12 | no | yes | no |  |  |  |  |
 | osbooks-principles-finance | present | principles-finance-2e | en | CC BY-NC-SA 4.0 | 38 MB | 2026-07-06 | no | yes | no |  |  |  |  |
 | osbooks-principles-marketing | present | principles-marketing | en | CC BY-NC-SA 4.0 | 61 MB | 2026-05-05 | no | yes | no |  |  |  |  |
