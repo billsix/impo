@@ -41,7 +41,7 @@ else
     # build only the collection masters (by slug), NOT cheat-sheet/fragment .tex
     for c in ../collections/*.collection.xml; do
         [ -e "$c" ] || continue
-        bn=$(basename "$c"); targets+=("${bn%.collection.xml}")
+        targets+=("$(basename "$c" .collection.xml)")
     done
 fi
 
