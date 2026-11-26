@@ -51,10 +51,12 @@ numbers with its output and change the date.
 - **Licences:** 40 repositories are CC BY-NC-SA 4.0, 13 are CC BY 4.0, and 1 has no
   `LICENSE` file (`osbooks-mikroekonomia`).
 - **Built in impo: 15** of the 54.
-- **Not yet in impo: 30** English-language repositories, neither built nor rejected.
-- **Rejected: 9**, all because they are not English (William Emerison Six
-  <billsix@gmail.com>, 2026-11-26: "for non english books, I don't want to add them to our build"):
-  `osbooks-calculo-bundle` (es), `osbooks-fisica-universitaria-bundle` (es), `osbooks-fizyka-bundle` (pl), `osbooks-introduccion-estadistica-bundle` (es), `osbooks-makroekonomia` (pl), `osbooks-mikroekonomia` (pl), `osbooks-precalculo` (es), `osbooks-psychologia` (pl), `osbooks-quimica-bundle` (es).
+- **Rejected: 10** (William Emerison Six <billsix@gmail.com>, 2026-11-26). Nine because
+  they are not English ("for non english books, I don't want to add them to our build"), and
+  `osbooks-playground` because it is OpenStax's editing-tool playground, not a book:
+  `osbooks-calculo-bundle` (not English (Spanish)), `osbooks-fisica-universitaria-bundle` (not English (Spanish)), `osbooks-fizyka-bundle` (not English (Polish)), `osbooks-introduccion-estadistica-bundle` (not English (Spanish)), `osbooks-makroekonomia` (not English (Polish)), `osbooks-mikroekonomia` (not English (Polish)), `osbooks-playground` (not a book (its README calls it "a playground to try out the OpenStax's POET editing plugin")), `osbooks-precalculo` (not English (Spanish)), `osbooks-psychologia` (not English (Polish)), `osbooks-quimica-bundle` (not English (Spanish)).
+- **Not yet in impo: 29** English-language repositories. Each has a task; the list and the shared
+  method are in `tasks/openstax-add-remaining-english-books.md`.
 - **Upstream gone: 1** book that impo builds and OpenStax no longer lists:
   - `osbooks-algebra-1`: gone (found 2026-11-26). Source held: private clone: on the Pi, not verified (as of 2026-11-26); files in the checkout (976 modules, no git history). Action needed: confirm the Pi clone holds pin 332f7864, then push it as the public backup (tasks/openstax-algebra-1-upstream-gone-backup-plan.md; background: tasks/reference/openstax/algebra-1-upstream-removal.md).
 - **Public backups at `github.com/billsix`: 0 of 55.** None exists yet, including for the
@@ -103,7 +105,7 @@ numbers with its output and change the date.
 | osbooks-nursing-external-bundle | present | pharmacology, nutrition, population-health | en | CC BY-NC-SA 4.0 | 225 MB | 2026-05-05 | no | yes | no |  |  |  |  |
 | osbooks-organic-chemistry | present | organic-chemistry | en | CC BY-NC-SA 4.0 | 191 MB | 2026-10-23 | yes |  | no |  |  |  |  |
 | osbooks-physics | present | physics | en | CC BY 4.0 | 57 MB | 2026-10-13 | yes |  | no |  |  |  |  |
-| osbooks-playground | present | playground | en | CC BY 4.0 | 74 MB | 2025-05-20 | no | yes | no |  |  |  |  |
+| osbooks-playground | present | playground | en | CC BY 4.0 | 74 MB | 2025-05-20 | no |  | no | yes | not a book (its README calls it "a playground to try out the OpenStax's POET editing plugin") |  |  |
 | osbooks-prealgebra-bundle | present | healthcare-foundations, prealgebra-2e, elementary-algebra-2e, intermediate-algebra-2e | en | CC BY-NC-SA 4.0 | 333 MB | 2026-11-05 | yes |  | no |  |  |  |  |
 | osbooks-precalculo | present | precálculo-2ed | es | CC BY 4.0 | 134 MB | 2026-01-14 | no |  | no | yes | not English (Spanish) |  |  |
 | osbooks-principles-accounting-bundle | present | principles-financial-accounting, principles-managerial-accounting | en | CC BY-NC-SA 4.0 | 258 MB | 2026-04-23 | no | yes | no |  |  |  |  |
