@@ -35,14 +35,14 @@ The September work scaffolded fifteen folders from the anatomy-physiology pilot 
 
 Step 0 comes first; after it the books are independent of each other, so the order below is by how close each is to what impo already builds (lowest priority number first), not by necessity.
 
-- [ ] `tasks/openstax-add-book-step-0-scaffold-tool.md` — the scaffold tool (`tools/add-book.sh`)
+- [x] `tasks/archive/impo/2026/11/26/openstax-add-book-step-0-scaffold-tool.md` — the scaffold tool (`tools/add-book.sh`), done 2026-11-26
 
 **Mathematics, statistics and physics (closest to what impo builds)**
 
 - [ ] `tasks/openstax-add-book-college-physics-bundle.md` — 2 books: `college-physics-2e`, `college-physics-ap-courses-2e` (CC BY-NC-SA 4.0, 394 MB)
 - [ ] `tasks/openstax-add-book-introductory-statistics-bundle.md` — 2 books: `introductory-statistics-2e`, `introductory-business-statistics-2e` (CC BY-NC-SA 4.0, 104 MB)
 - [ ] `tasks/openstax-add-book-principles-data-science.md` — one book: `principles-data-science` (CC BY-NC-SA 4.0, 38 MB)
-- [ ] `tasks/openstax-add-book-statistics.md` — one book: `statistics` (CC BY 4.0, 34 MB)
+- [x] `tasks/archive/impo/2026/11/26/openstax-add-book-statistics.md` — one book: `statistics` (CC BY 4.0, 34 MB), done 2026-11-26
 
 **Computing and technology**
 
@@ -88,6 +88,9 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 - [ ] `tasks/openstax-add-book-college-success-bundle.md` — 3 books: `college-success-2e`, `college-success-concise`, `preparing-for-college-success` (CC BY-NC-SA 4.0, 50 MB)
 
 ## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-26)
+
+- **Incrementally, mathematics and physics first**: one book at a time, each committed, archived and marked in the survey table before the next starts.
+- **Repository and site size are not a concern until GitHub complains** ("we will only be concerned about repo size if and when github complains").
 
 - **Add all 29**, not only the four closest to what impo builds.
 - **One task per repository**, not per book: a bundle is one folder and one build.

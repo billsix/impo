@@ -95,7 +95,8 @@ The two layers have two different owners, and imps must not blur them:
 
 Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothing hardcodes a slug.
 
-- `tools/cnxml2tex/convert.py` — CNXML + Presentation-MathML → LaTeX; auto-discovers structure. Handles BOTH
+- `tools/cnxml2tex/convert.py` — CNXML + MathML (Presentation, and the Content dialect a few books mix
+  in) → LaTeX; auto-discovers structure. Handles BOTH
   os-embed exercise schemes (`#exercise/<nickname>` and `#ost/api/ex/<id>` — physics/biology). Also emits an
   **"About This Edition" colophon** as the first front-matter unit (`\chapter*`, so it doesn't step the
   chapter counter) — impo link + build commit SHA/date (from `IMPO_COMMIT`/`IMPO_BUILD_DATE`, passed by each
@@ -174,7 +175,8 @@ headless browser (read before touching osbook-web.css/.js).
 
 ## Books
 
-One thin `openstax/osbooks-<subject>/` folder per book (16 total); each carries its own `CLAUDE.md`
+One thin `openstax/osbooks-<subject>/` folder per book (17 total; more are being added, see
+`tasks/openstax-add-remaining-english-books.md`); each carries its own `CLAUDE.md`
 with its pin and book-specific facts. **anatomy-physiology** is the pilot for this family's
 shared-toolchain contract.
 
@@ -195,6 +197,7 @@ shared-toolchain contract.
 - `osbooks-university-physics-bundle/` — University Physics
 - `osbooks-microbiology/` — Microbiology
 - `osbooks-psychology/` — Psychology
+- `osbooks-statistics/` — Statistics (added 2026-11-26)
 
 Per-book status (build-verified dates, exercise/image counts, os-embed scheme post-mortems, structural
 facts): `tasks/reference/openstax/book-inventory.md`. Figure format + os-embed scheme + exercise counts

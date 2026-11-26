@@ -36,7 +36,9 @@ pin="${ADD_BOOK_PIN:-$(GIT_TERMINAL_PROMPT=0 git ls-remote "$upstream" HEAD | cu
 }
 branch="$(GIT_TERMINAL_PROMPT=0 git ls-remote --symref "$upstream" HEAD | sed -n 's|^ref: refs/heads/\(.*\)\tHEAD$|\1|p')"
 licence_text="$(curl -fsS -A generic-client "https://raw.githubusercontent.com/openstax/$name/${branch:-main}/LICENSE")" || licence_text=""
-first_line="${licence_text%%$'\n'*}"
+# The first non-blank line names the licence; some LICENSE files start with a blank line
+# or carry Windows line endings.
+first_line="$(printf '%s\n' "$licence_text" | tr -d '\r' | sed -n '/[^[:space:]]/{s/^[[:space:]]*//;s/[[:space:]]*$//;p;q;}')"
 case "$first_line" in
 "Attribution-NonCommercial-ShareAlike 4.0 International") licence="CC BY-NC-SA 4.0" ;;
 "Attribution 4.0 International") licence="CC BY 4.0" ;;

@@ -49,6 +49,9 @@ confirmed on each book's first build.
   `apbio-ch06`, nine in `apbio-ch10`), unchanged by the rename. Detail: `openstax/osbooks-biology-bundle/CLAUDE.md`.
 - `osbooks-prealgebra-bundle/` — four books since the 2026-11 pin: `prealgebra-2e`, `elementary-algebra-2e`,
   `intermediate-algebra-2e` and the new `healthcare-foundations` (30 modules), all built 2026-11-26.
+- `osbooks-statistics/` — *Statistics*, added 2026-11-26 with `tools/add-book.sh` (the first book added
+  after the original sixteen): 101 modules, 13 chapters, no embedded exercises, raster figures; 1,042-page
+  PDF. It needed two converter fixes (an empty table `cols` attribute; Content MathML).
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -72,6 +75,7 @@ whose licence it does not know.
 | **osbooks-physics** | **CC BY 4.0** | yes |
 | osbooks-prealgebra-bundle (4 books) | CC BY-NC-SA 4.0 | yes |
 | osbooks-psychology | CC BY-NC-SA 4.0 | yes |
+| osbooks-statistics | CC BY 4.0 | yes |
 | osbooks-university-physics-bundle (3 books) | CC BY-NC-SA 4.0 | yes |
 | osbooks-writing-guide | CC BY-NC-SA 4.0 | none |
 

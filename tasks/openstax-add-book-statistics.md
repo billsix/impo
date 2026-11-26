@@ -1,47 +1,37 @@
-# Add `osbooks-statistics` to impo (one book)
+# Added `osbooks-statistics` to impo (one book)
 
-**Status:** ready — approved 2026-11-26 as part of the umbrella; not started
-**Part of:** `tasks/openstax-add-remaining-english-books.md`
-**Depends on:** `tasks/openstax-add-book-step-0-scaffold-tool.md` (the scaffold tool, so every new folder is made the same way)
-**Priority:** 4
-**Difficulty:** 3
-**Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said … make a task per book"; he then chose all 29 real repositories, one task per repository).
+**Done 2026-11-26** (agent; part of `tasks/openstax-add-remaining-english-books.md`. William Emerison Six <billsix@gmail.com>, 2026-11-26: "let's start with the math and physics books, do all of those ports one at time, commiting when done, archiving, committing").
 
-## BLUF
+## What was added
 
-impo does not yet build OpenStax's `osbooks-statistics`. This task adds it as a book folder on the shared-toolchain contract, so that `statistics` builds as PDF, EPUB and HTML like the books impo already carries. Done means the folder exists, every book in it converts and builds in all three formats, its exercises (if it embeds any) are cached, and impo's docs and the survey list it as built.
-
-## Context
-
-**Read first:** the umbrella (`tasks/openstax-add-remaining-english-books.md`) for the method every one of these tasks follows, and `openstax/CLAUDE.md` ("Per-book folder contract", "Copyright / licensing").
+`openstax/osbooks-statistics/`, created with `tools/add-book.sh statistics "Statistics"` and pinned at the upstream head `7dea80ae2800386d470b11f6528962f9c4992d15`. It builds one book, OpenStax *Statistics*:
 
 | | |
 |---|---|
-| Upstream | `https://github.com/openstax/osbooks-statistics` |
-| Group | Mathematics, statistics and physics (closest to what impo builds) |
-| Books (collection slugs) | `statistics` |
-| Language | English |
-| Licence its `LICENSE` file names | CC BY 4.0 |
-| Size (GitHub, with history) | 34 MB |
-| Last push upstream | 2026-04-23 |
-| Default-branch head on 2026-11-26 | `7dea80ae2800386d470b11f6528962f9c4992d15` (re-read it when the work starts; the pin is the head at that time) |
-| Maintainer's public backup | none yet (`tasks/openstax-books-buildable-forever-source-backup-and-licences.md`) |
+| Collection | `statistics`: 101 modules in 13 chapters, one level of nesting |
+| Licence | CC BY 4.0 (collection XML and upstream `LICENSE`); the built PDF states it on the licence page and in "About This Edition" |
+| Exercises | none embedded, counted in the CNXML in both link schemes; no `exercises/` cache, so nothing for the maintainer to fetch |
+| Figures | raster only (about 700 files, 54 MB) |
+| Result | PDF (1,042 pages), EPUB and HTML, built 2026-11-26 |
 
-A single statistics book (OpenStax's high-school level title, as far as the agent recalls; not opened yet) and the smallest of the mathematics group, so the first to try.
+## What the book needed from the converter
 
-**Not known until the source is fetched:** whether it embeds exercises and in which of the two schemes, whether its figures are raster or SVG, how deeply its collections nest, and whether it uses markup the converter has not met (the converter reports those as "Unknown/fallback elements").
+1. **A crash.** `render_table` took `int()` of a table's `cols` attribute; one table has `cols=""`. A value that is not a number now counts as undeclared and the observed row width decides.
+2. **Content MathML.** Six modules write some formulas in the dialect that says what a formula means (`<m:apply><m:divide/>…`), not how it looks. The converter fell back on it and printed the operands run together: the median example `(6.8 + 7.2) / 2 = 7` came out as bare numbers, and the sample mean lost its bar. `mml()` now renders `<cn>`, `<ci>`, `<apply>` and the older `<reln>` (`tasks/reference/tooling/converters.md`, "Content MathML"). Read back from the generated LaTeX: `\frac{6.8 + 7.2}{2} = 7` and `\overline{x}`.
 
-## Plan
+## Proof that the other books were not disturbed
 
-- [ ] `bash tools/add-book.sh statistics` to create `openstax/osbooks-statistics/` with `fetch.sh` (upstream, mirror fallback, the pin), `apply.sh`, `Makefile`, `README.md`, `CLAUDE.md` and `.gitignore`.
-- [ ] `./fetch.sh && ./apply.sh`, then `make convert`. Read the converter's report; a licence it does not know stops the conversion, which is intended.
-- [ ] If it embeds exercises: the maintainer runs `make fetch-exercises` in the folder (the fetch identifies itself with his contact address, so it is his to run), then the cache is committed with its `COPYRIGHT` notice.
-- [ ] `make dist`; open the PDF and one HTML page of each book and note anything that rendered badly.
-- [ ] Converter gaps: fix in `openstax/tooling/` what is small and general; anything larger gets its own task, named here.
-- [ ] Record the book: `openstax/osbooks-statistics/CLAUDE.md` (collections, module counts, nesting, exercises, figure format), the list in `openstax/CLAUDE.md`, and `tasks/reference/openstax/book-inventory.md` including its licence row.
-- [ ] `python3 tools/survey-upstream-books.py` and refresh `tasks/reference/openstax/upstream-book-repositories.md`; tick this book in the umbrella.
-- [ ] Tell the maintainer the book needs its public backup (`tools/mirror-upstreams.sh push statistics`).
+The maintainer asked for this while the work was under way ("please make sure the updates don't break the other mathml stuff we do in this repo").
 
-## Open questions
+- Every existing book was converted twice, with the committed converter and with the changed one, and the generated LaTeX compared file by file: **15 books identical** (977, 199, 200, 577, 137, 178, 142, 120, 116, 160, 343, 101, 274, 325 and 189 files).
+- **Psychology 2e differed in one file, and the difference is a repair.** A memory exercise asks the reader to unscramble "AETPL"; the source writes those letters as a Content MathML identifier, and every edition impo had built printed nothing there. They now appear. Psychology was rebuilt.
+- The older `<reln>` form and `<infinity/>` were added after that comparison; no existing book contains either (checked in every checkout), so they cannot change their output. After them the converter reports no MathML fallback at all for Statistics.
+- The toolchain gate (`make -C openstax/tooling type-check`: ruff, the annotation checker, ty, pytest) passes with seven new tests, 54 in all.
 
-None.
+## Left as they are
+
+The converter still reports `inline:label` (586), `inline:item` (15), `inline:cite` and `inline:cite-title` (4 each), `inline:div` and `inline:list` (1 each) as fallbacks in this book. The same kinds are reported for the books impo already builds. The PDF and HTML were not read page by page; that review is the maintainer's.
+
+## Recorded
+
+`openstax/osbooks-statistics/CLAUDE.md` ("The books this folder builds"), the list in `openstax/CLAUDE.md`, the inventory and its licence table, the survey table (Statistics now "built in impo"), and the umbrella's checklist. The book still needs the maintainer's public backup: `bash tools/mirror-upstreams.sh push statistics`.
