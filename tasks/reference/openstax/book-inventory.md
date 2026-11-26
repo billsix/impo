@@ -49,3 +49,31 @@ confirmed on each book's first build.
   `apbio-ch06`, nine in `apbio-ch10`), unchanged by the rename. Detail: `openstax/osbooks-biology-bundle/CLAUDE.md`.
 - `osbooks-prealgebra-bundle/` — four books since the 2026-11 pin: `prealgebra-2e`, `elementary-algebra-2e`,
   `intermediate-algebra-2e` and the new `healthcare-foundations` (30 modules), all built 2026-11-26.
+
+## Licences (read from each book's own source, 2026-11-26)
+
+The licence of a book is what its source declares: the `<md:license url="…">` of each collection XML, and
+the upstream repository's `LICENSE` file. Re-read both at every sync; the converter fails on a collection
+whose licence it does not know.
+
+| Book folder | Declared licence | Upstream `LICENSE` file in the checkout |
+|---|---|---|
+| osbooks-algebra-1 | CC BY-NC-SA 4.0 | none (files copied in without git) |
+| osbooks-anatomy-physiology | CC BY-NC-SA 4.0 | yes |
+| osbooks-astronomy | CC BY-NC-SA 4.0 | yes |
+| osbooks-biology-bundle (3 books) | CC BY-NC-SA 4.0 | yes |
+| osbooks-calculus-bundle (3 books) | CC BY-NC-SA 4.0 | yes |
+| osbooks-chemistry-bundle (2 books) | CC BY-NC-SA 4.0 | yes |
+| osbooks-college-algebra-bundle (4 books) | CC BY-NC-SA 4.0 | yes |
+| osbooks-contemporary-mathematics | CC BY-NC-SA 4.0 | none |
+| osbooks-introduction-python-programming | CC BY-NC-SA 4.0 | none |
+| osbooks-microbiology | CC BY-NC-SA 4.0 | yes |
+| osbooks-organic-chemistry | CC BY-NC-SA 4.0 | yes |
+| **osbooks-physics** | **CC BY 4.0** | yes |
+| osbooks-prealgebra-bundle (4 books) | CC BY-NC-SA 4.0 | yes |
+| osbooks-psychology | CC BY-NC-SA 4.0 | yes |
+| osbooks-university-physics-bundle (3 books) | CC BY-NC-SA 4.0 | yes |
+| osbooks-writing-guide | CC BY-NC-SA 4.0 | none |
+
+Every collection inside a bundle declares the same licence as its siblings. No module file carries licence
+metadata. The exercise caches are a separate case: see "Copyright / licensing" in `openstax/CLAUDE.md`.

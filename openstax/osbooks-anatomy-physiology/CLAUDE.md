@@ -28,8 +28,8 @@ The port was first made against `716383a4c6c16037b14d75a156c65145e75e895e` — t
 maintainer's `latex` port branch diverged from OpenStax's `main`, i.e. the pristine content
 the port was made against. It is `main`/`HEAD` of the canonical repo
 `https://github.com/openstax/osbooks-anatomy-physiology`, verified fetchable there
-(`git ls-remote`, 2026-09-02). Fallback mirror if GitHub is unreachable:
-`pi@192.168.0.186:/mnt/usbdrive2/gitRepos/openstax/science/osbooks-anatomy-physiology.git`.
+(`git ls-remote`, 2026-09-02). Fallback, tried automatically by `fetch.sh` when the upstream does not
+provide the pin: `https://github.com/billsix/osbooks-anatomy-physiology`, the maintainer's public mirror.
 
 ## This book (facts that shape the port)
 

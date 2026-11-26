@@ -27,8 +27,14 @@ at `openstax/tooling/` (see below).
 (The maintainer's own policy, lifted from the book repos into the family contract.)
 
 - **Pinned upstream = the OpenStax content** — a book's `collections/`, `modules/`, `media/` (the
-  CNXML source + original figures). Cloned at a pinned commit by `fetch.sh`; **gitignored** in imps
-  (never committed — it's OpenStax's, and it regenerates from the pin).
+  CNXML source + original figures). Fetched at a pinned commit by `fetch.sh`; **gitignored** in impo
+  (never committed — it's OpenStax's, and the sixteen books' figures alone are about 4.4 GB). It is
+  **not** safe to say "it regenerates from the pin": `osbooks-algebra-1`'s upstream disappeared in
+  2026-11. What keeps the source available is a **public mirror of each upstream repository under the
+  maintainer's GitHub account** (`https://github.com/billsix/<name>`: unmodified, full history, upstream's
+  `LICENSE` intact). `fetch.sh` tries the upstream first and the mirror second;
+  `tools/mirror-upstreams.sh` updates the mirrors (`push`, the maintainer's) and checks that each holds
+  its book's pin (`check`, anyone).
 - **The toolchain (`openstax/tooling/`)** — the maintainer's converter, LaTeX document class +
   style, pandoc templates, entrypoint scripts, container build, and tests. Committed once.
 - **Downloaded content → committed cache.** Some books embed `os-embed` practice exercises;
@@ -46,15 +52,24 @@ at `openstax/tooling/` (see below).
 The two layers have two different owners, and imps must not blur them:
 
 - **The toolchain is the maintainer's** — MIT, like the rest of impo (see `../LICENSE`).
-- **The OpenStax content is NOT the maintainer's.** The pinned CNXML/`media`, **and any downloaded
-  `exercises/` (problem sets) and their images, are © OpenStax and the respective authors, licensed
-  CC BY 4.0** — carried here for reproducibility, not authored here. This mirrors imps' README note
-  that upstream fragments in `patches/` stay under the upstream license.
+- **The OpenStax content is NOT the maintainer's**, and its licence is per book: whatever the book's own
+  source declares, in each collection XML (`<md:license url="…">`) and in the upstream repository's
+  `LICENSE` file. Read on 2026-11-26: **CC BY-NC-SA 4.0 for fifteen of the sixteen book folders; CC BY 4.0
+  for `osbooks-physics`** (table: `tasks/reference/openstax/book-inventory.md`). Until that date impo's
+  docs said "CC BY 4.0" for all of it, which was wrong. The module files carry no licence metadata of their
+  own, so a copy of the XML without its collection file and `LICENSE` is unmarked.
+- **A built book is an adaptation and carries its source's licence.** The converter reads the licence from
+  the collection XML (`licence_from_url` in `tools/cnxml2tex/convert.py`) and states it twice in every
+  edition: on the class's licence page (`\setOSbooklicense`) and in the "About This Edition" colophon. A
+  collection that declares no licence the converter knows fails the conversion.
+- **Exercise caches:** each exercise's JSON names its copyright holders (Rice University in every file
+  examined) and carries no licence field. OpenStax Exercises says many of its questions are under a
+  Creative Commons Attribution licence and that each question has its own terms
+  (https://exercises.openstax.org/copyright, read 2026-11-26). So the notice does not assert one licence.
 - **Every committed download cache carries a `COPYRIGHT` NOTICE** at its root
-  (`openstax/tooling/templates/exercises-COPYRIGHT` is the template `fetch_exercises` writes/keeps):
-  "© OpenStax, licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); sourced from
-  https://openstax.org — not owned by this repository's maintainer." So no one browsing imps mistakes
-  those blobs for the maintainer's.
+  (`openstax/tooling/templates/exercises-COPYRIGHT` is the template `fetch_exercises` writes/keeps),
+  saying whose the files are, where they came from and what is known about their terms. So no one
+  browsing impo mistakes those blobs for the maintainer's.
 
 ## Per-book folder contract
 
@@ -84,7 +99,7 @@ Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothi
   os-embed exercise schemes (`#exercise/<nickname>` and `#ost/api/ex/<id>` — physics/biology). Also emits an
   **"About This Edition" colophon** as the first front-matter unit (`\chapter*`, so it doesn't step the
   chapter counter) — impo link + build commit SHA/date (from `IMPO_COMMIT`/`IMPO_BUILD_DATE`, passed by each
-  book Makefile's `IMPO_PROVENANCE`) + the CC BY 4.0 / MIT licensing split; it flows to all three editions
+  book Makefile's `IMPO_PROVENANCE`) + the licensing split (the book's own licence / MIT for the toolchain); it flows to all three editions
   via the shared master.
 - `tools/cnxml2tex/fetch_exercises.py` — the redownload script (the one networked step); fetches by nickname or tag.
 - `tools/cnxml2tex/crossbook.py` — links between books, emitted into the LaTeX by `convert.py`: "(IA x.y.z)"

@@ -24,8 +24,8 @@ The port was first made against `1e74a23833550e6bbe3aa3450c50c9ecb74f3a66` — t
 maintainer's `latex` port branch diverged from OpenStax's `main` (the pristine
 content the port was made against), from the survey table in
 `tasks/archive/impo/2026/09/03/openstax-populate-books.md`. Canonical upstream:
-`https://github.com/openstax/osbooks-biology-bundle`. Fallback mirror if GitHub is
-unreachable: `pi@192.168.0.186:/mnt/usbdrive2/gitRepos/openstax/**/osbooks-biology-bundle.git`.
+`https://github.com/openstax/osbooks-biology-bundle`. Fallback, tried automatically by `fetch.sh` when the upstream does not
+provide the pin: `https://github.com/billsix/osbooks-biology-bundle`, the maintainer's public mirror.
 
 ## The books this folder builds (verified by the 2026-11-26 build)
 

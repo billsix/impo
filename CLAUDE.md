@@ -59,7 +59,11 @@ folder. Two book families exist, plus the `study/` family of material built from
   maintainer's GitHub account (`github.com/billsix/<book>`), pushed from his private clones. A sync is
   finished only when each moved pin can be fetched from its mirror; anything that does not resolve in the
   same sitting (a missing mirror, a vanished upstream, a book that no longer converts) gets a task, never a
-  note in passing. The mirrors are being set up in `tasks/openstax-algebra-1-upstream-gone-backup-plan.md`.
+  note in passing. `fetch.sh` falls back to the mirror by itself; `tools/mirror-upstreams.sh check` reports
+  which mirrors exist and hold their pin, and `tools/mirror-upstreams.sh push` (the maintainer's, with his
+  GitHub credentials) updates them. After a sync, also `make image-export` in one book folder and keep the
+  tar: the image is the build's last outside dependency. The mirrors are being set up in
+  `tasks/openstax-algebra-1-upstream-gone-backup-plan.md`.
 - **Unsigned commits in checkouts are authorized/automated.** The maintainer's gitconfig enables commit
   signing, which fails in the sandbox; each `fetch.sh` sets `commit.gpgsign false` in the checkout it
   manages (never globally). These commits are scaffolding; the durable product is impo's own files.
@@ -99,5 +103,8 @@ folder. Two book families exist, plus the `study/` family of material built from
 ## License
 
 MIT (`LICENSE`) for impo's original content — the toolchain, scripts, docs. The pinned OpenStax content
-(CNXML/`media`) and the committed `exercises/` caches are **© OpenStax, CC BY 4.0, not the maintainer's**
-— see `openstax/CLAUDE.md` and each cache's `COPYRIGHT`.
+(CNXML/`media`) and the committed `exercises/` caches are **not the maintainer's**. Each book is under the
+licence its own source declares: **CC BY-NC-SA 4.0 for fifteen of the sixteen book folders, CC BY 4.0 for
+`osbooks-physics`** (the table is in `tasks/reference/openstax/book-inventory.md`). The built books are
+adaptations and carry the same licence as their source. See `openstax/CLAUDE.md` and each cache's
+`COPYRIGHT`.

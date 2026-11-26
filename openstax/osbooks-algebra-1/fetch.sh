@@ -15,10 +15,11 @@ cd "$(dirname "$0")"
 PIN_SHA=332f78647098a60532a9833b8003dca5da7ff227
 
 # Canonical upstream; the pin is a commit on OpenStax's main history and is
-# fetchable there by SHA. The maintainer's Pi mirror
-# (pi@192.168.0.186:/mnt/usbdrive2/gitRepos/openstax/**/osbooks-algebra-1.git)
-# is the fallback if GitHub is ever unreachable.
+# fetchable there by SHA. If the upstream does not answer or no longer has the
+# pin, the fetch falls back to the maintainer's public mirror of the same
+# repository (an unmodified copy, upstream's licence and history intact).
 UPSTREAM_URL=https://github.com/openstax/osbooks-algebra-1
+MIRROR_URL=https://github.com/billsix/osbooks-algebra-1
 
 CHECKOUT=checkout
 
@@ -36,8 +37,22 @@ git init -q "$CHECKOUT"
     # any later git operation; disable it repo-locally (never globally).
     git config commit.gpgsign false
     git remote add origin "$UPSTREAM_URL"
-    # Fetch just the pinned commit (GitHub allows fetching a reachable SHA).
-    git fetch --depth 1 origin "$PIN_SHA"
+    git remote add mirror "$MIRROR_URL"
+    # Fetch just the pinned commit (GitHub allows fetching a reachable SHA):
+    # upstream first, then the mirror. GIT_TERMINAL_PROMPT=0 makes a repository
+    # that is gone fail at once instead of asking for a user name.
+    if ! GIT_TERMINAL_PROMPT=0 git fetch --depth 1 origin "$PIN_SHA"; then
+        echo "fetch.sh: upstream did not provide $PIN_SHA — trying the mirror $MIRROR_URL ..." >&2
+        if ! GIT_TERMINAL_PROMPT=0 git fetch --depth 1 mirror "$PIN_SHA"; then
+            echo "fetch.sh: neither the upstream nor the mirror has $PIN_SHA." >&2
+            exit 1
+        fi
+    fi
     git checkout -q FETCH_HEAD
-)
+) || {
+    # Leave no half-made repository behind: the guard above treats a checkout
+    # with a .git as already fetched.
+    rm -rf "$CHECKOUT/.git"
+    exit 1
+}
 echo "fetch.sh: done. Next: ./apply.sh, then make dist."

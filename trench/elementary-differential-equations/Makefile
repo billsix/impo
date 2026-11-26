@@ -45,7 +45,7 @@ IMPO_PROVENANCE = -e IMPO_COMMIT="$(IMPO_COMMIT)" -e IMPO_BUILD_DATE="$(IMPO_BUI
 RUN = $(CONTAINER_CMD) run --rm $(PODMAN_RUN_FLAGS) $(IMPO_PROVENANCE) $(FILES_TO_MOUNT) \
 	--entrypoint /bin/bash $(CONTAINER_NAME)
 
-.PHONY: image check-tools shell normalize figures pdf html epub dist clean help
+.PHONY: image-export image-import image check-tools shell normalize figures pdf html epub dist clean help
 
 # Gate for THIS book's tools/*.py. The shared image bakes a ty+pytest gate over
 # openstax/tooling's OWN tools, but this book's tools are mounted at /toolsrc at
@@ -90,6 +90,13 @@ epub: image figures ## Build the EPUB web edition -> checkout/output/epub/bookW.
 	$(RUN) -c 'cd /book && bash /toolsrc/build_web.sh epub'
 
 dist: pdf html epub ## Build every output format (PDF, HTML, EPUB), like the OpenStax books
+
+image-export: ## Save the built image to a timestamped tar here (the toolchain, kept for offline builds)
+	$(CONTAINER_CMD) save $(CONTAINER_NAME) -o $(CONTAINER_NAME)-$(shell date +%m-%d-%Y_%H-%M-%S).tar
+
+image-import: ## Load an image tar: make image-import FILE=foo.tar
+	@test -n "$(FILE)" || { echo 'usage: make image-import FILE=foo.tar' >&2; exit 1; }
+	$(CONTAINER_CMD) load -i $(FILE)
 
 clean: ## Remove build artifacts (checkout/output)
 	rm -rf $(CHECKOUT)/output/*
