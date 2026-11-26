@@ -3,7 +3,7 @@
 **Status:** ready — decisions recorded 2026-11-26; step 1 done
 **Priority:** 5
 **Difficulty:** 2
-**Created:** 2026-11-26 (agent, from the pin sync recorded in `tasks/openstax-sync-upstream-pins-2026-11.md`; a sync item that does not resolve gets a task: `CLAUDE.md`, "Contracts").
+**Created:** 2026-11-26 (agent, from the pin sync recorded in `tasks/archive/impo/2026/11/26/openstax-sync-upstream-pins-2026-11.md`; a sync item that does not resolve gets a task: `CLAUDE.md`, "Contracts").
 
 ## BLUF
 
@@ -11,7 +11,7 @@ The 2026-11-26 pin sync built every book, and two upstream changes came with it 
 
 ## Context
 
-**Read first:** `tasks/openstax-sync-upstream-pins-2026-11.md` ("What upstream changed that matters"), `tools/build-books.sh` (its `collect` function copies every `checkout/output/<book>/` that has an `index.html`), and `tasks/reference/openstax/publishing.md`.
+**Read first:** `tasks/archive/impo/2026/11/26/openstax-sync-upstream-pins-2026-11.md` ("What upstream changed that matters"), `tools/build-books.sh` (its `collect` function copies every `checkout/output/<book>/` that has an `index.html`), and `tasks/reference/openstax/publishing.md`.
 
 - **Renamed.** In `osbooks-biology-bundle` the collection `biology-ap-courses` is now `biology-ap-courses-2e`. The book builds under the new name. Because the checkout was updated in place, the October outputs under the old name were left behind (`checkout/latex/biology-ap-courses.tex`, `checkout/output/biology-ap-courses/`, `checkout/output/biology-ap-courses.epub`), where `collect` would have copied the stale site into the root `output/`. They were deleted on 2026-11-26 with the maintainer's approval. The published address changes too: `billsix.github.io/impo/biology-ap-courses/` becomes `…/biology-ap-courses-2e/`. The committed exercise cache is keyed by exercise nickname and still carries `book-slug:biology-ap-courses` tags; the new EPUB is larger than the old one (290 MB against 264 MB), so no content loss shows, but exercise injection was not compared exercise by exercise.
 - **Added.** `osbooks-prealgebra-bundle` now has a fourth collection, `healthcare-foundations` (30 modules). It built in all three formats with no change to impo, so `make prealgebra-bundle`, the release workflow and `make publish-pages` will now produce and publish a fourth book from that folder.

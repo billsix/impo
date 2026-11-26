@@ -51,7 +51,7 @@ folder. Two book families exist, plus the `study/` family of material built from
   default-branch head, refetch, re-apply the overlay, and run at least `make convert` (the step that
   breaks when upstream's markup changes). Recon is read-only; the method and the last run are in
   `tasks/archive/impo/2026/10/20/openstax-resync-upstream-pins.md`; the 2026-11-26 run, which also built every
-  moved book, is `tasks/openstax-sync-upstream-pins-2026-11.md`.
+  moved book, is `tasks/archive/impo/2026/11/26/openstax-sync-upstream-pins-2026-11.md`.
 - **Every pin must stay fetchable without the upstream** (William Emerison Six <billsix@gmail.com>, 2026-11-26; OpenStax's `osbooks-algebra-1`
   disappeared from GitHub and no copy was reachable). The backup for each book is a public mirror on the
   maintainer's GitHub account (`github.com/billsix/<book>`), pushed from his private clones. A sync is
@@ -78,6 +78,12 @@ folder. Two book families exist, plus the `study/` family of material built from
     push over the 1 GB Pages limit (`BOOKS="..."` publishes a subset, `DRY_RUN=1` only stages). Each
     book's first page links its PDF/EPUB/`<book>-html.zip` on the latest GitHub Release. Design and the
     size problem: `tasks/reference/openstax/publishing.md`.
+  - **The pin-sync scripts** (promoted 2026-11-26 from the sync recorded in
+    `tasks/archive/impo/2026/11/26/openstax-sync-upstream-pins-2026-11.md`): `bump-pins.sh <book> …` sets each
+    book's `PIN_SHA` to its upstream head and moves the existing `checkout/` to it in place;
+    `build-after-sync.sh <log dir> <book> …` re-applies the overlay and runs `make convert` then `make dist`,
+    three books at a time, with a PASS/FAIL line per step; `sync-pin-docs.py` makes each book's `CLAUDE.md`
+    name the pin its `fetch.sh` carries. Book names are given without the `osbooks-` prefix.
   - `build-web-editions.sh` — a fan-out that re-applies the toolchain overlay and runs `make html &&
     make epub` across all 16 OpenStax books, logging PASS/FAIL per book (`bash tools/build-web-editions.sh
     [book-slug]`).

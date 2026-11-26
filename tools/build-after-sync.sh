@@ -3,7 +3,7 @@
 # format, three books at a time. Writes one log per book and step under the log
 # directory and prints a PASS/FAIL line per step; exits 1 if any step failed.
 #
-#   bash tasks/adhoc/openstax-sync-upstream-pins-2026-11/build_books.sh <log dir> <book> [<book> ...]
+#   bash tools/build-after-sync.sh <log dir> <book> [<book> ...]
 set -uo pipefail
 cd "$(git -C "$(dirname "$0")" rev-parse --show-toplevel)" || exit 1
 log_dir="$1"

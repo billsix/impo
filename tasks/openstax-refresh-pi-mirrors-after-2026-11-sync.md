@@ -15,7 +15,7 @@ The 2026-11-26 sync moved nine books to newer upstream commits, and two of those
 
 - **No new repository appeared.** Both changes arrived inside repositories that are already mirrored: Healthcare Foundations is a fourth collection in `osbooks-prealgebra-bundle`, and Biology for AP Courses was renamed (`biology-ap-courses` to `biology-ap-courses-2e`) inside `osbooks-biology-bundle`. So nothing needs a new `git clone --mirror`, unless a mirror turns out to be missing; an existing mirror only needs a fetch.
 - The mirrors live on the Pi under `/mnt/usbdrive2/gitRepos/openstax/` (each `openstax/*/fetch.sh` names the path with a `**` in the middle, so the exact subfolder is not recorded in impo).
-- Related: `tasks/openstax-algebra-1-upstream-gone-backup-plan.md` (publishing the mirrors on GitHub and the algebra-1 upstream that disappeared) and `tasks/openstax-sync-upstream-pins-2026-11.md` (the sync). The sooner the mirrors are refreshed the better: algebra-1 showed an upstream can vanish.
+- Related: `tasks/openstax-algebra-1-upstream-gone-backup-plan.md` (publishing the mirrors on GitHub and the algebra-1 upstream that disappeared) and `tasks/archive/impo/2026/11/26/openstax-sync-upstream-pins-2026-11.md` (the sync). The sooner the mirrors are refreshed the better: algebra-1 showed an upstream can vanish.
 
 ## What to do (maintainer, on the Pi or over ssh)
 

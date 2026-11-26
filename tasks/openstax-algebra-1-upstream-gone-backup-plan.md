@@ -13,7 +13,7 @@ OpenStax's `osbooks-algebra-1` repository no longer answers on GitHub, so impo c
 
 ## Context
 
-**Read first:** `openstax/CLAUDE.md` (the per-book contract: `fetch.sh` → `apply.sh` → build), `CLAUDE.md` "Contracts" (the mirror rule this task puts in place) and `openstax/osbooks-algebra-1/fetch.sh`. Found during the pin recon of 2026-11-26, recorded in `tasks/openstax-sync-upstream-pins-2026-11.md`; that sync leaves algebra-1 untouched.
+**Read first:** `openstax/CLAUDE.md` (the per-book contract: `fetch.sh` → `apply.sh` → build), `CLAUDE.md` "Contracts" (the mirror rule this task puts in place) and `openstax/osbooks-algebra-1/fetch.sh`. Found during the pin recon of 2026-11-26, recorded in `tasks/archive/impo/2026/11/26/openstax-sync-upstream-pins-2026-11.md`; that sync leaves algebra-1 untouched.
 
 **What was checked (2026-11-26, from the sandbox):**
 

@@ -3,7 +3,7 @@
 # book's checkout/ to that commit in place (generated outputs in checkout/ are kept).
 # Idempotent: a book already at its upstream head is reported and left alone.
 #
-#   bash tasks/adhoc/openstax-sync-upstream-pins-2026-11/bump_pins.sh <book> [<book> ...]
+#   bash tools/bump-pins.sh <book> [<book> ...]
 set -uo pipefail
 cd "$(git -C "$(dirname "$0")" rev-parse --show-toplevel)" || exit 1
 

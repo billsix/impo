@@ -4,13 +4,13 @@ A book's CLAUDE.md states the pin in its "The pin" section. When that hash diffe
 the book's fetch.sh, rewrite the sentence so the current pin leads and the original port base is
 kept as history. Idempotent: a second run changes nothing.
 
-    python3 tasks/adhoc/openstax-sync-upstream-pins-2026-11/sync_pin_docs.py
+    python3 tools/sync-pin-docs.py
 """
 
 import pathlib
 import re
 
-ROOT: pathlib.Path = pathlib.Path(__file__).resolve().parents[3]
+ROOT: pathlib.Path = pathlib.Path(__file__).resolve().parents[1]
 ORIGINAL: re.Pattern[str] = re.compile(r"`fetch\.sh` pins \*\*`([0-9a-f]{40})`\*\* — the merge-base where the\n")
 CURRENT: re.Pattern[str] = re.compile(r"`fetch\.sh` pins \*\*`([0-9a-f]{40})`\*\*, the head of OpenStax's default branch")
 PIN: re.Pattern[str] = re.compile(r"^PIN_SHA=([0-9a-f]{40})", re.MULTILINE)

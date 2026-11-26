@@ -1,6 +1,6 @@
 # Synced the nine out-of-date OpenStax content pins with upstream
 
-**Done 2026-11-26** (agent; William Emerison Six <billsix@gmail.com>, 2026-11-26: "do the recon for both … a sync means to just update the pins and make sure everything still works in my project", then "all nine" for the full builds and "go ahead and work"). The maintainer committed the work the same day.
+**Done 2026-11-26** (agent; William Emerison Six <billsix@gmail.com>, 2026-11-26: "do the recon for both … a sync means to just update the pins and make sure everything still works in my project", then "all nine" for the full builds and "go ahead and work"). The maintainer committed the work the same day; at archive the three scripts were promoted from `tasks/adhoc/` to `tools/`.
 
 ## What was done
 
@@ -32,10 +32,10 @@ Already current, untouched: astronomy, contemporary-mathematics, introduction-py
 
 ## How
 
-- `tasks/adhoc/openstax-sync-upstream-pins-2026-11/bump_pins.sh <book> …` reads each upstream head with `git ls-remote`, sets `PIN_SHA` with one dated line above it, and moves the existing checkout to the new commit in place (`git fetch --depth 1`, `git checkout --detach`). The checkout was not deleted and refetched, so earlier outputs survived until the new ones replaced them.
-- `tasks/adhoc/openstax-sync-upstream-pins-2026-11/build_books.sh <log dir> <book> …` builds the toolchain image once, then per book runs `./apply.sh`, `make convert` and `make dist`, three books at a time. All nine passed both steps. Every PDF, EPUB and HTML zip in the nine `checkout/output/` folders carries a 2026-11-26 timestamp. The image build and the nine builds took about 50 minutes nested.
+- `tools/bump-pins.sh <book> …` reads each upstream head with `git ls-remote`, sets `PIN_SHA` with one dated line above it, and moves the existing checkout to the new commit in place (`git fetch --depth 1`, `git checkout --detach`). The checkout was not deleted and refetched, so earlier outputs survived until the new ones replaced them.
+- `tools/build-after-sync.sh <log dir> <book> …` builds the toolchain image once, then per book runs `./apply.sh`, `make convert` and `make dist`, three books at a time. All nine passed both steps. Every PDF, EPUB and HTML zip in the nine `checkout/output/` folders carries a 2026-11-26 timestamp. The image build and the nine builds took about 50 minutes nested.
 - The converter's only notices were its normal "Unknown/fallback elements" lines (`inline:span`, `inline:label`); the LaTeX runs used `-halt-on-error` and none halted.
-- `tasks/adhoc/openstax-sync-upstream-pins-2026-11/sync_pin_docs.py` made each book's `CLAUDE.md` name the pin its `fetch.sh` carries. Twelve of the sixteen still named the original September pin, two syncs old (the October sync had not updated them); the original pin is kept in the sentence as the port's first base.
+- `tools/sync-pin-docs.py` made each book's `CLAUDE.md` name the pin its `fetch.sh` carries. Twelve of the sixteen still named the original September pin, two syncs old (the October sync had not updated them); the original pin is kept in the sentence as the port's first base.
 
 ## What upstream changed that matters
 
