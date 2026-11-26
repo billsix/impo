@@ -45,6 +45,18 @@ folder. Two book families exist, plus the `study/` family of material built from
   regenerates from the pin.
 - **Self-contained scripts.** Every script starts with `cd "$(dirname "$0")"` and uses only relative
   paths — runnable from anywhere, no hardcoded host paths.
+- **"Sync with upstream" (or "rebase my patches") means: move each pin to current upstream and prove the
+  project still works** (William Emerison Six <billsix@gmail.com>, 2026-11-26). impo carries no patch
+  series, so there is nothing to rebase: set each book's `PIN_SHA` in `fetch.sh` to the upstream
+  default-branch head, refetch, re-apply the overlay, and run at least `make convert` (the step that
+  breaks when upstream's markup changes). Recon is read-only; the method and the last run are in
+  `tasks/archive/impo/2026/10/20/openstax-resync-upstream-pins.md`.
+- **Every pin must stay fetchable without the upstream** (William Emerison Six <billsix@gmail.com>, 2026-11-26; OpenStax's `osbooks-algebra-1`
+  disappeared from GitHub and no copy was reachable). The backup for each book is a public mirror on the
+  maintainer's GitHub account (`github.com/billsix/<book>`), pushed from his private clones. A sync is
+  finished only when each moved pin can be fetched from its mirror; anything that does not resolve in the
+  same sitting (a missing mirror, a vanished upstream, a book that no longer converts) gets a task, never a
+  note in passing. The mirrors are being set up in `tasks/openstax-algebra-1-upstream-gone-backup-plan.md`.
 - **Unsigned commits in checkouts are authorized/automated.** The maintainer's gitconfig enables commit
   signing, which fails in the sandbox; each `fetch.sh` sets `commit.gpgsign false` in the checkout it
   manages (never globally). These commits are scaffolding; the durable product is impo's own files.
