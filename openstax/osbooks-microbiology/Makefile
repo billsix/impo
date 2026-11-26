@@ -54,7 +54,7 @@ RUN = $(CONTAINER_CMD) run --rm $(PODMAN_RUN_FLAGS) $(IMPO_PROVENANCE) $(FILES_T
 CNXML_SOURCES := $(shell find $(CHECKOUT)/collections $(CHECKOUT)/modules -type f \
 	\( -name '*.cnxml' -o -name '*.collection.xml' \) 2>/dev/null)
 
-.PHONY: all image shell pdf convert html html-single epub dist fetch-exercises \
+.PHONY: image-export image-import all image shell pdf convert html html-single epub dist fetch-exercises \
 	format test clean help
 
 all: image pdf ## Build the image and the collection PDF
@@ -97,6 +97,13 @@ format: image ## (container) ruff --fix + ruff format + ty check over tools/*.py
 
 test: image ## (container) run the converter unit tests + tools/ doctests (pytest)
 	$(RUN) -c 'cd /book && python3 -m pytest -q'
+
+image-export: ## Save the built image to a timestamped tar here (the toolchain, kept for offline builds)
+	$(CONTAINER_CMD) save $(CONTAINER_NAME) -o $(CONTAINER_NAME)-$(shell date +%m-%d-%Y_%H-%M-%S).tar
+
+image-import: ## Load an image tar: make image-import FILE=foo.tar
+	@test -n "$(FILE)" || { echo 'usage: make image-import FILE=foo.tar' >&2; exit 1; }
+	$(CONTAINER_CMD) load -i $(FILE)
 
 clean: ## Remove build artifacts (checkout/output and the convert stamp)
 	rm -rf $(CHECKOUT)/output/* $(CHECKOUT)/latex/.converted

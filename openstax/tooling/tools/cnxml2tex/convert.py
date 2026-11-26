@@ -2795,6 +2795,8 @@ def convert_collection(slug: str) -> tuple[str, list[str]]:
     for t in root.iter(MD + "title"):
         title = t.text
         break
+    declared: _Element | None = next(iter(root.iter(MD + "license")), None)
+    licence: tuple[str, str, str] = licence_from_url("" if declared is None else declared.get("url") or "")
     content: _Element | None = root.find(COL + "content")
     if content is None:
         content = root.find("{*}content")
@@ -2905,17 +2907,55 @@ def convert_collection(slug: str) -> tuple[str, list[str]]:
     for mid in module_ids:
         write_module(mid)
 
-    master: str = build_master(slug, title or slug, front_lines, main_lines, back_lines)
+    master: str = build_master(slug, title or slug, front_lines, main_lines, back_lines, licence)
     mpath: str = os.path.join(ROOT, "latex", "%s.tex" % slug)
     with open(mpath, "w") as f:
         f.write(master)
     return mpath, module_ids
 
 
-def about_this_edition(title_tex: str) -> str:
+# The licences OpenStax collections declare (<md:license url="...">), keyed by the
+# path of the Creative Commons URL: (full name, short name, canonical URL).
+LICENCES: dict[str, tuple[str, str, str]] = {
+    "by/4.0": (
+        "Creative Commons Attribution 4.0 International License",
+        "CC BY 4.0",
+        "https://creativecommons.org/licenses/by/4.0/",
+    ),
+    "by-nc-sa/4.0": (
+        "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License",
+        "CC BY-NC-SA 4.0",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    ),
+}
+
+
+def licence_from_url(url: str) -> tuple[str, str, str]:
+    """The (full name, short name, URL) of the licence a collection declares.
+
+    The built book states its licence on two pages, so an unrecognised or absent
+    declaration is an error, never a guess.
+
+    >>> licence_from_url("http://creativecommons.org/licenses/by-nc-sa/4.0/")[1]
+    'CC BY-NC-SA 4.0'
+    >>> licence_from_url("https://creativecommons.org/licenses/by/4.0")[1]
+    'CC BY 4.0'
+    >>> licence_from_url("")
+    Traceback (most recent call last):
+        ...
+    ValueError: the collection declares no licence this converter knows: ''
+    """
+    key: str = url.split("creativecommons.org/licenses/")[-1].strip("/")
+    if key not in LICENCES:
+        raise ValueError("the collection declares no licence this converter knows: %r" % url)
+    return LICENCES[key]
+
+
+def about_this_edition(title_tex: str, licence: tuple[str, str, str]) -> str:
     r"""The "About This Edition" front-matter colophon: who formatted it (Bill Six),
     the impo toolchain + the build commit SHA + date, and the licensing split
-    (OpenStax content CC BY 4.0 / the toolchain + formatting MIT). Plain LaTeX (a
+    (OpenStax content under the licence its collection declares / the toolchain +
+    formatting MIT). Plain LaTeX (a
     heading + \href, so it renders in the PDF AND flows through pandoc to the
     HTML/EPUB editions -- NOT an osbook.cls house-style macro). The impo commit SHA
     and build date come from the IMPO_COMMIT / IMPO_BUILD_DATE env vars the book
@@ -2940,11 +2980,32 @@ def about_this_edition(title_tex: str) -> str:
         "\\emph{impo} toolchain "
         "(\\href{https://github.com/billsix/impo}{github.com/billsix/impo})%s.\n\n"
         "\\medskip\\noindent The text and figures are \\textcopyright{} OpenStax and "
-        "are licensed under a Creative Commons Attribution 4.0 International License "
-        "(\\href{https://creativecommons.org/licenses/by/4.0/}{CC~BY~4.0}). The impo "
+        "are licensed under a %s "
+        "(\\href{%s}{%s}). The impo "
         "toolchain and this LaTeX formatting are \\textcopyright{} William Emerison "
         "Six, released under the MIT License. This edition is not endorsed by or "
-        "affiliated with OpenStax.\n" % (title_tex, built)
+        "affiliated with OpenStax.\n"
+        % (title_tex, built, licence[0], licence[2], licence[1].replace(" ", "~"))
+    )
+
+
+def licence_page(licence: tuple[str, str, str]) -> str:
+    r"""The \\setOSbooklicense call that makes the class's licence page name the
+    book's own licence (the class default names CC BY-NC-SA 4.0)."""
+    return (
+        "\\setOSbooklicense{%%\n"
+        "  This work is produced from the OpenStax \\emph{\\OSbooktitle} textbook,\n"
+        "  published by OpenStax, a nonprofit educational initiative of Rice\n"
+        "  University. The original work is available at\n"
+        "  \\url{https://openstax.org/} and is licensed under a\n"
+        "  %s\n"
+        "  (%s).\\par\n"
+        "  \\medskip\n"
+        "  \\noindent This LaTeX edition is likewise distributed under\n"
+        "  %s.\\par\n"
+        "  \\medskip\n"
+        "  \\noindent Typeset in Latin Modern and Computer Modern Sans with \\LaTeX.}\n"
+        % (licence[0], licence[1], licence[1])
     )
 
 
@@ -2954,10 +3015,11 @@ def build_master(
     front_lines: list[str],
     main_lines: list[str],
     back_lines: list[str],
+    licence: tuple[str, str, str],
 ) -> str:
     # "About This Edition" colophon is the FIRST front-matter unit (before the
     # Preface): an unnumbered heading kept in the TOC (secnumdepth is -10 here).
-    front: str = about_this_edition(esc_text(title)) + "\n" + "\n".join(front_lines)
+    front: str = about_this_edition(esc_text(title), licence) + "\n" + "\n".join(front_lines)
     main: str = "\n".join(main_lines)
     back: str = "\n".join(back_lines)
     return (
@@ -2970,6 +3032,7 @@ def build_master(
         "{../exercises/media-derived/}{../}}\n"
         "\\setOSbooktitle{%s}\n"
         "\\setOSbooksubtitle{Formatted by Bill Six}\n"
+        "%s"
         "\\begin{document}\n"
         "\\OSfrontmatter\n"
         "%% front-matter units: unnumbered headings, kept in the TOC\n"
@@ -2982,7 +3045,7 @@ def build_master(
         "%% back-matter units: unnumbered (\\backmatter)\n"
         "%s\n"
         "\\printanswerkey\n"
-        "\\end{document}\n" % (slug, esc_text(title), front, main, back)
+        "\\end{document}\n" % (slug, esc_text(title), licence_page(licence), front, main, back)
     )
 
 

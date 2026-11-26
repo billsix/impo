@@ -1,6 +1,6 @@
 # Keep every book buildable forever: back up the source, close the last outside dependencies, state the licences correctly
 
-**Status:** proposed — needs go-ahead (three questions, at the end)
+**Status:** in progress — decisions recorded 2026-11-26; the agent's part is staged, the maintainer's part (pushing the mirrors) is open
 **Priority:** 3
 **Difficulty:** 5 (the licence corrections are small and exact; the backup has parts only the maintainer can do)
 **Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "Given what we saw with the algebra git repo being gone from upstream, I want to reconsider any historical decision we made about fetching resources … In general I want these books buildable, at any point in the future, and I want advice … I want to make sure all copyright and licenses are clearly marked". Then: "take all of this information, and write in all as a task, all of it").
@@ -122,8 +122,47 @@ The book images are built from `openstax/tooling/Dockerfile` (`FROM registry.fed
 
 - [ ] Rewrite "The content model" in `openstax/CLAUDE.md`: the reason the source is not committed is now "it lives in a mirror the maintainer controls", not "it regenerates from the pin".
 
+## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-26)
+
+1. **Correct the licence statements: yes.**
+2. **Source backup: public mirrors of each OpenStax repository under `github.com/billsix`, with `fetch.sh` defaulting to OpenStax and falling back to the mirror.** In his words: "make github mirrors to github.com/billsix for each of the openstax repos, in case they take them away in the future … we could make fetch.sh default to the openstax repo but if not exist, use the github.com/billsix one". Nothing more is committed into impo.
+3. **Image export and the bundle step: yes** ("whatever you recommend").
+
+### The rethink he asked for
+
+His plan is right, and it is what had been decided for algebra-1 earlier the same day. Rethinking it changed these points:
+
+- **The mirrors do not need the Pi.** Fifteen upstreams still answer, so a full clone can be taken from OpenStax and pushed to a mirror from any machine with his GitHub credentials. Only algebra-1 needs the Pi clone. The earlier tasks had made all sixteen wait for the home network.
+- **A mirror, not a GitHub fork.** A fork stays tied to the upstream's network of repositories; an independent repository that was pushed to does not. `tools/mirror-upstreams.sh` pushes branches and tags to a separately created repository.
+- **A mirror goes stale.** It must be pushed again after every sync, or it lacks the new pin. The tool's `check` mode asks each mirror for its book's pin the same way `fetch.sh` will, and the sync contract in `CLAUDE.md` requires it.
+- **GitHub is then the single point of failure**, so the Pi clones stay as the second copy and `BUNDLE_DIR` writes an offline bundle of each.
+- **What the mirrors do not cover:** the exercise server (already covered by the committed caches) and the build image (covered by `make image-export`).
+- **The built books stated the wrong licence.** This was found while correcting the docs: every book's "About This Edition" page said the content was CC BY 4.0, and the class's licence page said CC BY-NC-SA 4.0 for every book, physics included. Each book contradicted itself.
+
+## Done by the agent (2026-11-26, staged on branch `openstax-buildable-forever`)
+
+- **`fetch.sh`, all sixteen:** `MIRROR_URL=https://github.com/billsix/<name>` beside `UPSTREAM_URL`; the fetch tries the upstream, then the mirror, and removes the half-made `.git` if both fail (a leftover empty `.git` is what made four checkouts look fetched). Tested on a copy: a dead upstream with a live second source fetched the pin; both dead exited 1 with a clear message and left nothing behind. The Pi path is gone from the scripts and from each book's `CLAUDE.md`.
+- **`tools/mirror-upstreams.sh`:** `check` (no credentials; reports per book whether the mirror holds the pin) and `push` (the maintainer's; clones or updates, refuses a clone that lacks the pin, optionally creates the repository with `gh` and writes a bundle). `check` currently reports every mirror missing, which is true.
+- **`make image-export` / `make image-import`** in all sixteen book Makefiles and the Trench book's.
+- **Licences in the built books:** the converter reads each collection's `<md:license url>` (`licence_from_url`, with doctests) and states that licence on the class's licence page (`\setOSbooklicense`) and in the colophon. A collection with no licence the converter knows fails the conversion. Verified in the generated masters: physics says CC BY 4.0 in both places, psychology CC BY-NC-SA 4.0 in both. Gate: `make format` (ruff, ty) and `make test` (47 passed, doctests included) in the physics container.
+- **Licences in the docs:** `CLAUDE.md`, `README.md`, `openstax/CLAUDE.md` and the algebra-1 task state the per-book truth; the table is in `tasks/reference/openstax/book-inventory.md`.
+- **Exercise notices:** OpenStax Exercises does not state one licence. Its copyright page (https://exercises.openstax.org/copyright, read 2026-11-26) says the content is copyright Rice University or used with permission, that "many" questions are under a Creative Commons Attribution licence, and that each question has its own terms; the API's JSON has no licence field and names Rice University as copyright holder. The template and the seven committed `COPYRIGHT` notices now say that and no longer assert CC BY 4.0.
+- **GitHub's limits, verified** (docs.github.com, "About large files on GitHub", read 2026-11-26): "ideally less than 1 GB, and less than 5 GB is strongly recommended" per repository; a warning above 50 MiB per file and a block above 100 MiB. Every upstream book repository fits.
+- **The offline claim:** see "Offline build" below.
+
+## Offline build (the proof of answer 2)
+
+`make -C openstax/osbooks-psychology dist PODMAN_RUN_FLAGS='--cgroups=disabled --network=none'` built Psychology 2e as PDF, EPUB and HTML on 2026-11-26. All three container runs (PDF, EPUB, HTML) carried `--network=none`; the conversion had been run just before from the checkout already on disk. So with the source fetched and the image present, a book builds with no network at all. Two things it does not prove: building the image itself (its layers came from the local cache; a from-scratch image build needs Fedora's package servers, which is what `make image-export` is for), and a book with embedded exercises (psychology has none; those read the committed cache, and no code path fetches during a build).
+
+The built PDF states CC BY-NC-SA 4.0 on its licence page and in "About This Edition", read back with `pdftotext`. Physics, the one CC BY book, was rebuilt in all three formats the same day (with the network on) and its PDF states CC BY 4.0 in both places.
+
+## Still open
+
+- **Maintainer:** `CREATE=1 bash tools/mirror-upstreams.sh push` for the fifteen books whose upstream answers (any machine with his credentials); algebra-1 from the Pi clone (`tasks/openstax-algebra-1-upstream-gone-backup-plan.md`).
+- **Agent, after that:** `bash tools/mirror-upstreams.sh check`; fetch algebra-1 from its mirror and build it.
+- **A legal point for the maintainer:** the colophon says the toolchain "and this LaTeX formatting" are under the MIT License, while the licence page says the edition is distributed under the book's licence. For a share-alike book the edition as a whole carries the book's licence; whether his own formatting is additionally offered under MIT is his statement to make. The wording was left as it was.
+- **The four checkouts without a `LICENSE` file** get one when they are refetched from a mirror.
+
 ## Open questions
 
-1. Should the agent correct the licence statements in impo now (the docs, the exercise `COPYRIGHT` template and the seven committed notices, the algebra-1 task), after first checking what licence the exercises carry? The agent recommends yes.
-2. For the source backup: (a) mirrors plus Pi bundles, with nothing more committed in impo, or (b) also commit the XML and each book's `LICENSE` file into impo? The agent recommends (a).
-3. Should image export and the per-book `git bundle` step be added to the tooling and the sync method? The agent recommends yes.
+None.

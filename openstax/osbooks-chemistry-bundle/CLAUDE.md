@@ -24,8 +24,8 @@ The port was first made against `dba91045bc6db7c7286ca63f3a4e92075ec31025` — t
 maintainer's `latex` port branch diverged from OpenStax's `main` (the pristine
 content the port was made against), from the survey table in
 `tasks/archive/impo/2026/09/03/openstax-populate-books.md`. Canonical upstream:
-`https://github.com/openstax/osbooks-chemistry-bundle`. Fallback mirror if GitHub is
-unreachable: `pi@192.168.0.186:/mnt/usbdrive2/gitRepos/openstax/**/osbooks-chemistry-bundle.git`.
+`https://github.com/openstax/osbooks-chemistry-bundle`. Fallback, tried automatically by `fetch.sh` when the upstream does not
+provide the pin: `https://github.com/billsix/osbooks-chemistry-bundle`, the maintainer's public mirror.
 
 ## This book (from the survey; build-time facts pending)
 

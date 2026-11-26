@@ -39,7 +39,7 @@ OpenStax's `osbooks-algebra-1` repository no longer answers on GitHub, so impo c
 
 ## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-26)
 
-- **The backup is a public mirror on the maintainer's GitHub account**, one repository per book (`github.com/billsix/<book>`, the same name as the upstream), pushed from the Pi clones, "so that it can be built without being on my network". This is the plan for algebra-1 and for the whole family. The content is CC BY 4.0, so redistribution with attribution is allowed.
+- **The backup is a public mirror on the maintainer's GitHub account**, one repository per book (`github.com/billsix/<book>`, the same name as the upstream), pushed from the Pi clones, "so that it can be built without being on my network". This is the plan for algebra-1 and for the whole family. The content is CC BY-NC-SA 4.0 for fifteen of the sixteen book folders and CC BY 4.0 for `osbooks-physics`, so an unmodified public mirror is allowed when it is non-commercial, attributed and under the same licence (corrected 2026-11-26; this sentence first said CC BY 4.0 for all).
 - **A pin sync must leave every pin fetchable from the mirror.** After a pin moves, the book's mirror must hold the new commit. When that cannot be done in the same sitting (as today: the mirrors are not published yet), the sync is not silently finished: a task is filed for what did not resolve. The rule is written into `CLAUDE.md` ("Contracts").
 - Rejected: committing the content into impo (against the *downloaded → ignore* content model, and too large); the Pi mirror as the only fallback (works only on the home network, so the sandbox and the release workflow still fail).
 
@@ -49,14 +49,15 @@ Maintainer (home network):
 
 - [ ] The goal is the **full history** from the Pi clone. Only if no clone with history can be found do the files in `checkout/` seed the mirror as a single commit (the pin's commit id is then lost; record that in `fetch.sh`). Compare them with a real clone first if one turns up (`git diff --no-index`).
 - [ ] Confirm the Pi mirror holds the pin: `git -C <pi mirror of osbooks-algebra-1> cat-file -e 332f78647098a60532a9833b8003dca5da7ff227^{commit}`. If it does not, look for another clone: the old port working copy with the `latex` branch, a host machine's `checkout/`, or a backup.
-- [ ] Create `github.com/billsix/osbooks-algebra-1` (public, empty) and push the mirror to it: `git -C <pi mirror> push --mirror https://github.com/billsix/osbooks-algebra-1`.
-- [ ] Do the same for the other fifteen books, each under its upstream's name. The upstream names are the `UPSTREAM_URL` lines of `openstax/*/fetch.sh`. Fetch the upstream into the Pi mirror first, so the mirror holds the book's current pin.
+- [ ] Mirror algebra-1 with the tool: copy the Pi clone to `~/openstax-mirrors/osbooks-algebra-1.git` (or point `MIRROR_DIR` at the folder that holds it), then `CREATE=1 bash tools/mirror-upstreams.sh push algebra-1`. The tool reuses a clone it finds there, refuses to push one that lacks the pin, and creates the GitHub repository with `gh`.
+- [ ] **The other fifteen do not need the Pi or the home network** (rethought 2026-11-26): their upstreams still answer, so `CREATE=1 bash tools/mirror-upstreams.sh push` from any machine with the maintainer's GitHub credentials clones each upstream in full and pushes it to `github.com/billsix/<name>`. It can be run today. Add `BUNDLE_DIR=<folder>` to write an offline bundle of each as well.
 
 Agent (after the Recheck passes):
 
 - [ ] algebra-1: set `UPSTREAM_URL` in `openstax/osbooks-algebra-1/fetch.sh` to the public mirror; `./fetch.sh && ./apply.sh && make convert`, then `make dist`.
 - [ ] Find out what happened upstream (renamed, merged into another repository, made private, withdrawn) and record it in `openstax/osbooks-algebra-1/CLAUDE.md`. A rename would give the book an upstream to sync with again.
-- [ ] The other fifteen: give each `fetch.sh` an automatic fallback (upstream first, then the public mirror) and replace the Pi-mirror comment. For each book, verify the mirror holds `PIN_SHA` (`git fetch --depth 1 <mirror> <PIN_SHA>` in a scratch repository); record the table here.
+- [x] Done 2026-11-26 for all sixteen: each `fetch.sh` has an automatic fallback (upstream first, then the public mirror), tested with a dead upstream and with both sources dead.
+- [ ] The other fifteen: For each book, verify the mirror holds `PIN_SHA` (`git fetch --depth 1 <mirror> <PIN_SHA>` in a scratch repository); record the table here.
 - [ ] Add the mirror check to the sync method: after a pin bump, the new commit must be fetchable from the mirror, or a task is filed.
 - [ ] Update `openstax/CLAUDE.md` (the per-book contract: where content comes from, the fallback) and `tasks/reference/openstax/book-inventory.md` if it records sources.
 

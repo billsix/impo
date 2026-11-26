@@ -24,8 +24,8 @@ The port was first made against `98074b2c4ca390e62af34d6a6d68fb21e7880fbe` — t
 maintainer's `latex` port branch diverged from OpenStax's `main` (the pristine
 content the port was made against), from the survey table in
 `tasks/archive/impo/2026/09/03/openstax-populate-books.md`. Canonical upstream:
-`https://github.com/openstax/osbooks-prealgebra-bundle`. Fallback mirror if GitHub is
-unreachable: `pi@192.168.0.186:/mnt/usbdrive2/gitRepos/openstax/**/osbooks-prealgebra-bundle.git`.
+`https://github.com/openstax/osbooks-prealgebra-bundle`. Fallback, tried automatically by `fetch.sh` when the upstream does not
+provide the pin: `https://github.com/billsix/osbooks-prealgebra-bundle`, the maintainer's public mirror.
 
 ## The books this folder builds (verified by the 2026-11-26 build)
 

@@ -24,8 +24,8 @@ The port was first made against `398f50856ca1df97b58cb778659212a1df572bbd` — t
 maintainer's `latex` port branch diverged from OpenStax's `main` (the pristine
 content the port was made against), from the survey table in
 `tasks/archive/impo/2026/09/03/openstax-populate-books.md`. Canonical upstream:
-`https://github.com/openstax/osbooks-psychology`. Fallback mirror if GitHub is
-unreachable: `pi@192.168.0.186:/mnt/usbdrive2/gitRepos/openstax/**/osbooks-psychology.git`.
+`https://github.com/openstax/osbooks-psychology`. Fallback, tried automatically by `fetch.sh` when the upstream does not
+provide the pin: `https://github.com/billsix/osbooks-psychology`, the maintainer's public mirror.
 
 ## This book (from the survey; build-time facts pending)
 
