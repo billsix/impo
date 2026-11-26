@@ -95,7 +95,8 @@ The two layers have two different owners, and imps must not blur them:
 
 Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothing hardcodes a slug.
 
-- `tools/cnxml2tex/convert.py` — CNXML + Presentation-MathML → LaTeX; auto-discovers structure. Handles BOTH
+- `tools/cnxml2tex/convert.py` — CNXML + MathML (Presentation, and the Content dialect a few books mix
+  in) → LaTeX; auto-discovers structure. Handles BOTH
   os-embed exercise schemes (`#exercise/<nickname>` and `#ost/api/ex/<id>` — physics/biology). Also emits an
   **"About This Edition" colophon** as the first front-matter unit (`\chapter*`, so it doesn't step the
   chapter counter) — impo link + build commit SHA/date (from `IMPO_COMMIT`/`IMPO_BUILD_DATE`, passed by each
@@ -159,16 +160,23 @@ headless browser (read before touching osbook-web.css/.js).
 
 ## Adding a book
 
-1. `mkdir openstax/osbooks-<subject>`; write `fetch.sh` with the upstream URL + the pin (the
-   merge-base where the maintainer's `latex` branch diverged from OpenStax's `main`).
-2. `apply.sh` overlays `../tooling/`; `Makefile`/`README`/`CLAUDE.md` from the anatomy-physiology
-   template.
-3. `make dist` to build; if the book has `os-embed` exercises, `make fetch-exercises` once and commit
-   `exercises/` **with its COPYRIGHT NOTICE**.
+1. `bash tools/add-book.sh <name> "<Title>"` (from the repo root; `<name>` without the `osbooks-`
+   prefix). It creates `openstax/osbooks-<name>/` from `tools/book-template/`: `fetch.sh` pinned at the
+   upstream default-branch head with the mirror fallback, `apply.sh`, `Makefile`, `README.md`,
+   `CLAUDE.md`, `.gitignore`. Change a template, not a generated folder, when the pattern changes.
+2. In the new folder: `./fetch.sh && ./apply.sh`, then `make convert` and `make dist`. Count the embedded
+   exercise links in the CNXML in **both** schemes (`#exercise/<nickname>`, `#ost/api/ex/<id>`); if there
+   are any, the maintainer runs `make fetch-exercises` (it identifies itself with his contact address) and
+   `exercises/` is committed **with its COPYRIGHT NOTICE**.
+3. Record the book: "The books this folder builds" in its `CLAUDE.md`, the list below, the inventory and
+   its licence table (`tasks/reference/openstax/book-inventory.md`), and refresh the survey
+   (`python3 tools/survey-upstream-books.py`).
+4. The maintainer adds it to his public backups (`tools/mirror-upstreams.sh push <name>`).
 
 ## Books
 
-One thin `openstax/osbooks-<subject>/` folder per book (16 total); each carries its own `CLAUDE.md`
+One thin `openstax/osbooks-<subject>/` folder per book (19 total; more are being added, see
+`tasks/openstax-add-remaining-english-books.md`); each carries its own `CLAUDE.md`
 with its pin and book-specific facts. **anatomy-physiology** is the pilot for this family's
 shared-toolchain contract.
 
@@ -189,6 +197,11 @@ shared-toolchain contract.
 - `osbooks-university-physics-bundle/` — University Physics
 - `osbooks-microbiology/` — Microbiology
 - `osbooks-psychology/` — Psychology
+- `osbooks-statistics/` — Statistics (added 2026-11-26)
+- `osbooks-introductory-statistics-bundle/` — Introductory Statistics (2 books: `introductory-statistics-2e`,
+  `introductory-business-statistics-2e`; added 2026-11-26)
+- `osbooks-college-physics-bundle/` — College Physics (2 books: `college-physics-2e`,
+  `college-physics-ap-courses-2e`; added 2026-11-26)
 
 Per-book status (build-verified dates, exercise/image counts, os-embed scheme post-mortems, structural
 facts): `tasks/reference/openstax/book-inventory.md`. Figure format + os-embed scheme + exercise counts

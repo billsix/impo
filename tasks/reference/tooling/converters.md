@@ -41,7 +41,7 @@ book. Major phases (section banners in the file):
 |------|------|------|
 | 48 | per-book configuration | auto-derives collection/subcollection nesting; no hardcoded slug |
 | 120 | text escaping | LaTeX special-char escaping |
-| 352 | MathML → LaTeX | Presentation-MathML → math; includes the obsolete-font map (see gap #4) at ~757 |
+| 352 | MathML → LaTeX | Presentation-MathML → math (and Content MathML, see below); includes the obsolete-font map (see gap #4) at ~757 |
 | 1191 | continued-equality promotion | `a=b=c` chains → aligned display |
 | 1375 | inline content | `inline()` (1378), `inline_element()` (1390) |
 | 1484 | labels | module-scoped label state (CNXML reuses `fs-id`s across modules) |
@@ -52,6 +52,29 @@ book. Major phases (section banners in the file):
 | 2643 | module conversion | `convert_module()` (2653) |
 | 2748 | collection assembly | `convert_collection()` (2751) — Phase 2 |
 | 2912 | entry | `main()` (2913) |
+
+## Content MathML (added 2026-11-26, with the Statistics book)
+
+The converter was written for Presentation MathML (`<mfrac>`, `<msup>`, …), which says how a formula looks.
+A few modules use **Content MathML** instead, which says what it means, in prefix notation:
+`<apply><divide/><apply><plus/><cn>6.8</cn><cn>7.2</cn></apply><cn>2</cn></apply>`. Until this date `mml()`
+fell back on those tags (`m:apply`, `m:ci`, `m:cn` in the "Unknown/fallback elements" report) and emitted the
+operands run together with the operators lost, or nothing at all.
+
+- `mml()` now renders `<cn>`, `<ci>`, `<infinity/>`, `<apply>` and the older `<reln>`; `_content_apply` handles `eq`, `neq`,
+  `lt`, `gt`, `leq`, `geq`, `approx`, `plus`, `minus` (unary and binary), `times`, `divide`, `power`,
+  `conjugate` (an overline, as in the sample mean) and `sum`. A sum or difference inside a product or a power
+  is parenthesised, because prefix notation carries grouping that infix has to spell out. An operator it does
+  not know is reported as `m:apply:<name>` and its operands are joined.
+- **Where it occurs:** six modules of Statistics, and one of Psychology 2e, where the scrambled word "AETPL"
+  in a memory exercise had been missing from every edition impo built.
+- **Proof it changed nothing else:** every existing book was converted with the converter before and after
+  the change and the generated LaTeX compared file by file: 15 books identical, Psychology different in that
+  one place. No existing book contains `<m:reln>` or `<m:infinity/>`.
+- Tests: the `test_content_mathml_*` cases in `tools/tests/test_mathml.py`.
+
+A related fix from the same book: `render_table` took `int()` of the CALS `cols` attribute and crashed on
+`cols=""`; a value that is not a number now counts as undeclared and the observed row width decides.
 
 ## The 5 historical `convert.py` versions and their deltas
 

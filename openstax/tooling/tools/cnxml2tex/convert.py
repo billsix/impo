@@ -1126,9 +1126,77 @@ def mml(node: _Element) -> str:
         return inner
     if tag == "menclose":
         return mml_children(node)
+    # Content MathML (prefix notation: <apply><plus/><cn>1</cn><cn>2</cn></apply>),
+    # which a few books mix into their Presentation MathML.
+    if tag == "cn":
+        return _esc_math_lit((txt or "").strip().replace("−", "-").replace("–", "-"))
+    if tag == "ci":
+        name: str = (txt or "").strip()
+        if not name:
+            return mml_children(node)
+        return r"\mathrm{%s}" % name if len(name) > 1 and name.isalpha() else _esc_math_lit(name)
+    if tag == "infinity":
+        return r"\infty"
+    if tag in ("apply", "reln"):  # <reln> is the older spelling of <apply> for a relation
+        return _content_apply(node)
     # fallback
     warn_unknown("m:" + (tag or "?"))
     return mml_children(node)
+
+
+CONTENT_RELATIONS: dict[str, str] = {
+    "eq": "=",
+    "neq": r"\neq",
+    "lt": "<",
+    "gt": ">",
+    "leq": r"\leq",
+    "geq": r"\geq",
+    "approx": r"\approx",
+}
+
+
+def _content_apply(node: _Element) -> str:
+    """Render a Content-MathML <apply>: the first child is the operator, the rest its operands.
+
+    A compound operand of a product or a power is parenthesised, since prefix
+    notation carries the grouping that infix notation has to spell out. An
+    operator this function does not know is reported and its operands are joined.
+    """
+    children: list[_Element] = [child for child in node if local(child.tag) is not None]
+    if not children:
+        return ""
+    operator: str = local(children[0].tag) or ""
+    operands: list[_Element] = children[1:]
+
+    def grouped(operand: _Element) -> str:
+        rendered: str = mml(operand)
+        compound: bool = local(operand.tag) == "apply" and local(next(iter(operand)).tag) in ("plus", "minus")
+        return r"\left(%s\right)" % rendered if compound else rendered
+
+    plain: list[str] = [mml(operand) for operand in operands]
+    match operator:
+        case "eq" | "neq" | "lt" | "gt" | "leq" | "geq" | "approx":
+            return (" %s " % CONTENT_RELATIONS[operator]).join(plain)
+        case "plus":
+            return " + ".join(plain)
+        case "minus":
+            return "-" + grouped(operands[0]) if len(operands) == 1 else " - ".join(plain)
+        case "times":
+            return r" \cdot ".join(grouped(operand) for operand in operands)
+        case "divide" if len(operands) == 2:
+            return r"\frac{%s}{%s}" % (plain[0], plain[1])
+        case "power" if len(operands) == 2:
+            base: str = plain[0]
+            if local(operands[0].tag) == "apply":
+                base = r"\left(%s\right)" % base
+            return "{%s}^{%s}" % (base, plain[1])
+        case "conjugate" if len(operands) == 1:
+            return r"\overline{%s}" % plain[0]
+        case "sum":
+            return r"\sum " + " ".join(plain)
+        case _:
+            warn_unknown("m:apply:" + operator)
+            return "".join(plain)
 
 
 def _empty_script(x: str) -> bool:
@@ -2546,8 +2614,11 @@ def render_table(node: _Element, labels: set[str]) -> str:
     tgroup: _Element | None = node.find(C + "tgroup")
     if tgroup is None:
         return ""
-    declared: int = int(tgroup.get("cols", "1"))
-    # actual max cells per row (CALS `cols` attr is often wrong / spans exist)
+    # CALS `cols` is often wrong and sometimes empty (cols=""); a value that is not
+    # a number counts as undeclared, and the observed row width decides.
+    cols_attribute: str = (tgroup.get("cols") or "").strip()
+    declared: int = int(cols_attribute) if cols_attribute.isdigit() else 0
+    # actual max cells per row (spans exist)
     observed: int = 0
     for row in tgroup.iter(C + "row"):
         observed = max(observed, len(row.findall(C + "entry")))

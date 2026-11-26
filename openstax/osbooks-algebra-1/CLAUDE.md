@@ -16,6 +16,13 @@ No OpenStax content and no toolchain are committed — both are pulled in on dem
   runs it against `checkout/` mounted at the fixed path `/book`.
 - `README.md`, `.gitignore`.
 
+## The upstream repository is gone (found 2026-11-26)
+
+`https://github.com/openstax/osbooks-algebra-1` no longer answers; the book itself is still published on
+openstax.org. **`checkout/` here is the only copy of the source reachable from this machine and is in no
+commit: do not delete it.** What happened, what is known about why, and the maintainer's plan for a public
+mirror: `../../tasks/reference/openstax/algebra-1-upstream-removal.md`.
+
 ## The pin
 
 `fetch.sh` pins **`332f78647098a60532a9833b8003dca5da7ff227`** — the merge-base where the

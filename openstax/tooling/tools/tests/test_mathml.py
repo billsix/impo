@@ -56,3 +56,38 @@ def test_nonstretchy_paren_before_piecewise_stays_plain() -> None:
     assert r"\left(" not in out               # no stretched f-paren
     assert "f(x)" in out.replace(" ", "")
     assert r"\left\{" in out                   # piecewise brace still stretchy
+
+
+def test_content_mathml_fraction_of_a_sum() -> None:
+    fragment: str = (
+        "<apply><eq/><apply><divide/><apply><plus/><cn>6.8</cn><cn>7.2</cn></apply><cn>2</cn></apply>"
+        "<cn>7</cn></apply>"
+    )
+    assert _latex(fragment) == r"\frac{6.8 + 7.2}{2} = 7"
+
+
+def test_content_mathml_conjugate_is_an_overline() -> None:
+    assert _latex("<apply><conjugate/><ci>x</ci></apply>") == r"\overline{x}"
+
+
+def test_content_mathml_sum_of_a_power_of_a_named_quantity() -> None:
+    fragment: str = "<apply><sum/><apply><power/><ci>residual</ci><cn>2</cn></apply></apply>"
+    assert _latex(fragment) == r"\sum {\mathrm{residual}}^{2}"
+
+
+def test_content_mathml_groups_a_sum_inside_a_product() -> None:
+    fragment: str = "<apply><times/><cn>2</cn><apply><minus/><ci>a</ci><ci>b</ci></apply></apply>"
+    assert _latex(fragment) == r"2 \cdot \left(a - b\right)"
+
+
+def test_content_mathml_relation_in_the_older_reln_form() -> None:
+    assert _latex("<reln><lt/><ci>p</ci><cn>0.05</cn></reln>") == "p < 0.05"
+
+
+def test_content_mathml_bare_identifier_is_kept() -> None:
+    # Psychology 2e sets a scrambled word this way; it used to vanish from the book.
+    assert _latex("<ci>AETPL</ci>") == r"\mathrm{AETPL}"
+
+
+def test_content_mathml_infinity() -> None:
+    assert _latex("<reln><lt/><ci>x</ci><infinity/></reln>") == r"x < \infty"

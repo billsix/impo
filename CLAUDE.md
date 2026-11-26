@@ -90,6 +90,15 @@ folder. Two book families exist, plus the `study/` family of material built from
     `build-after-sync.sh <log dir> <book> …` re-applies the overlay and runs `make convert` then `make dist`,
     three books at a time, with a PASS/FAIL line per step; `sync-pin-docs.py` makes each book's `CLAUDE.md`
     name the pin its `fetch.sh` carries. Book names are given without the `osbooks-` prefix.
+  - `add-book.sh <name> "<Title>"` — creates a new `openstax/osbooks-<name>/` folder from
+    `tools/book-template/`, pinned at the upstream head (the steps are "Adding a book" in `openstax/CLAUDE.md`).
+  - `survey-upstream-books.py` — lists every public `osbooks*` repository of the `openstax` organisation on
+    GitHub with its books, language, licence, size, whether impo builds it, whether the maintainer's mirror
+    exists, and whether he has rejected it (decisions and reasons: `tools/upstream-books-rejected.txt`). A
+    book impo builds whose upstream has vanished gets a row marked "gone", with where its source is still
+    held and the action needed (`tools/upstream-books-gone.txt` records what the tool cannot check).
+    Its output is the table in `tasks/reference/openstax/upstream-book-repositories.md` (54 repositories, 88
+    books on 2026-11-26; impo builds 15 of them plus the vanished algebra-1).
   - `build-web-editions.sh` — a fan-out that re-applies the toolchain overlay and runs `make html &&
     make epub` across all 16 OpenStax books, logging PASS/FAIL per book (`bash tools/build-web-editions.sh
     [book-slug]`).
