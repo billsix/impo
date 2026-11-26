@@ -159,12 +159,18 @@ headless browser (read before touching osbook-web.css/.js).
 
 ## Adding a book
 
-1. `mkdir openstax/osbooks-<subject>`; write `fetch.sh` with the upstream URL + the pin (the
-   merge-base where the maintainer's `latex` branch diverged from OpenStax's `main`).
-2. `apply.sh` overlays `../tooling/`; `Makefile`/`README`/`CLAUDE.md` from the anatomy-physiology
-   template.
-3. `make dist` to build; if the book has `os-embed` exercises, `make fetch-exercises` once and commit
-   `exercises/` **with its COPYRIGHT NOTICE**.
+1. `bash tools/add-book.sh <name> "<Title>"` (from the repo root; `<name>` without the `osbooks-`
+   prefix). It creates `openstax/osbooks-<name>/` from `tools/book-template/`: `fetch.sh` pinned at the
+   upstream default-branch head with the mirror fallback, `apply.sh`, `Makefile`, `README.md`,
+   `CLAUDE.md`, `.gitignore`. Change a template, not a generated folder, when the pattern changes.
+2. In the new folder: `./fetch.sh && ./apply.sh`, then `make convert` and `make dist`. Count the embedded
+   exercise links in the CNXML in **both** schemes (`#exercise/<nickname>`, `#ost/api/ex/<id>`); if there
+   are any, the maintainer runs `make fetch-exercises` (it identifies itself with his contact address) and
+   `exercises/` is committed **with its COPYRIGHT NOTICE**.
+3. Record the book: "The books this folder builds" in its `CLAUDE.md`, the list below, the inventory and
+   its licence table (`tasks/reference/openstax/book-inventory.md`), and refresh the survey
+   (`python3 tools/survey-upstream-books.py`).
+4. The maintainer adds it to his public backups (`tools/mirror-upstreams.sh push <name>`).
 
 ## Books
 
