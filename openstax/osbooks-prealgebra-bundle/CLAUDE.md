@@ -27,6 +27,14 @@ content the port was made against), from the survey table in
 `https://github.com/openstax/osbooks-prealgebra-bundle`. Fallback mirror if GitHub is
 unreachable: `pi@192.168.0.186:/mnt/usbdrive2/gitRepos/openstax/**/osbooks-prealgebra-bundle.git`.
 
+## The books this folder builds (verified by the 2026-11-26 build)
+
+Four collections, each built as PDF, EPUB and HTML: `prealgebra-2e` (75 modules),
+`elementary-algebra-2e` (82), `intermediate-algebra-2e` (83) and
+`healthcare-foundations` (30). Healthcare Foundations is new at the 2026-11 pin; the
+maintainer decided on 2026-11-26 to keep it, built and published with the other
+three. `study/` is generated from `prealgebra-2e` only.
+
 ## This book (from the survey; build-time facts pending)
 
 - **Delta size:** 48 port-branch files; **small download cache**

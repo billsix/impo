@@ -28,7 +28,7 @@ Already current, untouched: astronomy, contemporary-mathematics, introduction-py
 4. **algebra-1 was taken out of the sync** and given its own task; the maintainer wanted a backup plan decided later, on his home network.
 5. **Every pin must stay fetchable without the upstream, and what a sync cannot resolve gets a task.** Decided after the algebra-1 finding; written into `CLAUDE.md` ("Contracts"). The backup is a public mirror per book on the maintainer's GitHub account, for all sixteen books.
 6. **The checkouts were updated in place** (the agent's choice during the work), not deleted and refetched as the plan first said: four checkouts turned out to hold content with no git history, and an in-place update kept the earlier outputs until new ones replaced them. Its cost was the stale AP Biology outputs noted below.
-7. **After the builds:** Healthcare Foundations is kept and published with its bundle, the old AP Biology address is left to disappear at the next publish, and the stale old-named AP Biology outputs were deleted. These are recorded in `tasks/openstax-biology-ap-rename-and-healthcare-foundations.md`.
+7. **After the builds:** Healthcare Foundations is kept and published with its bundle, the old AP Biology address is left to disappear at the next publish, and the stale old-named AP Biology outputs were deleted. These are recorded in `tasks/archive/impo/2026/11/26/openstax-biology-ap-rename-and-healthcare-foundations.md`.
 
 ## How
 
@@ -41,7 +41,7 @@ Already current, untouched: astronomy, contemporary-mathematics, introduction-py
 
 - **prealgebra-bundle gained a fourth book, Healthcare Foundations** (`healthcare-foundations.collection.xml`, 30 modules). It converts and builds in all three formats without any change to impo. This explains the 146 changed media files the recon counted.
 - **Biology for AP Courses was renamed** from `biology-ap-courses` to `biology-ap-courses-2e`. The book builds under the new name. The October outputs under the old name had stayed in `openstax/osbooks-biology-bundle/checkout/` (`latex/biology-ap-courses.tex`, `output/biology-ap-courses/`, `output/biology-ap-courses.epub`), because the checkout was updated in place; they were deleted the same day with the maintainer's approval.
-- Both were followed up in `tasks/openstax-biology-ap-rename-and-healthcare-foundations.md`.
+- Both were followed up in `tasks/archive/impo/2026/11/26/openstax-biology-ap-rename-and-healthcare-foundations.md`.
 
 ## study/
 

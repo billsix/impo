@@ -165,11 +165,12 @@ shared-toolchain contract.
 - `osbooks-introduction-python-programming/` — Introduction to Python Programming
 - `osbooks-writing-guide/` — Writing Guide
 - `osbooks-physics/` — Physics
-- `osbooks-biology-bundle/` — Biology (3 volumes)
+- `osbooks-biology-bundle/` — Biology (3 books: `biology-2e`, `biology-ap-courses-2e`, `concepts-biology`)
 - `osbooks-chemistry-bundle/` — Chemistry
 - `osbooks-calculus-bundle/` — Calculus (Times + navy theme)
 - `osbooks-college-algebra-bundle/` — College Algebra
-- `osbooks-prealgebra-bundle/` — Prealgebra
+- `osbooks-prealgebra-bundle/` — Prealgebra (4 books: `prealgebra-2e`, `elementary-algebra-2e`,
+  `intermediate-algebra-2e`, `healthcare-foundations`)
 - `osbooks-university-physics-bundle/` — University Physics
 - `osbooks-microbiology/` — Microbiology
 - `osbooks-psychology/` — Psychology

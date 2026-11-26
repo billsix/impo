@@ -43,6 +43,9 @@ confirmed on each book's first build.
 - `osbooks-biology-bundle/` — **committed exercise cache** (2337 JSON + 359 images) with `COPYRIGHT`, across
   all 3 volumes. Like physics, it uses the **`#ost/api/ex/<id>`** scheme (fetched by tag), so it too was wrongly
   read as "0 exercises" before the 2026-09-03 converter fix. (Its `\unicode[…]{x…}` Greek in exercise math also
-  drove a converter fix — see `tasks/reference/tooling/converters.md`.)
-</content>
-</invoke>
+  drove a converter fix — see `tasks/reference/tooling/converters.md`.) The three books are `biology-2e`,
+  `biology-ap-courses-2e` (renamed upstream from `biology-ap-courses` at the 2026-11 pin) and
+  `concepts-biology`; only the AP book embeds exercises: 2350 referenced, 13 not in the cache (four in
+  `apbio-ch06`, nine in `apbio-ch10`), unchanged by the rename. Detail: `openstax/osbooks-biology-bundle/CLAUDE.md`.
+- `osbooks-prealgebra-bundle/` — four books since the 2026-11 pin: `prealgebra-2e`, `elementary-algebra-2e`,
+  `intermediate-algebra-2e` and the new `healthcare-foundations` (30 modules), all built 2026-11-26.
