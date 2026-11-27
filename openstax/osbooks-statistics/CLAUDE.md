@@ -28,7 +28,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 One collection, `statistics` (OpenStax *Statistics*): 101 modules in 13 chapters, from
 "Sampling and Data" to "F Distribution and One-way Anova"; one level of nesting. Built as
-PDF (1,042 pages), EPUB and HTML on 2026-11-26, the day it was added.
+PDF (1,048 pages), EPUB and HTML on 2026-11-26, the day it was added.
 
 - **Licence:** CC BY 4.0 (collection XML and upstream `LICENSE`).
 - **Exercises:** none embedded (no `os-embed` links in either scheme), so there is no

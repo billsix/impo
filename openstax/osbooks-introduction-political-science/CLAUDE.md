@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `introduction-political-science` (OpenStax *Introduction to Political Science*): 107 modules in 16 chapters grouped into 5 units; two levels of nesting. Built as PDF (763 pages), EPUB and HTML
+One collection, `introduction-political-science` (OpenStax *Introduction to Political Science*): 107 modules in 16 chapters grouped into 5 units; two levels of nesting. Built as PDF (774 pages), EPUB and HTML
 (23 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).

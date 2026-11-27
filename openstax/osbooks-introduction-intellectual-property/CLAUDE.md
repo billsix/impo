@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `introduction-intellectual-property` (OpenStax *Introduction to Intellectual Property*): 54 modules in 5 chapters; one level of nesting. Built as PDF (232 pages), EPUB and HTML
+One collection, `introduction-intellectual-property` (OpenStax *Introduction to Intellectual Property*): 54 modules in 5 chapters; one level of nesting. Built as PDF (233 pages), EPUB and HTML
 (61 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY 4.0 (collection XML and upstream `LICENSE`).

@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `lifespan-development` (OpenStax *Lifespan Development*): 100 modules in 17 chapters; one level of nesting. Built as PDF (1,430 pages), EPUB and HTML
+One collection, `lifespan-development` (OpenStax *Lifespan Development*): 100 modules in 17 chapters; one level of nesting. Built as PDF (1,454 pages), EPUB and HTML
 (119 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).

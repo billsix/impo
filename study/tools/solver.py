@@ -134,6 +134,7 @@ def clean(tex: str) -> str:
     text = re.sub(r"\\(?:emph|textit|textbf|mathit|mathrm|text)\{([^{}]*)\}", r"\1", text)
     text = re.sub(r"\\[,;!:]|\\left|\\right|\\displaystyle|\\phantom\{[^}]*\}", "", text)
     text = text.replace("\\%", "/100").replace("\\le ", "\\leq ").replace("\\ge ", "\\geq ")
+    text = re.sub(r"\\hyperref\[[^\]]*\]\{([^{}]*)\}", r"\1", text)  # a worded link: its words
     text = re.sub(r"\\(?:label|cref|ref)\{[^}]*\}", "", text)
     while re.search(r"\d,\d{3}(?!\d)", text):  # 30,000,000 -> 30000000
         text = re.sub(r"(\d),(\d{3})(?!\d)", r"\1\2", text)

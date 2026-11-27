@@ -176,8 +176,8 @@ table of numbers. A table whose cells hold sentences was thousands of points wid
   wrapped in one piece; 6,919 keep their natural width. The nursing bundle has 657 wrapped tables, Life, Liberty,
   and the Pursuit of Happiness 180, the Biology bundle 168, Writing Guide 95.
 - **Page counts rose** where tables had been shrunk: Pharmacology for Nurses 1,267 to 1,568, Nutrition for Nurses
-  537 to 622, Population Health for Nurses 1,400 to 1,653. A page count recorded in a book's `CLAUDE.md` or in the
-  inventory before this date is from before the change.
+  537 to 622, Population Health for Nurses 1,400 to 1,653. The page counts recorded in the books' `CLAUDE.md` files and
+  the inventory were re-read from the rebuilt PDFs the same day.
 - **Still too wide:** a `p` column cannot break a long unbroken word or an image wider than its share, so logs
   still list some boxes more than 100 pt too wide (Population Health for Nurses 8, down from 20; Writing Guide 39
   and College Physics 38, which were not measured before). Nobody has read every wrapped table in the PDFs.

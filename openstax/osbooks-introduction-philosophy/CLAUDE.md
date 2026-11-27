@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `introduction-philosophy-2e` (OpenStax *Introduction to Philosophy 2e*): 66 modules in 12 chapters; one level of nesting. Built as PDF (521 pages), EPUB and HTML
+One collection, `introduction-philosophy-2e` (OpenStax *Introduction to Philosophy 2e*): 66 modules in 12 chapters; one level of nesting. Built as PDF (531 pages), EPUB and HTML
 (80 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).

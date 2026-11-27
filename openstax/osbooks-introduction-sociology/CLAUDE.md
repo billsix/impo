@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `introduction-sociology-3e` (OpenStax *Introduction to Sociology 3e*): 96 modules in 21 chapters; one level of nesting. Built as PDF (828 pages), EPUB and HTML
+One collection, `introduction-sociology-3e` (OpenStax *Introduction to Sociology 3e*): 96 modules in 21 chapters; one level of nesting. Built as PDF (833 pages), EPUB and HTML
 (119 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
