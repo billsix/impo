@@ -1,0 +1,377 @@
+{
+ "images": [
+  {
+   "created_at": "2025-05-29T23:43:59.946Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBallEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6e6285778df121395319ac71063cdd3a3dca05cb",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBallEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6e6285778df121395319ac71063cdd3a3dca05cb/960a597e432ee1af95e4dca7c93b1bfc8779a084b037403c739962a9cfe19591.png"
+  },
+  {
+   "created_at": "2025-05-29T23:43:59.950Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamNEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--29e81766798d2535a03b1a4763d1647d3fad22d1",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamNEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--29e81766798d2535a03b1a4763d1647d3fad22d1/ff25e1f2dfee1606b09baca6aca799f3e6323c1fcdd0d7481e3535719b6c0be7.png"
+  }
+ ],
+ "tags": [
+  "book:stax-apush",
+  "hts:5",
+  "hts:4",
+  "rp:3",
+  "context-cnxmod:b0ef303f-ec01-4d75-8f82-7d8c081160d5",
+  "context-cnxmod:144e093f-2c16-4968-895a-620c9c21da9f",
+  "assignment-type:homework",
+  "blooms:4",
+  "time:medium"
+ ],
+ "uuid": "dfcfe7a9-1d47-4d1a-9699-1227f96120e9",
+ "group_uuid": "eb1d13a7-05b9-4798-a869-cd58c5b7abee",
+ "number": 18121,
+ "version": 10,
+ "uid": "18121@10",
+ "published_at": "2025-05-29T23:43:59.954Z",
+ "nickname": "Ch06-CI-Intro-AP03",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<figure>\n<img id=\"Figure6_11\" src=\"exercises/media/c9b631d3e1c5ae98.png\" alt=\"Painting of a group of pioneers and their train of covered wagons are pictured at the continental divide, looking towards the sunset and the Pacific Ocean. The border depicts vignettes of exploration and frontier mythology. Beneath the central composition is a panoramic view of their destination “Golden Gate,” in San Francisco Bay.\">\n<figcaption><i>Westward Ho</i> by Emanuel Leutze, 1861.</figcaption>\n</figure>\n<figure>\n<img id=\"Figure6_12\" src=\"exercises/media/374c5315f44367e5.png\" alt=\"A painting representing western expansion. A woman in the center is shown to move from the light-skied east to the dark and treacherous west, leading white settlers who follow her either on foot or by stagecoach, horseback, Conestoga wagon, wagon train, or riding steam trains. She lays a telegraph wire with one hand and carries a school book in the other. As she moves westward, indigenous people and a herd of buffalo are seen fleeing her and the settlers.\">\n<figcaption><i>American Progress</i> by John Gast, 1873.</figcaption>\n</figure>\n<p><i>Refer to the images provided.</i></p>",
+ "questions": [
+  {
+   "id": 615293,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The paintings reflect the sentiments of what American idea?",
+   "answers": [
+    {
+     "id": 1169144,
+     "content_html": "Overseas expansion"
+    },
+    {
+     "id": 1169143,
+     "content_html": "Jacksonian democracy"
+    },
+    {
+     "id": 1169145,
+     "content_html": "Manifest Destiny"
+    },
+    {
+     "id": 1169142,
+     "content_html": "Nullification"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 615294,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The sentiments expressed in the paintings share common values with which group?",
+   "answers": [
+    {
+     "id": 1169148,
+     "content_html": "Camp meeting speakers of the Second Great Awakening"
+    },
+    {
+     "id": 1169147,
+     "content_html": "Members of the Sons of Liberty in the late Colonial Era"
+    },
+    {
+     "id": 1169149,
+     "content_html": "British colonists who opposed the Royal Proclamation of 1763"
+    },
+    {
+     "id": 1169146,
+     "content_html": "Anti-Masonic Movement"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}
