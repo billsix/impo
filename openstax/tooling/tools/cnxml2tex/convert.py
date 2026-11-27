@@ -1526,10 +1526,16 @@ def inline_element(node: _Element, labels: set[str]) -> str:
             if body:
                 return r"\href{%s}{%s}" % (url.replace("%", r"\%"), body)
             return r"\url{%s}" % url.replace("%", r"\%")
-        if tgt:
-            return r"\cref{%s}" % link_label(tgt, doc)
-        if doc:  # whole-module reference
-            return r"\cref{mod:%s}" % doc
+        if tgt or doc:
+            # doc alone is a reference to a whole module
+            target: str = link_label(tgt, doc) if tgt else "mod:%s" % doc
+            # A link with words of its own ("the <link>Electoral College</link>")
+            # keeps them and points at its target; an empty one is replaced by
+            # the target's kind and number ("Figure 3.2").
+            words: str = inline(node, labels).strip()
+            if words:
+                return r"\hyperref[%s]{%s}" % (target, words)
+            return r"\cref{%s}" % target
         return inline(node, labels)
     if tag == "sub":
         return r"\textsubscript{%s}" % inline(node, labels)
@@ -2546,7 +2552,11 @@ def render_exercise(node: _Element, labels: set[str], depth: int) -> str:
     global _IN_EXERCISE
     prob: _Element | None = node.find(C + "problem")
     sols: list[_Element] = node.findall(C + "solution")
-    out: list[str] = ["\\begin{exercise}"]
+    # An exercise that something points at ("the experiment in Exercise 3")
+    # carries a label; \begin{exercise} has just stepped its counter.
+    out: list[str] = [
+        "\\begin{exercise}" + (opt_label(node) if node.get("id") in labels else "")
+    ]
     prev: bool = _IN_EXERCISE
     _IN_EXERCISE = True
     if prob is not None:

@@ -183,6 +183,30 @@ def test_paragraph_of_only_line_breaks_leaves_no_line_break() -> None:
     assert "\\\\" not in c.cleanup_latex("x\n\\\\  \\\\  \\\\\ny")
 
 
+def test_referenced_exercise_carries_a_label() -> None:
+    node: etree._Element = _content(
+        '<exercise id="ex-1"><problem><para>Why?</para></problem></exercise>'
+    )
+    assert "\\begin{exercise}\\label{" in c.flow(node, {"ex-1"})
+    assert "\\label" not in c.flow(node, set())
+
+
+def test_link_with_words_keeps_them() -> None:
+    node: etree._Element = _content(
+        '<para>See <link target-id="fig-1">the map</link> and <link target-id="fig-1"/>.</para>'
+    )
+    rendered: str = c.flow(node, {"fig-1"})
+    assert "\\hyperref[" in rendered and "]{the map}" in rendered
+    assert rendered.count("\\cref{") == 1
+
+
+def test_link_to_a_module_with_words_keeps_them() -> None:
+    node: etree._Element = _content(
+        '<para>The <link document="m123">Electoral College</link> meets.</para>'
+    )
+    assert c.flow(node, set()) == "\nThe \\hyperref[mod:m123]{Electoral College} meets.\n"
+
+
 def test_quote_inside_a_sentence_stays_inline() -> None:
     node: etree._Element = _content("<para>He said <quote>no</quote>.</para>")
     assert c.flow(node, set()) == "\nHe said ``no''.\n"

@@ -10,9 +10,10 @@ converter itself), and `openstax/CLAUDE.md`.
 
 OpenStax CNXML marks a real cross-reference as `<link target-id="…" [document="…"]>`. The pipeline:
 
-1. **Converter** (`tools/cnxml2tex/convert.py`): a `<link target-id>` → `\cref{<module-scoped label>}` (see
-   `link_label()` / `_ALL_TARGETS`, and the inline-link handler ~line 1440). The target's `\label` is emitted on
-   the figure/section/theorem/etc.
+1. **Converter** (`tools/cnxml2tex/convert.py`): an empty `<link target-id>` → `\cref{<module-scoped label>}` (see
+   `link_label()` / `_ALL_TARGETS`, and the link branch of `inline_element`). The target's `\label` is emitted on
+   the figure/section/theorem/exercise/etc. A link with words of its own becomes `\hyperref[label]{words}` and
+   keeps them in every edition (`converters.md`, "Links with words of their own, and references to exercises").
 2. **PDF**: `cleveref` resolves `\cref{…}` to the numbered, hyperlinked reference ("Figure 3.1", "Equation (3.2)")
    at LaTeX time. Works out of the box.
 3. **HTML**: pandoc does NOT run LaTeX, so `\cref` would be inert — **`tools/pandoc/xref.lua` handles it**: a

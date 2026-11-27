@@ -1,44 +1,33 @@
-# A link to an exercise prints "??" in the PDF: exercises carry no label
+# Links kept their words, and exercises got labels (the "??" in the PDFs)
 
-**Status:** proposed — needs go-ahead
-**Priority:** 5
-**Difficulty:** 4 (a one-line change in the converter; the work is rebuilding 14 book folders and checking the web editions' numbering)
-**Created:** 2026-11-27 (agent, found while adding Introduction to Sociology 3e; `tasks/openstax-add-remaining-english-books.md`)
+**Done 2026-11-27** (agent; found the same day while adding Introduction to Sociology 3e. William Emerison Six <billsix@gmail.com>, 2026-11-27: "for the three defect tasks, make a branch, turn gpg signing off, do the work, commit, archive, commit").
 
-## BLUF
+## What was wrong
 
-Where a module links to an exercise (`<link target-id="…"/>` whose target is an `<exercise>`), the converter writes `\cref{…}` but never writes the matching `\label` on the exercise, so LaTeX prints "??" and warns "Reference … undefined". 1,193 exercises in 14 book folders are pointed at this way. Done means each such exercise carries its label, the PDFs' final logs have no undefined reference from this cause, and the HTML and EPUB show the exercise's number.
+Two things, one behind the other.
 
-## Context
+- **Exercises carried no label.** Where a module pointed at an exercise, the converter wrote `\cref{…}` and no matching `\label`, so the PDF printed "??": 1,193 exercises in 14 book folders, 874 of them in Life, Liberty, and the Pursuit of Happiness. The web editions showed the raw label in brackets.
+- **A link with words of its own lost them.** Looking at what pointed at those 874 exercises showed the larger defect: `<link target-id="…">words</link>` and `<link document="…">words</link>` both became `\cref`, which prints the target's kind and number in place of the author's words. American Government 4e read "Drafted by Thomas Jefferson, the section 5.3.25 officially proclaimed the colonies' separation" for "the Declaration of Independence". 7,157 internal links in 30 book folders carry words. This was not known before; the task as proposed covered only the labels.
 
-**Read first:** `tasks/reference/tooling/cross-references.md` (how references become links in the PDF and, through `tools/pandoc/xref.lua`, in the web editions) and `render_exercise` in `openstax/tooling/tools/cnxml2tex/convert.py`.
+## What was done
 
-### What was measured (2026-11-27)
+- `inline_element` in `openstax/tooling/tools/cnxml2tex/convert.py`: a link with words becomes `\hyperref[label]{words}`; an empty one is still `\cref`. `render_exercise`: an exercise something points at gets its `\label`.
+- `openstax/tooling/tools/pandoc/xref.lua`: the web editions number exercises as the PDF does (from 1 after every heading, the number printed in front), a reference to one reads "Exercise 3", and the filter rewrites a link's text only when pandoc marks the link as a `\cref`, so a worded link keeps its words.
+- Tests in `tools/tests/test_helpers.py` (a referenced exercise, a worded link to an element, a worded link to a module).
 
-The change was tried and taken out again, because it rewrites many books that were not part of the work in hand. In `render_exercise`:
+## Decisions
 
-```python
-out: list[str] = [
-    "\\begin{exercise}" + (opt_label(node) if node.get("id") in labels else "")
-]
-```
+- **The worded-link fix went in with this task** instead of getting its own: it is the same branch of the converter, and it is what most of the "??" in Life, Liberty, and the Pursuit of Happiness needed. Its reach is much wider than the task's title (the agent's call, with the maintainer away).
+- **The web editions now show exercise numbers.** They showed none, so "Exercise 3" would have pointed at nothing a reader could see. The numbering follows the PDF's, which restarts after every heading.
 
-`labels` is the set of ids something points at, so only referenced exercises change. `tools/compare-converter-output.sh` then showed these exercises gaining a label: Life, Liberty, and the Pursuit of Happiness 874, Introductory Statistics bundle 119, Statistics 62, College Physics bundle 35, Chemistry bundle 32, Astronomy 24, University Physics bundle 16, Prealgebra bundle 15, College Algebra bundle 5, Biology bundle 4, Calculus bundle 3, Microbiology 2, Physics 1, Introduction to Sociology 3e 1. `osbook-envs.sty` already has `\crefname{exercise}{Exercise}{Exercises}`, and the `exercise` environment steps its counter with `\refstepcounter`, so the label resolves in the PDF.
+## Result
 
-The one case in Introduction to Sociology 3e: module `m90145`, "What did the Clarks use in their experiment noted in ??".
+All 37 book folders (57 books) were rebuilt in the three formats on 2026-11-27 with this change and the two made on the same branch. Checked in built output: the American Government sentence reads "the Declaration of Independence"; the Sociology question reads "noted in Exercise 1" in the PDF and in the web edition, where the exercises are numbered "1.", "2.".
 
-### Not checked yet
+## Left as it is
 
-- What the web editions do with the new labels: `xref.lua` numbers theorems, figures and equations; whether it gives an exercise its number, and the right one (exercises are numbered per section), has to be looked at in a built page.
-- Life, Liberty, and the Pursuit of Happiness has 874 of the 1,193. What points at its exercises (an answer key, most likely) and whether a number is what the reader should see there.
+About 20 references in 9 books still print "??": they point at ids that get no label for other reasons. Nobody read the 7,157 reworded sentences; a sample of two was read.
 
-## Plan
+## Recorded
 
-- [ ] Put the change above back, with a test (`tools/tests/test_helpers.py`) and the comparison.
-- [ ] Build Introduction to Sociology 3e and Statistics; read the references in the PDF and in the web edition; extend `xref.lua` if an exercise gets no number there.
-- [ ] Look at what Life, Liberty, and the Pursuit of Happiness does with its 874 and decide whether it needs something else.
-- [ ] Rebuild the 14 folders; record the result in `tasks/reference/tooling/cross-references.md`.
-
-## Open questions
-
-None.
+`tasks/reference/tooling/converters.md` ("Links with words of their own, and references to exercises") and `tasks/reference/tooling/cross-references.md` (step 1 of the pipeline).

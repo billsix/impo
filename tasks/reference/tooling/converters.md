@@ -150,6 +150,25 @@ and could not be typeset without this. It also changed Introduction to Python Pr
 such blocks were typeset inline, running into the text around them), one listing in Foundations of
 Information Systems and the wrapping of one line in Introductory Statistics; the other books were identical.
 
+## Links with words of their own, and references to exercises (added 2026-11-27)
+
+- **A link that has words keeps them.** `<link target-id="…">the map</link>` and `<link document="…">Electoral
+  College</link>` became `\cref{…}`, which prints the target's kind and number in place of the author's words:
+  American Government 4e read "Drafted by Thomas Jefferson, the section 5.3.25 officially proclaimed …" for "the
+  Declaration of Independence". 7,157 internal links in 30 book folders carry words (Life, Liberty, and the
+  Pursuit of Happiness 2,581, Organic Chemistry 635, Astronomy 458). Such a link is now
+  `\hyperref[label]{words}`: the words, linked to the target. An empty link is still `\cref`.
+- **An exercise that something points at carries a label** (`render_exercise`). It had none, so the PDF printed
+  "??" for 1,193 exercises in 14 book folders (874 of them in Life, Liberty, and the Pursuit of Happiness, where
+  most are worded links that now show their words).
+- **Web editions** (`tools/pandoc/xref.lua`): exercises are numbered as in the PDF, from 1 after every heading,
+  with the number printed in front, and a reference to one reads "Exercise 3"; until this date the web editions
+  showed no exercise numbers and a reference to one showed its raw label in brackets. The filter rewrites the
+  text of a link only when pandoc marks it as a `\cref` (a `reference-type` attribute), so a worded link keeps
+  its words.
+- **Still undefined:** about 20 references in 9 books point at ids that get no label for other reasons (a figure
+  or table in a place the converter does not label); each prints "??" in the PDF.
+
 ## The 5 historical `convert.py` versions and their deltas
 
 Verified by hashing `latex:tools/cnxml2tex/convert.py` across all 16 repos. 12 books shared one version; four
