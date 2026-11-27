@@ -34,7 +34,6 @@ One collection, `introduction-sociology-3e` (OpenStax *Introduction to Sociology
 - **Figures:** raster only (642 files, 107 MB); no SVG.
 - **Block quotations:** 4, set off as such.
 - **Empty labels:** 437 `<label/>` elements on notes and solutions, which set nothing (`../../tasks/reference/tooling/converters.md`, "Block quotations, reference notes and footnotes in titles").
-- **One dangling reference:** in module `m90145` a question points at another exercise and the PDF prints "??" (`../../tasks/openstax-links-to-exercises-print-question-marks.md`).
 - **Still falling back** (the converter's report): none.
 
 ## Build

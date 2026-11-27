@@ -35,7 +35,6 @@ One collection, `lifespan-development` (OpenStax *Lifespan Development*): 100 mo
   notice), fetched by the maintainer on 2026-11-27, and are in the built book.
 - **Figures:** raster only (450 files, 79 MB); no SVG.
 - **Block quotations:** 6, set off as such.
-- **Characters missing from the PDF:** `ɡ` (two places) and `ɛ` (one), which the body font has no glyph for (`../../tasks/openstax-pdf-characters-missing-from-the-body-font.md`).
 - **Still falling back** (the converter's report): none.
 
 ## Build

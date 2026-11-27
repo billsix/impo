@@ -21,7 +21,7 @@
 
 ## Left as it is
 
-In module `m90145` a quiz question points at another exercise ("the experiment noted in …") and the PDF prints "??" there, because the converter gives exercises no label. The same gap affects 1,193 exercises in 14 book folders, so it has its own task: `tasks/openstax-links-to-exercises-print-question-marks.md`. The converter reports no fallback. The PDF and HTML were not read page by page; that review is the maintainer's.
+In module `m90145` a quiz question points at another exercise ("the experiment noted in …") and the PDF prints "??" there, because the converter gives exercises no label. The same gap affects 1,193 exercises in 14 book folders, so it has its own task: `tasks/archive/impo/2026/11/27/openstax-links-to-exercises-print-question-marks.md`. The converter reports no fallback. The PDF and HTML were not read page by page; that review is the maintainer's.
 
 ## Not done
 

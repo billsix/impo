@@ -279,9 +279,30 @@ _RAW_LATEX_ENV: re.Pattern[str] = re.compile(
 )
 
 
+# Characters a source file holds in the wrong encoding. U+0080..U+009F are
+# Windows-1252 punctuation (a curly quote, a dash) saved as Latin-1 control
+# codes; the two private-use codes are letters of the Symbol font. Each is put
+# right before anything else reads the text, so all three editions get it.
+_MISENCODED: dict[int, str] = {
+    code: bytes([code]).decode("cp1252")
+    for code in range(0x80, 0xA0)
+    if code not in (0x81, 0x8D, 0x8F, 0x90, 0x9D)  # undefined in Windows-1252
+} | {0xF061: "α", 0xF0BE: "—"}
+# UTF-8 punctuation that was read as Windows-1252 and saved again.
+_TWICE_ENCODED: list[tuple[str, str]] = [
+    ("â€œ", "“"),
+    ("â€\x9d", "”"),
+    ("â€™", "’"),
+]
+
+
 def esc_text(s: str | None) -> str:
     if s is None:
         return ""
+    if "â€" in s:
+        for wrong, right in _TWICE_ENCODED:
+            s = s.replace(wrong, right)
+    s = s.translate(_MISENCODED)
     # A few source paras paste raw LaTeX math as plain TEXT (it should be <m:math>
     # MathML). Escaping would print the LaTeX verbatim; instead, detect a complete
     # \begin{env}...\end{env} block and render it as display math -- reinterpreting
@@ -688,6 +709,9 @@ def mtext_to_latex(s: str) -> str:
 
 _SYMBOLS: dict[str, str] | None = None  # combined math-symbol map, built lazily
 _CELL_MODE: bool = False  # True while rendering a tabular cell (LR mode)
+# True while rendering a cell of a table of prose, whose columns wrap: such a
+# cell wraps, so a line break or a list item starts a new line in it.
+_CELL_WRAP: bool = False
 # Sentinel for <mspace linebreak="newline"/> (an author-declared line break in a
 # multi-line derivation). Emitted by mml(), then consumed by the aligned-display
 # promotion (render_math / render_equation); any stray one is scrubbed to a thin
@@ -1526,17 +1550,26 @@ def inline_element(node: _Element, labels: set[str]) -> str:
             if body:
                 return r"\href{%s}{%s}" % (url.replace("%", r"\%"), body)
             return r"\url{%s}" % url.replace("%", r"\%")
-        if tgt:
-            return r"\cref{%s}" % link_label(tgt, doc)
-        if doc:  # whole-module reference
-            return r"\cref{mod:%s}" % doc
+        if tgt or doc:
+            # doc alone is a reference to a whole module
+            target: str = link_label(tgt, doc) if tgt else "mod:%s" % doc
+            # A link with words of its own ("the <link>Electoral College</link>")
+            # keeps them and points at its target; an empty one is replaced by
+            # the target's kind and number ("Figure 3.2").
+            words: str = inline(node, labels).strip()
+            if words:
+                return r"\hyperref[%s]{%s}" % (target, words)
+            return r"\cref{%s}" % target
         return inline(node, labels)
     if tag == "sub":
         return r"\textsubscript{%s}" % inline(node, labels)
     if tag == "sup":
         return r"\textsuperscript{%s}" % inline(node, labels)
     if tag == "newline":
-        return " " if _CELL_MODE else r" \NLBREAK "
+        if _CELL_MODE:
+            # \OScellbreak, not \par: the break may fall inside \textbf{...}
+            return r" \OScellbreak " if _CELL_WRAP else " "
+        return r" \NLBREAK "
     if tag == "footnote":
         # A note's title is typeset as the optional argument of its box, where a
         # \footnote stops LaTeX; there the footnote's text goes in parentheses.
@@ -2340,7 +2373,7 @@ def render_list(node: _Element, labels: set[str], depth: int) -> str:
             else:
                 mark = r"\textbullet{} "
             out.append(mark + b.strip())
-        return " ".join(out)
+        return (r" \OScellbreak " if _CELL_WRAP else " ").join(out)
     lab: str = opt_label(node) if node.get("id") in labels else ""
     if circled:
         # empty optional label ([]) suppresses the bullet/number, keeping only
@@ -2546,7 +2579,11 @@ def render_exercise(node: _Element, labels: set[str], depth: int) -> str:
     global _IN_EXERCISE
     prob: _Element | None = node.find(C + "problem")
     sols: list[_Element] = node.findall(C + "solution")
-    out: list[str] = ["\\begin{exercise}"]
+    # An exercise that something points at ("the experiment in Exercise 3")
+    # carries a label; \begin{exercise} has just stepped its counter.
+    out: list[str] = [
+        "\\begin{exercise}" + (opt_label(node) if node.get("id") in labels else "")
+    ]
     prev: bool = _IN_EXERCISE
     _IN_EXERCISE = True
     if prob is not None:
@@ -2689,6 +2726,86 @@ def render_rule(node: _Element, labels: set[str], depth: int) -> str:
     return "\\begin{mathrule}[{{%s}}]\n%s\n\\end{mathrule}" % (title, body)
 
 
+# Elements a table that breaks across pages (longtable) cannot sit in: a box, a
+# list, a two-column run of exercises, another table.
+_UNBREAKABLE_PARENTS: set[str] = {
+    "note", "example", "exercise", "problem", "solution", "commentary", "list",
+    "item", "entry", "quote", "figure", "rule", "footnote", "caption",
+}
+
+
+def prose_column_shares(tgroup: _Element, ncols: int) -> list[float] | None:
+    """The share of the line each column of a table of prose gets, or None for
+    a table that is set at its natural width.
+
+    A table is one of prose when its widest cells, set side by side without
+    wrapping, would run past the line (more than 90 characters) and one
+    column holds a phrase of more than 40. Mathematics is not counted, so a
+    table of long formulas keeps its natural width. A column's share follows
+    its longest cell, between its longest word and 45 characters.
+
+    >>> from lxml import etree
+    >>> def table(*rows: list[str]) -> etree._Element:
+    ...     cells = "".join(
+    ...         "<row>%s</row>" % "".join("<entry>%s</entry>" % c for c in row) for row in rows
+    ...     )
+    ...     return etree.fromstring(
+    ...         '<tgroup xmlns="http://cnx.rice.edu/cnxml"><tbody>%s</tbody></tgroup>' % cells
+    ...     )
+    >>> prose_column_shares(table(["x", "1.5"], ["y", "2.5"]), 2) is None
+    True
+    >>> shares = prose_column_shares(table(["Oral", "word " * 30]), 2)
+    >>> [round(share, 2) for share in shares]
+    [0.11, 0.82]
+    """
+    if ncols > 7:
+        return None
+    longest: list[int] = [0] * ncols
+    longest_word: list[int] = [0] * ncols
+    rows: list[_Element] = [
+        row
+        for part in ("thead", "tbody", "tfoot")
+        for group in tgroup.findall(C + part)
+        for row in group.findall(C + "row")
+    ]
+    for row in rows:
+        entries: list[_Element] = row.findall(C + "entry")
+        if any(entry.get("namest") for entry in entries):
+            continue  # a cell that spans columns says nothing about one column
+        for index, entry in enumerate(entries[:ncols]):
+            words: list[str] = "".join(
+                text
+                for text in entry.itertext()
+                if not any(
+                    isinstance(ancestor.tag, str) and ancestor.tag.startswith(M)
+                    for ancestor in _text_owners(entry, text)
+                )
+            ).split()
+            longest[index] = max(longest[index], len(" ".join(words)))
+            longest_word[index] = max([longest_word[index]] + [len(word) for word in words])
+    if sum(longest) <= 90 or max(longest) <= 40:
+        return None
+    weights: list[int] = [
+        max(min(length, 45), word + 2, 6) for length, word in zip(longest, longest_word)
+    ]
+    # each column also takes its padding and a rule: about 3% of the line
+    usable: float = 0.99 - 0.03 * ncols
+    return [usable * weight / sum(weights) for weight in weights]
+
+
+def _text_owners(entry: _Element, text: str) -> list[_Element]:
+    """The elements between a table cell and the one that holds `text`
+    (lxml's itertext yields "smart strings" that know their parent)."""
+    owners: list[_Element] = []
+    owner: _Element | None = getattr(text, "getparent", lambda: None)()
+    if owner is not None and getattr(text, "is_tail", False):
+        owner = owner.getparent()  # a tail belongs to the element around it
+    while owner is not None and owner is not entry:
+        owners.append(owner)
+        owner = owner.getparent()
+    return owners
+
+
 def render_table(node: _Element, labels: set[str]) -> str:
     tgroup: _Element | None = node.find(C + "tgroup")
     if tgroup is None:
@@ -2712,6 +2829,11 @@ def render_table(node: _Element, labels: set[str]) -> str:
         aligns.append("l")
     colfmt: str = "".join(aligns[:ncols])
 
+    in_cell: bool = (
+        _CELL_MODE  # a \begin{center} wrapper is illegal inside a table cell
+    )
+    shares: list[float] | None = None if in_cell else prose_column_shares(tgroup, ncols)
+
     def _inline_cell(c: str) -> str:
         # belt-and-suspenders: inline any stray display math, neutralize spacing
         # macros and blank-line paragraph breaks (all illegal in a tabular cell).
@@ -2721,21 +2843,32 @@ def render_table(node: _Element, labels: set[str]) -> str:
             c,
             flags=re.DOTALL,
         )
-        c = re.sub(r"\\(par|smallskip|medskip|bigskip)\b", " ", c)
-        c = re.sub(r"\s*\n\s*\n\s*", " ", c)
+        if shares is None:
+            c = re.sub(r"\\(par|smallskip|medskip|bigskip)\b", " ", c)
+            c = re.sub(r"\s*\n\s*\n\s*", " ", c)
+            return c.strip()
+        # a wrapping cell holds paragraphs: keep the breaks, one at a time,
+        # and none at either end
+        c = re.sub(r"\\(smallskip|medskip|bigskip)\b", " ", c)
+        c = re.sub(r"\s*\n\s*\n\s*", r" \\par ", c)
+        c = re.sub(r"(\s*\\par\b\s*)+", r" \\par ", c).strip()
+        c = re.sub(r"^(\\par\b\s*)+|(\s*\\par)+$", "", c)
         return c.strip()
 
     def render_rows(parent: _Element, header: bool = False) -> str:
-        global _CELL_MODE
+        global _CELL_MODE, _CELL_WRAP
         lines: list[str] = []
         for row in parent.findall(C + "row"):
             prev: bool = _CELL_MODE
+            prev_wrap: bool = _CELL_WRAP
             _CELL_MODE = True
+            _CELL_WRAP = shares is not None
             cells: list[str] = [
                 _inline_cell(inline_block(ent, labels, 0).strip())
                 for ent in row.findall(C + "entry")
             ]
             _CELL_MODE = prev
+            _CELL_WRAP = prev_wrap
             while len(cells) < ncols:  # pad short rows to ncols
                 cells.append("")
             cells = cells[:ncols]  # never exceed colspec
@@ -2744,13 +2877,13 @@ def render_table(node: _Element, labels: set[str]) -> str:
                 lines.append("\\rowcolor{OScolor}" + " & ".join(cells) + r" \\")
             else:
                 lines.append(" & ".join(cells) + r" \\")
-        return "\n".join(lines)
+        # rows of wrapped prose run into each other without a rule between
+        return ("\n\\hline\n" if shares is not None else "\n").join(lines)
 
     thead: _Element | None = tgroup.find(C + "thead")
     tbody: _Element | None = tgroup.find(C + "tbody")
-    in_cell: bool = (
-        _CELL_MODE  # a \begin{center} wrapper is illegal inside a table cell
-    )
+    if shares is not None:
+        return _render_prose_table(node, labels, shares, aligns[:ncols], thead, tbody, render_rows)
     if not in_cell:
         # OpenStax grid: teal rules, teal header row (white bold), bold row labels.
         aa: list[str] = aligns[:ncols]
@@ -2809,6 +2942,69 @@ def render_table(node: _Element, labels: set[str]) -> str:
     if not in_cell:
         out.append("\\end{center}")
     return "\n".join(out)
+
+
+def _render_prose_table(
+    node: _Element,
+    labels: set[str],
+    shares: list[float],
+    aligns: list[str],
+    thead: _Element | None,
+    tbody: _Element | None,
+    render_rows: Callable[..., str],
+) -> str:
+    """A table whose cells hold sentences: every column wraps at its share of
+    the line, at \\small. Standing on its own it is a longtable, which breaks
+    across pages and repeats its header; inside a box, a list or an exercise,
+    where a longtable cannot go, it is a tabular in one piece."""
+    setting: dict[str, str] = {
+        "l": "\\raggedright", "c": "\\centering", "r": "\\raggedleft",
+    }
+    columns: list[str] = [
+        ">{%s%s\\arraybackslash}p{%.3f\\linewidth}"
+        % ("\\bfseries" if index == 0 else "", setting[align], share)
+        for index, (align, share) in enumerate(zip(aligns, shares))
+    ]
+    grid: str = "|" + "|".join(columns) + "|"
+    breakable: bool = not any(
+        local(ancestor.tag) in _UNBREAKABLE_PARENTS for ancestor in node.iterancestors()
+    )
+    env: str = "longtable" if breakable else "tabular"
+    tab: list[str] = ["\\begin{%s}{%s}" % (env, grid), "\\hline"]
+    if thead is not None:
+        tab.append(render_rows(thead, header=True))
+        tab.append("\\hline")
+        if breakable:
+            tab.append("\\endhead")
+    if tbody is not None:
+        tab.append(render_rows(tbody))
+    tab.append("\\hline")
+    tab.append("\\end{%s}" % env)
+    if breakable:
+        # a longtable steps the table counter even without a caption; the
+        # caption below (or nothing, for an unnumbered table) is what counts
+        tab.append("\\addtocounter{table}{-1}")
+    body: str = re.sub(r"\n[ \t]*\n", "\n", "\n".join(tab))
+    table: str = (
+        "{\\small\\setlength{\\tabcolsep}{4pt}\\arrayrulecolor{OScolor}%\n" + body + "}"
+    )
+    caption: str = ""
+    eid: str | None = node.get("id")
+    if eid in labels:
+        title_el: _Element | None = node.find(C + "title")
+        cap: str = ""
+        if title_el is not None:
+            cap = re.sub(
+                r"\s+", " ", inline(title_el, labels).replace("\\NLBREAK", " ")
+            ).strip()
+            cap = _defootnote(cap)
+        capcmd: str = (
+            "\\captionof{table}{%s}" % cap if cap else "\\OSnumonlycaption{table}"
+        )
+        caption = "%s\\label{%s}" % (capcmd, mklabel(eid))
+    if breakable:
+        return table + ("\n\\begin{center}\n%s\n\\end{center}" % caption if caption else "")
+    return "\\begin{center}\n%s%s\n\\end{center}" % (table, "\n" + caption if caption else "")
 
 
 # --------------------------------------------------------------------------

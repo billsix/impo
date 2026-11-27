@@ -21,7 +21,7 @@ Nothing: it converted and built in one pass.
 
 ## Left as it is
 
-The PDF leaves out two characters the body font has no glyph for, `ɡ` (two places, for a plain g) and `ɛ` (once, in "APOE ɛ4"); the HTML and EPUB have them. Every book impo builds has this gap, so it has its own task: `tasks/openstax-pdf-characters-missing-from-the-body-font.md`. The converter reports no fallback. The PDF and HTML were not read page by page; that review is the maintainer's.
+The PDF leaves out two characters the body font has no glyph for, `ɡ` (two places, for a plain g) and `ɛ` (once, in "APOE ɛ4"); the HTML and EPUB have them. Every book impo builds has this gap, so it has its own task: `tasks/archive/impo/2026/11/27/openstax-pdf-characters-missing-from-the-body-font.md`. The converter reports no fallback. The PDF and HTML were not read page by page; that review is the maintainer's.
 
 ## Not done
 

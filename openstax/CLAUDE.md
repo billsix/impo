@@ -131,6 +131,9 @@ Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothi
   backward-compatible) `\setOSbooklicense`/`\setOSbookdedication`/`\setOSbookpublisher` — defaults
   reproduce the OpenStax CC BY-NC-SA 4.0 page, so books that don't call them are unchanged; the
   sibling `trench/` family overrides them for a CC BY-NC-SA 3.0 book.
+- **Since 2026-11-27 the class also holds** the fallback font chain for characters the body font lacks, and
+  loads `longtable` for tables of prose, which wrap and break across pages (`tasks/reference/tooling/converters.md`,
+  "Characters no font has" and "Tables of prose").
 - **Per-book theme override (optional):** a book may ship `bookstyle.tex` (PDF font/palette, loaded by
   `osbook.cls` via `\InputIfFileExists{osbook-bookstyle.tex}`) and/or `bookstyle-web.css` (HTML/EPUB, appended to
   `osbook-web.css` so its `:root` wins); `apply.sh` copies both into the checkout. Default is Roboto-Slab + teal;

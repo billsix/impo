@@ -50,6 +50,15 @@ for stem in "${targets[@]}"; do
     echo "=== Building ${stem}.pdf ==="
     latexmk -pdflua -interaction=nonstopmode -halt-on-error \
         -output-directory=../output "${stem}.tex"
+    # LuaTeX prints nothing for a character no font has and says so only in the
+    # log. Report the distinct ones, so a hole in the PDF is seen at build time.
+    missing="$(grep -a -o 'Missing character: There is no .* (U+[0-9A-F]*)' "../output/${stem}.log" |
+        grep -o 'U+[0-9A-F]*' | sort -u | tr '\n' ' ' || true)"
+    if [ -n "$missing" ]; then
+        echo "WARNING: ${stem}.pdf leaves out characters no font has: $missing"
+    else
+        echo "${stem}.pdf: no character is missing from the fonts."
+    fi
 done
 
 echo "PDFs are in $PROJ/output:"

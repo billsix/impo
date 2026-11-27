@@ -9,7 +9,10 @@
 --   * pulls each \label{} out of the div/figure/equation and onto its HTML id,
 --     so cross-references land on a real target;
 --   * titles the objectives/key-concepts/key-equations/project boxes;
---   * rewrites \cref links to read "Theorem 3.2" / "Figure 3.1" / "Equation (3.2)".
+--   * numbers exercises as the PDF does: from 1 after every heading, the number
+--     printed in front ("3.") and recorded as "Exercise 3" for references;
+--   * rewrites \cref links to read "Theorem 3.2" / "Figure 3.1" / "Equation (3.2)",
+--     and leaves a link that has words of its own (\hyperref[x]{the map}) alone.
 
 local NAMED = {            -- numbered, sharing the per-chapter item counter
   theorem = "Theorem", corollary = "Corollary", lemma = "Lemma",
@@ -23,6 +26,7 @@ local TITLED = {           -- titled, not numbered
 }
 
 local chapter, item, fig, eq = 0, 0, 0, 0
+local exercise = 0         -- restarts at every heading (\setcounter{exercise}{0})
 local labels = {}          -- label-id -> "Theorem 3.2" / "Figure 3.1" / ...
 
 -- pandoc renders \label{x} as an (empty) Span with a `label` attribute and
@@ -56,6 +60,7 @@ local function Header(h)
     chapter = chapter + 1
     item, fig, eq = 0, 0, 0
   end
+  exercise = 0
   return h
 end
 
@@ -80,13 +85,17 @@ local function Div(d)
 
   local cls
   for _, c in ipairs(d.classes) do
-    if NAMED[c] or TITLED[c] or c == "calcfig" then cls = c break end
+    if NAMED[c] or TITLED[c] or c == "calcfig" or c == "exercise" then cls = c break end
   end
   if not cls then return d end
 
   local id = find_label_id(d)
 
-  if NAMED[cls] then
+  if cls == "exercise" then
+    exercise = exercise + 1
+    prepend_head(d, exercise .. ".")
+    if id then labels[id] = "Exercise " .. exercise end
+  elseif NAMED[cls] then
     item = item + 1
     local num = chapter .. "." .. item
     prepend_head(d, NAMED[cls] .. " " .. num .. ".")
@@ -129,10 +138,12 @@ local function Para(p)
   return pandoc.Div({ pandoc.Para({ m }) }, pandoc.Attr(id, { "equation" }))
 end
 
--- second pass: rewrite \cref links to the target's number
+-- second pass: rewrite \cref links to the target's number. pandoc marks a
+-- \cref link with a reference-type attribute; a link with words of its own
+-- (\hyperref[x]{the map}) has none and keeps its words.
 local function Link(l)
   local tgt = l.target:gsub("^#", "")
-  if labels[tgt] then
+  if labels[tgt] and l.attributes["reference-type"] then
     return pandoc.Link(pandoc.Str(labels[tgt]), l.target, l.title, l.attr)
   end
   return l

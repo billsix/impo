@@ -150,6 +150,85 @@ and could not be typeset without this. It also changed Introduction to Python Pr
 such blocks were typeset inline, running into the text around them), one listing in Foundations of
 Information Systems and the wrapping of one line in Introductory Statistics; the other books were identical.
 
+## Tables of prose (added 2026-11-27, with the nursing books)
+
+A table column is set as `l`, which never wraps, and a table wider than the line is scaled down to it
+(`\resizebox`; a table holding a link, which cannot go through `\resizebox`, is set smaller instead). That suits a
+table of numbers. A table whose cells hold sentences was thousands of points wide: scaled, it could not be read
+(Table 7.12 of Population Health for Nurses was a hairline), and with a link in it, it ran off the page.
+
+- **Which tables wrap** (`prose_column_shares`): one whose widest cells, side by side and unwrapped, come to more
+  than 90 characters, with a phrase of more than 40 in some column. Mathematics is not counted, so a table of
+  long formulas keeps its natural width; neither is a table of more than seven columns. Every other table is set
+  exactly as before.
+- **How** (`_render_prose_table`): each column is a ragged-right `p{…}` column whose share of the line follows its
+  longest cell, between its longest word and 45 characters; the type is `\small`, and a rule separates the rows.
+  Standing on its own the table is a `longtable`, which breaks across pages and repeats its header row. Inside a
+  note, an example, an exercise, a list or another table, where a `longtable` cannot go, it is a `tabular` in one
+  piece. The caption and number stay below the table, and `\addtocounter{table}{-1}` undoes the step a
+  `longtable` gives the table counter by itself.
+- **Line breaks in a wrapping cell:** a `<newline/>` or a list item starts a new line with `\OScellbreak`
+  (`osbook.cls`), which is safe inside `\textbf{…}` and at the start of a cell; `\par` there stopped LaTeX. For
+  the web editions `tools/pandoc/preprocess.py` turns it into `\newline`.
+- **Web editions:** pandoc reads `longtable` and the `p{…}` widths, so the HTML and EPUB tables now carry column
+  widths in the same proportions.
+- **Counts on 2026-11-27, in the section files of the 37 book folders:** 1,863 tables are `longtable`s and 968 are
+  wrapped in one piece; 6,919 keep their natural width. The nursing bundle has 657 wrapped tables, Life, Liberty,
+  and the Pursuit of Happiness 180, the Biology bundle 168, Writing Guide 95.
+- **Page counts rose** where tables had been shrunk: Pharmacology for Nurses 1,267 to 1,568, Nutrition for Nurses
+  537 to 622, Population Health for Nurses 1,400 to 1,653. A page count recorded in a book's `CLAUDE.md` or in the
+  inventory before this date is from before the change.
+- **Still too wide:** a `p` column cannot break a long unbroken word or an image wider than its share, so logs
+  still list some boxes more than 100 pt too wide (Population Health for Nurses 8, down from 20; Writing Guide 39
+  and College Physics 38, which were not measured before). Nobody has read every wrapped table in the PDFs.
+
+## Characters no font has (added 2026-11-27)
+
+LuaTeX prints nothing for a character the font in use has no glyph for and says so only in the log ("Missing
+character: There is no ⅓ (U+2153) in font …"). On 2026-11-27 the logs of the built books held 7,323 such lines
+in 27 books; after the three changes below a rebuild of all 57 books left 7 lines, one character in one book.
+
+- **A fallback font chain** (`osbook.cls`): `luaotfload.add_fallback("osfallback", …)` names FreeSerif, STIX Two
+  Math, TeX Gyre DejaVu Math and Libertinus Serif, all in the image already, and the body and heading fonts are
+  loaded with `RawFeature={fallback=osfallback}`. It covers letters with marks and phonetic letters (the Arabic,
+  Sanskrit and Chinese names of Introduction to Philosophy 2e), arrows and operators met in prose (`ℏ` alone was
+  1,030 lines), fractions and subscript digits, and box-drawing characters. A book-style that re-sets
+  `\setmainfont` passes the same feature (`osbooks-calculus-bundle/bookstyle.tex` does). The chain was chosen by
+  setting every missing character in a test document and reading its log.
+- **Five pictographs no font in the image has** (`🔎 📝 📍 📖 📎`, which mark the kind of a resource in the titles
+  of Life, Liberty, and the Pursuit of Happiness) print as the nearest symbol the fallback fonts do have
+  (`⌕ ✎ ⚑ ☰ ❖`), through `\newunicodechar` lines in `osbook.cls`. The HTML and EPUB keep the pictograph.
+  Installing an emoji font in the image would print the real ones; that is a change to what the image ships
+  and was not made.
+- **Mis-encoded characters are repaired in the converter** (`_MISENCODED` and `_TWICE_ENCODED`, applied by
+  `esc_text`), so all three editions get the right character: U+0080 to U+009F are Windows-1252 punctuation
+  saved as Latin-1 control codes (about 980 curly quotes and dashes in Statistics, Biology, Physics, U.S.
+  History and College Physics); `â€œ`, `â€` followed by U+009D, and `â€™` are quotation marks encoded twice
+  (5 places); U+F061 and U+F0BE are an alpha and a dash from the Symbol font (7 places).
+- **A build reports what is left:** `entrypoint/pdf.sh` ends each book with either "no character is missing from
+  the fonts" or a WARNING line listing the code points, so a new book cannot add holes unseen.
+- **Left:** `𝜙` (U+1D719) in Contemporary Mathematics, where it is asked of the slanted body font (7 log lines);
+  the PDF's text holds the character in its other places.
+
+## Links with words of their own, and references to exercises (added 2026-11-27)
+
+- **A link that has words keeps them.** `<link target-id="…">the map</link>` and `<link document="…">Electoral
+  College</link>` became `\cref{…}`, which prints the target's kind and number in place of the author's words:
+  American Government 4e read "Drafted by Thomas Jefferson, the section 5.3.25 officially proclaimed …" for "the
+  Declaration of Independence". 7,157 internal links in 30 book folders carry words (Life, Liberty, and the
+  Pursuit of Happiness 2,581, Organic Chemistry 635, Astronomy 458). Such a link is now
+  `\hyperref[label]{words}`: the words, linked to the target. An empty link is still `\cref`.
+- **An exercise that something points at carries a label** (`render_exercise`). It had none, so the PDF printed
+  "??" for 1,193 exercises in 14 book folders (874 of them in Life, Liberty, and the Pursuit of Happiness, where
+  most are worded links that now show their words).
+- **Web editions** (`tools/pandoc/xref.lua`): exercises are numbered as in the PDF, from 1 after every heading,
+  with the number printed in front, and a reference to one reads "Exercise 3"; until this date the web editions
+  showed no exercise numbers and a reference to one showed its raw label in brackets. The filter rewrites the
+  text of a link only when pandoc marks it as a `\cref` (a `reference-type` attribute), so a worded link keeps
+  its words.
+- **Still undefined:** about 20 references in 9 books point at ids that get no label for other reasons (a figure
+  or table in a place the converter does not label); each prints "??" in the PDF.
+
 ## The 5 historical `convert.py` versions and their deltas
 
 Verified by hashing `latex:tools/cnxml2tex/convert.py` across all 16 repos. 12 books shared one version; four

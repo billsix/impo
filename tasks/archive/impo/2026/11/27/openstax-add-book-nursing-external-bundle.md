@@ -23,7 +23,7 @@
 
 ## Left as it is
 
-**The tables are the weak point of these three PDFs.** The books hold 714 tables and most are prose. The converter's columns do not wrap, so a wide table is scaled down to the page width: Table 3.33 of Pharmacology for Nurses is at about half size, and Table 7.12 of Population Health for Nurses (PDF page 1371) is a hairline. The HTML and EPUB set the same tables normally. It affects books impo already built too and has its own task: `tasks/openstax-pdf-prose-tables-shrink-or-run-off-the-page.md`. Nutrition for Nurses also loses `⅓`, `₁` and `₆` in the PDF (`tasks/openstax-pdf-characters-missing-from-the-body-font.md`). The repository holds 492 module folders and the three collections list 481. The converter reports no fallback. The PDFs and HTML were not read page by page; that review is the maintainer's.
+**The tables are the weak point of these three PDFs.** The books hold 714 tables and most are prose. The converter's columns do not wrap, so a wide table is scaled down to the page width: Table 3.33 of Pharmacology for Nurses is at about half size, and Table 7.12 of Population Health for Nurses (PDF page 1371) is a hairline. The HTML and EPUB set the same tables normally. It affects books impo already built too and has its own task: `tasks/archive/impo/2026/11/27/openstax-pdf-prose-tables-shrink-or-run-off-the-page.md`. Nutrition for Nurses also loses `⅓`, `₁` and `₆` in the PDF (`tasks/archive/impo/2026/11/27/openstax-pdf-characters-missing-from-the-body-font.md`). The repository holds 492 module folders and the three collections list 481. The converter reports no fallback. The PDFs and HTML were not read page by page; that review is the maintainer's.
 
 ## Not done
 
