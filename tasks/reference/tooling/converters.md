@@ -32,7 +32,7 @@ with `git -C <repo> cat-file -p latex:<path>`. All `file:line` anchors below poi
 `openstax/tooling/` (that's what you edit); line numbers drift — the function names and section titles are the
 stable anchors.
 
-## The shared skeleton — `openstax/tooling/tools/cnxml2tex/convert.py` (~2930 lines)
+## The shared skeleton — `openstax/tooling/tools/cnxml2tex/convert.py`
 
 Book-agnostic: `ROOT` is always `/book`; per-book structure is **auto-derived**, so the same converter serves every
 book. Major phases (section banners in the file):
@@ -185,7 +185,9 @@ Divergences split into two kinds, unified differently:
 
 ## Per-book quick reference
 
-Figure format and os-embed scheme are the durable facts; exercise counts are as of 2026-09-03.
+Figure format and os-embed scheme are the durable facts; exercise counts are as of 2026-09-03. The rows from
+`statistics` down are the books added 2026-11-26 and 2026-11-27, counted on the raw CNXML in both schemes on
+the day each was added.
 
 | Book | collections | os-embed scheme | exercises cached | figures |
 |------|------|------|------|------|
@@ -205,6 +207,20 @@ Figure format and os-embed scheme are the durable facts; exercise counts are as 
 | university-physics-bundle | 3 | survey | 0 | — |
 | microbiology | 1 | survey | 0 | — |
 | psychology | 1 | survey | 0 | — |
+| statistics | 1 | none | 0 | raster |
+| introductory-statistics-bundle | 2 | none | 0 | raster |
+| college-physics-bundle | 2 | none | 0 | raster |
+| principles-data-science | 1 | `#exercise/` | 136 | raster + 6 exercise imgs |
+| additive-manufacturing | 1 | `#exercise/` | 120 | raster |
+| foundations-information-systems | 1 | `#exercise/` | 410 | raster + 1 exercise img |
+| american-government | 1 | none | 0 | raster |
+| introduction-political-science | 1 | `#exercise/` | 308 | raster |
+| life-liberty-and-pursuit-happiness | 1 | `#exercise/` | 1895 | raster + 95 exercise imgs |
+| us-history | 1 | none | 0 | raster |
+| world-history | 2 | `#exercise/` | 1158 | raster + 4 exercise imgs |
+| neuroscience | 1 | `#exercise/` | 568 | raster |
+| business-law | 1 | none | 0 | raster |
+| introduction-intellectual-property | 1 | `#exercise/` | 185 | raster |
 
 ("survey" = the scheme wasn't re-audited on the raw CNXML for that book; verify on first exercise-bearing build,
 the same way physics/biology turned out to have `#ost/api/ex/`.)
