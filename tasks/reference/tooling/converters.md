@@ -244,6 +244,7 @@ the day each was added.
 | lifespan-development | 1 | `#exercise/` (not fetched) | 872 | raster |
 | workplace-software-skills | 1 | `#exercise/` (not fetched) | 682 | raster |
 | introduction-anthropology | 1 | `#exercise/` (not fetched) | 150 | raster |
+| introduction-philosophy | 1 | `#exercise/` (not fetched) | 228 | raster |
 
 ("survey" = the scheme wasn't re-audited on the raw CNXML for that book; verify on first exercise-bearing build,
 the same way physics/biology turned out to have `#ost/api/ex/`.)

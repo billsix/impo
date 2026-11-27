@@ -72,6 +72,7 @@ confirmed on each book's first build.
 - `osbooks-lifespan-development/` — *Lifespan Development* (100 modules, 1,415-page PDF), added 2026-11-27: 872 embedded exercises, not fetched yet (`tasks/openstax-add-book-lifespan-development.md`); raster figures; built in one pass with no toolchain change.
 - `osbooks-workplace-software-skills/` — *Workplace Software and Skills* (105 modules, 1,198-page PDF), added 2026-11-27: 682 embedded exercises, not fetched yet (`tasks/openstax-add-book-workplace-software-skills.md`); raster figures (349 MB, so a 282 MB PDF); built in one pass with no toolchain change.
 - `osbooks-introduction-anthropology/` — *Introduction to Anthropology* (121 modules, 873-page PDF), added 2026-11-27: 150 embedded exercises, not fetched yet (`tasks/openstax-add-book-introduction-anthropology.md`); raster figures; 36 block quotations; built in one pass with no toolchain change.
+- `osbooks-introduction-philosophy/` — *Introduction to Philosophy 2e* (66 modules, 533-page PDF), added 2026-11-27: 228 embedded exercises, not fetched yet (`tasks/openstax-add-book-introduction-philosophy.md`); raster figures; it brought a quotation holding only a list to the converter.
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -116,6 +117,7 @@ whose licence it does not know.
 | osbooks-lifespan-development | CC BY-NC-SA 4.0 | yes |
 | osbooks-workplace-software-skills | CC BY-NC-SA 4.0 | yes |
 | osbooks-introduction-anthropology | CC BY-NC-SA 4.0 | yes |
+| osbooks-introduction-philosophy | CC BY-NC-SA 4.0 | yes |
 
 Every collection inside a bundle declares the same licence as its siblings. No module file carries licence
 metadata. The exercise caches are a separate case: see "Copyright / licensing" in `openstax/CLAUDE.md`.
