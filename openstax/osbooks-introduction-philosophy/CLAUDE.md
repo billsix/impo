@@ -26,20 +26,18 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `introduction-philosophy-2e` (OpenStax *Introduction to Philosophy 2e*): 66 modules in 12 chapters; one level of nesting. Built as PDF (533 pages), EPUB and HTML
+One collection, `introduction-philosophy-2e` (OpenStax *Introduction to Philosophy 2e*): 66 modules in 12 chapters; one level of nesting. Built as PDF (521 pages), EPUB and HTML
 (80 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
-- **Exercises:** 228 embedded links, all in the `#exercise/<nickname>` scheme (none in
-  `#ost/api/ex/`). **Not fetched yet**: there is no `exercises/` cache, so each one is
-  left out of the built book and counted by the converter as `exercise-uncached`. The
-  maintainer runs `make fetch-exercises` here (it identifies itself with his contact
-  address); `../../tasks/openstax-add-book-introduction-philosophy.md` holds what follows.
+- **Exercises:** 228 embedded links to 228 exercises, all in the `#exercise/<nickname>`
+  scheme. All 228 are in the committed cache `exercises/` (no images; with its `COPYRIGHT`
+  notice), fetched by the maintainer on 2026-11-27, and are in the built book.
 - **Figures:** raster only (130 files; `media/` is 118 MB). `media/Interactive/` holds 525 more files, 127 of them SVG icons; no module references an SVG.
 - **Unused modules:** the repository holds 76 module folders and the collection lists 66.
 - **Block quotations:** 33, set off as such; one holds a numbered list and no paragraph (`../../tasks/reference/tooling/converters.md`, "Block quotations, reference notes and footnotes in titles").
 - **Characters missing from the PDF:** `ǐ`, `ʿ`, `Ḥ`, `ṇ`, `Ṣ`, `ṣ`, in Chinese, Arabic and Sanskrit names, which the body font has no glyph for (`../../tasks/openstax-pdf-characters-missing-from-the-body-font.md`).
-- **Still falling back** (the converter's report): none besides the 228 `exercise-uncached`.
+- **Still falling back** (the converter's report): none.
 
 ## Build
 
