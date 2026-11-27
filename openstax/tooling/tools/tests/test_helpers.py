@@ -209,3 +209,19 @@ def test_local_frame_is_left_out() -> None:
     media: etree._Element = node[0][0]
     assert c.render_media(media, set()) == ""
 
+
+# -- one line of code wrapped in line breaks --------------------------------
+def test_one_line_code_block_between_paragraphs_is_a_listing() -> None:
+    node: etree._Element = _content(
+        "<note><code>\n\n  data.iloc[0]\n  </code><para>After.</para></note>"
+    )
+    code: etree._Element = node[0][0]
+    assert c.inline_element(code, set()) == (
+        "\n\\begin{oscode}\ndata.iloc[0]\n\\end{oscode}\n"
+    )
+
+
+def test_one_line_code_in_a_sentence_stays_inline() -> None:
+    node: etree._Element = _content("<para>Use <code>\n  iloc\n</code> here.</para>")
+    code: etree._Element = node[0][0]
+    assert c.inline_element(code, set()) == r"\texttt{iloc}"

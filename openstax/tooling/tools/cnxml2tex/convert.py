@@ -1565,6 +1565,17 @@ def inline_element(node: _Element, labels: set[str]) -> str:
         if r"\NLBREAK" in body or "\n" in body.strip():
             listing: str = body.replace(r"\NLBREAK", "\n").strip("\n")
             return "\n\\begin{oscode}\n%s\n\\end{oscode}\n" % listing
+        if "\n" in body:
+            # One line of code that the source wraps in line breaks. A blank line
+            # inside \texttt{} is fatal too. Standing on its own between blocks it
+            # is a one-line listing; inside a sentence it is inline code.
+            container: _Element | None = node.getparent()
+            in_sentence: bool = container is not None and local(container.tag) in (
+                "para", "item", "entry", "title", "caption", "emphasis", "link", "term",
+            )
+            if not in_sentence and not _CELL_MODE:
+                return "\n\\begin{oscode}\n%s\n\\end{oscode}\n" % body.strip()
+            return r"\texttt{%s}" % body.strip()
         return r"\texttt{%s}" % body
     if tag == "quote":
         return "``%s''" % inline(node, labels)

@@ -121,6 +121,17 @@ this video …") pointed at an address that was not there.
   commented out), College Physics 18, University Physics 15,
   Introduction to Intellectual Property 9, World History 8, Algebra 1 3, Prealgebra 3.
 
+## One line of code wrapped in line breaks (added 2026-11-27, with Principles of Data Science)
+
+A `<code>` element whose single line of code is surrounded by line breaks in the source
+(`<code class="python">⏎⏎  data.iloc[:, 1]⏎</code>`) used to become a `\texttt{}` holding a blank line, which
+stops LaTeX ("Paragraph ended before \text@command was complete") as a multi-line listing would. Standing
+between blocks it is now a one-line `oscode` listing; inside a sentence, a list item or a table cell it is
+`\texttt{}` with the line breaks trimmed. Principles of Data Science has 166 `<code class="python">` blocks
+and could not be typeset without this. It also changed Introduction to Python Programming (30 section files:
+such blocks were typeset inline, running into the text around them), one listing in Foundations of
+Information Systems and the wrapping of one line in Introductory Statistics; the other books were identical.
+
 ## The 5 historical `convert.py` versions and their deltas
 
 Verified by hashing `latex:tools/cnxml2tex/convert.py` across all 16 repos. 12 books shared one version; four
