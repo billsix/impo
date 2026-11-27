@@ -64,6 +64,7 @@ confirmed on each book's first build.
 - `osbooks-foundations-information-systems/` — *Foundations of Information Systems* (59 modules, 609-page PDF), added 2026-11-27: 410 embedded exercises, not fetched yet (`tasks/openstax-add-book-foundations-information-systems.md`); raster figures; it brought a footnote in a note's title to the converter.
 - `osbooks-neuroscience/` — *Introduction to Behavioral Neuroscience* (106 modules, 1,114-page PDF), added 2026-11-27: 568 embedded exercises, not fetched yet (`tasks/openstax-add-book-neuroscience.md`); raster figures; one figure's file name holds an en dash, which needed a UTF-8 locale in the HTML and EPUB scripts.
 - `osbooks-introduction-political-science/` — *Introduction to Political Science* (107 modules, 753-page PDF), added 2026-11-27: 308 embedded exercises, not fetched yet (`tasks/openstax-add-book-introduction-political-science.md`); raster figures; 1,522 reference notes, now footnotes; 115 embedded video frames, dropped as in every book.
+- `osbooks-introduction-intellectual-property/` — *Introduction to Intellectual Property* (54 modules, 226-page PDF), added 2026-11-27: 185 embedded exercises, not fetched yet (`tasks/openstax-add-book-introduction-intellectual-property.md`); raster figures; CC BY 4.0; 31 block quotations.
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -100,6 +101,7 @@ whose licence it does not know.
 | osbooks-foundations-information-systems | CC BY-NC-SA 4.0 | yes |
 | osbooks-neuroscience | CC BY-NC-SA 4.0 | yes |
 | osbooks-introduction-political-science | CC BY-NC-SA 4.0 | yes |
+| osbooks-introduction-intellectual-property | CC BY 4.0 | yes |
 
 Every collection inside a bundle declares the same licence as its siblings. No module file carries licence
 metadata. The exercise caches are a separate case: see "Copyright / licensing" in `openstax/CLAUDE.md`.
