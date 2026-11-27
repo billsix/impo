@@ -16,7 +16,7 @@ in an ephemeral podman container. One folder per book; the family is self-contai
 impo groups books into **families** (a family = books of the same source/kind), each a top-level
 folder. Two book families exist, plus the `study/` family of material built from the books:
 
-- **`openstax/`** — LaTeX ports of OpenStax open textbooks (29 book folders on 2026-11-27, more being added:
+- **`openstax/`** — LaTeX ports of OpenStax open textbooks (30 book folders on 2026-11-27, more being added:
   `tasks/openstax-add-remaining-english-books.md`) that convert **CNXML→LaTeX**
   with a shared python converter. **The pilot family; read `openstax/CLAUDE.md` first.** Layout:
   - **`openstax/CLAUDE.md`** — the family contract: the shared toolchain, the per-book folder
@@ -99,7 +99,7 @@ folder. Two book families exist, plus the `study/` family of material built from
     book impo builds whose upstream has vanished gets a row marked "gone", with where its source is still
     held and the action needed (`tools/upstream-books-gone.txt` records what the tool cannot check).
     Its output is the table in `tasks/reference/openstax/upstream-book-repositories.md` (54 repositories, 88
-    books on 2026-11-27; impo builds 28 of them, counting the vanished algebra-1).
+    books on 2026-11-27; impo builds 29 of them, counting the vanished algebra-1).
   - `build-web-editions.sh` — a fan-out that re-applies the toolchain overlay and runs `make html &&
     make epub` across every OpenStax book folder, logging PASS/FAIL per book (`bash tools/build-web-editions.sh
     [book-slug]`).
