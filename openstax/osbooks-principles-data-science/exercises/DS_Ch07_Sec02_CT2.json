@@ -1,0 +1,348 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "context-cnxmod:f5b9db73-4d72-4e04-a516-e94c19d36fb9",
+  "context-cnxmod:fbeaf814-9624-4b77-a698-ca74c7f99d08",
+  "lo:stax-datascience:7-4-1",
+  "lo:stax-datascience:7-2-3",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:7-2-backpropagation",
+  "module-slug:principles-data-science:7-4-convolutional-neural-networks"
+ ],
+ "uuid": "6c266a29-e547-4033-af7e-4c24b85d93cf",
+ "group_uuid": "5ae223be-006b-4846-b191-1d17e2001ed3",
+ "number": 62322,
+ "version": 2,
+ "uid": "62322@2",
+ "published_at": "2024-10-08T06:50:44.837Z",
+ "nickname": "DS_Ch07_Sec02_CT2",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "For each scenario, determine whether a standard neural network, a recurrent neural network (RNN), or a convolutional neural network (CNN) would be most suitable. Explain your choice, detailing the advantages and disadvantages of each type of network for the given scenario.",
+ "questions": [
+  {
+   "id": 497942,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A company wants to analyze customer reviews to determine whether they are positive, negative, or neutral. The reviews are provided as text data, and the company is interested in understanding the general sentiment of each review.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 497943,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "An investment firm is developing a model to predict future stock prices based on historical price data. The firm wants to account for trends, patterns, and time-based dependencies in the data.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 497944,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A technology company is building a model to classify images into various categories, such as “cat,” “dog,” and “car.” The input data consists of individual images.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 497945,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A company wants to predict whether a customer is likely to cancel their subscription based on a variety of features, such as customer demographics, subscription duration, customer interactions, and usage patterns.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  2,
+  1
+ ]
+}

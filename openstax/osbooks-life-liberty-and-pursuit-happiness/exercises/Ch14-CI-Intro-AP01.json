@@ -1,0 +1,406 @@
+{
+ "images": [
+  {
+   "created_at": "2025-05-30T00:16:26.851Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3NEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c87664a85edeea7a80e65fc7e02c0e594d253ace",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3NEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c87664a85edeea7a80e65fc7e02c0e594d253ace/537ad215b3e42f8e255d174d45e3b3076d823b7c0d3fb42e85900964368429d4.png"
+  },
+  {
+   "created_at": "2025-05-30T00:16:26.866Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc1FEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d0ec9261969eade923f97e4cd8b0496dce9dc2d",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc1FEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d0ec9261969eade923f97e4cd8b0496dce9dc2d/a5c3541dba6b30ad34a34517272275eab33004b9794522b7658de8b4f92266bf.png"
+  }
+ ],
+ "tags": [
+  "book:stax-apush",
+  "hts:3",
+  "hts:5",
+  "rp:2",
+  "hts:2",
+  "hts:4",
+  "hts:1",
+  "context-cnxmod:3a9395ef-41d4-408b-803c-983d2f48c77b",
+  "context-cnxmod:c43c4f39-ce3f-4be4-93f6-d972cc910b4c",
+  "assignment-type:homework",
+  "blooms:4",
+  "time:medium"
+ ],
+ "uuid": "21ce9438-9fe6-467a-b7db-b5e7677c94fa",
+ "group_uuid": "ce2b3bdc-7b76-4f4b-934f-ea47086547eb",
+ "number": 19949,
+ "version": 8,
+ "uid": "19949@8",
+ "published_at": "2025-05-30T00:16:26.871Z",
+ "nickname": "Ch14-CI-Intro-AP01",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<figure id=\"figCh14-01\">\n<img src=\"exercises/media/e567f7dcb2295818.png\" alt=\"The figure includes four maps of the United States: the electoral votes for presidential elections in 1956, 1960, 1964, and 1968. It also includes pie charts showing the electoral votes and popular votes for each candidate. In 1956, most of the map shows support for Republican candidate Eisenhower, with only Missouri, Arkansas, Mississippi, Alabama, Georgia, South Carolina, and North Carolina voting for Democratic candidate Stevenson. The electoral vote pie chart shows 86% support for Republican candidate Eisenhower (457 out of 531 votes), 13.5% support for Democratic candidate Stevenson (13 out of 531 votes), and 0.5% support for Independent candidate Jones (1 out of 531 votes). The popular vote pie chart shows 57.5% support for Republican candidate Eisenhower (35,581,003 out of 62,027,040 votes), 42% support for Democratic candidate Stevenson (26,031,322 out of 62,027,040 votes), and 0.5% support for Independent candidate Jones (414,715 out of 62,027,040 votes). Electoral votes by state for Eisenhower are as follows: Arizona 4, California 32, Colorado 6, Connecticut 8, Delaware 3, Florida 10, Idaho 4, Illinois 27, Indiana 13, Iowa 10, Kansas 8, Kentucky 10, Louisiana 10, Maine 5, Maryland 9, Massachusetts 16, Michigan 20, Minnesota 11, Montana 4, Nebraska 6, Nevada 3, New Hampshire 4, New Mexico 4, New York 45, North Dakota 4, Ohio 25, Oklahoma 8, Oregon 6, Pennsylvania 32, Rhode Island 4, South Dakota 4, Tennessee 11, Texas 24, Utah 4, Vermont 3, Virginia 12, Washington 9, West Virginia 8, Wisconsin 12, Wyoming 3. Electoral votes by state for Stevenson are as follows: Alabama 10, Arkansas 8, Georgia 12, Missouri 13, Mississippi 8, North Carolina 8, South Carolina 14. Electoral votes by state for Jones are as follows: Alabama 1. In 1960, the map is more evenly split between support for Democratic cadidate Kennedy and Republican candidate Nixon. Mississippi, half of Alabama, and part of Oklahoma show suppport for Independent candidate Byrd. The electoral vote pie chart shows 56.5% support for Democratic candidate Kennedy (303 out of 537 votes), 40.75% support for Republican candidate Nixon (219 out of 537 votes), and 2.75% support for Independent candidate Byrd (15 out of 537 votes). The popular vote pie chart shows 49.7% support for Democratic candidate Kennedy (34,227,096 out of 68,836,385 votes), 49.6% support for Republican candidate Nixon (34,107,646 out of 68,836,385 votes), and 0.7% support for Independent candidate Byrd (501,643 out of 68,836,385 votes). Electoral votes by state for Kennedy are as follows: Alabama 5, Arkansas 8, Connecticut 8, Delaware 3, Georgia 12, Hawaii 3, Illinois 27, Louisiana 10, Maryland 9, Massachusetts 16, Michigan 20, Minnesota 11, Missouri 13, Nevada 3, New Mexico 4, New York 45, North Carolina 14, Pennsylvania 32, Rhode Island 4, South Carolina 8, Texas 24, West Virginia 8. Electoral votes by state for Nixon are as follows: Alaska 3, Arizona 4, California 32, Colorado 6, Florida 10, Idaho 4, Indiana 13, Iowa 10, Kansas 8, Kentucky 10, Maine 5, Montana 4, Nebraska 6, New Hampshire 4, North Dakota 4, Ohio 25, Oklahoma 7, Oregon 6, South Dakota 4, Tennessee 11, Utah 4, Vermont 3, Virginia 12, Washington 9, Wisconsin 12, Wyoming 3. Electoral votes by state for Byrd are as follows: Alabama 6, Mississippi 8, Oklahoma 1. In 1964, the map shows overwhelming support for Democratic candidate Johnson, with only Arizona, Louisiana, Mississippi, Alabama, Georgia, and South Carolina voting for the Republican candidate Goldwater. The electoral vote pie chart shows 90.5% support of Johnson (486 out of 538 electoral votes) and 9.5% support of Goldwater (52 out of 538 electoral votes). The popular vote pie chart shows 61% support of Johnson (43,121,085 out of 70,640,289 votes), 38.4% support of Goldwater (27,145,161 out of 70,640,289 votes), and 0.6% support of a minor candidate (374,043 out of 70,640,289 votes.) Electoral votes by state for Johnson are as follows: Alaska 3, Arkansas 6, California 40, Colorado 6, Connecticut 8, Delaware 3, Florida 14, Hawaii 4, Idaho 4, Illinois 26, Indiana 13, Iowa 9, Kansas 7, Kentucky 9, Maine 4, Maryland 10, Massachusetts 14, Michigan 21, Minnesota 10, Missouri 12, Montana 4, Nebraska 5, Nevada 3, New Hampshire 4, New Mexico 4, New York 43, North Carolina 13, North Dakota 4, Ohio 26, Oklahoma 8, Oregon 6, Pennsylvania 29, Rhode Island 4, South Dakota 4, Tennessee 11, Texas 25, Utah 4, Vermont 3, Virginia 12, Washington 9, West Virginia 7, Wisconsin 12, Wyoming 3. Electoral votes by state for Goldwater are as follows: Alabama 10, Arizona 5, Georgia 12, Louisiana 10, Mississippi 7, South Carolina 8. In 1968, the map shows the most support for Republican candidate Nixon, then Democratic candidate Humphrey, and then American Independent candidate Wallace, with votes from only Arkansas, Louisiana, Mississippi, Alabama, Georgia, and some of North Carolina. The electoral vote pie chart shows 56.1% support for Republican candidate Nixon (301 out of 538 votes), 35.5% support for Democratic candidate Humphrey (191 out of 538 votes), and 8.4% support for American Independent candidate Wallace (46 out of 538 votes). The popular vote pie chart shows 43.2% support for Republican candidate Nixon (31,710,470 out of 73,026,831 votes), 42.6% support for Democratic candidate Humphrey (30,898,055 out of 73,026,831 votes), 12.9% support for American Independent candidate Wallace (9,446,167 out of 73,026,831 votes), and 1.3% support for a minor candidate (972,139 out of 73,026,831 votes). Electoral votes by state for Nixon are as follows: Oregon 6, California 40, Nevada 3, Idaho 4, Montana 4, North Dakota 4, South Dakota 4, Wyoming 3, Utah 4, Arizona 5, New Mexico 4, Colorado 6, Nebraska 5, Kansas 7, Oklahoma 8, Iowa 9, Missouri 12, Wisconsin 12, Illinois 26, Indiana 13, Ohio 26, Kentucky 9, Tennessee 11, Florida 14, Alaska 3, South Carolina 8, North Carolina 12, Virginia 12, Delaware 3, New Jersey 17, Vermont 3, New Hampshire 4. Electoral votes by state for Humphrey are as follows: Washington 9, Texas 25, Hawaii 4, Minnesota 10, Michigan 21, West Virginia 7, Pennsylvania 29, New York 43, Maine 4, Massachusetts 14, Rhode Island 4, Connecticut 8, Washington D.C. 3. Electoral votes by state for Wallace are as follows: Arkansas 6, Louisiana 10, Mississippi 7, Alabama 10, Georgia 12, North Carolina 1. A timeline at the bottom shows the Republican reign from 1956 to 1960 with Eisenhower and 1968 to 1972 with Nixon and the Democratic reign from 1960 to 1964 with Kennedy and LB Johnson and 1964 to 1968 with LB Johnson.\">\n<figcaption>Electoral College results in presidential elections, 1956–1968.</figcaption>\n</figure>\n<p><i>Refer to the maps provided.</i></p>\n",
+ "questions": [
+  {
+   "id": 616569,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A historian might use these maps to support the hypothesis that",
+   "answers": [
+    {
+     "id": 1173877,
+     "content_html": "Sun Belt states were reliably conservative leaning"
+    },
+    {
+     "id": 1173880,
+     "content_html": "there was an electoral backlash to the federal government’s policies in the mid-1960s"
+    },
+    {
+     "id": 1173878,
+     "content_html": "the two major political parties represented fundamentally similar positions"
+    },
+    {
+     "id": 1173879,
+     "content_html": "there was little change in federal policy between 1956 and 1968"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 616570,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The maps best reflect which continuity in American history?",
+   "answers": [
+    {
+     "id": 1173881,
+     "content_html": "The old cotton-producing South continued to vote as a bloc into the late twentieth century."
+    },
+    {
+     "id": 1173882,
+     "content_html": "The east and west coastal states represent similar political interests."
+    },
+    {
+     "id": 1173883,
+     "content_html": "Income inequality is the single biggest factor in determining voting patterns."
+    },
+    {
+     "id": 1173884,
+     "content_html": "Major national and international events can profoundly affect electoral majorities."
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 616571,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What was the major cause of change between 1964 and 1968?",
+   "answers": [
+    {
+     "id": 1173885,
+     "content_html": "A resurgent conservative movement"
+    },
+    {
+     "id": 1173886,
+     "content_html": "The rise of the military-industrial complex"
+    },
+    {
+     "id": 1173888,
+     "content_html": "Reaction to military action in Vietnam and Johnson’s Great Society"
+    },
+    {
+     "id": 1173887,
+     "content_html": "The growth of postwar suburbanization"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "multiple-choice"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

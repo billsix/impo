@@ -1,0 +1,342 @@
+{
+ "images": [],
+ "tags": [
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "context-cnxmod:e4732ac1-bcdc-47c1-86d5-4d6c275a94a5",
+  "lo:stax-datascience:1-1-3",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:1-1-what-is-data-science"
+ ],
+ "uuid": "6d234d3e-9147-4f58-9892-d5de8c776149",
+ "group_uuid": "6bbd0672-399a-4343-b55a-759d986068f4",
+ "number": 62381,
+ "version": 1,
+ "uid": "62381@1",
+ "published_at": "2024-09-17T07:30:13.266Z",
+ "nickname": "DS_Ch01_Sec01_CR2",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 490074,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Which of the following best describes the evolution of data management in the data science process?",
+   "answers": [
+    {
+     "id": 975035,
+     "content_html": "Initially, data was stored locally on individual computers, but with the advent of cloud-based systems, data is now stored on designated servers outside of local storage.",
+     "correctness": "1.0"
+    },
+    {
+     "id": 975036,
+     "content_html": "Data management has remained static over time, with most data scientists continuing to store and process data locally on individual computers.",
+     "correctness": "0.0"
+    },
+    {
+     "id": 975037,
+     "content_html": "The need for data management arose as a result of structured data becoming unmanageable, leading to the development of cloud-based systems for data storage.",
+     "correctness": "0.0"
+    },
+    {
+     "id": 975038,
+     "content_html": "Data management systems have primarily focused on analysis rather than processing, resulting in the development of modern data warehousing solutions.",
+     "correctness": "0.0"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Data storage evolved from local to cloud-based systems for a variety of reasons, including increasing complexity of data, security concerns, reliability, etc. Option b) fails to recognize the evolution of data storage. Option c) incorrectly focuses on structured data as the sole reason for data storage solutions changing over time. Option d) incorrectly suggests that analysis of data was a driving factor in the evolution of data storage."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Initially, data was stored locally on individual computers, but with the advent of cloud-based systems, data is now stored on designated servers outside of local storage."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  1
+ ]
+}

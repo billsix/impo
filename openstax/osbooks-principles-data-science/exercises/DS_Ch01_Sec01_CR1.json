@@ -1,0 +1,343 @@
+{
+ "images": [],
+ "tags": [
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "lo:stax-datascience:1-1-1",
+  "lo:stax-datascience:1-1-2",
+  "context-cnxmod:e4732ac1-bcdc-47c1-86d5-4d6c275a94a5",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:1-1-what-is-data-science"
+ ],
+ "uuid": "17d87e8c-7fe2-4acf-9c44-bd6eb9d7b96b",
+ "group_uuid": "84e77e05-3990-497a-85c9-cc093a84f03a",
+ "number": 62380,
+ "version": 1,
+ "uid": "62380@1",
+ "published_at": "2024-09-17T07:25:33.131Z",
+ "nickname": "DS_Ch01_Sec01_CR1",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 490073,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Select the incorrect step and goal pair of the data science cycle.",
+   "answers": [
+    {
+     "id": 975031,
+     "content_html": "Data collection: collect the data so that you have something for analysis.",
+     "correctness": "0.0"
+    },
+    {
+     "id": 975032,
+     "content_html": "Data preparation: have the collected data stored in a server as is so that you can start the analysis.",
+     "correctness": "1.0"
+    },
+    {
+     "id": 975033,
+     "content_html": "Data analysis: analyze the prepared data to retrieve some meaningful insights.",
+     "correctness": "0.0"
+    },
+    {
+     "id": 975034,
+     "content_html": "Data reporting: present the data in an effective way so that you can highlight the insights found from the analysis.",
+     "correctness": "0.0"
+    }
+   ],
+   "hints": [],
+   "formats": [
+    "free-response",
+    "multiple-choice"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Rarely is collected data already in good shape for analysis. Most of the time, collected data needs to be processed to be suitable for the analysis of interest. An example of preparation can be dealing with missing data—removing them or filling them."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Data preparation: have the collected data stored in a server as is so that you can start the analysis."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  1
+ ]
+}

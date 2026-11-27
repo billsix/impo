@@ -1,0 +1,370 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "lo:stax-datascience:4-3-1",
+  "context-cnxmod:38cf5266-263f-4734-8d19-a27eb7b3fdeb",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:4-3-correlation-and-linear-regression-analysis"
+ ],
+ "uuid": "fff6f407-8d41-416c-9ef2-6646d60a4fe9",
+ "group_uuid": "84fb5898-3481-4182-9b93-8759eb0aca46",
+ "number": 60900,
+ "version": 3,
+ "uid": "60900@3",
+ "published_at": "2024-11-12T10:24:02.542Z",
+ "nickname": "DS_Ch04_Sec03_QP7",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "A software company has been tracking revenues versus cash flow in recent years, and the data is shown in the table below. Consider cash flow to be the dependent variable. <br>\n<table>\n<tbody><tr>\n<td align=\"center\"><b>Revenues ($000s)</b></td>\n<td align=\"center\"><b>Cash Flow ($000s)</b></td>\n</tr>\n<tr>\n<td align=\"center\">212</td>\n<td align=\"center\">81</td>\n</tr>\n<tr>\n<td align=\"center\">239</td>\n<td align=\"center\">84</td>\n</tr>\n<tr>\n<td align=\"center\">218</td>\n<td align=\"center\">81</td>\n</tr>\n<tr>\n<td align=\"center\">297</td>\n<td align=\"center\">99</td>\n</tr>\n<tr>\n<td align=\"center\">287</td>\n<td align=\"center\">91</td>\n</tr>\n</tbody><caption>Software Co. Revenue vs. Cash Flow</caption>\n</table>",
+ "questions": [
+  {
+   "id": 518094,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Calculate the correlation coefficient for this data (all dollar amounts are in thousands) using Python.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 518095,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Calculate the correlation coefficient using Excel.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 518096,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Determine if the correlation is significant using a significance level of 0.05.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 518097,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Construct the best-fit linear equation for this dataset.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 518098,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Predict the cash flow when revenue is 250.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 518099,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Calculate the residual for the revenue value of 239.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  3,
+  2,
+  1
+ ]
+}

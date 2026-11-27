@@ -1,0 +1,353 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "lo:stax-datascience:3-1-1",
+  "context-cnxmod:af3817c2-a797-4818-8502-436660ea1cc3",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:3-1-measures-of-center"
+ ],
+ "uuid": "9faad3d9-44c9-43cf-b8d9-99565d5896e0",
+ "group_uuid": "6fde1c8c-a3b4-42d8-aad1-0883ee81cc35",
+ "number": 57028,
+ "version": 8,
+ "uid": "57028@8",
+ "published_at": "2024-05-09T06:02:41.660Z",
+ "nickname": "DS_Ch03_Sec01_QP1",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<table class=\"unnumbered full-width\">\n<thead>\n<tr><td valign=\"top\" align=\"center\"><strong>Dataset A Description</strong></td>\n<td valign=\"top\" align=\"center\"><strong>Data</strong></td>\n</tr></thead>\n<tbody>\n<tr><td valign=\"top\" align=\"left\">Number of cars entering a parking garage in a 1-hour time period</td>\n<td valign=\"top\" align=\"left\">Sample of 10 counts: 15, 18, 4, 15, 8, 11, 13, 7, 16, 24</td>\n</tr></tbody>\n</table>",
+ "questions": [
+  {
+   "id": 456654,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "For Dataset A, calculate the mean and a 10% trimmed mean (round answers to 1 decimal place). Use technology as appropriate.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\mathrm{Mean} = 16.4,\\;10\\% \\;\\mathrm{Trimmed}\\;\\mathrm{mean} = 12.9\"></span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "To find the mean, add up the data values and divide by the number of data values, which is 10. The sum of the data values is 164, and dividing this by 10 results in a mean of 16.4. To find the 10% trimmed mean, delete 10% of the data values from the lower end and from the upper end of the ordered dataset. Since there are 10 data values in the dataset, 10% of 10 is 1, so proceed to delete one data value from the lower end of the sorted data and delete one data value from the upper end of the sorted data. In this example, delete the smallest data value and delete the largest data value and then find the mean for the remaining 8 data values, which is 12.875 (round to 12.9).<br><br>\nTo find the mean using Excel, copy the data into cells A1 to A10, and in any empty cell type in the Excel command:<br>\n=AVERAGE(A1:A10)<br><br>\nTo find the mean using Python Pandas, first create a csv file with all the data items in the dataset. Suppose the .csv file is named as cars.csv, uploaded to the Google Drive properly, and loaded by *gdown* properly. The following Python code returns multiple summary statistics of the dataset, and the “mean” value indicates the average.<br> \n<pre class=\"python\" lang=\"python\"> \nimport pandas as pd\ndata = pd.read_csv(“cars.csv”) \ndata.describe()\n# import the statistics library \nimport statistics\n# define a dataset of 10 numbers \nnumber_cars = [15, 18, 2, 15, 8, 11, 13, 7, 16, 59] \n# execute the statistics.mean() function on this list \nprint(statistics.mean(number_cars)) \n</pre>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 456655,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Is there any benefit in using the trimmed mean versus the mean for this dataset?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "See Solution Manual"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Yes, the benefit in using the trimmed mean is that potential outliers are removed from the calculation of the mean. Notice that the trimmed mean is 12.9 and the untrimmed mean is 16.4. The untrimmed mean is larger due to the presence of the outlier data value of 59. Thus, the presence of outlier data values would tend to skew the untrimmed mean."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

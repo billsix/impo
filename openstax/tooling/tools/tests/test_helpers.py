@@ -178,3 +178,50 @@ def test_footnote_in_a_note_title_is_parenthetical() -> None:
     )
     title: etree._Element = node[0][0]
     assert c.inline(title, set()) == "Heading (A Source.)"
+
+
+# -- outside pages embedded in frames ---------------------------------------
+def test_outside_frame_becomes_a_link_labelled_with_the_note_title() -> None:
+    node: etree._Element = _content(
+        '<note class="interactive"><title>Gravity Force Lab</title>'
+        '<media alt="x"><iframe src="https://openstax.org/l/gravity-force"/></media></note>'
+    )
+    media: etree._Element = node[0][1]
+    assert c.render_media(media, set()) == (
+        r"\textbf{Gravity Force Lab:} \url{https://openstax.org/l/gravity-force}"
+    )
+
+
+def test_outside_frame_without_a_title_gets_a_generic_label() -> None:
+    node: etree._Element = _content(
+        '<para><media alt="x"><iframe src="https://openstax.org/l/99sermon"/></media></para>'
+    )
+    media: etree._Element = node[0][0]
+    assert c.render_media(media, set()) == (
+        r"\textbf{Online resource:} \url{https://openstax.org/l/99sermon}"
+    )
+
+
+def test_local_frame_is_left_out() -> None:
+    node: etree._Element = _content(
+        '<para><media alt="x"><iframe src="../../media/desmos/graph.html"/></media></para>'
+    )
+    media: etree._Element = node[0][0]
+    assert c.render_media(media, set()) == ""
+
+
+# -- one line of code wrapped in line breaks --------------------------------
+def test_one_line_code_block_between_paragraphs_is_a_listing() -> None:
+    node: etree._Element = _content(
+        "<note><code>\n\n  data.iloc[0]\n  </code><para>After.</para></note>"
+    )
+    code: etree._Element = node[0][0]
+    assert c.inline_element(code, set()) == (
+        "\n\\begin{oscode}\ndata.iloc[0]\n\\end{oscode}\n"
+    )
+
+
+def test_one_line_code_in_a_sentence_stays_inline() -> None:
+    node: etree._Element = _content("<para>Use <code>\n  iloc\n</code> here.</para>")
+    code: etree._Element = node[0][0]
+    assert c.inline_element(code, set()) == r"\texttt{iloc}"

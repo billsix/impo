@@ -1565,6 +1565,17 @@ def inline_element(node: _Element, labels: set[str]) -> str:
         if r"\NLBREAK" in body or "\n" in body.strip():
             listing: str = body.replace(r"\NLBREAK", "\n").strip("\n")
             return "\n\\begin{oscode}\n%s\n\\end{oscode}\n" % listing
+        if "\n" in body:
+            # One line of code that the source wraps in line breaks. A blank line
+            # inside \texttt{} is fatal too. Standing on its own between blocks it
+            # is a one-line listing; inside a sentence it is inline code.
+            container: _Element | None = node.getparent()
+            in_sentence: bool = container is not None and local(container.tag) in (
+                "para", "item", "entry", "title", "caption", "emphasis", "link", "term",
+            )
+            if not in_sentence and not _CELL_MODE:
+                return "\n\\begin{oscode}\n%s\n\\end{oscode}\n" % body.strip()
+            return r"\texttt{%s}" % body.strip()
         return r"\texttt{%s}" % body
     if tag == "quote":
         return "``%s''" % inline(node, labels)
@@ -2435,10 +2446,31 @@ def render_figure(node: _Element, labels: set[str]) -> str:
     return "\\begin{calcfig}\n%s\\par\\smallskip\n%s\n\\end{calcfig}" % (inc, capline)
 
 
+def _frame_link(node: _Element, labels: set[str]) -> str:
+    """The labelled link that stands for an outside page embedded in a frame
+    (`<media><iframe src="https://..."/></media>`: a simulation, a video). The
+    label is the enclosing note's title, else "Interactive" where the note's
+    class says so, else "Online resource". A frame on a local file gives ""."""
+    frame: _Element | None = node.find(C + "iframe")
+    address: str = (frame.get("src") or "").strip() if frame is not None else ""
+    if not address.startswith(("http://", "https://")):
+        return ""
+    note: _Element | None = next(
+        (ancestor for ancestor in node.iterancestors() if local(ancestor.tag) == "note"),
+        None,
+    )
+    title: _Element | None = get_title(note) if note is not None else None
+    label: str = inline(title, labels).strip() if title is not None else ""
+    if not label:
+        note_class: str = (note.get("class") or "") if note is not None else ""
+        label = "Interactive" if "interactive" in note_class else "Online resource"
+    return r"\textbf{%s:} \url{%s}" % (label, address.replace("%", r"\%"))
+
+
 def render_media(node: _Element, labels: set[str]) -> str:
     img: _Element | None = node.find(C + "image")
     if img is None:
-        return ""
+        return _frame_link(node, labels)
     src: str = _imgname(img.get("src", ""))
     if not src:
         return ""

@@ -26,18 +26,16 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `foundations-information-systems` (OpenStax *Foundations of Information Systems*): 59 modules in 12 chapters; one level of nesting. Built as PDF (609 pages), EPUB and HTML
+One collection, `foundations-information-systems` (OpenStax *Foundations of Information Systems*): 59 modules in 12 chapters; one level of nesting. Built as PDF (615 pages), EPUB and HTML
 (73 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
-- **Exercises:** 410 embedded links, all in the `#exercise/<nickname>` scheme (none in
-  `#ost/api/ex/`). **Not fetched yet**: there is no `exercises/` cache, so each one is
-  left out of the built book and counted by the converter as `exercise-uncached`. The
-  maintainer runs `make fetch-exercises` here (it identifies itself with his contact
-  address); `../../tasks/openstax-add-book-foundations-information-systems.md` holds what follows.
+- **Exercises:** 410 embedded links to 410 exercises, all in the `#exercise/<nickname>`
+  scheme. All 410 are in the committed cache `exercises/` (1 image; with its `COPYRIGHT`
+  notice), fetched by the maintainer on 2026-11-27, and are in the built book.
 - **Figures:** raster only (181 files, 28 MB); no SVG.
 - **Markup this book brought to the converter:** a `<footnote>` inside a note's title, which stopped LaTeX; it is given in parentheses since the day the book was added (`../../tasks/reference/tooling/converters.md`, "Block quotations, reference notes and footnotes in titles").
-- **Still falling back** (the converter's report): `inline:item` (8) and `inline:list` (1), besides the 410 `exercise-uncached`.
+- **Still falling back** (the converter's report): `inline:item` (8) and `inline:list` (1).
 
 ## Build
 

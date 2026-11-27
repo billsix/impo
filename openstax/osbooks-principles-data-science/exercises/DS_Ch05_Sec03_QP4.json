@@ -1,0 +1,364 @@
+{
+ "images": [
+  {
+   "created_at": "2024-10-03T03:21:56.255Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdklqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a8d405621277881cd0b0cdbdc97d13ce9741f372",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdklqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a8d405621277881cd0b0cdbdc97d13ce9741f372/DS_UnFigure_05_04_015.png"
+  },
+  {
+   "created_at": "2024-10-03T03:21:56.264Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdk1qIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4d41978ab9da58090c2840bb6d3a9ea98fce1067",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdk1qIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4d41978ab9da58090c2840bb6d3a9ea98fce1067/DS_UnFigure_05_04_016.png"
+  }
+ ],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "context-cnxmod:7c142147-83d3-4475-83b4-aa401f23e32e",
+  "lo:stax-datascience:5-3-1",
+  "lo:stax-datascience:5-3-3",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:5-3-time-series-forecasting-methods"
+ ],
+ "uuid": "98cf38db-f6b7-4b7c-b2d7-621687583e7b",
+ "group_uuid": "01c66dfb-742b-414d-8a1e-7558a1a5f67d",
+ "number": 61988,
+ "version": 7,
+ "uid": "61988@7",
+ "published_at": "2024-10-03T03:22:02.981Z",
+ "nickname": "DS_Ch05_Sec03_QP4",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Consider the data set <a href=\"https://openstax.org/r/spreadsheetsd1j\" rel=\"nofollow\" target=\"_blank\">USATemps1961-2023.csv</a>. ",
+ "questions": [
+  {
+   "id": 495649,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use an ACF plot to determine the period of a potential seasonal component. ",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Use Python. The ACF plot shows a spike at lag 3.<br>\n<pre class=\"python\" lang=\"python\"># Import libraries\nimport pandas as pd ## for dataset management\nfrom statsmodels.graphics.tsaplots import plot_acf\n\n# Read the CSV file into a Pandas DataFrame\ndf = pd.read_csv('USATemps1961-2023.csv')\n\n# Plot the ACF\nplot_acf(df['Deviation'], lags=20, title='ACF');\n<figure>\n<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdklqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a8d405621277881cd0b0cdbdc97d13ce9741f372/DS_UnFigure_05_04_015.png\" alt=\"ACF plot with 21 lags showing autocorrelation values. X-axis represents lag and Y-axis represents autocorrelation. Y-axis ranges from -1 to 1, x-axis from 0 to 20. Autocorrelation values decrease rapidly, with confidence intervals indicated by shaded areas.\">\n</figure>\n\n</pre>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\text{Period}=3\"></span> from the ACF plot."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 495650,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use STL to decompose the time series into trend-cycle, seasonal, and noise components.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "See Solution Manual"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Use Python function <code class=\"python\" lang=\"python\">STL()</code>.\n<pre class=\"python\" lang=\"python\"># Import libraries\nfrom statsmodels.tsa.seasonal import STL\n\n# Perform seasonal decomposition using STL\nstl = STL(df['Deviation'], period=3)\nresult = stl.fit()\nresult.plot();\n<figure>\n<img src=\"https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdk1qIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4d41978ab9da58090c2840bb6d3a9ea98fce1067/DS_UnFigure_05_04_016.png\" alt=\"A time series decomposition plot labeled “Deviation” with four subplots: deviation (0 to 2), trend (0 to 1), seasonality (-0.25 to 0.25), and residuals (-0.5 to 0.5). X-axis for all plots ranges from 0 to 60.\">\n</figure></pre>"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,373 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "book:stax-datascience",
+  "lo:stax-datascience:3-4-2",
+  "context-cnxmod:e079a45b-9066-4700-8657-2eac394e8849",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:3-4-probability-theory"
+ ],
+ "uuid": "a70f3415-a0f7-4357-acaf-af7d163d9d20",
+ "group_uuid": "4c646ae9-1d79-49bd-b1ac-89ffcc2eebeb",
+ "number": 56485,
+ "version": 4,
+ "uid": "56485@4",
+ "published_at": "2024-05-17T06:05:16.962Z",
+ "nickname": "DS_Ch03_Sec04_QP8",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "From past data, it’s known that the probability that an individual owns a dog is 0.42. Three random people are asked if they own a dog. (Round answers to 3 decimal places).",
+ "questions": [
+  {
+   "id": 457862,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the probability that all three people own a dog.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "0.074\n"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "The probability that all three people own a dog will be equivalent to the probability that the first person owns a dog and the second person owns a dog and the third person owns a dog. This implies that we want to find the probability <span data-math=\"P\\left( {A\\;\\mathrm{and}\\;B\\;\\mathrm{and}\\;C} \\right)\"></span> where the events that each person owns a dog are considered to be independent from one another.<br>Thus the probability can be calculated as:<br>\n<span data-math=\"P\\left( {A\\;\\mathrm{and}\\;B\\;\\mathrm{and}\\;C} \\right) = P\\left( A \\right)\\cdot P\\left( B \\right)\\cdot P\\left( C \\right) = 0.42\\cdot 0.42\\cdot 0.42 = 0.074\"></span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 457863,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the probability that none of the three people own a dog.\n\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "To find the probability that none of the three people own a dog, first find the probability for the event that a person owns a dog, and use the probability formula for the complement of an event: <br><span data-math=\"P\\left( {A'} \\right) = 1 - P\\left( A \\right) = 1 - 0.42 = 0.58\"></span><br>Next, find the probability that none of the three people own a dog as follows:<br><span data-math=\"P\\left( {A'\\;\\mathrm{and}\\;B'\\;\\mathrm{and}\\;C'} \\right) = P\\left( {A'} \\right)\\cdot P\\left( {B'} \\right)\\cdot P\\left( {C'} \\right) = 0.58 \\cdot 0.58\\cdot 0.58 = 0.195\"></span>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "0.195\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 457864,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the probability that at least one of the people owns a dog.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "The phrase “at least one” implies the condition of one or more successes. From a sample space perspective, one or more successes is the complement of “no successes.” Using the complement rule, we can write the following probability formula.<br><span data-math=\"P\\left( {\\mathrm{at}\\;\\mathrm{least}\\;\\mathrm{one}\\;\\mathrm{person}\\;\\mathrm{owns}\\;\\mathrm{a}\\;\\mathrm{dog}} \\right) = 1 - P\\left( {\\mathrm{none}\\;\\mathrm{own}\\;\\mathrm{a}\\;\\mathrm{dog}} \\right) = 1 - 0.195 = 0.805\"></span>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "0.805 "
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  4,
+  3,
+  2,
+  1
+ ]
+}

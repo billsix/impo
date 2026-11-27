@@ -57,15 +57,16 @@ confirmed on each book's first build.
 - `osbooks-college-physics-bundle/` — two books added 2026-11-26: *College Physics 2e* and *College Physics
   for AP® Courses 2e*, 283 modules each (248 shared); no embedded exercises, raster figures.
 - `osbooks-business-law/` — *Business Law I Essentials 2e* (47 modules, 181-page PDF), added 2026-11-27: no embedded exercises; raster figures; built in one pass with no toolchain change.
-- `osbooks-additive-manufacturing/` — *Additive Manufacturing Essentials* (42 modules, 250-page PDF), added 2026-11-27: 122 embedded exercises, not fetched yet (`tasks/openstax-add-book-additive-manufacturing.md`); raster figures; built in one pass with no toolchain change.
-- `osbooks-life-liberty-and-pursuit-happiness/` — *Life, Liberty, and the Pursuit of Happiness* (532 modules, 2,484-page PDF), added 2026-11-27: 1,896 embedded exercises, not fetched yet (`tasks/openstax-add-book-life-liberty-and-pursuit-happiness.md`); raster figures; CC BY 4.0; built in one pass with no toolchain change.
+- `osbooks-additive-manufacturing/` — *Additive Manufacturing Essentials* (42 modules, 246-page PDF), added 2026-11-27: 120 embedded exercises, all cached 2026-11-27; raster figures; built in one pass with no toolchain change.
+- `osbooks-life-liberty-and-pursuit-happiness/` — *Life, Liberty, and the Pursuit of Happiness* (532 modules, 2-page PDF), added 2026-11-27: 1,895 embedded exercises, all cached 2026-11-27; raster figures; CC BY 4.0; built in one pass with no toolchain change.
 - `osbooks-us-history/` — *U.S. History* (177 modules, 1,308-page PDF), added 2026-11-27: no embedded exercises; raster figures; it brought block quotations to the converter (97 of them).
 - `osbooks-american-government/` — *American Government 4e* (100 modules, 918-page PDF), added 2026-11-27: no embedded exercises; raster figures; it brought reference notes to the converter (1,342, now footnotes).
-- `osbooks-foundations-information-systems/` — *Foundations of Information Systems* (59 modules, 609-page PDF), added 2026-11-27: 410 embedded exercises, not fetched yet (`tasks/openstax-add-book-foundations-information-systems.md`); raster figures; it brought a footnote in a note's title to the converter.
-- `osbooks-neuroscience/` — *Introduction to Behavioral Neuroscience* (106 modules, 1,114-page PDF), added 2026-11-27: 568 embedded exercises, not fetched yet (`tasks/openstax-add-book-neuroscience.md`); raster figures; one figure's file name holds an en dash, which needed a UTF-8 locale in the HTML and EPUB scripts.
-- `osbooks-introduction-political-science/` — *Introduction to Political Science* (107 modules, 753-page PDF), added 2026-11-27: 308 embedded exercises, not fetched yet (`tasks/openstax-add-book-introduction-political-science.md`); raster figures; 1,522 reference notes, now footnotes; 115 embedded video frames, dropped as in every book.
-- `osbooks-introduction-intellectual-property/` — *Introduction to Intellectual Property* (54 modules, 226-page PDF), added 2026-11-27: 185 embedded exercises, not fetched yet (`tasks/openstax-add-book-introduction-intellectual-property.md`); raster figures; CC BY 4.0; 31 block quotations.
-- `osbooks-world-history/` — *World History Volume 1, to 1500* (85 modules, 918-page PDF); *World History Volume 2, from 1400* (80 modules, 864-page PDF), added 2026-11-27: 1,158 embedded exercises, not fetched yet (`tasks/openstax-add-book-world-history.md`); raster figures; 131 block quotations.
+- `osbooks-foundations-information-systems/` — *Foundations of Information Systems* (59 modules, 615-page PDF), added 2026-11-27: 410 embedded exercises, all cached 2026-11-27; raster figures; it brought a footnote in a note's title to the converter.
+- `osbooks-neuroscience/` — *Introduction to Behavioral Neuroscience* (106 modules, 1-page PDF), added 2026-11-27: 568 embedded exercises, all cached 2026-11-27; raster figures; one figure's file name holds an en dash, which needed a UTF-8 locale in the HTML and EPUB scripts.
+- `osbooks-introduction-political-science/` — *Introduction to Political Science* (107 modules, 763-page PDF), added 2026-11-27: 308 embedded exercises, all cached 2026-11-27; raster figures; 1,522 reference notes, now footnotes; 115 embedded video frames, dropped as in every book.
+- `osbooks-introduction-intellectual-property/` — *Introduction to Intellectual Property* (54 modules, 232-page PDF), added 2026-11-27: 185 embedded exercises, all cached 2026-11-27; raster figures; CC BY 4.0; 31 block quotations.
+- `osbooks-world-history/` — *World History Volume 1, to 1500* (85 modules, 928-page PDF); *World History Volume 2, from 1400* (80 modules, 872-page PDF), added 2026-11-27: 1,158 embedded exercises, all cached 2026-11-27; raster figures; 131 block quotations.
+- `osbooks-principles-data-science/` — *Principles of Data Science* (59 modules, 600-page PDF), added 2026-11-27: 136 embedded exercises, all cached 2026-11-27; raster figures; it brought one-line code blocks wrapped in line breaks to the converter.
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -104,6 +105,7 @@ whose licence it does not know.
 | osbooks-introduction-political-science | CC BY-NC-SA 4.0 | yes |
 | osbooks-introduction-intellectual-property | CC BY 4.0 | yes |
 | osbooks-world-history (2 books) | CC BY-NC-SA 4.0 | yes |
+| osbooks-principles-data-science | CC BY-NC-SA 4.0 | yes |
 
 Every collection inside a bundle declares the same licence as its siblings. No module file carries licence
 metadata. The exercise caches are a separate case: see "Copyright / licensing" in `openstax/CLAUDE.md`.

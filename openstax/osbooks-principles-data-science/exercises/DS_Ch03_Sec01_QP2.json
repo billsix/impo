@@ -1,0 +1,377 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "context-cnxmod:af3817c2-a797-4818-8502-436660ea1cc3",
+  "lo:stax-datascience:3-1-2",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:3-1-measures-of-center"
+ ],
+ "uuid": "3019a841-d0ff-4495-ab36-10a6a0be8821",
+ "group_uuid": "fd7b9835-1cb0-40dd-80b1-048e98a39d5e",
+ "number": 56441,
+ "version": 7,
+ "uid": "56441@7",
+ "published_at": "2024-05-09T05:57:27.383Z",
+ "nickname": "DS_Ch03_Sec01_QP2",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<table class=\"unnumbered full-width\">\n<thead>\n<tr><td valign=\"top\" align=\"center\"><strong>Dataset B Description</strong></td>\n<td valign=\"top\" align=\"center\"><strong>Data</strong></td>\n\n</tr></thead>\n<tbody>\n<tr><td valign=\"top\" align=\"left\">Weights of packages on a delivery truck (weights in pounds)\n</td>\n<td valign=\"top\" align=\"left\">Sample of 12 packages: 3.2, 9.1, 4.3, 1.9, 2.6, 4.7, 0.7, 1.3, 3.9, 6.4, 5.0, 25.4</td>\n\n</tr></tbody>\n\n</table>",
+ "questions": [
+  {
+   "id": 456649,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": " For Dataset B, calculate the mean and median (round answers to 1 decimal place). Use technology as appropriate. \n\n\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\mathrm{Mean} = 5.7,\\;\\mathrm{Median} = 4.1\"></span>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "To find the mean, add up the data values and divide by the number of data values, which is 12. The sum of the data values is 68.5, and dividing this by 12 results in the mean of 5.7.<br>\nTo find the median, order the data values from smallest to largest as follows:<br>\n0.7, 1.3, 1.9, 2.6, 3.2, 3.9, 4.3, 4.7, 5.0, 6.4, 9.1, 25.4<br><br>\nNext, locate the middle value in the ordered dataset. Since there is an even number of data values, add together the two middle values and divide by 2 to determine the median, which is 4.1.<br><br>\nTo find the mean using Excel, copy the dataset into cells A1 to A12. In any empty cell, type in: <br>\n=AVERAGE(A1:A12)<br><br>\nTo find the median using Excel, copy the dataset into cells A1 to A12. In any empty cell, type in: <br>\n=MEDIAN(A1:A12)<br><br>\nTo find the mean and median using Python, follow this outline:\n<pre class=\"python\" lang=\"python\"># import the statistics library import statistics\n# define a dataset of 12 numbers\nweights = [3.2, 9.1, 4.3, 1.9, 2.6, 4.7, 0.7, 1.3, 3.9, 6.4, 5.0, 25.4]\n# execute the statistics.mean() function on this list\nprint(statistics.mean(weights))\n# execute the statistics.median() function on this list \nprint(statistics.median(weights))\n</pre>\n \n\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 456650,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Is there any preference in using the mean versus the median for this dataset?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "There is a preference to use the median for this dataset since there is an outlier data value of 25.4."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "See Solution Manual"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 456651,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "If so, would the mean or the median be preferred as a measure of central tendency for this dataset?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "The median would be preferred since the outlier data value does not affect the median, whereas the mean would be skewed due to the presence of the outlier data value. "
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "See Solution Manual"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

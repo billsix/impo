@@ -1,0 +1,378 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "context-cnxmod:e079a45b-9066-4700-8657-2eac394e8849",
+  "lo:stax-datascience:3-4-3",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:3-4-probability-theory"
+ ],
+ "uuid": "3afd6242-cb16-4c7e-a228-2338d114a912",
+ "group_uuid": "55bf9565-3f1f-432b-8a1e-912fea926112",
+ "number": 56490,
+ "version": 8,
+ "uid": "56490@8",
+ "published_at": "2024-05-17T12:14:32.104Z",
+ "nickname": "DS_Ch03_Sec04_QP10",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "A medical researcher collects statistical data as follows:<br>\n<ul>\n<li>23% of senior citizens (65 or older) get the flu each year.</li>\n<li>32% of people under 65 get the flu each year.</li>\n<li>In the population, there are 15% senior citizens.</li>\n</ul>",
+ "questions": [
+  {
+   "id": 457991,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Are the events “being a senior” and “getting the flu” dependent or independent?\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "See Solution Manual \n"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "These events are not independent since the probability of getting the flu is affected by age.\n\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 457992,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the probability that a person selected at random is a senior and will get the flu.\n\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "0.035"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Since we are interested in the probability that a person selected at random is a senior and will get the flu, use the probability formula: <br><span data-math=\"P\\left( {A\\;\\mathrm{and}\\;B} \\right) = P\\left( A \\right)\\cdot P\\left( {B\\;|\\;A} \\right),\\;\\mathrm{when}\\;A,\\;B\\;\\mathrm{are}\\;\\mathrm{dependent}\\;\\mathrm{events}\"></span><br>Note that the statement “23% of senior citizens (65 or older) get the flu each year” can be considered as a conditional probability where the probability that someone gets the flu, given that they are a senior citizen, is 0.23.<br><span data-math=\"\\begin{aligned}P{\\left(\\mathrm{senior}\\;\\mathrm{and}\\;\\mathrm{flu}\\right)}&amp;= P{\\left(\\mathrm{senior}\\right)}\\cdot P{\\left({\\mathrm{flu}\\;\\vert\\;\\mathrm{senior}}\\right)}\\\\P{\\left(\\mathrm{senior}\\;\\mathrm{and}\\;\\mathrm{flu}\\right)}&amp;=0.15\\cdot0.23=0.035\\end{aligned}\"></span>\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 457993,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the probability that a person selected at random is under 65 years old and will get the flu.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "0. 272 "
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Note that the statement “32% of people under 65 get the flu each year” can be considered as a conditional probability where the probability that someone gets the flu, given that they are under 65, is 0.32. Also note that since there are 15% senior citizens in the population, this implies that the remaining 85% of the population is under the age of 65.<br><span data-math=\"\\begin{aligned}P{\\left(\\mathrm{under}\\;65\\;\\mathrm{and}\\;\\mathrm{flu}\\right)}&amp;=P{\\left(\\mathrm{under}\\;65\\right)}\\cdot  P{\\left({\\mathrm{flu}\\;\\vert\\;\\mathrm{under}\\;65}\\right)}\\\\P{\\left(\\mathrm{under}\\;65\\;\\mathrm{and}\\;\\mathrm{flu}\\right)}&amp;=0.85\\cdot 0.32=0.272\\end{aligned}\"></span>\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

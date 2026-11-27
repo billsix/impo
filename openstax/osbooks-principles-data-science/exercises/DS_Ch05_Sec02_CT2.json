@@ -1,0 +1,342 @@
+{
+ "images": [
+  {
+   "created_at": "2024-10-03T03:15:11.718Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdXdqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6b532188e081a68d0fbcbba594465fe673f9e434",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdXdqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6b532188e081a68d0fbcbba594465fe673f9e434/DS_UnFigure_05_04_010.png"
+  },
+  {
+   "created_at": "2024-10-03T03:15:11.721Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdTBqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d6dfbe8ebeff3e6c75c0f6c179834d83d9bd8d71",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdTBqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d6dfbe8ebeff3e6c75c0f6c179834d83d9bd8d71/DS_UnFigure_05_04_011.png"
+  },
+  {
+   "created_at": "2024-10-03T03:15:11.724Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdTRqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8e1e3fe2123f6865193141c323cd1baa657966cf",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdTRqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8e1e3fe2123f6865193141c323cd1baa657966cf/DS_UnFigure_05_04_012.png"
+  }
+ ],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "lo:stax-datascience:5-2-1",
+  "context-cnxmod:dc9bfc9f-d7d3-4727-a7c6-1f8d892475b8",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:5-2-components-of-time-series-analysis"
+ ],
+ "uuid": "daaa5af2-82cb-49c5-8fc7-e8e333c0eaf6",
+ "group_uuid": "da261e49-b6ee-47af-bdc9-c758c86fc090",
+ "number": 61970,
+ "version": 7,
+ "uid": "61970@7",
+ "published_at": "2024-10-03T03:15:17.642Z",
+ "nickname": "DS_Ch05_Sec02_CT2",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Consider the graph in the figure as shown below.  ",
+ "questions": [
+  {
+   "id": 495639,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Is the trend curve generally increasing, decreasing, or staying level over the entire time period?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 495640,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The data set <a href=\"https://openstax.org/r/spreadsheetsd1j\" rel=\"nofollow\" target=\"_blank\">USATemps1961-2023.csv</a> contains the time series from which the graph was created. Find the moving average trendline with period 10 for the data.<br><br>\n<figure>\n<img id=\"5.20\" src=\"exercises/media/340466d6cd9e6a14.png\" alt=\"Line graph titled “Temperature deviation from baseline in the United States (in degrees Celsius).” The graph shows fluctuations of a value over time. Y-axis ranges from -1 to 2.5, x-axis from 1961 to 2021. The line exhibits a generally upward trend with significant peaks and troughs.\">\nFigure 5.20\n</figure>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,22 @@
+NOT the work of this repository's maintainer, and NOT under its MIT licence.
+
+The files in this directory are practice-exercise content (questions, and any
+images they reference) downloaded from OpenStax Exercises
+(https://exercises.openstax.org) by the shared toolchain's
+tools/cnxml2tex/fetch_exercises.py, and committed here so the book always builds
+offline.
+
+Copyright: each exercise names its holders in the `copyright_holders` field of
+its JSON file (Rice University, in every file examined on 2026-11-26).
+
+Licence: the downloaded JSON carries no licence field. OpenStax Exercises states
+at https://exercises.openstax.org/copyright (read 2026-11-26) that its content is
+copyright Rice University or used with permission, that many of its questions
+are licensed under a Creative Commons Attribution licence, and that each
+question carries its own copyright and licensing information. Treat these files
+under those terms, and under no terms broader than the licence of the book they
+belong to, which that book's collection XML declares (the per-book table is in
+tasks/reference/openstax/book-inventory.md at the root of this repository).
+
+See ../CLAUDE.md (the OpenStax family contract) for how downloaded content is
+licensed and cached.

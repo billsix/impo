@@ -30,21 +30,20 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 | Book | Collection | Shape | PDF | Web pages |
 |---|---|---|---|---|
-| *World History Volume 1, to 1500* | `world-history-volume-1` | 85 modules in 17 chapters and 4 units; two levels of nesting | 918 pages | 23 |
-| *World History Volume 2, from 1400* | `world-history-volume-2` | 80 modules in 15 chapters and 3 units; two levels of nesting | 864 pages | 20 |
+| *World History Volume 1, to 1500* | `world-history-volume-1` | 85 modules in 17 chapters and 4 units; two levels of nesting | 928 pages | 23 |
+| *World History Volume 2, from 1400* | `world-history-volume-2` | 80 modules in 15 chapters and 3 units; two levels of nesting | 872 pages | 20 |
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
-- **Exercises:** 1,158 embedded links, all in the `#exercise/<nickname>` scheme (none in
-  `#ost/api/ex/`). **Not fetched yet**: there is no `exercises/` cache, so each one is
-  left out of the built book and counted by the converter as `exercise-uncached`. The
-  maintainer runs `make fetch-exercises` here (it identifies itself with his contact
-  address); `../../tasks/openstax-add-book-world-history.md` holds what follows.
+- **Exercises:** 1,158 embedded links to 1,158 exercises, all in the `#exercise/<nickname>`
+  scheme. All 1,158 are in the committed cache `exercises/` (4 images; with its `COPYRIGHT`
+  notice), fetched by the maintainer on 2026-11-27, and are in the built book.
 - **Figures:** raster only (909 files, 345 MB, both volumes together); no SVG.
 - **Exercises per volume:** 589 links in volume 1 and 569 in volume 2.
 - **Block quotations:** 131 in the two volumes, set off as such.
-- **Embedded frames:** 8 point at outside pages; the converter emits nothing for them (`../../tasks/openstax-embedded-frame-links-are-dropped.md`).
+- **Embedded frames:** 8 point at outside pages (simulations, videos). Each is a labelled link in all
+  three editions (`../../tasks/reference/tooling/converters.md`, "Outside pages embedded in frames").
 - **Web editions:** 23 and 20 pages. With two levels of nesting the HTML is split per chapter, as in the other unit-nested books, so each page is long.
-- **Still falling back** (the converter's report): none besides the 1,158 `exercise-uncached`.
+- **Still falling back** (the converter's report): none.
 
 ## Build
 

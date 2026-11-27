@@ -1,0 +1,375 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "lo:stax-datascience:3-2-1",
+  "context-cnxmod:aa553f23-fc11-4f7c-a69e-cfdf04d609f9",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:3-2-measures-of-variation"
+ ],
+ "uuid": "046ecfad-68e7-40da-8a11-8c37813d6f99",
+ "group_uuid": "986a6d8f-b9e1-4485-8011-2c3889f0057c",
+ "number": 56442,
+ "version": 5,
+ "uid": "56442@5",
+ "published_at": "2024-05-07T12:18:40.254Z",
+ "nickname": "DS_Ch03_Sec03_QP3",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<table class=\"unnumbered full-width\">\n<thead>\n<tr><td valign=\"top\" align=\"center\"><strong>Dataset C Description</strong></td>\n<td valign=\"top\" align=\"center\"><strong>Data</strong></td>\n\n</tr></thead>\n<tbody>\n<tr><td valign=\"top\" align=\"left\">Amount of time for a pain reliever to provide relief from migraine headache (time in minutes)</td>\n<td valign=\"top\" align=\"left\">Sample of 10 patients: 12.1, 13.8, 9.4, 15.9, 11.5, 14.6, 18.1, 12.7, 11.0, 14.2</td>\n\n</tr></tbody>\n\n</table>",
+ "questions": [
+  {
+   "id": 456335,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "\nFor Dataset C, calculate the range, standard deviation, and variance (round answers to 1 decimal place). \nUse technology as appropriate and include appropriate units as part of your answers.\n\n\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "To find the range, subtract the minimum data value from the maximum data value, which is <span data-math=\"18.1 - \\;9.4 = 8.7\"></span>.<br>\nTo find the standard deviation and variance, use technology as outlined in the following instructions.<br>\nTo use Excel to find the range, standard deviation, and variance, copy the dataset into cells A1 to A10.<br><br>\nTo find the range, in any empty cell, type in:<br>\n=MAX(A1:A10) – MIN(A1:A10)<br><br>\nTo find the standard deviation, in any empty cell, type in: <br>\n=STDEV.S (A1:A10)<br><br>\nTo find the variance, in any empty cell, type in:<br>\n=VAR.S (A1:A10)<br><br>\nTo use Python to find the range, standard deviation, and variance, follow this outline:\n <pre class=\"python\" lang=\"python\"># import the statistics library\nimport statistics\n# define a dataset of 10 numbers\nrelief_times = [12.1, 13.8, 9.4, 15.9, 11.5, 14.6, 18.1, 12.7, 11.0, 14.2]\n# calculate the range of this list using max() and min() functions\nprint(max(relief_times)- min(relief_times))\n# execute the statistics.stdev() function on this list\nprint(statistics.stdev(relief_times))\n# execute the statistics.variance() function on this list\nprint(statistics.variance(relief_times))\n</pre>"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\mathrm{Range} = 8.7,\\;\\mathrm{Standard\\;Deviation} = 2.5,\\;\\mathrm{Variance} = 6.5\"></span>\n \n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 456336,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What does the standard deviation of this dataset communicate regarding the amount of time to provide relief from a migraine headache?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "See Solution Manual"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "The standard deviation provides a measure of how far the typical data values are from the mean. In this example, the mean is 13.3 and the standard deviation is 2.5, which indicates a moderate amount of variation in the dataset. The typical average time to obtain relief would extend from 13.3 ± 2.5 minutes."
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 456337,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Would a medical researcher prefer to use the standard deviation or the variation for this dataset, and why?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "See Solution Manual "
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A researcher would prefer to use the standard deviation for this dataset since the units for the standard deviation are in minutes whereas the variance would be measured in square-minutes, which lacks practical significance."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

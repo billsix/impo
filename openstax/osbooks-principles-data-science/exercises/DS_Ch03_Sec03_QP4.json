@@ -1,0 +1,377 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "lo:stax-datascience:3-3-1",
+  "context-cnxmod:5913a702-d3e4-4e7b-a49e-8b06e3872b1c",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:3-3-measures-of-position"
+ ],
+ "uuid": "85ed0856-75a6-4137-828c-5bac39faafb2",
+ "group_uuid": "457796f5-334d-4fbd-9500-5529f83cfada",
+ "number": 56471,
+ "version": 7,
+ "uid": "56471@7",
+ "published_at": "2024-06-20T13:11:37.043Z",
+ "nickname": "DS_Ch03_Sec03_QP4",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "<table class=\"unnumbered full-width\">\n<thead>\n<tr><td valign=\"top\" align=\"center\"><strong>Dataset D Description</strong></td>\n<td valign=\"top\" align=\"center\"><strong>Data</strong></td>\n\n</tr></thead>\n<tbody>\n<tr><td valign=\"top\" align=\"left\">Credit card balances for consumers (in dollars)</td>\n<td valign=\"top\" align=\"left\">Sample of 9 consumers: $878.32, $671.54, $990.35, $801.85, $4303.76, $1285.03, $289.44, $78.61, $952.83</td>\n\n</tr></tbody>\n\n</table>",
+ "questions": [
+  {
+   "id": 461521,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "For Dataset D, calculate the quartiles of the dataset.\n\n\n\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "To find the first quartile using Excel, copy the dataset into cells A1 to A11. In any empty cell, type in: <br>\n=QUARTILE.EXC(A1:A11,1)<br><br>\nTo find the second quartile using Excel, copy the dataset into cells A1 to A11. In any empty cell, type in: <br>\n=QUARTILE.EXC(A1:A11,2)<br><br>\nTo find the third quartile using Excel, copy the dataset into cells A1 to A11. In any empty cell, type in:<br>\n=QUARTILE.EXC(A1:A11,3)<br><br>\nTo find the quartiles using Python,\n<pre class=\"python\" lang=\"python\"># import the statistics library\nimport statistics\n# define a dataset of credit card balances\nbalances = [878.32, 671.54, 990.35, 801.85, 4303.76, 1285.03, 289.44, 78.61, 952.83, 386.45, 1182.42]\n# execute the statistics.quantiles() function on this list, using n = 4 to specify quartiles.\nprint('quartiles = ',statistics.quantiles(balances, n = 4))\n</pre>\n\n\n"
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"{Q_1} = 386.45,\\;{Q_2} = 878.32,\"></span> <span data-math=\"{Q_3} = 1182.42\"></span>\n\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 461522,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "For this same dataset, calculate the interquartile range (IQR).",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\mathrm{IQR}=795.97\"></span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "The interquartile range is calculated as the third quartile, subtract the first quartile, as follows:<br>\n<span data-math=\"IQR = {Q_3} - {Q_1} = 1182.42 - 386.45 = 795.97\"></span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 461523,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Determine if there are any potential outliers in this dataset.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\mathrm{Outlier}\\;\\mathrm{data}\\;\\mathrm{value} = 4303.76\"></span>"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "To determine if there are outliers in the dataset, first calculate the lower and upper bounds for outliers, use the following formulas:<br>\n<span data-math=\"\\text{Lower Bound for Outliers}=Q_1-1.5\\cdot\\mathrm{IQR}=386.45\\;–\\;(1.5\\cdot795.97)=-807.505\"></span><br>\n<span data-math=\"\\text{Upper Bound for Outliers}=Q_3+1.5\\cdot\\mathrm{IQR}=1182.42+(1.5\\cdot795.97)=2376.375\"></span><br>There are no data values below the lower bound.<br>However, there is one data value above the upper bound of 2376.375, namely the data value 4303.76. Thus, there is one outlier data value of 4303.76.\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}
