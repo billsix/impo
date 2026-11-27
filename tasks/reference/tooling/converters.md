@@ -245,7 +245,7 @@ the day each was added.
 | workplace-software-skills | 1 | `#exercise/` | 682 | raster + 20 exercise imgs |
 | introduction-anthropology | 1 | `#exercise/` | 150 | raster |
 | introduction-philosophy | 1 | `#exercise/` | 228 | raster |
-| nursing-external-bundle | 3 | `#exercise/` (not fetched) | 1156 | raster |
+| nursing-external-bundle | 3 | `#exercise/` | 1156 | raster |
 
 ("survey" = the scheme wasn't re-audited on the raw CNXML for that book; verify on first exercise-bearing build,
 the same way physics/biology turned out to have `#ost/api/ex/`.)

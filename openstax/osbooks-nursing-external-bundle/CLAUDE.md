@@ -30,16 +30,14 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 | Book | Collection | Shape | PDF | Web pages |
 |---|---|---|---|---|
-| *Pharmacology for Nurses* | `pharmacology` | 203 modules in 40 chapters grouped into 11 units; two levels of nesting | 1,244 pages | 53 |
-| *Nutrition for Nurses* | `nutrition` | 93 modules in 20 chapters grouped into 9 units; two levels of nesting | 520 pages | 31 |
-| *Population Health for Nurses* | `population-health` | 185 modules in 35 chapters grouped into 7 units; two levels of nesting | 1,374 pages | 44 |
+| *Pharmacology for Nurses* | `pharmacology` | 203 modules in 40 chapters grouped into 11 units; two levels of nesting | 1,267 pages | 53 |
+| *Nutrition for Nurses* | `nutrition` | 93 modules in 20 chapters grouped into 9 units; two levels of nesting | 537 pages | 31 |
+| *Population Health for Nurses* | `population-health` | 185 modules in 35 chapters grouped into 7 units; two levels of nesting | 1,400 pages | 44 |
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
-- **Exercises:** 1,156 embedded links, all in the `#exercise/<nickname>` scheme (none in
-  `#ost/api/ex/`). **Not fetched yet**: there is no `exercises/` cache, so each one is
-  left out of the built book and counted by the converter as `exercise-uncached`. The
-  maintainer runs `make fetch-exercises` here (it identifies itself with his contact
-  address); `../../tasks/openstax-add-book-nursing-external-bundle.md` holds what follows.
+- **Exercises:** 1,156 embedded links to 1,156 exercises, all in the `#exercise/<nickname>`
+  scheme. All 1,156 are in the committed cache `exercises/` (no images; with its `COPYRIGHT`
+  notice), fetched by the maintainer on 2026-11-27, and are in the built book.
 - **Figures:** raster only (419 files, 142 MB); no SVG.
 - **Exercises per book:** Pharmacology for Nurses 472, Nutrition for Nurses 304, Population Health for Nurses 380.
 - **Tables:** 714, most of them prose (drug classes, dosages, nursing implications). In the PDF such a table is scaled down, some until they cannot be read, and one with a link runs off the page (`../../tasks/openstax-pdf-prose-tables-shrink-or-run-off-the-page.md`).
@@ -47,7 +45,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 - **Embedded frames:** 248 point at outside pages (58, 6 and 184 in the three books); each is a labelled link (`../../tasks/reference/tooling/converters.md`, "Outside pages embedded in frames").
 - **Web editions:** 53, 31 and 44 pages. With two levels of nesting the HTML is split per chapter, so each page is long.
 - **Characters missing from the PDF:** `⅓`, `₁` and `₆` in Nutrition for Nurses (`../../tasks/openstax-pdf-characters-missing-from-the-body-font.md`).
-- **Still falling back** (the converter's report): none besides the 1,156 `exercise-uncached`.
+- **Still falling back** (the converter's report): none.
 
 ## Build
 
