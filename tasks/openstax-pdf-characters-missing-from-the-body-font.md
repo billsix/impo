@@ -43,8 +43,11 @@ The characters fall into kinds that may want different remedies:
 - [ ] Make `entrypoint/pdf.sh` print the count of distinct missing characters at the end of a build.
 - [ ] Rebuild every book's PDF; record what is left, per book, in `tasks/reference/tooling/converters.md`.
 
+## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-27: "for your questions, whatever you recommend")
+
+- **Letters and symbols get a fallback font chain** in `osbook.cls`, not one `\newunicodechar` line per character, so a character nobody has listed is covered too.
+- The two smaller questions were left to the agent by the same answer, and its choices are: **the pictograph markers are printed** from a symbol font in the fallback chain when the image holds one with the glyph, and are replaced by a word only where no font has it; **the converter repairs the Windows-1252 control characters** (U+0092 to `’` and so on) for all three editions, since the right character is known.
+
 ## Open questions
 
-1. For the letters and symbols, shall the class use (a) a fallback font chain, which covers characters nobody has listed, or (b) one `\newunicodechar` line per character? The agent recommends (a).
-2. Shall the pictograph markers (`🔎`, `📝`, `✒` and the like) be printed with a symbol font, or replaced by a word or dropped in the PDF?
-3. Shall the converter repair the Windows-1252 control characters (U+0092 to `’` and so on) for all three editions?
+None.

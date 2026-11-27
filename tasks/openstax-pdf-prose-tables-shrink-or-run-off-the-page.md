@@ -35,6 +35,10 @@ Tables with a row whose cells hold more than 250 characters together, which cann
 - [ ] `tools/compare-converter-output.sh`: list which tables change in the books already built, and read a sample of them in the PDF.
 - [ ] Rebuild the affected books; record the rule in `tasks/reference/tooling/converters.md`.
 
+## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-27: "for your questions, whatever you recommend")
+
+- **A prose table longer than a page breaks across pages** (`longtable`-style) instead of staying in one piece. Several nursing tables are longer than a page once their cells wrap.
+
 ## Open questions
 
-1. Shall a prose table that is longer than a page break across pages (`longtable`-style), or stay in one piece as now? The agent recommends breaking: several nursing tables are longer than a page once their cells wrap.
+None.
