@@ -85,7 +85,7 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 
 **Study skills**
 
-- [ ] `tasks/openstax-add-book-college-success-bundle.md` — 3 books: `college-success-2e`, `college-success-concise`, `preparing-for-college-success` (CC BY-NC-SA 4.0, 50 MB)
+- [x] `tasks/archive/impo/2026/11/27/openstax-add-book-college-success-bundle.md` — 3 books: `college-success-2e`, `college-success-concise`, `preparing-for-college-success` (CC BY-NC-SA 4.0, 50 MB), done 2026-11-27
 
 ## Progress
 
