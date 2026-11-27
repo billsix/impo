@@ -50,8 +50,7 @@ numbers with its output and change the date.
 - **Languages:** 45 English, 5 Spanish, 4 Polish.
 - **Licences:** 40 repositories are CC BY-NC-SA 4.0, 13 are CC BY 4.0, and 1 has no
   `LICENSE` file (`osbooks-mikroekonomia`).
-- **Built in impo: 29** of the 54 (eleven added 2026-11-27; two of them, `osbooks-neuroscience` and
-  `osbooks-life-liberty-and-pursuit-happiness`, still wait for their exercise caches, each with an open task).
+- **Built in impo: 29** of the 54 (eleven added 2026-11-27).
 - **Rejected: 10** (William Emerison Six <billsix@gmail.com>, 2026-11-26). Nine because
   they are not English ("for non english books, I don't want to add them to our build"), and
   `osbooks-playground` because it is OpenStax's editing-tool playground, not a book:

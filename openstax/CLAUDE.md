@@ -68,7 +68,8 @@ The two layers have two different owners, and imps must not blur them:
   Creative Commons Attribution licence and that each question has its own terms
   (https://exercises.openstax.org/copyright, read 2026-11-26). So the notice does not assert one licence.
 - **Every committed download cache carries a `COPYRIGHT` NOTICE** at its root
-  (`openstax/tooling/templates/exercises-COPYRIGHT` is the template `fetch_exercises` writes/keeps),
+  (`openstax/tooling/templates/exercises-COPYRIGHT` is the template; on 2026-11-27 the fetch left eight new
+  caches without it and it was copied in by hand, so check for it after a first fetch),
   saying whose the files are, where they came from and what is known about their terms. So no one
   browsing impo mistakes those blobs for the maintainer's.
 
@@ -168,8 +169,10 @@ headless browser (read before touching osbook-web.css/.js).
    `CLAUDE.md`, `.gitignore`. Change a template, not a generated folder, when the pattern changes.
 2. In the new folder: `./fetch.sh && ./apply.sh`, then `make convert` and `make dist`. Count the embedded
    exercise links in the CNXML in **both** schemes (`#exercise/<nickname>`, `#ost/api/ex/<id>`); if there
-   are any, the maintainer runs `make fetch-exercises` (it identifies itself with his contact address) and
-   `exercises/` is committed **with its COPYRIGHT NOTICE**.
+   are any, the maintainer runs `make fetch-exercises` (it identifies itself with his contact address), which
+   writes `checkout/exercises/`. Copy its `*.json` and `media/` (not `media-derived/`, which a build makes) to
+   the book folder's `exercises/`, add the notice (`cp ../tooling/templates/exercises-COPYRIGHT
+   exercises/COPYRIGHT`), rebuild, and commit `exercises/` **with its COPYRIGHT NOTICE**.
 3. Record the book: "The books this folder builds" in its `CLAUDE.md`, the list below, the inventory and
    its licence table (`tasks/reference/openstax/book-inventory.md`), and refresh the survey
    (`python3 tools/survey-upstream-books.py`).
