@@ -33,7 +33,7 @@ One collection, `workplace-software-skills` (OpenStax *Workplace Software and Sk
 - **Exercises:** 682 embedded links to 682 exercises, all in the `#exercise/<nickname>`
   scheme. All 682 are in the committed cache `exercises/` (20 images; with its `COPYRIGHT`
   notice), fetched by the maintainer on 2026-11-27, and are in the built book.
-- **Figures:** raster only (1,213 files, 349 MB); no SVG. The PDF is 282 MB and the EPUB 242 MB.
+- **Figures:** raster only (1,213 files, 349 MB); no SVG. The PDF is 285 MB and the EPUB 244 MB.
 - **Block quotations:** 3, set off as such.
 - **Still falling back** (the converter's report): none.
 

@@ -11,7 +11,7 @@
 | *Workplace Software and Skills* | `workplace-software-skills` | 105 modules in 15 chapters; one level of nesting | 1,215 pages | 122 |
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and the upstream `LICENSE`); the built PDF states it.
-- **Figures:** raster only (1,213 files, 349 MB); no SVG. The PDF is 282 MB and the EPUB 242 MB.
+- **Figures:** raster only (1,213 files, 349 MB); no SVG. The PDF is 285 MB and the EPUB 244 MB.
 - **Exercises:** 682 embedded links to 682 exercises, all in the `#exercise/<nickname>` scheme, none in `#ost/api/ex/<id>`. The maintainer ran `make fetch-exercises` on 2026-11-27; all 682 are in the committed cache `openstax/osbooks-workplace-software-skills/exercises/` (20 images) with its `COPYRIGHT` notice, copied in from `openstax/tooling/templates/exercises-COPYRIGHT` because the fetch does not write it.
 - **Result:** built as PDF, EPUB and HTML on 2026-11-27 with the exercises in; the converter reports no `exercise-uncached` and the build log has no pandoc warning. The first build of the day, without the exercises, is the commit that added the folder.
 
@@ -21,7 +21,7 @@ Nothing: it converted and built in one pass.
 
 ## Left as it is
 
-Its 349 MB of figures give a 282 MB PDF and a 242 MB EPUB; what that means for the published site is `tasks/openstax-pages-size-budget.md`'s to decide. The converter reports no fallback. The PDF and HTML were not read page by page; that review is the maintainer's.
+Its 349 MB of figures give a 285 MB PDF and a 244 MB EPUB; what that means for the published site is `tasks/openstax-pages-size-budget.md`'s to decide. The converter reports no fallback. The PDF and HTML were not read page by page; that review is the maintainer's.
 
 ## Not done
 
