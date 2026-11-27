@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `us-history` (OpenStax *U.S. History*): 177 modules in 32 chapters; one level of nesting. Built as PDF (1,308 pages), EPUB and HTML
+One collection, `us-history` (OpenStax *U.S. History*): 177 modules in 32 chapters; one level of nesting. Built as PDF (1,309 pages), EPUB and HTML
 (211 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).

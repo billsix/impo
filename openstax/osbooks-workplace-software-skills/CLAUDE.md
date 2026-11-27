@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `workplace-software-skills` (OpenStax *Workplace Software and Skills*): 105 modules in 15 chapters; one level of nesting. Built as PDF (1,215 pages), EPUB and HTML
+One collection, `workplace-software-skills` (OpenStax *Workplace Software and Skills*): 105 modules in 15 chapters; one level of nesting. Built as PDF (1,223 pages), EPUB and HTML
 (122 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).

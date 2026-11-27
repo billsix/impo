@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `life-liberty-and-pursuit-happiness` (OpenStax *Life, Liberty, and the Pursuit of Happiness*): 532 modules in 16 chapters grouped into 8 units by period, from "1491–1763" to "1980–Present"; two levels of nesting. Built as PDF (2 pages), EPUB and HTML
+One collection, `life-liberty-and-pursuit-happiness` (OpenStax *Life, Liberty, and the Pursuit of Happiness*): 532 modules in 16 chapters grouped into 8 units by period, from "1491–1763" to "1980–Present"; two levels of nesting. Built as PDF (3,360 pages), EPUB and HTML
 (26 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY 4.0 (collection XML and upstream `LICENSE`).

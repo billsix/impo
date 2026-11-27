@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `principles-data-science` (OpenStax *Principles of Data Science*): 59 modules in 10 chapters grouped into 4 units, from "Introducing Data Science and Data Collection" to "Maintaining a Professional and Ethical Data Science Practice"; two levels of nesting. Built as PDF (600 pages), EPUB and HTML
+One collection, `principles-data-science` (OpenStax *Principles of Data Science*): 59 modules in 10 chapters grouped into 4 units, from "Introducing Data Science and Data Collection" to "Maintaining a Professional and Ethical Data Science Practice"; two levels of nesting. Built as PDF (639 pages), EPUB and HTML
 (16 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).

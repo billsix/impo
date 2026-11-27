@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `foundations-information-systems` (OpenStax *Foundations of Information Systems*): 59 modules in 12 chapters; one level of nesting. Built as PDF (615 pages), EPUB and HTML
+One collection, `foundations-information-systems` (OpenStax *Foundations of Information Systems*): 59 modules in 12 chapters; one level of nesting. Built as PDF (640 pages), EPUB and HTML
 (73 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).

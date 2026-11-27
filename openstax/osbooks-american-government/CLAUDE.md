@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `american-government-4e` (OpenStax *American Government 4e*): 100 modules in 17 chapters grouped into 5 units; two levels of nesting. Built as PDF (918 pages), EPUB and HTML
+One collection, `american-government-4e` (OpenStax *American Government 4e*): 100 modules in 17 chapters grouped into 5 units; two levels of nesting. Built as PDF (922 pages), EPUB and HTML
 (24 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).

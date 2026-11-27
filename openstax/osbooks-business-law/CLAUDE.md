@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `business-law-i-essentials-2e` (OpenStax *Business Law I Essentials 2e*): 47 modules in 14 chapters, from "American Law, Legal Reasoning, and the Legal System" to "Securities Regulation"; one level of nesting. Built as PDF (181 pages), EPUB and HTML
+One collection, `business-law-i-essentials-2e` (OpenStax *Business Law I Essentials 2e*): 47 modules in 14 chapters, from "American Law, Legal Reasoning, and the Legal System" to "Securities Regulation"; one level of nesting. Built as PDF (186 pages), EPUB and HTML
 (63 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).

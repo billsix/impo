@@ -30,9 +30,9 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 | Book | Collection | Shape | PDF | Web pages |
 |---|---|---|---|---|
-| *College Success 2e* | `college-success-2e` | 75 modules in 12 chapters; one level of nesting | 468 pages | 89 |
-| *College Success Concise* | `college-success-concise` | 44 modules in 8 chapters; one level of nesting | 294 pages | 54 |
-| *Preparing for College Success* | `preparing-for-college-success` | 49 modules in 9 chapters; one level of nesting | 325 pages | 60 |
+| *College Success 2e* | `college-success-2e` | 75 modules in 12 chapters; one level of nesting | 497 pages | 89 |
+| *College Success Concise* | `college-success-concise` | 44 modules in 8 chapters; one level of nesting | 312 pages | 54 |
+| *Preparing for College Success* | `preparing-for-college-success` | 49 modules in 9 chapters; one level of nesting | 347 pages | 60 |
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
 - **Exercises:** none embedded, counted in the CNXML in both link schemes; no `exercises/` cache.

@@ -26,7 +26,7 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `additive-manufacturing-essentials` (OpenStax *Additive Manufacturing Essentials*): 42 modules in 8 chapters, from "Fundamentals of Additive Manufacturing" to "The Business of Additive Manufacturing"; one level of nesting. Built as PDF (246 pages), EPUB and HTML
+One collection, `additive-manufacturing-essentials` (OpenStax *Additive Manufacturing Essentials*): 42 modules in 8 chapters, from "Fundamentals of Additive Manufacturing" to "The Business of Additive Manufacturing"; one level of nesting. Built as PDF (259 pages), EPUB and HTML
 (52 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).

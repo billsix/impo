@@ -48,7 +48,7 @@ Facts from the first build (2026-11-26):
   three editions (`../../tasks/reference/tooling/converters.md`, "Outside pages embedded in frames").
 - **Still falling back** (the converter's report, both books together): `inline:label`
   (806), `inline:space` (90), `inline:span` (6).
-- **PDFs:** 2,552 pages (2e) and 2,595 pages (AP), built 2026-11-26 and rebuilt 2026-11-27 with the multi-character
+- **PDFs:** 2,568 pages (2e) and 2,613 pages (AP), built 2026-11-26 and rebuilt 2026-11-27 with the multi-character
   operator fix (formulas such as "cal/g·ºC").
 
 ## Build
