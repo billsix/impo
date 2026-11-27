@@ -152,6 +152,29 @@ def test_quote_with_paragraphs_is_a_block_quote() -> None:
     )
 
 
+def test_quote_holding_a_list_is_a_block_quote() -> None:
+    node: etree._Element = _content(
+        '<quote><list list-type="enumerated"><item>One.</item><item>Two.</item></list></quote>'
+    )
+    rendered: str = c.flow(node, set())
+    assert rendered.strip().startswith("\\begin{quote}")
+    assert rendered.count("\\item") == 2
+
+
+def test_span_is_set_like_the_text_around_it() -> None:
+    node: etree._Element = _content(
+        '<para>The <span class="blue-text">drug</span> class.</para>'
+    )
+    assert c.flow(node, set()) == "\nThe drug class.\n"
+    assert "inline:span" not in c.UNKNOWN
+
+
+def test_empty_label_sets_nothing() -> None:
+    node: etree._Element = _content("<para><label/>B</para>")
+    assert c.flow(node, set()) == "\nB\n"
+    assert "inline:label" not in c.UNKNOWN
+
+
 def test_quote_inside_a_sentence_stays_inline() -> None:
     node: etree._Element = _content("<para>He said <quote>no</quote>.</para>")
     assert c.flow(node, set()) == "\nHe said ``no''.\n"

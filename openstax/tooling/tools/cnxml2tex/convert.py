@@ -1600,6 +1600,14 @@ def inline_element(node: _Element, labels: set[str]) -> str:
         return "\\includegraphics[height=1em]{%s}" % src if src else ""
     if tag == "emphasis":
         return r"\emph{%s}" % inline(node, labels)
+    if tag == "span":
+        # A <span> carries only a presentation class (class="blue-text"); its
+        # words are set like the text around them.
+        return inline(node, labels)
+    if tag == "label" and not node.text and len(node) == 0:
+        # An empty <label/> asks the web edition to print no label on a note or
+        # a solution; it holds nothing to set.
+        return ""
     # block-ish element appearing inline -> just recurse
     warn_unknown("inline:" + (tag or "?"))
     return inline(node, labels)
@@ -1805,14 +1813,15 @@ def is_block(child: _Element) -> bool:
 
 
 def _is_block_quote(node: _Element) -> bool:
-    """A <quote> set off from the prose: one that holds paragraphs, or that the
-    source marks as a block (class="block", display="block"). Any other <quote>
-    is a run of quoted words inside a sentence."""
+    """A <quote> set off from the prose: one that holds paragraphs or a list, or
+    that the source marks as a block (class="block", display="block"). Any other
+    <quote> is a run of quoted words inside a sentence."""
     return (
         local(node.tag) == "quote"
         and not _CELL_MODE
         and (
             node.find(C + "para") is not None
+            or node.find(C + "list") is not None
             or node.get("class") == "block"
             or node.get("display") == "block"
         )

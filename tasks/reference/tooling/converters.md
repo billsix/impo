@@ -97,6 +97,16 @@ Three kinds of prose markup that the mathematics and science books barely use an
 - **Which existing books changed** (`tools/compare-converter-output.sh`, 2026-11-27; all block quotations):
   Algebra 1 (6 section files), Astronomy 2e (7), Organic Chemistry (3), Physics (1), Psychology 2e (16) and
   Writing Guide (33, mostly example sentences that are now set off one per line). The other 14 were identical.
+- **A `<quote>` that holds a list and no paragraph** is a block quotation too (added 2026-11-27, with
+  Introduction to Philosophy, where the three numbered premises of an argument are quoted that way). It had
+  stayed inline, so its items ran together between quotation marks with their numbers lost. The same change
+  restored the lists in five section files of Algebra 1 and one of Foundations of Information Systems; the
+  other 34 fetched book folders were identical (`tools/compare-converter-output.sh`).
+- **`<span>` and an empty `<label/>` are known markup** (same date). A `<span>` carries only a presentation
+  class (`class="blue-text"`, 3,375 times in the nursing books' tables) and its words are set like the text
+  around them. An empty `<label/>` asks OpenStax's web edition to print no label on a note or a solution (437
+  times in Introduction to Sociology 3e) and sets nothing. Both gave that output before; they no longer fill
+  the "Unknown/fallback elements" report. A `<label>` with text in it, even a lone space, is still reported.
 - **Related, in the build scripts:** `entrypoint/html.sh` and `entrypoint/epub.sh` set `LANG=C.UTF-8`. In the
   image's POSIX locale pandoc could not find a figure whose file name holds a non-ASCII character (Behavioral
   Neuroscience has one, with an en dash): the EPUB build left the figure out with a warning and the HTML build
