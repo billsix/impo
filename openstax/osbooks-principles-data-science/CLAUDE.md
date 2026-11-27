@@ -30,11 +30,9 @@ One collection, `principles-data-science` (OpenStax *Principles of Data Science*
 (16 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
-- **Exercises:** 136 embedded links, all in the `#exercise/<nickname>` scheme (none in
-  `#ost/api/ex/`). **Not fetched yet**: there is no `exercises/` cache, so each one is
-  left out of the built book and counted by the converter as `exercise-uncached`. The
-  maintainer runs `make fetch-exercises` here (it identifies itself with his contact
-  address); `../../tasks/openstax-add-book-principles-data-science.md` holds what follows.
+- **Exercises:** 136 embedded links to 136 exercises, all in the `#exercise/<nickname>`
+  scheme. All 136 are in the committed cache `exercises/` (6 images; with its `COPYRIGHT`
+  notice), fetched by the maintainer on 2026-11-27, and are in the built book.
 - **Figures:** raster only (232 files, 40 MB); no SVG.
 - **Code:** 166 `<code class="python">` blocks, many holding one line wrapped in line breaks; each is a listing since the day the book was added (`../../tasks/reference/tooling/converters.md`, "One line of code wrapped in line breaks").
 - **Web edition:** 16 pages for 59 modules. With two levels of nesting the HTML is split per chapter, as in the other unit-nested books, so each page is long.
