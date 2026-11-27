@@ -54,8 +54,9 @@ The two layers have two different owners, and imps must not blur them:
 - **The toolchain is the maintainer's** — MIT, like the rest of impo (see `../LICENSE`).
 - **The OpenStax content is NOT the maintainer's**, and its licence is per book: whatever the book's own
   source declares, in each collection XML (`<md:license url="…">`) and in the upstream repository's
-  `LICENSE` file. Read on 2026-11-26: **CC BY 4.0 for `osbooks-physics` and `osbooks-statistics`; CC BY-NC-SA
-  4.0 for every other book folder** (table: `tasks/reference/openstax/book-inventory.md`). Until that date impo's
+  `LICENSE` file. Read on 2026-11-26, and for each book added since on its day: **CC BY 4.0 for
+  `osbooks-physics`, `osbooks-statistics`, `osbooks-life-liberty-and-pursuit-happiness` and `osbooks-introduction-intellectual-property`;
+  CC BY-NC-SA 4.0 for every other book folder** (table: `tasks/reference/openstax/book-inventory.md`). Until that date impo's
   docs said "CC BY 4.0" for all of it, which was wrong. The module files carry no licence metadata of their
   own, so a copy of the XML without its collection file and `LICENSE` is unmarked.
 - **A built book is an adaptation and carries its source's licence.** The converter reads the licence from

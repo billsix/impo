@@ -1,13 +1,13 @@
 # Add the remaining English OpenStax books to impo (umbrella: 29 repositories, 42 books)
 
-**Status:** ready — approved 2026-11-26; not started
+**Status:** in progress — 13 of 29 repositories built by 2026-11-27 (6 done and archived, 7 waiting for their exercise caches); 16 not started
 **Priority:** 4
 **Difficulty:** 7 (each book is small; there are 29 of them, and each can meet markup the converter has not seen)
 **Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said. look through all reference docs, and look at what we commited to do the porting before, and make a task per book").
 
 ## BLUF
 
-impo builds 15 of OpenStax's 54 public book repositories, plus Algebra 1. Nine are rejected as not English and one, `osbooks-playground`, as not a book. The maintainer wants the other 29 added. This umbrella holds the method they all share and the ordered list; each repository has its own step task. Done means every step task is archived and the survey shows no repository as "not yet in impo".
+impo built 15 of OpenStax's 54 public book repositories, plus Algebra 1, when this task was written (28 with Algebra 1 on 2026-11-27). Nine are rejected as not English and one, `osbooks-playground`, as not a book. The maintainer wants the other 29 added. This umbrella holds the method they all share and the ordered list; each repository has its own step task. Done means every step task is archived and the survey shows no repository as "not yet in impo".
 
 ## Context
 
@@ -90,6 +90,7 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 ## Progress
 
 - **2026-11-26:** step 0 and three repositories done (Statistics, the Introductory Statistics bundle, College Physics): five books. The maintainer stopped there for the day to merge and push. **Next: `tasks/openstax-add-book-principles-data-science.md`**, the last of the mathematics and physics group. Its folder is already scaffolded and fetched in the working tree (untracked), it converts, and it embeds 136 exercises, so it starts with the maintainer running `make -C openstax/osbooks-principles-data-science fetch-exercises`.
+- **2026-11-27:** ten more repositories built and committed (eleven books): Business Law, U.S. History and American Government are done and archived; Additive Manufacturing, Foundations of Information Systems, Introduction to Intellectual Property, Introduction to Political Science, Behavioral Neuroscience, World History (2 volumes) and Life, Liberty, and the Pursuit of Happiness are built without their exercises and their tasks are `blocked` on the maintainer's `make fetch-exercises`, as is Principles of Data Science (still untracked). The converter learned block quotations and reference notes on the way (`tasks/reference/tooling/converters.md`). **Next after the fetches:** the 16 repositories still unticked below, none started.
 - Two converter defects found on the way have their own tasks: `tasks/archive/impo/2026/11/27/openstax-degree-sign-inside-math-text-is-escaped.md` (fixed 2026-11-27) and `tasks/openstax-embedded-frame-links-are-dropped.md`.
 
 ## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-26)

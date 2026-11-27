@@ -1,6 +1,6 @@
 # Links in embedded frames (simulations, videos) are dropped from the built books
 
-**Status:** proposed — needs go-ahead
+**Status:** approved 2026-11-27 (William Emerison Six <billsix@gmail.com>: "3 yes"); not started, because its two open questions below were not answered with the go-ahead
 **Priority:** 5
 **Difficulty:** 3
 **Created:** 2026-11-26 (agent, found while adding College Physics; parked as its own task because fixing it changes the output of books impo already builds).
@@ -20,6 +20,11 @@ Where an OpenStax module embeds an outside page in a frame (`<media><iframe src=
 | osbooks-biology-bundle | 51 | 0 |
 | osbooks-physics | 29 | 0 |
 | osbooks-college-physics-bundle | 18 | 0 |
+| osbooks-introduction-political-science (added 2026-11-27) | 115 | 0 |
+| osbooks-neuroscience (added 2026-11-27) | 40 | 0 |
+| osbooks-life-liberty-and-pursuit-happiness (added 2026-11-27) | 33 | 0 |
+| osbooks-introduction-intellectual-property (added 2026-11-27) | 9 | 0 |
+| osbooks-world-history (added 2026-11-27) | 8 | 0 |
 | osbooks-university-physics-bundle | 15 | 0 |
 | osbooks-algebra-1 | 3 | 177 |
 | osbooks-prealgebra-bundle | 3 | 0 |

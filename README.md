@@ -55,6 +55,7 @@ make dist      # build PDF + EPUB + chunked HTML into checkout/output/  (make im
 
 MIT (`LICENSE`) for impo's own content (toolchain, scripts, docs). The OpenStax content this repo pins
 and caches — CNXML source, media, and the committed `exercises/` problem sets — is **not the
-maintainer's**. Each book is under the licence its own source declares: **CC BY 4.0** for `osbooks-physics`
-and `osbooks-statistics`, **CC BY-NC-SA 4.0** for every other book folder. The books built here are adaptations
+maintainer's**. Each book is under the licence its own source declares: **CC BY 4.0** for
+`osbooks-physics`, `osbooks-statistics`, `osbooks-life-liberty-and-pursuit-happiness` and `osbooks-introduction-intellectual-property`,
+**CC BY-NC-SA 4.0** for every other book folder. The books built here are adaptations
 and carry the same licence as their source. See `openstax/CLAUDE.md` and each `exercises/COPYRIGHT`.
