@@ -1,46 +1,56 @@
-# Add `osbooks-nursing-external-bundle` to impo (3 books)
+# Add `osbooks-nursing-external-bundle` to impo (3 books): built, waiting for its exercises
 
-**Status:** ready — approved 2026-11-26 as part of the umbrella; not started
+**Status:** blocked
+**Blocked on:** the maintainer running `make -C openstax/osbooks-nursing-external-bundle fetch-exercises` (the fetch identifies itself to OpenStax's server with his contact address, so it is his to run)
+**Recheck:** `ls openstax/osbooks-nursing-external-bundle/checkout/exercises/*.json | wc -l` — cleared when it prints a number near 1156
 **Part of:** `tasks/openstax-add-remaining-english-books.md`
-**Depends on:** `tasks/archive/impo/2026/11/26/openstax-add-book-step-0-scaffold-tool.md` (the scaffold tool, so every new folder is made the same way)
-**Priority:** 6
-**Difficulty:** 4
-**Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said … make a task per book"; he then chose all 29 real repositories, one task per repository).
+**Priority:** 5
+**Difficulty:** 2 (what is left is a fetch, a rebuild and the record)
+**Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said … make a task per book"). Built 2026-11-27 (agent; William Emerison Six <billsix@gmail.com>, 2026-11-27: "you can make a branch, temporarily turn off gpg signing, and start working on all of them (minus the business ones for now)").
 
 ## BLUF
 
-impo does not yet build OpenStax's `osbooks-nursing-external-bundle`. This task adds it as a book folder on the shared-toolchain contract, so that `pharmacology`, `nutrition`, `population-health` build as PDF, EPUB and HTML like the books impo already carries. Done means the folder exists, every book in it converts and builds in all three formats, its exercises (if it embeds any) are cached, and impo's docs and the survey list it as built.
+`openstax/osbooks-nursing-external-bundle/` is committed and builds 3 books as PDF, EPUB and HTML, but without the 1,156 practice exercises the source embeds: they come from OpenStax's exercise server, and that fetch is the maintainer's. Done means the exercise cache is committed with its `COPYRIGHT` notice, the book is rebuilt with the exercises in it, and this task is archived.
 
 ## Context
 
-**Read first:** the umbrella (`tasks/openstax-add-remaining-english-books.md`) for the method every one of these tasks follows, and `openstax/CLAUDE.md` ("Per-book folder contract", "Copyright / licensing").
+**Read first:** `openstax/CLAUDE.md` ("Adding a book", and "The content model" for the exercise cache) and `openstax/osbooks-nursing-external-bundle/CLAUDE.md`.
 
-| | |
-|---|---|
-| Upstream | `https://github.com/openstax/osbooks-nursing-external-bundle` |
-| Group | Science and health |
-| Books (collection slugs) | `pharmacology`, `nutrition`, `population-health` |
-| Language | English |
-| Licence its `LICENSE` file names | CC BY-NC-SA 4.0 |
-| Size (GitHub, with history) | 225 MB |
-| Last push upstream | 2026-05-05 |
-| Default-branch head on 2026-11-26 | `128c6c3e0ee66850bd8cbb3aa02be736f10db74e` (re-read it when the work starts; the pin is the head at that time) |
-| Maintainer's public backup | none yet (`tasks/openstax-books-buildable-forever-source-backup-and-licences.md`) |
+### What was added on 2026-11-27
 
-Mostly prose and figures, as far as the repository name suggests; not opened yet.
+`openstax/osbooks-nursing-external-bundle/`, created with `tools/add-book.sh nursing-external-bundle "Nursing (Pharmacology, Nutrition and Population Health for Nurses)"` and pinned at the upstream head `128c6c3e0ee66850bd8cbb3aa02be736f10db74e`. It builds 3 books:
 
-**Not known until the source is fetched:** whether it embeds exercises and in which of the two schemes, whether its figures are raster or SVG, how deeply its collections nest, and whether it uses markup the converter has not met (the converter reports those as "Unknown/fallback elements").
+| Book | Collection | Shape | PDF | Web pages |
+|---|---|---|---|---|
+| *Pharmacology for Nurses* | `pharmacology` | 203 modules in 40 chapters grouped into 11 units; two levels of nesting | 1,244 pages | 53 |
+| *Nutrition for Nurses* | `nutrition` | 93 modules in 20 chapters grouped into 9 units; two levels of nesting | 520 pages | 31 |
+| *Population Health for Nurses* | `population-health` | 185 modules in 35 chapters grouped into 7 units; two levels of nesting | 1,374 pages | 44 |
 
-## Plan
+- **Licence:** CC BY-NC-SA 4.0 (collection XML and the upstream `LICENSE`); the built PDF states it.
+- **Figures:** raster only (419 files, 142 MB); no SVG.
+- **Exercises:** 1,156 embedded links, counted in the CNXML: all in the `#exercise/<nickname>` scheme, none in `#ost/api/ex/<id>`. With no cache the converter leaves each one out and reports it as `exercise-uncached`.
+- **Result:** built as PDF, EPUB and HTML on 2026-11-27, without the exercises; the build log has no pandoc warning.
 
-- [ ] `bash tools/add-book.sh nursing-external-bundle` to create `openstax/osbooks-nursing-external-bundle/` with `fetch.sh` (upstream, mirror fallback, the pin), `apply.sh`, `Makefile`, `README.md`, `CLAUDE.md` and `.gitignore`.
-- [ ] `./fetch.sh && ./apply.sh`, then `make convert`. Read the converter's report; a licence it does not know stops the conversion, which is intended.
-- [ ] If it embeds exercises: the maintainer runs `make fetch-exercises` in the folder (the fetch identifies itself with his contact address, so it is his to run), then the cache is committed with its `COPYRIGHT` notice.
-- [ ] `make dist`; open the PDF and one HTML page of each book and note anything that rendered badly.
-- [ ] Converter gaps: fix in `openstax/tooling/` what is small and general; anything larger gets its own task, named here.
-- [ ] Record the book: `openstax/osbooks-nursing-external-bundle/CLAUDE.md` (collections, module counts, nesting, exercises, figure format), the list in `openstax/CLAUDE.md`, and `tasks/reference/openstax/book-inventory.md` including its licence row.
-- [ ] `python3 tools/survey-upstream-books.py` and refresh `tasks/reference/openstax/upstream-book-repositories.md`; tick this book in the umbrella.
-- [ ] Tell the maintainer the book needs its public backup (`tools/mirror-upstreams.sh push nursing-external-bundle`).
+### What the book needed from the toolchain
+
+**A paragraph of only line breaks.** The preface of Population Health for Nurses holds a `<para>` with eight `<newline/>`s and nothing else, used as vertical space. It became a run of line breaks with no line to end, and the first build of that book stopped ("There's no line here to end"); the other two books built. `cleanup_latex` now drops such a run. **Coloured spans.** The books wrap table text in `<span class="blue-text">` 3,375 times; the converter set the words correctly and listed each span in its fallback report, and a span is known markup now. Both are in `tasks/reference/tooling/converters.md`, "Block quotations, reference notes and footnotes in titles"; no other fetched book converts differently.
+
+### Left as it is
+
+**The tables are the weak point of these three PDFs.** The books hold 714 tables and most are prose. The converter's columns do not wrap, so a wide table is scaled down to the page width: Table 3.33 of Pharmacology for Nurses is at about half size, and Table 7.12 of Population Health for Nurses (PDF page 1371) is a hairline. The HTML and EPUB set the same tables normally. It affects books impo already built too and has its own task: `tasks/openstax-pdf-prose-tables-shrink-or-run-off-the-page.md`. Nutrition for Nurses also loses `⅓`, `₁` and `₆` in the PDF (`tasks/openstax-pdf-characters-missing-from-the-body-font.md`). The repository holds 492 module folders and the three collections list 481. The converter reports no fallback besides the uncached exercises. The PDFs and HTML were not read page by page; that review is the maintainer's.
+
+## Plan (what is left)
+
+- [ ] **Maintainer:** `make -C openstax/osbooks-nursing-external-bundle fetch-exercises` (needs the network; it writes `openstax/osbooks-nursing-external-bundle/checkout/exercises/`). If `checkout/` is missing: `./fetch.sh && ./apply.sh` in that folder first.
+- [ ] Copy the cache's `*.json` and `media/` (not `media-derived/`) to `openstax/osbooks-nursing-external-bundle/exercises/`, add the notice (`cp openstax/tooling/templates/exercises-COPYRIGHT openstax/osbooks-nursing-external-bundle/exercises/COPYRIGHT`; the fetch does not write it), and commit the cache with its notice.
+- [ ] `./apply.sh && make convert`; the converter's report should no longer list `exercise-uncached` (a few exercises missing from the server is normal; record the count). Then `make dist`.
+- [ ] Update the exercise facts and page counts in `openstax/osbooks-nursing-external-bundle/CLAUDE.md` and `tasks/reference/openstax/book-inventory.md`, and the per-book table in `tasks/reference/tooling/converters.md`.
+- [ ] Rewrite this task as a done-record, archive it, and tick it in the umbrella.
+- [ ] **Maintainer:** the public backup, `bash tools/mirror-upstreams.sh push nursing-external-bundle`.
+
+## Recorded so far
+
+`openstax/osbooks-nursing-external-bundle/CLAUDE.md` ("The books this folder builds"), the lists and counts in `openstax/CLAUDE.md` and the root `CLAUDE.md`, the inventory and its licence table, the converter quick reference and the umbrella's checklist. The survey table (`tasks/reference/openstax/upstream-book-repositories.md`) is refreshed once for the whole batch.
 
 ## Open questions
 

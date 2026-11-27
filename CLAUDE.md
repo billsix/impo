@@ -16,7 +16,7 @@ in an ephemeral podman container. One folder per book; the family is self-contai
 impo groups books into **families** (a family = books of the same source/kind), each a top-level
 folder. Two book families exist, plus the `study/` family of material built from the books:
 
-- **`openstax/`** — LaTeX ports of OpenStax open textbooks (36 book folders on 2026-11-27, more being added:
+- **`openstax/`** — LaTeX ports of OpenStax open textbooks (37 book folders on 2026-11-27, more being added:
   `tasks/openstax-add-remaining-english-books.md`) that convert **CNXML→LaTeX**
   with a shared python converter. **The pilot family; read `openstax/CLAUDE.md` first.** Layout:
   - **`openstax/CLAUDE.md`** — the family contract: the shared toolchain, the per-book folder
