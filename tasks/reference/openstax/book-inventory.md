@@ -57,7 +57,7 @@ confirmed on each book's first build.
 - `osbooks-college-physics-bundle/` — two books added 2026-11-26: *College Physics 2e* and *College Physics
   for AP® Courses 2e*, 283 modules each (248 shared); no embedded exercises, raster figures.
 - `osbooks-business-law/` — *Business Law I Essentials 2e* (47 modules, 181-page PDF), added 2026-11-27: no embedded exercises; raster figures; built in one pass with no toolchain change.
-- `osbooks-additive-manufacturing/` — *Additive Manufacturing Essentials* (42 modules, 250-page PDF), added 2026-11-27: 122 embedded exercises, not fetched yet (`tasks/openstax-add-book-additive-manufacturing.md`); raster figures; built in one pass with no toolchain change.
+- `osbooks-additive-manufacturing/` — *Additive Manufacturing Essentials* (42 modules, 246-page PDF), added 2026-11-27: 120 embedded exercises, all cached 2026-11-27; raster figures; built in one pass with no toolchain change.
 - `osbooks-life-liberty-and-pursuit-happiness/` — *Life, Liberty, and the Pursuit of Happiness* (532 modules, 2,484-page PDF), added 2026-11-27: 1,896 embedded exercises, not fetched yet (`tasks/openstax-add-book-life-liberty-and-pursuit-happiness.md`); raster figures; CC BY 4.0; built in one pass with no toolchain change.
 - `osbooks-us-history/` — *U.S. History* (177 modules, 1,308-page PDF), added 2026-11-27: no embedded exercises; raster figures; it brought block quotations to the converter (97 of them).
 - `osbooks-american-government/` — *American Government 4e* (100 modules, 918-page PDF), added 2026-11-27: no embedded exercises; raster figures; it brought reference notes to the converter (1,342, now footnotes).
