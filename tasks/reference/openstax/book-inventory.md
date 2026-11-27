@@ -62,6 +62,7 @@ confirmed on each book's first build.
 - `osbooks-us-history/` — *U.S. History* (177 modules, 1,308-page PDF), added 2026-11-27: no embedded exercises; raster figures; it brought block quotations to the converter (97 of them).
 - `osbooks-american-government/` — *American Government 4e* (100 modules, 918-page PDF), added 2026-11-27: no embedded exercises; raster figures; it brought reference notes to the converter (1,342, now footnotes).
 - `osbooks-foundations-information-systems/` — *Foundations of Information Systems* (59 modules, 609-page PDF), added 2026-11-27: 410 embedded exercises, not fetched yet (`tasks/openstax-add-book-foundations-information-systems.md`); raster figures; it brought a footnote in a note's title to the converter.
+- `osbooks-neuroscience/` — *Introduction to Behavioral Neuroscience* (106 modules, 1,114-page PDF), added 2026-11-27: 568 embedded exercises, not fetched yet (`tasks/openstax-add-book-neuroscience.md`); raster figures; one figure's file name holds an en dash, which needed a UTF-8 locale in the HTML and EPUB scripts.
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -96,6 +97,7 @@ whose licence it does not know.
 | osbooks-us-history | CC BY-NC-SA 4.0 | yes |
 | osbooks-american-government | CC BY-NC-SA 4.0 | yes |
 | osbooks-foundations-information-systems | CC BY-NC-SA 4.0 | yes |
+| osbooks-neuroscience | CC BY-NC-SA 4.0 | yes |
 
 Every collection inside a bundle declares the same licence as its siblings. No module file carries licence
 metadata. The exercise caches are a separate case: see "Copyright / licensing" in `openstax/CLAUDE.md`.

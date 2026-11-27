@@ -60,7 +60,7 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 
 **Science and health**
 
-- [ ] `tasks/openstax-add-book-neuroscience.md` — one book: `introduction-behavioral-neuroscience` (CC BY-NC-SA 4.0, 402 MB)
+- [ ] `tasks/openstax-add-book-neuroscience.md` — one book: `introduction-behavioral-neuroscience` (CC BY-NC-SA 4.0, 402 MB); **built 2026-11-27 without its exercises, open until the maintainer runs `make fetch-exercises` there**
 - [ ] `tasks/openstax-add-book-lifespan-development.md` — one book: `lifespan-development` (CC BY-NC-SA 4.0, 102 MB)
 - [ ] `tasks/openstax-add-book-nursing-external-bundle.md` — 3 books: `pharmacology`, `nutrition`, `population-health` (CC BY-NC-SA 4.0, 225 MB)
 

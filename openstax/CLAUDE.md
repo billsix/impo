@@ -176,7 +176,7 @@ headless browser (read before touching osbook-web.css/.js).
 
 ## Books
 
-One thin `openstax/osbooks-<subject>/` folder per book (25 total; more are being added, see
+One thin `openstax/osbooks-<subject>/` folder per book (26 total; more are being added, see
 `tasks/openstax-add-remaining-english-books.md`); each carries its own `CLAUDE.md`
 with its pin and book-specific facts. **anatomy-physiology** is the pilot for this family's
 shared-toolchain contract.
@@ -209,6 +209,7 @@ shared-toolchain contract.
 - `osbooks-us-history/` — U.S. History (added 2026-11-27)
 - `osbooks-american-government/` — American Government 4e (added 2026-11-27)
 - `osbooks-foundations-information-systems/` — Foundations of Information Systems (added 2026-11-27)
+- `osbooks-neuroscience/` — Introduction to Behavioral Neuroscience (added 2026-11-27)
 
 Per-book status (build-verified dates, exercise/image counts, os-embed scheme post-mortems, structural
 facts): `tasks/reference/openstax/book-inventory.md`. Figure format + os-embed scheme + exercise counts
