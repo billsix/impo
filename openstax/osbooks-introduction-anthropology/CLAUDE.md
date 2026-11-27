@@ -26,18 +26,16 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `introduction-anthropology` (OpenStax *Introduction to Anthropology*): 121 modules in 20 chapters; one level of nesting. Built as PDF (873 pages), EPUB and HTML
+One collection, `introduction-anthropology` (OpenStax *Introduction to Anthropology*): 121 modules in 20 chapters; one level of nesting. Built as PDF (866 pages), EPUB and HTML
 (143 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
-- **Exercises:** 150 embedded links, all in the `#exercise/<nickname>` scheme (none in
-  `#ost/api/ex/`). **Not fetched yet**: there is no `exercises/` cache, so each one is
-  left out of the built book and counted by the converter as `exercise-uncached`. The
-  maintainer runs `make fetch-exercises` here (it identifies itself with his contact
-  address); `../../tasks/openstax-add-book-introduction-anthropology.md` holds what follows.
+- **Exercises:** 150 embedded links to 150 exercises, all in the `#exercise/<nickname>`
+  scheme. All 150 are in the committed cache `exercises/` (no images; with its `COPYRIGHT`
+  notice), fetched by the maintainer on 2026-11-27, and are in the built book.
 - **Figures:** raster only (350 files; `media/` is 130 MB). `media/Interactive/` holds 197 more files, 24 of them SVG icons; no module references an SVG.
 - **Block quotations:** 36, set off as such.
-- **Still falling back** (the converter's report): none besides the 150 `exercise-uncached`.
+- **Still falling back** (the converter's report): none.
 
 ## Build
 
