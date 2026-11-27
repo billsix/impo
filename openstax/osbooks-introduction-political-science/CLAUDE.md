@@ -38,7 +38,8 @@ One collection, `introduction-political-science` (OpenStax *Introduction to Poli
 - **Figures:** raster only (229 files, 97 MB). `media/Interactive/` also holds a case-study bundle with 22 SVG icons that no module references.
 - **Reference notes:** 1,522 sources cited as `<cite><note class="reference">`; 1,508 are footnotes and the 14 in captions, table cells and titles follow in parentheses (`../../tasks/reference/tooling/converters.md`, "Block quotations, reference notes and footnotes in titles").
 - **Block quotations:** 33, set off as such.
-- **Embedded frames:** 115 point at outside pages (videos), the most of any book; the converter emits nothing for them (`../../tasks/openstax-embedded-frame-links-are-dropped.md`).
+- **Embedded frames:** 115 point at outside pages (simulations, videos). Each is a labelled link in all
+  three editions (`../../tasks/reference/tooling/converters.md`, "Outside pages embedded in frames").
 - **Web edition:** 23 pages for 107 modules. With two levels of nesting the HTML is split per chapter, as in the other unit-nested books, so each page is long.
 - **Still falling back** (the converter's report): none besides the 308 `exercise-uncached`.
 

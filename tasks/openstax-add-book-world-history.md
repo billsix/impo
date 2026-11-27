@@ -36,7 +36,7 @@ Nothing of its own. Its 131 block quotations are set off by the converter change
 
 ### Left as it is
 
-The 8 embedded frames are dropped, as in every book (`tasks/openstax-embedded-frame-links-are-dropped.md`). The web editions have 23 and 20 pages, because a book with two levels of nesting is split per chapter. The converter reports no fallback besides the uncached exercises. The PDF and HTML were not read page by page; that review is the maintainer's.
+The 8 embedded frames were dropped in that first build; since later the same day each is a labelled link (`tasks/archive/impo/2026/11/27/openstax-embedded-frame-links-are-dropped.md`). The web editions have 23 and 20 pages, because a book with two levels of nesting is split per chapter. The converter reports no fallback besides the uncached exercises. The PDF and HTML were not read page by page; that review is the maintainer's.
 
 ## Plan (what is left)
 

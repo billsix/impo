@@ -44,9 +44,8 @@ Facts from the first build (2026-11-26):
   unlike `osbooks-physics`, which uses the `#ost/api/ex/` scheme), so there is no
   `exercises/` cache.
 - **Figures:** raster only (about 1,440 references per book, 472 MB of media); no SVG.
-- **Embedded frames:** 18 point at openstax.org simulation links. The converter emits
-  nothing for them, as in the other books
-  (`../../tasks/openstax-embedded-frame-links-are-dropped.md`).
+- **Embedded frames:** 18 point at outside pages (simulations, videos). Each is a labelled link in all
+  three editions (`../../tasks/reference/tooling/converters.md`, "Outside pages embedded in frames").
 - **Still falling back** (the converter's report, both books together): `inline:label`
   (806), `inline:space` (90), `inline:span` (6).
 - **PDFs:** 2,552 pages (2e) and 2,595 pages (AP), built 2026-11-26 and rebuilt 2026-11-27 with the multi-character

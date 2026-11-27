@@ -35,7 +35,7 @@ Nothing of its own. It relies on two converter changes made for books added the 
 
 ### Left as it is
 
-The 115 embedded frames (videos) are dropped, as in every book; this book has more of them than any other (`tasks/openstax-embedded-frame-links-are-dropped.md`). The web edition has 23 pages for 107 modules, because a book with two levels of nesting is split per chapter. The converter reports no fallback besides the uncached exercises. The PDF and HTML were not read page by page; that review is the maintainer's.
+The 115 embedded frames (videos), more than in any other book, were dropped in that first build; since later the same day each is a labelled link (`tasks/archive/impo/2026/11/27/openstax-embedded-frame-links-are-dropped.md`). The web edition has 23 pages for 107 modules, because a book with two levels of nesting is split per chapter. The converter reports no fallback besides the uncached exercises. The PDF and HTML were not read page by page; that review is the maintainer's.
 
 ## Plan (what is left)
 

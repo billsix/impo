@@ -2435,10 +2435,31 @@ def render_figure(node: _Element, labels: set[str]) -> str:
     return "\\begin{calcfig}\n%s\\par\\smallskip\n%s\n\\end{calcfig}" % (inc, capline)
 
 
+def _frame_link(node: _Element, labels: set[str]) -> str:
+    """The labelled link that stands for an outside page embedded in a frame
+    (`<media><iframe src="https://..."/></media>`: a simulation, a video). The
+    label is the enclosing note's title, else "Interactive" where the note's
+    class says so, else "Online resource". A frame on a local file gives ""."""
+    frame: _Element | None = node.find(C + "iframe")
+    address: str = (frame.get("src") or "").strip() if frame is not None else ""
+    if not address.startswith(("http://", "https://")):
+        return ""
+    note: _Element | None = next(
+        (ancestor for ancestor in node.iterancestors() if local(ancestor.tag) == "note"),
+        None,
+    )
+    title: _Element | None = get_title(note) if note is not None else None
+    label: str = inline(title, labels).strip() if title is not None else ""
+    if not label:
+        note_class: str = (note.get("class") or "") if note is not None else ""
+        label = "Interactive" if "interactive" in note_class else "Online resource"
+    return r"\textbf{%s:} \url{%s}" % (label, address.replace("%", r"\%"))
+
+
 def render_media(node: _Element, labels: set[str]) -> str:
     img: _Element | None = node.find(C + "image")
     if img is None:
-        return ""
+        return _frame_link(node, labels)
     src: str = _imgname(img.get("src", ""))
     if not src:
         return ""

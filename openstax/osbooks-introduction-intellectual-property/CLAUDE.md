@@ -38,7 +38,8 @@ One collection, `introduction-intellectual-property` (OpenStax *Introduction to 
 - **Figures:** raster only (191 files, 42 MB); no SVG.
 - **Exercise count:** the CNXML holds 185 exercise links; the converter reports 183 `exercise-uncached`. The two it does not count were not traced.
 - **Block quotations:** 31, set off as such.
-- **Embedded frames:** 9 point at outside pages; the converter emits nothing for them (`../../tasks/openstax-embedded-frame-links-are-dropped.md`).
+- **Embedded frames:** 9 point at outside pages (simulations, videos). Each is a labelled link in all
+  three editions (`../../tasks/reference/tooling/converters.md`, "Outside pages embedded in frames").
 - **Still falling back** (the converter's report): none besides the 183 `exercise-uncached`.
 
 ## Build

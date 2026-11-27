@@ -42,7 +42,8 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 - **Figures:** raster only (909 files, 345 MB, both volumes together); no SVG.
 - **Exercises per volume:** 589 links in volume 1 and 569 in volume 2.
 - **Block quotations:** 131 in the two volumes, set off as such.
-- **Embedded frames:** 8 point at outside pages; the converter emits nothing for them (`../../tasks/openstax-embedded-frame-links-are-dropped.md`).
+- **Embedded frames:** 8 point at outside pages (simulations, videos). Each is a labelled link in all
+  three editions (`../../tasks/reference/tooling/converters.md`, "Outside pages embedded in frames").
 - **Web editions:** 23 and 20 pages. With two levels of nesting the HTML is split per chapter, as in the other unit-nested books, so each page is long.
 - **Still falling back** (the converter's report): none besides the 1,158 `exercise-uncached`.
 

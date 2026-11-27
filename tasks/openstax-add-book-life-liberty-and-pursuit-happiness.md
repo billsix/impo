@@ -35,7 +35,7 @@ Nothing: it converted and built in one pass with the toolchain as it stood. It i
 
 ### Left as it is
 
-The web edition has 26 pages for 532 modules, because a book with two levels of nesting is split per chapter (the same holds for the other unit-nested books). The 33 embedded frames (videos) are dropped, as in every book (`tasks/openstax-embedded-frame-links-are-dropped.md`). The converter reports 32 `inline:label` fallbacks. The PDF and HTML were not read page by page; that review is the maintainer's.
+The web edition has 26 pages for 532 modules, because a book with two levels of nesting is split per chapter (the same holds for the other unit-nested books). The 33 embedded frames (videos) were dropped in that first build; since later the same day each is a labelled link (`tasks/archive/impo/2026/11/27/openstax-embedded-frame-links-are-dropped.md`). The converter reports 32 `inline:label` fallbacks. The PDF and HTML were not read page by page; that review is the maintainer's.
 
 ## Plan (what is left)
 

@@ -1,46 +1,27 @@
-# Links in embedded frames (simulations, videos) are dropped from the built books
+# Fixed: links in embedded frames (simulations, videos) were dropped from the built books
 
-**Status:** approved 2026-11-27 (William Emerison Six <billsix@gmail.com>: "3 yes"); not started, because its two open questions below were not answered with the go-ahead
-**Priority:** 5
-**Difficulty:** 3
-**Created:** 2026-11-26 (agent, found while adding College Physics; parked as its own task because fixing it changes the output of books impo already builds).
+**Done 2026-11-27** (agent; go-ahead and both decisions from William Emerison Six <billsix@gmail.com>, 2026-11-27. Found 2026-11-26 while adding College Physics).
 
-## BLUF
+## The defect
 
-Where an OpenStax module embeds an outside page in a frame (`<media><iframe src="https://…"/></media>`), usually an interactive simulation or a video, the converter emits nothing for it. The surrounding text survives ("Visualize the gravitational force that two objects exert on each other …") and the address it refers to is gone. Done means every such frame becomes a visible link in the PDF, EPUB and HTML, and the before-and-after comparison shows only those additions.
+Where an OpenStax module embeds an outside page in a frame (`<media><iframe src="https://…"/></media>`), usually an interactive simulation or a video, the converter emitted nothing. The surrounding text survived ("Visualize the gravitational force that two objects exert on each other …") and the address it referred to was gone, in the PDF, the EPUB and the HTML alike.
 
-## Context
+## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-27)
 
-**Read first:** `render_media` in `openstax/tooling/tools/cnxml2tex/convert.py`, and `tasks/reference/tooling/converters.md`.
+1. **An outside frame reads as a labelled line**, not a bare address ("2 b").
+2. **Local frames stay left out** ("3 a"): Algebra 1's 177 Desmos graph files, Introduction to Python Programming's 129 code-runner pages and Writing Guide's 11. Embedding them in the HTML edition would be a task of its own; none exists.
 
-**Counts (2026-11-26, frames whose `src` is an `http(s)` address):**
+## The fix
 
-| Book folder | Frames with an outside address | Frames with a local file |
-|---|---|---|
-| osbooks-biology-bundle | 51 | 0 |
-| osbooks-physics | 29 | 0 |
-| osbooks-college-physics-bundle | 18 | 0 |
-| osbooks-introduction-political-science (added 2026-11-27) | 115 | 0 |
-| osbooks-neuroscience (added 2026-11-27) | 40 | 0 |
-| osbooks-life-liberty-and-pursuit-happiness (added 2026-11-27) | 33 | 0 |
-| osbooks-introduction-intellectual-property (added 2026-11-27) | 9 | 0 |
-| osbooks-world-history (added 2026-11-27) | 8 | 0 |
-| osbooks-university-physics-bundle | 15 | 0 |
-| osbooks-algebra-1 | 3 | 177 |
-| osbooks-prealgebra-bundle | 3 | 0 |
-| osbooks-introduction-python-programming | 0 | 129 |
-| osbooks-writing-guide | 0 | 11 |
+`render_media` in `openstax/tooling/tools/cnxml2tex/convert.py` now hands a media element with no image to `_frame_link`, which emits `\textbf{<label>:} \url{<address>}` for a frame whose address starts with `http://` or `https://`. The label is the enclosing note's title when it has one ("Gravity Force Lab"), else "Interactive" when the note's class contains `interactive`, else "Online resource" (the agent's wording for the untitled cases, many of which are videos and documents). Three tests in `openstax/tooling/tools/tests/test_helpers.py`. Described in `tasks/reference/tooling/converters.md`, "Outside pages embedded in frames".
 
-- **Example:** College Physics, the note "Gravity Force Lab": `<iframe width="660" height="371.4" src="https://openstax.org/l/gravity-force"/>`. The generated LaTeX for that module contains no link.
-- **Local frames are a different case.** Algebra 1's are Desmos graph files under `media/desmos/`, and Introduction to Python Programming's are code-runner pages. They cannot work in a PDF; what the web edition should do with them is a separate question (question 2).
+## Proof
 
-## Plan
+- **Only links were added.** `tools/compare-converter-output.sh` converted all 30 fetched books with the old and the new converter. 19 were identical. In the other 11, a comparison of the generated LaTeX token by token found 323 inserted links and nothing else, apart from line breaks; in one paragraph of *Life, Liberty, and the Pursuit of Happiness* the link took the place of two forced line breaks that had surrounded the empty frame.
+- **The counts match the frames in the source:** Introduction to Political Science 115, Biology 51, Behavioral Neuroscience 40, Life, Liberty, and the Pursuit of Happiness 33, Physics 28, College Physics 18, University Physics 15, Introduction to Intellectual Property 9, World History 8, Algebra 1 3, Prealgebra 3. The task's table had said 29 for Physics; the 29th frame is inside an XML comment in module `m54437`.
+- **The 11 book folders were rebuilt in all three formats on 2026-11-27 and all passed** (`tools/build-after-sync.sh`).
+- The toolchain gate (`make -C openstax/tooling type-check`) passed, 63 tests.
 
-1. In `render_media`, when the media element holds an `<iframe>` with an `http(s)` `src`, emit a short line with the address as a link (`\url{…}`), which pandoc carries into the HTML and EPUB.
-2. Prove the change with the method used on 2026-11-26 for Content MathML: convert every book with the old and the new converter and compare the generated LaTeX; the only differences should be the added links, and their count per book should match the table.
-3. Rebuild the books that changed; record the behaviour in `tasks/reference/tooling/converters.md`.
+## Not done
 
-## Open questions
-
-1. How should an outside frame read in the book: (a) the bare address as a link, or (b) a labelled line such as "Interactive: https://…"? The agent recommends (b), using the enclosing note's title when there is one.
-2. Local frames (Algebra 1's Desmos files, Python Programming's code runners): (a) leave them out as today, or (b) in the HTML edition, embed the local file as a frame? The agent recommends (a) for now and a separate task if (b) is wanted.
+The rebuilt PDFs and HTML were not read page by page. The seven books that wait for their exercise caches were rebuilt without exercises, as before.

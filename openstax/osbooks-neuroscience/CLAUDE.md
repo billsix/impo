@@ -37,7 +37,8 @@ One collection, `introduction-behavioral-neuroscience` (OpenStax *Introduction t
   address); `../../tasks/openstax-add-book-neuroscience.md` holds what follows.
 - **Figures:** raster only (541 files, 310 MB); no SVG. One file name holds an en dash (`Image-12.04_Stress–critical-periods.png`).
 - **What this book brought to the build scripts:** the figure with an en dash in its name. In the image's POSIX locale pandoc could not find it, so `html.sh` and `epub.sh` set `LANG=C.UTF-8` (`../../tasks/reference/tooling/converters.md`, "Block quotations, reference notes and footnotes in titles", last item).
-- **Embedded frames:** 40 point at outside pages; the converter emits nothing for them, as in the other books (`../../tasks/openstax-embedded-frame-links-are-dropped.md`).
+- **Embedded frames:** 40 point at outside pages (simulations, videos). Each is a labelled link in all
+  three editions (`../../tasks/reference/tooling/converters.md`, "Outside pages embedded in frames").
 - **Still falling back** (the converter's report): none besides the 568 `exercise-uncached`.
 
 ## Build

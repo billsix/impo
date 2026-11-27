@@ -37,7 +37,8 @@ One collection, `life-liberty-and-pursuit-happiness` (OpenStax *Life, Liberty, a
   address); `../../tasks/openstax-add-book-life-liberty-and-pursuit-happiness.md` holds what follows.
 - **Figures:** raster only (893 files, 331 MB); no SVG.
 - **Web edition:** 26 pages for 532 modules. With two levels of nesting the HTML is split per chapter, as in the other unit-nested books (Biology 2e: 57 pages), so each page is long.
-- **Embedded frames:** 33 point at outside pages (videos); the converter emits nothing for them, as in the other books (`../../tasks/openstax-embedded-frame-links-are-dropped.md`).
+- **Embedded frames:** 33 point at outside pages (simulations, videos). Each is a labelled link in all
+  three editions (`../../tasks/reference/tooling/converters.md`, "Outside pages embedded in frames").
 - **Still falling back** (the converter's report): `inline:label` (32), besides the 1,896 `exercise-uncached`.
 
 ## Build

@@ -35,7 +35,7 @@ Nothing of its own. Its 31 block quotations are set off by the converter change 
 
 ### Left as it is
 
-The CNXML holds 185 exercise links and the converter reports 183 as uncached; the two it does not count were not traced, and the count after the fetch will show whether anything is missing. The 9 embedded frames are dropped, as in every book (`tasks/openstax-embedded-frame-links-are-dropped.md`). The PDF and HTML were not read page by page; that review is the maintainer's.
+The CNXML holds 185 exercise links and the converter reports 183 as uncached; the two it does not count were not traced, and the count after the fetch will show whether anything is missing. The 9 embedded frames were dropped in that first build; since later the same day each is a labelled link (`tasks/archive/impo/2026/11/27/openstax-embedded-frame-links-are-dropped.md`). The PDF and HTML were not read page by page; that review is the maintainer's.
 
 ## Plan (what is left)
 
