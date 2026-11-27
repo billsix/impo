@@ -971,8 +971,8 @@ def mml(node: _Element) -> str:
             return r"\text{''}"  # right double quote
         if t == "`":
             return r"\text{`}"  # backtick = opening single quote (punctuation in math)
-        for u, r in MO_MAP.items():
-            t = t.replace(u, r)
+        # A multi-character operator ("⋅º"): _math_literal escapes the literal
+        # braces first and substitutes the symbol macros second.
         return _esc_math_lit(t)
     if tag == "mtext":
         return mtext_to_latex(txt)

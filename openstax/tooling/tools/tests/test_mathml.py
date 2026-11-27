@@ -91,3 +91,7 @@ def test_content_mathml_bare_identifier_is_kept() -> None:
 
 def test_content_mathml_infinity() -> None:
     assert _latex("<reln><lt/><ci>x</ci><infinity/></reln>") == r"x < \infty"
+
+
+def test_multi_character_operator_keeps_macro_braces() -> None:
+    assert _latex("<mo>⋅º</mo>") == r"\cdot \text{\textordmasculine}"

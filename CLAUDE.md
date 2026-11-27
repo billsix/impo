@@ -103,6 +103,9 @@ folder. Two book families exist, plus the `study/` family of material built from
   - `build-web-editions.sh` — a fan-out that re-applies the toolchain overlay and runs `make html &&
     make epub` across every OpenStax book folder, logging PASS/FAIL per book (`bash tools/build-web-editions.sh
     [book-slug]`).
+  - `compare-converter-output.sh <new scratch dir>` — converts every fetched book twice, with the converter
+    committed at `HEAD` and with the one in the working tree, each in a root of its own (the checkouts are
+    only read), and lists the generated LaTeX files that differ. Run it before committing a converter change.
   - `check-mobile.js` — a Playwright regression check that a built book has no phone horizontal-scroll
     and a working on-this-page drawer (`NODE_PATH=<pw>/node_modules node tools/check-mobile.js
     <built-site-dir> [width]`; needs `npm i playwright && npx playwright install chromium` — a dev-only

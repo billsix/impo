@@ -1,29 +1,25 @@
-# A degree sign written as "º" inside math text comes out with literal braces
+# Fixed: a degree sign in a multi-character MathML operator came out with literal braces
 
-**Status:** proposed — needs go-ahead
-**Priority:** 5
-**Difficulty:** 2
-**Created:** 2026-11-26 (agent, found in the first build of College Physics).
+**Done 2026-11-27** (agent; go-ahead from William Emerison Six <billsix@gmail.com>, 2026-11-27. Found 2026-11-26 in the first build of College Physics).
 
-## BLUF
+## The defect
 
-In twelve lines of College Physics the source writes a degree sign as the character "º" (U+00BA) inside MathML text, as in "cal/g·ºC". The converter emits `\text\{\textordmasculine\}`: the braces of its own replacement are escaped, so the PDF shows them literally and pandoc cannot convert the formula for the HTML and EPUB editions (72 "Could not convert TeX math" warnings in that build, and the formula is shown there as raw TeX). Done means those formulas read "ºC" in all three editions and the warnings are gone.
+Twelve lines of College Physics showed `\text\{\textordmasculine\}` in formulas such as "cal/g·ºC": literal braces in the PDF, and 72 "Could not convert TeX math" warnings from pandoc, with the formula left as raw TeX in the HTML and EPUB.
 
-## Context
+## The cause, which was not the one the task guessed
 
-**Read first:** the two maps in `openstax/tooling/tools/cnxml2tex/convert.py` that contain `º` (one maps it to `\text{\textordmasculine}`, the other to `\textordmasculine{}`), and the code that escapes the contents of an `<m:mtext>`.
+The task expected the fault in `<m:mtext>`. It was in `<m:mo>`: the source writes the unit's operator as one element holding two characters, `<m:mo>⋅º</m:mo>`. For an operator of more than one character, `mml()` in `openstax/tooling/tools/cnxml2tex/convert.py` substituted the symbol macros first and escaped the result second, so the braces of its own `\text{\textordmasculine}` were escaped. A single-character operator, `<m:mn>` and `<m:mtext>` were never affected.
 
-- Only `osbooks-college-physics-bundle` has such lines today (12, checked across every checkout's generated LaTeX on 2026-11-26). They are in the heat and thermodynamics chapters: specific heat and conductivity units.
-- The likely cause: the character is replaced first and the result is then escaped as literal text. The replacement and the escaping need to happen in the other order, or the replacement inside text should be `\textordmasculine{}` without a second `\text`.
-- The Introductory Statistics bundle's build printed three of the same pandoc warnings for a different formula; look at those in the same pass.
+## The fix
 
-## Plan
+That branch now calls `_math_literal` alone, which escapes the literal braces first and substitutes the macros second. One new test in `openstax/tooling/tools/tests/test_mathml.py` (`test_multi_character_operator_keeps_macro_braces`).
 
-1. Reproduce with a unit test in `openstax/tooling/tools/tests/test_mathml.py` (an `<mtext>` containing "º").
-2. Fix the order of replacement and escaping; run the toolchain gate.
-3. Compare every book's generated LaTeX before and after, as was done for Content MathML on 2026-11-26; only the twelve lines should change.
-4. Rebuild College Physics and confirm the warnings are gone.
+## Proof
 
-## Open questions
+- `tools/compare-converter-output.sh` (written for this task, kept in `tools/`) converted all 20 fetched books with the old and the new converter: 19 identical; College Physics differed in 5 section files, 15 lines, every one a formula that had held the escaped braces. No `\text\{` remains.
+- College Physics was rebuilt in all three formats on 2026-11-27: PDFs of 2,552 and 2,595 pages as before, and no "Could not convert TeX math" warning (72 before). In the HTML the formula is MathML with the source `\text{0.50~cal/g}\cdot ^\circ \text{C}`.
+- The toolchain gate (`make -C openstax/tooling type-check`) passed.
 
-None.
+## Not done
+
+The task asked for a look at three similar pandoc warnings in the Introductory Statistics bundle's build. That bundle's generated LaTeX is unchanged by this fix, so those warnings have another cause and were not looked at.

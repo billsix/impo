@@ -20,7 +20,7 @@ It is the algebra-based college text, between `osbooks-physics` (high school) an
 
 ## Defects found in the output, each with its own task
 
-- **Twelve formulas with a degree sign** come out with literal braces in the PDF and as raw TeX in the HTML and EPUB (72 pandoc warnings): `tasks/openstax-degree-sign-inside-math-text-is-escaped.md`.
+- **Twelve formulas with a degree sign** come out with literal braces in the PDF and as raw TeX in the HTML and EPUB (72 pandoc warnings): `tasks/archive/impo/2026/11/27/openstax-degree-sign-inside-math-text-is-escaped.md` (fixed 2026-11-27).
 - **Eighteen embedded simulation links are missing** (frames pointing at openstax.org). The converter drops such frames in every book that has them: `tasks/openstax-embedded-frame-links-are-dropped.md`.
 
 Neither stopped the build. The converter's report listed only inline fallbacks (`inline:label` 806, `inline:space` 90, `inline:span` 6).

@@ -90,7 +90,7 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 ## Progress
 
 - **2026-11-26:** step 0 and three repositories done (Statistics, the Introductory Statistics bundle, College Physics): five books. The maintainer stopped there for the day to merge and push. **Next: `tasks/openstax-add-book-principles-data-science.md`**, the last of the mathematics and physics group. Its folder is already scaffolded and fetched in the working tree (untracked), it converts, and it embeds 136 exercises, so it starts with the maintainer running `make -C openstax/osbooks-principles-data-science fetch-exercises`.
-- Two converter defects found on the way have their own tasks: `tasks/openstax-degree-sign-inside-math-text-is-escaped.md` and `tasks/openstax-embedded-frame-links-are-dropped.md`.
+- Two converter defects found on the way have their own tasks: `tasks/archive/impo/2026/11/27/openstax-degree-sign-inside-math-text-is-escaped.md` (fixed 2026-11-27) and `tasks/openstax-embedded-frame-links-are-dropped.md`.
 
 ## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-26)
 

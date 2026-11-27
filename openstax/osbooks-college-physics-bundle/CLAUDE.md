@@ -49,10 +49,8 @@ Facts from the first build (2026-11-26):
   (`../../tasks/openstax-embedded-frame-links-are-dropped.md`).
 - **Still falling back** (the converter's report, both books together): `inline:label`
   (806), `inline:space` (90), `inline:span` (6).
-- **A known defect:** twelve formulas with a degree sign ("cal/g·ºC") come out with
-  literal braces in the PDF and as raw TeX in the HTML and EPUB
-  (`../../tasks/openstax-degree-sign-inside-math-text-is-escaped.md`).
-- **PDFs:** 2,552 pages (2e) and 2,595 pages (AP), built 2026-11-26.
+- **PDFs:** 2,552 pages (2e) and 2,595 pages (AP), built 2026-11-26 and rebuilt 2026-11-27 with the multi-character
+  operator fix (formulas such as "cal/g·ºC").
 
 ## Build
 
