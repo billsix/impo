@@ -1,47 +1,32 @@
-# Add `osbooks-business-law` to impo (one book)
+# Added `osbooks-business-law` to impo (one book)
 
-**Status:** ready — approved 2026-11-26 as part of the umbrella; not started
-**Part of:** `tasks/openstax-add-remaining-english-books.md`
-**Depends on:** `tasks/archive/impo/2026/11/26/openstax-add-book-step-0-scaffold-tool.md` (the scaffold tool, so every new folder is made the same way)
-**Priority:** 6
-**Difficulty:** 3
-**Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said … make a task per book"; he then chose all 29 real repositories, one task per repository).
+**Done 2026-11-27** (agent; part of `tasks/openstax-add-remaining-english-books.md`. William Emerison Six <billsix@gmail.com>, 2026-11-27: "for each book, do the work, commit, archive, commit").
 
-## BLUF
+## What was added
 
-impo does not yet build OpenStax's `osbooks-business-law`. This task adds it as a book folder on the shared-toolchain contract, so that `business-law-i-essentials-2e` builds as PDF, EPUB and HTML like the books impo already carries. Done means the folder exists, every book in it converts and builds in all three formats, its exercises (if it embeds any) are cached, and impo's docs and the survey list it as built.
+`openstax/osbooks-business-law/`, created with `tools/add-book.sh business-law "Business Law I Essentials 2e"` and pinned at the upstream head `0502c9f293fdb7745b76c4d7855d49acdaf8098b`. It builds one book:
 
-## Context
+| Book | Collection | Shape | PDF | Web pages |
+|---|---|---|---|---|
+| *Business Law I Essentials 2e* | `business-law-i-essentials-2e` | 47 modules in 14 chapters, from "American Law, Legal Reasoning, and the Legal System" to "Securities Regulation"; one level of nesting | 181 pages | 63 |
 
-**Read first:** the umbrella (`tasks/openstax-add-remaining-english-books.md`) for the method every one of these tasks follows, and `openstax/CLAUDE.md` ("Per-book folder contract", "Copyright / licensing").
+- **Licence:** CC BY-NC-SA 4.0 (collection XML and the upstream `LICENSE`); the built PDF states it.
+- **Figures:** raster only (66 files, 12 MB); no SVG.
+- **Exercises:** none embedded, counted in the CNXML in both link schemes; no `exercises/` cache, so nothing for the maintainer to fetch.
+- **Result:** built as PDF, EPUB and HTML on 2026-11-27.
 
-| | |
-|---|---|
-| Upstream | `https://github.com/openstax/osbooks-business-law` |
-| Group | Economics, business and law |
-| Books (collection slugs) | `business-law-i-essentials-2e` |
-| Language | English |
-| Licence its `LICENSE` file names | CC BY-NC-SA 4.0 |
-| Size (GitHub, with history) | 12 MB |
-| Last push upstream | 2026-06-09 |
-| Default-branch head on 2026-11-26 | `0502c9f293fdb7745b76c4d7855d49acdaf8098b` (re-read it when the work starts; the pin is the head at that time) |
-| Maintainer's public backup | none yet (`tasks/openstax-books-buildable-forever-source-backup-and-licences.md`) |
+## What the book needed from the toolchain
 
-Mostly prose and figures, as far as the repository name suggests; not opened yet.
+Nothing: it converted and built in one pass with the toolchain as it stood.
 
-**Not known until the source is fetched:** whether it embeds exercises and in which of the two schemes, whether its figures are raster or SVG, how deeply its collections nest, and whether it uses markup the converter has not met (the converter reports those as "Unknown/fallback elements").
+## Left as it is
 
-## Plan
+The converter reports eight `inline:span` fallbacks (the span's text is kept), a kind the other books also report. The PDF and HTML were not read page by page; that review is the maintainer's.
 
-- [ ] `bash tools/add-book.sh business-law` to create `openstax/osbooks-business-law/` with `fetch.sh` (upstream, mirror fallback, the pin), `apply.sh`, `Makefile`, `README.md`, `CLAUDE.md` and `.gitignore`.
-- [ ] `./fetch.sh && ./apply.sh`, then `make convert`. Read the converter's report; a licence it does not know stops the conversion, which is intended.
-- [ ] If it embeds exercises: the maintainer runs `make fetch-exercises` in the folder (the fetch identifies itself with his contact address, so it is his to run), then the cache is committed with its `COPYRIGHT` notice.
-- [ ] `make dist`; open the PDF and one HTML page of each book and note anything that rendered badly.
-- [ ] Converter gaps: fix in `openstax/tooling/` what is small and general; anything larger gets its own task, named here.
-- [ ] Record the book: `openstax/osbooks-business-law/CLAUDE.md` (collections, module counts, nesting, exercises, figure format), the list in `openstax/CLAUDE.md`, and `tasks/reference/openstax/book-inventory.md` including its licence row.
-- [ ] `python3 tools/survey-upstream-books.py` and refresh `tasks/reference/openstax/upstream-book-repositories.md`; tick this book in the umbrella.
-- [ ] Tell the maintainer the book needs its public backup (`tools/mirror-upstreams.sh push business-law`).
+## Not done
 
-## Open questions
+The book needs the maintainer's public backup: `bash tools/mirror-upstreams.sh push business-law`.
 
-None.
+## Recorded
+
+`openstax/osbooks-business-law/CLAUDE.md` ("The books this folder builds"), the list in `openstax/CLAUDE.md`, the inventory and its licence table, and the umbrella's checklist. The survey table (`tasks/reference/openstax/upstream-book-repositories.md`) is refreshed once for the whole 2026-11-27 batch.
