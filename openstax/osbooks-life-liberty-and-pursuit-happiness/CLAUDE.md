@@ -1,0 +1,61 @@
+# osbooks-life-liberty-and-pursuit-happiness — OpenStax Life, Liberty, and the Pursuit of Happiness (impo)
+
+An impo OpenStax-family book on the shared-toolchain contract. Read the family
+doc [`../CLAUDE.md`](../CLAUDE.md) first (the fetch → apply-overlay → build model,
+the content/copyright rules) and the shared toolchain it points at,
+[`../tooling/`](../tooling). This file records only what is specific to *this book*.
+
+## What lives here (thin per-book folder)
+
+No OpenStax content and no toolchain are committed — both are pulled in on demand:
+
+- `fetch.sh` — fetches the pinned pristine OpenStax content into `checkout/` (gitignored).
+- `apply.sh` — overlays `../tooling/` onto `checkout/` (and copies a committed
+  `exercises/` cache in, if this book has one).
+- `Makefile` — builds the image from `../tooling/Dockerfile` (context `../tooling`) and
+  runs it against `checkout/` mounted at the fixed path `/book`.
+- `README.md`, `.gitignore`.
+
+## The pin
+
+`fetch.sh` pins **`acb6fbe2744dd112187b6aff5946cfe969410fca`**, the head of OpenStax's default branch
+when the book was added (2026-11-27). The pin moves at every sync; `fetch.sh` is the source
+of truth. Canonical upstream: `https://github.com/openstax/osbooks-life-liberty-and-pursuit-happiness`. Fallback, tried
+automatically by `fetch.sh` when the upstream does not provide the pin:
+`https://github.com/billsix/osbooks-life-liberty-and-pursuit-happiness`, the maintainer's public mirror.
+
+## The books this folder builds
+
+One collection, `life-liberty-and-pursuit-happiness` (OpenStax *Life, Liberty, and the Pursuit of Happiness*): 532 modules in 16 chapters grouped into 8 units by period, from "1491–1763" to "1980–Present"; two levels of nesting. Built as PDF (2,484 pages), EPUB and HTML
+(26 web pages) on 2026-11-27, the day it was added.
+
+- **Licence:** CC BY 4.0 (collection XML and upstream `LICENSE`).
+- **Exercises:** 1,896 embedded links, all in the `#exercise/<nickname>` scheme (none in
+  `#ost/api/ex/`). **Not fetched yet**: there is no `exercises/` cache, so each one is
+  left out of the built book and counted by the converter as `exercise-uncached`. The
+  maintainer runs `make fetch-exercises` here (it identifies itself with his contact
+  address); `../../tasks/openstax-add-book-life-liberty-and-pursuit-happiness.md` holds what follows.
+- **Figures:** raster only (893 files, 331 MB); no SVG.
+- **Web edition:** 26 pages for 532 modules. With two levels of nesting the HTML is split per chapter, as in the other unit-nested books (Biology 2e: 57 pages), so each page is long.
+- **Embedded frames:** 33 point at outside pages (videos); the converter emits nothing for them, as in the other books (`../../tasks/openstax-embedded-frame-links-are-dropped.md`).
+- **Still falling back** (the converter's report): `inline:label` (32), besides the 1,896 `exercise-uncached`.
+
+## Build
+
+```
+./fetch.sh        # pristine OpenStax content -> checkout/  (idempotent)
+./apply.sh        # overlay ../tooling/ onto checkout/      (idempotent)
+make image        # build the shared toolchain image once
+make dist         # PDF + EPUB + chunked HTML  (convert runs as needed)
+```
+
+`pdf`/`html`/`epub` depend on the `checkout/latex/.converted` stamp, so the
+converter auto-runs when the CNXML changed. Nested podman: `PODMAN_RUN_FLAGS`
+auto-applies `--cgroups=disabled` under a `NESTED_PODMAN=1` sandbox, empty on a
+normal host; threaded into every `run`, never `build`.
+
+## Changing the toolchain
+
+Edit `../tooling/` once (shared by every book), then re-run `./apply.sh` here to
+pick it up. Do not edit the generated LaTeX or the overlaid copies inside
+`checkout/` — a reconvert or a re-apply overwrites them.
