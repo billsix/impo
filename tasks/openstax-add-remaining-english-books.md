@@ -47,7 +47,7 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 **Computing and technology**
 
 - [ ] `tasks/openstax-add-book-additive-manufacturing.md` — one book: `additive-manufacturing-essentials` (CC BY-NC-SA 4.0, 36 MB); **built 2026-11-27 without its exercises, open until the maintainer runs `make fetch-exercises` there**
-- [ ] `tasks/openstax-add-book-foundations-information-systems.md` — one book: `foundations-information-systems` (CC BY-NC-SA 4.0, 35 MB)
+- [ ] `tasks/openstax-add-book-foundations-information-systems.md` — one book: `foundations-information-systems` (CC BY-NC-SA 4.0, 35 MB); **built 2026-11-27 without its exercises, open until the maintainer runs `make fetch-exercises` there**
 - [ ] `tasks/openstax-add-book-workplace-software-skills.md` — one book: `workplace-software-skills` (CC BY-NC-SA 4.0, 360 MB)
 
 **History and government**
