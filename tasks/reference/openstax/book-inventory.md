@@ -65,7 +65,7 @@ confirmed on each book's first build.
 - `osbooks-neuroscience/` — *Introduction to Behavioral Neuroscience* (106 modules, 1,114-page PDF), added 2026-11-27: 568 embedded exercises, not fetched yet (`tasks/openstax-add-book-neuroscience.md`); raster figures; one figure's file name holds an en dash, which needed a UTF-8 locale in the HTML and EPUB scripts.
 - `osbooks-introduction-political-science/` — *Introduction to Political Science* (107 modules, 763-page PDF), added 2026-11-27: 308 embedded exercises, all cached 2026-11-27; raster figures; 1,522 reference notes, now footnotes; 115 embedded video frames, dropped as in every book.
 - `osbooks-introduction-intellectual-property/` — *Introduction to Intellectual Property* (54 modules, 232-page PDF), added 2026-11-27: 185 embedded exercises, all cached 2026-11-27; raster figures; CC BY 4.0; 31 block quotations.
-- `osbooks-world-history/` — *World History Volume 1, to 1500* (85 modules, 918-page PDF); *World History Volume 2, from 1400* (80 modules, 864-page PDF), added 2026-11-27: 1,158 embedded exercises, not fetched yet (`tasks/openstax-add-book-world-history.md`); raster figures; 131 block quotations.
+- `osbooks-world-history/` — *World History Volume 1, to 1500* (85 modules, 928-page PDF); *World History Volume 2, from 1400* (80 modules, 872-page PDF), added 2026-11-27: 1,158 embedded exercises, all cached 2026-11-27; raster figures; 131 block quotations.
 - `osbooks-principles-data-science/` — *Principles of Data Science* (59 modules, 600-page PDF), added 2026-11-27: 136 embedded exercises, all cached 2026-11-27; raster figures; it brought one-line code blocks wrapped in line breaks to the converter.
 
 ## Licences (read from each book's own source, 2026-11-26)
