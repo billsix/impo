@@ -57,6 +57,7 @@ confirmed on each book's first build.
 - `osbooks-college-physics-bundle/` — two books added 2026-11-26: *College Physics 2e* and *College Physics
   for AP® Courses 2e*, 283 modules each (248 shared); no embedded exercises, raster figures.
 - `osbooks-business-law/` — *Business Law I Essentials 2e* (47 modules, 181-page PDF), added 2026-11-27: no embedded exercises; raster figures; built in one pass with no toolchain change.
+- `osbooks-additive-manufacturing/` — *Additive Manufacturing Essentials* (42 modules, 250-page PDF), added 2026-11-27: 122 embedded exercises, not fetched yet (`tasks/openstax-add-book-additive-manufacturing.md`); raster figures; built in one pass with no toolchain change.
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -86,6 +87,7 @@ whose licence it does not know.
 | osbooks-university-physics-bundle (3 books) | CC BY-NC-SA 4.0 | yes |
 | osbooks-writing-guide | CC BY-NC-SA 4.0 | none |
 | osbooks-business-law | CC BY-NC-SA 4.0 | yes |
+| osbooks-additive-manufacturing | CC BY-NC-SA 4.0 | yes |
 
 Every collection inside a bundle declares the same licence as its siblings. No module file carries licence
 metadata. The exercise caches are a separate case: see "Copyright / licensing" in `openstax/CLAUDE.md`.
