@@ -239,6 +239,7 @@ the day each was added.
 | neuroscience | 1 | `#exercise/` | 568 | raster |
 | business-law | 1 | none | 0 | raster |
 | introduction-intellectual-property | 1 | `#exercise/` | 185 | raster |
+| introduction-sociology | 1 | none | 0 | raster |
 
 ("survey" = the scheme wasn't re-audited on the raw CNXML for that book; verify on first exercise-bearing build,
 the same way physics/biology turned out to have `#ost/api/ex/`.)

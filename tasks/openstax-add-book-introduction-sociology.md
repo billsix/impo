@@ -1,47 +1,32 @@
-# Add `osbooks-introduction-sociology` to impo (one book)
+# Added `osbooks-introduction-sociology` to impo (one book)
 
-**Status:** ready — approved 2026-11-26 as part of the umbrella; not started
-**Part of:** `tasks/openstax-add-remaining-english-books.md`
-**Depends on:** `tasks/archive/impo/2026/11/26/openstax-add-book-step-0-scaffold-tool.md` (the scaffold tool, so every new folder is made the same way)
-**Priority:** 6
-**Difficulty:** 3
-**Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said … make a task per book"; he then chose all 29 real repositories, one task per repository).
+**Done 2026-11-27** (agent; part of `tasks/openstax-add-remaining-english-books.md`. William Emerison Six <billsix@gmail.com>, 2026-11-27: "you can make a branch, temporarily turn off gpg signing, and start working on all of them (minus the business ones for now)").
 
-## BLUF
+## What was added
 
-impo does not yet build OpenStax's `osbooks-introduction-sociology`. This task adds it as a book folder on the shared-toolchain contract, so that `introduction-sociology-3e` builds as PDF, EPUB and HTML like the books impo already carries. Done means the folder exists, every book in it converts and builds in all three formats, its exercises (if it embeds any) are cached, and impo's docs and the survey list it as built.
+`openstax/osbooks-introduction-sociology/`, created with `tools/add-book.sh introduction-sociology "Introduction to Sociology 3e"` and pinned at the upstream head `ab8839c5c5340cb4dffbc310699da450549deb20`. It builds one book:
 
-## Context
+| Book | Collection | Shape | PDF | Web pages |
+|---|---|---|---|---|
+| *Introduction to Sociology 3e* | `introduction-sociology-3e` | 96 modules in 21 chapters; one level of nesting | 828 pages | 119 |
 
-**Read first:** the umbrella (`tasks/openstax-add-remaining-english-books.md`) for the method every one of these tasks follows, and `openstax/CLAUDE.md` ("Per-book folder contract", "Copyright / licensing").
+- **Licence:** CC BY-NC-SA 4.0 (collection XML and the upstream `LICENSE`); the built PDF states it.
+- **Figures:** raster only (642 files, 107 MB); no SVG.
+- **Exercises:** none embedded, counted in the CNXML in both link schemes; no `exercises/` cache, so nothing for the maintainer to fetch.
+- **Result:** built as PDF, EPUB and HTML on 2026-11-27; the final build log has no pandoc warning.
 
-| | |
-|---|---|
-| Upstream | `https://github.com/openstax/osbooks-introduction-sociology` |
-| Group | Social sciences and humanities |
-| Books (collection slugs) | `introduction-sociology-3e` |
-| Language | English |
-| Licence its `LICENSE` file names | CC BY-NC-SA 4.0 |
-| Size (GitHub, with history) | 160 MB |
-| Last push upstream | 2026-07-20 |
-| Default-branch head on 2026-11-26 | `ab8839c5c5340cb4dffbc310699da450549deb20` (re-read it when the work starts; the pin is the head at that time) |
-| Maintainer's public backup | none yet (`tasks/openstax-books-buildable-forever-source-backup-and-licences.md`) |
+## What the book needed from the toolchain
 
-Mostly prose and figures, as far as the repository name suggests; not opened yet.
+**Empty labels.** The book puts an empty `<label/>` on 437 notes and solutions, which tells OpenStax's web edition to print no label there. The converter set nothing for them, which is right, but listed each one in its "Unknown/fallback elements" report. An empty label is known markup since this book (`tasks/reference/tooling/converters.md`, "Block quotations, reference notes and footnotes in titles"); the generated LaTeX is the same before and after.
 
-**Not known until the source is fetched:** whether it embeds exercises and in which of the two schemes, whether its figures are raster or SVG, how deeply its collections nest, and whether it uses markup the converter has not met (the converter reports those as "Unknown/fallback elements").
+## Left as it is
 
-## Plan
+In module `m90145` a quiz question points at another exercise ("the experiment noted in …") and the PDF prints "??" there, because the converter gives exercises no label. The same gap affects 1,193 exercises in 14 book folders, so it has its own task: `tasks/openstax-links-to-exercises-print-question-marks.md`. The converter reports no fallback. The PDF and HTML were not read page by page; that review is the maintainer's.
 
-- [ ] `bash tools/add-book.sh introduction-sociology` to create `openstax/osbooks-introduction-sociology/` with `fetch.sh` (upstream, mirror fallback, the pin), `apply.sh`, `Makefile`, `README.md`, `CLAUDE.md` and `.gitignore`.
-- [ ] `./fetch.sh && ./apply.sh`, then `make convert`. Read the converter's report; a licence it does not know stops the conversion, which is intended.
-- [ ] If it embeds exercises: the maintainer runs `make fetch-exercises` in the folder (the fetch identifies itself with his contact address, so it is his to run), then the cache is committed with its `COPYRIGHT` notice.
-- [ ] `make dist`; open the PDF and one HTML page of each book and note anything that rendered badly.
-- [ ] Converter gaps: fix in `openstax/tooling/` what is small and general; anything larger gets its own task, named here.
-- [ ] Record the book: `openstax/osbooks-introduction-sociology/CLAUDE.md` (collections, module counts, nesting, exercises, figure format), the list in `openstax/CLAUDE.md`, and `tasks/reference/openstax/book-inventory.md` including its licence row.
-- [ ] `python3 tools/survey-upstream-books.py` and refresh `tasks/reference/openstax/upstream-book-repositories.md`; tick this book in the umbrella.
-- [ ] Tell the maintainer the book needs its public backup (`tools/mirror-upstreams.sh push introduction-sociology`).
+## Not done
 
-## Open questions
+The book needs the maintainer's public backup: `bash tools/mirror-upstreams.sh push introduction-sociology`.
 
-None.
+## Recorded
+
+`openstax/osbooks-introduction-sociology/CLAUDE.md` ("The books this folder builds"), the lists and counts in `openstax/CLAUDE.md` and the root `CLAUDE.md`, the inventory and its licence table, the converter quick reference and the umbrella's checklist. The survey table (`tasks/reference/openstax/upstream-book-repositories.md`) is refreshed once for the whole batch.

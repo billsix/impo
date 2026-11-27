@@ -67,6 +67,7 @@ confirmed on each book's first build.
 - `osbooks-introduction-intellectual-property/` — *Introduction to Intellectual Property* (54 modules, 232-page PDF), added 2026-11-27: 185 embedded exercises, all cached 2026-11-27; raster figures; CC BY 4.0; 31 block quotations.
 - `osbooks-world-history/` — *World History Volume 1, to 1500* (85 modules, 928-page PDF); *World History Volume 2, from 1400* (80 modules, 872-page PDF), added 2026-11-27: 1,158 embedded exercises, all cached 2026-11-27; raster figures; 131 block quotations.
 - `osbooks-principles-data-science/` — *Principles of Data Science* (59 modules, 600-page PDF), added 2026-11-27: 136 embedded exercises, all cached 2026-11-27; raster figures; it brought one-line code blocks wrapped in line breaks to the converter.
+- `osbooks-introduction-sociology/` — *Introduction to Sociology 3e* (96 modules, 828-page PDF), added 2026-11-27: no embedded exercises; raster figures; its 437 empty `<label/>` elements made the converter treat an empty label as known markup.
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -106,6 +107,7 @@ whose licence it does not know.
 | osbooks-introduction-intellectual-property | CC BY 4.0 | yes |
 | osbooks-world-history (2 books) | CC BY-NC-SA 4.0 | yes |
 | osbooks-principles-data-science | CC BY-NC-SA 4.0 | yes |
+| osbooks-introduction-sociology | CC BY-NC-SA 4.0 | yes |
 
 Every collection inside a bundle declares the same licence as its siblings. No module file carries licence
 metadata. The exercise caches are a separate case: see "Copyright / licensing" in `openstax/CLAUDE.md`.

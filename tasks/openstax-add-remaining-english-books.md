@@ -81,7 +81,7 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 
 - [ ] `tasks/openstax-add-book-introduction-anthropology.md` — one book: `introduction-anthropology` (CC BY-NC-SA 4.0, 115 MB)
 - [ ] `tasks/openstax-add-book-introduction-philosophy.md` — one book: `introduction-philosophy-2e` (CC BY-NC-SA 4.0, 67 MB)
-- [ ] `tasks/openstax-add-book-introduction-sociology.md` — one book: `introduction-sociology-3e` (CC BY-NC-SA 4.0, 160 MB)
+- [x] `tasks/archive/impo/2026/11/27/openstax-add-book-introduction-sociology.md` — one book: `introduction-sociology-3e` (CC BY-NC-SA 4.0, 160 MB), done 2026-11-27
 
 **Study skills**
 
