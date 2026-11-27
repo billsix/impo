@@ -10,6 +10,10 @@
 # build lives in html-single.sh (`make html-single`).
 set -euo pipefail
 
+# pandoc decodes file names with the locale's encoding; in the POSIX locale it cannot
+# find a figure whose name holds a non-ASCII character (an en dash, an accent).
+export LANG=C.UTF-8
+
 ROOT=/book
 cd "$ROOT"
 mkdir -p output

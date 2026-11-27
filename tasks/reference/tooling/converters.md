@@ -76,6 +76,32 @@ operands run together with the operators lost, or nothing at all.
 A related fix from the same book: `render_table` took `int()` of the CALS `cols` attribute and crashed on
 `cols=""`; a value that is not a number now counts as undeclared and the observed row width decides.
 
+## Block quotations, reference notes and footnotes in titles (added 2026-11-27, with the history and government books)
+
+Three kinds of prose markup that the mathematics and science books barely use and the humanities books lean on.
+
+- **Block quotations.** A `<quote>` that holds `<para>` children, or that the source marks `class="block"` or
+  `display="block"`, is a passage set off from the prose: a speech, a constitutional clause, a letter. It
+  becomes a LaTeX `quote` environment with its paragraphs and lists kept (`_is_block_quote`, used by
+  `is_block`). Any other `<quote>` is a few quoted words inside a sentence and stays inline with quotation
+  marks. Before this date every `<quote>` was inline: a multi-paragraph passage was run together into its
+  surrounding paragraph between one pair of quotation marks, and a list inside it lost its items. In a table
+  cell a quote is always inline.
+- **Reference notes.** American Government and Introduction to Political Science cite sources as
+  `<cite><note class="reference">source</note></cite>` in the middle of a sentence (1,342 and 1,522 times).
+  Each is a `\footnote`; in a table cell, a caption or a title, where a footnote cannot be relied on, the
+  source follows in parentheses. Before this date the source's text was printed inline in the sentence.
+- **A `<footnote>` in a note's title** is given in parentheses, because the title is the optional argument of
+  the note's box and a `\footnote` there stops LaTeX ("Use of \@item doesn't match its definition"; one case,
+  in Foundations of Information Systems). Footnotes in captions, table titles and table cells are unchanged.
+- **Which existing books changed** (`tools/compare-converter-output.sh`, 2026-11-27; all block quotations):
+  Algebra 1 (6 section files), Astronomy 2e (7), Organic Chemistry (3), Physics (1), Psychology 2e (16) and
+  Writing Guide (33, mostly example sentences that are now set off one per line). The other 14 were identical.
+- **Related, in the build scripts:** `entrypoint/html.sh` and `entrypoint/epub.sh` set `LANG=C.UTF-8`. In the
+  image's POSIX locale pandoc could not find a figure whose file name holds a non-ASCII character (Behavioral
+  Neuroscience has one, with an en dash): the EPUB build left the figure out with a warning and the HTML build
+  stopped.
+
 ## The 5 historical `convert.py` versions and their deltas
 
 Verified by hashing `latex:tools/cnxml2tex/convert.py` across all 16 repos. 12 books shared one version; four
