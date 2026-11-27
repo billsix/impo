@@ -54,8 +54,9 @@ The two layers have two different owners, and imps must not blur them:
 - **The toolchain is the maintainer's** — MIT, like the rest of impo (see `../LICENSE`).
 - **The OpenStax content is NOT the maintainer's**, and its licence is per book: whatever the book's own
   source declares, in each collection XML (`<md:license url="…">`) and in the upstream repository's
-  `LICENSE` file. Read on 2026-11-26: **CC BY 4.0 for `osbooks-physics` and `osbooks-statistics`; CC BY-NC-SA
-  4.0 for every other book folder** (table: `tasks/reference/openstax/book-inventory.md`). Until that date impo's
+  `LICENSE` file. Read on 2026-11-26, and for each book added since on its day: **CC BY 4.0 for
+  `osbooks-physics`, `osbooks-statistics`, `osbooks-life-liberty-and-pursuit-happiness` and `osbooks-introduction-intellectual-property`;
+  CC BY-NC-SA 4.0 for every other book folder** (table: `tasks/reference/openstax/book-inventory.md`). Until that date impo's
   docs said "CC BY 4.0" for all of it, which was wrong. The module files carry no licence metadata of their
   own, so a copy of the XML without its collection file and `LICENSE` is unmarked.
 - **A built book is an adaptation and carries its source's licence.** The converter reads the licence from
@@ -176,7 +177,7 @@ headless browser (read before touching osbook-web.css/.js).
 
 ## Books
 
-One thin `openstax/osbooks-<subject>/` folder per book (19 total; more are being added, see
+One thin `openstax/osbooks-<subject>/` folder per book (29 total; more are being added, see
 `tasks/openstax-add-remaining-english-books.md`); each carries its own `CLAUDE.md`
 with its pin and book-specific facts. **anatomy-physiology** is the pilot for this family's
 shared-toolchain contract.
@@ -203,6 +204,16 @@ shared-toolchain contract.
   `introductory-business-statistics-2e`; added 2026-11-26)
 - `osbooks-college-physics-bundle/` — College Physics (2 books: `college-physics-2e`,
   `college-physics-ap-courses-2e`; added 2026-11-26)
+- `osbooks-business-law/` — Business Law I Essentials 2e (added 2026-11-27)
+- `osbooks-additive-manufacturing/` — Additive Manufacturing Essentials (added 2026-11-27)
+- `osbooks-life-liberty-and-pursuit-happiness/` — Life, Liberty, and the Pursuit of Happiness (added 2026-11-27)
+- `osbooks-us-history/` — U.S. History (added 2026-11-27)
+- `osbooks-american-government/` — American Government 4e (added 2026-11-27)
+- `osbooks-foundations-information-systems/` — Foundations of Information Systems (added 2026-11-27)
+- `osbooks-neuroscience/` — Introduction to Behavioral Neuroscience (added 2026-11-27)
+- `osbooks-introduction-political-science/` — Introduction to Political Science (added 2026-11-27)
+- `osbooks-introduction-intellectual-property/` — Introduction to Intellectual Property (added 2026-11-27)
+- `osbooks-world-history/` — World History (2 books: `world-history-volume-1`, `world-history-volume-2`; added 2026-11-27)
 
 Per-book status (build-verified dates, exercise/image counts, os-embed scheme post-mortems, structural
 facts): `tasks/reference/openstax/book-inventory.md`. Figure format + os-embed scheme + exercise counts

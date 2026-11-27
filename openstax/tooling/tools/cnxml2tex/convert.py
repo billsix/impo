@@ -971,8 +971,8 @@ def mml(node: _Element) -> str:
             return r"\text{''}"  # right double quote
         if t == "`":
             return r"\text{`}"  # backtick = opening single quote (punctuation in math)
-        for u, r in MO_MAP.items():
-            t = t.replace(u, r)
+        # A multi-character operator ("⋅º"): _math_literal escapes the literal
+        # braces first and substitutes the symbol macros second.
         return _esc_math_lit(t)
     if tag == "mtext":
         return mtext_to_latex(txt)
@@ -1538,6 +1538,16 @@ def inline_element(node: _Element, labels: set[str]) -> str:
     if tag == "newline":
         return " " if _CELL_MODE else r" \NLBREAK "
     if tag == "footnote":
+        # A note's title is typeset as the optional argument of its box, where a
+        # \footnote stops LaTeX; there the footnote's text goes in parentheses.
+        in_note_title: bool = any(
+            local(ancestor.tag) == "title"
+            and (parent := ancestor.getparent()) is not None
+            and local(parent.tag) == "note"
+            for ancestor in node.iterancestors()
+        )
+        if in_note_title:
+            return " (%s)" % inline(node, labels).strip()
         return r"\footnote{%s}" % inline(node, labels)
     if tag == "code":
         body = inline(node, labels)
@@ -1558,6 +1568,18 @@ def inline_element(node: _Element, labels: set[str]) -> str:
         return r"\texttt{%s}" % body
     if tag == "quote":
         return "``%s''" % inline(node, labels)
+    if tag == "cite":
+        # A reference note (<cite><note class="reference">source</note></cite>) is
+        # a footnote. Where a footnote cannot go (a table cell, a caption, a
+        # title) the source is given in parentheses.
+        reference: _Element | None = node.find(C + "note")
+        if reference is not None and reference.get("class") == "reference":
+            source: str = inline(reference, labels).strip()
+            in_fragile_place: bool = _CELL_MODE or any(
+                local(ancestor.tag) in ("caption", "title", "entry")
+                for ancestor in node.iterancestors()
+            )
+            return " (%s)" % source if in_fragile_place else r"\footnote{%s}" % source
     if tag == "math":
         return render_math(node)
     if tag == "media":
@@ -1768,7 +1790,22 @@ def is_block(child: _Element) -> bool:
     ns: str = child.tag.split("}")[0][1:] if "}" in child.tag else ""
     if ns.endswith("MathML"):
         return False
-    return local(child.tag) in BLOCK_TAGS
+    return local(child.tag) in BLOCK_TAGS or _is_block_quote(child)
+
+
+def _is_block_quote(node: _Element) -> bool:
+    """A <quote> set off from the prose: one that holds paragraphs, or that the
+    source marks as a block (class="block", display="block"). Any other <quote>
+    is a run of quoted words inside a sentence."""
+    return (
+        local(node.tag) == "quote"
+        and not _CELL_MODE
+        and (
+            node.find(C + "para") is not None
+            or node.get("class") == "block"
+            or node.get("display") == "block"
+        )
+    )
 
 
 def flow(node: _Element, labels: set[str], depth: int = 0) -> str:
@@ -2181,7 +2218,7 @@ def block_element(node: _Element, labels: set[str], depth: int) -> str:
     if tag in ("commentary",):
         return blocks(node, labels, depth)
     if tag == "quote":
-        return r"\begin{quote}%s\end{quote}" % inline(node, labels)
+        return "\\begin{quote}\n%s\n\\end{quote}" % blocks(node, labels, depth).strip()
     # unknown block: recurse
     warn_unknown("block:" + (tag or "?"))
     return blocks(node, labels, depth)

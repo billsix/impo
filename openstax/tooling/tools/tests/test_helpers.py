@@ -133,3 +133,48 @@ def test_os_embed_tag_scheme() -> None:
 def test_os_embed_other_link_is_none() -> None:
     # a non-exercise os-embed url is not an injected exercise
     assert c._os_embed_nickname(_osembed_para("#figure/foo")) is None
+
+
+# -- block quotations and reference notes -----------------------------------
+def _content(fragment: str) -> etree._Element:
+    """Parse a CNXML fragment as the children of a <content> element."""
+    return etree.fromstring(
+        '<content xmlns="http://cnx.rice.edu/cnxml">%s</content>' % fragment
+    )
+
+
+def test_quote_with_paragraphs_is_a_block_quote() -> None:
+    node: etree._Element = _content(
+        "<para>Before.</para><quote><para>One.</para><para>Two.</para></quote>"
+    )
+    assert c.flow(node, set()) == (
+        "\nBefore.\n\n\\begin{quote}\nOne.\n\nTwo.\n\\end{quote}\n"
+    )
+
+
+def test_quote_inside_a_sentence_stays_inline() -> None:
+    node: etree._Element = _content("<para>He said <quote>no</quote>.</para>")
+    assert c.flow(node, set()) == "\nHe said ``no''.\n"
+
+
+def test_reference_note_is_a_footnote() -> None:
+    node: etree._Element = _content(
+        '<para>A claim.<cite><note class="reference">A Source.</note></cite></para>'
+    )
+    assert c.flow(node, set()) == "\nA claim.\\footnote{A Source.}\n"
+
+
+def test_reference_note_in_a_title_is_parenthetical() -> None:
+    node: etree._Element = _content(
+        '<title>Heading<cite><note class="reference">A Source.</note></cite></title>'
+    )
+    title: etree._Element = node[0]
+    assert c.inline(title, set()) == "Heading (A Source.)"
+
+
+def test_footnote_in_a_note_title_is_parenthetical() -> None:
+    node: etree._Element = _content(
+        "<note><title>Heading<footnote>A Source.</footnote></title><para>Body.</para></note>"
+    )
+    title: etree._Element = node[0][0]
+    assert c.inline(title, set()) == "Heading (A Source.)"
