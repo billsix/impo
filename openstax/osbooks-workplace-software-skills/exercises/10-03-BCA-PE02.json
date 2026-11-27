@@ -1,0 +1,335 @@
+{
+ "images": [
+  {
+   "created_at": "2024-01-03T19:30:49.504Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmNVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e2bb390be04daa6d23deb636b4d8fd0cfdb976fa",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmNVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e2bb390be04daa6d23deb636b4d8fd0cfdb976fa/OSX_BCA_10_03_EE01_img.jpg"
+  },
+  {
+   "created_at": "2024-01-03T19:30:49.507Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmdVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--806e881c7b4c936ff3deea970c5c33c46e36410b",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmdVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--806e881c7b4c936ff3deea970c5c33c46e36410b/OSX_BCA_10_03_EE01Ans_img.jpg"
+  },
+  {
+   "created_at": "2024-01-03T19:30:49.509Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmtVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cba69105669b47e485a9e7806e9b08e4250e35a7",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmtVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cba69105669b47e485a9e7806e9b08e4250e35a7/OSX_BCA_10_03_EE01_img.jpg"
+  },
+  {
+   "created_at": "2024-01-03T19:30:49.516Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdE1hIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f6792172771e8aeb0e0de362a8a636c07d4a910d",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdE1hIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f6792172771e8aeb0e0de362a8a636c07d4a910d/OSX_BCA_10_03_EE01_img.jpg"
+  }
+ ],
+ "tags": [
+  "type:practice",
+  "book:stax-bca",
+  "context-cnxmod:9f807f5d-1a40-4c57-964d-b1a29d0d46e2",
+  "lo:stax-bca:10.3.2",
+  "lo:stax-bca:10.3.3",
+  "lo:stax-bca:10.3.1",
+  "book-slug:workplace-software-skills",
+  "module-slug:workplace-software-skills:10-3-using-arithmetic-statistical-and-logical-functions"
+ ],
+ "uuid": "a301fba5-f10f-402c-b1ac-dce8fb178270",
+ "group_uuid": "1f10f635-c051-41be-8c85-14c7703d18da",
+ "number": 37615,
+ "version": 6,
+ "uid": "37615@6",
+ "published_at": "2024-01-03T19:30:52.684Z",
+ "nickname": "10-03-BCA-PE02",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 372533,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<p>The Fairfax regional manager is comparing two customers. The manager wants to know when the units fall below the average for the customer and when the dollar per order is below the average. Use the Insert Function tool to find out which functions you can use for this purpose, then calculate these values. If one of the customers is more variable than the other, use an IF function to tell the manager either if it’s customer A or B.</p>\n\n<table>\n<thead>\n  <tr>\n    <th>Customer A</th>\n    <th></th>\n    <th></th>\n    <th></th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><b>Date</b></td>\n    <td><b>Port</b></td>\n    <td><b>Item Description</b></td>\n    <td><b>Quantity</b></td>\n    <td><b>Unique Quantity Code</b></td>\n    <td><b>FOB $</b></td>\n  </tr>\n  <tr>\n    <td>1/22/2021</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>15</td>\n    <td>PCS</td>\n    <td>$720.00</td>\n  </tr>\n  <tr>\n    <td>1/17/2021</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>115</td>\n    <td>PCS</td>\n    <td>$5,520.00</td>\n  </tr>\n  <tr>\n    <td>1/15/2021</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>158</td>\n    <td>PCS</td>\n    <td>$7,584.00</td>\n  </tr>\n  <tr>\n    <td>1/13/2021</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>85</td>\n    <td>PCS</td>\n    <td>$4,080.00</td>\n  </tr>\n  <tr>\n    <td>1/8/2021</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>16</td>\n    <td>PCS</td>\n    <td>$768.00</td>\n  </tr>\n  <tr>\n    <td>1/5/2021</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>10</td>\n    <td>PCS</td>\n    <td>$480.00</td>\n  </tr>\n  <tr>\n    <td>1/3/2021</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>9</td>\n    <td>PCS</td>\n    <td>$432.00</td>\n  </tr>\n  <tr>\n    <td>12/28/2020</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>74</td>\n    <td>PCS</td>\n    <td>$3,552.00</td>\n  </tr>\n  <tr>\n    <td>12/20/2020</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>57</td>\n    <td>PCS</td>\n    <td>$2,736.00</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Customer B</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td><b>Date</b></td>\n    <td><b>Port</b></td>\n    <td><b>Item Description</b></td>\n    <td><b>Quantity</b></td>\n    <td><b>Unique Quantity Code</b></td>\n    <td><b>FOB $</b></td>\n  </tr>\n  <tr>\n    <td>1/20/2021</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>43</td>\n    <td>PCS</td>\n    <td>$2,064.00</td>\n  </tr>\n  <tr>\n    <td>1/15/2021</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>39</td>\n    <td>PCS</td>\n    <td>$1,872.00</td>\n  </tr>\n  <tr>\n    <td>1/12/2021</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>45</td>\n    <td>PCS</td>\n    <td>$2,160.00</td>\n  </tr>\n  <tr>\n    <td>1/9/2021</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>38</td>\n    <td>PCS</td>\n    <td>$1,824.00</td>\n  </tr>\n  <tr>\n    <td>1/4/2021</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>47</td>\n    <td>PCS</td>\n    <td>$2,256.00</td>\n  </tr>\n  <tr>\n    <td>12/27/2020</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>31</td>\n    <td>PCS</td>\n    <td>$1,488.00</td>\n  </tr>\n  <tr>\n    <td>12/20/2020</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>44</td>\n    <td>PCS</td>\n    <td>$2,112.00</td>\n  </tr>\n  <tr>\n    <td>12/18/2020</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>34</td>\n    <td>PCS</td>\n    <td>$1,632.00</td>\n  </tr>\n  <tr>\n    <td>12/15/2020</td>\n    <td>Portland, ME</td>\n    <td>Headphones</td>\n    <td>35</td>\n    <td>PCS</td>\n    <td>$1,680.00</td>\n  </tr>\n</tbody>\n</table>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

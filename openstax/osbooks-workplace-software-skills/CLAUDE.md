@@ -26,18 +26,16 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `workplace-software-skills` (OpenStax *Workplace Software and Skills*): 105 modules in 15 chapters; one level of nesting. Built as PDF (1,198 pages), EPUB and HTML
+One collection, `workplace-software-skills` (OpenStax *Workplace Software and Skills*): 105 modules in 15 chapters; one level of nesting. Built as PDF (1,215 pages), EPUB and HTML
 (122 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
-- **Exercises:** 682 embedded links, all in the `#exercise/<nickname>` scheme (none in
-  `#ost/api/ex/`). **Not fetched yet**: there is no `exercises/` cache, so each one is
-  left out of the built book and counted by the converter as `exercise-uncached`. The
-  maintainer runs `make fetch-exercises` here (it identifies itself with his contact
-  address); `../../tasks/openstax-add-book-workplace-software-skills.md` holds what follows.
+- **Exercises:** 682 embedded links to 682 exercises, all in the `#exercise/<nickname>`
+  scheme. All 682 are in the committed cache `exercises/` (20 images; with its `COPYRIGHT`
+  notice), fetched by the maintainer on 2026-11-27, and are in the built book.
 - **Figures:** raster only (1,213 files, 349 MB); no SVG. The PDF is 282 MB and the EPUB 242 MB.
 - **Block quotations:** 3, set off as such.
-- **Still falling back** (the converter's report): none besides the 682 `exercise-uncached`.
+- **Still falling back** (the converter's report): none.
 
 ## Build
 

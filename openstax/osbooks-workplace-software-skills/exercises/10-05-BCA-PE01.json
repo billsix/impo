@@ -1,0 +1,318 @@
+{
+ "images": [
+  {
+   "created_at": "2024-01-02T16:17:18.129Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcjBVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--eabea7aaabfe19adefeca9e492d8ec252afe1d17",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcjBVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--eabea7aaabfe19adefeca9e492d8ec252afe1d17/OSX_BCA_10_05_PE01_img.jpg"
+  }
+ ],
+ "tags": [
+  "type:practice",
+  "book:stax-bca",
+  "context-cnxmod:63325f84-833b-4c0c-98c3-a47b980c3d25",
+  "lo:stax-bca:10.5.2",
+  "lo:stax-bca:10.5.4",
+  "book-slug:workplace-software-skills",
+  "module-slug:workplace-software-skills:10-5-auditing-formulas-and-fixing-errors"
+ ],
+ "uuid": "3a3daa92-7ef8-4b1b-b619-d56e5a6abee6",
+ "group_uuid": "b1e01462-0d8d-4d36-bf75-62ddd5c22443",
+ "number": 37629,
+ "version": 5,
+ "uid": "37629@5",
+ "published_at": "2024-01-02T16:17:20.157Z",
+ "nickname": "10-05-BCA-PE01",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 372138,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<p>WorldCorp collects thousands of datasets every week. A large part of the managers’ jobs is monitoring this data, and they cannot monitor it efficiently if a workbook has mistakes. See this figure for a current dataset with some #VALUE! errors. What does this #VALUE! error code mean? What would you recommend doing in the formula audit process? What are the tools you would use, and how would you do it? Explain.</p>\n\n<table>\n<thead>\n  <tr>\n    <th>Operational Budget for the Fairfax, VA Manufacturing Plant</th>\n    <th></th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td><b>Component</b></td>\n    <td><b>Projected Cost</b></td>\n    <td><b>Actual Cost</b></td>\n    <td><b>Difference</b></td>\n  </tr>\n  <tr>\n    <td>Direct Materials</td>\n    <td>$52,536,474.63</td>\n    <td>$56,436,363.00</td>\n    <td>$3,899,888.37</td>\n  </tr>\n  <tr>\n    <td>Direct Labor</td>\n    <td>$64,236,234.33</td>\n    <td>$67,436,356.00</td>\n    <td>$3,200,121.37</td>\n  </tr>\n  <tr>\n    <td>Manufacturing Overhead</td>\n    <td>$53,386,433.99</td>\n    <td>$52,453,476.00</td>\n    <td>#VALUE!</td>\n  </tr>\n  <tr>\n    <td>Maintenance</td>\n    <td>$535,252.00</td>\n    <td>$446,736.00</td>\n    <td>$(88,516.00)</td>\n  </tr>\n  <tr>\n    <td>Utility Services</td>\n    <td>$4,526,236.00</td>\n    <td>$5,736,363.00</td>\n    <td>$1,210,127.00</td>\n  </tr>\n  <tr>\n    <td>Administrative Costs</td>\n    <td>$4,256,236.00</td>\n    <td>$4,156,477.00</td>\n    <td>$(100,296.00)</td>\n  </tr>\n  <tr>\n    <td>Sales Costs</td>\n    <td>$7,755,674.64</td>\n    <td>$7,537,363.00</td>\n    <td>$(218,311.64)</td>\n  </tr>\n  <tr>\n    <td>Depreciation</td>\n    <td>$85,670.00</td>\n    <td>$86,845.00</td>\n    <td>$1,175.00</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td> <br>$187,318,748.59 </td>\n    <td> <br>$137,853,616.00 </td>\n    <td> <br>#VALUE! </td>\n  </tr>\n</tbody>\n</table>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

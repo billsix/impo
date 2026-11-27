@@ -242,7 +242,7 @@ the day each was added.
 | introduction-sociology | 1 | none | 0 | raster |
 | college-success-bundle | 3 | none | 0 | raster |
 | lifespan-development | 1 | `#exercise/` | 872 | raster |
-| workplace-software-skills | 1 | `#exercise/` (not fetched) | 682 | raster |
+| workplace-software-skills | 1 | `#exercise/` | 682 | raster + 20 exercise imgs |
 | introduction-anthropology | 1 | `#exercise/` (not fetched) | 150 | raster |
 | introduction-philosophy | 1 | `#exercise/` (not fetched) | 228 | raster |
 | nursing-external-bundle | 3 | `#exercise/` (not fetched) | 1156 | raster |
