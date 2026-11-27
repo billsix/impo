@@ -150,6 +150,38 @@ and could not be typeset without this. It also changed Introduction to Python Pr
 such blocks were typeset inline, running into the text around them), one listing in Foundations of
 Information Systems and the wrapping of one line in Introductory Statistics; the other books were identical.
 
+## Tables of prose (added 2026-11-27, with the nursing books)
+
+A table column is set as `l`, which never wraps, and a table wider than the line is scaled down to it
+(`\resizebox`; a table holding a link, which cannot go through `\resizebox`, is set smaller instead). That suits a
+table of numbers. A table whose cells hold sentences was thousands of points wide: scaled, it could not be read
+(Table 7.12 of Population Health for Nurses was a hairline), and with a link in it, it ran off the page.
+
+- **Which tables wrap** (`prose_column_shares`): one whose widest cells, side by side and unwrapped, come to more
+  than 90 characters, with a phrase of more than 40 in some column. Mathematics is not counted, so a table of
+  long formulas keeps its natural width; neither is a table of more than seven columns. Every other table is set
+  exactly as before.
+- **How** (`_render_prose_table`): each column is a ragged-right `p{…}` column whose share of the line follows its
+  longest cell, between its longest word and 45 characters; the type is `\small`, and a rule separates the rows.
+  Standing on its own the table is a `longtable`, which breaks across pages and repeats its header row. Inside a
+  note, an example, an exercise, a list or another table, where a `longtable` cannot go, it is a `tabular` in one
+  piece. The caption and number stay below the table, and `\addtocounter{table}{-1}` undoes the step a
+  `longtable` gives the table counter by itself.
+- **Line breaks in a wrapping cell:** a `<newline/>` or a list item starts a new line with `\OScellbreak`
+  (`osbook.cls`), which is safe inside `\textbf{…}` and at the start of a cell; `\par` there stopped LaTeX. For
+  the web editions `tools/pandoc/preprocess.py` turns it into `\newline`.
+- **Web editions:** pandoc reads `longtable` and the `p{…}` widths, so the HTML and EPUB tables now carry column
+  widths in the same proportions.
+- **Counts on 2026-11-27, in the section files of the 37 book folders:** 1,863 tables are `longtable`s and 968 are
+  wrapped in one piece; 6,919 keep their natural width. The nursing bundle has 657 wrapped tables, Life, Liberty,
+  and the Pursuit of Happiness 180, the Biology bundle 168, Writing Guide 95.
+- **Page counts rose** where tables had been shrunk: Pharmacology for Nurses 1,267 to 1,568, Nutrition for Nurses
+  537 to 622, Population Health for Nurses 1,400 to 1,653. A page count recorded in a book's `CLAUDE.md` or in the
+  inventory before this date is from before the change.
+- **Still too wide:** a `p` column cannot break a long unbroken word or an image wider than its share, so logs
+  still list some boxes more than 100 pt too wide (Population Health for Nurses 8, down from 20; Writing Guide 39
+  and College Physics 38, which were not measured before). Nobody has read every wrapped table in the PDFs.
+
 ## Characters no font has (added 2026-11-27)
 
 LuaTeX prints nothing for a character the font in use has no glyph for and says so only in the log ("Missing

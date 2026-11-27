@@ -30,9 +30,9 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 | Book | Collection | Shape | PDF | Web pages |
 |---|---|---|---|---|
-| *Pharmacology for Nurses* | `pharmacology` | 203 modules in 40 chapters grouped into 11 units; two levels of nesting | 1,267 pages | 53 |
-| *Nutrition for Nurses* | `nutrition` | 93 modules in 20 chapters grouped into 9 units; two levels of nesting | 537 pages | 31 |
-| *Population Health for Nurses* | `population-health` | 185 modules in 35 chapters grouped into 7 units; two levels of nesting | 1,400 pages | 44 |
+| *Pharmacology for Nurses* | `pharmacology` | 203 modules in 40 chapters grouped into 11 units; two levels of nesting | 1,568 pages | 53 |
+| *Nutrition for Nurses* | `nutrition` | 93 modules in 20 chapters grouped into 9 units; two levels of nesting | 622 pages | 31 |
+| *Population Health for Nurses* | `population-health` | 185 modules in 35 chapters grouped into 7 units; two levels of nesting | 1,653 pages | 44 |
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
 - **Exercises:** 1,156 embedded links to 1,156 exercises, all in the `#exercise/<nickname>`
@@ -40,11 +40,10 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
   notice), fetched by the maintainer on 2026-11-27, and are in the built book.
 - **Figures:** raster only (419 files, 142 MB); no SVG.
 - **Exercises per book:** Pharmacology for Nurses 472, Nutrition for Nurses 304, Population Health for Nurses 380.
-- **Tables:** 714, most of them prose (drug classes, dosages, nursing implications). In the PDF such a table is scaled down, some until they cannot be read, and one with a link runs off the page (`../../tasks/openstax-pdf-prose-tables-shrink-or-run-off-the-page.md`).
+- **Tables:** 714, most of them prose (drug classes, dosages, nursing implications). 657 are set with wrapping columns, and those standing on their own break across pages (`../../tasks/reference/tooling/converters.md`, "Tables of prose"); before 2026-11-27's change they were scaled down until some could not be read.
 - **Coloured table text:** 3,375 `<span class="blue-text">` wrappers, set like the text around them.
 - **Embedded frames:** 248 point at outside pages (58, 6 and 184 in the three books); each is a labelled link (`../../tasks/reference/tooling/converters.md`, "Outside pages embedded in frames").
 - **Web editions:** 53, 31 and 44 pages. With two levels of nesting the HTML is split per chapter, so each page is long.
-- **Characters missing from the PDF:** `⅓`, `₁` and `₆` in Nutrition for Nurses (`../../tasks/openstax-pdf-characters-missing-from-the-body-font.md`).
 - **Still falling back** (the converter's report): none.
 
 ## Build

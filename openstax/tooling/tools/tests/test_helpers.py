@@ -213,6 +213,46 @@ def test_misencoded_punctuation_is_put_right() -> None:
     assert c.esc_text("â€œIntroâ€\x9d animalsâ€™") == c.esc_text("“Intro” animals’")
 
 
+_PROSE_ROW: str = (
+    "<row><entry>Oral</entry><entry>" + "Tablets or liquids that are swallowed. " * 5 + "</entry></row>"
+)
+
+
+def test_table_of_prose_wraps_and_breaks_across_pages() -> None:
+    node: etree._Element = _content(
+        "<table><tgroup cols=\"2\"><thead><row><entry>Route</entry><entry>Description</entry></row></thead>"
+        "<tbody>%s</tbody></tgroup></table>" % _PROSE_ROW
+    )
+    rendered: str = c.flow(node, set())
+    assert "\\begin{longtable}{|>{\\bfseries\\raggedright\\arraybackslash}p{" in rendered
+    assert "\\endhead" in rendered and "\\resizebox" not in rendered
+
+
+def test_table_of_prose_in_a_note_stays_in_one_piece() -> None:
+    node: etree._Element = _content(
+        "<note><table><tgroup cols=\"2\"><tbody>%s</tbody></tgroup></table></note>" % _PROSE_ROW
+    )
+    rendered: str = c.flow(node, set())
+    assert "\\begin{tabular}{|>{\\bfseries\\raggedright\\arraybackslash}p{" in rendered
+    assert "longtable" not in rendered
+
+
+def test_table_of_numbers_keeps_its_natural_width() -> None:
+    node: etree._Element = _content(
+        "<table><tgroup cols=\"2\"><tbody><row><entry>x</entry><entry>1.5</entry></row></tbody></tgroup></table>"
+    )
+    rendered: str = c.flow(node, set())
+    assert "\\begin{tabular}{|>{\\bfseries}l|l|}" in rendered and "\\resizebox" in rendered
+
+
+def test_line_break_in_a_wrapping_cell_is_kept() -> None:
+    row: str = "<row><entry>Drug<newline/>Class</entry><entry>%s</entry></row>" % ("Long words here. " * 10)
+    node: etree._Element = _content(
+        "<table><tgroup cols=\"2\"><tbody>%s</tbody></tgroup></table>" % row
+    )
+    assert "Drug \\OScellbreak Class" in c.flow(node, set())
+
+
 def test_quote_inside_a_sentence_stays_inline() -> None:
     node: etree._Element = _content("<para>He said <quote>no</quote>.</para>")
     assert c.flow(node, set()) == "\nHe said ``no''.\n"

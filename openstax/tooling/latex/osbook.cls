@@ -73,6 +73,10 @@
 \RequirePackage{mdframed}
 \RequirePackage{multicol}       % OpenStax lays practice exercises in two columns
 \RequirePackage{array}
+\RequirePackage{longtable}  % tables of prose break across pages (convert.py, _render_prose_table)
+% A line break inside a wrapping table cell. Safe inside \textbf{...} (it is not
+% a \par) and at the start of a cell (where \\ or \newline has no line to end).
+\DeclareRobustCommand{\OScellbreak}{\ifvmode\else\unskip\hfil\break\fi}
 \RequirePackage{colortbl}       % teal-header grid tables (OpenStax look)
 \RequirePackage{hyperref}
 % ntheorem before Computer Modern math (avoids multiple-\openbox clash); before thmtools

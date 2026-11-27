@@ -197,6 +197,8 @@ def main(argv: list[str]) -> None:
         # in prose) is unknown to pandoc's math reader, which then prints the
         # TeX itself. The character is read as it stands.
         out = re.sub(r"\\surd(?![A-Za-z]) ?", "√", out)
+        # the PDF's line break inside a wrapping table cell
+        out = out.replace(r"\OScellbreak", r"\newline")
         with open(path, "w", encoding="utf-8") as f:
             f.write(out)
 
