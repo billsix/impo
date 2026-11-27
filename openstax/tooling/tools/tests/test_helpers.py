@@ -175,6 +175,14 @@ def test_empty_label_sets_nothing() -> None:
     assert "inline:label" not in c.UNKNOWN
 
 
+def test_paragraph_of_only_line_breaks_leaves_no_line_break() -> None:
+    assert c.cleanup_latex("Before.\n\n \\NLBREAK  \\NLBREAK  \\NLBREAK \n\nAfter.").split() == [
+        "Before.",
+        "After.",
+    ]
+    assert "\\\\" not in c.cleanup_latex("x\n\\\\  \\\\  \\\\\ny")
+
+
 def test_quote_inside_a_sentence_stays_inline() -> None:
     node: etree._Element = _content("<para>He said <quote>no</quote>.</para>")
     assert c.flow(node, set()) == "\nHe said ``no''.\n"

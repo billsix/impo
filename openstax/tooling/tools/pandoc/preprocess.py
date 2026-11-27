@@ -193,6 +193,10 @@ def main(argv: list[str]) -> None:
         # way; impo's env is `oscode`). Body is already raw, so a name swap is all.
         out = out.replace(r"\begin{oscode}", r"\begin{verbatim}")
         out = out.replace(r"\end{oscode}", r"\end{verbatim}")
+        # \surd (the converter's spelling of a bare U+221A, used as a tick mark
+        # in prose) is unknown to pandoc's math reader, which then prints the
+        # TeX itself. The character is read as it stands.
+        out = re.sub(r"\\surd(?![A-Za-z]) ?", "√", out)
         with open(path, "w", encoding="utf-8") as f:
             f.write(out)
 

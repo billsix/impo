@@ -1674,9 +1674,10 @@ def cleanup_latex(s: str) -> str:
     # any surviving (mid-line) sentinel becomes a real line break
     s = s.replace(r"\NLBREAK", r"\\")
     # a line break with nothing before it on the line ("There's no line here to
-    # end") -- drop a \\ that is alone on a line or starts a line.
-    s = re.sub(r"(?m)^[ \t]*\\\\+[ \t]*$", "", s)
-    s = re.sub(r"(?m)^[ \t]*\\\\+[ \t]*(?=\S)", "", s)
+    # end") -- drop a \\, or a run of them (a paragraph holding nothing but
+    # <newline/>s), that is alone on a line or starts a line.
+    s = re.sub(r"(?m)^[ \t]*(?:\\\\+[ \t]*)+$", "", s)
+    s = re.sub(r"(?m)^[ \t]*(?:\\\\+[ \t]*)+(?=\S)", "", s)
     # a \\ immediately followed by [ is misread as \\[<dimen>]; we never emit
     # an optional line-break length, so protect the bracket with {}.
     s = re.sub(r"(\\\\)(\s*)\[", r"\1\2{}[", s)

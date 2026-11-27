@@ -107,6 +107,14 @@ Three kinds of prose markup that the mathematics and science books barely use an
   around them. An empty `<label/>` asks OpenStax's web edition to print no label on a note or a solution (437
   times in Introduction to Sociology 3e) and sets nothing. Both gave that output before; they no longer fill
   the "Unknown/fallback elements" report. A `<label>` with text in it, even a lone space, is still reported.
+- **A paragraph that holds nothing but `<newline/>`s** (eight of them, used as vertical space in the preface
+  of Population Health for Nurses) sets nothing (added 2026-11-27). `cleanup_latex` dropped a lone `\\` on a
+  line but not a run of them separated by spaces, and LaTeX stopped with "There's no line here to end". No
+  other fetched book has one.
+- **`\surd` in the web editions** (same date): the converter writes a bare `√` in prose as `$\surd$`, which
+  pandoc's math reader does not know and printed as TeX. `tools/pandoc/preprocess.py` puts the character back
+  for the HTML and EPUB. College Success uses it as a tick mark; Introductory Statistics and Principles of Data
+  Science have one each.
 - **Related, in the build scripts:** `entrypoint/html.sh` and `entrypoint/epub.sh` set `LANG=C.UTF-8`. In the
   image's POSIX locale pandoc could not find a figure whose file name holds a non-ASCII character (Behavioral
   Neuroscience has one, with an en dash): the EPUB build left the figure out with a warning and the HTML build
