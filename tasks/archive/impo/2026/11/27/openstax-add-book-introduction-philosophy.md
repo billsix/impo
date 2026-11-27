@@ -21,7 +21,7 @@
 
 ## Left as it is
 
-The PDF leaves out six characters the body font has no glyph for (`ǐ`, `ʿ`, `Ḥ`, `ṇ`, `Ṣ`, `ṣ`, nine places in Chinese, Arabic and Sanskrit names); the HTML and EPUB have them. Every book impo builds has this gap, so it has its own task: `tasks/openstax-pdf-characters-missing-from-the-body-font.md`. The converter reports no fallback. The PDF and HTML were not read page by page; that review is the maintainer's.
+The PDF leaves out six characters the body font has no glyph for (`ǐ`, `ʿ`, `Ḥ`, `ṇ`, `Ṣ`, `ṣ`, nine places in Chinese, Arabic and Sanskrit names); the HTML and EPUB have them. Every book impo builds has this gap, so it has its own task: `tasks/archive/impo/2026/11/27/openstax-pdf-characters-missing-from-the-body-font.md`. The converter reports no fallback. The PDF and HTML were not read page by page; that review is the maintainer's.
 
 ## Not done
 
