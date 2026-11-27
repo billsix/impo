@@ -74,10 +74,16 @@ def drop_crossrefs(tex: str) -> str:
 
     >>> drop_crossrefs(r"Solve $x=1$. \\ If you missed this problem, review \cref{a-b}.")
     'Solve $x=1$.'
+
+    A link with words of its own (``\hyperref[label]{words}``) keeps the words:
+
+    >>> drop_crossrefs(r"Use the \hyperref[mod:m1]{order of operations}.")
+    'Use the order of operations.'
     """
     text: str = re.sub(
         r"(\\\\)?\s*If you missed this problem, review\s*\\cref\{[^}]*\}\.?", "", tex
     )
+    text = re.sub(r"\\hyperref\[[^\]]*\]\{([^{}]*)\}", r"\1", text)
     return re.sub(r"\\cref\{[^}]*\}", "", text).strip()
 
 
