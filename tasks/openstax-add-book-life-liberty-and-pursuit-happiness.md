@@ -2,7 +2,7 @@
 
 **Status:** blocked
 **Blocked on:** the maintainer running `make -C openstax/osbooks-life-liberty-and-pursuit-happiness fetch-exercises` (the fetch identifies itself to OpenStax's server with his contact address, so it is his to run)
-**Recheck:** `ls openstax/osbooks-life-liberty-and-pursuit-happiness/exercises/*.json | wc -l` — cleared when it prints a number near 1,896
+**Recheck:** `ls openstax/osbooks-life-liberty-and-pursuit-happiness/checkout/exercises/*.json | wc -l` — cleared when it prints a number near 1,896
 **Part of:** `tasks/openstax-add-remaining-english-books.md`
 **Priority:** 5
 **Difficulty:** 2 (what is left is a fetch, a rebuild and the record)
