@@ -26,21 +26,18 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `introduction-intellectual-property` (OpenStax *Introduction to Intellectual Property*): 54 modules in 5 chapters; one level of nesting. Built as PDF (226 pages), EPUB and HTML
+One collection, `introduction-intellectual-property` (OpenStax *Introduction to Intellectual Property*): 54 modules in 5 chapters; one level of nesting. Built as PDF (232 pages), EPUB and HTML
 (61 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY 4.0 (collection XML and upstream `LICENSE`).
-- **Exercises:** 185 embedded links, all in the `#exercise/<nickname>` scheme (none in
-  `#ost/api/ex/`). **Not fetched yet**: there is no `exercises/` cache, so each one is
-  left out of the built book and counted by the converter as `exercise-uncached`. The
-  maintainer runs `make fetch-exercises` here (it identifies itself with his contact
-  address); `../../tasks/openstax-add-book-introduction-intellectual-property.md` holds what follows.
+- **Exercises:** 185 embedded links to 185 exercises, all in the `#exercise/<nickname>`
+  scheme. All 185 are in the committed cache `exercises/` (no images; with its `COPYRIGHT`
+  notice), fetched by the maintainer on 2026-11-27, and are in the built book.
 - **Figures:** raster only (191 files, 42 MB); no SVG.
-- **Exercise count:** the CNXML holds 185 exercise links; the converter reports 183 `exercise-uncached`. The two it does not count were not traced.
 - **Block quotations:** 31, set off as such.
 - **Embedded frames:** 9 point at outside pages (simulations, videos). Each is a labelled link in all
   three editions (`../../tasks/reference/tooling/converters.md`, "Outside pages embedded in frames").
-- **Still falling back** (the converter's report): none besides the 183 `exercise-uncached`.
+- **Still falling back** (the converter's report): none.
 
 ## Build
 
