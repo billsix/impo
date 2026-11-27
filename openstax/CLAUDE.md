@@ -154,6 +154,11 @@ Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothi
 
 **Changing the toolchain:** edit it here once; each book picks it up on its next `apply.sh`. This is
 the whole reason it's shared — one place to maintain the converter and the house style.
+**Two traps when changing it.** `entrypoint/*.sh` are bind-mounted into the build container, and bash reads a
+script as it runs, so editing one while a build is running breaks that build (2026-11-27: `pdf.sh` was edited
+mid-run and a finished PDF was followed by "command not found"); wait for running builds first. And the
+`study/` family reads the converter's section LaTeX (`study/tools/notebooks.py`, `solver.py`), so new markup in
+that LaTeX has to be taught to it and `make -C study test` run (2026-11-27: `\hyperref[label]{words}`).
 
 **Reference docs** (`tasks/reference/tooling/`, read before touching the toolchain): **`converters.md`** — the
 converter landscape (the 5 historical per-book converter versions merged into one, gap analysis);
