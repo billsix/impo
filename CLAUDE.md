@@ -99,7 +99,7 @@ folder. Two book families exist, plus the `study/` family of material built from
     book impo builds whose upstream has vanished gets a row marked "gone", with where its source is still
     held and the action needed (`tools/upstream-books-gone.txt` records what the tool cannot check).
     Its output is the table in `tasks/reference/openstax/upstream-book-repositories.md` (54 repositories, 88
-    books on 2026-11-27; impo builds 29 of them, counting the vanished algebra-1).
+    books on 2026-11-27; impo builds 36 of them, and the vanished algebra-1 besides).
   - `build-web-editions.sh` — a fan-out that re-applies the toolchain overlay and runs `make html &&
     make epub` across every OpenStax book folder, logging PASS/FAIL per book (`bash tools/build-web-editions.sh
     [book-slug]`).
