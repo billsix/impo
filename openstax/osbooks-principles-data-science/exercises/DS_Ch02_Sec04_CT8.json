@@ -1,0 +1,346 @@
+{
+ "images": [
+  {
+   "created_at": "2024-10-30T09:29:52.487Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVlqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cc1a4f2b606d9542ada7bf33c322eba0ae4f2799",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVlqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cc1a4f2b606d9542ada7bf33c322eba0ae4f2799/DS_UnFigure_02_05_002.png"
+  },
+  {
+   "created_at": "2024-10-30T09:29:52.491Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdWNqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1e1a0a22c395533c0877447893ce09ed44d0a40d",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdWNqIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1e1a0a22c395533c0877447893ce09ed44d0a40d/DS_UnFigure_02_05_003.png"
+  }
+ ],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "context-cnxmod:23367fce-6b41-4b94-8fc9-4709a0248087",
+  "lo:stax-datascience:2.4.1",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:2-4-data-cleaning-and-preprocessing"
+ ],
+ "uuid": "b0a459ea-6514-43a8-aa77-8686f559f3df",
+ "group_uuid": "5416260d-93a8-4892-b12a-e8718513d866",
+ "number": 59844,
+ "version": 16,
+ "uid": "59844@16",
+ "published_at": "2024-10-30T09:29:58.108Z",
+ "nickname": "DS_Ch02_Sec04_CT8",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "As the pandemic continues to surge, the US Centers for Disease Control and Prevention (CDC) releases daily data on COVID-19 cases and deaths in the United States, but the CDC does not report on Saturdays and Sundays, due to delays in receiving reports from states and counties. Then the Saturday and Sunday cases are added to the Monday cases. This results in a sudden increase in reported numbers of Monday cases, causing confusion and concern among the public. (See the table provided.) The CDC explains that the spike is due to the inclusion of delayed or improperly recorded data from the previous week. This causes speculation and panic among the public, but the CDC reassures them that there is no hidden outbreak happening.\n<p>&nbsp;</p>\n<table id=\"tab3\">\n<tbody><tr><th>\n</th></tr><tr>\n<td align=\"center\"><strong>Date</strong></td>\n<td align=\"center\"><strong>Day</strong></td>\n<td align=\"center\"><strong>New Cases</strong></td>\n</tr>\n\n</tbody><tbody>\n<tr>\n<td align=\"center\">10/18/2021</td>\n<td align=\"center\">Monday</td>\n<td align=\"right\">3115</td>\n</tr>\n<tr>\n<td align=\"center\">10/19/2021</td>\n<td align=\"center\">Tuesday</td>\n<td align=\"right\">4849</td>\n</tr>\n<tr>\n<td align=\"center\">10/20/2021</td>\n<td align=\"center\">Wednesday</td>\n<td align=\"right\">3940</td>\n</tr>\n<tr>\n<td align=\"center\">10/21/2021</td>\n<td align=\"center\">Thursday</td>\n<td align=\"right\">4821</td>\n</tr>\n<tr>\n<td align=\"center\">10/22/2021</td>\n<td align=\"center\">Friday</td>\n<td align=\"right\">4357</td>\n</tr>\n<tr>\n<td align=\"center\">10/23/2021</td>\n<td align=\"center\">Saturday</td>\n<td align=\"right\">0</td>\n</tr>\n<tr>\n<td align=\"center\">10/24/2021</td>\n<td align=\"center\">Sunday</td>\n<td align=\"right\">0</td>\n</tr>\n<tr>\n<td align=\"center\">10/25/2021</td>\n<td align=\"center\">Monday</td>\n<td align=\"right\">8572</td>\n</tr>\n<tr>\n<td align=\"center\">10/26/2021</td>\n<td align=\"center\">Tuesday</td>\n<td align=\"right\">4463</td>\n</tr>\n<tr>\n<td align=\"center\">10/27/2021</td>\n<td align=\"center\">Wednesday</td>\n<td align=\"right\">5323</td>\n</tr>\n<tr>\n<td align=\"center\">10/28/2021</td>\n<td align=\"center\">Thursday</td>\n<td align=\"right\">5012</td>\n</tr>\n<tr>\n<td align=\"center\">10/29/2021</td>\n<td align=\"center\">Friday</td>\n<td align=\"right\">4710</td>\n</tr>\n<tr>\n<td align=\"center\">10/30/2021</td>\n<td align=\"center\">Saturday</td>\n<td align=\"right\">0</td>\n</tr>\n<tr>\n<td align=\"center\">10/31/2021</td>\n<td align=\"center\">Sunday</td>\n<td align=\"right\">0</td>\n</tr>\n<tr>\n<td align=\"center\">11/1/2021</td>\n<td align=\"center\">Monday</td>\n<td align=\"right\">10415</td>\n</tr>\n<tr>\n<td align=\"center\">11/2/2021</td>\n<td align=\"center\">Tuesday</td>\n<td align=\"right\">5096</td>\n</tr>\n<tr>\n<td align=\"center\">11/3/2021</td>\n<td align=\"center\">Wednesday</td>\n<td align=\"right\">6882</td>\n</tr>\n<tr>\n<td align=\"center\">11/4/2021</td>\n<td align=\"center\">Thursday</td>\n<td align=\"right\">5400</td>\n</tr>\n<tr>\n<td align=\"center\">11/5/2021</td>\n<td align=\"center\">Friday</td>\n<td align=\"right\">6759</td>\n</tr>\n<tr>\n<td align=\"center\">11/6/2021</td>\n<td align=\"center\">Saturday</td>\n<td align=\"right\">0</td>\n</tr>\n<tr>\n<td align=\"center\">11/7/2021</td>\n<td align=\"center\">Sunday</td>\n<td align=\"right\">0</td>\n</tr>\n<tr>\n<td align=\"center\">11/8/2021</td>\n<td align=\"center\">Monday</td>\n<td align=\"right\">10069</td>\n</tr>\n<tr>\n<td align=\"center\">11/9/2021</td>\n<td align=\"center\">Tuesday</td>\n<td align=\"right\">5297</td>\n</tr>\n</tbody>\n<caption>Sample of COVID-19 Data Cases Within 23 Days (source: https://data.cdc.gov/Case-Surveillance)</caption>\n</table>\n\n\n",
+ "questions": [
+  {
+   "id": 510755,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What simple strategies can the data scientists utilize to address the issue of missing data in their analysis of COVID-19 data from the CDC?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  },
+  {
+   "id": 510756,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "How can data scientists incorporate advanced methods to tackle the issue of missing data in their examination of COVID-19 cases and deaths reported by the CDC?\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  16,
+  15,
+  14,
+  13,
+  12,
+  11,
+  10,
+  9,
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

@@ -1,0 +1,424 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "lo:stax-datascience:5-3-2",
+  "context-cnxmod:7c142147-83d3-4475-83b4-aa401f23e32e",
+  "lo:stax-datascience:5-3-1",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:5-3-time-series-forecasting-methods"
+ ],
+ "uuid": "183bdee1-605f-4cca-856a-9511889b60e5",
+ "group_uuid": "d5c3d030-854c-46eb-9fce-a8005ba0fd3d",
+ "number": 56699,
+ "version": 3,
+ "uid": "56699@3",
+ "published_at": "2024-09-17T05:28:53.900Z",
+ "nickname": "DS_Ch05_Sec03_QP2",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "Consider the time series given in the table as shown. <br>\n<table>\n<tbody><tr>\n<td align=\"center\"><b>Month</b></td>\n<td align=\"center\"><b>Value</b></td>\n</tr>\n<tr>\n<td align=\"center\">1</td>\n<td align=\"right\">880.7</td>\n</tr>\n<tr>\n<td align=\"center\">2</td>\n<td align=\"right\">727.2</td>\n</tr>\n<tr>\n<td align=\"center\">3</td>\n<td align=\"right\">798.5</td>\n</tr>\n<tr>\n<td align=\"center\">4</td>\n<td align=\"right\">504.1</td>\n</tr>\n<tr>\n<td align=\"center\">5</td>\n<td align=\"right\">888.4</td>\n</tr>\n<tr>\n<td align=\"center\">6</td>\n<td align=\"right\">725.8</td>\n</tr>\n<tr>\n<td align=\"center\">7</td>\n<td align=\"right\">793.4</td>\n</tr>\n<tr>\n<td align=\"center\">8</td>\n<td align=\"right\">499.0</td>\n</tr>\n<tr>\n<td align=\"center\">9</td>\n<td align=\"right\">891.7</td>\n</tr>\n<tr>\n<td align=\"center\">10</td>\n<td align=\"right\">722.0</td>\n</tr>\n<tr>\n<td align=\"center\">11</td>\n<td align=\"right\">789.1</td>\n</tr>\n<tr>\n<td align=\"center\">12</td>\n<td align=\"right\">501.6</td>\n</tr>\n</tbody><caption>Time Series</caption>\n</table>\n",
+ "questions": [
+  {
+   "id": 489918,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Identify the period of the seasonal component.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "There are peaks in the data at times 1, 5, and 9 as well as minimum points at times 4, 8, and 12, suggesting a period of 4 months."
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "See Solution Manual"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 489919,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Using a centered simple moving average (SMA) of window size equal to the period you found in part a, identify a trend-cycle component, <span data-math=\"t_n\"></span>, in the data.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "(728.6, 729.4, 728.6, 727.3, 727.1, 727.0, 726.0, 725.8)<br>\nThere will be 8 terms in the centered SMA, as shown. These values form the trend-cycle component. "
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table>\n<tbody><tr>\n<td align=\"center\"><b>Month</b></td>\n<td align=\"right\"><b>Value</b></td>\n<td align=\"right\"><b>Centered SMA</b> </td>\n</tr>\n<tr>\n<td align=\"center\">1</td>\n<td align=\"right\">880.7</td>\n<td align=\"right\"></td>\n</tr>\n<tr>\n<td align=\"center\">2</td>\n<td align=\"right\">727.2</td>\n<td align=\"right\"></td>\n</tr>\n<tr>\n<td align=\"center\">3</td>\n<td align=\"right\">798.5</td>\n<td align=\"right\">728.6</td>\n</tr>\n<tr>\n<td align=\"center\">4</td>\n<td align=\"right\">504.1</td>\n<td align=\"right\">729.4</td>\n</tr>\n<tr>\n<td align=\"center\">5</td>\n<td align=\"right\">888.4</td>\n<td align=\"right\">728.6</td>\n</tr>\n<tr>\n<td align=\"center\">6</td>\n<td align=\"right\">725.8</td>\n<td align=\"right\">727.3</td>\n</tr>\n<tr>\n<td align=\"center\">7</td>\n<td align=\"right\">793.4</td>\n<td align=\"right\">727.1</td>\n</tr>\n<tr>\n<td align=\"center\">8</td>\n<td align=\"right\">499.0</td>\n<td align=\"right\">727.0</td>\n</tr>\n<tr>\n<td align=\"center\">9</td>\n<td align=\"right\">891.7</td>\n<td align=\"right\">726.0</td>\n</tr>\n<tr>\n<td align=\"center\">10</td>\n<td align=\"right\">722.0</td>\n<td align=\"right\">725.8</td>\n</tr>\n<tr>\n<td align=\"center\">11</td>\n<td align=\"right\">789.1</td>\n<td align=\"right\"></td>\n</tr>\n<tr>\n<td align=\"center\">12</td>\n<td align=\"right\">501.6</td>\n<td align=\"right\"></td>\n</tr>\n</tbody></table>\nSince the window size is even, we use the formula<br>\n<span data-math=\"y_k=\\frac{x_{k-2}}8+\\frac14(x_{k-1}+x_k+x_{k+1})+\\frac{x_{k+2}}8\"></span><br>\nThe smallest index for which we can compute the centered SMA is <span data-math=\"k=3\"></span> (otherwise the first term involving <span data-math=\"x_{k-2}\"></span> would be undefined).<br>\n<span data-math=\"y_3=\\frac{x_1}8+\\frac14{(x_2+x_3+x_4})+\\frac{x_5}8=\\frac{880.7}8+\\frac14{(727.2+798.5+504.1)}+\\frac{888.4}8=728.6\"></span><br>\n<span data-math=\"y_4=\\frac{x_2}8+\\frac14{(x_3+x_4+x_5)}+\\frac{x_6}8=\\frac{727.2}8+\\frac14{(798.5+504.1+888.4)}+\\frac{725.8}8=729.4\"></span><br>\n(similar…)\n<span data-math=\"y_{10}=\\frac{x_8}8+\\frac14{(x_9+x_{10}+x_{11})}+\\frac{x_{12}}8=\\frac{499.0}8+\\frac14{(891.7+722.0+789.1)}+\\frac{501.6}8=725.8\"></span>\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 489920,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Detrend the data by subtracting the SMA you found in part b.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "(69.9, −225.3, 159.8, −1.5, 66.3, −228.0, 165.7, −3.8)"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Note, the sequence starts at index 3 and ends at 10 because centered SMA is undefined outside of this range.<br>\n<span data-math=\"x_3-y_3=798.5-728.6=69.9\"></span><br>\n<span data-math=\"x_4-y_4=888.4-729.4=-225.3\"></span><br>\n(similar…)<br>\n<span data-math=\"x_{10}-y_{10}=722.0-725.8=-3.8\"></span>\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 489921,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Identify the seasonal component, <span data-math=\"{\\widehat s}_n\"></span>, using the method of averaging.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "(68.1, −226.65, 162.75, −2.65), repeating in blocks of 4"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Since the detrended time series has 8 terms with periodicity 4, each average will involve two terms. Again, the sequence starts at index 3.<br>\n<span data-math=\"\\begin{array}{rcl}{\\widehat s}_3&amp;=&amp;\\frac12{(69.9+66.3)}=68.1\\\\{\\widehat s}_4&amp;=&amp;\\frac12{(-225.3+{(-228.0)})}=-226.65\\\\{\\widehat s}_5&amp;=&amp;\\frac12{(159.8+165.7)}=162.75\\\\{\\widehat s}_6&amp;=&amp;\\frac12{(-1.5+(-3.8))}=-2.65\\end{array}\"></span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 489922,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find the seasonally adjusted time series.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "(812.6, 953.85, 635.75, 506.75, 820.3, 952.45, 630.65, 501.65, 823.6, 948.65, 626.35, 504.25)"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Take the difference between the original time series and the seasonal component, <span data-math=\"x_n-{\\widehat s}_n\"></span>. The starting index is again 3.<br>\n<span data-math=\"\\begin{array}{rcl}x_3-{\\widehat s}_3&amp;=&amp;880.7-68.1=812.6\\\\x_4-{\\widehat s}_4&amp;=&amp;727.2-{(-226.65)}=953.85\\end{array}\"></span><br>\n(similar…)<br>\n<span data-math=\"{\\widehat s}_{10}=501.6-(-2.65)=504.25\"></span>\n"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  3,
+  2,
+  1
+ ]
+}

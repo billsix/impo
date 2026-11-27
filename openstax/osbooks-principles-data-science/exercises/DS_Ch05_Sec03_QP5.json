@@ -1,0 +1,323 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "lo:stax-datascience:5-3-2",
+  "context-cnxmod:7c142147-83d3-4475-83b4-aa401f23e32e",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:5-3-time-series-forecasting-methods"
+ ],
+ "uuid": "a95c6315-837e-4957-9915-b8d5e471ec3e",
+ "group_uuid": "f9272286-d42a-46a1-98fa-9e74472b4016",
+ "number": 61989,
+ "version": 3,
+ "uid": "61989@3",
+ "published_at": "2024-10-03T03:13:04.371Z",
+ "nickname": "DS_Ch05_Sec03_QP5",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 495630,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the recursive EMA formula with <span data-math=\"α=0.6\"></span> to smooth the time series found in <a href=\"https://openstax.org/r/spreadsheetsd1j\" rel=\"nofollow\" target=\"_blank\">USATemps1961-2023.csv</a>, and then use the EMA model to forecast the next value of the series.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Using Excel, type =B2 into cell C2 and =0.6*B2+0.4*C2 into cell C3. Then drag cell C3 down to the end of the data to compute the EMA. Drag one more cell down to compute the forecast for 2024. Values are rounded to 4 decimal places using the <code class=\"python\" lang=\"python\">ROUND()</code> function.<br>\n<table>\n<tbody><tr>\n<td align=\"left\"><b>Year</b></td>\n<td align=\"left\"><b>Deviation</b></td>\n<td align=\"left\"><b>EMA</b></td>\n</tr>\n<tr>\n<td align=\"right\">1961</td>\n<td align=\"right\">0.003</td>\n<td align=\"right\">0.003</td>\n</tr>\n<tr>\n<td align=\"right\">1962</td>\n<td align=\"right\">−0.027</td>\n<td align=\"right\">0.003</td>\n</tr>\n<tr>\n<td align=\"right\">1963</td>\n<td align=\"right\">0.425</td>\n<td align=\"right\">−0.015</td>\n</tr>\n<tr>\n<td align=\"right\">1964</td>\n<td align=\"right\">−­0.281</td>\n<td align=\"right\">0.249</td>\n</tr>\n<tr>\n<td align=\"right\">1965</td>\n<td align=\"right\">−0.36</td>\n<td align=\"right\">−0.069</td>\n</tr>\n<tr>\n<td align=\"right\">…</td>\n<td align=\"right\">…</td>\n<td align=\"right\">…</td>\n</tr>\n<tr>\n<td align=\"right\">2022</td>\n<td align=\"right\">1.223</td>\n<td align=\"right\">1.1981</td>\n</tr>\n<tr>\n<td align=\"right\">2023</td>\n<td align=\"right\">1.212</td>\n<td align=\"right\">1.2131</td>\n</tr>\n<tr>\n<td align=\"right\">N/A</td>\n<td align=\"right\">N/A</td>\n<td align=\"right\">1.2124</td>\n</tr>\n</tbody></table>\nUsing Python:<br> \n<pre class=\"python\" lang=\"python\"># Import libraries\nimport pandas as pd ## for dataset management\n\n# Read the CSV file into a Pandas DataFrame\ndf = pd.read_csv('USATemps1961-2023.csv')\n\n# Use built-in function ewm() to compute the EMA\nalpha = 0.6\ndf['ema']=df['Deviation'].ewm(span=2/alpha - 1, adjust=False).mean()\n\n# Display the last value of EMA column\nprint(df['ema'].tail(1))\n</pre>\nThe resulting output will look like this:\n<pre class=\"python\" lang=\"python\">62  1.212423\nName: ema, dtype: float64\n</pre>\nThe last item in the “ema” column is the forecasted value: 1.2124."
+    },
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "Forecasted value for 2024: 1.2124"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  3,
+  2,
+  1
+ ]
+}

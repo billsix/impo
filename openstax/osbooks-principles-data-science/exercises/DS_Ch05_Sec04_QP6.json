@@ -1,0 +1,348 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "lo:stax-datascience:5-4-1",
+  "lo:stax-datascience:5-4-2",
+  "context-cnxmod:a70ce158-3c77-40d4-bf5c-907dddb6e857",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:5-4-forecast-evaluation-methods"
+ ],
+ "uuid": "08b07365-be7b-4225-b7f7-dd04e5267ca2",
+ "group_uuid": "d2e9382b-3c60-4f3f-95a6-697168f6e9f7",
+ "number": 61990,
+ "version": 2,
+ "uid": "61990@2",
+ "published_at": "2024-10-30T09:49:20.351Z",
+ "nickname": "DS_Ch05_Sec04_QP6",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "A very small time series is given in the table, along with a model.<br><br>\n<table>\n<tbody><tr>\n<td align=\"center\"><span data-math=\"x_n\"></span></td>\n<td align=\"center\"><span data-math=\"{\\widehat x}_n\"></span></td>\n</tr>\n<tr>\n<td align=\"right\">122</td>\n<td align=\"right\">117</td>\n</tr>\n<tr>\n<td align=\"right\">108</td>\n<td align=\"right\">135</td>\n</tr>\n<tr>\n<td align=\"right\">172</td>\n<td align=\"right\">152</td>\n</tr>\n<tr>\n<td align=\"right\">190</td>\n<td align=\"right\">169</td>\n</tr>\n<tr>\n<td align=\"right\">167</td>\n<td align=\"right\">186</td>\n</tr>\n</tbody><caption>Time Series</caption>\n</table>",
+ "questions": [
+  {
+   "id": 510763,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Find error measures MAE, RMSE, MAPE, and sMAPE for the model.",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"\\text{MAE}=421.6\"></span>. <span data-math=\"\\text{RMSE}=\\sqrt{313,168.55}=559.6\"></span>. <span data-math=\"\\text{MAPE}=0.123\"></span>, or 12.3%. <span data-math=\"\\text{sMAPE}=.0133\"></span>, or 13.3%."
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "See Solution Manual"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 510764,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Which of the error measures are scale-dependent? What would this imply about a similar time series and model in which all values are multiplied by 10?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "See Solution Manual"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "<table>\n<tbody><tr>\n<td align=\"center\"><span data-math=\"x_n\"></span></td>\n<td align=\"center\"><span data-math=\"{\\widehat x}_n\"></span></td>\n<td align=\"center\"><b>Abs. Residuals</b> <span data-math=\"{\\vert\\varepsilon}_n\\vert={\\vert x}_n-{\\widehat x}_n\\vert\"></span></td>\n<td align=\"center\"><span data-math=\"{{(\\varepsilon}_n)}^2\"></span></td>\n<td align=\"center\"><span data-math=\"\\vert\\frac{\\varepsilon_i}{x_i}\\vert\"></span></td>\n<td align=\"center\"><span data-math=\"\\frac{2\\vert\\varepsilon_i\\vert}{{\\vert x_i\\vert}+\\vert{\\widehat x}_i\\vert}\"></span></td>\n</tr>\n<tr>\n<td align=\"center\">122</td>\n<td align=\"center\">117</td>\n<td align=\"center\">5</td>\n<td align=\"center\">25</td>\n<td align=\"center\">0.041</td>\n<td align=\"center\">0.042</td>\n</tr>\n<tr>\n<td align=\"center\">108</td>\n<td align=\"center\">135</td>\n<td align=\"center\">27</td>\n<td align=\"center\">729</td>\n<td align=\"center\">0.25</td>\n<td align=\"center\">0.222</td>\n</tr>\n<tr>\n<td align=\"center\">172</td>\n<td align=\"center\">152</td>\n<td align=\"center\">20</td>\n<td align=\"center\">400</td>\n<td align=\"center\">0.116</td>\n<td align=\"center\">0.123</td>\n</tr>\n<tr>\n<td align=\"center\">190</td>\n<td align=\"center\">169</td>\n<td align=\"center\">21</td>\n<td align=\"center\">441</td>\n<td align=\"center\">0.111</td>\n<td align=\"center\">0.117</td>\n</tr>\n<tr>\n<td align=\"center\">167</td>\n<td align=\"center\">186</td>\n<td align=\"center\">19</td>\n<td align=\"center\">361</td>\n<td align=\"center\">0.114</td>\n<td align=\"center\">0.108</td>\n</tr>\n<tr>\n<td align=\"center\"></td>\n<td align=\"center\"><b>Average:</b></td>\n<td align=\"center\"><b>18.4</b></td>\n<td align=\"center\"><b>391.2</b></td>\n<td align=\"center\"><b>0.126</b></td>\n<td align=\"center\"><b>0.122</b></td>\n</tr>\n</tbody></table>\nComputations to Determine MAE, RMSE, MAPE, and sMAPE<br>\n<span data-math=\"\\text{MAE}=\\text{Mean of&nbsp;}{\\vert\\varepsilon}_n\\vert\\text{&nbsp;terms}\"></span>: 18.4. <span data-math=\"\\text{RMSE}=\\text{Square root of the mean of the&nbsp;}{{(\\varepsilon}_n)}^2\\text{&nbsp;terms}\"></span>: 19.78. <span data-math=\"\\text{MAPE}=\\text{Mean of&nbsp;}\\vert\\frac{\\varepsilon_i}{x_i}\\vert\\text{&nbsp;terms}\"></span>: 0.126 (12.6%). <span data-math=\"\\text{sMAPE}=\\text{Mean of&nbsp;}\\frac{2\\vert\\varepsilon_i\\vert}{\\vert x_i\\vert+\\vert{\\widehat x}_i\\vert}\"></span> terms: 0.122 (12.2%).<br>\nMAE and RMSE are scale-dependent. This means that the error generally scales in proportion to the data. Thus, if both the time series and model values were multiplied by 10, then the MAE and RMSE would become 184 and 197.8, respectively."
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  2,
+  1
+ ]
+}

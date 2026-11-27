@@ -41,7 +41,7 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 
 - [x] `tasks/archive/impo/2026/11/26/openstax-add-book-college-physics-bundle.md` — 2 books: `college-physics-2e`, `college-physics-ap-courses-2e` (CC BY-NC-SA 4.0, 394 MB), done 2026-11-26
 - [x] `tasks/archive/impo/2026/11/26/openstax-add-book-introductory-statistics-bundle.md` — 2 books: `introductory-statistics-2e`, `introductory-business-statistics-2e` (CC BY-NC-SA 4.0, 104 MB), done 2026-11-26
-- [ ] `tasks/openstax-add-book-principles-data-science.md` — one book: `principles-data-science` (CC BY-NC-SA 4.0, 38 MB)
+- [ ] `tasks/openstax-add-book-principles-data-science.md` — one book: `principles-data-science` (CC BY-NC-SA 4.0, 38 MB); **built 2026-11-27 without its exercises, open until the maintainer runs `make fetch-exercises` there**
 - [x] `tasks/archive/impo/2026/11/26/openstax-add-book-statistics.md` — one book: `statistics` (CC BY 4.0, 34 MB), done 2026-11-26
 
 **Computing and technology**

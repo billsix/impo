@@ -1,0 +1,401 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "lo:stax-datascience:3-3-1",
+  "context-cnxmod:5913a702-d3e4-4e7b-a49e-8b06e3872b1c",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:3-3-measures-of-position"
+ ],
+ "uuid": "692f0d17-9c3c-480d-abc7-030d1686da05",
+ "group_uuid": "f972d65b-fa44-43a8-9af1-7b9b0e665642",
+ "number": 56478,
+ "version": 6,
+ "uid": "56478@6",
+ "published_at": "2024-05-17T05:50:46.382Z",
+ "nickname": "DS_Ch03_Sec03_QP6",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "At a website development company, the average number of sick days taken by employees per year is 9 days with a standard deviation of 2.3 days. ",
+ "questions": [
+  {
+   "id": 457841,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A certain employee has taken 2 sick days for the year. Calculate the <span data-math=\"z\"></span>-score for this employee (round your answer to 2 decimal places).",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"z =  - 3.04\"></span>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "The formula for a z-score calculation is as follows:<br> <span data-math=\"z = \\frac{{x\\;-\\; \\mu }}{\\sigma }\"></span><br>\nwhere <span data-math=\"x\"></span> is the measurement, <span data-math=\"\\mu\"></span> is the mean, and <span data-math=\"\\sigma\"></span> is the standard deviation.\nFor this example, the calculation is performed as follows:<br> <span data-math=\"z = \\frac{{x\\;-\\;\\mu }}{\\sigma } = \\frac{{2\\;-\\;9}}{{2.3}} =  - 3.04\"></span>\n\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 457842,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What does the <span data-math=\"z\"></span>-score communicate about this employee’s number of sick days as compared to other employees in the company?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "See Solution Manual\n"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A <span data-math=\"z\"></span>-score of –3.04 indicates the number of sick days for this employee is more than three standard deviations below the mean, and thus this indicates that 2 sick days is significantly below the mean number of sick days. This employee has a significantly lower number of sick days as compared to other employees.\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 457843,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "A different employee has taken 17 sick days for the year. Calculate the <span data-math=\"z\"></span>-score for this employee (round your answer to 2 decimal places).",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "<span data-math=\"z = 3.48\"></span>\n"
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "For this example, the calculation is performed as follows: <br>\n<span data-math=\"z = \\frac{{x\\;-\\;\\mu }}{\\sigma } = \\frac{{17\\;-\\;9}}{{2.3}} = 3.48\"></span>\n"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 457844,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "What does the <span data-math=\"z\"></span>-score communicate about this employee’s number of sick days as compared to other employees in the company?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "See Solution Manual "
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "A <span data-math=\"z\"></span>-score of 3.48 indicates the number of sick days for this employee is more than three standard deviations above the mean, and thus this indicates that 17 sick days is significantly above the mean number of sick days. This employee has a significantly higher number of sick days as compared to other employees. "
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

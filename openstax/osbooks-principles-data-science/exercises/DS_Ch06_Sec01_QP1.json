@@ -1,0 +1,351 @@
+{
+ "images": [],
+ "tags": [
+  "type:practice",
+  "assignment-type:reading",
+  "book:stax-datascience",
+  "context-cnxmod:3e32822c-74f5-41c0-84c0-eaf3f979e85a",
+  "lo:stax-datascience:6-1-3",
+  "book-slug:principles-data-science",
+  "module-slug:principles-data-science:6-1-what-is-machine-learning"
+ ],
+ "uuid": "11d19fc1-a033-41a1-85ee-c5ab18e68d9b",
+ "group_uuid": "382386eb-9a80-41df-8d39-84b816e0fa5d",
+ "number": 62035,
+ "version": 6,
+ "uid": "62035@6",
+ "published_at": "2024-10-30T09:54:50.425Z",
+ "nickname": "DS_Ch06_Sec01_QP1",
+ "solutions_are_public": true,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "&nbsp;",
+ "questions": [
+  {
+   "id": 510767,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Consider the data in the following table representing world record fastest times for the 100 m sprint and the year in which each occurred, from 1912 through 2002:<br>\n<table style=\"width: 50%;\">\n<tbody><tr>\n<td align=\"center\"><b>Year</b></td>\n<td align=\"center\"><b>Time</b></td>\n</tr>\n<tr>\n<td align=\"center\">1912</td>\n<td align=\"right\">10.6</td>\n</tr>\n<tr>\n<td align=\"center\">1921</td>\n<td align=\"right\">10.4</td>\n</tr>\n<tr>\n<td align=\"center\">1930</td>\n<td align=\"right\">10.3</td>\n</tr>\n<tr>\n<td align=\"center\">1936</td>\n<td align=\"right\">10.2</td>\n</tr>\n<tr>\n<td align=\"center\">1956</td>\n<td align=\"right\">10.1</td>\n</tr>\n<tr>\n<td align=\"center\">1960</td>\n<td align=\"right\">10</td>\n</tr>\n<tr>\n<td align=\"center\">1968</td>\n<td align=\"right\">9.95</td>\n</tr>\n<tr>\n<td align=\"center\">1983</td>\n<td align=\"right\">9.93</td>\n</tr>\n<tr>\n<td align=\"center\">1988</td>\n<td align=\"right\">9.92</td>\n</tr>\n<tr>\n<td align=\"center\">1991</td>\n<td align=\"right\">9.9</td>\n</tr>\n<tr>\n<td align=\"center\">1991</td>\n<td align=\"right\">9.86</td>\n</tr>\n<tr>\n<td align=\"center\">1994</td>\n<td align=\"right\">9.85</td>\n</tr>\n<tr>\n<td align=\"center\">1996</td>\n<td align=\"right\">9.84</td>\n</tr>\n<tr>\n<td align=\"center\">1999</td>\n<td align=\"right\">9.79</td>\n</tr>\n</tbody><caption>100-Meter Spring Records</caption>\n</table>\nUsing software such as Excel, Python, or similar tools, the regression line can be found. For this data, the linear model would be <span data-math=\"\\widehat y=-0.00769x+10.55\"></span>, where <span data-math=\"x\"></span> is years since 1900. Compute the MAE, MAPE, MSE, and RMSE for this model.\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "MAE = 0.0415. MAPE = 0.41%. MSE = 0.003126. RMSE = 0.0559."
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "The information is collected in the following table. Excel can be used to perform the calculations.<br>\n<table class=\"unnumbered full-width\" style=\"width: 70%;\">\n<tbody><tr>\n<td align=\"left\"></td>\n<td align=\"left\"></td>\n<td align=\"left\"></td>\n<td align=\"left\">Linear</td>\n<td align=\"left\">Abs. Error</td>\n<td align=\"left\">% Error</td>\n<td align=\"left\"></td>\n</tr>\n<tr>\n<td align=\"left\">Year</td>\n<td align=\"left\">x</td>\n<td align=\"left\">Time (y)</td>\n<td align=\"left\">Model (y^)</td>\n<td align=\"left\">|y-y^|</td>\n<td align=\"left\">E/y</td>\n<td align=\"left\">E^2</td>\n</tr>\n<tr>\n<td align=\"right\">1912</td>\n<td align=\"right\">12</td>\n<td align=\"right\">10.6</td>\n<td align=\"right\">10.45772</td>\n<td align=\"right\">0.14228</td>\n<td align=\"right\">0.013423</td>\n<td align=\"right\">0.020244</td>\n</tr>\n<tr>\n<td align=\"right\">1921</td>\n<td align=\"right\">21</td>\n<td align=\"right\">10.4</td>\n<td align=\"right\">10.38851</td>\n<td align=\"right\">0.01149</td>\n<td align=\"right\">0.001105</td>\n<td align=\"right\">0.000132</td>\n</tr>\n<tr>\n<td align=\"right\">1930</td>\n<td align=\"right\">30</td>\n<td align=\"right\">10.3</td>\n<td align=\"right\">10.3193</td>\n<td align=\"right\">0.0193</td>\n<td align=\"right\">0.001874</td>\n<td align=\"right\">0.000372</td>\n</tr>\n<tr>\n<td align=\"right\">1936</td>\n<td align=\"right\">36</td>\n<td align=\"right\">10.2</td>\n<td align=\"right\">10.27316</td>\n<td align=\"right\">0.07316</td>\n<td align=\"right\">0.007173</td>\n<td align=\"right\">0.005352</td>\n</tr>\n<tr>\n<td align=\"right\">1956</td>\n<td align=\"right\">56</td>\n<td align=\"right\">10.1</td>\n<td align=\"right\">10.11936</td>\n<td align=\"right\">0.01936</td>\n<td align=\"right\">0.001917</td>\n<td align=\"right\">0.000375</td>\n</tr>\n<tr>\n<td align=\"right\">1960</td>\n<td align=\"right\">60</td>\n<td align=\"right\">10</td>\n<td align=\"right\">10.0886</td>\n<td align=\"right\">0.0886</td>\n<td align=\"right\">0.00886</td>\n<td align=\"right\">0.00785</td>\n</tr>\n<tr>\n<td align=\"right\">1968</td>\n<td align=\"right\">68</td>\n<td align=\"right\">9.95</td>\n<td align=\"right\">10.02708</td>\n<td align=\"right\">0.07708</td>\n<td align=\"right\">0.007747</td>\n<td align=\"right\">0.005941</td>\n</tr>\n<tr>\n<td align=\"right\">1983</td>\n<td align=\"right\">83</td>\n<td align=\"right\">9.93</td>\n<td align=\"right\">9.91173</td>\n<td align=\"right\">0.01827</td>\n<td align=\"right\">0.00184</td>\n<td align=\"right\">0.000334</td>\n</tr>\n<tr>\n<td align=\"right\">1988</td>\n<td align=\"right\">88</td>\n<td align=\"right\">9.92</td>\n<td align=\"right\">9.87328</td>\n<td align=\"right\">0.04672</td>\n<td align=\"right\">0.00471</td>\n<td align=\"right\">0.002183</td>\n</tr>\n<tr>\n<td align=\"right\">1991</td>\n<td align=\"right\">91</td>\n<td align=\"right\">9.9</td>\n<td align=\"right\">9.85021</td>\n<td align=\"right\">0.04979</td>\n<td align=\"right\">0.005029</td>\n<td align=\"right\">0.002479</td>\n</tr>\n<tr>\n<td align=\"right\">1991</td>\n<td align=\"right\">91</td>\n<td align=\"right\">9.86</td>\n<td align=\"right\">9.85021</td>\n<td align=\"right\">0.00979</td>\n<td align=\"right\">0.000993</td>\n<td align=\"right\">9.58E-05</td>\n</tr>\n<tr>\n<td align=\"right\">1994</td>\n<td align=\"right\">94</td>\n<td align=\"right\">9.85</td>\n<td align=\"right\">9.82714</td>\n<td align=\"right\">0.02286</td>\n<td align=\"right\">0.002321</td>\n<td align=\"right\">0.000523</td>\n</tr>\n<tr>\n<td align=\"right\">1996</td>\n<td align=\"right\">96</td>\n<td align=\"right\">9.84</td>\n<td align=\"right\">9.81176</td>\n<td align=\"right\">0.02824</td>\n<td align=\"right\">0.00287</td>\n<td align=\"right\">0.000797</td>\n</tr>\n<tr>\n<td align=\"right\">1999</td>\n<td align=\"right\">99</td>\n<td align=\"right\">9.79</td>\n<td align=\"right\">9.78869</td>\n<td align=\"right\">0.00131</td>\n<td align=\"right\">0.000134</td>\n<td align=\"right\">1.72E-06</td>\n</tr>\n<tr>\n<td align=\"right\">2002</td>\n<td align=\"right\">102</td>\n<td align=\"right\">9.78</td>\n<td align=\"right\">9.76562</td>\n<td align=\"right\">0.01438</td>\n<td align=\"right\">0.00147</td>\n<td align=\"right\">0.000207</td>\n</tr>\n<tr>\n<td align=\"right\"></td>\n<td align=\"right\"></td>\n<td align=\"right\"></td>\n<td align=\"right\"></td>\n<td align=\"right\">0.041509</td>\n<td align=\"right\">0.004098</td>\n<td align=\"right\">0.003126</td>\n</tr>\n<tr>\n<td align=\"right\"></td>\n<td align=\"right\"></td>\n<td align=\"right\"></td>\n<td align=\"right\"></td>\n<td align=\"right\"></td>\n<td align=\"right\"></td>\n<td align=\"right\">0.055909</td>\n</tr>\n</tbody>\n\n</table>\nAverages<br>\nSq. Root<br>\nMAE <span data-math=\"=\\frac1n\\sum_{i=1}^n{\\vert y_i-{\\widehat y}_i\\vert}\"></span> = Average of the absolute errors = 0.0415<br>\nMAPE <span data-math=\"=\\frac1n\\sum_{i=1}^n\\vert\\frac{y_i-{\\widehat y}_i}{y_i}\\vert\"></span> = Average of the percentage errors = 0.004098, or 0.4098% (rounded to 0.41%)<br>\nRSE = <span data-math=\"\\frac1n\\sum_{i=1}^n{(y_i-{\\widehat y}_i)^2}\"></span> = Average of the squared errors = 0.003126<br>\nRMSE <span data-math=\"=\\sqrt{\\frac1n\\sum_{i=1}^n{(y_i-{\\widehat y}_i)^2}}\"></span> = Square root of RSE <span data-math=\"=\\sqrt{0.003126}=0.0559\"></span>"
+    }
+   ],
+   "community_solutions": []
+  },
+  {
+   "id": 510768,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "Use the model to predict the world record fastest time for the 100 m spring in 2023. In August of 2023, Noah Lyles ran the 100 m sprint in 9.83 seconds. How does your prediction compare to this value?",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": [],
+   "collaborator_solutions": [
+    {
+     "images": [],
+     "solution_type": "detailed",
+     "content_html": "9.60. This is only about 2.3% off from the actual value of 9.83."
+    },
+    {
+     "images": [],
+     "solution_type": "summary",
+     "content_html": "Using <span data-math=\"x=123\"></span> (years after 1900 for the year 2023), <span data-math=\"\\widehat y=-0.00769(123)+10.55=9.60\"></span>.<br>\nRelative Error: <span data-math=\"{\\vert9.83-9.60\\vert}/9.83=0.023\"></span>, or 2.3%"
+    }
+   ],
+   "community_solutions": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}
