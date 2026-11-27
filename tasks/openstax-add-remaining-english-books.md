@@ -56,7 +56,7 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 - [ ] `tasks/openstax-add-book-introduction-political-science.md` — one book: `introduction-political-science` (CC BY-NC-SA 4.0, 97 MB); **built 2026-11-27 without its exercises, open until the maintainer runs `make fetch-exercises` there**
 - [ ] `tasks/openstax-add-book-life-liberty-and-pursuit-happiness.md` — one book: `life-liberty-and-pursuit-happiness` (CC BY 4.0, 314 MB); **built 2026-11-27 without its exercises, open until the maintainer runs `make fetch-exercises` there**
 - [x] `tasks/archive/impo/2026/11/27/openstax-add-book-us-history.md` — one book: `us-history` (CC BY-NC-SA 4.0, 131 MB), done 2026-11-27
-- [ ] `tasks/openstax-add-book-world-history.md` — 2 books: `world-history-volume-1`, `world-history-volume-2` (CC BY-NC-SA 4.0, 382 MB)
+- [ ] `tasks/openstax-add-book-world-history.md` — 2 books: `world-history-volume-1`, `world-history-volume-2` (CC BY-NC-SA 4.0, 382 MB); **built 2026-11-27 without its exercises, open until the maintainer runs `make fetch-exercises` there**
 
 **Science and health**
 
