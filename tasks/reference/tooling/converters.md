@@ -97,6 +97,24 @@ Three kinds of prose markup that the mathematics and science books barely use an
 - **Which existing books changed** (`tools/compare-converter-output.sh`, 2026-11-27; all block quotations):
   Algebra 1 (6 section files), Astronomy 2e (7), Organic Chemistry (3), Physics (1), Psychology 2e (16) and
   Writing Guide (33, mostly example sentences that are now set off one per line). The other 14 were identical.
+- **A `<quote>` that holds a list and no paragraph** is a block quotation too (added 2026-11-27, with
+  Introduction to Philosophy, where the three numbered premises of an argument are quoted that way). It had
+  stayed inline, so its items ran together between quotation marks with their numbers lost. The same change
+  restored the lists in five section files of Algebra 1 and one of Foundations of Information Systems; the
+  other 34 fetched book folders were identical (`tools/compare-converter-output.sh`).
+- **`<span>` and an empty `<label/>` are known markup** (same date). A `<span>` carries only a presentation
+  class (`class="blue-text"`, 3,375 times in the nursing books' tables) and its words are set like the text
+  around them. An empty `<label/>` asks OpenStax's web edition to print no label on a note or a solution (437
+  times in Introduction to Sociology 3e) and sets nothing. Both gave that output before; they no longer fill
+  the "Unknown/fallback elements" report. A `<label>` with text in it, even a lone space, is still reported.
+- **A paragraph that holds nothing but `<newline/>`s** (eight of them, used as vertical space in the preface
+  of Population Health for Nurses) sets nothing (added 2026-11-27). `cleanup_latex` dropped a lone `\\` on a
+  line but not a run of them separated by spaces, and LaTeX stopped with "There's no line here to end". No
+  other fetched book has one.
+- **`\surd` in the web editions** (same date): the converter writes a bare `√` in prose as `$\surd$`, which
+  pandoc's math reader does not know and printed as TeX. `tools/pandoc/preprocess.py` puts the character back
+  for the HTML and EPUB. College Success uses it as a tick mark; Introductory Statistics and Principles of Data
+  Science have one each.
 - **Related, in the build scripts:** `entrypoint/html.sh` and `entrypoint/epub.sh` set `LANG=C.UTF-8`. In the
   image's POSIX locale pandoc could not find a figure whose file name holds a non-ASCII character (Behavioral
   Neuroscience has one, with an en dash): the EPUB build left the figure out with a warning and the HTML build
@@ -221,6 +239,13 @@ the day each was added.
 | neuroscience | 1 | `#exercise/` | 568 | raster |
 | business-law | 1 | none | 0 | raster |
 | introduction-intellectual-property | 1 | `#exercise/` | 185 | raster |
+| introduction-sociology | 1 | none | 0 | raster |
+| college-success-bundle | 3 | none | 0 | raster |
+| lifespan-development | 1 | `#exercise/` | 872 | raster |
+| workplace-software-skills | 1 | `#exercise/` | 682 | raster + 20 exercise imgs |
+| introduction-anthropology | 1 | `#exercise/` | 150 | raster |
+| introduction-philosophy | 1 | `#exercise/` | 228 | raster |
+| nursing-external-bundle | 3 | `#exercise/` | 1156 | raster |
 
 ("survey" = the scheme wasn't re-audited on the raw CNXML for that book; verify on first exercise-bearing build,
 the same way physics/biology turned out to have `#ost/api/ex/`.)

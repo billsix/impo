@@ -1,0 +1,325 @@
+{
+ "images": [
+  {
+   "created_at": "2024-01-17T20:14:10.712Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGNTIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--15e9d4d31ffa4fd105ac86927dfc19f92c69b1b7",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGNTIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--15e9d4d31ffa4fd105ac86927dfc19f92c69b1b7/OSX_BCA_09_02_WorldCData_img.jpg"
+  },
+  {
+   "created_at": "2024-01-17T20:14:10.715Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGdTIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--96eaed436f64146c1d779933b82bedc1fd042e4a",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGdTIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--96eaed436f64146c1d779933b82bedc1fd042e4a/OSX_BCA_09_02_WorldCAns_img.jpg"
+  }
+ ],
+ "tags": [
+  "type:practice",
+  "book:stax-bca",
+  "lo:stax-bca:09.2.1",
+  "context-cnxmod:d8df4895-6c64-4f68-9d65-9acdefa84d81",
+  "book-slug:workplace-software-skills",
+  "module-slug:workplace-software-skills:9-2-text-and-numbers-in-microsoft-excel"
+ ],
+ "uuid": "774dafd4-94e4-445c-8f01-882cd1bdf5ac",
+ "group_uuid": "350ca213-45ed-47b3-99cd-a0f34a381291",
+ "number": 36814,
+ "version": 8,
+ "uid": "36814@8",
+ "published_at": "2024-01-17T20:14:12.128Z",
+ "nickname": "09-02-BCA-PE02",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 376065,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<p>Using the table from the last exercise, add the data shown in the following table. Insert a calculation for the total value instead of typing in the dollar amount from the table.</p>\n\n<table>\n<thead>\n  <tr>\n    <th>Date</th>\n    <th>Product</th>\n    <th>Price</th>\n    <th>Qty</th>\n    <th>Total</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>12/20/2020</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>57</td>\n    <td>$2,736.00</td>\n  </tr>\n  <tr>\n    <td>12/28/2020</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>74</td>\n    <td>$3,552.00</td>\n  </tr>\n  <tr>\n    <td>1/3/2021</td>\n    <td>LED 65</td>\n    <td>$780.00</td>\n    <td>13</td>\n    <td>$10,140.00</td>\n  </tr>\n  <tr>\n    <td>1/3/2021</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>9</td>\n    <td>$432.00</td>\n  </tr>\n  <tr>\n    <td>1/5/2021</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>10</td>\n    <td>$480.00</td>\n  </tr>\n  <tr>\n    <td>1/7/2021</td>\n    <td>OLED 45</td>\n    <td>$48.00</td>\n    <td>77</td>\n    <td>$30,800.00</td>\n  </tr>\n  <tr>\n    <td>1/8/2021</td>\n    <td>LED 65</td>\n    <td>$780.00</td>\n    <td>14</td>\n    <td>$10,920.00</td>\n  </tr>\n  <tr>\n    <td>1/8/2021</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>16</td>\n    <td>$768.00</td>\n  </tr>\n  <tr>\n    <td>1/11/2021</td>\n    <td>LCD 42</td>\n    <td>$380.00</td>\n    <td>48</td>\n    <td>$18,240.00</td>\n  </tr>\n  <tr>\n    <td>1/13/2021</td>\n    <td>Plasma 65</td>\n    <td>$855.00</td>\n    <td>12</td>\n    <td>$10,260.00</td>\n  </tr>\n  <tr>\n    <td>1/13/2021</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>85</td>\n    <td>$4,080.00</td>\n  </tr>\n  <tr>\n    <td>1/15/2021</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>158</td>\n    <td>$7,584.00</td>\n  </tr>\n  <tr>\n    <td>1/17/2021</td>\n    <td>LCD 42</td>\n    <td>$380.00</td>\n    <td>55</td>\n    <td>$20,900.00</td>\n  </tr>\n  <tr>\n    <td>1/17/2021</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>115</td>\n    <td>$5,520.00</td>\n  </tr>\n  <tr>\n    <td>1/21/2021</td>\n    <td>Plasma 65</td>\n    <td>$855.00</td>\n    <td>11</td>\n    <td>$9,405.00</td>\n  </tr>\n  <tr>\n    <td>1/22/2021</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>15</td>\n    <td>$720.00</td>\n  </tr>\n  <tr>\n    <td>1/25/2021</td>\n    <td>LCD 42</td>\n    <td>$380.00</td>\n    <td>54</td>\n    <td>$20,520.00</td>\n  </tr>\n  <tr>\n    <td>1/27/2021</td>\n    <td>QLED 55</td>\n    <td>$620.00</td>\n    <td>10</td>\n    <td>$6,200.00</td>\n  </tr>\n  <tr>\n    <td>1/30/2021</td>\n    <td>LED 55</td>\n    <td>$550.00</td>\n    <td>10</td>\n    <td>$5,500.00</td>\n  </tr>\n  <tr>\n    <td>2/4/2021</td>\n    <td>LCD 32</td>\n    <td>$170.00</td>\n    <td>43</td>\n    <td>$7,310.00</td>\n  </tr>\n  <tr>\n    <td>2/7/2021</td>\n    <td>QLED 55</td>\n    <td>$620.00</td>\n    <td>15</td>\n    <td>$9,300.00</td>\n  </tr>\n  <tr>\n    <td>2/9/2021</td>\n    <td>OLED 45</td>\n    <td>$400.00</td>\n    <td>37</td>\n    <td>$14,800.00</td>\n  </tr>\n  <tr>\n    <td>2/11/2021</td>\n    <td>Plasma 65</td>\n    <td>$855.00</td>\n    <td>34</td>\n    <td>$29,070.00</td>\n  </tr>\n  <tr>\n    <td>2/15/2021</td>\n    <td>DLP 32</td>\n    <td>$250.00</td>\n    <td>97</td>\n    <td>$24,250.00</td>\n  </tr>\n  <tr>\n    <td>2/18/2021</td>\n    <td>LED 65</td>\n    <td>$780.00</td>\n    <td>54</td>\n    <td>$42,120.00</td>\n  </tr>\n  <tr>\n    <td>2/21/2021</td>\n    <td>LED 55</td>\n    <td>$550.00</td>\n    <td>21</td>\n    <td>$11,550.00</td>\n  </tr>\n  <tr>\n    <td>2/25/2021</td>\n    <td>LCD 42</td>\n    <td>$380.00</td>\n    <td>54</td>\n    <td>$20,520.00</td>\n  </tr>\n  <tr>\n    <td>2/27/2021</td>\n    <td>LCD 32</td>\n    <td>$170.00</td>\n    <td>14</td>\n    <td>$2,380.00</td>\n  </tr>\n</tbody>\n</table>\n",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  8,
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

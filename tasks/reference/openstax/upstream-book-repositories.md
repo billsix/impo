@@ -50,12 +50,12 @@ numbers with its output and change the date.
 - **Languages:** 45 English, 5 Spanish, 4 Polish.
 - **Licences:** 40 repositories are CC BY-NC-SA 4.0, 13 are CC BY 4.0, and 1 has no
   `LICENSE` file (`osbooks-mikroekonomia`).
-- **Built in impo: 29** of the 54 (eleven added 2026-11-27).
+- **Built in impo: 36** of the 54 (eighteen added 2026-11-27).
 - **Rejected: 10** (William Emerison Six <billsix@gmail.com>, 2026-11-26). Nine because
   they are not English ("for non english books, I don't want to add them to our build"), and
   `osbooks-playground` because it is OpenStax's editing-tool playground, not a book:
   `osbooks-calculo-bundle` (not English (Spanish)), `osbooks-fisica-universitaria-bundle` (not English (Spanish)), `osbooks-fizyka-bundle` (not English (Polish)), `osbooks-introduccion-estadistica-bundle` (not English (Spanish)), `osbooks-makroekonomia` (not English (Polish)), `osbooks-mikroekonomia` (not English (Polish)), `osbooks-playground` (not a book (its README calls it "a playground to try out the OpenStax's POET editing plugin")), `osbooks-precalculo` (not English (Spanish)), `osbooks-psychologia` (not English (Polish)), `osbooks-quimica-bundle` (not English (Spanish)).
-- **Not yet in impo: 15** English-language repositories. Each has a task; the list and the shared
+- **Not yet in impo: 8** English-language repositories, all in economics and business. Each has a task; the list and the shared
   method are in `tasks/openstax-add-remaining-english-books.md`.
 - **Upstream gone: 1** book that impo builds and OpenStax no longer lists:
   - `osbooks-algebra-1`: gone (found 2026-11-26). Source held: private clone: on the Pi, not verified (as of 2026-11-26); files in the checkout (976 modules, no git history). Action needed: confirm the Pi clone holds pin 332f7864, then push it as the public backup (tasks/openstax-algebra-1-upstream-gone-backup-plan.md; background: tasks/reference/openstax/algebra-1-upstream-removal.md).
@@ -81,28 +81,28 @@ numbers with its output and change the date.
 | osbooks-chemistry-bundle | present | chemistry-2e, chemistry-atoms-first-2e | en | CC BY-NC-SA 4.0 | 306 MB | 2026-11-12 | yes |  | no |  |  |  |  |
 | osbooks-college-algebra-bundle | present | college-algebra-2e, precalculus-2e, algebra-and-trigonometry-2e, college-algebra-corequisite-support-2e | en | CC BY-NC-SA 4.0 | 193 MB | 2026-11-13 | yes |  | no |  |  |  |  |
 | osbooks-college-physics-bundle | present | college-physics-2e, college-physics-ap-courses-2e | en | CC BY-NC-SA 4.0 | 394 MB | 2026-10-23 | yes |  | no |  |  |  |  |
-| osbooks-college-success-bundle | present | college-success-2e, college-success-concise, preparing-for-college-success | en | CC BY-NC-SA 4.0 | 50 MB | 2026-05-05 | no | yes | no |  |  |  |  |
+| osbooks-college-success-bundle | present | college-success-2e, college-success-concise, preparing-for-college-success | en | CC BY-NC-SA 4.0 | 50 MB | 2026-05-05 | yes |  | no |  |  |  |  |
 | osbooks-contemporary-mathematics | present | contemporary-mathematics | en | CC BY-NC-SA 4.0 | 390 MB | 2026-05-05 | yes |  | no |  |  |  |  |
 | osbooks-entrepreneurship | present | entrepreneurship | en | CC BY-NC-SA 4.0 | 123 MB | 2026-11-04 | no | yes | no |  |  |  |  |
 | osbooks-fisica-universitaria-bundle | present | física-universitaria-volumen-1, física-universitaria-volumen-2, física-universitaria-volumen-3 | es | CC BY 4.0 | 172 MB | 2026-01-14 | no |  | no | yes | not English (Spanish) |  |  |
 | osbooks-fizyka-bundle | present | fizyka-dla-szkół-wyższych-tom-1, fizyka-dla-szkół-wyższych-tom-2, fizyka-dla-szkół-wyższych-tom-3 | pl | CC BY 4.0 | 220 MB | 2026-01-19 | no |  | no | yes | not English (Polish) |  |  |
 | osbooks-foundations-information-systems | present | foundations-information-systems | en | CC BY-NC-SA 4.0 | 35 MB | 2026-05-05 | yes |  | no |  |  |  |  |
 | osbooks-introduccion-estadistica-bundle | present | introducción-estadística, introducción-estadística-empresarial | es | CC BY 4.0 | 54 MB | 2026-01-14 | no |  | no | yes | not English (Spanish) |  |  |
-| osbooks-introduction-anthropology | present | introduction-anthropology | en | CC BY-NC-SA 4.0 | 115 MB | 2026-05-05 | no | yes | no |  |  |  |  |
+| osbooks-introduction-anthropology | present | introduction-anthropology | en | CC BY-NC-SA 4.0 | 115 MB | 2026-05-05 | yes |  | no |  |  |  |  |
 | osbooks-introduction-business | present | introduction-business-2e | en | CC BY 4.0 | 225 MB | 2026-05-20 | no | yes | no |  |  |  |  |
 | osbooks-introduction-intellectual-property | present | introduction-intellectual-property | en | CC BY 4.0 | 30 MB | 2026-04-23 | yes |  | no |  |  |  |  |
-| osbooks-introduction-philosophy | present | introduction-philosophy-2e | en | CC BY-NC-SA 4.0 | 67 MB | 2026-06-04 | no | yes | no |  |  |  |  |
+| osbooks-introduction-philosophy | present | introduction-philosophy-2e | en | CC BY-NC-SA 4.0 | 67 MB | 2026-06-04 | yes |  | no |  |  |  |  |
 | osbooks-introduction-political-science | present | introduction-political-science | en | CC BY-NC-SA 4.0 | 97 MB | 2026-05-05 | yes |  | no |  |  |  |  |
 | osbooks-introduction-python-programming | present | introduction-python-programming | en | CC BY-NC-SA 4.0 | 44 MB | 2026-05-05 | yes |  | no |  |  |  |  |
-| osbooks-introduction-sociology | present | introduction-sociology-3e | en | CC BY-NC-SA 4.0 | 160 MB | 2026-07-20 | no | yes | no |  |  |  |  |
+| osbooks-introduction-sociology | present | introduction-sociology-3e | en | CC BY-NC-SA 4.0 | 160 MB | 2026-07-20 | yes |  | no |  |  |  |  |
 | osbooks-introductory-statistics-bundle | present | introductory-statistics-2e, introductory-business-statistics-2e | en | CC BY-NC-SA 4.0 | 104 MB | 2026-10-29 | yes |  | no |  |  |  |  |
 | osbooks-life-liberty-and-pursuit-happiness | present | life-liberty-and-pursuit-happiness | en | CC BY 4.0 | 314 MB | 2025-12-04 | yes |  | no |  |  |  |  |
-| osbooks-lifespan-development | present | lifespan-development | en | CC BY-NC-SA 4.0 | 102 MB | 2026-10-20 | no | yes | no |  |  |  |  |
+| osbooks-lifespan-development | present | lifespan-development | en | CC BY-NC-SA 4.0 | 102 MB | 2026-10-20 | yes |  | no |  |  |  |  |
 | osbooks-makroekonomia | present | makroekonomia-podstawy | pl | CC BY 4.0 | 26 MB | 2026-10-05 | no |  | no | yes | not English (Polish) |  |  |
 | osbooks-microbiology | present | microbiology | en | CC BY-NC-SA 4.0 | 321 MB | 2026-11-18 | yes |  | no |  |  |  |  |
 | osbooks-mikroekonomia | present | mikroekonomia-podstawy | pl | no LICENSE file | 32 MB | 2026-10-05 | no |  | no | yes | not English (Polish) |  |  |
 | osbooks-neuroscience | present | introduction-behavioral-neuroscience | en | CC BY-NC-SA 4.0 | 402 MB | 2026-04-23 | yes |  | no |  |  |  |  |
-| osbooks-nursing-external-bundle | present | pharmacology, nutrition, population-health | en | CC BY-NC-SA 4.0 | 225 MB | 2026-05-05 | no | yes | no |  |  |  |  |
+| osbooks-nursing-external-bundle | present | pharmacology, nutrition, population-health | en | CC BY-NC-SA 4.0 | 225 MB | 2026-05-05 | yes |  | no |  |  |  |  |
 | osbooks-organic-chemistry | present | organic-chemistry | en | CC BY-NC-SA 4.0 | 191 MB | 2026-10-23 | yes |  | no |  |  |  |  |
 | osbooks-physics | present | physics | en | CC BY 4.0 | 57 MB | 2026-10-13 | yes |  | no |  |  |  |  |
 | osbooks-playground | present | playground | en | CC BY 4.0 | 74 MB | 2025-05-20 | no |  | no | yes | not a book (its README calls it "a playground to try out the OpenStax's POET editing plugin") |  |  |
@@ -120,7 +120,7 @@ numbers with its output and change the date.
 | osbooks-statistics | present | statistics | en | CC BY 4.0 | 34 MB | 2026-04-23 | yes |  | no |  |  |  |  |
 | osbooks-university-physics-bundle | present | university-physics-volume-1, university-physics-volume-2, university-physics-volume-3 | en | CC BY-NC-SA 4.0 | 204 MB | 2026-09-08 | yes |  | no |  |  |  |  |
 | osbooks-us-history | present | us-history | en | CC BY-NC-SA 4.0 | 131 MB | 2026-05-05 | yes |  | no |  |  |  |  |
-| osbooks-workplace-software-skills | present | workplace-software-skills | en | CC BY-NC-SA 4.0 | 360 MB | 2026-05-05 | no | yes | no |  |  |  |  |
+| osbooks-workplace-software-skills | present | workplace-software-skills | en | CC BY-NC-SA 4.0 | 360 MB | 2026-05-05 | yes |  | no |  |  |  |  |
 | osbooks-world-history | present | world-history-volume-1, world-history-volume-2 | en | CC BY-NC-SA 4.0 | 382 MB | 2026-05-05 | yes |  | no |  |  |  |  |
 | osbooks-writing-guide | present | writing-guide | en | CC BY-NC-SA 4.0 | 81 MB | 2026-05-05 | yes |  | no |  |  |  |  |
 

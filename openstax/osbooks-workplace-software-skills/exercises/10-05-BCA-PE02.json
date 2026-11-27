@@ -1,0 +1,324 @@
+{
+ "images": [
+  {
+   "created_at": "2024-01-03T19:31:43.693Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcjRVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--541c6480da91ff7eb296aad0e6d9608274a72359",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcjRVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--541c6480da91ff7eb296aad0e6d9608274a72359/OSX_BCA_10_05_EE01_img.jpg"
+  },
+  {
+   "created_at": "2024-01-03T19:31:43.696Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcjhVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4351c6037e22ff7da2e6de5c78199f3f0510aa3e",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcjhVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4351c6037e22ff7da2e6de5c78199f3f0510aa3e/OSX_BCA_10_05_EE01Ans_img.jpg"
+  }
+ ],
+ "tags": [
+  "type:practice",
+  "book:stax-bca",
+  "context-cnxmod:63325f84-833b-4c0c-98c3-a47b980c3d25",
+  "lo:stax-bca:10.5.2",
+  "lo:stax-bca:10.5.3",
+  "lo:stax-bca:10.5.4",
+  "book-slug:workplace-software-skills",
+  "module-slug:workplace-software-skills:10-5-auditing-formulas-and-fixing-errors"
+ ],
+ "uuid": "ce5f0e7f-d507-496a-a87e-b3d5dcaf533c",
+ "group_uuid": "59423efe-c359-4dbd-98da-53c52cfae6c4",
+ "number": 37630,
+ "version": 5,
+ "uid": "37630@5",
+ "published_at": "2024-01-03T19:31:45.277Z",
+ "nickname": "10-05-BCA-PE02",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 372537,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<p>WorldCorp is buying an industrial robot that will pack small- to medium-sized consumer electronics in sealed plastic bags. The new machine will increase productivity because it will be faster than human workers. The financial manager is taking out a loan from the bank to pay for this machine; the loan will be paid out over the course of ten years. WorldCorp will pay 15 percent of the total cost up front, but the rest will be the principal for the loan. The total cost of the machine is $7,327,749. The interest rate is 5 percent.  The manager has designed a repayment schedule, but clearly there are some mistakes in the table. How would you find the errors? Which tool would you use to fix them? Explain which tools you ultimately used to find and solve the errors.</p>\n<table>\n<thead>\n  <tr>\n    <th>Year</th>\n    <th>Payment</th>\n    <th>Principal</th>\n    <th>Interest</th>\n    <th>Balance</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>1</td>\n    <td>$806,630.47</td>\n    <td>$495,201.13</td>\n    <td>$311,429.33</td>\n    <td>$5,733,385.52</td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>$806,630.47</td>\n    <td>$519,961.19</td>\n    <td>$286,669.28</td>\n    <td>$5,213,424.32</td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>$806,630.47</td>\n    <td>$545,959.25</td>\n    <td>$260,671.22</td>\n    <td>$4,667,465.07</td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>$806,630.47</td>\n    <td>$1,040,003.72</td>\n    <td>$233,373.25</td>\n    <td>$3,627,461.35</td>\n  </tr>\n  <tr>\n    <td>5</td>\n    <td>$806,630.47</td>\n    <td>$625,257.40</td>\n    <td>$181,373.07</td>\n    <td>$3,002,203.95</td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>$806,630.47</td>\n    <td>$656,520.27</td>\n    <td>$150,110.20</td>\n    <td>$2,345,683.69</td>\n  </tr>\n  <tr>\n    <td>7</td>\n    <td>$806,630.47</td>\n    <td>$(46,107,043.25)</td>\n    <td>$46,913,673.72</td>\n    <td>$48,452,726.93</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>$806,630.47</td>\n    <td>$(1,616,005.88)</td>\n    <td>$2,422,636.35</td>\n    <td>$50,068,732.81</td>\n  </tr>\n  <tr>\n    <td>9</td>\n    <td>$806,630.47</td>\n    <td>$(1,696,806.17)</td>\n    <td>$2,503,436.64</td>\n    <td>$51,765,538.99</td>\n  </tr>\n  <tr>\n    <td>10</td>\n    <td>$806,630.47</td>\n    <td>$(1,781,646.48)</td>\n    <td>$2,588,276.95</td>\n    <td>$53,547,185.47</td>\n  </tr>\n</tbody>\n</table>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

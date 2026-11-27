@@ -1,0 +1,324 @@
+{
+ "images": [
+  {
+   "created_at": "2024-01-03T19:29:32.415Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBckVVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--00bc9f8711a6f4fa75ebc968cc54ff7793967d00",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBckVVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--00bc9f8711a6f4fa75ebc968cc54ff7793967d00/OSX_BCA_10_02_NYTI01_img.jpg"
+  },
+  {
+   "created_at": "2024-01-03T19:29:32.417Z",
+   "signed_id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcklVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a92e03dac39cd8e94b6a19f302a12c929998d237",
+   "url": "https://exercises.openstax.org/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcklVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a92e03dac39cd8e94b6a19f302a12c929998d237/OSX_BCA_10_02_NYTI01Ans_img.jpg"
+  }
+ ],
+ "tags": [
+  "type:practice",
+  "book:stax-bca",
+  "lo:stax-bca:10.2.3",
+  "context-cnxmod:9885556b-da83-405b-8d52-67a3563aed14",
+  "book-slug:workplace-software-skills",
+  "module-slug:workplace-software-skills:10-2-more-about-formulas"
+ ],
+ "uuid": "b830406d-eb33-4d92-b7a5-efccf79f9af1",
+ "group_uuid": "8d471677-5b3b-4e5b-8f40-d3dd1db96f2b",
+ "number": 37608,
+ "version": 7,
+ "uid": "37608@7",
+ "published_at": "2024-01-03T19:29:33.951Z",
+ "nickname": "10-02-BCA-PE01",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 372527,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "<p>The WorldCorp sales team uses a Customer Relationship Management (CRM) software to keep track of customer data. It tells them when they should call their customers again, how much the customer has ordered in the past, and other notes about the customer. The sales agents receive a salary, but if their customer orders are over $20,000, they are given an additional 5 percent commission. Use the information and the data in the figure to design a formula that can calculate the total commission the sales agent will receive and an overall total for commissions paid.</p>\n\n<table>\n<thead>\n  <tr>\n    <th>Date</th>\n    <th>Item Description</th>\n    <th>Quantity</th>\n    <th>FOB$</th>\n    <th>5% Commission for sales</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>3/29/2021</td>\n    <td>Tablets, 7in</td>\n    <td>143</td>\n    <td>$10,582.00</td>\n    <td>$2,736.00</td>\n  </tr>\n  <tr>\n    <td>3/27/2021</td>\n    <td>Computer Server Accessories</td>\n    <td>2500</td>\n    <td>$21,350.00</td>\n    <td>$3,552.00</td>\n  </tr>\n  <tr>\n    <td>3/22/2021</td>\n    <td>Headphones</td>\n    <td>542</td>\n    <td>$26,016.00</td>\n    <td>$10,140.00</td>\n  </tr>\n  <tr>\n    <td>3/21/2021</td>\n    <td>LED TVs, 55in and 65in</td>\n    <td>53</td>\n    <td>$14,575.00</td>\n    <td>$432.00</td>\n  </tr>\n  <tr>\n    <td>3/17/2021</td>\n    <td>LCD TVs, 32in and 45in</td>\n    <td>97</td>\n    <td>$64,505.00</td>\n    <td>$480.00</td>\n  </tr>\n  <tr>\n    <td>3/15/2021</td>\n    <td>Cellular Phone Accessories</td>\n    <td>3000</td>\n    <td>$22,920.00</td>\n    <td>$30,800.00</td>\n  </tr>\n  <tr>\n    <td>3/10/2021</td>\n    <td>Home Stereo Systems</td>\n    <td>74</td>\n    <td>$7,252.00</td>\n    <td>$10,920.00</td>\n  </tr>\n  <tr>\n    <td>3/7/2021</td>\n    <td>Blu-Ray Players</td>\n    <td>127</td>\n    <td>$10,922.00</td>\n    <td>$768.00</td>\n  </tr>\n  <tr>\n    <td>3/5/2021</td>\n    <td>HDTV Antennas</td>\n    <td>768</td>\n    <td>$21,504.00</td>\n    <td>$18,240.00</td>\n  </tr>\n  <tr>\n    <td>1/13/2021</td>\n    <td>Plasma 65</td>\n    <td>$855.00</td>\n    <td>12</td>\n    <td>$10,260.00</td>\n  </tr>\n  <tr>\n    <td>1/13/2021</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>85</td>\n    <td>$4,080.00</td>\n  </tr>\n  <tr>\n    <td>1/15/2021</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>158</td>\n    <td>$7,584.00</td>\n  </tr>\n  <tr>\n    <td>1/17/2021</td>\n    <td>LCD 42</td>\n    <td>$380.00</td>\n    <td>55</td>\n    <td>$20,900.00</td>\n  </tr>\n  <tr>\n    <td>1/17/2021</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>115</td>\n    <td>$5,520.00</td>\n  </tr>\n  <tr>\n    <td>1/21/2021</td>\n    <td>Plasma 65</td>\n    <td>$855.00</td>\n    <td>11</td>\n    <td>$9,405.00</td>\n  </tr>\n  <tr>\n    <td>1/22/2021</td>\n    <td>Headphones</td>\n    <td>$48.00</td>\n    <td>15</td>\n    <td>$720.00</td>\n  </tr>\n  <tr>\n    <td>1/25/2021</td>\n    <td>LCD 42</td>\n    <td>$380.00</td>\n    <td>54</td>\n    <td>$20,520.00</td>\n  </tr>\n  <tr>\n    <td>1/27/2021</td>\n    <td>QLED 55</td>\n    <td>$620.00</td>\n    <td>10</td>\n    <td>$6,200.00</td>\n  </tr>\n  <tr>\n    <td>1/30/2021</td>\n    <td>LED 55</td>\n    <td>$550.00</td>\n    <td>10</td>\n    <td>$5,500.00</td>\n  </tr>\n  <tr>\n    <td>2/4/2021</td>\n    <td>LCD 32</td>\n    <td>$170.00</td>\n    <td>43</td>\n    <td>$7,310.00</td>\n  </tr>\n  <tr>\n    <td>2/7/2021</td>\n    <td>QLED 55</td>\n    <td>$620.00</td>\n    <td>15</td>\n    <td>$9,300.00</td>\n  </tr>\n  <tr>\n    <td>2/9/2021</td>\n    <td>OLED 45</td>\n    <td>$400.00</td>\n    <td>37</td>\n    <td>$14,800.00</td>\n  </tr>\n  <tr>\n    <td>2/11/2021</td>\n    <td>Plasma 65</td>\n    <td>$855.00</td>\n    <td>34</td>\n    <td>$29,070.00</td>\n  </tr>\n  <tr>\n    <td>2/15/2021</td>\n    <td>DLP 32</td>\n    <td>$250.00</td>\n    <td>97</td>\n    <td>$24,250.00</td>\n  </tr>\n  <tr>\n    <td>2/18/2021</td>\n    <td>LED 65</td>\n    <td>$780.00</td>\n    <td>54</td>\n    <td>$42,120.00</td>\n  </tr>\n  <tr>\n    <td>2/21/2021</td>\n    <td>LED 55</td>\n    <td>$550.00</td>\n    <td>21</td>\n    <td>$11,550.00</td>\n  </tr>\n  <tr>\n    <td>2/25/2021</td>\n    <td>LCD 42</td>\n    <td>$380.00</td>\n    <td>54</td>\n    <td>$20,520.00</td>\n  </tr>\n  <tr>\n    <td>2/27/2021</td>\n    <td>LCD 32</td>\n    <td>$170.00</td>\n    <td>14</td>\n    <td>$2,380.00</td>\n  </tr>\n</tbody>\n</table>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  7,
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

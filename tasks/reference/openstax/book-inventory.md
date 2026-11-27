@@ -67,6 +67,13 @@ confirmed on each book's first build.
 - `osbooks-introduction-intellectual-property/` — *Introduction to Intellectual Property* (54 modules, 232-page PDF), added 2026-11-27: 185 embedded exercises, all cached 2026-11-27; raster figures; CC BY 4.0; 31 block quotations.
 - `osbooks-world-history/` — *World History Volume 1, to 1500* (85 modules, 928-page PDF); *World History Volume 2, from 1400* (80 modules, 872-page PDF), added 2026-11-27: 1,158 embedded exercises, all cached 2026-11-27; raster figures; 131 block quotations.
 - `osbooks-principles-data-science/` — *Principles of Data Science* (59 modules, 600-page PDF), added 2026-11-27: 136 embedded exercises, all cached 2026-11-27; raster figures; it brought one-line code blocks wrapped in line breaks to the converter.
+- `osbooks-introduction-sociology/` — *Introduction to Sociology 3e* (96 modules, 828-page PDF), added 2026-11-27: no embedded exercises; raster figures; its 437 empty `<label/>` elements made the converter treat an empty label as known markup.
+- `osbooks-college-success-bundle/` — *College Success 2e* (75 modules, 468-page PDF); *College Success Concise* (44 modules, 294-page PDF); *Preparing for College Success* (49 modules, 325-page PDF), added 2026-11-27: no embedded exercises; raster figures; it brought the bare `√` to the web editions' preprocessing.
+- `osbooks-lifespan-development/` — *Lifespan Development* (100 modules, 1,430-page PDF), added 2026-11-27: 872 embedded exercises, all cached 2026-11-27; raster figures; built in one pass with no toolchain change.
+- `osbooks-workplace-software-skills/` — *Workplace Software and Skills* (105 modules, 1,215-page PDF), added 2026-11-27: 682 embedded exercises, all cached 2026-11-27; raster figures (349 MB, so a 285 MB PDF); built in one pass with no toolchain change.
+- `osbooks-introduction-anthropology/` — *Introduction to Anthropology* (121 modules, 866-page PDF), added 2026-11-27: 150 embedded exercises, all cached 2026-11-27; raster figures; 36 block quotations; built in one pass with no toolchain change.
+- `osbooks-introduction-philosophy/` — *Introduction to Philosophy 2e* (66 modules, 521-page PDF), added 2026-11-27: 228 embedded exercises, all cached 2026-11-27; raster figures; it brought a quotation holding only a list to the converter.
+- `osbooks-nursing-external-bundle/` — *Pharmacology for Nurses* (203 modules, 1,267-page PDF); *Nutrition for Nurses* (93 modules, 537-page PDF); *Population Health for Nurses* (185 modules, 1,400-page PDF), added 2026-11-27: 1,156 embedded exercises, all cached 2026-11-27; raster figures; 714 tables, most of them prose and too small in the PDF (`tasks/openstax-pdf-prose-tables-shrink-or-run-off-the-page.md`); it brought `<span>` and a paragraph of only line breaks to the converter.
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -106,6 +113,13 @@ whose licence it does not know.
 | osbooks-introduction-intellectual-property | CC BY 4.0 | yes |
 | osbooks-world-history (2 books) | CC BY-NC-SA 4.0 | yes |
 | osbooks-principles-data-science | CC BY-NC-SA 4.0 | yes |
+| osbooks-introduction-sociology | CC BY-NC-SA 4.0 | yes |
+| osbooks-college-success-bundle (3 books) | CC BY-NC-SA 4.0 | yes |
+| osbooks-lifespan-development | CC BY-NC-SA 4.0 | yes |
+| osbooks-workplace-software-skills | CC BY-NC-SA 4.0 | yes |
+| osbooks-introduction-anthropology | CC BY-NC-SA 4.0 | yes |
+| osbooks-introduction-philosophy | CC BY-NC-SA 4.0 | yes |
+| osbooks-nursing-external-bundle (3 books) | CC BY-NC-SA 4.0 | yes |
 
 Every collection inside a bundle declares the same licence as its siblings. No module file carries licence
 metadata. The exercise caches are a separate case: see "Copyright / licensing" in `openstax/CLAUDE.md`.
