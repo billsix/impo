@@ -26,19 +26,17 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `lifespan-development` (OpenStax *Lifespan Development*): 100 modules in 17 chapters; one level of nesting. Built as PDF (1,415 pages), EPUB and HTML
+One collection, `lifespan-development` (OpenStax *Lifespan Development*): 100 modules in 17 chapters; one level of nesting. Built as PDF (1,430 pages), EPUB and HTML
 (119 web pages) on 2026-11-27, the day it was added.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
-- **Exercises:** 872 embedded links, all in the `#exercise/<nickname>` scheme (none in
-  `#ost/api/ex/`). **Not fetched yet**: there is no `exercises/` cache, so each one is
-  left out of the built book and counted by the converter as `exercise-uncached`. The
-  maintainer runs `make fetch-exercises` here (it identifies itself with his contact
-  address); `../../tasks/openstax-add-book-lifespan-development.md` holds what follows.
+- **Exercises:** 872 embedded links to 872 exercises, all in the `#exercise/<nickname>`
+  scheme. All 872 are in the committed cache `exercises/` (no images; with its `COPYRIGHT`
+  notice), fetched by the maintainer on 2026-11-27, and are in the built book.
 - **Figures:** raster only (450 files, 79 MB); no SVG.
 - **Block quotations:** 6, set off as such.
 - **Characters missing from the PDF:** `ɡ` (two places) and `ɛ` (one), which the body font has no glyph for (`../../tasks/openstax-pdf-characters-missing-from-the-body-font.md`).
-- **Still falling back** (the converter's report): none besides the 872 `exercise-uncached`.
+- **Still falling back** (the converter's report): none.
 
 ## Build
 

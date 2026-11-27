@@ -241,7 +241,7 @@ the day each was added.
 | introduction-intellectual-property | 1 | `#exercise/` | 185 | raster |
 | introduction-sociology | 1 | none | 0 | raster |
 | college-success-bundle | 3 | none | 0 | raster |
-| lifespan-development | 1 | `#exercise/` (not fetched) | 872 | raster |
+| lifespan-development | 1 | `#exercise/` | 872 | raster |
 | workplace-software-skills | 1 | `#exercise/` (not fetched) | 682 | raster |
 | introduction-anthropology | 1 | `#exercise/` (not fetched) | 150 | raster |
 | introduction-philosophy | 1 | `#exercise/` (not fetched) | 228 | raster |
