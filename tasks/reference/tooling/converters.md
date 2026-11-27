@@ -150,6 +150,34 @@ and could not be typeset without this. It also changed Introduction to Python Pr
 such blocks were typeset inline, running into the text around them), one listing in Foundations of
 Information Systems and the wrapping of one line in Introductory Statistics; the other books were identical.
 
+## Characters no font has (added 2026-11-27)
+
+LuaTeX prints nothing for a character the font in use has no glyph for and says so only in the log ("Missing
+character: There is no ⅓ (U+2153) in font …"). On 2026-11-27 the logs of the built books held 7,323 such lines
+in 27 books; after the three changes below a rebuild of all 57 books left 7 lines, one character in one book.
+
+- **A fallback font chain** (`osbook.cls`): `luaotfload.add_fallback("osfallback", …)` names FreeSerif, STIX Two
+  Math, TeX Gyre DejaVu Math and Libertinus Serif, all in the image already, and the body and heading fonts are
+  loaded with `RawFeature={fallback=osfallback}`. It covers letters with marks and phonetic letters (the Arabic,
+  Sanskrit and Chinese names of Introduction to Philosophy 2e), arrows and operators met in prose (`ℏ` alone was
+  1,030 lines), fractions and subscript digits, and box-drawing characters. A book-style that re-sets
+  `\setmainfont` passes the same feature (`osbooks-calculus-bundle/bookstyle.tex` does). The chain was chosen by
+  setting every missing character in a test document and reading its log.
+- **Five pictographs no font in the image has** (`🔎 📝 📍 📖 📎`, which mark the kind of a resource in the titles
+  of Life, Liberty, and the Pursuit of Happiness) print as the nearest symbol the fallback fonts do have
+  (`⌕ ✎ ⚑ ☰ ❖`), through `\newunicodechar` lines in `osbook.cls`. The HTML and EPUB keep the pictograph.
+  Installing an emoji font in the image would print the real ones; that is a change to what the image ships
+  and was not made.
+- **Mis-encoded characters are repaired in the converter** (`_MISENCODED` and `_TWICE_ENCODED`, applied by
+  `esc_text`), so all three editions get the right character: U+0080 to U+009F are Windows-1252 punctuation
+  saved as Latin-1 control codes (about 980 curly quotes and dashes in Statistics, Biology, Physics, U.S.
+  History and College Physics); `â€œ`, `â€` followed by U+009D, and `â€™` are quotation marks encoded twice
+  (5 places); U+F061 and U+F0BE are an alpha and a dash from the Symbol font (7 places).
+- **A build reports what is left:** `entrypoint/pdf.sh` ends each book with either "no character is missing from
+  the fonts" or a WARNING line listing the code points, so a new book cannot add holes unseen.
+- **Left:** `𝜙` (U+1D719) in Contemporary Mathematics, where it is asked of the slanted body font (7 log lines);
+  the PDF's text holds the character in its other places.
+
 ## Links with words of their own, and references to exercises (added 2026-11-27)
 
 - **A link that has words keeps them.** `<link target-id="…">the map</link>` and `<link document="…">Electoral

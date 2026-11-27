@@ -36,7 +36,6 @@ One collection, `introduction-philosophy-2e` (OpenStax *Introduction to Philosop
 - **Figures:** raster only (130 files; `media/` is 118 MB). `media/Interactive/` holds 525 more files, 127 of them SVG icons; no module references an SVG.
 - **Unused modules:** the repository holds 76 module folders and the collection lists 66.
 - **Block quotations:** 33, set off as such; one holds a numbered list and no paragraph (`../../tasks/reference/tooling/converters.md`, "Block quotations, reference notes and footnotes in titles").
-- **Characters missing from the PDF:** `ǐ`, `ʿ`, `Ḥ`, `ṇ`, `Ṣ`, `ṣ`, in Chinese, Arabic and Sanskrit names, which the body font has no glyph for (`../../tasks/openstax-pdf-characters-missing-from-the-body-font.md`).
 - **Still falling back** (the converter's report): none.
 
 ## Build

@@ -279,9 +279,30 @@ _RAW_LATEX_ENV: re.Pattern[str] = re.compile(
 )
 
 
+# Characters a source file holds in the wrong encoding. U+0080..U+009F are
+# Windows-1252 punctuation (a curly quote, a dash) saved as Latin-1 control
+# codes; the two private-use codes are letters of the Symbol font. Each is put
+# right before anything else reads the text, so all three editions get it.
+_MISENCODED: dict[int, str] = {
+    code: bytes([code]).decode("cp1252")
+    for code in range(0x80, 0xA0)
+    if code not in (0x81, 0x8D, 0x8F, 0x90, 0x9D)  # undefined in Windows-1252
+} | {0xF061: "α", 0xF0BE: "—"}
+# UTF-8 punctuation that was read as Windows-1252 and saved again.
+_TWICE_ENCODED: list[tuple[str, str]] = [
+    ("â€œ", "“"),
+    ("â€\x9d", "”"),
+    ("â€™", "’"),
+]
+
+
 def esc_text(s: str | None) -> str:
     if s is None:
         return ""
+    if "â€" in s:
+        for wrong, right in _TWICE_ENCODED:
+            s = s.replace(wrong, right)
+    s = s.translate(_MISENCODED)
     # A few source paras paste raw LaTeX math as plain TEXT (it should be <m:math>
     # MathML). Escaping would print the LaTeX verbatim; instead, detect a complete
     # \begin{env}...\end{env} block and render it as display math -- reinterpreting

@@ -207,6 +207,12 @@ def test_link_to_a_module_with_words_keeps_them() -> None:
     assert c.flow(node, set()) == "\nThe \\hyperref[mod:m123]{Electoral College} meets.\n"
 
 
+def test_misencoded_punctuation_is_put_right() -> None:
+    assert c.esc_text("don\x92t \x93stop\x94 \x96 now") == c.esc_text("don’t “stop” – now")
+    assert c.esc_text("Since \uf061 > p") == c.esc_text("Since α > p")
+    assert c.esc_text("â€œIntroâ€\x9d animalsâ€™") == c.esc_text("“Intro” animals’")
+
+
 def test_quote_inside_a_sentence_stays_inline() -> None:
     node: etree._Element = _content("<para>He said <quote>no</quote>.</para>")
     assert c.flow(node, set()) == "\nHe said ``no''.\n"

@@ -33,8 +33,19 @@
 
 % ---- core packages (order matters for the theorem/font stack) -------
 \RequirePackage{fontspec}       % lualatex: Unicode text fonts (OpenStax house)
-\setmainfont{Roboto Slab}[AutoFakeSlant=0.18]  % body serif (Roboto Slab has no italic)
-\setsansfont{Noto Sans}         % headings / labels
+% Fallback chain: where the font in use has no glyph for a character (a letter
+% with a dot below in a Sanskrit name, a phonetic letter, an arrow or a one-third
+% met in prose), LuaTeX prints nothing and says so only in the log. luaotfload
+% then looks in these fonts, in order. A book-style that re-sets \setmainfont
+% passes the same RawFeature.
+\directlua{luaotfload.add_fallback("osfallback", {
+  "FreeSerif:mode=node;",
+  "STIX Two Math:mode=node;script=math;",
+  "TeX Gyre DejaVu Math:mode=node;",
+  "Libertinus Serif:mode=node;",
+})}
+\setmainfont{Roboto Slab}[AutoFakeSlant=0.18,RawFeature={fallback=osfallback}]  % body serif (Roboto Slab has no italic)
+\setsansfont{Noto Sans}[RawFeature={fallback=osfallback}]  % headings / labels
 \RequirePackage[english]{babel}
 \RequirePackage{amsmath}
 \RequirePackage{mathtools}       % \mathrlap etc. (zero-width boxes for MathML mpadded)
@@ -101,6 +112,11 @@
 \newunicodechar{①}{\textcircled{1}}\newunicodechar{②}{\textcircled{2}}\newunicodechar{③}{\textcircled{3}}
 \newunicodechar{④}{\textcircled{4}}\newunicodechar{⑤}{\textcircled{5}}\newunicodechar{⑥}{\textcircled{6}}
 \newunicodechar{⑦}{\textcircled{7}}\newunicodechar{⑧}{\textcircled{8}}\newunicodechar{⑨}{\textcircled{9}}
+% Five pictographs that no font in the image has (they mark the kind of a
+% resource in Life, Liberty, and the Pursuit of Happiness) print as the nearest
+% symbol the fallback fonts do have. The HTML and EPUB keep the pictograph.
+\newunicodechar{🔎}{⌕}\newunicodechar{📝}{✎}\newunicodechar{📍}{⚑}
+\newunicodechar{📖}{☰}\newunicodechar{📎}{❖}
 
 % OpenStax uses block paragraphs: no first-line indent, vertical space between
 % (so worked-example steps/equations sit flush-left with breathing room).
