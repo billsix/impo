@@ -81,6 +81,7 @@ confirmed on each book's first build.
 - `osbooks-principles-marketing/` — *Principles of Marketing* (132 modules, 831-page PDF), added 2026-11-28: 662 embedded exercises, not cached yet (the maintainer's fetch); raster figures; it brought the one-row display equation to the converter.
 - `osbooks-principles-of-management-bundle/` — *Principles of Management* (132 modules, 767-page PDF); *Organizational Behavior* (121 modules, 783-page PDF), added 2026-11-28: no embedded exercises; raster figures; it brought an image file name with a double space to the converter.
 - `osbooks-entrepreneurship/` — *Entrepreneurship* (79 modules, 805-page PDF), added 2026-11-28: no embedded exercises; raster figures; it brought a footnote in a section title to the converter.
+- `osbooks-principles-economics-bundle/` — *Principles of Economics 3e* (182 modules, 1,229-page PDF); *Principles of Macroeconomics 3e* (119 modules, 788-page PDF); *Principles of Microeconomics 3e* (100 modules, 723-page PDF); *Principles of Macroeconomics for AP® Courses 2e* (104 modules, 702-page PDF); *Principles of Microeconomics for AP® Courses 2e* (98 modules, 717-page PDF), added 2026-11-28: no embedded exercises; raster figures; built in one pass with no toolchain change; the five books share 190 modules.
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -134,6 +135,7 @@ whose licence it does not know.
 | osbooks-principles-marketing | CC BY-NC-SA 4.0 | yes |
 | osbooks-principles-of-management-bundle (2 books) | CC BY-NC-SA 4.0 | yes |
 | osbooks-entrepreneurship | CC BY-NC-SA 4.0 | yes |
+| osbooks-principles-economics-bundle (5 books) | CC BY-NC-SA 4.0 | yes |
 
 Every collection inside a bundle declares the same licence as its siblings. No module file carries licence
 metadata. The exercise caches are a separate case: see "Copyright / licensing" in `openstax/CLAUDE.md`.

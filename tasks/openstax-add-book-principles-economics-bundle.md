@@ -1,47 +1,36 @@
-# Add `osbooks-principles-economics-bundle` to impo (5 books)
+# Added `osbooks-principles-economics-bundle` to impo (5 books)
 
-**Status:** ready — approved 2026-11-26 as part of the umbrella; not started
-**Part of:** `tasks/openstax-add-remaining-english-books.md`
-**Depends on:** `tasks/archive/impo/2026/11/26/openstax-add-book-step-0-scaffold-tool.md` (the scaffold tool, so every new folder is made the same way)
-**Priority:** 6
-**Difficulty:** 3
-**Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said … make a task per book"; he then chose all 29 real repositories, one task per repository).
+**Done 2026-11-28** (agent; part of `tasks/openstax-add-remaining-english-books.md`. William Emerison Six <billsix@gmail.com>, 2026-11-28: "work them all, do the work, commit, archive, commit, next").
 
-## BLUF
+## What was added
 
-impo does not yet build OpenStax's `osbooks-principles-economics-bundle`. This task adds it as a book folder on the shared-toolchain contract, so that `principles-economics-3e`, `principles-macroeconomics-3e`, `principles-microeconomics-3e`, `principles-macroeconomics-ap-courses-2e`, `principles-microeconomics-ap-courses-2e` build as PDF, EPUB and HTML like the books impo already carries. Done means the folder exists, every book in it converts and builds in all three formats, its exercises (if it embeds any) are cached, and impo's docs and the survey list it as built.
+`openstax/osbooks-principles-economics-bundle/`, created with `tools/add-book.sh principles-economics-bundle "Principles of Economics"` and pinned at the upstream head `cf93bf19bbbca7d1324c2d31af0e81740ae3e5f5`. It builds 5 books:
 
-## Context
+| Book | Collection | Shape | PDF | Web pages |
+|---|---|---|---|---|
+| *Principles of Economics 3e* | `principles-economics-3e` | 182 modules in 34 chapters, from "Welcome to Economics!" to "Globalization and Protectionism"; one level of nesting | 1,229 pages | 218 |
+| *Principles of Macroeconomics 3e* | `principles-macroeconomics-3e` | 119 modules in 21 chapters, from "Welcome to Economics!" to "Globalization and Protectionism"; one level of nesting | 788 pages | 142 |
+| *Principles of Microeconomics 3e* | `principles-microeconomics-3e` | 100 modules in 20 chapters, from "Welcome to Economics!" to "Globalization and Protectionism"; one level of nesting | 723 pages | 122 |
+| *Principles of Macroeconomics for AP® Courses 2e* | `principles-macroeconomics-ap-courses-2e` | 104 modules in 18 chapters, from "Welcome to Economics!" to "Macroeconomic Policy Around the World"; one level of nesting | 702 pages | 124 |
+| *Principles of Microeconomics for AP® Courses 2e* | `principles-microeconomics-ap-courses-2e` | 98 modules in 20 chapters, from "Welcome to Economics!" to "Globalization and Protectionism"; one level of nesting | 717 pages | 120 |
 
-**Read first:** the umbrella (`tasks/openstax-add-remaining-english-books.md`) for the method every one of these tasks follows, and `openstax/CLAUDE.md` ("Per-book folder contract", "Copyright / licensing").
+- **Licence:** CC BY-NC-SA 4.0 (collection XML and the upstream `LICENSE`); the built PDF states it.
+- **Figures:** raster only (811 files, 161 MB); no SVG.
+- **Exercises:** none embedded, counted in the CNXML in both link schemes; no `exercises/` cache, so nothing for the maintainer to fetch.
+- **Result:** built as PDF, EPUB and HTML on 2026-11-28.
 
-| | |
-|---|---|
-| Upstream | `https://github.com/openstax/osbooks-principles-economics-bundle` |
-| Group | Economics, business and law |
-| Books (collection slugs) | `principles-economics-3e`, `principles-macroeconomics-3e`, `principles-microeconomics-3e`, `principles-macroeconomics-ap-courses-2e`, `principles-microeconomics-ap-courses-2e` |
-| Language | English |
-| Licence its `LICENSE` file names | CC BY-NC-SA 4.0 |
-| Size (GitHub, with history) | 84 MB |
-| Last push upstream | 2026-10-12 |
-| Default-branch head on 2026-11-26 | `cf93bf19bbbca7d1324c2d31af0e81740ae3e5f5` (re-read it when the work starts; the pin is the head at that time) |
-| Maintainer's public backup | none yet (`tasks/openstax-books-buildable-forever-source-backup-and-licences.md`) |
+## What the book needed from the toolchain
 
-Mostly prose and figures, as far as the repository name suggests; not opened yet.
+Nothing: it converted and built in one pass with the toolchain as it stood.
 
-**Not known until the source is fetched:** whether it embeds exercises and in which of the two schemes, whether its figures are raster or SVG, how deeply its collections nest, and whether it uses markup the converter has not met (the converter reports those as "Unknown/fallback elements").
+## Left as it is
 
-## Plan
+The PDF and HTML were not read page by page; that review is the maintainer's.
 
-- [ ] `bash tools/add-book.sh principles-economics-bundle` to create `openstax/osbooks-principles-economics-bundle/` with `fetch.sh` (upstream, mirror fallback, the pin), `apply.sh`, `Makefile`, `README.md`, `CLAUDE.md` and `.gitignore`.
-- [ ] `./fetch.sh && ./apply.sh`, then `make convert`. Read the converter's report; a licence it does not know stops the conversion, which is intended.
-- [ ] If it embeds exercises: the maintainer runs `make fetch-exercises` in the folder (the fetch identifies itself with his contact address, so it is his to run), then the cache is committed with its `COPYRIGHT` notice.
-- [ ] `make dist`; open the PDF and one HTML page of each book and note anything that rendered badly.
-- [ ] Converter gaps: fix in `openstax/tooling/` what is small and general; anything larger gets its own task, named here.
-- [ ] Record the book: `openstax/osbooks-principles-economics-bundle/CLAUDE.md` (collections, module counts, nesting, exercises, figure format), the list in `openstax/CLAUDE.md`, and `tasks/reference/openstax/book-inventory.md` including its licence row.
-- [ ] `python3 tools/survey-upstream-books.py` and refresh `tasks/reference/openstax/upstream-book-repositories.md`; tick this book in the umbrella.
-- [ ] Tell the maintainer the book needs its public backup (`tools/mirror-upstreams.sh push principles-economics-bundle`).
+## Not done
 
-## Open questions
+The book needs the maintainer's public backup: `bash tools/mirror-upstreams.sh push principles-economics-bundle`.
 
-None.
+## Recorded
+
+`openstax/osbooks-principles-economics-bundle/CLAUDE.md` ("The books this folder builds"), the list in `openstax/CLAUDE.md`, the inventory and its licence table, the per-book table in `tasks/reference/tooling/converters.md`, and the umbrella's checklist. The survey table (`tasks/reference/openstax/upstream-book-repositories.md`) is refreshed once for the whole 2026-11-28 batch.

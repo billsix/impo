@@ -241,6 +241,7 @@ shared-toolchain contract.
 - `osbooks-principles-marketing/` — Principles of Marketing (added 2026-11-28)
 - `osbooks-principles-of-management-bundle/` — Principles of Management (2 books: `principles-management`, `organizational-behavior`; added 2026-11-28)
 - `osbooks-entrepreneurship/` — Entrepreneurship (added 2026-11-28)
+- `osbooks-principles-economics-bundle/` — Principles of Economics (5 books: `principles-economics-3e`, `principles-macroeconomics-3e`, `principles-microeconomics-3e`, `principles-macroeconomics-ap-courses-2e`, `principles-microeconomics-ap-courses-2e`; added 2026-11-28)
 
 Per-book status (build-verified dates, exercise/image counts, os-embed scheme post-mortems, structural
 facts): `tasks/reference/openstax/book-inventory.md`. Figure format + os-embed scheme + exercise counts
