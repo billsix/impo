@@ -35,14 +35,18 @@ different mechanism: `tasks/reference/tooling/cross-references.md`.
 
 ## Facts the work established
 
-- **The web edition's section numbers are one higher than OpenStax's** in every chapter that opens
-  with an "Introduction" module: the pandoc sitemap (and so the HTML numbering) counts that module as
-  x.1, OpenStax does not number it. The IA tags use OpenStax's numbers: "(IA 8.2.1) Use the product
-  property to simplify radical expressions" is OpenStax 8.2 *Simplify Radical Expressions*, which is
-  web-edition 8.3. (The parked IA task had matched "(IA 8.2.1)" to web 8.2 *Simplify Expressions with
-  Roots*, which was this off-by-one.) The index therefore renumbers: a chapter's first module whose
-  title starts with "Introduction" and that has no subsections is the unnumbered opener (`x.0`).
-  Checked on 12 random IA tags: every objective matched its section's title.
+- **The books' section numbers are OpenStax's** (since 2026-11-28). OpenStax does not number a chapter's
+  opening module or a book's preface, and marks them on the module's `<document>` element
+  (`class="introduction"`, `class="preface"`). The converter stars their headings
+  (`is_unnumbered_module`, `module_heading` in `convert.py`), so the PDF contents and the web edition's
+  sitemap number the sections that follow from x.1, and the page index reads the sitemap's numbers as they
+  are, keeping the opener under `x.0`. The IA tags use OpenStax's numbers: "(IA 8.2.1) Use the product
+  property to simplify radical expressions" is section 8.2 *Simplify Radical Expressions*. Until that date
+  the opener was counted as x.1, every later section was one higher than OpenStax's, and the index
+  renumbered by a title test (a first module titled "Introduction…" with no subsections). That test missed
+  346 of the 1,196 openers in the 71 collections fetched on 2026-11-28 (titles such as "Why It Matters" and
+  "Thinking Ahead", and Introductions that hold sections); the class attribute marks only a chapter's first
+  module, in every one of them. Record: `tasks/archive/impo/2026/11/28/openstax-web-section-numbering.md`.
 - **Modules are shared between books**: College Algebra 2e shares 32 modules with Precalculus 2e (and
   with the corequisite and Algebra & Trigonometry editions), Calculus Volume 2 shares 21 with Volume 1
   (its chapters 1–2 are Volume 1's chapters 5–6) and Volume 3 shares 9 with Volume 2. A box belongs

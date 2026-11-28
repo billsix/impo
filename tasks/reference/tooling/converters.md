@@ -250,6 +250,19 @@ Three shapes, each of which stopped a PDF build until the converter handled it:
 
 `tools/compare-converter-output.sh` showed no change in any of the 37 folders built before.
 
+## Modules OpenStax does not number (added 2026-11-28)
+
+A chapter's opening module and a book's preface carry `class="introduction"` or `class="preface"` on their
+`<document>` element, and OpenStax leaves them out of its section numbers. `is_unnumbered_module` reads the
+class; `module_heading` then writes the module's heading starred, followed at once by its label (the web leg
+takes a heading's id from the label only when nothing stands between them), an `\addcontentsline` so the
+contents still list it, and at section level a `\markright` for the running head. `render_section` stars the
+headings inside such a module too: pandoc would number a plain one "1.0.1". Those inner headings leave the
+PDF contents, as they do on openstax.org. The EPUB shows no section numbers at all.
+
+Not covered: the modules after a book's last chapter, which OpenStax letters as appendices A, B, C and impo
+still numbers as sections of the last chapter (`tasks/openstax-appendix-modules-are-numbered-as-sections.md`).
+
 ## The 5 historical `convert.py` versions and their deltas
 
 Verified by hashing `latex:tools/cnxml2tex/convert.py` across all 16 repos. 12 books shared one version; four

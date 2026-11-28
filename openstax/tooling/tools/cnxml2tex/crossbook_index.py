@@ -10,11 +10,10 @@ book that links or is linked is generated once from that book's built
 convert time. Re-run this after a pin bump or a converter change that moves pages
 (`tools/pandoc/check_links.py` over the built site reports a stale index).
 
-Official numbering: the web edition's sitemap numbers a chapter's opening
-"Introduction" module as section x.1, which OpenStax does not number, so every
-later section is one higher than the book's own numbering. The index renumbers:
-a chapter's FIRST module, when its title starts with "Introduction" and it has no
-subsections of its own, is the unnumbered chapter opener (key "x.0").
+Official numbering: OpenStax does not number a chapter's opening module, and
+neither does the web edition (the converter stars the heading of a module whose
+<document> carries class="introduction"), so the sitemap's own section numbers
+are the official ones. The index keeps the opener under the key "x.0".
 
 Usage (from openstax/tooling/):
     python3 tools/cnxml2tex/crossbook_index.py ../osbooks-*/checkout/output/<book> ...
@@ -39,52 +38,34 @@ INDEX_DIR: str = os.path.join(
 MODULE_IN_PAGE: re.Pattern[str] = re.compile(r"mod:(m\d+)")
 
 
-def is_chapter_opener(position: int, node: SitemapNode) -> bool:
-    """True for a chapter's unnumbered opening module (see the module docstring).
-
-    >>> is_chapter_opener(0, {"section": {"title": "Introduction"}, "subsections": []})
-    True
-    >>> is_chapter_opener(0, {"section": {"title": "Introduction to Integers"},
-    ...                       "subsections": [{"section": {}}]})
-    False
-    >>> is_chapter_opener(1, {"section": {"title": "Introduction"}, "subsections": []})
-    False
-    """
-    title: str = (node.get("section") or {}).get("title") or ""
-    return (
-        position == 0
-        and title.startswith("Introduction")
-        and not node.get("subsections")
-    )
-
-
 def chapter_entries(
     chapter_number: str, sections: list[SitemapNode]
 ) -> dict[str, IndexEntry]:
     """Index one numbered chapter's sections under their official numbers.
 
-    >>> nodes = [{"section": {"title": "Introduction", "path": "058-mod:m1.html#x"},
-    ...           "subsections": []},
-    ...          {"section": {"title": "Roots", "path": "059-mod:m2.html#y"},
-    ...           "subsections": [{}]}]
+    A section without a number is indexed only as the chapter's opener, in first
+    place.
+
+    >>> nodes = [{"section": {"title": "Introduction", "path": "058-mod:m1.html#x",
+    ...                       "number": None}},
+    ...          {"section": {"title": "Roots", "path": "059-mod:m2.html#y",
+    ...                       "number": "8.1"}}]
     >>> sorted(chapter_entries("8", nodes).items())  # doctest: +NORMALIZE_WHITESPACE
     [('8.0', {'module': 'm1', 'page': '058-mod:m1.html', 'title': 'Introduction'}),
      ('8.1', {'module': 'm2', 'page': '059-mod:m2.html', 'title': 'Roots'})]
     """
     entries: dict[str, IndexEntry] = {}
-    number: int = 0
     position: int
     node: SitemapNode
     for position, node in enumerate(sections):
         section: SitemapNode = node.get("section") or {}
         page: str = (section.get("path") or "").split("#", 1)[0]
         found: re.Match[str] | None = MODULE_IN_PAGE.search(page)
-        key: str
-        if is_chapter_opener(position, node):
-            key = "%s.0" % chapter_number
-        else:
-            number += 1
-            key = "%s.%d" % (chapter_number, number)
+        key: str | None = section.get("number") or (
+            "%s.0" % chapter_number if position == 0 else None
+        )
+        if key is None:
+            continue
         entries[key] = {
             "module": found.group(1) if found else "",
             "page": page,
