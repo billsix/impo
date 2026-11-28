@@ -199,6 +199,9 @@ def main(argv: list[str]) -> None:
         out = re.sub(r"\\surd(?![A-Za-z]) ?", "√", out)
         # the PDF's line break inside a wrapping table cell
         out = out.replace(r"\OScellbreak", r"\newline")
+        # the converter's spelling of a second space in an image file name;
+        # pandoc keeps a run of spaces in a file name as it stands
+        out = re.sub(r"(?<= )\\space ", " ", out)
         with open(path, "w", encoding="utf-8") as f:
             f.write(out)
 

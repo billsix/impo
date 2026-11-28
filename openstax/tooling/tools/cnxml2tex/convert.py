@@ -1757,7 +1757,7 @@ _NOWRAP_ENVS: set[str] = {
 # lines that are structural delimiters / restricted args -> leave untouched
 _SKIP_WRAP: re.Pattern[str] = re.compile(
     r"\\(begin|end)\{|"
-    r"\\(chapter|section|subsection|subsubsection|paragraph|part)\*?\{|"
+    r"\\(chapter|section|subsection|subsubsection|paragraph|part)\*?[\[{]|"
     r"\\(includegraphics|input|subfile|printanswerkey|tableofcontents|"
     r"frontmatter|mainmatter|backmatter|OSfrontmatter)\b"
 )
@@ -2342,7 +2342,20 @@ def render_section(node: _Element, labels: set[str], depth: int) -> str:
         return "\\setcounter{exercise}{0}\\%s*{%s}%s\n%s\n" % (lvl, head, lab, body)
     lvl = SECT.get(min(depth + 1, 4), "subsubsection")
     if title:
-        return "\\setcounter{exercise}{0}\\%s{%s}%s\n%s\n" % (lvl, title, lab, body)
+        # A footnote cannot travel into the contents and the running heads, so a
+        # title that carries one gives them a short form without it.
+        short: str = (
+            "[{%s}]" % _defootnote(title, drop=True).strip()
+            if "\\footnote{" in title
+            else ""
+        )
+        return "\\setcounter{exercise}{0}\\%s%s{%s}%s\n%s\n" % (
+            lvl,
+            short,
+            title,
+            lab,
+            body,
+        )
     return body
 
 
@@ -2407,8 +2420,14 @@ def render_equation(node: _Element, labels: set[str]) -> str:
     if _CELL_MODE:
         return "$%s$" % body.replace(_MNL, r"\,")
     if _MNL in body:  # explicit line breaks -> aligned display
-        rows: list[str] = [_align_row(r) for r in body.split(_MNL) if r.strip()]
-        body = "\\begin{aligned}\n%s\n\\end{aligned}" % " \\\\\n".join(rows)
+        pieces: list[str] = [r for r in body.split(_MNL) if r.strip()]
+        if len(pieces) == 1:
+            # One row has nothing to align with, and an alignment tab at its '='
+            # would land inside an array the row may hold.
+            body = pieces[0].strip()
+        else:
+            rows: list[str] = [_align_row(r) for r in pieces]
+            body = "\\begin{aligned}\n%s\n\\end{aligned}" % " \\\\\n".join(rows)
     unnful: bool = node.get("class", "") == "unnumbered"
     eid: str | None = node.get("id")
     referenced: bool = eid in labels
@@ -2418,15 +2437,32 @@ def render_equation(node: _Element, labels: set[str]) -> str:
 
 
 def _imgname(raw: str | None) -> str:
+    r"""The file name \includegraphics is given for a source image path.
+
+    TeX reads a run of spaces as one space, so each space after the first is
+    written as \space; the web build's preprocess.py turns it back into a space.
+
+    >>> _imgname("../../media/Exhibit 13-4 Response  Patterns.png")
+    'Exhibit 13-4 Response \\space Patterns.png'
+    >>> _imgname("../../media/CNX_Fig_01.svg")
+    'CNX_Fig_01.pdf'
+    """
     n: str = os.path.basename(raw or "")
     if n.lower().endswith(".svg"):
         n = n[:-4] + ".pdf"  # pdflatex can't embed SVG; the build converts it
-    return n
+    return re.sub(r"(?<= ) ", r"\\space ", n)
 
 
-def _defootnote(s: str) -> str:
-    """Captions are fragile moving arguments; a \\footnote inside one breaks
-    hyperref. Demote footnotes to parenthetical text (brace-matched)."""
+def _defootnote(s: str, drop: bool = False) -> str:
+    r"""Captions are fragile moving arguments; a \footnote inside one breaks
+    hyperref. Demote footnotes to parenthetical text (brace-matched), or leave
+    them out altogether when `drop` is set.
+
+    >>> _defootnote(r"Canvas\footnote{Based on \emph{work} by G.}")
+    'Canvas (Based on \\emph{work} by G.)'
+    >>> _defootnote(r"Canvas\footnote{Based on \emph{work} by G.}", drop=True)
+    'Canvas'
+    """
     needle: str = "\\footnote{"
     out: list[str] = []
     i: int = 0
@@ -2450,7 +2486,7 @@ def _defootnote(s: str) -> str:
             buf.append(ch)
             k += 1
         inner: str = "".join(buf).strip()
-        out.append(" (%s)" % inner if inner else "")
+        out.append(" (%s)" % inner if inner and not drop else "")
         i = k + 1
     return "".join(out)
 
