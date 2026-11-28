@@ -4,9 +4,14 @@
 # https://billsix.github.io/impo/<book>/ — the manual publish step behind
 # `make publish-pages`, run by the maintainer on the host.
 #
-#   bash tools/publish-pages.sh                        # every built book
-#   BOOKS="prealgebra-2e algebra-1" bash tools/publish-pages.sh   # a subset
+#   bash tools/publish-pages.sh                        # the books tools/pages-books.txt lists
+#   BOOKS="prealgebra-2e algebra-1" bash tools/publish-pages.sh   # these books
+#   BOOKS=all bash tools/publish-pages.sh              # every built book (over the limit)
 #   DRY_RUN=1 bash tools/publish-pages.sh              # stage only, no push
+#
+# All the web editions together are several times the GitHub Pages limit, so the
+# published set is a committed list, tools/pages-books.txt (one book per line;
+# tools/web-edition-sizes.py --books tools/pages-books.txt measures it).
 #
 # Stages output/pages/ (every chosen output/<book>/ plus a landing index.html
 # listing the books and their Release downloads), checks the staged size against
@@ -24,8 +29,13 @@ LIMIT_MB="${PAGES_LIMIT_MB:-1000}"
 REMOTE="${PAGES_REMOTE:-github}"
 RELEASE="https://github.com/billsix/impo/releases/latest/download"
 
+LIST=tools/pages-books.txt
+if [ -z "${BOOKS:-}" ]; then
+    # The committed list, without comments and blank lines.
+    BOOKS="$(sed -e 's/#.*//' "$LIST" | tr -s ' \t\n' ' ')"
+fi
 books=()
-if [ -n "${BOOKS:-}" ]; then
+if [ "$BOOKS" != all ]; then
     for b in $BOOKS; do
         [ -f "$OUT/$b/index.html" ] || { echo "not built: $OUT/$b/index.html (run make <folder>)" >&2; exit 2; }
         books+=("$b")
@@ -69,11 +79,10 @@ HTML
     done
     cat <<'HTML'
 </ul>
-<footer>The book content is © OpenStax and the respective authors, licensed
-<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> (sourced from
+<footer>The book content is © OpenStax and the respective authors (sourced from
 <a href="https://openstax.org">openstax.org</a>), except <em>Elementary Differential
-Equations</em> © William F. Trench, CC BY-NC-SA 3.0. Each book's "About This Edition"
-page gives its attribution. The conversion toolchain is MIT-licensed. Not affiliated
+Equations</em> © William F. Trench, CC BY-NC-SA 3.0. Each book is under the Creative
+Commons licence its own "About This Edition" page states, with its attribution. The conversion toolchain is MIT-licensed. Not affiliated
 with or endorsed by OpenStax.</footer>
 </body></html>
 HTML
@@ -84,7 +93,7 @@ echo "staged ${#books[@]} book(s) in $STAGE: ${size_mb} MB (limit ${LIMIT_MB} MB
 if [ "$size_mb" -gt "$LIMIT_MB" ]; then
     echo "over the GitHub Pages size limit; per book (MB):" >&2
     for b in "${books[@]}"; do echo "  $(( $(du -sk "$STAGE/$b" | cut -f1) / 1024 ))  $b" >&2; done
-    echo "publish a subset with BOOKS=\"...\" (see tasks/openstax-pages-size-budget.md)" >&2
+    echo "publish fewer books: BOOKS=\"...\" or $LIST (see tasks/reference/openstax/publishing.md)" >&2
     exit 1
 fi
 
