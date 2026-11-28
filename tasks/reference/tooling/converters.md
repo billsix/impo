@@ -331,6 +331,7 @@ the day each was added.
 | principles-accounting-bundle | 2 | none | 0 | raster |
 | principles-marketing | 1 | `#exercise/` | 662 | raster |
 | principles-of-management-bundle | 2 | none | 0 | raster |
+| entrepreneurship | 1 | none | 0 | raster |
 
 ("survey" = the scheme wasn't re-audited on the raw CNXML for that book; verify on first exercise-bearing build,
 the same way physics/biology turned out to have `#ost/api/ex/`.)
