@@ -78,6 +78,7 @@ confirmed on each book's first build.
 - `osbooks-business-ethics/` — *Business Ethics* (61 modules, 449-page PDF), added 2026-11-28: 196 embedded exercises, not cached yet (the maintainer's fetch); raster figures; built in one pass with no toolchain change.
 - `osbooks-introduction-business/` — *Introduction to Business 2e* (153 modules, 842-page PDF), added 2026-11-28: no embedded exercises; raster figures; built in one pass with no toolchain change; its upstream `LICENSE` file says CC BY 4.0 while the collection and openstax.org say CC BY-NC-SA 4.0.
 - `osbooks-principles-accounting-bundle/` — *Principles of Accounting, Volume 1: Financial Accounting* (104 modules, 1,081-page PDF); *Principles of Accounting, Volume 2: Managerial Accounting* (81 modules, 783-page PDF), added 2026-11-28: no embedded exercises; raster figures; built in one pass with no toolchain change; 2,034 figures, most of them images of accounting tables.
+- `osbooks-principles-marketing/` — *Principles of Marketing* (132 modules, 831-page PDF), added 2026-11-28: 662 embedded exercises, not cached yet (the maintainer's fetch); raster figures; it brought the one-row display equation to the converter.
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -128,6 +129,7 @@ whose licence it does not know.
 | osbooks-business-ethics | CC BY-NC-SA 4.0 | yes |
 | osbooks-introduction-business | CC BY-NC-SA 4.0 | yes, but it is the text of CC BY 4.0 |
 | osbooks-principles-accounting-bundle (2 books) | CC BY-NC-SA 4.0 | yes |
+| osbooks-principles-marketing | CC BY-NC-SA 4.0 | yes |
 
 Every collection inside a bundle declares the same licence as its siblings. No module file carries licence
 metadata. The exercise caches are a separate case: see "Copyright / licensing" in `openstax/CLAUDE.md`.
