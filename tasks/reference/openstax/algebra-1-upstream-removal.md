@@ -119,8 +119,7 @@ OpenStax**; the book's page gives a content-reuse request form (https://openstax
 ## Where the work is tracked
 
 - `tasks/archive/impo/2026/11/28/openstax-algebra-1-upstream-gone-backup-plan.md`: the done-record of the
-  steps (push the mirror, compare, build from it). Until the archive move is committed the file is at
-  `tasks/openstax-algebra-1-upstream-gone-backup-plan.md`.
+  steps (push the mirror, compare, build from it).
 - `tools/upstream-books-gone.txt`: this book's line; `tools/survey-upstream-books.py` shows it as a "gone"
   row in `tasks/reference/openstax/upstream-book-repositories.md`.
 - `tasks/openstax-books-buildable-forever-source-backup-and-licences.md`: the wider decision to mirror every
