@@ -62,7 +62,8 @@ folder. Two book families exist, plus the `study/` family of material built from
   same sitting (a missing mirror, a vanished upstream, a book that no longer converts) gets a task, never a
   note in passing. `fetch.sh` falls back to the mirror by itself; `tools/mirror-upstreams.sh check` reports
   which mirrors exist and hold their pin, and `tools/mirror-upstreams.sh push` (the maintainer's, with his
-  GitHub credentials) updates them. After a sync, also `make image-export` in one book folder and keep the
+  GitHub credentials) updates them. After a sync, also `make image-export` in any book folder (every folder builds the one image
+  `impo-openstax-toolchain`, so the tar is the same from each) and keep the
   tar: the image is the build's last outside dependency. Algebra 1's mirror exists (2026-11-27); the
   others are tracked in `tasks/openstax-books-buildable-forever-source-backup-and-licences.md`.
 - **Unsigned commits in checkouts are authorized/automated.** The maintainer's gitconfig enables commit
@@ -95,6 +96,9 @@ folder. Two book families exist, plus the `study/` family of material built from
     name the pin its `fetch.sh` carries. Book names are given without the `osbooks-` prefix.
   - `add-book.sh <name> "<Title>"` — creates a new `openstax/osbooks-<name>/` folder from
     `tools/book-template/`, pinned at the upstream head (the steps are "Adding a book" in `openstax/CLAUDE.md`).
+  - `fill-book-folders.py` — rewrites every book folder's `apply.sh` and `Makefile` from
+    `tools/book-template/`, keeping each Makefile's title line; run it after changing the template (a second
+    run changes nothing).
   - `survey-upstream-books.py` — lists every public `osbooks*` repository of the `openstax` organisation on
     GitHub with its books, language, licence, size, whether impo builds it, whether the maintainer's mirror
     exists, and whether he has rejected it (decisions and reasons: `tools/upstream-books-rejected.txt`). A

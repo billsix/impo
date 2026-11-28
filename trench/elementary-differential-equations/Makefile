@@ -13,7 +13,7 @@
 .DEFAULT_GOAL := help
 
 CONTAINER_CMD ?= $(shell command -v podman >/dev/null 2>&1 && echo podman || echo docker)
-CONTAINER_NAME = trench-elementary-differential-equations
+CONTAINER_NAME = impo-openstax-toolchain
 
 TOOLING  = ../../openstax/tooling
 CHECKOUT = checkout

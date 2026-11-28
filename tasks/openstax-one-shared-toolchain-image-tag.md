@@ -1,61 +1,54 @@
-# Give the OpenStax toolchain image one name, shared by every book folder
+# The OpenStax toolchain image has one name, shared by every book folder
 
-**Status:** proposed — needs go-ahead
-**Priority:** 6
-**Difficulty:** 2
-**Created:** 2026-11-28 (William Emerison Six <billsix@gmail.com>: "yes, write it up as a proposed task, but
-not part of the current branch, it will be off of master").
+**Done 2026-11-28** (agent. Created the same day by William Emerison Six <billsix@gmail.com>: "yes, write it
+up as a proposed task"; the name, "sure that name is fine"; the go-ahead, "can you now do that task to make
+it all one image?").
 
-## BLUF
+## What was wrong
 
-Every book folder's `Makefile` builds its own image tag (`osbooks-<name>`) from the same Dockerfile and the
-same build context, `openstax/tooling/`. The 45 tags name one image, so a Dockerfile change leaves every
-folder whose `make image` has not run since holding its tag on the old image, and the old 6.6 GB image stays
-on disk while any tag points at it. Done means all 45 book Makefiles and the trench Makefile build and run one
-shared tag, the tools and docs that name a per-book image use it, and one book is built with it.
+Every book folder's `Makefile` built its own image tag (`osbooks-<name>`) from the same Dockerfile and the
+same build context, `openstax/tooling/`. The 45 tags named one image, so after a Dockerfile change each
+folder whose `make image` had not run since kept its tag on the old image, and the old 6.6 GB image stayed
+on disk while any tag pointed at it. Seen on 2026-11-28: three folders' tags on one image ID, and one of
+them a second time on an older ID.
 
-## Context
+## What changed
 
-- Read first: "Per-book folder contract" and "The shared toolchain" in `openstax/CLAUDE.md`.
-- Seen 2026-11-28: `podman images` listed `osbooks-principles-finance`, `osbooks-business-ethics` and
-  `osbooks-principles-marketing` with the same image ID, 6.62 GB, and `osbooks-principles-marketing` a second
-  time with an older ID.
-- Where the name is set: `CONTAINER_NAME = @NAME@` in `tools/book-template/Makefile`, filled per folder by
-  `tools/add-book.sh`; `CONTAINER_NAME = trench-elementary-differential-equations` in
-  `trench/elementary-differential-equations/Makefile`. The name is used by `image` (`build -t`), by every
-  `run`, and by `image-export` (the tar's file name starts with it).
-- What already limits the harm: `pdf`, `html`, `epub` and the other build targets depend on `image`, so a
-  normal build re-tags first (a cache hit). The entrypoint scripts are bind-mounted at run time and the
-  converter and styles reach the build through the checkout overlay, so only a Dockerfile-level change (a
-  package, a font, TeX Live) needs a new image.
-- Not changed by this task: `make image` still runs a cache-hit `podman build` before every build target. A
-  GitHub Actions release job builds the image in its own runner under either naming.
-- The 45 `apply.sh` and `Makefile` copies are filled from `tools/book-template/` (since 2026-11-28;
-  `tasks/archive/impo/2026/11/28/openstax-build-refresh-overlay.md`). Fill them the same way here: change
-  the template, then rewrite each folder's `Makefile` from it, keeping the folder's first line (its title).
-  The script that did it last time is
-  `git show 1279ecb9:tasks/adhoc/openstax-build-refresh-overlay/regenerate_from_template.py`.
+- **`CONTAINER_NAME = impo-openstax-toolchain`** in `tools/book-template/Makefile`, in all 45
+  `openstax/osbooks-*/Makefile` files and in `trench/elementary-differential-equations/Makefile`. The name
+  is used by `image` (`build -t`), by every `run`, and by `image-export`, whose tar is now
+  `impo-openstax-toolchain-<date>.tar` from any folder. The trench `image` target still runs that book's own
+  tools gate after the build.
+- **`tools/fill-book-folders.py`** (new) rewrites every book folder's `apply.sh` and `Makefile` from the
+  template, keeping each Makefile's title line. It is the one-off script of
+  `tasks/archive/impo/2026/11/28/openstax-build-refresh-overlay.md`, kept this time because the fan-out was
+  needed twice in a day. Run before the template changed it rewrote 0 files; after, 45; again, 0.
 
-## Plan
+## Not changed
 
-1. Set the name `impo-openstax-toolchain` in `tools/book-template/Makefile`; keep
-   `@NAME@` only where the folder's own name is still wanted (the comment line).
-2. Refill the 45 `openstax/osbooks-*/Makefile` files from the template and set the same name in the trench
-   Makefile (its `image` target also runs that book's tools gate, which stays).
-3. Update what names a per-book image: root `CLAUDE.md` (`make image-export` "in one book folder"),
-   `openstax/CLAUDE.md`, `tasks/openstax-books-buildable-forever-source-backup-and-licences.md` and
-   `tasks/openstax-emoji-font-in-the-toolchain-image.md`; `grep -rn 'CONTAINER_NAME\|osbooks-.* image'` over
-   `tools/`, `.github/` and the docs finds the rest.
-4. Verify: `make image` in two folders gives one tag and one image ID; `make dist` in one OpenStax folder and
-   `make pdf` in the trench folder; `make image-export` writes `impo-openstax-toolchain-<date>.tar`.
-5. Tell the maintainer the one-time cleanup, which is his: remove the old tags
-   (`podman images --format '{{.Repository}}' | grep '^localhost/osbooks-' | xargs podman rmi`) on each
-   machine, and after loading a tar saved before this change, `podman tag <old name> impo-openstax-toolchain`.
+`make image` still runs a cache-hit `podman build` before every build target. A GitHub Actions release job
+builds the image in its own runner as before. `tools/add-book.sh` needed no change: the template's `@NAME@`
+now occurs only where a folder's own name is meant.
 
-## Decisions
+## Verification (2026-11-28, nested)
 
-- **The name is `impo-openstax-toolchain`** (William Emerison Six <billsix@gmail.com>, 2026-11-28: "sure that name is fine").
+- `make image` in `openstax/osbooks-business-ethics` and then in `openstax/osbooks-statistics`: one tag,
+  `localhost/impo-openstax-toolchain`, one image ID.
+- `make dist` in `openstax/osbooks-business-ethics`: PDF, EPUB and HTML built with that image.
+- `make pdf` in `trench/elementary-differential-equations`: built with that image.
+- `ruff check` and `ruff format --check` pass on the new tool.
+- `make image-export` was not run (it writes a 6.6 GB tar); its recipe differs only in the name.
 
-## Open questions
+## The maintainer's one-time cleanup
 
-None. The go-ahead to do the work is still needed.
+- Remove the old per-book tags on each machine that has them:
+  `podman images --format '{{.Repository}}' | grep -E '^localhost/(osbooks-|trench-elementary)' | sort -u | xargs podman rmi`.
+  In the sandbox they are still there (two image IDs under `osbooks-business-ethics` alone), some of them in
+  the read-only host store, which only the host can remove.
+- A tar saved before this change loads under its old per-book name: `podman tag <old name>
+  impo-openstax-toolchain` after `make image-import`.
+
+## Recorded
+
+Root `CLAUDE.md` ("Contracts", the image export; `tools/`), `openstax/CLAUDE.md` ("Per-book folder
+contract"), `tasks/openstax-books-buildable-forever-source-backup-and-licences.md`.

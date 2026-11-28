@@ -86,8 +86,9 @@ The two layers have two different owners, and imps must not blur them:
   `fetch-exercises`, `shell`), so a toolchain edit cannot miss a build. It copies only what differs and
   touches `checkout/.applied` only then; the converted LaTeX depends on that stamp, so an unchanged
   toolchain forces no reconvert. `make apply` runs it alone. The 45 `apply.sh` and `Makefile` copies are
-  filled from `tools/book-template/`; change the template and every folder together.
-- `build.sh` / `Makefile` — the container build: `make image` (from `../tooling/Dockerfile`), then
+  filled from `tools/book-template/`; change the template, then run `python3 tools/fill-book-folders.py`.
+- `build.sh` / `Makefile` — the container build: `make image` (from `../tooling/Dockerfile`; every folder and
+  the trench book tag the one image `impo-openstax-toolchain`), then
   `make convert`/`pdf`/`html`/`epub`/`dist` running the toolchain against `checkout/` mounted at the
   fixed path `/book`. `PODMAN_RUN_FLAGS` threaded into every `run` (never `build`), per the sandbox
   nested-podman convention.

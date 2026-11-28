@@ -10,7 +10,9 @@
 .DEFAULT_GOAL := help
 
 CONTAINER_CMD ?= $(shell command -v podman >/dev/null 2>&1 && echo podman || echo docker)
-CONTAINER_NAME = osbooks-astronomy
+# One image for every book folder and the trench book: they all build it from
+# ../tooling/Dockerfile, so one name means one image, current or not.
+CONTAINER_NAME = impo-openstax-toolchain
 
 TOOLING  = ../tooling
 CHECKOUT = checkout
