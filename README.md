@@ -27,12 +27,14 @@ make anatomy-physiology      # [HOST] one book folder (names: make list-books)
 
 ```sh
 pip install ghp-import                              # [HOST] once
+make prealgebra-bundle college-algebra-bundle calculus-bundle  # [HOST] build the listed books' folders
 DRY_RUN=1 make publish-pages                        # [HOST] stage output/pages/ and print its size
-make publish-pages BOOKS="prealgebra-2e algebra-1"  # [HOST] push those books' sites to gh-pages
+make publish-pages                                  # [HOST] push the books in tools/pages-books.txt
+make publish-pages BOOKS="prealgebra-2e algebra-1"  # [HOST] push these books instead
 ```
 
-> The full set (~4.5 GB) is over Pages' 1 GB limit, so `make publish-pages` refuses it; publish a
-> subset with `BOOKS=`. Details: `tasks/reference/openstax/publishing.md`.
+> All the web editions together (~9 GB) are over Pages' 1 GB limit, so the site holds the books listed in
+> `tools/pages-books.txt` (820 MB on 2026-11-28). Details: `tasks/reference/openstax/publishing.md`.
 
 ## Study material (`study/`)
 

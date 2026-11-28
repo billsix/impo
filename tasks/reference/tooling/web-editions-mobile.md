@@ -14,17 +14,18 @@ what is TRUE, not a work log. Read before touching `openstax/tooling/tools/pando
 - Left book-TOC is baked per page by `build_nav.py`; the right "on this page" + scrollspy + mobile
   drawer are `osbook-web.js`'s job (built from the page's own `h2/h3/h4[id]`).
 
-## PROPAGATION — the #1 cause of "I fixed it but it still looks broken"
+## PROPAGATION — how an edit reaches a built book
 
-An edit to the shared assets does **not** reach a built book until the book's **checkout** is refreshed.
+An edit to the shared assets reaches a built book through the book's **checkout**, which every build refreshes.
 The chain (verified): `apply.sh` copies `../tooling/tools` → `checkout/tools/`; then `html.sh:61,68` copies
 `$ROOT/tools/pandoc/osbook-web.css|.js` (where `$ROOT=/book`, the **checkout**) into the output. The
 Makefile mounts only `/book` live (+ entrypoint scripts), NOT `tools/pandoc`. So:
 
-- **You MUST `./apply.sh` before `make html`** after editing the shared assets, or the build serves the
-  stale pre-edit copy. This bit three times (colophon PDF, colophon web, the mobile fix). The durable fix
-  is proposed in `tasks/openstax-build-refresh-overlay.md` (make the build auto-`apply`).
-- **Browser cache** is the second stale trap: the stylesheet is always named `osbook-web.css`, so a phone
+- **`make html` runs `./apply.sh` itself** (since 2026-11-28; every build target does), so the output
+  holds the edit. Before that the step was manual and a forgotten one served the stale copy three times
+  (colophon PDF, colophon web, the mobile fix):
+  `tasks/archive/impo/2026/11/28/openstax-build-refresh-overlay.md`.
+- **Browser cache** is the remaining stale trap: the stylesheet is always named `osbook-web.css`, so a phone
   that visited before serves the CACHED old CSS even after a correct rebuild → hard-refresh / private tab
   to test. (A cache-buster `?v=<sha>` on the link would end this; not yet done.)
 - A green desktop + stale mobile is almost always one of these two, not a code bug.
@@ -116,5 +117,5 @@ JS-created only when the page has an on-this-page. Both close on scrim-tap and l
 
 ## Pointers
 - `tasks/archive/impo/2026/09/20/openstax-html-mobile-verify.md` — the fix task (verification record).
-- `tasks/openstax-build-refresh-overlay.md` — the proposed durable fix for the stale-checkout trap.
+- `tasks/archive/impo/2026/11/28/openstax-build-refresh-overlay.md` — the fix for the stale-checkout trap (every build runs `apply.sh`).
 - Furo mechanism reference: github.com/pradyunsg/furo `src/furo/assets/styles/_scaffold.sass`.

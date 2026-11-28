@@ -33,7 +33,7 @@ $(BOOKS):
 list-books: ## List the book folder names `make <book>` accepts
 	@printf '%s\n' $(BOOKS)
 
-publish-pages: ## [HOST] Publish output/<book>/ sites to gh-pages (BOOKS="a b" subset, DRY_RUN=1 stage only)
+publish-pages: ## [HOST] Publish the sites tools/pages-books.txt lists to gh-pages (BOOKS="a b" others, DRY_RUN=1 stage only)
 	bash tools/publish-pages.sh
 
 clean-output: ## Remove the collected output/ tree (book folders' own outputs are kept)

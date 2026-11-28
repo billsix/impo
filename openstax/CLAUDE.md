@@ -82,6 +82,11 @@ The two layers have two different owners, and imps must not blur them:
   `PIN_SHA` live here; the pin is the upstream default-branch head at the last sync, or at the day the
   book was added. Sets `commit.gpgsign false` in the checkout (sandbox signing fails). Idempotent.
 - `apply.sh` — overlay `../tooling/` onto `checkout/` (the "apply" step; see above). Guarded/idempotent.
+  The Makefile runs it before every build (`make convert`/`pdf`/`html`/`epub`/`dist`, and `format`, `test`,
+  `fetch-exercises`, `shell`), so a toolchain edit cannot miss a build. It copies only what differs and
+  touches `checkout/.applied` only then; the converted LaTeX depends on that stamp, so an unchanged
+  toolchain forces no reconvert. `make apply` runs it alone. The 45 `apply.sh` and `Makefile` copies are
+  filled from `tools/book-template/`; change the template and every folder together.
 - `build.sh` / `Makefile` — the container build: `make image` (from `../tooling/Dockerfile`), then
   `make convert`/`pdf`/`html`/`epub`/`dist` running the toolchain against `checkout/` mounted at the
   fixed path `/book`. `PODMAN_RUN_FLAGS` threaded into every `run` (never `build`), per the sandbox
@@ -152,7 +157,8 @@ Book-agnostic; the book is always mounted at the fixed path **`/book`** so nothi
   for the OpenStax books).
 - `pyproject.toml`, `templates/exercises-COPYRIGHT`.
 
-**Changing the toolchain:** edit it here once; each book picks it up on its next `apply.sh`. This is
+**Changing the toolchain:** edit it here once; each book picks it up on its next `make` (every build
+target runs the book's `apply.sh` first). This is
 the whole reason it's shared — one place to maintain the converter and the house style.
 **Two traps when changing it.** `entrypoint/*.sh` are bind-mounted into the build container, and bash reads a
 script as it runs, so editing one while a build is running breaks that build (2026-11-27: `pdf.sh` was edited
@@ -165,7 +171,7 @@ converter landscape (the 5 historical per-book converter versions merged into on
 **`cross-references.md`** — how cross-refs become links (PDF cleveref / HTML xref.lua), and why literal-text
 internal references can't be reliably auto-linked; **`cross-book-links.md`** — links between books (the IA
 references, the Prerequisites boxes, the page index and its official-numbering rule); and **`web-editions-mobile.md`** — the web theme's
-mobile/responsive layer (osbook-web.css/.js): the apply.sh-before-build propagation trap, the MathML
+mobile/responsive layer (osbook-web.css/.js): how a shared-asset edit reaches a built book, the MathML
 horizontal-overflow root cause + fix, the drawer/on-this-page behaviour, and how to verify with a real
 headless browser (read before touching osbook-web.css/.js).
 

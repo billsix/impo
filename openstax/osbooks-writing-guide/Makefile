@@ -5,7 +5,7 @@
 # ../tooling/Dockerfile (context ../tooling) and every target runs it against the
 # fetched-and-overlaid book checkout, bind-mounted at the fixed path /book.
 #
-# First run:  ./fetch.sh && ./apply.sh && make dist
+# First run:  ./fetch.sh && make dist   (every build runs ./apply.sh itself)
 
 .DEFAULT_GOAL := help
 
@@ -14,6 +14,11 @@ CONTAINER_NAME = osbooks-writing-guide
 
 TOOLING  = ../tooling
 CHECKOUT = checkout
+
+# The overlay stamp. Its rule runs ./apply.sh before every build, so a toolchain
+# edit in ../tooling/ always reaches the checkout; apply.sh touches the stamp only
+# when it copied something, so an unchanged toolchain forces no reconvert.
+APPLIED = $(CHECKOUT)/.applied
 
 # Extra flags for every container `run`. Auto-set when running nested inside a
 # runClaudeInContainer/runCrushInContainer sandbox (which exports NESTED_PODMAN=1,
@@ -54,8 +59,8 @@ RUN = $(CONTAINER_CMD) run --rm $(PODMAN_RUN_FLAGS) $(IMPO_PROVENANCE) $(FILES_T
 CNXML_SOURCES := $(shell find $(CHECKOUT)/collections $(CHECKOUT)/modules -type f \
 	\( -name '*.cnxml' -o -name '*.collection.xml' \) 2>/dev/null)
 
-.PHONY: image-export image-import all image shell pdf convert html html-single epub dist fetch-exercises \
-	format test clean help
+.PHONY: image-export image-import all image apply shell pdf convert html html-single epub dist fetch-exercises \
+	format test clean help FORCE
 
 all: image pdf ## Build the image and the collection PDF
 
@@ -64,17 +69,24 @@ dist: pdf epub html ## Build every output format (PDF, EPUB, HTML)
 image: ## Build the shared toolchain image (context ../tooling)
 	$(CONTAINER_CMD) build -t $(CONTAINER_NAME) $(TOOLING)
 
-shell: image ## Interactive shell in the build container (book at /book)
+apply: $(APPLIED) ## Overlay ../tooling/ onto checkout/ (every build target does this itself)
+
+$(APPLIED): FORCE
+	./apply.sh
+
+FORCE:
+
+shell: image $(APPLIED) ## Interactive shell in the build container (book at /book)
 	$(CONTAINER_CMD) run -it --rm $(PODMAN_RUN_FLAGS) $(FILES_TO_MOUNT) \
 		$(CONTAINER_NAME) /usr/local/bin/shell.sh
 
 pdf: image $(CHECKOUT)/latex/.converted ## Build the collection master PDF into checkout/output/
 	$(RUN) /usr/local/bin/pdf.sh
 
-# Stamp guarding the generated tex: reconvert only when a CNXML source (or the
-# converter) is newer. Order-only '| image' builds the image first without
+# Stamp guarding the generated tex: reconvert only when a CNXML source is newer
+# or the overlay changed. Order-only '| image' builds the image first without
 # coupling the stamp to the image's (phony) state.
-$(CHECKOUT)/latex/.converted: $(CNXML_SOURCES) $(TOOLING)/tools/cnxml2tex/convert.py $(TOOLING)/entrypoint/convert.sh | image
+$(CHECKOUT)/latex/.converted: $(CNXML_SOURCES) $(APPLIED) $(TOOLING)/entrypoint/convert.sh | image
 	$(RUN) /usr/local/bin/convert.sh
 	@touch $@
 
@@ -89,13 +101,13 @@ html-single: image $(CHECKOUT)/latex/.converted ## Build the legacy single-file 
 epub: image $(CHECKOUT)/latex/.converted ## Build the EPUB edition -> checkout/output/<master>.epub
 	$(RUN) /usr/local/bin/epub.sh
 
-fetch-exercises: image ## Download os-embed exercises (network; anatomy has none -> no-op)
+fetch-exercises: image $(APPLIED) ## Download os-embed exercises (network; anatomy has none -> no-op)
 	$(RUN) /usr/local/bin/fetch-exercises.sh
 
-format: image ## (container) ruff --fix + ruff format + ty check over tools/*.py
+format: image $(APPLIED) ## (container) ruff --fix + ruff format + ty check over tools/*.py
 	$(RUN) /usr/local/bin/format.sh
 
-test: image ## (container) run the converter unit tests + tools/ doctests (pytest)
+test: image $(APPLIED) ## (container) run the converter unit tests + tools/ doctests (pytest)
 	$(RUN) -c 'cd /book && python3 -m pytest -q'
 
 image-export: ## Save the built image to a timestamped tar here (the toolchain, kept for offline builds)

@@ -4,7 +4,7 @@
 **Priority:** 6
 **Difficulty:** 3
 **Created:** 2026-11-21 (William Emerison Six <billsix@gmail.com>), split out of
-`tasks/openstax-pages-size-budget.md` ("Also noted here").
+`tasks/archive/impo/2026/11/28/openstax-pages-size-budget.md` ("Also noted here").
 
 ## BLUF
 

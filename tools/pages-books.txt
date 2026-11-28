@@ -1,0 +1,16 @@
+# The books `make publish-pages` publishes when BOOKS is not given: one book
+# (collection) name per line. GitHub Pages refuses a site over 1 GB and all the
+# web editions together are about 9 GB, so the site holds this chosen set and
+# every other book is a Release download only. Measure a changed list with
+#   python3 tools/web-edition-sizes.py --books tools/pages-books.txt
+# and keep it under about 900 MB (the staged tree is somewhat larger than the
+# sum of its files). Reasons and measurements: tasks/reference/openstax/publishing.md.
+#
+# The mathematics ladder, whose books link each other's sections:
+prealgebra-2e
+elementary-algebra-2e
+intermediate-algebra-2e
+college-algebra-2e
+calculus-volume-1
+calculus-volume-2
+calculus-volume-3

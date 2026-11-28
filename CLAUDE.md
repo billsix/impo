@@ -82,9 +82,11 @@ folder. Two book families exist, plus the `study/` family of material built from
   - **`publish-pages.sh`** (behind `make publish-pages`, run by the maintainer on the host) — stages
     the collected `output/<book>/` sites plus a landing page into `output/pages/` and pushes them with
     `ghp-import --no-history` to impo's `gh-pages` branch (billsix.github.io/impo/<book>/); refuses to
-    push over the 1 GB Pages limit (`BOOKS="..."` publishes a subset, `DRY_RUN=1` only stages). Each
+    push over the 1 GB Pages limit. All the web editions together are about 9 GB, so it publishes the
+    books `tools/pages-books.txt` lists (`BOOKS="..."` names others, `DRY_RUN=1` only stages);
+    `tools/web-edition-sizes.py` measures the built sites. Each
     book's first page links its PDF/EPUB/`<book>-html.zip` on the latest GitHub Release. Design and the
-    size problem: `tasks/reference/openstax/publishing.md`.
+    size limit: `tasks/reference/openstax/publishing.md`.
   - **The pin-sync scripts** (promoted 2026-11-26 from the sync recorded in
     `tasks/archive/impo/2026/11/26/openstax-sync-upstream-pins-2026-11.md`): `bump-pins.sh <book> …` sets each
     book's `PIN_SHA` to its upstream head and moves the existing `checkout/` to it in place;

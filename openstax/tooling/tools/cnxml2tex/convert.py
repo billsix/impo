@@ -1652,6 +1652,9 @@ def inline_element(node: _Element, labels: set[str]) -> str:
 # module-scoped label state (CNXML reuses fs-id values across modules, so a
 # bare id is NOT globally unique -> prefix every label with its owning module)
 _CURMOD: str = ""  # module currently being converted
+# True while the module being converted is one OpenStax does not number (see
+# is_unnumbered_module): its own heading and the headings inside it are starred.
+_UNNUMBERED_MODULE: bool = False
 _LOCAL_IDS: set[str] = set()  # ids defined in the current module
 _ID2MOD: dict[
     str, str
@@ -2341,6 +2344,8 @@ def render_section(node: _Element, labels: set[str], depth: int) -> str:
         lvl: str = SECT.get(min(depth + 1, 3), "subsection")
         return "\\setcounter{exercise}{0}\\%s*{%s}%s\n%s\n" % (lvl, head, lab, body)
     lvl = SECT.get(min(depth + 1, 4), "subsubsection")
+    if title and _UNNUMBERED_MODULE:
+        return "\\setcounter{exercise}{0}\\%s*{%s}%s\n%s\n" % (lvl, title, lab, body)
     if title:
         # A footnote cannot travel into the contents and the running heads, so a
         # title that carries one gives them a short form without it.
@@ -3065,12 +3070,58 @@ def parse(path: str) -> _ElementTree:
     return etree.parse(path, p)
 
 
+def is_unnumbered_module(document_class: str) -> bool:
+    """True for a module OpenStax leaves out of its section numbering.
+
+    OpenStax marks a chapter's opening module and a book's preface on the
+    module's <document> element, and numbers the sections that follow from x.1.
+
+    >>> is_unnumbered_module("introduction")
+    True
+    >>> is_unnumbered_module("preface")
+    True
+    >>> is_unnumbered_module("appendix")
+    False
+    >>> is_unnumbered_module("")
+    False
+    """
+    return bool({"introduction", "intro", "preface"} & set(document_class.split()))
+
+
+def module_heading(command: str, title: str, mid: str, unnumbered: bool) -> str:
+    r"""The sectioning line that opens a module.
+
+    An unnumbered module keeps its line in the contents and, at section level,
+    in the running head. The label comes straight after the heading, where the
+    web leg reads it as the page's id.
+
+    >>> module_heading("section", "Roots", "m2", False)
+    '\\section{Roots}\\label{mod:m2}'
+    >>> module_heading("section", "Introduction", "m1", True)  # doctest: +NORMALIZE_WHITESPACE
+    '\\section*{Introduction}\\label{mod:m1}\\addcontentsline{toc}{section}{Introduction}\\markright{Introduction}'
+    >>> module_heading("subsection", "Introduction", "m1", True)
+    '\\subsection*{Introduction}\\label{mod:m1}\\addcontentsline{toc}{subsection}{Introduction}'
+    """
+    if not unnumbered:
+        return "\\%s{%s}\\label{mod:%s}" % (command, title, mid)
+    mark: str = "\\markright{%s}" % title if command == "section" else ""
+    return "\\%s*{%s}\\label{mod:%s}\\addcontentsline{toc}{%s}{%s}%s" % (
+        command,
+        title,
+        mid,
+        command,
+        title,
+        mark,
+    )
+
+
 def convert_module(mid: str, standalone: bool = True) -> str:
-    global _CURMOD, _LOCAL_IDS
+    global _CURMOD, _LOCAL_IDS, _UNNUMBERED_MODULE
     path: str = os.path.join(MODULES, mid, "index.cnxml")
     tree: _ElementTree = parse(path)
     root: _Element = tree.getroot()
     _CURMOD = mid
+    _UNNUMBERED_MODULE = is_unnumbered_module(root.get("class") or "")
     _LOCAL_IDS = {el.get("id") for el in root.iter() if el.get("id")}
     labels: set[str] = collect_targets(tree)
     labels |= _ALL_TARGETS  # also label cross-module reference targets
@@ -3138,10 +3189,8 @@ def convert_module(mid: str, standalone: bool = True) -> str:
     prereq_tex: str = crossbook.prerequisites_box(mid)
     if prereq_tex:
         body_all = prereq_tex + "\n" + body_all
-    section_block: str = "\\setcounter{exercise}{0}\\%s{%s}\\label{mod:%s}\n\n%s\n" % (
-        sec_cmd,
-        title,
-        mid,
+    section_block: str = "\\setcounter{exercise}{0}%s\n\n%s\n" % (
+        module_heading(sec_cmd, title, mid, _UNNUMBERED_MODULE),
         body_all,
     )
 
