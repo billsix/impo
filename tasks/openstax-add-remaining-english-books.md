@@ -1,6 +1,6 @@
 # Add the remaining English OpenStax books to impo (umbrella: 29 repositories, 42 books)
 
-**Status:** in progress — 21 of 29 repositories done and archived by 2026-11-27; 8 (economics and business) not started
+**Status:** in progress — all 29 repositories added and built by 2026-11-28; 26 done and archived, 3 (Principles of Finance, Principles of Marketing, Business Ethics) waiting for the maintainer's exercise fetch
 **Priority:** 4
 **Difficulty:** 7 (each book is small; there are 29 of them, and each can meet markup the converter has not seen)
 **Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said. look through all reference docs, and look at what we commited to do the porting before, and make a task per book").
@@ -66,16 +66,16 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 
 **Economics, business and law**
 
-- [ ] `tasks/openstax-add-book-business-ethics.md` — one book: `business-ethics` (CC BY-NC-SA 4.0, 93 MB)
+- [ ] `tasks/openstax-add-book-business-ethics.md` — one book: `business-ethics` (CC BY-NC-SA 4.0, 93 MB); folder added and built 2026-11-28, waiting for the maintainer's exercise fetch
 - [x] `tasks/archive/impo/2026/11/27/openstax-add-book-business-law.md` — one book: `business-law-i-essentials-2e` (CC BY-NC-SA 4.0, 12 MB), done 2026-11-27
-- [ ] `tasks/openstax-add-book-entrepreneurship.md` — one book: `entrepreneurship` (CC BY-NC-SA 4.0, 123 MB)
-- [ ] `tasks/openstax-add-book-introduction-business.md` — one book: `introduction-business-2e` (CC BY 4.0, 225 MB)
+- [x] `tasks/archive/impo/2026/11/28/openstax-add-book-entrepreneurship.md` — one book: `entrepreneurship` (CC BY-NC-SA 4.0, 123 MB), done 2026-11-28
+- [x] `tasks/archive/impo/2026/11/28/openstax-add-book-introduction-business.md` — one book: `introduction-business-2e` (CC BY 4.0, 225 MB), done 2026-11-28
 - [x] `tasks/archive/impo/2026/11/27/openstax-add-book-introduction-intellectual-property.md` — one book: `introduction-intellectual-property` (CC BY 4.0, 30 MB), done 2026-11-27
-- [ ] `tasks/openstax-add-book-principles-accounting-bundle.md` — 2 books: `principles-financial-accounting`, `principles-managerial-accounting` (CC BY-NC-SA 4.0, 258 MB)
-- [ ] `tasks/openstax-add-book-principles-economics-bundle.md` — 5 books: `principles-economics-3e`, `principles-macroeconomics-3e`, `principles-microeconomics-3e`, `principles-macroeconomics-ap-courses-2e`, `principles-microeconomics-ap-courses-2e` (CC BY-NC-SA 4.0, 84 MB)
-- [ ] `tasks/openstax-add-book-principles-finance.md` — one book: `principles-finance-2e` (CC BY-NC-SA 4.0, 38 MB)
-- [ ] `tasks/openstax-add-book-principles-marketing.md` — one book: `principles-marketing` (CC BY-NC-SA 4.0, 61 MB)
-- [ ] `tasks/openstax-add-book-principles-of-management-bundle.md` — 2 books: `principles-management`, `organizational-behavior` (CC BY-NC-SA 4.0, 79 MB)
+- [x] `tasks/archive/impo/2026/11/28/openstax-add-book-principles-accounting-bundle.md` — 2 books: `principles-financial-accounting`, `principles-managerial-accounting` (CC BY-NC-SA 4.0, 258 MB), done 2026-11-28
+- [x] `tasks/archive/impo/2026/11/28/openstax-add-book-principles-economics-bundle.md` — 5 books: `principles-economics-3e`, `principles-macroeconomics-3e`, `principles-microeconomics-3e`, `principles-macroeconomics-ap-courses-2e`, `principles-microeconomics-ap-courses-2e` (CC BY-NC-SA 4.0, 84 MB), done 2026-11-28
+- [ ] `tasks/openstax-add-book-principles-finance.md` — one book: `principles-finance-2e` (CC BY-NC-SA 4.0, 38 MB); folder added and built 2026-11-28, waiting for the maintainer's exercise fetch
+- [ ] `tasks/openstax-add-book-principles-marketing.md` — one book: `principles-marketing` (CC BY-NC-SA 4.0, 61 MB); folder added and built 2026-11-28, waiting for the maintainer's exercise fetch
+- [x] `tasks/archive/impo/2026/11/28/openstax-add-book-principles-of-management-bundle.md` — 2 books: `principles-management`, `organizational-behavior` (CC BY-NC-SA 4.0, 79 MB), done 2026-11-28
 
 **Social sciences and humanities**
 
@@ -95,6 +95,7 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 - **2026-11-27, later:** the maintainer ran the five fetches; all 3,088 exercises are cached with their `COPYRIGHT` notices, the five folders were rebuilt with the exercises in, and their tasks are archived. **Next:** the eight repositories of the "Economics, business and law" group, none started; the public backups of the 18 folders added that day are still the maintainer's to push.
 - Three defects of the PDFs that predate these books were found in that batch and fixed the same day, on the branch `openstax-pdf-defects-tables-glyphs-exercise-links`, with all 37 book folders rebuilt: tables of prose wrap and break across pages (`tasks/archive/impo/2026/11/27/openstax-pdf-prose-tables-shrink-or-run-off-the-page.md`), the PDFs print the characters the body font lacks (`tasks/archive/impo/2026/11/27/openstax-pdf-characters-missing-from-the-body-font.md`), and links keep their own words while referenced exercises have labels (`tasks/archive/impo/2026/11/27/openstax-links-to-exercises-print-question-marks.md`).
 - Two converter defects found on the way have their own tasks: `tasks/archive/impo/2026/11/27/openstax-degree-sign-inside-math-text-is-escaped.md` (fixed 2026-11-27) and `tasks/archive/impo/2026/11/27/openstax-embedded-frame-links-are-dropped.md` (fixed 2026-11-27).
+- **2026-11-28** (William Emerison Six <billsix@gmail.com>: "work them all, do the work, commit, archive, commit, next", on the branch `openstax-add-business-and-economics-books`): the eight economics and business repositories, 14 books, all added and built as PDF, EPUB and HTML. Five embed no exercises and are archived: Introduction to Business 2e, Entrepreneurship, and the accounting (2 books), management (2) and economics (5) bundles. Three embed exercises in the `#exercise/` scheme and are built without them until the maintainer runs their fetches: Principles of Finance 2e (580 links), Principles of Marketing (662) and Business Ethics (196); their tasks stay open as `blocked`. Three books each stopped the PDF on markup the converter had not met, fixed the same day in one commit (`tasks/reference/tooling/converters.md`, "Met with the business books"). Introduction to Business 2e has a `LICENSE` file that disagrees with its collection (`tasks/reference/openstax/book-inventory.md`, "Licences"). **Next:** the three fetches, then the eight public backups (`bash tools/mirror-upstreams.sh push`).
 
 ## Decisions (William Emerison Six <billsix@gmail.com>, 2026-11-26)
 

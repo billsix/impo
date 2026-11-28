@@ -188,7 +188,7 @@ headless browser (read before touching osbook-web.css/.js).
 
 ## Books
 
-One thin `openstax/osbooks-<subject>/` folder per book (37 total; more are being added, see
+One thin `openstax/osbooks-<subject>/` folder per book (45 total on 2026-11-28; how the last 29 were added:
 `tasks/openstax-add-remaining-english-books.md`); each carries its own `CLAUDE.md`
 with its pin and book-specific facts. **anatomy-physiology** is the pilot for this family's
 shared-toolchain contract.
@@ -234,6 +234,14 @@ shared-toolchain contract.
 - `osbooks-introduction-anthropology/` — Introduction to Anthropology (added 2026-11-27)
 - `osbooks-introduction-philosophy/` — Introduction to Philosophy 2e (added 2026-11-27)
 - `osbooks-nursing-external-bundle/` — Nursing (3 books: `pharmacology`, `nutrition`, `population-health`; added 2026-11-27)
+- `osbooks-principles-finance/` — Principles of Finance 2e (added 2026-11-28)
+- `osbooks-business-ethics/` — Business Ethics (added 2026-11-28)
+- `osbooks-introduction-business/` — Introduction to Business 2e (added 2026-11-28)
+- `osbooks-principles-accounting-bundle/` — Principles of Accounting (2 books: `principles-financial-accounting`, `principles-managerial-accounting`; added 2026-11-28)
+- `osbooks-principles-marketing/` — Principles of Marketing (added 2026-11-28)
+- `osbooks-principles-of-management-bundle/` — Principles of Management (2 books: `principles-management`, `organizational-behavior`; added 2026-11-28)
+- `osbooks-entrepreneurship/` — Entrepreneurship (added 2026-11-28)
+- `osbooks-principles-economics-bundle/` — Principles of Economics (5 books: `principles-economics-3e`, `principles-macroeconomics-3e`, `principles-microeconomics-3e`, `principles-macroeconomics-ap-courses-2e`, `principles-microeconomics-ap-courses-2e`; added 2026-11-28)
 
 Per-book status (build-verified dates, exercise/image counts, os-embed scheme post-mortems, structural
 facts): `tasks/reference/openstax/book-inventory.md`. Figure format + os-embed scheme + exercise counts

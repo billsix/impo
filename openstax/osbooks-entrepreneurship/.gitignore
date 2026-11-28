@@ -1,0 +1,9 @@
+# Pristine OpenStax content fetched by ./fetch.sh and the toolchain overlaid by
+# ./apply.sh -- regenerated, never committed (it's OpenStax's; it is fetched from
+# the pin, from upstream or from the maintainer's mirror). This also covers
+# checkout/output/ (the build artifacts).
+checkout/
+
+# Any stray top-level build output, and saved image tars.
+output/
+*.tar
