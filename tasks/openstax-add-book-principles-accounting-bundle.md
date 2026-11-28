@@ -1,47 +1,33 @@
-# Add `osbooks-principles-accounting-bundle` to impo (2 books)
+# Added `osbooks-principles-accounting-bundle` to impo (2 books)
 
-**Status:** ready — approved 2026-11-26 as part of the umbrella; not started
-**Part of:** `tasks/openstax-add-remaining-english-books.md`
-**Depends on:** `tasks/archive/impo/2026/11/26/openstax-add-book-step-0-scaffold-tool.md` (the scaffold tool, so every new folder is made the same way)
-**Priority:** 6
-**Difficulty:** 3
-**Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said … make a task per book"; he then chose all 29 real repositories, one task per repository).
+**Done 2026-11-28** (agent; part of `tasks/openstax-add-remaining-english-books.md`. William Emerison Six <billsix@gmail.com>, 2026-11-28: "work them all, do the work, commit, archive, commit, next").
 
-## BLUF
+## What was added
 
-impo does not yet build OpenStax's `osbooks-principles-accounting-bundle`. This task adds it as a book folder on the shared-toolchain contract, so that `principles-financial-accounting`, `principles-managerial-accounting` build as PDF, EPUB and HTML like the books impo already carries. Done means the folder exists, every book in it converts and builds in all three formats, its exercises (if it embeds any) are cached, and impo's docs and the survey list it as built.
+`openstax/osbooks-principles-accounting-bundle/`, created with `tools/add-book.sh principles-accounting-bundle "Principles of Accounting"` and pinned at the upstream head `2165bf6454c0279c1284e19ac7febc101f7956ad`. It builds 2 books:
 
-## Context
+| Book | Collection | Shape | PDF | Web pages |
+|---|---|---|---|---|
+| *Principles of Accounting, Volume 1: Financial Accounting* | `principles-financial-accounting` | 104 modules in 16 chapters, from "Role of Accounting in Society" to "Statement of Cash Flows"; one level of nesting | 1,081 pages | 122 |
+| *Principles of Accounting, Volume 2: Managerial Accounting* | `principles-managerial-accounting` | 81 modules in 13 chapters, from "Accounting as a Tool for Managers" to "Sustainability Reporting"; one level of nesting | 783 pages | 96 |
 
-**Read first:** the umbrella (`tasks/openstax-add-remaining-english-books.md`) for the method every one of these tasks follows, and `openstax/CLAUDE.md` ("Per-book folder contract", "Copyright / licensing").
+- **Licence:** CC BY-NC-SA 4.0 (collection XML and the upstream `LICENSE`); the built PDF states it.
+- **Figures:** raster only (2,034 files, 659 MB); no SVG.
+- **Exercises:** none embedded, counted in the CNXML in both link schemes; no `exercises/` cache, so nothing for the maintainer to fetch.
+- **Result:** built as PDF, EPUB and HTML on 2026-11-28.
 
-| | |
-|---|---|
-| Upstream | `https://github.com/openstax/osbooks-principles-accounting-bundle` |
-| Group | Economics, business and law |
-| Books (collection slugs) | `principles-financial-accounting`, `principles-managerial-accounting` |
-| Language | English |
-| Licence its `LICENSE` file names | CC BY-NC-SA 4.0 |
-| Size (GitHub, with history) | 258 MB |
-| Last push upstream | 2026-04-23 |
-| Default-branch head on 2026-11-26 | `2165bf6454c0279c1284e19ac7febc101f7956ad` (re-read it when the work starts; the pin is the head at that time) |
-| Maintainer's public backup | none yet (`tasks/openstax-books-buildable-forever-source-backup-and-licences.md`) |
+## What the book needed from the toolchain
 
-Mostly prose and figures, as far as the repository name suggests; not opened yet.
+Nothing: it converted and built in one pass with the toolchain as it stood.
 
-**Not known until the source is fetched:** whether it embeds exercises and in which of the two schemes, whether its figures are raster or SVG, how deeply its collections nest, and whether it uses markup the converter has not met (the converter reports those as "Unknown/fallback elements").
+## Left as it is
 
-## Plan
+The PDF and HTML were not read page by page; that review is the maintainer's.
 
-- [ ] `bash tools/add-book.sh principles-accounting-bundle` to create `openstax/osbooks-principles-accounting-bundle/` with `fetch.sh` (upstream, mirror fallback, the pin), `apply.sh`, `Makefile`, `README.md`, `CLAUDE.md` and `.gitignore`.
-- [ ] `./fetch.sh && ./apply.sh`, then `make convert`. Read the converter's report; a licence it does not know stops the conversion, which is intended.
-- [ ] If it embeds exercises: the maintainer runs `make fetch-exercises` in the folder (the fetch identifies itself with his contact address, so it is his to run), then the cache is committed with its `COPYRIGHT` notice.
-- [ ] `make dist`; open the PDF and one HTML page of each book and note anything that rendered badly.
-- [ ] Converter gaps: fix in `openstax/tooling/` what is small and general; anything larger gets its own task, named here.
-- [ ] Record the book: `openstax/osbooks-principles-accounting-bundle/CLAUDE.md` (collections, module counts, nesting, exercises, figure format), the list in `openstax/CLAUDE.md`, and `tasks/reference/openstax/book-inventory.md` including its licence row.
-- [ ] `python3 tools/survey-upstream-books.py` and refresh `tasks/reference/openstax/upstream-book-repositories.md`; tick this book in the umbrella.
-- [ ] Tell the maintainer the book needs its public backup (`tools/mirror-upstreams.sh push principles-accounting-bundle`).
+## Not done
 
-## Open questions
+The book needs the maintainer's public backup: `bash tools/mirror-upstreams.sh push principles-accounting-bundle`.
 
-None.
+## Recorded
+
+`openstax/osbooks-principles-accounting-bundle/CLAUDE.md` ("The books this folder builds"), the list in `openstax/CLAUDE.md`, the inventory and its licence table, the per-book table in `tasks/reference/tooling/converters.md`, and the umbrella's checklist. The survey table (`tasks/reference/openstax/upstream-book-repositories.md`) is refreshed once for the whole 2026-11-28 batch.
