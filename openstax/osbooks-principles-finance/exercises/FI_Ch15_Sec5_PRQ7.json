@@ -1,0 +1,312 @@
+{
+ "images": [],
+ "tags": [
+  "lo:stax-fin:15-05-01",
+  "context-cnxmod:8565bc18-a887-4797-a49b-7861f5d3862c",
+  "book-slug:principles-finance",
+  "module-slug:principles-finance:15-5-using-excel-to-make-investment-decisions",
+  "book-slug:principles-finance-2e",
+  "module-slug:principles-finance-2e:15-5-using-excel-to-make-investment-decisions"
+ ],
+ "uuid": "4884be36-7894-49ac-a1df-c60867f48d07",
+ "group_uuid": "4883d5b3-9cac-4933-b918-a69a12e8955e",
+ "number": 30555,
+ "version": 6,
+ "uid": "30555@6",
+ "published_at": "2023-03-16T18:18:31.146Z",
+ "nickname": "FI_Ch15_Sec5_PRQ7",
+ "solutions_are_public": false,
+ "authors": [
+  {
+   "user_id": 1,
+   "name": "OpenStax Exercises",
+   "uuid": "520cb2b0-f7e4-4007-b488-76b5fb1a5eea"
+  }
+ ],
+ "copyright_holders": [
+  {
+   "user_id": 2,
+   "name": "Rice University",
+   "uuid": "80206728-77ef-417d-9bef-73c06e7e9d43"
+  }
+ ],
+ "derived_from": [],
+ "is_vocab": false,
+ "stimulus_html": "",
+ "questions": [
+  {
+   "id": 337488,
+   "is_answer_order_important": false,
+   "stimulus_html": "",
+   "stem_html": "The monthly returns for Visa (V) and Pfizer (PFE) for 2018–2020 are provided in the chart below. In addition, the monthly return for the SPDR S&amp;P 500 ETF Trust (SPY) is provided; SPY is often used as a proxy for the returns of the S&amp;P 500, or a broad market index. Using Excel, calculate the arithmetic average monthly returns for V, PFE, and SPY. Also, calculate the standard deviation of returns for each of V, PFE, and SPY.\n<p>Monthly Returns for SPY, V, and PFE for 2018–2020</p>\n<table border=\"1\">\n<thead>\n<tr>\n<th>Date</th>\n<th>SPY</th>\n<th>V</th>\n<th>PFE</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Jan-18</td>\n<td>0.0618</td>\n<td>0.0895</td>\n<td>0.0226</td>\n</tr>\n<tr>\n<td>Feb-18</td>\n<td>-0.0364</td>\n<td>-0.0104</td>\n<td>-0.0197</td>\n</tr>\n<tr>\n<td>Mar-18</td>\n<td>-0.0313</td>\n<td>-0.0253</td>\n<td>-0.0135</td>\n</tr>\n<tr>\n<td>Apr-18</td>\n<td>0.0092</td>\n<td>0.0607</td>\n<td>0.0316</td>\n</tr>\n<tr>\n<td>May-18</td>\n<td>0.0243</td>\n<td>0.0303</td>\n<td>-0.0186</td>\n</tr>\n<tr>\n<td>Jun-18</td>\n<td>0.0013</td>\n<td>0.0149</td>\n<td>0.0196</td>\n</tr>\n<tr>\n<td>Jul-18</td>\n<td>0.0417</td>\n<td>0.0324</td>\n<td>0.1006</td>\n</tr>\n<tr>\n<td>Aug-18</td>\n<td>0.0319</td>\n<td>0.0742</td>\n<td>0.0398</td>\n</tr>\n<tr>\n<td>Sep-18</td>\n<td>0.0014</td>\n<td>0.0233</td>\n<td>0.0705</td>\n</tr>\n<tr>\n<td>Oct-18</td>\n<td>-0.0649</td>\n<td>-0.0816</td>\n<td>-0.0229</td>\n</tr>\n<tr>\n<td>Nov-18</td>\n<td>0.0185</td>\n<td>0.0280</td>\n<td>0.0736</td>\n</tr>\n<tr>\n<td>Dec-18</td>\n<td>-0.0933</td>\n<td>-0.0673</td>\n<td>-0.0485</td>\n</tr>\n<tr>\n<td>Jan-19</td>\n<td>0.0864</td>\n<td>0.0233</td>\n<td>-0.0275</td>\n</tr>\n<tr>\n<td>Feb-19</td>\n<td>0.0324</td>\n<td>0.0971</td>\n<td>0.0301</td>\n</tr>\n<tr>\n<td>Mar-19</td>\n<td>0.0136</td>\n<td>0.0563</td>\n<td>-0.0203</td>\n</tr>\n<tr>\n<td>Apr-19</td>\n<td>0.0454</td>\n<td>0.0528</td>\n<td>-0.0438</td>\n</tr>\n<tr>\n<td>May-19</td>\n<td>-0.0638</td>\n<td>-0.0189</td>\n<td>0.0224</td>\n</tr>\n<tr>\n<td>Jun-19</td>\n<td>0.0644</td>\n<td>0.0774</td>\n<td>0.0526</td>\n</tr>\n<tr>\n<td>Jul-19</td>\n<td>0.0201</td>\n<td>0.0256</td>\n<td>-0.1034</td>\n</tr>\n<tr>\n<td>Aug-19</td>\n<td>-0.0167</td>\n<td>0.0158</td>\n<td>-0.0847</td>\n</tr>\n<tr>\n<td>Sep-19</td>\n<td>0.0148</td>\n<td>-0.0473</td>\n<td>0.0201</td>\n</tr>\n<tr>\n<td>Oct-19</td>\n<td>0.0268</td>\n<td>0.0398</td>\n<td>0.0679</td>\n</tr>\n<tr>\n<td>Nov-19</td>\n<td>0.0362</td>\n<td>0.0316</td>\n<td>0.0039</td>\n</tr>\n<tr>\n<td>Dec-19</td>\n<td>0.0240</td>\n<td>0.0201</td>\n<td>0.0270</td>\n</tr>\n<tr>\n<td>Jan-20</td>\n<td>0.0045</td>\n<td>0.0589</td>\n<td>-0.0495</td>\n</tr>\n<tr>\n<td>Feb-20</td>\n<td>-0.0792</td>\n<td>-0.0865</td>\n<td>-0.0934</td>\n</tr>\n<tr>\n<td>Mar-20</td>\n<td>-0.1300</td>\n<td>-0.1123</td>\n<td>-0.0233</td>\n</tr>\n<tr>\n<td>Apr-20</td>\n<td>0.1336</td>\n<td>0.1092</td>\n<td>0.1752</td>\n</tr>\n<tr>\n<td>May-20</td>\n<td>0.0476</td>\n<td>0.0924</td>\n<td>-0.0044</td>\n</tr>\n<tr>\n<td>Jun-20</td>\n<td>0.0133</td>\n<td>-0.0089</td>\n<td>-0.1352</td>\n</tr>\n<tr>\n<td>Jul-20</td>\n<td>0.0636</td>\n<td>-0.0143</td>\n<td>0.1768</td>\n</tr>\n<tr>\n<td>Aug-20</td>\n<td>0.0698</td>\n<td>0.1134</td>\n<td>-0.0083</td>\n</tr>\n<tr>\n<td>Sep-20</td>\n<td>-0.0413</td>\n<td>-0.0553</td>\n<td>-0.0288</td>\n</tr>\n<tr>\n<td>Oct-20</td>\n<td>-0.0210</td>\n<td>-0.0913</td>\n<td>-0.0332</td>\n</tr>\n<tr>\n<td>Nov-20</td>\n<td>0.1088</td>\n<td>0.1576</td>\n<td>0.1381</td>\n</tr>\n<tr>\n<td>Dec-20</td>\n<td>0.0326</td>\n<td>0.0414</td>\n<td>-0.0293</td>\n</tr>\n</tbody>\n</table>",
+   "answers": [],
+   "hints": [],
+   "formats": [
+    "free-response"
+   ],
+   "combo_choices": []
+  }
+ ],
+ "delegations": [
+  {
+   "delegator_id": 1,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 1,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": true,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 64,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 86,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 16,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 17,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 18,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 19,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": false,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 91,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 6,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 120,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 126,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 136,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": false,
+   "can_read": true,
+   "can_update": false
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 132,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 99,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  },
+  {
+   "delegator_id": 2,
+   "delegate_id": 50,
+   "delegate_type": "User",
+   "can_assign_authorship": false,
+   "can_assign_copyright": true,
+   "can_read": true,
+   "can_update": true
+  }
+ ],
+ "versions": [
+  6,
+  5,
+  4,
+  3,
+  2,
+  1
+ ]
+}

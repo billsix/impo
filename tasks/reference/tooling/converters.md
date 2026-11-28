@@ -346,7 +346,7 @@ the day each was added.
 | introduction-anthropology | 1 | `#exercise/` | 150 | raster |
 | introduction-philosophy | 1 | `#exercise/` | 228 | raster |
 | nursing-external-bundle | 3 | `#exercise/` | 1156 | raster |
-| principles-finance | 1 | `#exercise/` | 580 | raster |
+| principles-finance | 1 | `#exercise/` | 580 | raster + 17 exercise imgs |
 | business-ethics | 1 | `#exercise/` | 196 | raster |
 | introduction-business | 1 | none | 0 | raster |
 | principles-accounting-bundle | 2 | none | 0 | raster |

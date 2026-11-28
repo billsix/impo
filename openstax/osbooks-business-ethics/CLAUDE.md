@@ -27,10 +27,12 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 ## The books this folder builds
 
 One collection, `business-ethics` (OpenStax *Business Ethics*): 61 modules in 11 chapters, from "Why Ethics Matter" to "Epilogue: Why Ethics Still Matter"; one level of nesting; PDF 449 pages, 74 web pages.
-Built as PDF, EPUB and HTML on 2026-11-28, the day it was added.
+Built as PDF, EPUB and HTML on 2026-11-28, the day it was added, and again that day with the exercises in.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
-- **Exercises:** 196 embedded links, all in the `#exercise/<nickname>` scheme. **Not cached yet:** the maintainer runs `make fetch-exercises` here, and until then the books print a placeholder for each.
+- **Exercises:** 196 embedded links to 196 exercises, all in the `#exercise/<nickname>`
+  scheme. All 196 are in the committed cache `exercises/` (no images; with its `COPYRIGHT`
+  notice), fetched by the maintainer on 2026-11-28, and are in the built book.
 - **Figures:** raster only (100 files, 50 MB); no SVG.
 - **Still falling back** (the converter's report): `inline:cite` (525), `inline:note` (525).
 

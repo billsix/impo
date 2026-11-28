@@ -26,11 +26,13 @@ automatically by `fetch.sh` when the upstream does not provide the pin:
 
 ## The books this folder builds
 
-One collection, `principles-finance-2e` (OpenStax *Principles of Finance 2e*): 131 modules in 20 chapters, from "Introduction to Finance" to "Risk Management and the Financial Manager"; one level of nesting; PDF 739 pages, 153 web pages.
-Built as PDF, EPUB and HTML on 2026-11-28, the day it was added.
+One collection, `principles-finance-2e` (OpenStax *Principles of Finance 2e*): 131 modules in 20 chapters, from "Introduction to Finance" to "Risk Management and the Financial Manager"; one level of nesting; PDF 746 pages, 153 web pages.
+Built as PDF, EPUB and HTML on 2026-11-28, the day it was added, and again that day with the exercises in.
 
 - **Licence:** CC BY-NC-SA 4.0 (collection XML and upstream `LICENSE`).
-- **Exercises:** 580 embedded links, all in the `#exercise/<nickname>` scheme. **Not cached yet:** the maintainer runs `make fetch-exercises` here, and until then the books print a placeholder for each.
+- **Exercises:** 580 embedded links to 580 exercises, all in the `#exercise/<nickname>`
+  scheme. All 580 are in the committed cache `exercises/` (17 images; with its `COPYRIGHT`
+  notice), fetched by the maintainer on 2026-11-28, and are in the built book.
 - **Figures:** raster only (278 files, 31 MB); no SVG.
 
 ## Build
