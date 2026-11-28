@@ -69,7 +69,7 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 - [ ] `tasks/openstax-add-book-business-ethics.md` — one book: `business-ethics` (CC BY-NC-SA 4.0, 93 MB); folder added and built 2026-11-28, waiting for the maintainer's exercise fetch
 - [x] `tasks/archive/impo/2026/11/27/openstax-add-book-business-law.md` — one book: `business-law-i-essentials-2e` (CC BY-NC-SA 4.0, 12 MB), done 2026-11-27
 - [ ] `tasks/openstax-add-book-entrepreneurship.md` — one book: `entrepreneurship` (CC BY-NC-SA 4.0, 123 MB)
-- [ ] `tasks/openstax-add-book-introduction-business.md` — one book: `introduction-business-2e` (CC BY 4.0, 225 MB)
+- [x] `tasks/archive/impo/2026/11/28/openstax-add-book-introduction-business.md` — one book: `introduction-business-2e` (CC BY 4.0, 225 MB), done 2026-11-28
 - [x] `tasks/archive/impo/2026/11/27/openstax-add-book-introduction-intellectual-property.md` — one book: `introduction-intellectual-property` (CC BY 4.0, 30 MB), done 2026-11-27
 - [ ] `tasks/openstax-add-book-principles-accounting-bundle.md` — 2 books: `principles-financial-accounting`, `principles-managerial-accounting` (CC BY-NC-SA 4.0, 258 MB)
 - [ ] `tasks/openstax-add-book-principles-economics-bundle.md` — 5 books: `principles-economics-3e`, `principles-macroeconomics-3e`, `principles-microeconomics-3e`, `principles-macroeconomics-ap-courses-2e`, `principles-microeconomics-ap-courses-2e` (CC BY-NC-SA 4.0, 84 MB)

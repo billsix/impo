@@ -236,6 +236,7 @@ shared-toolchain contract.
 - `osbooks-nursing-external-bundle/` — Nursing (3 books: `pharmacology`, `nutrition`, `population-health`; added 2026-11-27)
 - `osbooks-principles-finance/` — Principles of Finance 2e (added 2026-11-28)
 - `osbooks-business-ethics/` — Business Ethics (added 2026-11-28)
+- `osbooks-introduction-business/` — Introduction to Business 2e (added 2026-11-28)
 
 Per-book status (build-verified dates, exercise/image counts, os-embed scheme post-mortems, structural
 facts): `tasks/reference/openstax/book-inventory.md`. Figure format + os-embed scheme + exercise counts

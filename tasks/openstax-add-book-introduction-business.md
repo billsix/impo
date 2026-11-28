@@ -1,47 +1,32 @@
-# Add `osbooks-introduction-business` to impo (one book)
+# Added `osbooks-introduction-business` to impo (one book)
 
-**Status:** ready — approved 2026-11-26 as part of the umbrella; not started
-**Part of:** `tasks/openstax-add-remaining-english-books.md`
-**Depends on:** `tasks/archive/impo/2026/11/26/openstax-add-book-step-0-scaffold-tool.md` (the scaffold tool, so every new folder is made the same way)
-**Priority:** 6
-**Difficulty:** 3
-**Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said … make a task per book"; he then chose all 29 real repositories, one task per repository).
+**Done 2026-11-28** (agent; part of `tasks/openstax-add-remaining-english-books.md`. William Emerison Six <billsix@gmail.com>, 2026-11-28: "work them all, do the work, commit, archive, commit, next").
 
-## BLUF
+## What was added
 
-impo does not yet build OpenStax's `osbooks-introduction-business`. This task adds it as a book folder on the shared-toolchain contract, so that `introduction-business-2e` builds as PDF, EPUB and HTML like the books impo already carries. Done means the folder exists, every book in it converts and builds in all three formats, its exercises (if it embeds any) are cached, and impo's docs and the survey list it as built.
+`openstax/osbooks-introduction-business/`, created with `tools/add-book.sh introduction-business "Introduction to Business 2e"` and pinned at the upstream head `2a839877ab89a207c9b9e501df438173013fa45c`. It builds one book:
 
-## Context
+| Book | Collection | Shape | PDF | Web pages |
+|---|---|---|---|---|
+| *Introduction to Business 2e* | `introduction-business-2e` | 153 modules in 17 chapters, from "Understanding Economic Systems and Business" to "Your Career in Business"; one level of nesting | 842 pages | 172 |
 
-**Read first:** the umbrella (`tasks/openstax-add-remaining-english-books.md`) for the method every one of these tasks follows, and `openstax/CLAUDE.md` ("Per-book folder contract", "Copyright / licensing").
+- **Licence:** CC BY-NC-SA 4.0 (collection XML); the built PDF states it. The upstream `LICENSE` file is the text of CC BY 4.0, but the collection XML declares CC BY-NC-SA 4.0, and so does the book's preface on openstax.org (https://openstax.org/books/introduction-business-2e/pages/preface, read 2026-11-28). The converter reads the collection, so the built book states CC BY-NC-SA 4.0. The survey table reads the `LICENSE` file and shows CC BY 4.0 for this repository.
+- **Figures:** raster only (197 files, 237 MB); no SVG.
+- **Exercises:** none embedded, counted in the CNXML in both link schemes; no `exercises/` cache, so nothing for the maintainer to fetch.
+- **Result:** built as PDF, EPUB and HTML on 2026-11-28.
 
-| | |
-|---|---|
-| Upstream | `https://github.com/openstax/osbooks-introduction-business` |
-| Group | Economics, business and law |
-| Books (collection slugs) | `introduction-business-2e` |
-| Language | English |
-| Licence its `LICENSE` file names | CC BY 4.0 |
-| Size (GitHub, with history) | 225 MB |
-| Last push upstream | 2026-05-20 |
-| Default-branch head on 2026-11-26 | `2a839877ab89a207c9b9e501df438173013fa45c` (re-read it when the work starts; the pin is the head at that time) |
-| Maintainer's public backup | none yet (`tasks/openstax-books-buildable-forever-source-backup-and-licences.md`) |
+## What the book needed from the toolchain
 
-Mostly prose and figures, as far as the repository name suggests; not opened yet.
+Nothing: it converted and built in one pass with the toolchain as it stood.
 
-**Not known until the source is fetched:** whether it embeds exercises and in which of the two schemes, whether its figures are raster or SVG, how deeply its collections nest, and whether it uses markup the converter has not met (the converter reports those as "Unknown/fallback elements").
+## Left as it is
 
-## Plan
+The PDF and HTML were not read page by page; that review is the maintainer's.
 
-- [ ] `bash tools/add-book.sh introduction-business` to create `openstax/osbooks-introduction-business/` with `fetch.sh` (upstream, mirror fallback, the pin), `apply.sh`, `Makefile`, `README.md`, `CLAUDE.md` and `.gitignore`.
-- [ ] `./fetch.sh && ./apply.sh`, then `make convert`. Read the converter's report; a licence it does not know stops the conversion, which is intended.
-- [ ] If it embeds exercises: the maintainer runs `make fetch-exercises` in the folder (the fetch identifies itself with his contact address, so it is his to run), then the cache is committed with its `COPYRIGHT` notice.
-- [ ] `make dist`; open the PDF and one HTML page of each book and note anything that rendered badly.
-- [ ] Converter gaps: fix in `openstax/tooling/` what is small and general; anything larger gets its own task, named here.
-- [ ] Record the book: `openstax/osbooks-introduction-business/CLAUDE.md` (collections, module counts, nesting, exercises, figure format), the list in `openstax/CLAUDE.md`, and `tasks/reference/openstax/book-inventory.md` including its licence row.
-- [ ] `python3 tools/survey-upstream-books.py` and refresh `tasks/reference/openstax/upstream-book-repositories.md`; tick this book in the umbrella.
-- [ ] Tell the maintainer the book needs its public backup (`tools/mirror-upstreams.sh push introduction-business`).
+## Not done
 
-## Open questions
+The book needs the maintainer's public backup: `bash tools/mirror-upstreams.sh push introduction-business`.
 
-None.
+## Recorded
+
+`openstax/osbooks-introduction-business/CLAUDE.md` ("The books this folder builds"), the list in `openstax/CLAUDE.md`, the inventory and its licence table, the per-book table in `tasks/reference/tooling/converters.md`, and the umbrella's checklist. The survey table (`tasks/reference/openstax/upstream-book-repositories.md`) is refreshed once for the whole 2026-11-28 batch.

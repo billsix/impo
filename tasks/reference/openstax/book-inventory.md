@@ -76,6 +76,7 @@ confirmed on each book's first build.
 - `osbooks-nursing-external-bundle/` — *Pharmacology for Nurses* (203 modules, 1,568-page PDF); *Nutrition for Nurses* (93 modules, 622-page PDF); *Population Health for Nurses* (185 modules, 1,653-page PDF), added 2026-11-27: 1,156 embedded exercises, all cached 2026-11-27; raster figures; 714 tables, most of them prose, set with wrapping columns since the same day; it brought `<span>` and a paragraph of only line breaks to the converter.
 - `osbooks-principles-finance/` — *Principles of Finance 2e* (131 modules, 739-page PDF), added 2026-11-28: 580 embedded exercises, not cached yet (the maintainer's fetch); raster figures; built in one pass with no toolchain change.
 - `osbooks-business-ethics/` — *Business Ethics* (61 modules, 449-page PDF), added 2026-11-28: 196 embedded exercises, not cached yet (the maintainer's fetch); raster figures; built in one pass with no toolchain change.
+- `osbooks-introduction-business/` — *Introduction to Business 2e* (153 modules, 842-page PDF), added 2026-11-28: no embedded exercises; raster figures; built in one pass with no toolchain change; its upstream `LICENSE` file says CC BY 4.0 while the collection and openstax.org say CC BY-NC-SA 4.0.
 
 ## Licences (read from each book's own source, 2026-11-26)
 
@@ -124,6 +125,7 @@ whose licence it does not know.
 | osbooks-nursing-external-bundle (3 books) | CC BY-NC-SA 4.0 | yes |
 | osbooks-principles-finance | CC BY-NC-SA 4.0 | yes |
 | osbooks-business-ethics | CC BY-NC-SA 4.0 | yes |
+| osbooks-introduction-business | CC BY-NC-SA 4.0 | yes, but it is the text of CC BY 4.0 |
 
 Every collection inside a bundle declares the same licence as its siblings. No module file carries licence
 metadata. The exercise caches are a separate case: see "Copyright / licensing" in `openstax/CLAUDE.md`.

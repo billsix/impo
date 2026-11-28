@@ -327,6 +327,7 @@ the day each was added.
 | nursing-external-bundle | 3 | `#exercise/` | 1156 | raster |
 | principles-finance | 1 | `#exercise/` | 580 | raster |
 | business-ethics | 1 | `#exercise/` | 196 | raster |
+| introduction-business | 1 | none | 0 | raster |
 
 ("survey" = the scheme wasn't re-audited on the raw CNXML for that book; verify on first exercise-bearing build,
 the same way physics/biology turned out to have `#ost/api/ex/`.)
