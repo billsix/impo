@@ -17,7 +17,7 @@ impo groups books into **families** (a family = books of the same source/kind), 
 folder. Two book families exist, plus the `study/` family of material built from the books:
 
 - **`openstax/`** — LaTeX ports of OpenStax open textbooks (45 book folders on 2026-11-28, every English book repository OpenStax
-  publishes: `tasks/openstax-add-remaining-english-books.md`) that convert **CNXML→LaTeX**
+  publishes: `tasks/archive/impo/2026/11/28/openstax-add-remaining-english-books.md`) that convert **CNXML→LaTeX**
   with a shared python converter. **The pilot family; read `openstax/CLAUDE.md` first.** Layout:
   - **`openstax/CLAUDE.md`** — the family contract: the shared toolchain, the per-book folder
     contract (fetch → apply-overlay → build), the *downloaded → commit / generated → ignore* content

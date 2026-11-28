@@ -56,8 +56,8 @@ numbers with its output and change the date.
   they are not English ("for non english books, I don't want to add them to our build"), and
   `osbooks-playground` because it is OpenStax's editing-tool playground, not a book:
   `osbooks-calculo-bundle` (not English (Spanish)), `osbooks-fisica-universitaria-bundle` (not English (Spanish)), `osbooks-fizyka-bundle` (not English (Polish)), `osbooks-introduccion-estadistica-bundle` (not English (Spanish)), `osbooks-makroekonomia` (not English (Polish)), `osbooks-mikroekonomia` (not English (Polish)), `osbooks-playground` (not a book (its README calls it "a playground to try out the OpenStax's POET editing plugin")), `osbooks-precalculo` (not English (Spanish)), `osbooks-psychologia` (not English (Polish)), `osbooks-quimica-bundle` (not English (Spanish)).
-- **Not yet in impo: 0.** The last eight, all in economics and business, were added 2026-11-28; three of
-  them wait for their exercise caches (`tasks/openstax-add-remaining-english-books.md`).
+- **Not yet in impo: 0.** The last eight, all in economics and business, were added 2026-11-28; the
+  record is `tasks/archive/impo/2026/11/28/openstax-add-remaining-english-books.md`.
 - **A `LICENSE` file that disagrees with its book:** `osbooks-introduction-business` holds the CC BY 4.0
   text, which is what the Licence column shows, while its collection XML and openstax.org say
   CC BY-NC-SA 4.0 (`tasks/reference/openstax/book-inventory.md`, "Licences").

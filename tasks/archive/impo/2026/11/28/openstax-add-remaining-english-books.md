@@ -1,17 +1,10 @@
-# Add the remaining English OpenStax books to impo (umbrella: 29 repositories, 42 books)
+# Added the remaining English OpenStax books to impo (umbrella: 29 repositories, 42 books)
 
-**Status:** in progress — all 29 repositories added and built by 2026-11-28, the last three with their exercise caches in; left: the archive moves of the last three book tasks and of this one, after the work commit
-**Priority:** 4
-**Difficulty:** 7 (each book is small; there are 29 of them, and each can meet markup the converter has not seen)
-**Created:** 2026-11-26 (William Emerison Six <billsix@gmail.com>: "I want to add all of the ones you said. look through all reference docs, and look at what we commited to do the porting before, and make a task per book").
+**Done 2026-11-28** (agent, with the exercise fetches run by the maintainer. William Emerison Six <billsix@gmail.com>, 2026-11-26: "I want to add all of the ones you said. look through all reference docs, and look at what we commited to do the porting before, and make a task per book").
 
-## BLUF
+impo built 15 of OpenStax's 54 public book repositories, plus Algebra 1, when this task was written. Nine were rejected as not English and one, `osbooks-playground`, as not a book. The other 29 were added between 2026-11-26 and 2026-11-28, one step task each, all archived; the survey (`tasks/reference/openstax/upstream-book-repositories.md`) shows no repository as "not yet in impo". This record holds the method they shared, the list and the order of events.
 
-impo built 15 of OpenStax's 54 public book repositories, plus Algebra 1, when this task was written (29 with Algebra 1 on 2026-11-27). Nine are rejected as not English and one, `osbooks-playground`, as not a book. The maintainer wants the other 29 added. This umbrella holds the method they all share and the ordered list; each repository has its own step task. Done means every step task is archived and the survey shows no repository as "not yet in impo".
-
-## Context
-
-**Read first:** `openstax/CLAUDE.md` (the family contract), `tasks/reference/openstax/upstream-book-repositories.md` (the survey these tasks came from), `tasks/reference/tooling/converters.md` (what the converter handles) and `tasks/archive/impo/2026/09/03/openstax-populate-books.md` (how the first sixteen were added).
+## Method
 
 ### How the first sixteen were added, and what is different now
 
@@ -33,7 +26,7 @@ The September work scaffolded fifteen folders from the anatomy-physiology pilot 
 
 ## Steps
 
-Step 0 comes first; after it the books are independent of each other, so the order below is by how close each is to what impo already builds (lowest priority number first), not by necessity.
+Step 0 came first; after it the books were independent of each other, and the list is ordered by how close each was to what impo already built.
 
 - [x] `tasks/archive/impo/2026/11/26/openstax-add-book-step-0-scaffold-tool.md` — the scaffold tool (`tools/add-book.sh`), done 2026-11-26
 
@@ -66,15 +59,15 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 
 **Economics, business and law**
 
-- [x] `tasks/openstax-add-book-business-ethics.md` — one book: `business-ethics` (CC BY-NC-SA 4.0, 93 MB), done 2026-11-28
+- [x] `tasks/archive/impo/2026/11/28/openstax-add-book-business-ethics.md` — one book: `business-ethics` (CC BY-NC-SA 4.0, 93 MB), done 2026-11-28
 - [x] `tasks/archive/impo/2026/11/27/openstax-add-book-business-law.md` — one book: `business-law-i-essentials-2e` (CC BY-NC-SA 4.0, 12 MB), done 2026-11-27
 - [x] `tasks/archive/impo/2026/11/28/openstax-add-book-entrepreneurship.md` — one book: `entrepreneurship` (CC BY-NC-SA 4.0, 123 MB), done 2026-11-28
 - [x] `tasks/archive/impo/2026/11/28/openstax-add-book-introduction-business.md` — one book: `introduction-business-2e` (CC BY 4.0, 225 MB), done 2026-11-28
 - [x] `tasks/archive/impo/2026/11/27/openstax-add-book-introduction-intellectual-property.md` — one book: `introduction-intellectual-property` (CC BY 4.0, 30 MB), done 2026-11-27
 - [x] `tasks/archive/impo/2026/11/28/openstax-add-book-principles-accounting-bundle.md` — 2 books: `principles-financial-accounting`, `principles-managerial-accounting` (CC BY-NC-SA 4.0, 258 MB), done 2026-11-28
 - [x] `tasks/archive/impo/2026/11/28/openstax-add-book-principles-economics-bundle.md` — 5 books: `principles-economics-3e`, `principles-macroeconomics-3e`, `principles-microeconomics-3e`, `principles-macroeconomics-ap-courses-2e`, `principles-microeconomics-ap-courses-2e` (CC BY-NC-SA 4.0, 84 MB), done 2026-11-28
-- [x] `tasks/openstax-add-book-principles-finance.md` — one book: `principles-finance-2e` (CC BY-NC-SA 4.0, 38 MB), done 2026-11-28
-- [x] `tasks/openstax-add-book-principles-marketing.md` — one book: `principles-marketing` (CC BY-NC-SA 4.0, 61 MB), done 2026-11-28
+- [x] `tasks/archive/impo/2026/11/28/openstax-add-book-principles-finance.md` — one book: `principles-finance-2e` (CC BY-NC-SA 4.0, 38 MB), done 2026-11-28
+- [x] `tasks/archive/impo/2026/11/28/openstax-add-book-principles-marketing.md` — one book: `principles-marketing` (CC BY-NC-SA 4.0, 61 MB), done 2026-11-28
 - [x] `tasks/archive/impo/2026/11/28/openstax-add-book-principles-of-management-bundle.md` — 2 books: `principles-management`, `organizational-behavior` (CC BY-NC-SA 4.0, 79 MB), done 2026-11-28
 
 **Social sciences and humanities**
@@ -107,7 +100,3 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 - **One task per repository**, not per book: a bundle is one folder and one build.
 - **`osbooks-playground` is rejected**: its README calls it "a playground to try out the OpenStax's POET editing plugin". Recorded in `tools/upstream-books-rejected.txt`.
 - **Non-English repositories stay rejected** (decided earlier the same day).
-
-## Open questions
-
-None.

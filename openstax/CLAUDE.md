@@ -189,7 +189,7 @@ headless browser (read before touching osbook-web.css/.js).
 ## Books
 
 One thin `openstax/osbooks-<subject>/` folder per book (45 total on 2026-11-28; how the last 29 were added:
-`tasks/openstax-add-remaining-english-books.md`); each carries its own `CLAUDE.md`
+`tasks/archive/impo/2026/11/28/openstax-add-remaining-english-books.md`); each carries its own `CLAUDE.md`
 with its pin and book-specific facts. **anatomy-physiology** is the pilot for this family's
 shared-toolchain contract.
 

@@ -1,6 +1,6 @@
 # Added `osbooks-principles-marketing` to impo (one book)
 
-**Done 2026-11-28** (agent, with the exercise fetch run by the maintainer; part of `tasks/openstax-add-remaining-english-books.md`. William Emerison Six <billsix@gmail.com>, 2026-11-28: "work them all, do the work, commit, archive, commit, next", and after his fetch the same day: "fetched all three, do the work").
+**Done 2026-11-28** (agent, with the exercise fetch run by the maintainer; part of `tasks/archive/impo/2026/11/28/openstax-add-remaining-english-books.md`. William Emerison Six <billsix@gmail.com>, 2026-11-28: "work them all, do the work, commit, archive, commit, next", and after his fetch the same day: "fetched all three, do the work").
 
 ## What was added
 
