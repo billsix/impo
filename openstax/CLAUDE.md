@@ -239,6 +239,7 @@ shared-toolchain contract.
 - `osbooks-introduction-business/` — Introduction to Business 2e (added 2026-11-28)
 - `osbooks-principles-accounting-bundle/` — Principles of Accounting (2 books: `principles-financial-accounting`, `principles-managerial-accounting`; added 2026-11-28)
 - `osbooks-principles-marketing/` — Principles of Marketing (added 2026-11-28)
+- `osbooks-principles-of-management-bundle/` — Principles of Management (2 books: `principles-management`, `organizational-behavior`; added 2026-11-28)
 
 Per-book status (build-verified dates, exercise/image counts, os-embed scheme post-mortems, structural
 facts): `tasks/reference/openstax/book-inventory.md`. Figure format + os-embed scheme + exercise counts
