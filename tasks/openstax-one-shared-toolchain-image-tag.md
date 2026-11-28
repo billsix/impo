@@ -30,10 +30,11 @@ shared tag, the tools and docs that name a per-book image use it, and one book i
   package, a font, TeX Live) needs a new image.
 - Not changed by this task: `make image` still runs a cache-hit `podman build` before every build target. A
   GitHub Actions release job builds the image in its own runner under either naming.
-- The branch `openstax-overlay-numbering-pages-size` (2026-11-28) changes `tools/book-template/Makefile` and
-  fills the 45 folders from it with a one-off script. Do this task after that branch is merged, and fill the
-  folders the same way: change the template, then rewrite each folder's `Makefile` from it, keeping the
-  folder's first line (its title).
+- The 45 `apply.sh` and `Makefile` copies are filled from `tools/book-template/` (since 2026-11-28;
+  `tasks/archive/impo/2026/11/28/openstax-build-refresh-overlay.md`). Fill them the same way here: change
+  the template, then rewrite each folder's `Makefile` from it, keeping the folder's first line (its title).
+  The script that did it last time is
+  `git show 1279ecb9:tasks/adhoc/openstax-build-refresh-overlay/regenerate_from_template.py`.
 
 ## Plan
 
