@@ -73,7 +73,7 @@ Step 0 comes first; after it the books are independent of each other, so the ord
 - [x] `tasks/archive/impo/2026/11/27/openstax-add-book-introduction-intellectual-property.md` — one book: `introduction-intellectual-property` (CC BY 4.0, 30 MB), done 2026-11-27
 - [ ] `tasks/openstax-add-book-principles-accounting-bundle.md` — 2 books: `principles-financial-accounting`, `principles-managerial-accounting` (CC BY-NC-SA 4.0, 258 MB)
 - [ ] `tasks/openstax-add-book-principles-economics-bundle.md` — 5 books: `principles-economics-3e`, `principles-macroeconomics-3e`, `principles-microeconomics-3e`, `principles-macroeconomics-ap-courses-2e`, `principles-microeconomics-ap-courses-2e` (CC BY-NC-SA 4.0, 84 MB)
-- [ ] `tasks/openstax-add-book-principles-finance.md` — one book: `principles-finance-2e` (CC BY-NC-SA 4.0, 38 MB)
+- [ ] `tasks/openstax-add-book-principles-finance.md` — one book: `principles-finance-2e` (CC BY-NC-SA 4.0, 38 MB); folder added and built 2026-11-28, waiting for the maintainer's exercise fetch
 - [ ] `tasks/openstax-add-book-principles-marketing.md` — one book: `principles-marketing` (CC BY-NC-SA 4.0, 61 MB)
 - [ ] `tasks/openstax-add-book-principles-of-management-bundle.md` — 2 books: `principles-management`, `organizational-behavior` (CC BY-NC-SA 4.0, 79 MB)
 

@@ -325,6 +325,7 @@ the day each was added.
 | introduction-anthropology | 1 | `#exercise/` | 150 | raster |
 | introduction-philosophy | 1 | `#exercise/` | 228 | raster |
 | nursing-external-bundle | 3 | `#exercise/` | 1156 | raster |
+| principles-finance | 1 | `#exercise/` | 580 | raster |
 
 ("survey" = the scheme wasn't re-audited on the raw CNXML for that book; verify on first exercise-bearing build,
 the same way physics/biology turned out to have `#ost/api/ex/`.)
