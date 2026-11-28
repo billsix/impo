@@ -37,7 +37,7 @@ shared tag, the tools and docs that name a per-book image use it, and one book i
 
 ## Plan
 
-1. Choose the name (proposal: `impo-openstax-toolchain`) and set it in `tools/book-template/Makefile`; keep
+1. Set the name `impo-openstax-toolchain` in `tools/book-template/Makefile`; keep
    `@NAME@` only where the folder's own name is still wanted (the comment line).
 2. Refill the 45 `openstax/osbooks-*/Makefile` files from the template and set the same name in the trench
    Makefile (its `image` target also runs that book's tools gate, which stays).
@@ -51,6 +51,10 @@ shared tag, the tools and docs that name a per-book image use it, and one book i
    (`podman images --format '{{.Repository}}' | grep '^localhost/osbooks-' | xargs podman rmi`) on each
    machine, and after loading a tar saved before this change, `podman tag <old name> impo-openstax-toolchain`.
 
+## Decisions
+
+- **The name is `impo-openstax-toolchain`** (William Emerison Six <billsix@gmail.com>, 2026-11-28: "sure that name is fine").
+
 ## Open questions
 
-1. Is `impo-openstax-toolchain` the name you want? (yes, or give another)
+None. The go-ahead to do the work is still needed.
