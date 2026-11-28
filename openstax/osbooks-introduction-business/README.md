@@ -31,8 +31,8 @@ Nested podman: `PODMAN_RUN_FLAGS` auto-applies `--cgroups=disabled` inside a
 
 The OpenStax content (`collections/`, `modules/`, `media/`) is fetched at a pin
 into `checkout/` and is **not** part of this repository. It is not the
-maintainer's: it is under the licence its own source declares (CC BY 4.0 for this
-book), sourced from <https://openstax.org>, and the books built from it carry the
+maintainer's: it is under the licence its own source declares (CC BY-NC-SA 4.0 for this
+book, by its collection XML; the upstream `LICENSE` file wrongly holds the CC BY 4.0 text), sourced from <https://openstax.org>, and the books built from it carry the
 same licence. Any committed `exercises/` download cache has its own `COPYRIGHT`
 notice. The toolchain in [`../tooling/`](../tooling) is the maintainer's, MIT (see
 the repo `LICENSE`). Details: [`../CLAUDE.md`](../CLAUDE.md).
