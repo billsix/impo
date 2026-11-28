@@ -59,7 +59,7 @@ He asked for the plan to be rethought, and these points came out of that:
 
 ## Still open
 
-- **Maintainer:** `CREATE=1 bash tools/mirror-upstreams.sh push` for the fifteen books whose upstream answers, from any machine with his GitHub credentials. Algebra-1's mirror was pushed and verified 2026-11-27 (`tasks/reference/openstax/algebra-1-upstream-removal.md`, "Outcome").
+- **Maintainer:** `CREATE=1 bash tools/mirror-upstreams.sh push` for the 44 book folders whose upstream answers (15 when this task was written; 29 added 2026-11-26 to 2026-11-28), from any machine with his GitHub credentials. Algebra-1's mirror was pushed and verified 2026-11-27 (`tasks/reference/openstax/algebra-1-upstream-removal.md`, "Outcome").
 - **Maintainer:** decision 5, how many of the 54 repositories to back up. `tools/mirror-upstreams.sh` handles only the books impo builds; backing up others needs it to accept repository names.
 - **Agent, after the push:** `bash tools/mirror-upstreams.sh check`, then refresh the survey table.
 - **A wording point for the maintainer:** the colophon says the toolchain "and this LaTeX formatting" are under the MIT License, while the licence page says the edition is distributed under the book's licence. For a share-alike book the edition as a whole carries the book's licence; whether his own formatting is additionally offered under MIT is his statement to make. The wording was left as it was. The agent's suggestion: say only the toolchain is MIT, for the fifteen share-alike books.
