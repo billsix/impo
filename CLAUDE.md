@@ -63,8 +63,8 @@ folder. Two book families exist, plus the `study/` family of material built from
   note in passing. `fetch.sh` falls back to the mirror by itself; `tools/mirror-upstreams.sh check` reports
   which mirrors exist and hold their pin, and `tools/mirror-upstreams.sh push` (the maintainer's, with his
   GitHub credentials) updates them. After a sync, also `make image-export` in one book folder and keep the
-  tar: the image is the build's last outside dependency. The mirrors are being set up in
-  `tasks/openstax-algebra-1-upstream-gone-backup-plan.md`.
+  tar: the image is the build's last outside dependency. Algebra 1's mirror exists (2026-11-27); the
+  others are tracked in `tasks/openstax-books-buildable-forever-source-backup-and-licences.md`.
 - **Unsigned commits in checkouts are authorized/automated.** The maintainer's gitconfig enables commit
   signing, which fails in the sandbox; each `fetch.sh` sets `commit.gpgsign false` in the checkout it
   manages (never globally). These commits are scaffolding; the durable product is impo's own files.

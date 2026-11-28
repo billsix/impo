@@ -19,9 +19,10 @@ No OpenStax content and no toolchain are committed — both are pulled in on dem
 ## The upstream repository is gone (found 2026-11-26)
 
 `https://github.com/openstax/osbooks-algebra-1` no longer answers; the book itself is still published on
-openstax.org. **`checkout/` here is the only copy of the source reachable from this machine and is in no
-commit: do not delete it.** What happened, what is known about why, and the maintainer's plan for a public
-mirror: `../../tasks/reference/openstax/algebra-1-upstream-removal.md`.
+openstax.org. The source comes from the maintainer's public mirror,
+`https://github.com/billsix/osbooks-algebra-1`, which holds the pin with its history; `fetch.sh` falls back
+to it by itself, so `checkout/` can be deleted and refetched like any other book's. What happened and what
+is known about why: `../../tasks/reference/openstax/algebra-1-upstream-removal.md`.
 
 ## The pin
 

@@ -48,9 +48,8 @@ github.com/billsix/runClaudeInContainer `tasks/archive/2026/11/27/external-sourc
 - `openstax/osbooks-algebra-1` is OpenStax's Algebra 1, which is "based, in part, on … the IM 6–12
   Math by Illustrative Mathematics" (`tasks/reference/openstax/algebra-1-upstream-removal.md`). That
   doc notes the IM and Desmos material inside the book "may carry terms of its own", and that
-  OpenStax withdrew the book's upstream repository
-  (`tasks/openstax-algebra-1-upstream-gone-backup-plan.md`). Read both before assuming an IM source
-  will stay available.
+  OpenStax withdrew the book's upstream repository (the same doc, "What happened"). Read it before
+  assuming an IM source will stay available.
 - impo's toolchain converts **CNXML** to LaTeX (`openstax/tooling/`). IM's courses are not known to
   be published as CNXML, so a build is likely a new book family beside `openstax/` and `trench/`,
   with its own converter or importer. Finding the real source format is the first question.

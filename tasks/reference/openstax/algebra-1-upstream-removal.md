@@ -1,4 +1,4 @@
-# Algebra 1: the upstream source repository disappeared — what happened, what is known about why, and the plan
+# Algebra 1: the upstream source repository disappeared — what happened, what is known about why, and the mirror that replaced it
 
 **Reference doc.** Written 2026-11-26 for William Emerison Six <billsix@gmail.com> ("make a reference document
 about what happened, and why, and that I intend to make a public mirror … I want the source material").
@@ -22,7 +22,25 @@ Update it in place when something new is learned, in particular the reason, whic
   (Rice News, 2025-02-13), and a 2026 Rice News item reports a district expanding its use. Only the public
   source repository is gone.
 
-## What impo still has
+## Outcome: the book is fetched from the maintainer's public mirror (2026-11-27)
+
+- The maintainer pushed `https://github.com/billsix/osbooks-algebra-1` on 2026-11-27.
+  `bash tools/mirror-upstreams.sh check algebra-1` reports that it holds the pin.
+- **The old files were the pinned commit.** The pin fetched from the mirror was compared with the old
+  `checkout/` by `diff -rq`: the collection XML, all 976 modules and all 1,493 media files are identical.
+  The old folder held 930 more media files, a PDF and a PNG for each of the 465 SVG figures, which the
+  build writes.
+- **The book builds from the mirror.** `checkout/` was refetched by `fetch.sh` (the upstream fails, the
+  mirror answers), and `tools/build-after-sync.sh` passed `make convert` and `make dist`: a 99 MB PDF, an
+  89 MB EPUB and a 159-page HTML edition.
+- The mirror carries the upstream's `LICENSE` file (CC BY-NC-SA 4.0), which the old files lacked, and its
+  `README.md`.
+- Not recorded: which clone the maintainer pushed from, and whether the points under "Things to settle
+  before the mirror is public" below were each considered. He made the mirror public.
+
+The three sections that follow describe the state on 2026-11-26, before the mirror existed.
+
+## What impo held on 2026-11-26
 
 Everything the build needs, in `openstax/osbooks-algebra-1/`:
 
@@ -100,8 +118,9 @@ OpenStax**; the book's page gives a content-reuse request form (https://openstax
 
 ## Where the work is tracked
 
-- `tasks/openstax-algebra-1-upstream-gone-backup-plan.md`: the steps (confirm the Pi clone, push the mirror,
-  build from it).
+- `tasks/archive/impo/2026/11/28/openstax-algebra-1-upstream-gone-backup-plan.md`: the done-record of the
+  steps (push the mirror, compare, build from it). Until the archive move is committed the file is at
+  `tasks/openstax-algebra-1-upstream-gone-backup-plan.md`.
 - `tools/upstream-books-gone.txt`: this book's line; `tools/survey-upstream-books.py` shows it as a "gone"
   row in `tasks/reference/openstax/upstream-book-repositories.md`.
 - `tasks/openstax-books-buildable-forever-source-backup-and-licences.md`: the wider decision to mirror every
