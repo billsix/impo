@@ -18,7 +18,7 @@ book*.
 No source and no toolchain are committed — both are pulled in on demand:
 
 - `fetch.sh` — clones the pinned pristine Trench LaTeX source into `checkout/` (gitignored).
-- `apply.sh` — overlays the OpenStax house style (`osbook.cls`+`osbook-envs`+`osbook-defer`, copied
+- `apply.sh` (run by `make pdf` itself) — overlays the OpenStax house style (`osbook.cls`+`osbook-envs`+`osbook-defer`, copied
   from `../../openstax/tooling/latex/`) and, from phase 2, the `latex/trench-osbook.sty` shim.
 - `Makefile` — builds the shared image from `../../openstax/tooling` and runs it against `checkout/`
   mounted at `/book`.

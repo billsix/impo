@@ -58,6 +58,7 @@ normal host; threaded into every `run`, never `build`.
 
 ## Changing the toolchain
 
-Edit `../tooling/` once (shared by every book), then re-run `./apply.sh` here to
-pick it up. Do not edit the generated LaTeX or the overlaid copies inside
-`checkout/` — a reconvert or a re-apply overwrites them.
+Edit `../tooling/` once (shared by every book). Every build target here runs
+`./apply.sh` first, so the next `make` picks the edit up. Do not edit the
+generated LaTeX or the overlaid copies inside `checkout/` — a reconvert or a
+re-apply overwrites them.

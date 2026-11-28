@@ -5,7 +5,7 @@
 # source is native LaTeX (no CNXML converter) -- see the task doc
 # tasks/archive/impo/2026/09/19/add-trench-differential-equations-book.md.
 #
-# First run:  ./fetch.sh && ./apply.sh && make pdf   (pdf needs phases 2-3)
+# First run:  ./fetch.sh && make pdf   (pdf needs phases 2-3)
 #
 # STATUS: Phase 1 scaffold. `image`/`shell`/`clean`/`help` work now; `figures`
 # and `pdf` are honest stubs that fail until phases 2-3/5 land.
@@ -45,7 +45,7 @@ IMPO_PROVENANCE = -e IMPO_COMMIT="$(IMPO_COMMIT)" -e IMPO_BUILD_DATE="$(IMPO_BUI
 RUN = $(CONTAINER_CMD) run --rm $(PODMAN_RUN_FLAGS) $(IMPO_PROVENANCE) $(FILES_TO_MOUNT) \
 	--entrypoint /bin/bash $(CONTAINER_NAME)
 
-.PHONY: image-export image-import image check-tools shell normalize figures pdf html epub dist clean help
+.PHONY: image-export image-import image check-tools apply shell normalize figures pdf html epub dist clean help
 
 # Gate for THIS book's tools/*.py. The shared image bakes a ty+pytest gate over
 # openstax/tooling's OWN tools, but this book's tools are mounted at /toolsrc at
@@ -63,6 +63,9 @@ image: ## Build the shared toolchain image (from ../../openstax/tooling) + gate 
 check-tools: ## Re-run the tools gate (ruff + ty) without rebuilding the image
 	$(CHECK_TOOLS)
 
+apply: ## Overlay the house style (osbook.cls + the shim) onto checkout/ (`make pdf` does this itself)
+	./apply.sh
+
 normalize: ## PHASE 2: Trench master -> checkout/TRENCH_DIFFEQ-osbook.tex (pure python, no image)
 	IMPO_COMMIT="$(shell git rev-parse HEAD 2>/dev/null)" \
 		IMPO_BUILD_DATE="$(shell date +%Y-%m-%d)" \
@@ -75,7 +78,7 @@ shell: image ## Interactive shell in the build container (book mounted at /book)
 figures: image ## PHASE 3: convert EPS/*.eps -> checkout/EPS-pdf/*.pdf (epstopdf, in-container)
 	$(RUN) -c 'cd /book && bash /toolsrc/eps2pdf.sh EPS EPS-pdf'
 
-pdf: image normalize figures ## Typeset the osbook-styled PDF -> checkout/output/TRENCH_DIFFEQ-osbook.pdf
+pdf: image apply normalize figures ## Typeset the osbook-styled PDF -> checkout/output/TRENCH_DIFFEQ-osbook.pdf
 	$(RUN) -c 'cd /book && latexmk -pdflua -interaction=nonstopmode -outdir=output TRENCH_DIFFEQ-osbook.tex'
 
 # The web editions take a SEPARATE path from the PDF: tools/build_web.sh feeds the
