@@ -229,6 +229,27 @@ in 27 books; after the three changes below a rebuild of all 57 books left 7 line
 - **Still undefined:** about 20 references in 9 books point at ids that get no label for other reasons (a figure
   or table in a place the converter does not label); each prints "??" in the PDF.
 
+## Met with the business books (added 2026-11-28)
+
+Three shapes, each of which stopped a PDF build until the converter handled it:
+
+- **A `<footnote>` in a section's title** (`render_section`; one in Entrepreneurship, module `m71178`, an
+  attribution of CC BY material). The heading is written `\subsection[{short}]{title\footnote{…}}`: the
+  contents and running heads take the short form without the footnote, and the footnote prints under the
+  heading. Without the short form LaTeX stops with "Use of `\@xfootnote` doesn't match its definition".
+  pandoc reads the long form, so the web editions keep the footnote.
+- **A display equation with line-break marks but one row** (`render_equation`; Principles of Marketing
+  `m00018`, Principles of Economics `m64270`). Line-break marks make an `aligned` display with a tab at
+  each row's first `=`. When the marks only trail a single row there is nothing to align, and when that
+  row is an `<mtable>` the tab falls inside its `array` ("Extra alignment tab has been changed to
+  `\cr`"). A single row is written as it is.
+- **Two spaces in a row in an image file name** (`_imgname`; one figure of Organizational Behavior). TeX
+  reads a run of spaces as one, so `\includegraphics` looked for a file that does not exist. Each space
+  after the first is written `\space`; `tools/pandoc/preprocess.py` turns it back for the web editions,
+  where pandoc keeps the spaces of a file name.
+
+`tools/compare-converter-output.sh` showed no change in any of the 37 folders built before.
+
 ## The 5 historical `convert.py` versions and their deltas
 
 Verified by hashing `latex:tools/cnxml2tex/convert.py` across all 16 repos. 12 books shared one version; four

@@ -137,5 +137,11 @@ whose licence it does not know.
 | osbooks-entrepreneurship | CC BY-NC-SA 4.0 | yes |
 | osbooks-principles-economics-bundle (5 books) | CC BY-NC-SA 4.0 | yes |
 
+`osbooks-introduction-business` is the one folder where the two sources disagree: its `LICENSE` file is the
+CC BY 4.0 text, its collection XML declares CC BY-NC-SA 4.0, and the book's preface on openstax.org says
+CC BY-NC-SA 4.0 (read 2026-11-28). The built book follows the collection. `tools/add-book.sh` and
+`tools/survey-upstream-books.py` read the `LICENSE` file, so the folder's README was corrected by hand and
+the survey table shows CC BY 4.0 for it.
+
 Every collection inside a bundle declares the same licence as its siblings. No module file carries licence
 metadata. The exercise caches are a separate case: see "Copyright / licensing" in `openstax/CLAUDE.md`.
